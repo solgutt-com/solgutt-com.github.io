@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solomon Guttmann</title>
+    <link rel="stylesheet" href="../style.css">
+  </head>
+
+  <body class="gallery-page">
+
+    <header class="gallery-header">
+      <a href="../photography.html" class="site-name back-link">← Fotos</a>
+      <nav class="gallery-nav">
+        <span id="country-title" class="country-title"></span>
+        <span class="divider">|</span>
+        <span id="photo-counter" class="series-link">1 / 0</span>
+      </nav>
+    </header>
+
+    <div class="slideshow">
+      <button class="arrow left" onclick="changePhoto(-1)">&#8249;</button>
+      <div class="slide-container">
+        <img id="slide-img" src="" alt="">
+        <span id="slide-caption" class="slide-caption"></span>
+      </div>
+      <button class="arrow right" onclick="changePhoto(1)">&#8250;</button>
+    </div>
+
+    <script src="../data.js"></script>
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const code = params.get('code') || 'AL';
+      const country = siteData[code];
+
+      if (!country) {
+        window.location.href = '../photography.html';
+      }
+
+      document.title = country.name + ' — Solomon Guttmann';
+      document.getElementById('country-title').textContent = country.name;
+
+      const photos = country.photos.map(p => ({
+        src: `../${p.src}`,
+        caption: p.caption
+      }));
+
+      let current = 0;
+      const counter = document.getElementById('photo-counter');
+
+      function updateCounter() {
+        counter.textContent = (current + 1) + ' / ' + photos.length;
+      }
+
+      function changePhoto(direction) {
+        current = (current + direction + photos.length) % photos.length;
+        const img = document.getElementById('slide-img');
+        const caption = document.getElementById('slide-caption');
+        img.style.opacity = 0;
+        caption.style.opacity = 0;
+        setTimeout(() => {
+          img.src = photos[current].src;
+          caption.textContent = photos[current].caption;
+          img.style.opacity = 1;
+          caption.style.opacity = 1;
+          updateCounter();
+        }, 200);
+      }
+
+      document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowRight') changePhoto(1);
+        if (e.key === 'ArrowLeft') changePhoto(-1);
+      });
+
+      if (photos.length > 0) {
+        document.getElementById('slide-img').src = photos[0].src;
+        document.getElementById('slide-caption').textContent = photos[0].caption;
+        updateCounter();
+      }
+    </script>
+
+  </body>
+
+</html>

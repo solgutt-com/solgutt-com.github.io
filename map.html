@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map — Solomon Guttmann</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body class="fotos-page">
+
+    <header class="gallery-header">
+      <a href="index.html" class="site-name">Solomon Guttmann</a>
+      <nav class="gallery-nav">
+        <a href="photography.html" class="series-link active">Fotos</a>
+        <span class="divider">|</span>
+        <a href="film.html" class="series-link">Film</a>
+        <span class="divider">|</span>
+        <a href="about.html" class="series-link">About</a>
+      </nav>
+    </header>
+
+<div class="collections-nav">
+  <a href="countries/gallery.html?code=Highlights">Highlights</a>
+  <span class="divider">|</span>
+  <a href="countries/gallery.html?code=BW">Black & White</a>
+  <span class="divider">|</span>
+  <a href="countries/gallery.html?code=TheJungle">The Jungle</a>
+  <span class="divider">|</span>
+  <a href="countries/gallery.html?code=XX">Somewhere</a>
+</div>
+
+    <div class="fotos-layout">
+
+      <div class="region-menu">
+        <div class="region-menu-icon">&#9776;</div>
+        <div class="region-menu-list">
+          <div class="region-menu-section">Highlights</div>
+          <a href="countries/gallery.html?code=Highlights">Highlights</a>
+          <div class="region-menu-section">Europe</div>
+          <a href="countries/gallery.html?code=AL">Albania</a>
+          <a href="countries/gallery.html?code=AT">Austria</a>
+          <a href="countries/gallery.html?code=BA">Bosnia & Herzegovina</a>
+          <a href="countries/gallery.html?code=CH">Switzerland</a>
+          <a href="countries/gallery.html?code=DE">Germany</a>
+          <a href="countries/gallery.html?code=EE">Estonia</a>
+          <a href="countries/gallery.html?code=ES">Spain</a>
+          <a href="countries/gallery.html?code=FI">Finland</a>
+          <a href="countries/gallery.html?code=FR">France</a>
+          <a href="countries/gallery.html?code=HR">Croatia</a>
+          <a href="countries/gallery.html?code=IT">Italy</a>
+          <a href="countries/gallery.html?code=LT">Lithuania</a>
+          <a href="countries/gallery.html?code=LV">Latvia</a>
+          <a href="countries/gallery.html?code=ME">Montenegro</a>
+          <a href="countries/gallery.html?code=NL">Netherlands</a>
+          <a href="countries/gallery.html?code=PL">Poland</a>
+          <a href="countries/gallery.html?code=PT">Portugal</a>
+          <a href="countries/gallery.html?code=SE">Sweden</a>
+          <a href="countries/gallery.html?code=SI">Slovenia</a>
+          <div class="region-menu-section">Africa</div>
+          <a href="countries/gallery.html?code=ZA">South Africa</a>
+          <a href="countries/gallery.html?code=ZW">Zimbabwe</a>
+          <div class="region-menu-section">Collections</div>
+          <a href="countries/gallery.html?code=BW">Black & White</a>
+          <a href="countries/gallery.html?code=TheJungle">The Jungle</a>
+          <a href="countries/gallery.html?code=XX">Somewhere</a>
+        </div>
+      </div>
+
+      <div class="map-outer">
+        <p class="map-instructions">Do you need instructions?</p>
+        <p class="map-quote" id="map-quote"></p>
+        <p class="map-quote-author" id="map-quote-author"></p>
+        <div class="map-box">
+          <div class="map-container">
+            <svg id="map-svg" viewBox="0 0 960 500" width="100%">
+              <defs>
+                <pattern id="px" width="4" height="4" patternUnits="userSpaceOnUse">
+                  <rect width="3" height="3" fill="#5a3e2b"/>
+                  <rect x="3" y="0" width="1" height="4" fill="#4a3222"/>
+                  <rect x="0" y="3" width="4" height="1" fill="#4a3222"/>
+                </pattern>
+              </defs>
+              <g id="map-world"></g>
+              <g id="map-regions"></g>
+              <g id="map-specials"></g>
+            </svg>
+            <div id="map-tooltip"></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+    <script src="quotes.js"></script>
+    <script src="data.js"></script>
+    <script>
+
+      const COUNTRY_IDS = {
+        8:   'AL', 40:  'AT', 70:  'BA', 191: 'HR',
+        233: 'EE', 246: 'FI', 250: 'FR', 276: 'DE',
+        380: 'IT', 440: 'LT', 499: 'ME', 528: 'NL',
+        616: 'PL', 620: 'PT', 705: 'SI', 710: 'ZA',
+        716: 'ZW', 724: 'ES', 752: 'SE', 756: 'CH',
+        428: 'LV'
+      };
+
+      const US_STATES = [
+        {
+          name: 'New Mexico',
+          coords: [
+            [-109.045,37.000],[-103.002,37.000],[-103.002,31.332],
+            [-108.208,31.332],[-108.208,31.783],[-109.045,31.783],
+            [-109.045,37.000]
+          ]
+        },
+        {
+          name: 'California',
+          coords: [
+            [-124.409,41.998],[-120.001,41.998],[-120.001,39.000],
+            [-114.636,35.002],[-114.415,34.108],[-117.127,32.531],
+            [-117.241,32.668],[-118.524,34.027],[-120.510,34.476],
+            [-122.403,37.360],[-123.728,38.955],[-124.109,40.783],
+            [-124.409,41.998]
+          ]
+        },
+        {
+          name: 'Florida',
+          coords: [
+            [-87.634,30.997],[-85.004,31.000],[-84.932,30.573],
+            [-83.300,29.452],[-82.040,28.800],[-81.500,28.000],
+            [-80.680,27.217],[-80.130,25.813],[-80.120,25.165],
+            [-81.170,25.124],[-82.000,24.610],[-81.000,24.690],
+            [-82.000,26.900],[-83.000,29.000],[-84.000,29.740],
+            [-85.310,29.680],[-86.400,30.400],[-87.634,30.997]
+          ]
+        }
+      ];
+
+      const proj = d3.geoNaturalEarth1().scale(153).translate([480, 250]);
+      const path = d3.geoPath().projection(proj);
+      const tooltip = document.getElementById('map-tooltip');
+
+      function showTooltip(name) {
+        tooltip.textContent = name;
+        tooltip.style.opacity = 1;
+      }
+
+      function hideTooltip() {
+        tooltip.style.opacity = 0;
+      }
+
+      function navigate(code) {
+        window.location.href = 'countries/gallery.html?code=' + code;
+      }
+
+const q = quotes[Math.floor(Math.random() * quotes.length)];
+document.getElementById('map-quote').textContent = '\u201C' + q.text + '\u201D';
+document.getElementById('map-quote-author').textContent = '\u2014 ' + q.author;
+
+      d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json').then(function(world) {
+        const features = topojson.feature(world, world.objects.countries).features;
+
+        // Ghost world outline
+        d3.select('#map-world')
+          .selectAll('path')
+          .data(features)
+          .join('path')
+          .attr('d', path)
+          .attr('fill', 'none')
+          .attr('stroke', '#2a2a28')
+          .attr('stroke-width', 0.4);
+
+        // Active countries
+        d3.select('#map-regions')
+          .selectAll('path')
+          .data(features.filter(function(d) { return COUNTRY_IDS[+d.id]; }))
+          .join('path')
+          .attr('class', 'map-region')
+          .attr('d', path)
+          .attr('fill', 'url(#px)')
+          .attr('stroke', '#6a6a62')
+          .attr('stroke-width', 0.6)
+          .on('mouseenter', function(e, d) { showTooltip(siteData[COUNTRY_IDS[+d.id]].name); })
+          .on('mouseleave', hideTooltip)
+          .on('click', function(e, d) { navigate(COUNTRY_IDS[+d.id]); });
+
+        const sg = d3.select('#map-specials');
+
+        // US States
+        US_STATES.forEach(function(state) {
+          const feature = {
+            type: 'Feature',
+            geometry: { type: 'Polygon', coordinates: [state.coords] }
+          };
+          sg.append('path')
+            .attr('class', 'map-region')
+            .attr('d', path(feature))
+            .attr('fill', 'url(#px)')
+            .attr('stroke', '#6a6a62')
+            .attr('stroke-width', 0.6)
+            .on('mouseenter', function() { showTooltip(state.name); })
+            .on('mouseleave', hideTooltip)
+            .on('click', function() { navigate('XX'); });
+        });
+
+        // Bermuda Triangle — Somewhere
+        const bermudaFeature = {
+          type: 'Feature',
+          geometry: {
+            type: 'Polygon',
+            coordinates: [[
+              [-76.0, 25.5],
+              [-70.0, 29.5],
+              [-71.5, 21.5],
+              [-76.0, 25.5]
+            ]]
+          }
+        };
+        sg.append('path')
+          .attr('class', 'map-region')
+          .attr('d', path(bermudaFeature))
+          .attr('fill', 'url(#px)')
+          .attr('stroke', '#8a7a6a')
+          .attr('stroke-width', 0.8)
+          .attr('stroke-dasharray', '3 2')
+          .on('mouseenter', function() { showTooltip('Somewhere'); })
+          .on('mouseleave', hideTooltip)
+          .on('click', function() { navigate('XX'); });
+
+// Atlantic - BW Photos          
+const atlanticPos = proj([-30, 20]);
+const bwPin = sg.append('g')
+  .attr('class', 'map-region')
+  .attr('transform', 'translate(' + atlanticPos[0] + ',' + atlanticPos[1] + ')')
+  .on('mouseenter', function() { showTooltip('Black & White'); })
+  .on('mouseleave', hideTooltip)
+  .on('click', function() { navigate('BW'); });
+
+bwPin.append('circle')
+  .attr('r', 7)
+  .attr('fill', 'none')
+  .attr('stroke', '#6a6a62')
+  .attr('stroke-width', 1);
+
+bwPin.append('circle')
+  .attr('r', 4)
+  .attr('fill', 'none')
+  .attr('stroke', '#6a6a62')
+  .attr('stroke-width', 1);
+
+bwPin.append('line')
+  .attr('x1', -7).attr('y1', 0)
+  .attr('x2', -4).attr('y2', 0)
+  .attr('stroke', '#6a6a62')
+  .attr('stroke-width', 1);
+
+bwPin.append('line')
+  .attr('x1', 4).attr('y1', 0)
+  .attr('x2', 7).attr('y2', 0)
+  .attr('stroke', '#6a6a62')
+  .attr('stroke-width', 1);
+
+bwPin.append('line')
+  .attr('x1', 0).attr('y1', -7)
+  .attr('x2', 0).attr('y2', -4)
+  .attr('stroke', '#6a6a62')
+  .attr('stroke-width', 1);
+
+bwPin.append('line')
+  .attr('x1', 0).attr('y1', 4)
+  .attr('x2', 0).attr('y2', 7)
+  .attr('stroke', '#6a6a62')
+  .attr('stroke-width', 1);
+
+// Pacific Pin - Highlights
+const pacificPos = proj([-150, 10]);
+const hlPin = sg.append('g')
+  .attr('class', 'map-region')
+  .attr('transform', 'translate(' + pacificPos[0] + ',' + pacificPos[1] + ')')
+  .on('mouseenter', function() { showTooltip('Highlights'); })
+  .on('mouseleave', hideTooltip)
+  .on('click', function() { navigate('Highlights'); });
+
+hlPin.append('circle')
+  .attr('r', 7)
+  .attr('fill', 'none')
+  .attr('stroke', '#6a6a62')
+  .attr('stroke-width', 1);
+
+hlPin.append('circle')
+  .attr('r', 4)
+  .attr('fill', 'none')
+  .attr('stroke', '#6a6a62')
+  .attr('stroke-width', 1);
+
+hlPin.append('line')
+  .attr('x1', -7).attr('y1', 0)
+  .attr('x2', -4).attr('y2', 0)
+  .attr('stroke', '#6a6a62')
+  .attr('stroke-width', 1);
+
+hlPin.append('line')
+  .attr('x1', 4).attr('y1', 0)
+  .attr('x2', 7).attr('y2', 0)
+  .attr('stroke', '#6a6a62')
+  .attr('stroke-width', 1);
+
+hlPin.append('line')
+  .attr('x1', 0).attr('y1', -7)
+  .attr('x2', 0).attr('y2', -4)
+  .attr('stroke', '#6a6a62')
+  .attr('stroke-width', 1);
+
+hlPin.append('line')
+  .attr('x1', 0).attr('y1', 4)
+  .attr('x2', 0).attr('y2', 7)
+  .attr('stroke', '#6a6a62')
+  .attr('stroke-width', 1);
+
+
+
+        // Monstera leaf — The Jungle (Amazon region)
+        const junglePos = proj([-60, -5]);
+        const jg = sg.append('g')
+          .attr('class', 'map-region')
+          .attr('transform', 'translate(' + junglePos[0] + ',' + junglePos[1] + ')')
+          .on('mouseenter', function() { showTooltip('The Jungle'); })
+          .on('mouseleave', hideTooltip)
+          .on('click', function() { navigate('TheJungle'); });
+
+        // Simple monstera leaf shape — two lobed leaf with midrib
+        jg.append('path')
+          .attr('d', [
+            'M0,0',
+            'C-2,-6 -8,-10 -6,-16',
+            'C-4,-20 0,-22 0,-22',
+            'C0,-22 4,-20 6,-16',
+            'C8,-10 2,-6 0,0Z',
+            'M-6,-16',
+            'C-10,-14 -12,-10 -10,-6',
+            'C-8,-2 -4,0 0,0',
+            'M6,-16',
+            'C10,-14 12,-10 10,-6',
+            'C8,-2 4,0 0,0',
+            'M0,-22 L0,0'
+          ].join(' '))
+          .attr('fill', 'url(#px)')
+          .attr('stroke', '#6a6a62')
+          .attr('stroke-width', 0.6)
+          .attr('fill-rule', 'evenodd');
+
+      });
+
+    </script>
+
+  </body>
+
+</html>

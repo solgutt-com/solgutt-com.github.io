@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotos — Solomon Guttmann</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body class="fotos-page">
+
+    <header class="gallery-header">
+      <a href="index.html" class="site-name">Solomon Guttmann</a>
+      <nav class="gallery-nav">
+        <a href="photography.html" class="series-link active">Fotos</a>
+        <span class="divider">|</span>
+        <a href="film.html" class="series-link">Film</a>
+        <span class="divider">|</span>
+        <a href="about.html" class="series-link">About</a>
+      </nav>
+    </header>
+
+    <div class="collections-grid">
+
+      <a class="collection-quadrant" id="q-Analog-BW" href="sub-collection.html?id=Analog-BW">
+        <svg viewBox="0 0 120 100" class="collection-icon">
+          <path d="M14,26 L40,26 L40,15 L80,15 L80,26 L106,26 L106,80 L14,80 Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M40,52 A20,20 0 1 0 80,52 A20,20 0 1 0 40,52 Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M52,52 A8,8 0 1 0 68,52 A8,8 0 1 0 52,52 Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+        </svg>
+        <div class="collection-info">
+          <span class="collection-title">Analog B&W</span>
+          <span class="collection-subtitle"></span>
+          <span class="collection-description"></span>
+        </div>
+      </a>
+
+      <a class="collection-quadrant" id="q-Around-the-World" href="sub-collection.html?id=Around-the-World">
+        <svg viewBox="0 0 120 100" class="collection-icon">
+          <path d="M24,50 A36,36 0 1 0 96,50 A36,36 0 1 0 24,50 Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M24,50 A36,14 0 1 0 96,50 A36,14 0 1 0 24,50 Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M60,14 L60,86" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        <div class="collection-info">
+          <span class="collection-title">Around the World</span>
+          <span class="collection-subtitle"></span>
+          <span class="collection-description"></span>
+        </div>
+      </a>
+
+      <a class="collection-quadrant" id="q-Cidadelhe" href="sub-collection.html?id=Cidadelhe">
+        <svg viewBox="0 0 120 100" class="collection-icon">
+          <path d="M16,28 L17,18 L38,15 L62,14 L88,16 L104,18 L103,29 L86,30 L60,31 L35,30 L16,28Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M22,28 L20,30 L18,50 L17,72 L19,86 L28,87 L30,85 L32,68 L33,48 L32,30 L22,28Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M98,29 L97,31 L95,52 L94,70 L96,86 L105,87 L107,84 L109,66 L110,46 L109,30 L98,29Z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+        </svg>
+        <div class="collection-info">
+          <span class="collection-title">Cidadelhe</span>
+          <span class="collection-subtitle"></span>
+          <span class="collection-description"></span>
+        </div>
+      </a>
+
+      <div class="collection-quadrant collection-coming-soon" id="q-Coming-Soon">
+        <svg viewBox="0 0 120 100" class="collection-icon">
+          <path d="M18,18 L60,52 L18,84" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M102,18 L60,52 L102,84" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+          <path d="M18,18 L102,18 M18,84 L102,84" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+        </svg>
+        <div class="collection-info">
+          <span class="collection-title">Coming Soon</span>
+          <span class="collection-subtitle"></span>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="collections-footer">
+      <a href="map.html" class="browse-countries">Browse by country →</a>
+    </div>
+
+    <script src="data.js"></script>
+    <script>
+      collectionsData.forEach(col => {
+        const el = document.getElementById('q-' + col.id);
+        if (!el) return;
+        const sub  = el.querySelector('.collection-subtitle');
+        const desc = el.querySelector('.collection-description');
+        if (sub  && col.subtitle)    sub.textContent  = col.subtitle;
+        if (desc && col.description) desc.textContent = col.description;
+      });
+    </script>
+
+  </body>
+
+</html>

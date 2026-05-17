@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotos — Solomon Guttmann</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body class="sub-collection-page">
+
+    <header class="gallery-header">
+      <a id="back-link" href="photography.html" class="site-name back-link">← Fotos</a>
+      <nav class="gallery-nav">
+        <span id="collection-title" class="country-title"></span>
+      </nav>
+    </header>
+
+    <div class="subcollection-content">
+      <div class="subcollection-list" id="subcollection-list"></div>
+    </div>
+
+    <script src="data.js"></script>
+    <script>
+      const params     = new URLSearchParams(window.location.search);
+      const id         = params.get('id');
+      const parentId   = params.get('parent');
+
+      function findCollection(nodes, targetId) {
+        for (const node of nodes) {
+          if (node.id === targetId) return node;
+          if (node.children) {
+            const found = findCollection(node.children, targetId);
+            if (found) return found;
+          }
+        }
+        return null;
+      }
+
+      const collection = findCollection(collectionsData, id);
+
+      if (!collection || collection.type !== 'parent') {
+        window.location.href = 'photography.html';
+      }
+
+      document.title = collection.title + ' — Solomon Guttmann';
+      document.getElementById('collection-title').textContent = collection.title;
+
+      if (parentId) {
+        const parent = findCollection(collectionsData, parentId);
+        const backLink = document.getElementById('back-link');
+        backLink.href = 'sub-collection.html?id=' + parentId;
+        backLink.textContent = '← ' + (parent ? parent.title : 'Back');
+      }
+
+      const list = document.getElementById('subcollection-list');
+
+      collection.children.forEach(child => {
+        const isComingSoon = child.type === 'coming-soon';
+
+        const el = isComingSoon
+          ? document.createElement('div')
+          : document.createElement('a');
+
+        if (!isComingSoon) {
+          el.href = child.type === 'parent'
+            ? 'sub-collection.html?id=' + child.id + '&parent=' + id
+            : 'countries/gallery.html?code=' + child.id;
+        }
+
+        el.className = 'subcollection-item' + (isComingSoon ? ' subcollection-coming-soon' : '');
+
+        const subtitle = child.subtitle
+          ? `<span class="subcollection-subtitle">${child.subtitle}</span>`
+          : '';
+
+        el.innerHTML = `
+          <div class="subcollection-info">
+            <span class="subcollection-title">${child.title}</span>
+            ${subtitle}
+          </div>
+          <span class="subcollection-arrow">→</span>
+        `;
+
+        list.appendChild(el);
+      });
+    </script>
+
+  </body>
+
+</html>

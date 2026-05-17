@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Film — Solomon Guttmann</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body class="film-page">
+
+    <header class="gallery-header">
+      <a href="index.html" class="site-name">Solomon Guttmann</a>
+      <nav class="gallery-nav">
+        <a href="photography.html" class="series-link">Fotos</a>
+        <span class="divider">|</span>
+        <a href="film.html" class="series-link active">Film</a>
+        <span class="divider">|</span>
+        <a href="about.html" class="series-link">About</a>
+      </nav>
+    </header>
+
+    <div class="film-carousel">
+
+      <button class="arrow left" onclick="changeFilm(-1)">&#8249;</button>
+
+      <div class="film-container">
+        <div class="film-counter">
+          <span id="film-current">1</span> / <span id="film-total">4</span>
+        </div>
+        <div class="iframe-wrapper">
+          <iframe
+            id="film-iframe"
+            src="https://player.vimeo.com/video/1180888648?badge=0&autopause=0&player_id=0&app_id=58479"
+            frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen>
+          </iframe>
+        </div>
+        <div class="film-info">
+          <span id="film-title" class="film-title">El Camino</span>
+          <div class="film-dots" id="film-dots"></div>
+        </div>
+      </div>
+
+      <button class="arrow right" onclick="changeFilm(1)">&#8250;</button>
+
+    </div>
+
+    <script src="https://player.vimeo.com/api/player.js"></script>
+
+    <script>
+      const films = [
+        { id: "1180888648", title: "El Camino" },
+        { id: "1180890762", title: "No Campo" },
+        { id: "1180891550", title: "Rio en Medio" },
+        { id: "1180892535", title: "Viva na Casa" },
+      ];
+
+      let current = 0;
+
+      function buildDots() {
+        const dots = document.getElementById('film-dots');
+        dots.innerHTML = '';
+        films.forEach((_, i) => {
+          const dot = document.createElement('span');
+          dot.classList.add('dot');
+          if (i === current) dot.classList.add('active');
+          dot.onclick = () => goToFilm(i);
+          dots.appendChild(dot);
+        });
+      }
+
+      function goToFilm(index) {
+        current = index;
+        updateFilm();
+      }
+
+      function changeFilm(direction) {
+        current = (current + direction + films.length) % films.length;
+        updateFilm();
+      }
+
+      function updateFilm() {
+        const film = films[current];
+        const iframe = document.getElementById('film-iframe');
+        const title = document.getElementById('film-title');
+        const counter = document.getElementById('film-current');
+
+        iframe.style.opacity = 0;
+        title.style.opacity = 0;
+
+        setTimeout(() => {
+          iframe.src = `https://player.vimeo.com/video/${film.id}?badge=0&autopause=0&player_id=0&app_id=58479`;
+          title.textContent = film.title;
+          counter.textContent = current + 1;
+          iframe.style.opacity = 1;
+          title.style.opacity = 1;
+          buildDots();
+        }, 250);
+      }
+
+      document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowRight') changeFilm(1);
+        if (e.key === 'ArrowLeft') changeFilm(-1);
+      });
+
+      document.getElementById('film-total').textContent = films.length;
+      buildDots();
+    </script>
+
+  </body>
+
+</html>
