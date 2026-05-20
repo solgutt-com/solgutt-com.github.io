@@ -78,3 +78,32 @@
 - `photography.html`: removed hardcoded collection ID list; now iterates `collectionsData` directly
 - `style.css`: removed redundant `color` / `font-weight` from collection label classes (inherited from parent)
 - `gallery.html`: cached `photo-counter` DOM element at init
+
+### Git + deployment
+- Initialised git repo, added `.gitignore` (excludes `Images/`, backup files, `.DS_Store`)
+- Force-pushed all site infrastructure (16 files) to `https://github.com/solgutt-com/solgutt-com.github.io`
+- Site live at solgutt.com — images intentionally excluded from repo (516 MB)
+
+---
+
+## What's next
+
+### Content (priority)
+- Fill in `subtitle`, `description`, `cover` fields in each `collections.json`, then run `python3 build.py` and push `data.js`
+- Add photos to the currently empty folders:
+  - `Images/Collections/Analog-BW/sub/Olympus/Photos/`
+  - `Images/Collections/Analog-BW/sub/Davide's Camera/Photos/`
+  - `Images/Collections/Analog-BW/sub/Plastic Point n Shoot/Photos/`
+  - `Images/Collections/Searching-for-King-Solomons-Mines/Photos/`
+  - All `Cidadelhe/sub/*/Photos/` folders
+
+### Image hosting
+- Decide how to serve the `Images/` folder (currently excluded from git):
+  - Option A: push images to a separate `images` branch or repo
+  - Option B: host on a CDN (Cloudflare R2, S3, etc.) and update paths in `data.js`
+  - Option C: push images directly to the repo if total size stays manageable over time
+
+### Polish
+- `map.html`: add a `← Fotos` back-link in the header (currently shows site name)
+- `LX` country code in European-Voyage — verify if this is Luxembourg (should be `LU`) or intentional
+- Fill in `README.md` with project notes
