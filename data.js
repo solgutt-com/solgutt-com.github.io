@@ -2,12 +2,161 @@
 
 const collectionsData = [
   {
+    "id": "Cidadelhe",
+    "title": "Cidadelhe",
+    "subtitle": "",
+    "description": "",
+    "cover": "",
+    "order": 1,
+    "type": "parent",
+    "path": "Images/Collections/Cidadelhe",
+    "children": [
+      {
+        "id": "a_natureza",
+        "title": "A Natureza",
+        "subtitle": "",
+        "description": "",
+        "cover": "",
+        "order": 1,
+        "type": "gallery",
+        "path": "Images/Collections/Cidadelhe/sub/a_natureza",
+        "photos": [
+          {
+            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-001.jpg",
+            "caption": "Cidadelhe Natureza 001"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-002 2.jpeg",
+            "caption": "Cidadelhe Natureza 002 2"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-03.jpg",
+            "caption": "Cidadelhe Natureza 03"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-07.jpg",
+            "caption": "Cidadelhe Natureza 07"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-08.jpg",
+            "caption": "Cidadelhe Natureza 08"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-14.jpg",
+            "caption": "Cidadelhe Natureza 14"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-17.jpg",
+            "caption": "Cidadelhe Natureza 17"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-20.jpg",
+            "caption": "Cidadelhe Natureza 20"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-21.jpg",
+            "caption": "Cidadelhe Natureza 21"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-24.jpg",
+            "caption": "Cidadelhe Natureza 24"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-27.jpg",
+            "caption": "Cidadelhe Natureza 27"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-28.JPG",
+            "caption": "Cidadelhe Natureza 28"
+          }
+        ]
+      },
+      {
+        "id": "amigos_do_portugal",
+        "title": "Amigos do Portugal",
+        "subtitle": "",
+        "description": "",
+        "cover": "",
+        "order": 2,
+        "type": "gallery",
+        "path": "Images/Collections/Cidadelhe/sub/amigos_do_portugal",
+        "photos": []
+      },
+      {
+        "id": "as_aldeias_de_beira_alta",
+        "title": "As Aldeias de Beira Alta",
+        "subtitle": "",
+        "description": "",
+        "cover": "",
+        "order": 3,
+        "type": "gallery",
+        "path": "Images/Collections/Cidadelhe/sub/as_aldeias_de_beira_alta",
+        "photos": []
+      },
+      {
+        "id": "as_ruinas_no_meio",
+        "title": "As Ruínas no Meio",
+        "subtitle": "",
+        "description": "",
+        "cover": "",
+        "order": 4,
+        "type": "gallery",
+        "path": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio",
+        "photos": []
+      },
+      {
+        "id": "hotel_longroiva",
+        "title": "Hotel Longroiva",
+        "subtitle": "",
+        "description": "",
+        "cover": "",
+        "order": 5,
+        "type": "gallery",
+        "path": "Images/Collections/Cidadelhe/sub/hotel_longroiva",
+        "photos": []
+      },
+      {
+        "id": "os_cidadaos",
+        "title": "Os Cidadãos",
+        "subtitle": "",
+        "description": "",
+        "cover": "",
+        "order": 6,
+        "type": "gallery",
+        "path": "Images/Collections/Cidadelhe/sub/os_cidadaos",
+        "photos": []
+      },
+      {
+        "id": "projetos_na_quinta",
+        "title": "Projetos na Quinta",
+        "subtitle": "",
+        "description": "",
+        "cover": "",
+        "order": 7,
+        "type": "gallery",
+        "path": "Images/Collections/Cidadelhe/sub/projetos_na_quinta",
+        "photos": []
+      },
+      {
+        "id": "ten_lives_festival",
+        "title": "Ten Lives Festival",
+        "subtitle": "",
+        "description": "",
+        "cover": "",
+        "order": 8,
+        "type": "gallery",
+        "path": "Images/Collections/Cidadelhe/sub/ten_lives_festival",
+        "photos": []
+      }
+    ]
+  },
+  {
     "id": "Analog-BW",
     "title": "Analog B&W",
     "subtitle": "",
     "description": "",
     "cover": "",
-    "order": 1,
+    "order": 2,
     "type": "parent",
     "path": "Images/Collections/Analog-BW",
     "children": [
@@ -23,25 +172,25 @@ const collectionsData = [
         "photos": []
       },
       {
-        "id": "Davide's Camera",
+        "id": "EOS500",
         "title": "Davide's Camera",
         "subtitle": "",
         "description": "",
         "cover": "",
         "order": 2,
         "type": "gallery",
-        "path": "Images/Collections/Analog-BW/sub/Davide's Camera",
+        "path": "Images/Collections/Analog-BW/sub/EOS500",
         "photos": []
       },
       {
-        "id": "Plastic Point n Shoot",
+        "id": "plastic_reusable_disposable",
         "title": "Plastic Point n Shoot",
         "subtitle": "",
         "description": "",
         "cover": "",
         "order": 3,
         "type": "gallery",
-        "path": "Images/Collections/Analog-BW/sub/Plastic Point n Shoot",
+        "path": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable",
         "photos": []
       }
     ]
@@ -49,18 +198,18 @@ const collectionsData = [
   {
     "id": "Around-the-World",
     "title": "Around the World",
-    "subtitle": "",
-    "description": "",
+    "subtitle": "A collection of moments from my life",
+    "description": "Pretend its 1972 and I just got all my film developed.",
     "cover": "",
-    "order": 2,
+    "order": 3,
     "type": "parent",
     "path": "Images/Collections/Around-the-World",
     "children": [
       {
         "id": "European-Voyage",
         "title": "European Voyage",
-        "subtitle": "",
-        "description": "",
+        "subtitle": "A man with an Iphone",
+        "description": "5 Months of backpacking through Europe. All by train, bus, boat, and hitch hiking. After four years of life in the Netherlands, my network of couches to crash on spanned to almost every european coast and country. For each palce where I knew no one, I foind that I couldn't help but make a friend. By the end, I traveled over 18,000 kms. I met many unforgetabble folks. And, I realize day by day that in each place, I only scratched the surface of their treasure.",
         "cover": "",
         "order": 1,
         "type": "parent",
@@ -105,8 +254,8 @@ const collectionsData = [
                 "caption": "Melon Season"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_7.jpeg",
-                "caption": "Scattered"
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_7 Large.jpeg",
+                "caption": "7"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_8.jpeg",
@@ -115,10 +264,6 @@ const collectionsData = [
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_9.jpeg",
                 "caption": "Atop Berat"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_BusItalians.jpeg",
-                "caption": "I heklped them with directions in Itallian"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_Coexist.jpeg",
@@ -659,82 +804,6 @@ const collectionsData = [
             ]
           },
           {
-            "id": "Highlights",
-            "title": "Highlights",
-            "subtitle": "",
-            "description": "",
-            "cover": "",
-            "order": 999,
-            "type": "gallery",
-            "path": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights",
-            "photos": [
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/AL_1.jpeg",
-                "caption": "1"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/CH_Checkmate_improved.jpeg",
-                "caption": "Checkmate improved"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/DE_BerlinPark_BW.jpeg",
-                "caption": "BerlinPark BW"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/FI_LakePeople.jpeg",
-                "caption": "LakePeople"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/IT_GenoaIII.jpeg",
-                "caption": "GenoaIII"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/IT_MilanoTrain.jpeg",
-                "caption": "MilanoTrain"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/IT_Pugliano.jpeg",
-                "caption": "Pugliano"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/IT_Tower.jpeg",
-                "caption": "Tower"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/LT_RadioSat.jpeg",
-                "caption": "RadioSat"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/ME_FlagDay.jpeg",
-                "caption": "FlagDay"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/ME_KotorII.jpg",
-                "caption": "KotorII"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/NL_Monstera_x3.jpeg",
-                "caption": "Monstera x3"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/PT_Rye.jpeg",
-                "caption": "Rye"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/PT_WeatherVein.jpeg",
-                "caption": "WeatherVein"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/SE_StockholmApart.jpeg",
-                "caption": "StockholmApart"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/SI_BledView.jpeg",
-                "caption": "BledView"
-              }
-            ]
-          },
-          {
             "id": "IT",
             "title": "Italy",
             "subtitle": "",
@@ -1116,7 +1185,7 @@ const collectionsData = [
             "path": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT",
             "photos": [
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Abandoned1.jpeg",
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Abandoned1 Large.jpeg",
                 "caption": "Abandoned1"
               },
               {
@@ -1126,10 +1195,6 @@ const collectionsData = [
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_BeeKeep.jpeg",
                 "caption": "BeeKeep"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_CantinhadasEstrellas.jpeg",
-                "caption": "CantinhadasEstrellas"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Clover.jpeg",
@@ -1144,27 +1209,19 @@ const collectionsData = [
                 "caption": "CrewSunset"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_DuskHouse.jpeg",
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_DuskHouse Large.jpeg",
                 "caption": "DuskHouse"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Eucalyptusnew.jpeg",
-                "caption": "Eucalyptusnew"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_EveningRocknew.jpeg",
-                "caption": "EveningRocknew"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Field.jpeg",
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Field Large.jpeg",
                 "caption": "Field"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_GiantCastanha.jpeg",
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_GiantCastanha Large.jpeg",
                 "caption": "GiantCastanha"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_GoldenFields.jpeg",
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_GoldenFields Large.jpeg",
                 "caption": "GoldenFields"
               },
               {
@@ -1172,19 +1229,11 @@ const collectionsData = [
                 "caption": "Goldenwheat"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_HardWork.jpeg",
-                "caption": "HardWork"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_HarddaysWork.jpeg",
-                "caption": "HarddaysWork"
-              },
-              {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_HarvestI.jpeg",
                 "caption": "HarvestI"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_HarvestII.jpeg",
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_HarvestII Large.jpeg",
                 "caption": "HarvestII"
               },
               {
@@ -1192,11 +1241,11 @@ const collectionsData = [
                 "caption": "HarvestIII"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_HayBug.jpeg",
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_HayBug Large.jpeg",
                 "caption": "HayBug"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_HayCollectionnew.jpeg",
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_HayCollectionnew Large.jpeg",
                 "caption": "HayCollectionnew"
               },
               {
@@ -1208,19 +1257,15 @@ const collectionsData = [
                 "caption": "HazySunsetII"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Horizon.jpeg",
-                "caption": "Horizon"
-              },
-              {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_IntheMist.jpeg",
                 "caption": "IntheMist"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_JunkBarrel.jpeg",
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_JunkBarrel Large.jpeg",
                 "caption": "JunkBarrel"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Laundry.jpeg",
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Laundry Large.jpeg",
                 "caption": "Laundry"
               },
               {
@@ -1228,51 +1273,27 @@ const collectionsData = [
                 "caption": "Library"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Locals.jpeg",
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Locals Large.jpeg",
                 "caption": "Locals"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_MalHombres.jpeg",
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_MalHombres Large.jpeg",
                 "caption": "MalHombres"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Moorish.jpeg",
-                "caption": "Moorish"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_MoorishII.jpeg",
-                "caption": "MoorishII"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_MorningFog.jpeg",
-                "caption": "MorningFog"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_MossCamonew.jpeg",
-                "caption": "MossCamonew"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_MossTree.jpeg",
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_MossTree Large.jpeg",
                 "caption": "MossTree"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_OutdoorCouch.jpeg",
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_OutdoorCouch Large.jpeg",
                 "caption": "OutdoorCouch"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Poetry.jpeg",
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Poetry Large.jpeg",
                 "caption": "Poetry"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Pom7up.jpeg",
-                "caption": "Pom7up"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_PomoboCasaI.jpeg",
-                "caption": "PomoboCasaI"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Porto.jpeg",
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Porto Large.jpeg",
                 "caption": "Porto"
               },
               {
@@ -1284,32 +1305,16 @@ const collectionsData = [
                 "caption": "Rainbow2new"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_RiverValley.jpeg",
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_RiverValley Large.jpeg",
                 "caption": "RiverValley"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_RockView.jpeg",
-                "caption": "RockView"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_RockViewII.jpeg",
-                "caption": "RockViewII"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Rye.jpeg",
                 "caption": "Rye"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_SHeep_2.jpeg",
-                "caption": "SHeep 2"
-              },
-              {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Sheep.jpeg",
                 "caption": "Sheep"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Snake.jpeg",
-                "caption": "Snake"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Standoffnew.jpeg",
@@ -1320,15 +1325,7 @@ const collectionsData = [
                 "caption": "SunsetRoad"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_SunsetTrees.jpeg",
-                "caption": "SunsetTrees"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_TallTagasaste.jpeg",
-                "caption": "TallTagasaste"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Traffic.jpeg",
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Traffic Large.jpeg",
                 "caption": "Traffic"
               },
               {
@@ -1336,24 +1333,12 @@ const collectionsData = [
                 "caption": "TreeMoonNew"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_VistadeCasteloRodrigo.jpeg",
-                "caption": "VistadeCasteloRodrigo"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_WallSnailI.jpeg",
-                "caption": "WallSnailI"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_WallsnailII.jpeg",
-                "caption": "WallsnailII"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_WeatherVein2new.jpeg",
-                "caption": "WeatherVein2new"
-              },
-              {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_fivestar.jpeg",
                 "caption": "fivestar"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_tagaste Large.jpeg",
+                "caption": "tagaste"
               }
             ]
           },
@@ -1583,155 +1568,6 @@ const collectionsData = [
     ]
   },
   {
-    "id": "Cidadelhe",
-    "title": "Cidadelhe",
-    "subtitle": "",
-    "description": "",
-    "cover": "",
-    "order": 3,
-    "type": "parent",
-    "path": "Images/Collections/Cidadelhe",
-    "children": [
-      {
-        "id": "a_natureza",
-        "title": "A Natureza",
-        "subtitle": "",
-        "description": "",
-        "cover": "",
-        "order": 1,
-        "type": "gallery",
-        "path": "Images/Collections/Cidadelhe/sub/a_natureza",
-        "photos": [
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-001.jpg",
-            "caption": "Cidadelhe Natureza 001"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-002 2.jpeg",
-            "caption": "Cidadelhe Natureza 002 2"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-03.jpg",
-            "caption": "Cidadelhe Natureza 03"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-07.jpg",
-            "caption": "Cidadelhe Natureza 07"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-08.jpg",
-            "caption": "Cidadelhe Natureza 08"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-14.jpg",
-            "caption": "Cidadelhe Natureza 14"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-17.jpg",
-            "caption": "Cidadelhe Natureza 17"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-20.jpg",
-            "caption": "Cidadelhe Natureza 20"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-21.jpg",
-            "caption": "Cidadelhe Natureza 21"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-24.jpg",
-            "caption": "Cidadelhe Natureza 24"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-27.jpg",
-            "caption": "Cidadelhe Natureza 27"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-28.JPG",
-            "caption": "Cidadelhe Natureza 28"
-          }
-        ]
-      },
-      {
-        "id": "amigos_do_portugal",
-        "title": "Amigos do Portugal",
-        "subtitle": "",
-        "description": "",
-        "cover": "",
-        "order": 2,
-        "type": "gallery",
-        "path": "Images/Collections/Cidadelhe/sub/amigos_do_portugal",
-        "photos": []
-      },
-      {
-        "id": "as_aldeias_de_beira_alta",
-        "title": "As Aldeias de Beira Alta",
-        "subtitle": "",
-        "description": "",
-        "cover": "",
-        "order": 3,
-        "type": "gallery",
-        "path": "Images/Collections/Cidadelhe/sub/as_aldeias_de_beira_alta",
-        "photos": []
-      },
-      {
-        "id": "as_ruinas_no_meio",
-        "title": "As Ruínas no Meio",
-        "subtitle": "",
-        "description": "",
-        "cover": "",
-        "order": 4,
-        "type": "gallery",
-        "path": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio",
-        "photos": []
-      },
-      {
-        "id": "hotel_longroiva",
-        "title": "Hotel Longroiva",
-        "subtitle": "",
-        "description": "",
-        "cover": "",
-        "order": 5,
-        "type": "gallery",
-        "path": "Images/Collections/Cidadelhe/sub/hotel_longroiva",
-        "photos": []
-      },
-      {
-        "id": "os_cidadaos",
-        "title": "Os Cidadãos",
-        "subtitle": "",
-        "description": "",
-        "cover": "",
-        "order": 6,
-        "type": "gallery",
-        "path": "Images/Collections/Cidadelhe/sub/os_cidadaos",
-        "photos": []
-      },
-      {
-        "id": "projetos_na_quinta",
-        "title": "Projetos na Quinta",
-        "subtitle": "",
-        "description": "",
-        "cover": "",
-        "order": 7,
-        "type": "gallery",
-        "path": "Images/Collections/Cidadelhe/sub/projetos_na_quinta",
-        "photos": []
-      },
-      {
-        "id": "ten_lives_festival",
-        "title": "Ten Lives Festival",
-        "subtitle": "",
-        "description": "",
-        "cover": "",
-        "order": 8,
-        "type": "gallery",
-        "path": "Images/Collections/Cidadelhe/sub/ten_lives_festival",
-        "photos": []
-      }
-    ]
-  },
-  {
     "id": "Coming-Soon",
     "title": "Coming Soon",
     "subtitle": "",
@@ -1745,15 +1581,96 @@ const collectionsData = [
 
 // Flat gallery lookup for gallery.html, keyed by folder name / country code
 const siteData = {
+  "a_natureza": {
+    "name": "A Natureza",
+    "photos": [
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-001.jpg",
+        "caption": "Cidadelhe Natureza 001"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-002 2.jpeg",
+        "caption": "Cidadelhe Natureza 002 2"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-03.jpg",
+        "caption": "Cidadelhe Natureza 03"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-07.jpg",
+        "caption": "Cidadelhe Natureza 07"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-08.jpg",
+        "caption": "Cidadelhe Natureza 08"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-14.jpg",
+        "caption": "Cidadelhe Natureza 14"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-17.jpg",
+        "caption": "Cidadelhe Natureza 17"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-20.jpg",
+        "caption": "Cidadelhe Natureza 20"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-21.jpg",
+        "caption": "Cidadelhe Natureza 21"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-24.jpg",
+        "caption": "Cidadelhe Natureza 24"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-27.jpg",
+        "caption": "Cidadelhe Natureza 27"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-28.JPG",
+        "caption": "Cidadelhe Natureza 28"
+      }
+    ]
+  },
+  "amigos_do_portugal": {
+    "name": "Amigos do Portugal",
+    "photos": []
+  },
+  "as_aldeias_de_beira_alta": {
+    "name": "As Aldeias de Beira Alta",
+    "photos": []
+  },
+  "as_ruinas_no_meio": {
+    "name": "As Ruínas no Meio",
+    "photos": []
+  },
+  "hotel_longroiva": {
+    "name": "Hotel Longroiva",
+    "photos": []
+  },
+  "os_cidadaos": {
+    "name": "Os Cidadãos",
+    "photos": []
+  },
+  "projetos_na_quinta": {
+    "name": "Projetos na Quinta",
+    "photos": []
+  },
+  "ten_lives_festival": {
+    "name": "Ten Lives Festival",
+    "photos": []
+  },
   "Olympus": {
     "name": "Olympus",
     "photos": []
   },
-  "Davide's Camera": {
+  "EOS500": {
     "name": "Davide's Camera",
     "photos": []
   },
-  "Plastic Point n Shoot": {
+  "plastic_reusable_disposable": {
     "name": "Plastic Point n Shoot",
     "photos": []
   },
@@ -1789,8 +1706,8 @@ const siteData = {
         "caption": "Melon Season"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_7.jpeg",
-        "caption": "Scattered"
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_7 Large.jpeg",
+        "caption": "7"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_8.jpeg",
@@ -1799,10 +1716,6 @@ const siteData = {
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_9.jpeg",
         "caption": "Atop Berat"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_BusItalians.jpeg",
-        "caption": "I heklped them with directions in Itallian"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_Coexist.jpeg",
@@ -2265,75 +2178,6 @@ const siteData = {
       }
     ]
   },
-  "Highlights": {
-    "name": "Highlights",
-    "photos": [
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/AL_1.jpeg",
-        "caption": "1"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/CH_Checkmate_improved.jpeg",
-        "caption": "Checkmate improved"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/DE_BerlinPark_BW.jpeg",
-        "caption": "BerlinPark BW"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/FI_LakePeople.jpeg",
-        "caption": "LakePeople"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/IT_GenoaIII.jpeg",
-        "caption": "GenoaIII"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/IT_MilanoTrain.jpeg",
-        "caption": "MilanoTrain"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/IT_Pugliano.jpeg",
-        "caption": "Pugliano"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/IT_Tower.jpeg",
-        "caption": "Tower"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/LT_RadioSat.jpeg",
-        "caption": "RadioSat"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/ME_FlagDay.jpeg",
-        "caption": "FlagDay"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/ME_KotorII.jpg",
-        "caption": "KotorII"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/NL_Monstera_x3.jpeg",
-        "caption": "Monstera x3"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/PT_Rye.jpeg",
-        "caption": "Rye"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/PT_WeatherVein.jpeg",
-        "caption": "WeatherVein"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/SE_StockholmApart.jpeg",
-        "caption": "StockholmApart"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/Highlights/SI_BledView.jpeg",
-        "caption": "BledView"
-      }
-    ]
-  },
   "IT": {
     "name": "Italy",
     "photos": [
@@ -2660,7 +2504,7 @@ const siteData = {
     "name": "Portugal",
     "photos": [
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Abandoned1.jpeg",
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Abandoned1 Large.jpeg",
         "caption": "Abandoned1"
       },
       {
@@ -2670,10 +2514,6 @@ const siteData = {
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_BeeKeep.jpeg",
         "caption": "BeeKeep"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_CantinhadasEstrellas.jpeg",
-        "caption": "CantinhadasEstrellas"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Clover.jpeg",
@@ -2688,27 +2528,19 @@ const siteData = {
         "caption": "CrewSunset"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_DuskHouse.jpeg",
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_DuskHouse Large.jpeg",
         "caption": "DuskHouse"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Eucalyptusnew.jpeg",
-        "caption": "Eucalyptusnew"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_EveningRocknew.jpeg",
-        "caption": "EveningRocknew"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Field.jpeg",
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Field Large.jpeg",
         "caption": "Field"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_GiantCastanha.jpeg",
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_GiantCastanha Large.jpeg",
         "caption": "GiantCastanha"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_GoldenFields.jpeg",
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_GoldenFields Large.jpeg",
         "caption": "GoldenFields"
       },
       {
@@ -2716,19 +2548,11 @@ const siteData = {
         "caption": "Goldenwheat"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_HardWork.jpeg",
-        "caption": "HardWork"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_HarddaysWork.jpeg",
-        "caption": "HarddaysWork"
-      },
-      {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_HarvestI.jpeg",
         "caption": "HarvestI"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_HarvestII.jpeg",
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_HarvestII Large.jpeg",
         "caption": "HarvestII"
       },
       {
@@ -2736,11 +2560,11 @@ const siteData = {
         "caption": "HarvestIII"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_HayBug.jpeg",
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_HayBug Large.jpeg",
         "caption": "HayBug"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_HayCollectionnew.jpeg",
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_HayCollectionnew Large.jpeg",
         "caption": "HayCollectionnew"
       },
       {
@@ -2752,19 +2576,15 @@ const siteData = {
         "caption": "HazySunsetII"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Horizon.jpeg",
-        "caption": "Horizon"
-      },
-      {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_IntheMist.jpeg",
         "caption": "IntheMist"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_JunkBarrel.jpeg",
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_JunkBarrel Large.jpeg",
         "caption": "JunkBarrel"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Laundry.jpeg",
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Laundry Large.jpeg",
         "caption": "Laundry"
       },
       {
@@ -2772,51 +2592,27 @@ const siteData = {
         "caption": "Library"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Locals.jpeg",
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Locals Large.jpeg",
         "caption": "Locals"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_MalHombres.jpeg",
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_MalHombres Large.jpeg",
         "caption": "MalHombres"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Moorish.jpeg",
-        "caption": "Moorish"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_MoorishII.jpeg",
-        "caption": "MoorishII"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_MorningFog.jpeg",
-        "caption": "MorningFog"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_MossCamonew.jpeg",
-        "caption": "MossCamonew"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_MossTree.jpeg",
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_MossTree Large.jpeg",
         "caption": "MossTree"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_OutdoorCouch.jpeg",
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_OutdoorCouch Large.jpeg",
         "caption": "OutdoorCouch"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Poetry.jpeg",
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Poetry Large.jpeg",
         "caption": "Poetry"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Pom7up.jpeg",
-        "caption": "Pom7up"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_PomoboCasaI.jpeg",
-        "caption": "PomoboCasaI"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Porto.jpeg",
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Porto Large.jpeg",
         "caption": "Porto"
       },
       {
@@ -2828,32 +2624,16 @@ const siteData = {
         "caption": "Rainbow2new"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_RiverValley.jpeg",
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_RiverValley Large.jpeg",
         "caption": "RiverValley"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_RockView.jpeg",
-        "caption": "RockView"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_RockViewII.jpeg",
-        "caption": "RockViewII"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Rye.jpeg",
         "caption": "Rye"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_SHeep_2.jpeg",
-        "caption": "SHeep 2"
-      },
-      {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Sheep.jpeg",
         "caption": "Sheep"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Snake.jpeg",
-        "caption": "Snake"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Standoffnew.jpeg",
@@ -2864,15 +2644,7 @@ const siteData = {
         "caption": "SunsetRoad"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_SunsetTrees.jpeg",
-        "caption": "SunsetTrees"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_TallTagasaste.jpeg",
-        "caption": "TallTagasaste"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Traffic.jpeg",
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Traffic Large.jpeg",
         "caption": "Traffic"
       },
       {
@@ -2880,24 +2652,12 @@ const siteData = {
         "caption": "TreeMoonNew"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_VistadeCasteloRodrigo.jpeg",
-        "caption": "VistadeCasteloRodrigo"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_WallSnailI.jpeg",
-        "caption": "WallSnailI"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_WallsnailII.jpeg",
-        "caption": "WallsnailII"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_WeatherVein2new.jpeg",
-        "caption": "WeatherVein2new"
-      },
-      {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_fivestar.jpeg",
         "caption": "fivestar"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_tagaste Large.jpeg",
+        "caption": "tagaste"
       }
     ]
   },
@@ -3071,87 +2831,6 @@ const siteData = {
   },
   "Searching-for-King-Solomons-Mines": {
     "name": "Searching for King Solomon's Mines",
-    "photos": []
-  },
-  "a_natureza": {
-    "name": "A Natureza",
-    "photos": [
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-001.jpg",
-        "caption": "Cidadelhe Natureza 001"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-002 2.jpeg",
-        "caption": "Cidadelhe Natureza 002 2"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-03.jpg",
-        "caption": "Cidadelhe Natureza 03"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-07.jpg",
-        "caption": "Cidadelhe Natureza 07"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-08.jpg",
-        "caption": "Cidadelhe Natureza 08"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-14.jpg",
-        "caption": "Cidadelhe Natureza 14"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-17.jpg",
-        "caption": "Cidadelhe Natureza 17"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-20.jpg",
-        "caption": "Cidadelhe Natureza 20"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-21.jpg",
-        "caption": "Cidadelhe Natureza 21"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-24.jpg",
-        "caption": "Cidadelhe Natureza 24"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-27.jpg",
-        "caption": "Cidadelhe Natureza 27"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-28.JPG",
-        "caption": "Cidadelhe Natureza 28"
-      }
-    ]
-  },
-  "amigos_do_portugal": {
-    "name": "Amigos do Portugal",
-    "photos": []
-  },
-  "as_aldeias_de_beira_alta": {
-    "name": "As Aldeias de Beira Alta",
-    "photos": []
-  },
-  "as_ruinas_no_meio": {
-    "name": "As Ruínas no Meio",
-    "photos": []
-  },
-  "hotel_longroiva": {
-    "name": "Hotel Longroiva",
-    "photos": []
-  },
-  "os_cidadaos": {
-    "name": "Os Cidadãos",
-    "photos": []
-  },
-  "projetos_na_quinta": {
-    "name": "Projetos na Quinta",
-    "photos": []
-  },
-  "ten_lives_festival": {
-    "name": "Ten Lives Festival",
     "photos": []
   }
 };
