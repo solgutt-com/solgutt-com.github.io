@@ -19,6 +19,8 @@
       </nav>
     </header>
 
+    <p id="collection-description" class="collection-description-header"></p>
+
     <div class="slideshow">
       <button class="arrow left" onclick="changePhoto(-1)">&#8249;</button>
       <div class="slide-container">
@@ -40,6 +42,9 @@
 
       document.title = country.name + ' — Solomon Guttmann';
       document.getElementById('country-title').textContent = country.name;
+      if (country.description) {
+        document.getElementById('collection-description').textContent = country.description;
+      }
 
       const photos = country.photos.map(p => ({
         src: `../${p.src}`,

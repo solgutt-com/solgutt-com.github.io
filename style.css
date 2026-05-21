@@ -135,6 +135,19 @@ main p {
 .arrow.left  { left: 20px; }
 .arrow.right { right: 20px; }
 
+.collection-description-header {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 300;
+  letter-spacing: 0.08em;
+  color: #f0f0f0;
+  opacity: 0.4;
+  max-width: 560px;
+  margin: 0 auto 16px;
+  line-height: 1.7;
+  min-height: 1em;
+}
+
 /* ─── Photo slideshow ─── */
 .slide-container {
   position: relative;

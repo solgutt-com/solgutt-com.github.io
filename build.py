@@ -158,8 +158,9 @@ def collect_galleries(node, index):
     """Walk the nested tree and populate a flat id→gallery dict."""
     if node["type"] == "gallery":
         index[node["id"]] = {
-            "name":   node["title"],
-            "photos": node.get("photos", []),
+            "name":        node["title"],
+            "description": node.get("description", ""),
+            "photos":      node.get("photos", []),
         }
     for child in node.get("children", []):
         collect_galleries(child, index)

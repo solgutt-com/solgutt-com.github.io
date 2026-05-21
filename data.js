@@ -22,10 +22,6 @@ const collectionsData = [
         "path": "Images/Collections/Cidadelhe/sub/a_natureza",
         "photos": [
           {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - As Ruinas-31.jpg",
-            "caption": "As Ruinas 31"
-          },
-          {
             "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-001.jpg",
             "caption": "Cidadelhe Natureza 001"
           },
@@ -466,7 +462,7 @@ const collectionsData = [
     "id": "Around-the-World",
     "title": "Around the World",
     "subtitle": "In more than 80 days",
-    "description": "Carefully selected vacation photos for your viewing pleasure.",
+    "description": "Carefully selected travel photos for your viewing pleasure.",
     "cover": "",
     "order": 3,
     "type": "parent",
@@ -1568,11 +1564,8 @@ const collectionsData = [
 const siteData = {
   "a_natureza": {
     "name": "A Natureza",
+    "description": "A collection of encounters with natural beauty in and around Cidadelhe.",
     "photos": [
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - As Ruinas-31.jpg",
-        "caption": "As Ruinas 31"
-      },
       {
         "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-001.jpg",
         "caption": "Cidadelhe Natureza 001"
@@ -1625,14 +1618,17 @@ const siteData = {
   },
   "amigos_do_portugal": {
     "name": "Amigos do Portugal",
+    "description": "Some serious characters.",
     "photos": []
   },
   "as_aldeias_de_beira_alta": {
     "name": "As Aldeias de Beira Alta",
+    "description": "Every village in Beira Alta has its own mysteries, weathered church towers, sun-baked villagers, and little cafes.",
     "photos": []
   },
   "as_ruinas_no_meio": {
     "name": "As Ruínas no Meio",
+    "description": "A collection of the stone ruins that are scattered through the country side.",
     "photos": [
       {
         "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-000002.jpg",
@@ -1746,26 +1742,32 @@ const siteData = {
   },
   "hotel_longroiva": {
     "name": "Hotel Longroiva",
+    "description": "Photos made for the Hotel Longroiva, a hidden gem near the Massueme Valley. Come visit and see if you notice any familiar photos hanging on the walls.",
     "photos": []
   },
   "os_cidadaos": {
     "name": "Os Cidadãos",
+    "description": "A collection of portraits of the people of Cidadelhe, old and new.",
     "photos": []
   },
   "projetos_na_quinta": {
     "name": "Projetos na Quinta",
+    "description": "Snapshots of projects developed with the Scave team in Cidadelhe",
     "photos": []
   },
   "ten_lives_festival": {
     "name": "Ten Lives Festival",
+    "description": "The pilot project of a committed and crazy group of people.",
     "photos": []
   },
   "Olympus": {
     "name": "Olympus",
+    "description": "A camera I found in my house.",
     "photos": []
   },
   "EOS500": {
     "name": "EOS 500",
+    "description": "First analog expeirence. Sponsored by Davide Orbitello and his kindness.",
     "photos": [
       {
         "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_1.jpeg",
@@ -1835,6 +1837,7 @@ const siteData = {
   },
   "plastic_reusable_disposable": {
     "name": "Plastic Point n Shoot",
+    "description": "Photos that mostly came out pretty alright.",
     "photos": [
       {
         "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_BerlinMuseumIsle_BW.jpeg",
@@ -1928,6 +1931,7 @@ const siteData = {
   },
   "AL": {
     "name": "Albania",
+    "description": "",
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_1.jpeg",
@@ -1989,6 +1993,7 @@ const siteData = {
   },
   "AT": {
     "name": "Austria",
+    "description": "",
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AT/AT_AlleyWay.jpeg",
@@ -2006,6 +2011,7 @@ const siteData = {
   },
   "BA": {
     "name": "Bosnia & Herzegovina",
+    "description": "",
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_1OldWoman.jpeg",
@@ -2067,6 +2073,7 @@ const siteData = {
   },
   "BE": {
     "name": "Belgium",
+    "description": "",
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BE/BE_Bike.jpeg",
@@ -2080,6 +2087,7 @@ const siteData = {
   },
   "CH": {
     "name": "Switzerland",
+    "description": "",
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/CH/CH_Checkmate_improved.jpeg",
@@ -2089,6 +2097,7 @@ const siteData = {
   },
   "DE": {
     "name": "Germany",
+    "description": "",
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/DE/DE_BikePee.JPG",
@@ -2110,6 +2119,7 @@ const siteData = {
   },
   "EE": {
     "name": "Estonia",
+    "description": "",
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/EE/EE_Forest.jpg",
@@ -2135,6 +2145,7 @@ const siteData = {
   },
   "ES": {
     "name": "Spain",
+    "description": "",
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_AWeatherVein.jpeg",
@@ -2188,6 +2199,7 @@ const siteData = {
   },
   "FI": {
     "name": "Finland",
+    "description": "",
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/FI/FI_LakePeople.jpeg",
@@ -2213,6 +2225,7 @@ const siteData = {
   },
   "FR": {
     "name": "France",
+    "description": "",
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/FR/FR_BayonneBook.jpeg",
@@ -2238,6 +2251,7 @@ const siteData = {
   },
   "HR": {
     "name": "Croatia",
+    "description": "",
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/HR/HR_BreadLine.jpeg",
@@ -2259,6 +2273,7 @@ const siteData = {
   },
   "IT": {
     "name": "Italy",
+    "description": "",
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_ABuongiorno.jpeg",
@@ -2344,10 +2359,12 @@ const siteData = {
   },
   "LT": {
     "name": "Lithuania",
+    "description": "",
     "photos": []
   },
   "LV": {
     "name": "Latvia",
+    "description": "",
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_ABusinessCall.jpeg",
@@ -2381,6 +2398,7 @@ const siteData = {
   },
   "LX": {
     "name": "Luxembourg",
+    "description": "",
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LX/LX_Yash_Liz.jpeg",
@@ -2394,6 +2412,7 @@ const siteData = {
   },
   "ME": {
     "name": "Montenegro",
+    "description": "",
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ME/ME_DogPose.jpeg",
@@ -2431,6 +2450,7 @@ const siteData = {
   },
   "NL": {
     "name": "Netherlands",
+    "description": "",
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_ADom.jpeg",
@@ -2520,6 +2540,7 @@ const siteData = {
   },
   "PL": {
     "name": "Poland",
+    "description": "",
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PL/PL_DayDream.jpeg",
@@ -2545,6 +2566,7 @@ const siteData = {
   },
   "PT": {
     "name": "Portugal",
+    "description": "",
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Abandoned1 Large.jpeg",
@@ -2698,6 +2720,7 @@ const siteData = {
   },
   "SE": {
     "name": "Sweden",
+    "description": "",
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/SE/SE_1RedHouse.jpeg",
@@ -2779,6 +2802,7 @@ const siteData = {
   },
   "SI": {
     "name": "Slovenia",
+    "description": "",
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/SI/SI_AlmostinItaly.jpeg",
@@ -2800,6 +2824,7 @@ const siteData = {
   },
   "TheJungle": {
     "name": "The Jungle",
+    "description": "",
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle/NL_Monstera.jpeg",
@@ -2829,6 +2854,7 @@ const siteData = {
   },
   "Searching-for-King-Solomons-Mines": {
     "name": "Searching for King Solomon's Mines",
+    "description": "A privilege to see this all up close. All thanks to Dan Guttmann",
     "photos": []
   }
 };
