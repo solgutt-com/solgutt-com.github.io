@@ -24,8 +24,6 @@
 <div class="collections-nav">
   <a href="countries/gallery.html?code=Highlights">Highlights</a>
   <span class="divider">|</span>
-  <a href="countries/gallery.html?code=BW">Black & White</a>
-  <span class="divider">|</span>
   <a href="countries/gallery.html?code=TheJungle">The Jungle</a>
   <span class="divider">|</span>
   <a href="countries/gallery.html?code=XX">Somewhere</a>
@@ -62,7 +60,6 @@
           <a href="countries/gallery.html?code=ZA">South Africa</a>
           <a href="countries/gallery.html?code=ZW">Zimbabwe</a>
           <div class="region-menu-section">Collections</div>
-          <a href="countries/gallery.html?code=BW">Black & White</a>
           <a href="countries/gallery.html?code=TheJungle">The Jungle</a>
           <a href="countries/gallery.html?code=XX">Somewhere</a>
         </div>
@@ -231,50 +228,6 @@ document.getElementById('map-quote-author').textContent = '\u2014 ' + q.author;
           .on('mouseleave', hideTooltip)
           .on('click', function() { navigate('XX'); });
 
-// Atlantic - BW Photos          
-const atlanticPos = proj([-30, 20]);
-const bwPin = sg.append('g')
-  .attr('class', 'map-region')
-  .attr('transform', 'translate(' + atlanticPos[0] + ',' + atlanticPos[1] + ')')
-  .on('mouseenter', function() { showTooltip('Black & White'); })
-  .on('mouseleave', hideTooltip)
-  .on('click', function() { navigate('BW'); });
-
-bwPin.append('circle')
-  .attr('r', 7)
-  .attr('fill', 'none')
-  .attr('stroke', '#6a6a62')
-  .attr('stroke-width', 1);
-
-bwPin.append('circle')
-  .attr('r', 4)
-  .attr('fill', 'none')
-  .attr('stroke', '#6a6a62')
-  .attr('stroke-width', 1);
-
-bwPin.append('line')
-  .attr('x1', -7).attr('y1', 0)
-  .attr('x2', -4).attr('y2', 0)
-  .attr('stroke', '#6a6a62')
-  .attr('stroke-width', 1);
-
-bwPin.append('line')
-  .attr('x1', 4).attr('y1', 0)
-  .attr('x2', 7).attr('y2', 0)
-  .attr('stroke', '#6a6a62')
-  .attr('stroke-width', 1);
-
-bwPin.append('line')
-  .attr('x1', 0).attr('y1', -7)
-  .attr('x2', 0).attr('y2', -4)
-  .attr('stroke', '#6a6a62')
-  .attr('stroke-width', 1);
-
-bwPin.append('line')
-  .attr('x1', 0).attr('y1', 4)
-  .attr('x2', 0).attr('y2', 7)
-  .attr('stroke', '#6a6a62')
-  .attr('stroke-width', 1);
 
 // Pacific Pin - Highlights
 const pacificPos = proj([-150, 10]);

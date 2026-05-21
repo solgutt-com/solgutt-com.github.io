@@ -4,8 +4,8 @@ const collectionsData = [
   {
     "id": "Cidadelhe",
     "title": "Cidadelhe",
-    "subtitle": "",
-    "description": "",
+    "subtitle": "Uma piquenina aldea.",
+    "description": "Many moments from the 5 months I spent in Cidadelhe.",
     "cover": "",
     "order": 1,
     "type": "parent",
@@ -14,13 +14,17 @@ const collectionsData = [
       {
         "id": "a_natureza",
         "title": "A Natureza",
-        "subtitle": "",
-        "description": "",
+        "subtitle": "The haystack deserves as much attention as the needle.",
+        "description": "A collection of encounters with natural beauty in and around Cidadelhe.",
         "cover": "",
         "order": 1,
         "type": "gallery",
         "path": "Images/Collections/Cidadelhe/sub/a_natureza",
         "photos": [
+          {
+            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - As Ruinas-31.jpg",
+            "caption": "As Ruinas 31"
+          },
           {
             "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-001.jpg",
             "caption": "Cidadelhe Natureza 001"
@@ -74,8 +78,8 @@ const collectionsData = [
       {
         "id": "amigos_do_portugal",
         "title": "Amigos do Portugal",
-        "subtitle": "",
-        "description": "",
+        "subtitle": "Stangers that became friends.",
+        "description": "Some serious characters.",
         "cover": "",
         "order": 2,
         "type": "gallery",
@@ -85,8 +89,8 @@ const collectionsData = [
       {
         "id": "as_aldeias_de_beira_alta",
         "title": "As Aldeias de Beira Alta",
-        "subtitle": "",
-        "description": "",
+        "subtitle": "Villages of the region.",
+        "description": "Every village in Beira Alta has its own mysteries, weathered church towers, sun-baked villagers, and little cafes.",
         "cover": "",
         "order": 3,
         "type": "gallery",
@@ -96,19 +100,128 @@ const collectionsData = [
       {
         "id": "as_ruinas_no_meio",
         "title": "As Ruínas no Meio",
-        "subtitle": "",
-        "description": "",
+        "subtitle": "Ruins in between the villages.",
+        "description": "A collection of the stone ruins that are scattered through the country side.",
         "cover": "",
         "order": 4,
         "type": "gallery",
         "path": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio",
-        "photos": []
+        "photos": [
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-000002.jpg",
+            "caption": "As Ruinas 000002"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-00002.jpg",
+            "caption": "As Ruinas 00002"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-0002.JPG",
+            "caption": "As Ruinas 0002"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-0003.JPG",
+            "caption": "As Ruinas 0003"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-001.JPG",
+            "caption": "As Ruinas 001"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-002.jpg",
+            "caption": "As Ruinas 002"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-003.jpg",
+            "caption": "As Ruinas 003"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-04.jpg",
+            "caption": "As Ruinas 04"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-05.jpg",
+            "caption": "As Ruinas 05"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-06.jpg",
+            "caption": "As Ruinas 06"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-07.jpg",
+            "caption": "As Ruinas 07"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-08.jpg",
+            "caption": "As Ruinas 08"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-09.jpg",
+            "caption": "As Ruinas 09"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-11.jpg",
+            "caption": "As Ruinas 11"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-13.jpg",
+            "caption": "As Ruinas 13"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-14.jpg",
+            "caption": "As Ruinas 14"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-15.jpg",
+            "caption": "As Ruinas 15"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-16.jpg",
+            "caption": "As Ruinas 16"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-17.jpg",
+            "caption": "As Ruinas 17"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-19.jpg",
+            "caption": "As Ruinas 19"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-27.jpg",
+            "caption": "As Ruinas 27"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-28.jpg",
+            "caption": "As Ruinas 28"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-29.jpg",
+            "caption": "As Ruinas 29"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-30.jpg",
+            "caption": "As Ruinas 30"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-ab.jpg",
+            "caption": "As Ruinas ab"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-ba.jpg",
+            "caption": "As Ruinas ba"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-z10.jpg",
+            "caption": "As Ruinas z10"
+          }
+        ]
       },
       {
         "id": "hotel_longroiva",
         "title": "Hotel Longroiva",
-        "subtitle": "",
-        "description": "",
+        "subtitle": "A Luxurious rural getaway https://www.hoteldelongroiva.com/en/",
+        "description": "Photos made for the Hotel Longroiva, a hidden gem near the Massueme Valley. Come visit and see if you notice any familiar photos hanging on the walls.",
         "cover": "",
         "order": 5,
         "type": "gallery",
@@ -118,8 +231,8 @@ const collectionsData = [
       {
         "id": "os_cidadaos",
         "title": "Os Cidadãos",
-        "subtitle": "",
-        "description": "",
+        "subtitle": "The citizens of Cidadelhe",
+        "description": "A collection of portraits of the people of Cidadelhe, old and new.",
         "cover": "",
         "order": 6,
         "type": "gallery",
@@ -129,8 +242,8 @@ const collectionsData = [
       {
         "id": "projetos_na_quinta",
         "title": "Projetos na Quinta",
-        "subtitle": "",
-        "description": "",
+        "subtitle": "Projects on the farm",
+        "description": "Snapshots of projects developed with the Scave team in Cidadelhe",
         "cover": "",
         "order": 7,
         "type": "gallery",
@@ -140,8 +253,8 @@ const collectionsData = [
       {
         "id": "ten_lives_festival",
         "title": "Ten Lives Festival",
-        "subtitle": "",
-        "description": "",
+        "subtitle": "A Regenerative Movement",
+        "description": "The pilot project of a committed and crazy group of people.",
         "cover": "",
         "order": 8,
         "type": "gallery",
@@ -153,8 +266,8 @@ const collectionsData = [
   {
     "id": "Analog-BW",
     "title": "Analog B&W",
-    "subtitle": "",
-    "description": "",
+    "subtitle": "Finally some real photography",
+    "description": "A collection of analog black and white and color photographs.",
     "cover": "",
     "order": 2,
     "type": "parent",
@@ -163,8 +276,8 @@ const collectionsData = [
       {
         "id": "Olympus",
         "title": "Olympus",
-        "subtitle": "",
-        "description": "",
+        "subtitle": "Behind the scenes.",
+        "description": "A camera I found in my house.",
         "cover": "",
         "order": 1,
         "type": "gallery",
@@ -173,33 +286,171 @@ const collectionsData = [
       },
       {
         "id": "EOS500",
-        "title": "Davide's Camera",
-        "subtitle": "",
-        "description": "",
+        "title": "EOS 500",
+        "subtitle": "Photos mostly on purpose.",
+        "description": "First analog expeirence. Sponsored by Davide Orbitello and his kindness.",
         "cover": "",
         "order": 2,
         "type": "gallery",
         "path": "Images/Collections/Analog-BW/sub/EOS500",
-        "photos": []
+        "photos": [
+          {
+            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_1.jpeg",
+            "caption": "1"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_10SalomonGuttman-0928-31-Large.jpeg",
+            "caption": "10SalomonGuttman 0928 31"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_11SalomonGuttman-0928-32-Large.jpeg",
+            "caption": "11SalomonGuttman 0928 32"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_12SalomonGuttman-0928-33-Large.jpeg",
+            "caption": "12SalomonGuttman 0928 33"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_13SalomonGuttman-0928-34-Large.jpeg",
+            "caption": "13SalomonGuttman 0928 34"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_14SalomonGuttman-0928-35-Large.jpeg",
+            "caption": "14SalomonGuttman 0928 35"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_16SalomonGuttman-0928-38-Large.jpeg",
+            "caption": "16SalomonGuttman 0928 38"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_2SalomonGuttman-0928-20-Large.jpeg",
+            "caption": "2SalomonGuttman 0928 20"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_3SalomonGuttman-0928-28-Large.jpeg",
+            "caption": "3SalomonGuttman 0928 28"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_5SalomonGuttman-0928-17-Large.jpeg",
+            "caption": "5SalomonGuttman 0928 17"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_6SalomonGuttman-0928-18-Large.jpeg",
+            "caption": "6SalomonGuttman 0928 18"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_7SalomonGuttman-0928-24-Large.jpeg",
+            "caption": "7SalomonGuttman 0928 24"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_7SalomonGuttman-0928-36-Large.jpeg",
+            "caption": "7SalomonGuttman 0928 36"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_8PT_1AncientTree_BW.jpg",
+            "caption": "8PT 1AncientTree BW"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_8SalomonGuttman-0928-25-Large.jpeg",
+            "caption": "8SalomonGuttman 0928 25"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_NL_RavCook_BW.jpg",
+            "caption": "NL RavCook BW"
+          }
+        ]
       },
       {
         "id": "plastic_reusable_disposable",
         "title": "Plastic Point n Shoot",
-        "subtitle": "",
-        "description": "",
+        "subtitle": "Simple pleasures",
+        "description": "Photos that mostly came out pretty alright.",
         "cover": "",
         "order": 3,
         "type": "gallery",
         "path": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable",
-        "photos": []
+        "photos": [
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_BerlinMuseumIsle_BW.jpeg",
+            "caption": "BerlinMuseumIsle BW"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_BerlinPark_BW.jpeg",
+            "caption": "BerlinPark BW"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_BerlinRiver_BW.jpeg",
+            "caption": "BerlinRiver BW"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_DE_Bikes_BW.jpeg",
+            "caption": "DE Bikes BW"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_DE_FHamas_BW.jpeg",
+            "caption": "DE FHamas BW"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_DE_Garden_BW.jpeg",
+            "caption": "DE Garden BW"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_DE_LaundryCafe_BW.jpeg",
+            "caption": "DE LaundryCafe BW"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_DE_Memorial_BW.jpg",
+            "caption": "DE Memorial BW"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_DE_TVTower_BW.jpeg",
+            "caption": "DE TVTower BW"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_NL_Canopy_BW.jpg",
+            "caption": "NL Canopy BW"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_NL_M&W_BW.jpg",
+            "caption": "NL M&W BW"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_BookMonger_BW.jpg",
+            "caption": "PL BookMonger BW"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_KasiaRoof_BW.jpg",
+            "caption": "PL KasiaRoof BW"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_KosherCounter_BW.jpg",
+            "caption": "PL KosherCounter BW"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_WarsUniRoof_BW.jpg",
+            "caption": "PL WarsUniRoof BW"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_WarsawGhetto_BW.jpg",
+            "caption": "PL WarsawGhetto BW"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_Wedding.jpeg",
+            "caption": "Wedding"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_ZBerlinFriends.jpeg",
+            "caption": "ZBerlinFriends"
+          }
+        ]
       }
     ]
   },
   {
     "id": "Around-the-World",
     "title": "Around the World",
-    "subtitle": "A collection of moments from my life",
-    "description": "Pretend its 1972 and I just got all my film developed.",
+    "subtitle": "In more than 80 days",
+    "description": "Carefully selected vacation photos for your viewing pleasure.",
     "cover": "",
     "order": 3,
     "type": "parent",
@@ -208,8 +459,8 @@ const collectionsData = [
       {
         "id": "European-Voyage",
         "title": "European Voyage",
-        "subtitle": "A man with an Iphone",
-        "description": "5 Months of backpacking through Europe. All by train, bus, boat, and hitch hiking. After four years of life in the Netherlands, my network of couches to crash on spanned to almost every european coast and country. For each palce where I knew no one, I foind that I couldn't help but make a friend. By the end, I traveled over 18,000 kms. I met many unforgetabble folks. And, I realize day by day that in each place, I only scratched the surface of their treasure.",
+        "subtitle": "A man with an Iphone camera",
+        "description": "5 Months of backpacking through Europe. 18,000kms by foot, train, bus, boat, and hitch hiking. The mission to visit as many european friends as possible. The outcome, even more new friends in even more cool places.",
         "cover": "",
         "order": 1,
         "type": "parent",
@@ -396,174 +647,6 @@ const collectionsData = [
             ]
           },
           {
-            "id": "BW",
-            "title": "Black & White",
-            "subtitle": "",
-            "description": "",
-            "cover": "",
-            "order": 999,
-            "type": "gallery",
-            "path": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW",
-            "photos": [
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_1.jpeg",
-                "caption": "1"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_10SalomonGuttman-0928-31-Large.jpeg",
-                "caption": "10SalomonGuttman 0928 31"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_11SalomonGuttman-0928-32-Large.jpeg",
-                "caption": "11SalomonGuttman 0928 32"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_12SalomonGuttman-0928-33-Large.jpeg",
-                "caption": "12SalomonGuttman 0928 33"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_13SalomonGuttman-0928-34-Large.jpeg",
-                "caption": "13SalomonGuttman 0928 34"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_14SalomonGuttman-0928-35-Large.jpeg",
-                "caption": "14SalomonGuttman 0928 35"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_16SalomonGuttman-0928-38-Large.jpeg",
-                "caption": "16SalomonGuttman 0928 38"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_2SalomonGuttman-0928-20-Large.jpeg",
-                "caption": "2SalomonGuttman 0928 20"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_3SalomonGuttman-0928-28-Large.jpeg",
-                "caption": "3SalomonGuttman 0928 28"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_4SalomonGuttman-0928-15-Large.jpeg",
-                "caption": "4SalomonGuttman 0928 15"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_5SalomonGuttman-0928-17-Large.jpeg",
-                "caption": "5SalomonGuttman 0928 17"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_6SalomonGuttman-0928-18-Large.jpeg",
-                "caption": "6SalomonGuttman 0928 18"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_7SalomonGuttman-0928-24-Large.jpeg",
-                "caption": "7SalomonGuttman 0928 24"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_7SalomonGuttman-0928-36-Large.jpeg",
-                "caption": "7SalomonGuttman 0928 36"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_8PT_1AncientTree_BW.jpg",
-                "caption": "8PT 1AncientTree BW"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_8SalomonGuttman-0928-25-Large.jpeg",
-                "caption": "8SalomonGuttman 0928 25"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_9SalomonGuttman-0928-27-Large.jpeg",
-                "caption": "9SalomonGuttman 0928 27"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_BerlinFriends.jpeg",
-                "caption": "BerlinFriends"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_BerlinMuseumIsle_BW.jpeg",
-                "caption": "BerlinMuseumIsle BW"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_BerlinPark_BW.jpeg",
-                "caption": "BerlinPark BW"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_BerlinRiver_BW.jpeg",
-                "caption": "BerlinRiver BW"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_DE_Bikes_BW.jpeg",
-                "caption": "DE Bikes BW"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_DE_FHamas_BW.jpeg",
-                "caption": "DE FHamas BW"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_DE_Garden2_BW.jpeg",
-                "caption": "DE Garden2 BW"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_DE_Garden_BW.jpeg",
-                "caption": "DE Garden BW"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_DE_LaundryCafe_BW.jpeg",
-                "caption": "DE LaundryCafe BW"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_DE_Memorial_BW.jpg",
-                "caption": "DE Memorial BW"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_DE_TVTower_BW.jpeg",
-                "caption": "DE TVTower BW"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_NL_Canopy_BW.jpg",
-                "caption": "NL Canopy BW"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_NL_M&W_BW.jpg",
-                "caption": "NL M&W BW"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_NL_RavCook_BW.jpg",
-                "caption": "NL RavCook BW"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_PL_BookMonger_BW.jpg",
-                "caption": "PL BookMonger BW"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_PL_KasiaRoof_BW.jpg",
-                "caption": "PL KasiaRoof BW"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_PL_KosherCounter_BW.jpg",
-                "caption": "PL KosherCounter BW"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_PL_WarsUniRoof_BW.jpg",
-                "caption": "PL WarsUniRoof BW"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_PL_WarsawFountain_BW.jpg",
-                "caption": "PL WarsawFountain BW"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_PL_WarsawGhetto_BW.jpg",
-                "caption": "PL WarsawGhetto BW"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_PL_WarsawUni_BW.jpg",
-                "caption": "PL WarsawUni BW"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_Wedding.jpeg",
-                "caption": "Wedding"
-              }
-            ]
-          },
-          {
             "id": "CH",
             "title": "Switzerland",
             "subtitle": "",
@@ -630,10 +713,6 @@ const collectionsData = [
                 "caption": "RainMuseum"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/EE/EE_SwampForest.jpeg",
-                "caption": "SwampForest"
-              },
-              {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/EE/EE_TallinnStation.jpeg",
                 "caption": "TallinnStation"
               },
@@ -654,8 +733,8 @@ const collectionsData = [
             "path": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES",
             "photos": [
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_Abandoned.jpeg",
-                "caption": "Abandoned"
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_AWeatherVein.jpeg",
+                "caption": "AWeatherVein"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_AbandonedIndustry.jpeg",
@@ -792,14 +871,6 @@ const collectionsData = [
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/HR/HR_StreetCar.jpeg",
                 "caption": "StreetCar"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/HR/HR_SunsetI.jpeg",
-                "caption": "SunsetI"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/HR/HR_breadline copy.jpeg",
-                "caption": "breadline copy"
               }
             ]
           },
@@ -814,6 +885,10 @@ const collectionsData = [
             "path": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT",
             "photos": [
               {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_ABuongiorno.jpeg",
+                "caption": "ABuongiorno"
+              },
+              {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_BariLocals.jpeg",
                 "caption": "BariLocals"
               },
@@ -824,10 +899,6 @@ const collectionsData = [
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_BelMare.jpeg",
                 "caption": "BelMare"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_Buongiorno.jpeg",
-                "caption": "Buongiorno"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_CastleWall.jpeg",
@@ -854,10 +925,6 @@ const collectionsData = [
                 "caption": "GenoaIII"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_LaundryI.jpeg",
-                "caption": "LaundryI"
-              },
-              {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_MilanoTrain.jpeg",
                 "caption": "MilanoTrain"
               },
@@ -872,10 +939,6 @@ const collectionsData = [
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_SunsetLight.jpeg",
                 "caption": "SunsetLight"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_Taos.jpeg",
-                "caption": "Taos"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_TheMachinist.jpeg",
@@ -925,12 +988,12 @@ const collectionsData = [
             "path": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV",
             "photos": [
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_AtSea.jpeg",
-                "caption": "AtSea"
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_ABusinessCall.jpeg",
+                "caption": "ABusinessCall"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_BusinessCall.jpeg",
-                "caption": "BusinessCall"
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_AtSea.jpeg",
+                "caption": "AtSea"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_Flowers.jpeg",
@@ -1029,40 +1092,36 @@ const collectionsData = [
             "path": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL",
             "photos": [
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Bike.jpeg",
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_ADom.jpeg",
+                "caption": "ADom"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_ADomMoon.jpeg",
+                "caption": "ADomMoon"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_BDomFog.jpeg",
+                "caption": "BDomFog"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Bike Large.jpeg",
                 "caption": "Bike"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Canal.jpeg",
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_CTrainDog.jpeg",
+                "caption": "CTrainDog"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Canal Large.jpeg",
                 "caption": "Canal"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_CanalTrouble.jpeg",
+                "caption": "CanalTrouble"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_CanalView.jpeg",
                 "caption": "CanalView"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_CatDom.jpeg",
-                "caption": "CatDom"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_CatTree.jpeg",
-                "caption": "CatTree"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Dom.jpeg",
-                "caption": "Dom"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_DomFog.jpeg",
-                "caption": "DomFog"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_DomMoon.jpeg",
-                "caption": "DomMoon"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_DomPlane.jpeg",
-                "caption": "DomPlane"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_DomPlane2.jpeg",
@@ -1077,16 +1136,12 @@ const collectionsData = [
                 "caption": "DuneSeaII"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_DuneSeaIII.jpeg",
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_DuneSeaIII Large.jpeg",
                 "caption": "DuneSeaIII"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_FatherSon.jpeg",
                 "caption": "FatherSon"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Footy.jpeg",
-                "caption": "Footy"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Futbol.jpeg",
@@ -1101,24 +1156,12 @@ const collectionsData = [
                 "caption": "KitchenLight"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_PegasusUnder.jpeg",
-                "caption": "PegasusUnder"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Self_BW.jpg",
-                "caption": "Self BW"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Shroom.jpeg",
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Shroom Large.jpeg",
                 "caption": "Shroom"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Tivoli.jpeg",
                 "caption": "Tivoli"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_TrainDog.jpeg",
-                "caption": "TrainDog"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_UtrechtMoon.jpeg",
@@ -1129,7 +1172,7 @@ const collectionsData = [
                 "caption": "WorkLightBalance"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_spiderplant.jpeg",
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_spiderplant Large.jpeg",
                 "caption": "spiderplant"
               }
             ]
@@ -1145,16 +1188,8 @@ const collectionsData = [
             "path": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PL",
             "photos": [
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PL/PL_Bike.jpg",
-                "caption": "Bike"
-              },
-              {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PL/PL_DayDream.jpeg",
                 "caption": "DayDream"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PL/PL_Headstand.jpeg",
-                "caption": "Headstand"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PL/PL_King.jpeg",
@@ -1165,7 +1200,7 @@ const collectionsData = [
                 "caption": "PalaceKultur"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PL/PL_Trinkets.jpeg",
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PL/PL_Trinkets Large.jpeg",
                 "caption": "Trinkets"
               },
               {
@@ -1229,7 +1264,7 @@ const collectionsData = [
                 "caption": "Goldenwheat"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_HarvestI.jpeg",
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_HarvestI Large.jpeg",
                 "caption": "HarvestI"
               },
               {
@@ -1273,10 +1308,6 @@ const collectionsData = [
                 "caption": "Library"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Locals Large.jpeg",
-                "caption": "Locals"
-              },
-              {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_MalHombres Large.jpeg",
                 "caption": "MalHombres"
               },
@@ -1303,10 +1334,6 @@ const collectionsData = [
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Rainbow2new.jpeg",
                 "caption": "Rainbow2new"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_RiverValley Large.jpeg",
-                "caption": "RiverValley"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Rye.jpeg",
@@ -1445,7 +1472,7 @@ const collectionsData = [
                 "caption": "AlmostinItaly"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/SI/SI_BledDog.jpeg",
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/SI/SI_BledDog Large.jpeg",
                 "caption": "BledDog"
               },
               {
@@ -1473,10 +1500,6 @@ const collectionsData = [
                 "caption": "Monstera"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle/NL_MonsteraII.jpeg",
-                "caption": "MonsteraII"
-              },
-              {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle/NL_MonsteraIII.jpeg",
                 "caption": "MonsteraIII"
               },
@@ -1493,72 +1516,18 @@ const collectionsData = [
                 "caption": "MonsteraVI"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle/NL_MonsteraVII.jpeg",
-                "caption": "MonsteraVII"
-              },
-              {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle/NL_Monstera_2.jpeg",
                 "caption": "Monstera 2"
               }
             ]
-          },
-          {
-            "id": "XX",
-            "title": "Somewhere",
-            "subtitle": "",
-            "description": "",
-            "cover": "",
-            "order": 999,
-            "type": "gallery",
-            "path": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/XX",
-            "photos": [
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/XX/XX_NightLight_BW.jpg",
-                "caption": "NightLight BW"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/XX/XX_NightSigns_BW.jpg",
-                "caption": "NightSigns BW"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/XX/XX_RayLight_BW.jpg",
-                "caption": "RayLight BW"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/XX/XX_WeatherVein.jpeg",
-                "caption": "WeatherVein"
-              }
-            ]
-          },
-          {
-            "id": "ZA",
-            "title": "South Africa",
-            "subtitle": "",
-            "description": "",
-            "cover": "",
-            "order": 999,
-            "type": "gallery",
-            "path": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ZA",
-            "photos": []
-          },
-          {
-            "id": "ZW",
-            "title": "Zimbabwe",
-            "subtitle": "",
-            "description": "",
-            "cover": "",
-            "order": 999,
-            "type": "gallery",
-            "path": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ZW",
-            "photos": []
           }
         ]
       },
       {
         "id": "Searching-for-King-Solomons-Mines",
         "title": "Searching for King Solomon's Mines",
-        "subtitle": "",
-        "description": "",
+        "subtitle": "From the bushveld of Kruger National Park.",
+        "description": "A privilege to see this all up close. All thanks to Dan Guttmann",
         "cover": "",
         "order": 2,
         "type": "gallery",
@@ -1570,8 +1539,8 @@ const collectionsData = [
   {
     "id": "Coming-Soon",
     "title": "Coming Soon",
-    "subtitle": "",
-    "description": "",
+    "subtitle": "...",
+    "description": "Next adventure in progress.",
     "cover": "",
     "order": 4,
     "type": "coming-soon",
@@ -1584,6 +1553,10 @@ const siteData = {
   "a_natureza": {
     "name": "A Natureza",
     "photos": [
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - As Ruinas-31.jpg",
+        "caption": "As Ruinas 31"
+      },
       {
         "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-001.jpg",
         "caption": "Cidadelhe Natureza 001"
@@ -1644,7 +1617,116 @@ const siteData = {
   },
   "as_ruinas_no_meio": {
     "name": "As Ruínas no Meio",
-    "photos": []
+    "photos": [
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-000002.jpg",
+        "caption": "As Ruinas 000002"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-00002.jpg",
+        "caption": "As Ruinas 00002"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-0002.JPG",
+        "caption": "As Ruinas 0002"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-0003.JPG",
+        "caption": "As Ruinas 0003"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-001.JPG",
+        "caption": "As Ruinas 001"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-002.jpg",
+        "caption": "As Ruinas 002"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-003.jpg",
+        "caption": "As Ruinas 003"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-04.jpg",
+        "caption": "As Ruinas 04"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-05.jpg",
+        "caption": "As Ruinas 05"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-06.jpg",
+        "caption": "As Ruinas 06"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-07.jpg",
+        "caption": "As Ruinas 07"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-08.jpg",
+        "caption": "As Ruinas 08"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-09.jpg",
+        "caption": "As Ruinas 09"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-11.jpg",
+        "caption": "As Ruinas 11"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-13.jpg",
+        "caption": "As Ruinas 13"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-14.jpg",
+        "caption": "As Ruinas 14"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-15.jpg",
+        "caption": "As Ruinas 15"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-16.jpg",
+        "caption": "As Ruinas 16"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-17.jpg",
+        "caption": "As Ruinas 17"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-19.jpg",
+        "caption": "As Ruinas 19"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-27.jpg",
+        "caption": "As Ruinas 27"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-28.jpg",
+        "caption": "As Ruinas 28"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-29.jpg",
+        "caption": "As Ruinas 29"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-30.jpg",
+        "caption": "As Ruinas 30"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-ab.jpg",
+        "caption": "As Ruinas ab"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-ba.jpg",
+        "caption": "As Ruinas ba"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-z10.jpg",
+        "caption": "As Ruinas z10"
+      }
+    ]
   },
   "hotel_longroiva": {
     "name": "Hotel Longroiva",
@@ -1667,12 +1749,150 @@ const siteData = {
     "photos": []
   },
   "EOS500": {
-    "name": "Davide's Camera",
-    "photos": []
+    "name": "EOS 500",
+    "photos": [
+      {
+        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_1.jpeg",
+        "caption": "1"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_10SalomonGuttman-0928-31-Large.jpeg",
+        "caption": "10SalomonGuttman 0928 31"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_11SalomonGuttman-0928-32-Large.jpeg",
+        "caption": "11SalomonGuttman 0928 32"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_12SalomonGuttman-0928-33-Large.jpeg",
+        "caption": "12SalomonGuttman 0928 33"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_13SalomonGuttman-0928-34-Large.jpeg",
+        "caption": "13SalomonGuttman 0928 34"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_14SalomonGuttman-0928-35-Large.jpeg",
+        "caption": "14SalomonGuttman 0928 35"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_16SalomonGuttman-0928-38-Large.jpeg",
+        "caption": "16SalomonGuttman 0928 38"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_2SalomonGuttman-0928-20-Large.jpeg",
+        "caption": "2SalomonGuttman 0928 20"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_3SalomonGuttman-0928-28-Large.jpeg",
+        "caption": "3SalomonGuttman 0928 28"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_5SalomonGuttman-0928-17-Large.jpeg",
+        "caption": "5SalomonGuttman 0928 17"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_6SalomonGuttman-0928-18-Large.jpeg",
+        "caption": "6SalomonGuttman 0928 18"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_7SalomonGuttman-0928-24-Large.jpeg",
+        "caption": "7SalomonGuttman 0928 24"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_7SalomonGuttman-0928-36-Large.jpeg",
+        "caption": "7SalomonGuttman 0928 36"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_8PT_1AncientTree_BW.jpg",
+        "caption": "8PT 1AncientTree BW"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_8SalomonGuttman-0928-25-Large.jpeg",
+        "caption": "8SalomonGuttman 0928 25"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_NL_RavCook_BW.jpg",
+        "caption": "NL RavCook BW"
+      }
+    ]
   },
   "plastic_reusable_disposable": {
     "name": "Plastic Point n Shoot",
-    "photos": []
+    "photos": [
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_BerlinMuseumIsle_BW.jpeg",
+        "caption": "BerlinMuseumIsle BW"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_BerlinPark_BW.jpeg",
+        "caption": "BerlinPark BW"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_BerlinRiver_BW.jpeg",
+        "caption": "BerlinRiver BW"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_DE_Bikes_BW.jpeg",
+        "caption": "DE Bikes BW"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_DE_FHamas_BW.jpeg",
+        "caption": "DE FHamas BW"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_DE_Garden_BW.jpeg",
+        "caption": "DE Garden BW"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_DE_LaundryCafe_BW.jpeg",
+        "caption": "DE LaundryCafe BW"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_DE_Memorial_BW.jpg",
+        "caption": "DE Memorial BW"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_DE_TVTower_BW.jpeg",
+        "caption": "DE TVTower BW"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_NL_Canopy_BW.jpg",
+        "caption": "NL Canopy BW"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_NL_M&W_BW.jpg",
+        "caption": "NL M&W BW"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_BookMonger_BW.jpg",
+        "caption": "PL BookMonger BW"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_KasiaRoof_BW.jpg",
+        "caption": "PL KasiaRoof BW"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_KosherCounter_BW.jpg",
+        "caption": "PL KosherCounter BW"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_WarsUniRoof_BW.jpg",
+        "caption": "PL WarsUniRoof BW"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_WarsawGhetto_BW.jpg",
+        "caption": "PL WarsawGhetto BW"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_Wedding.jpeg",
+        "caption": "Wedding"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_ZBerlinFriends.jpeg",
+        "caption": "ZBerlinFriends"
+      }
+    ]
   },
   "AL": {
     "name": "Albania",
@@ -1826,167 +2046,6 @@ const siteData = {
       }
     ]
   },
-  "BW": {
-    "name": "Black & White",
-    "photos": [
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_1.jpeg",
-        "caption": "1"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_10SalomonGuttman-0928-31-Large.jpeg",
-        "caption": "10SalomonGuttman 0928 31"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_11SalomonGuttman-0928-32-Large.jpeg",
-        "caption": "11SalomonGuttman 0928 32"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_12SalomonGuttman-0928-33-Large.jpeg",
-        "caption": "12SalomonGuttman 0928 33"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_13SalomonGuttman-0928-34-Large.jpeg",
-        "caption": "13SalomonGuttman 0928 34"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_14SalomonGuttman-0928-35-Large.jpeg",
-        "caption": "14SalomonGuttman 0928 35"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_16SalomonGuttman-0928-38-Large.jpeg",
-        "caption": "16SalomonGuttman 0928 38"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_2SalomonGuttman-0928-20-Large.jpeg",
-        "caption": "2SalomonGuttman 0928 20"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_3SalomonGuttman-0928-28-Large.jpeg",
-        "caption": "3SalomonGuttman 0928 28"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_4SalomonGuttman-0928-15-Large.jpeg",
-        "caption": "4SalomonGuttman 0928 15"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_5SalomonGuttman-0928-17-Large.jpeg",
-        "caption": "5SalomonGuttman 0928 17"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_6SalomonGuttman-0928-18-Large.jpeg",
-        "caption": "6SalomonGuttman 0928 18"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_7SalomonGuttman-0928-24-Large.jpeg",
-        "caption": "7SalomonGuttman 0928 24"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_7SalomonGuttman-0928-36-Large.jpeg",
-        "caption": "7SalomonGuttman 0928 36"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_8PT_1AncientTree_BW.jpg",
-        "caption": "8PT 1AncientTree BW"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_8SalomonGuttman-0928-25-Large.jpeg",
-        "caption": "8SalomonGuttman 0928 25"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_9SalomonGuttman-0928-27-Large.jpeg",
-        "caption": "9SalomonGuttman 0928 27"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_BerlinFriends.jpeg",
-        "caption": "BerlinFriends"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_BerlinMuseumIsle_BW.jpeg",
-        "caption": "BerlinMuseumIsle BW"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_BerlinPark_BW.jpeg",
-        "caption": "BerlinPark BW"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_BerlinRiver_BW.jpeg",
-        "caption": "BerlinRiver BW"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_DE_Bikes_BW.jpeg",
-        "caption": "DE Bikes BW"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_DE_FHamas_BW.jpeg",
-        "caption": "DE FHamas BW"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_DE_Garden2_BW.jpeg",
-        "caption": "DE Garden2 BW"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_DE_Garden_BW.jpeg",
-        "caption": "DE Garden BW"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_DE_LaundryCafe_BW.jpeg",
-        "caption": "DE LaundryCafe BW"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_DE_Memorial_BW.jpg",
-        "caption": "DE Memorial BW"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_DE_TVTower_BW.jpeg",
-        "caption": "DE TVTower BW"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_NL_Canopy_BW.jpg",
-        "caption": "NL Canopy BW"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_NL_M&W_BW.jpg",
-        "caption": "NL M&W BW"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_NL_RavCook_BW.jpg",
-        "caption": "NL RavCook BW"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_PL_BookMonger_BW.jpg",
-        "caption": "PL BookMonger BW"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_PL_KasiaRoof_BW.jpg",
-        "caption": "PL KasiaRoof BW"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_PL_KosherCounter_BW.jpg",
-        "caption": "PL KosherCounter BW"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_PL_WarsUniRoof_BW.jpg",
-        "caption": "PL WarsUniRoof BW"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_PL_WarsawFountain_BW.jpg",
-        "caption": "PL WarsawFountain BW"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_PL_WarsawGhetto_BW.jpg",
-        "caption": "PL WarsawGhetto BW"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_PL_WarsawUni_BW.jpg",
-        "caption": "PL WarsawUni BW"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BW/BW_Wedding.jpeg",
-        "caption": "Wedding"
-      }
-    ]
-  },
   "CH": {
     "name": "Switzerland",
     "photos": [
@@ -2033,10 +2092,6 @@ const siteData = {
         "caption": "RainMuseum"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/EE/EE_SwampForest.jpeg",
-        "caption": "SwampForest"
-      },
-      {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/EE/EE_TallinnStation.jpeg",
         "caption": "TallinnStation"
       },
@@ -2050,8 +2105,8 @@ const siteData = {
     "name": "Spain",
     "photos": [
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_Abandoned.jpeg",
-        "caption": "Abandoned"
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_AWeatherVein.jpeg",
+        "caption": "AWeatherVein"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_AbandonedIndustry.jpeg",
@@ -2167,20 +2222,16 @@ const siteData = {
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/HR/HR_StreetCar.jpeg",
         "caption": "StreetCar"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/HR/HR_SunsetI.jpeg",
-        "caption": "SunsetI"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/HR/HR_breadline copy.jpeg",
-        "caption": "breadline copy"
       }
     ]
   },
   "IT": {
     "name": "Italy",
     "photos": [
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_ABuongiorno.jpeg",
+        "caption": "ABuongiorno"
+      },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_BariLocals.jpeg",
         "caption": "BariLocals"
@@ -2192,10 +2243,6 @@ const siteData = {
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_BelMare.jpeg",
         "caption": "BelMare"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_Buongiorno.jpeg",
-        "caption": "Buongiorno"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_CastleWall.jpeg",
@@ -2222,10 +2269,6 @@ const siteData = {
         "caption": "GenoaIII"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_LaundryI.jpeg",
-        "caption": "LaundryI"
-      },
-      {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_MilanoTrain.jpeg",
         "caption": "MilanoTrain"
       },
@@ -2240,10 +2283,6 @@ const siteData = {
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_SunsetLight.jpeg",
         "caption": "SunsetLight"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_Taos.jpeg",
-        "caption": "Taos"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_TheMachinist.jpeg",
@@ -2279,12 +2318,12 @@ const siteData = {
     "name": "Latvia",
     "photos": [
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_AtSea.jpeg",
-        "caption": "AtSea"
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_ABusinessCall.jpeg",
+        "caption": "ABusinessCall"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_BusinessCall.jpeg",
-        "caption": "BusinessCall"
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_AtSea.jpeg",
+        "caption": "AtSea"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_Flowers.jpeg",
@@ -2362,40 +2401,36 @@ const siteData = {
     "name": "Netherlands",
     "photos": [
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Bike.jpeg",
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_ADom.jpeg",
+        "caption": "ADom"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_ADomMoon.jpeg",
+        "caption": "ADomMoon"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_BDomFog.jpeg",
+        "caption": "BDomFog"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Bike Large.jpeg",
         "caption": "Bike"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Canal.jpeg",
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_CTrainDog.jpeg",
+        "caption": "CTrainDog"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Canal Large.jpeg",
         "caption": "Canal"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_CanalTrouble.jpeg",
+        "caption": "CanalTrouble"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_CanalView.jpeg",
         "caption": "CanalView"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_CatDom.jpeg",
-        "caption": "CatDom"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_CatTree.jpeg",
-        "caption": "CatTree"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Dom.jpeg",
-        "caption": "Dom"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_DomFog.jpeg",
-        "caption": "DomFog"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_DomMoon.jpeg",
-        "caption": "DomMoon"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_DomPlane.jpeg",
-        "caption": "DomPlane"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_DomPlane2.jpeg",
@@ -2410,16 +2445,12 @@ const siteData = {
         "caption": "DuneSeaII"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_DuneSeaIII.jpeg",
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_DuneSeaIII Large.jpeg",
         "caption": "DuneSeaIII"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_FatherSon.jpeg",
         "caption": "FatherSon"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Footy.jpeg",
-        "caption": "Footy"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Futbol.jpeg",
@@ -2434,24 +2465,12 @@ const siteData = {
         "caption": "KitchenLight"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_PegasusUnder.jpeg",
-        "caption": "PegasusUnder"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Self_BW.jpg",
-        "caption": "Self BW"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Shroom.jpeg",
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Shroom Large.jpeg",
         "caption": "Shroom"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Tivoli.jpeg",
         "caption": "Tivoli"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_TrainDog.jpeg",
-        "caption": "TrainDog"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_UtrechtMoon.jpeg",
@@ -2462,7 +2481,7 @@ const siteData = {
         "caption": "WorkLightBalance"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_spiderplant.jpeg",
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_spiderplant Large.jpeg",
         "caption": "spiderplant"
       }
     ]
@@ -2471,16 +2490,8 @@ const siteData = {
     "name": "Poland",
     "photos": [
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PL/PL_Bike.jpg",
-        "caption": "Bike"
-      },
-      {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PL/PL_DayDream.jpeg",
         "caption": "DayDream"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PL/PL_Headstand.jpeg",
-        "caption": "Headstand"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PL/PL_King.jpeg",
@@ -2491,7 +2502,7 @@ const siteData = {
         "caption": "PalaceKultur"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PL/PL_Trinkets.jpeg",
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PL/PL_Trinkets Large.jpeg",
         "caption": "Trinkets"
       },
       {
@@ -2548,7 +2559,7 @@ const siteData = {
         "caption": "Goldenwheat"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_HarvestI.jpeg",
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_HarvestI Large.jpeg",
         "caption": "HarvestI"
       },
       {
@@ -2592,10 +2603,6 @@ const siteData = {
         "caption": "Library"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Locals Large.jpeg",
-        "caption": "Locals"
-      },
-      {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_MalHombres Large.jpeg",
         "caption": "MalHombres"
       },
@@ -2622,10 +2629,6 @@ const siteData = {
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Rainbow2new.jpeg",
         "caption": "Rainbow2new"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_RiverValley Large.jpeg",
-        "caption": "RiverValley"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PT/PT_Rye.jpeg",
@@ -2750,7 +2753,7 @@ const siteData = {
         "caption": "AlmostinItaly"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/SI/SI_BledDog.jpeg",
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/SI/SI_BledDog Large.jpeg",
         "caption": "BledDog"
       },
       {
@@ -2771,10 +2774,6 @@ const siteData = {
         "caption": "Monstera"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle/NL_MonsteraII.jpeg",
-        "caption": "MonsteraII"
-      },
-      {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle/NL_MonsteraIII.jpeg",
         "caption": "MonsteraIII"
       },
@@ -2791,43 +2790,10 @@ const siteData = {
         "caption": "MonsteraVI"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle/NL_MonsteraVII.jpeg",
-        "caption": "MonsteraVII"
-      },
-      {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle/NL_Monstera_2.jpeg",
         "caption": "Monstera 2"
       }
     ]
-  },
-  "XX": {
-    "name": "Somewhere",
-    "photos": [
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/XX/XX_NightLight_BW.jpg",
-        "caption": "NightLight BW"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/XX/XX_NightSigns_BW.jpg",
-        "caption": "NightSigns BW"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/XX/XX_RayLight_BW.jpg",
-        "caption": "RayLight BW"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/XX/XX_WeatherVein.jpeg",
-        "caption": "WeatherVein"
-      }
-    ]
-  },
-  "ZA": {
-    "name": "South Africa",
-    "photos": []
-  },
-  "ZW": {
-    "name": "Zimbabwe",
-    "photos": []
   },
   "Searching-for-King-Solomons-Mines": {
     "name": "Searching for King Solomon's Mines",
