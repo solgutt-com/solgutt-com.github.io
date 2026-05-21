@@ -441,6 +441,22 @@ const collectionsData = [
           {
             "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_ZBerlinFriends.jpeg",
             "caption": "ZBerlinFriends"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/NL_Self_BW.jpg",
+            "caption": "Self BW"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/XX_NightLight_BW.jpg",
+            "caption": "NightLight BW"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/XX_NightSigns_BW.jpg",
+            "caption": "NightSigns BW"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/XX_RayLight_BW.jpg",
+            "caption": "RayLight BW"
           }
         ]
       }
@@ -1891,6 +1907,22 @@ const siteData = {
       {
         "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_ZBerlinFriends.jpeg",
         "caption": "ZBerlinFriends"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/NL_Self_BW.jpg",
+        "caption": "Self BW"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/XX_NightLight_BW.jpg",
+        "caption": "NightLight BW"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/XX_NightSigns_BW.jpg",
+        "caption": "NightSigns BW"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/XX_RayLight_BW.jpg",
+        "caption": "RayLight BW"
       }
     ]
   },
