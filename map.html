@@ -22,8 +22,6 @@
     </header>
 
 <div class="collections-nav">
-  <a href="countries/gallery.html?code=Highlights">Highlights</a>
-  <span class="divider">|</span>
   <a href="countries/gallery.html?code=TheJungle">The Jungle</a>
   <span class="divider">|</span>
   <a href="countries/gallery.html?code=XX">Somewhere</a>
@@ -34,8 +32,6 @@
       <div class="region-menu">
         <div class="region-menu-icon">&#9776;</div>
         <div class="region-menu-list">
-          <div class="region-menu-section">Highlights</div>
-          <a href="countries/gallery.html?code=Highlights">Highlights</a>
           <div class="region-menu-section">Europe</div>
           <a href="countries/gallery.html?code=AL">Albania</a>
           <a href="countries/gallery.html?code=AT">Austria</a>
@@ -228,51 +224,6 @@ document.getElementById('map-quote-author').textContent = '\u2014 ' + q.author;
           .on('mouseleave', hideTooltip)
           .on('click', function() { navigate('XX'); });
 
-
-// Pacific Pin - Highlights
-const pacificPos = proj([-150, 10]);
-const hlPin = sg.append('g')
-  .attr('class', 'map-region')
-  .attr('transform', 'translate(' + pacificPos[0] + ',' + pacificPos[1] + ')')
-  .on('mouseenter', function() { showTooltip('Highlights'); })
-  .on('mouseleave', hideTooltip)
-  .on('click', function() { navigate('Highlights'); });
-
-hlPin.append('circle')
-  .attr('r', 7)
-  .attr('fill', 'none')
-  .attr('stroke', '#6a6a62')
-  .attr('stroke-width', 1);
-
-hlPin.append('circle')
-  .attr('r', 4)
-  .attr('fill', 'none')
-  .attr('stroke', '#6a6a62')
-  .attr('stroke-width', 1);
-
-hlPin.append('line')
-  .attr('x1', -7).attr('y1', 0)
-  .attr('x2', -4).attr('y2', 0)
-  .attr('stroke', '#6a6a62')
-  .attr('stroke-width', 1);
-
-hlPin.append('line')
-  .attr('x1', 4).attr('y1', 0)
-  .attr('x2', 7).attr('y2', 0)
-  .attr('stroke', '#6a6a62')
-  .attr('stroke-width', 1);
-
-hlPin.append('line')
-  .attr('x1', 0).attr('y1', -7)
-  .attr('x2', 0).attr('y2', -4)
-  .attr('stroke', '#6a6a62')
-  .attr('stroke-width', 1);
-
-hlPin.append('line')
-  .attr('x1', 0).attr('y1', 4)
-  .attr('x2', 0).attr('y2', 7)
-  .attr('stroke', '#6a6a62')
-  .attr('stroke-width', 1);
 
 
 
