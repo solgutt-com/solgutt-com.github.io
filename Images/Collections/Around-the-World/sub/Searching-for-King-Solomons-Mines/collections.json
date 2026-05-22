@@ -1,8 +1,8 @@
 {
-  "title": "Searching for King Solomon's Mines",
-  "subtitle": "From the bushveld of Kruger National Park.",
+  "title": "The Bush",
+  "subtitle": "Searching for King Solomon's Mines",
   "description": "A privilege to see this all up close. All thanks to Dan Guttmann",
   "cover": "",
   "order": 2,
-  "type": "gallery"
+  "type": "parent"
 }
