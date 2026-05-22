@@ -82,112 +82,112 @@ const collectionsData = [
         "path": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio",
         "photos": [
           {
-            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-000002.jpg",
-            "caption": "As Ruinas 000002"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-00002.jpg",
-            "caption": "As Ruinas 00002"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-0002.JPG",
-            "caption": "As Ruinas 0002"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-0003.JPG",
-            "caption": "As Ruinas 0003"
-          },
-          {
             "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-001.JPG",
-            "caption": "As Ruinas 001"
+            "caption": "As Ruinas 01"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-002.jpg",
-            "caption": "As Ruinas 002"
+            "caption": "As Ruinas 02"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-003.jpg",
-            "caption": "As Ruinas 003"
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-0002.JPG",
+            "caption": "As Ruinas 03"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-04.jpg",
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-00002.jpg",
             "caption": "As Ruinas 04"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-05.jpg",
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-000002.jpg",
             "caption": "As Ruinas 05"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-06.jpg",
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-19.jpg",
             "caption": "As Ruinas 06"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-07.jpg",
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-08.jpg",
             "caption": "As Ruinas 07"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-08.jpg",
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-07.jpg",
             "caption": "As Ruinas 08"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-09.jpg",
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-06.jpg",
             "caption": "As Ruinas 09"
           },
           {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-05.jpg",
+            "caption": "As Ruinas 010"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-04.jpg",
+            "caption": "As Ruinas 011"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-003.jpg",
+            "caption": "As Ruinas 012"
+          },
+          {
             "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-11.jpg",
-            "caption": "As Ruinas 11"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-13.jpg",
-            "caption": "As Ruinas 13"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-14.jpg",
-            "caption": "As Ruinas 14"
+            "caption": "As Ruinas 013"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-15.jpg",
-            "caption": "As Ruinas 15"
+            "caption": "As Ruinas 014"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-16.jpg",
-            "caption": "As Ruinas 16"
+            "caption": "As Ruinas 015"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-17.jpg",
-            "caption": "As Ruinas 17"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-19.jpg",
-            "caption": "As Ruinas 19"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-27.jpg",
-            "caption": "As Ruinas 27"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-28.jpg",
-            "caption": "As Ruinas 28"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-29.jpg",
-            "caption": "As Ruinas 29"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-30.jpg",
-            "caption": "As Ruinas 30"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-ab.jpg",
-            "caption": "As Ruinas ab"
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-09.jpg",
+            "caption": "As Ruinas 016"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-ba.jpg",
-            "caption": "As Ruinas ba"
+            "caption": "As Ruinas 017"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-14.jpg",
+            "caption": "As Ruinas 018"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-13.jpg",
+            "caption": "As Ruinas 019"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-17.jpg",
+            "caption": "As Ruinas 020"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-27.jpg",
+            "caption": "As Ruinas 021"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-29.jpg",
+            "caption": "As Ruinas 022"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-28.jpg",
+            "caption": "As Ruinas 023"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-30.jpg",
+            "caption": "As Ruinas 024"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-ab.jpg",
+            "caption": "As Ruinas 025"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-0003.JPG",
+            "caption": "As Ruinas 026"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-z10.jpg",
-            "caption": "As Ruinas z10"
+            "caption": "As Ruinas 027"
           }
         ]
       },
@@ -347,12 +347,12 @@ const collectionsData = [
             "caption": "EOS_500_15"
           },
           {
-            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_8PT_1AncientTree_BW.jpg",
-            "caption": "Not_EOS_500_16"
-          },
-          {
             "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_7SalomonGuttman-0928-36-Large.jpeg",
             "caption": "EOS_500_13"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_8PT_1AncientTree_BW.jpg",
+            "caption": "Not_EOS_500_16"
           }
         ]
       },
@@ -368,91 +368,91 @@ const collectionsData = [
         "photos": [
           {
             "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_BerlinMuseumIsle_BW.jpeg",
-            "caption": "BerlinMuseumIsle BW"
+            "caption": "Berlin 01"
           },
           {
             "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_BerlinPark_BW.jpeg",
-            "caption": "BerlinPark BW"
+            "caption": "Berlin 02"
           },
           {
             "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_BerlinRiver_BW.jpeg",
-            "caption": "BerlinRiver BW"
+            "caption": "Berlin 03"
           },
           {
             "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_DE_Bikes_BW.jpeg",
-            "caption": "DE Bikes BW"
+            "caption": "Berlin 04"
           },
           {
             "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_DE_FHamas_BW.jpeg",
-            "caption": "DE FHamas BW"
+            "caption": "Berlin 05"
           },
           {
             "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_DE_Garden_BW.jpeg",
-            "caption": "DE Garden BW"
+            "caption": "Berlin 06"
           },
           {
             "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_DE_LaundryCafe_BW.jpeg",
-            "caption": "DE LaundryCafe BW"
+            "caption": "Berlin 07"
           },
           {
             "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_DE_Memorial_BW.jpg",
-            "caption": "DE Memorial BW"
+            "caption": "Berlin 08"
           },
           {
             "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_DE_TVTower_BW.jpeg",
-            "caption": "DE TVTower BW"
-          },
-          {
-            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_NL_Canopy_BW.jpg",
-            "caption": "NL Canopy BW"
-          },
-          {
-            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_NL_M&W_BW.jpg",
-            "caption": "NL M&W BW"
-          },
-          {
-            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_BookMonger_BW.jpg",
-            "caption": "PL BookMonger BW"
-          },
-          {
-            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_KasiaRoof_BW.jpg",
-            "caption": "PL KasiaRoof BW"
-          },
-          {
-            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_KosherCounter_BW.jpg",
-            "caption": "PL KosherCounter BW"
-          },
-          {
-            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_WarsUniRoof_BW.jpg",
-            "caption": "PL WarsUniRoof BW"
-          },
-          {
-            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_WarsawGhetto_BW.jpg",
-            "caption": "PL WarsawGhetto BW"
-          },
-          {
-            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_Wedding.jpeg",
-            "caption": "Wedding"
+            "caption": "Berlin 09"
           },
           {
             "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_ZBerlinFriends.jpeg",
-            "caption": "ZBerlinFriends"
-          },
-          {
-            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/NL_Self_BW.jpg",
-            "caption": "Self BW"
-          },
-          {
-            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/XX_NightLight_BW.jpg",
-            "caption": "NightLight BW"
-          },
-          {
-            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/XX_NightSigns_BW.jpg",
-            "caption": "NightSigns BW"
+            "caption": "Berlin 010"
           },
           {
             "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/XX_RayLight_BW.jpg",
-            "caption": "RayLight BW"
+            "caption": "ƒƒƒ"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/XX_NightSigns_BW.jpg",
+            "caption": "∆∆∆"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/XX_NightLight_BW.jpg",
+            "caption": "???"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_BookMonger_BW.jpg",
+            "caption": "Warsaw 01"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_KasiaRoof_BW.jpg",
+            "caption": "Warsaw 02"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_KosherCounter_BW.jpg",
+            "caption": "Warsaw 03"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_WarsUniRoof_BW.jpg",
+            "caption": "Warsaw 04"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_WarsawGhetto_BW.jpg",
+            "caption": "Warsaw 05"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_NL_Canopy_BW.jpg",
+            "caption": "Utrecht 01"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_NL_M&W_BW.jpg",
+            "caption": "Utrecht 02"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/NL_Self_BW.jpg",
+            "caption": "Utrecht 03"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_Wedding.jpeg",
+            "caption": "Zurich 01"
           }
         ]
       }
@@ -1621,112 +1621,112 @@ const siteData = {
     "description": "A collection of the stone ruins that are scattered through the country side.",
     "photos": [
       {
-        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-000002.jpg",
-        "caption": "As Ruinas 000002"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-00002.jpg",
-        "caption": "As Ruinas 00002"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-0002.JPG",
-        "caption": "As Ruinas 0002"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-0003.JPG",
-        "caption": "As Ruinas 0003"
-      },
-      {
         "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-001.JPG",
-        "caption": "As Ruinas 001"
+        "caption": "As Ruinas 01"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-002.jpg",
-        "caption": "As Ruinas 002"
+        "caption": "As Ruinas 02"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-003.jpg",
-        "caption": "As Ruinas 003"
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-0002.JPG",
+        "caption": "As Ruinas 03"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-04.jpg",
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-00002.jpg",
         "caption": "As Ruinas 04"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-05.jpg",
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-000002.jpg",
         "caption": "As Ruinas 05"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-06.jpg",
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-19.jpg",
         "caption": "As Ruinas 06"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-07.jpg",
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-08.jpg",
         "caption": "As Ruinas 07"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-08.jpg",
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-07.jpg",
         "caption": "As Ruinas 08"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-09.jpg",
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-06.jpg",
         "caption": "As Ruinas 09"
       },
       {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-05.jpg",
+        "caption": "As Ruinas 010"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-04.jpg",
+        "caption": "As Ruinas 011"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-003.jpg",
+        "caption": "As Ruinas 012"
+      },
+      {
         "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-11.jpg",
-        "caption": "As Ruinas 11"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-13.jpg",
-        "caption": "As Ruinas 13"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-14.jpg",
-        "caption": "As Ruinas 14"
+        "caption": "As Ruinas 013"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-15.jpg",
-        "caption": "As Ruinas 15"
+        "caption": "As Ruinas 014"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-16.jpg",
-        "caption": "As Ruinas 16"
+        "caption": "As Ruinas 015"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-17.jpg",
-        "caption": "As Ruinas 17"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-19.jpg",
-        "caption": "As Ruinas 19"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-27.jpg",
-        "caption": "As Ruinas 27"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-28.jpg",
-        "caption": "As Ruinas 28"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-29.jpg",
-        "caption": "As Ruinas 29"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-30.jpg",
-        "caption": "As Ruinas 30"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-ab.jpg",
-        "caption": "As Ruinas ab"
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-09.jpg",
+        "caption": "As Ruinas 016"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-ba.jpg",
-        "caption": "As Ruinas ba"
+        "caption": "As Ruinas 017"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-14.jpg",
+        "caption": "As Ruinas 018"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-13.jpg",
+        "caption": "As Ruinas 019"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-17.jpg",
+        "caption": "As Ruinas 020"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-27.jpg",
+        "caption": "As Ruinas 021"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-29.jpg",
+        "caption": "As Ruinas 022"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-28.jpg",
+        "caption": "As Ruinas 023"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-30.jpg",
+        "caption": "As Ruinas 024"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-ab.jpg",
+        "caption": "As Ruinas 025"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-0003.JPG",
+        "caption": "As Ruinas 026"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-z10.jpg",
-        "caption": "As Ruinas z10"
+        "caption": "As Ruinas 027"
       }
     ]
   },
@@ -1826,12 +1826,12 @@ const siteData = {
         "caption": "EOS_500_15"
       },
       {
-        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_8PT_1AncientTree_BW.jpg",
-        "caption": "Not_EOS_500_16"
-      },
-      {
         "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_7SalomonGuttman-0928-36-Large.jpeg",
         "caption": "EOS_500_13"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_8PT_1AncientTree_BW.jpg",
+        "caption": "Not_EOS_500_16"
       }
     ]
   },
@@ -1841,91 +1841,91 @@ const siteData = {
     "photos": [
       {
         "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_BerlinMuseumIsle_BW.jpeg",
-        "caption": "BerlinMuseumIsle BW"
+        "caption": "Berlin 01"
       },
       {
         "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_BerlinPark_BW.jpeg",
-        "caption": "BerlinPark BW"
+        "caption": "Berlin 02"
       },
       {
         "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_BerlinRiver_BW.jpeg",
-        "caption": "BerlinRiver BW"
+        "caption": "Berlin 03"
       },
       {
         "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_DE_Bikes_BW.jpeg",
-        "caption": "DE Bikes BW"
+        "caption": "Berlin 04"
       },
       {
         "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_DE_FHamas_BW.jpeg",
-        "caption": "DE FHamas BW"
+        "caption": "Berlin 05"
       },
       {
         "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_DE_Garden_BW.jpeg",
-        "caption": "DE Garden BW"
+        "caption": "Berlin 06"
       },
       {
         "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_DE_LaundryCafe_BW.jpeg",
-        "caption": "DE LaundryCafe BW"
+        "caption": "Berlin 07"
       },
       {
         "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_DE_Memorial_BW.jpg",
-        "caption": "DE Memorial BW"
+        "caption": "Berlin 08"
       },
       {
         "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_DE_TVTower_BW.jpeg",
-        "caption": "DE TVTower BW"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_NL_Canopy_BW.jpg",
-        "caption": "NL Canopy BW"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_NL_M&W_BW.jpg",
-        "caption": "NL M&W BW"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_BookMonger_BW.jpg",
-        "caption": "PL BookMonger BW"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_KasiaRoof_BW.jpg",
-        "caption": "PL KasiaRoof BW"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_KosherCounter_BW.jpg",
-        "caption": "PL KosherCounter BW"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_WarsUniRoof_BW.jpg",
-        "caption": "PL WarsUniRoof BW"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_WarsawGhetto_BW.jpg",
-        "caption": "PL WarsawGhetto BW"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_Wedding.jpeg",
-        "caption": "Wedding"
+        "caption": "Berlin 09"
       },
       {
         "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_ZBerlinFriends.jpeg",
-        "caption": "ZBerlinFriends"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/NL_Self_BW.jpg",
-        "caption": "Self BW"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/XX_NightLight_BW.jpg",
-        "caption": "NightLight BW"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/XX_NightSigns_BW.jpg",
-        "caption": "NightSigns BW"
+        "caption": "Berlin 010"
       },
       {
         "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/XX_RayLight_BW.jpg",
-        "caption": "RayLight BW"
+        "caption": "ƒƒƒ"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/XX_NightSigns_BW.jpg",
+        "caption": "∆∆∆"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/XX_NightLight_BW.jpg",
+        "caption": "???"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_BookMonger_BW.jpg",
+        "caption": "Warsaw 01"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_KasiaRoof_BW.jpg",
+        "caption": "Warsaw 02"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_KosherCounter_BW.jpg",
+        "caption": "Warsaw 03"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_WarsUniRoof_BW.jpg",
+        "caption": "Warsaw 04"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_PL_WarsawGhetto_BW.jpg",
+        "caption": "Warsaw 05"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_NL_Canopy_BW.jpg",
+        "caption": "Utrecht 01"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_NL_M&W_BW.jpg",
+        "caption": "Utrecht 02"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/NL_Self_BW.jpg",
+        "caption": "Utrecht 03"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_Wedding.jpeg",
+        "caption": "Zurich 01"
       }
     ]
   },

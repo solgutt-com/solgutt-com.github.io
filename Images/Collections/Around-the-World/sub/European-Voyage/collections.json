@@ -4,5 +4,21 @@
   "description": "5 Months of backpacking through Europe. 18,000kms by foot, train, bus, boat, and hitch hiking. The mission to visit as many european friends as possible. The outcome, even more new friends in even more cool places.",
   "cover": "",
   "order": 1,
-  "type": "parent"
+  "type": "parent",
+  "photo_order": [
+    "NL_Monstera_2.jpeg",
+    "NL_MonsteraV.jpeg",
+    "NL_MonsteraIII.jpeg",
+    "NL_MonsteraVI.jpeg",
+    "NL_Monstera.jpeg",
+    "NL_MonsteraIV.jpeg"
+  ],
+  "captions": {
+    "NL_Monstera_2.jpeg": "Monstera 01",
+    "NL_MonsteraV.jpeg": "Monstera 02",
+    "NL_MonsteraIII.jpeg": "Monstera 03",
+    "NL_MonsteraVI.jpeg": "Monstera 04",
+    "NL_Monstera.jpeg": "Monstera 05",
+    "NL_MonsteraIV.jpeg": "Monstera 06"
+  }
 }
