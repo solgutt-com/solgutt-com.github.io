@@ -4,5 +4,41 @@
   "description": "First analog expeirence. Sponsored by Davide Orbitello and his kindness.",
   "cover": "",
   "order": 2,
-  "type": "gallery"
+  "type": "gallery",
+  "photo_order": [
+    "BW_1.jpeg",
+    "BW_2SalomonGuttman-0928-20-Large.jpeg",
+    "BW_6SalomonGuttman-0928-18-Large.jpeg",
+    "BW_5SalomonGuttman-0928-17-Large.jpeg",
+    "BW_16SalomonGuttman-0928-38-Large.jpeg",
+    "BW_8SalomonGuttman-0928-25-Large.jpeg",
+    "BW_7SalomonGuttman-0928-24-Large.jpeg",
+    "BW_3SalomonGuttman-0928-28-Large.jpeg",
+    "BW_12SalomonGuttman-0928-33-Large.jpeg",
+    "BW_11SalomonGuttman-0928-32-Large.jpeg",
+    "BW_10SalomonGuttman-0928-31-Large.jpeg",
+    "BW_13SalomonGuttman-0928-34-Large.jpeg",
+    "BW_14SalomonGuttman-0928-35-Large.jpeg",
+    "BW_NL_RavCook_BW.jpg",
+    "BW_8PT_1AncientTree_BW.jpg",
+    "BW_7SalomonGuttman-0928-36-Large.jpeg"
+  ],
+  "captions": {
+    "BW_1.jpeg": "EOS_500_1",
+    "BW_2SalomonGuttman-0928-20-Large.jpeg": "EOS_500_8",
+    "BW_6SalomonGuttman-0928-18-Large.jpeg": "EOS_500_11",
+    "BW_5SalomonGuttman-0928-17-Large.jpeg": "EOS_500_10",
+    "BW_16SalomonGuttman-0928-38-Large.jpeg": "EOS_500_7",
+    "BW_8SalomonGuttman-0928-25-Large.jpeg": "EOS_500_14",
+    "BW_7SalomonGuttman-0928-24-Large.jpeg": "EOS_500_12",
+    "BW_3SalomonGuttman-0928-28-Large.jpeg": "EOS_500_9",
+    "BW_12SalomonGuttman-0928-33-Large.jpeg": "EOS_500_4",
+    "BW_11SalomonGuttman-0928-32-Large.jpeg": "EOS_500_3",
+    "BW_10SalomonGuttman-0928-31-Large.jpeg": "EOS_500_2",
+    "BW_13SalomonGuttman-0928-34-Large.jpeg": "EOS_500_5",
+    "BW_14SalomonGuttman-0928-35-Large.jpeg": "EOS_500_6",
+    "BW_NL_RavCook_BW.jpg": "EOS_500_15",
+    "BW_8PT_1AncientTree_BW.jpg": "Not_EOS_500_16",
+    "BW_7SalomonGuttman-0928-36-Large.jpeg": "EOS_500_13"
+  }
 }

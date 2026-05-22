@@ -292,67 +292,67 @@ const collectionsData = [
         "photos": [
           {
             "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_1.jpeg",
-            "caption": "1"
-          },
-          {
-            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_10SalomonGuttman-0928-31-Large.jpeg",
-            "caption": "10SalomonGuttman 0928 31"
-          },
-          {
-            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_11SalomonGuttman-0928-32-Large.jpeg",
-            "caption": "11SalomonGuttman 0928 32"
-          },
-          {
-            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_12SalomonGuttman-0928-33-Large.jpeg",
-            "caption": "12SalomonGuttman 0928 33"
-          },
-          {
-            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_13SalomonGuttman-0928-34-Large.jpeg",
-            "caption": "13SalomonGuttman 0928 34"
-          },
-          {
-            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_14SalomonGuttman-0928-35-Large.jpeg",
-            "caption": "14SalomonGuttman 0928 35"
-          },
-          {
-            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_16SalomonGuttman-0928-38-Large.jpeg",
-            "caption": "16SalomonGuttman 0928 38"
+            "caption": "EOS_500_1"
           },
           {
             "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_2SalomonGuttman-0928-20-Large.jpeg",
-            "caption": "2SalomonGuttman 0928 20"
-          },
-          {
-            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_3SalomonGuttman-0928-28-Large.jpeg",
-            "caption": "3SalomonGuttman 0928 28"
-          },
-          {
-            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_5SalomonGuttman-0928-17-Large.jpeg",
-            "caption": "5SalomonGuttman 0928 17"
+            "caption": "EOS_500_8"
           },
           {
             "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_6SalomonGuttman-0928-18-Large.jpeg",
-            "caption": "6SalomonGuttman 0928 18"
+            "caption": "EOS_500_11"
           },
           {
-            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_7SalomonGuttman-0928-24-Large.jpeg",
-            "caption": "7SalomonGuttman 0928 24"
+            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_5SalomonGuttman-0928-17-Large.jpeg",
+            "caption": "EOS_500_10"
           },
           {
-            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_7SalomonGuttman-0928-36-Large.jpeg",
-            "caption": "7SalomonGuttman 0928 36"
-          },
-          {
-            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_8PT_1AncientTree_BW.jpg",
-            "caption": "8PT 1AncientTree BW"
+            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_16SalomonGuttman-0928-38-Large.jpeg",
+            "caption": "EOS_500_7"
           },
           {
             "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_8SalomonGuttman-0928-25-Large.jpeg",
-            "caption": "8SalomonGuttman 0928 25"
+            "caption": "EOS_500_14"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_7SalomonGuttman-0928-24-Large.jpeg",
+            "caption": "EOS_500_12"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_3SalomonGuttman-0928-28-Large.jpeg",
+            "caption": "EOS_500_9"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_12SalomonGuttman-0928-33-Large.jpeg",
+            "caption": "EOS_500_4"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_11SalomonGuttman-0928-32-Large.jpeg",
+            "caption": "EOS_500_3"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_10SalomonGuttman-0928-31-Large.jpeg",
+            "caption": "EOS_500_2"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_13SalomonGuttman-0928-34-Large.jpeg",
+            "caption": "EOS_500_5"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_14SalomonGuttman-0928-35-Large.jpeg",
+            "caption": "EOS_500_6"
           },
           {
             "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_NL_RavCook_BW.jpg",
-            "caption": "NL RavCook BW"
+            "caption": "EOS_500_15"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_8PT_1AncientTree_BW.jpg",
+            "caption": "Not_EOS_500_16"
+          },
+          {
+            "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_7SalomonGuttman-0928-36-Large.jpeg",
+            "caption": "EOS_500_13"
           }
         ]
       },
@@ -1771,67 +1771,67 @@ const siteData = {
     "photos": [
       {
         "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_1.jpeg",
-        "caption": "1"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_10SalomonGuttman-0928-31-Large.jpeg",
-        "caption": "10SalomonGuttman 0928 31"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_11SalomonGuttman-0928-32-Large.jpeg",
-        "caption": "11SalomonGuttman 0928 32"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_12SalomonGuttman-0928-33-Large.jpeg",
-        "caption": "12SalomonGuttman 0928 33"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_13SalomonGuttman-0928-34-Large.jpeg",
-        "caption": "13SalomonGuttman 0928 34"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_14SalomonGuttman-0928-35-Large.jpeg",
-        "caption": "14SalomonGuttman 0928 35"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_16SalomonGuttman-0928-38-Large.jpeg",
-        "caption": "16SalomonGuttman 0928 38"
+        "caption": "EOS_500_1"
       },
       {
         "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_2SalomonGuttman-0928-20-Large.jpeg",
-        "caption": "2SalomonGuttman 0928 20"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_3SalomonGuttman-0928-28-Large.jpeg",
-        "caption": "3SalomonGuttman 0928 28"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_5SalomonGuttman-0928-17-Large.jpeg",
-        "caption": "5SalomonGuttman 0928 17"
+        "caption": "EOS_500_8"
       },
       {
         "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_6SalomonGuttman-0928-18-Large.jpeg",
-        "caption": "6SalomonGuttman 0928 18"
+        "caption": "EOS_500_11"
       },
       {
-        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_7SalomonGuttman-0928-24-Large.jpeg",
-        "caption": "7SalomonGuttman 0928 24"
+        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_5SalomonGuttman-0928-17-Large.jpeg",
+        "caption": "EOS_500_10"
       },
       {
-        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_7SalomonGuttman-0928-36-Large.jpeg",
-        "caption": "7SalomonGuttman 0928 36"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_8PT_1AncientTree_BW.jpg",
-        "caption": "8PT 1AncientTree BW"
+        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_16SalomonGuttman-0928-38-Large.jpeg",
+        "caption": "EOS_500_7"
       },
       {
         "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_8SalomonGuttman-0928-25-Large.jpeg",
-        "caption": "8SalomonGuttman 0928 25"
+        "caption": "EOS_500_14"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_7SalomonGuttman-0928-24-Large.jpeg",
+        "caption": "EOS_500_12"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_3SalomonGuttman-0928-28-Large.jpeg",
+        "caption": "EOS_500_9"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_12SalomonGuttman-0928-33-Large.jpeg",
+        "caption": "EOS_500_4"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_11SalomonGuttman-0928-32-Large.jpeg",
+        "caption": "EOS_500_3"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_10SalomonGuttman-0928-31-Large.jpeg",
+        "caption": "EOS_500_2"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_13SalomonGuttman-0928-34-Large.jpeg",
+        "caption": "EOS_500_5"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_14SalomonGuttman-0928-35-Large.jpeg",
+        "caption": "EOS_500_6"
       },
       {
         "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_NL_RavCook_BW.jpg",
-        "caption": "NL RavCook BW"
+        "caption": "EOS_500_15"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_8PT_1AncientTree_BW.jpg",
+        "caption": "Not_EOS_500_16"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_7SalomonGuttman-0928-36-Large.jpeg",
+        "caption": "EOS_500_13"
       }
     ]
   },
