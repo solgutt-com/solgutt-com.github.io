@@ -80,23 +80,30 @@ def _make_node(folder_name, meta, coll_type, site_rel_path):
     }
 
 
-def scan_photos(photos_dir, site_rel_path, caption_key, captions):
+def scan_photos(photos_dir, site_rel_path, caption_key, captions, photo_order=None):
     """Return [{src, caption}] for all images in photos_dir."""
-    manual = captions.get(caption_key, {})
+    manual   = captions.get(caption_key, {})
+    all_imgs = _list_images(photos_dir)
+    if photo_order:
+        ordered = [f for f in photo_order if f in all_imgs]
+        ordered += [f for f in all_imgs if f not in ordered]
+    else:
+        ordered = all_imgs
     return [
         {
             "src": site_rel_path + "/" + f,
             "caption": manual.get(f, clean_caption(f))
         }
-        for f in _list_images(photos_dir)
+        for f in ordered
     ]
 
 
 def scan_leaf_gallery(folder_path, site_rel_path, captions):
     """Scan a folder whose images sit directly inside (no Photos/ subdirectory)."""
     folder_name = os.path.basename(folder_path)
-    node = _make_node(folder_name, read_meta(folder_path), "gallery", site_rel_path)
-    node["photos"] = scan_photos(folder_path, site_rel_path, folder_name, captions)
+    meta = read_meta(folder_path)
+    node = _make_node(folder_name, meta, "gallery", site_rel_path)
+    node["photos"] = scan_photos(folder_path, site_rel_path, folder_name, captions, meta.get("photo_order"))
     return node
 
 
@@ -146,7 +153,8 @@ def scan_collection(folder_path, site_rel_path, captions):
             photos_dir,
             site_rel_path + "/Photos",
             folder_name,
-            captions
+            captions,
+            meta.get("photo_order")
         )
 
     # coming-soon: no children or photos added

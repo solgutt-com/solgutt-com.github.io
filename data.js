@@ -72,34 +72,12 @@ const collectionsData = [
         ]
       },
       {
-        "id": "amigos_do_portugal",
-        "title": "Amigos do Portugal",
-        "subtitle": "Stangers that became friends.",
-        "description": "Some serious characters.",
-        "cover": "",
-        "order": 2,
-        "type": "gallery",
-        "path": "Images/Collections/Cidadelhe/sub/amigos_do_portugal",
-        "photos": []
-      },
-      {
-        "id": "as_aldeias_de_beira_alta",
-        "title": "As Aldeias de Beira Alta",
-        "subtitle": "Villages of the region.",
-        "description": "Every village in Beira Alta has its own mysteries, weathered church towers, sun-baked villagers, and little cafes.",
-        "cover": "",
-        "order": 3,
-        "type": "gallery",
-        "path": "Images/Collections/Cidadelhe/sub/as_aldeias_de_beira_alta",
-        "photos": []
-      },
-      {
         "id": "as_ruinas_no_meio",
         "title": "As Ruínas no Meio",
         "subtitle": "Ruins in between the villages.",
         "description": "A collection of the stone ruins that are scattered through the country side.",
         "cover": "",
-        "order": 4,
+        "order": 2,
         "type": "gallery",
         "path": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio",
         "photos": [
@@ -214,25 +192,25 @@ const collectionsData = [
         ]
       },
       {
-        "id": "hotel_longroiva",
-        "title": "Hotel Longroiva",
-        "subtitle": "A Luxurious rural getaway https://www.hoteldelongroiva.com/en/",
-        "description": "Photos made for the Hotel Longroiva, a hidden gem near the Massueme Valley. Come visit and see if you notice any familiar photos hanging on the walls.",
-        "cover": "",
-        "order": 5,
-        "type": "gallery",
-        "path": "Images/Collections/Cidadelhe/sub/hotel_longroiva",
-        "photos": []
-      },
-      {
         "id": "os_cidadaos",
         "title": "Os Cidadãos",
         "subtitle": "The citizens of Cidadelhe",
         "description": "A collection of portraits of the people of Cidadelhe, old and new.",
         "cover": "",
-        "order": 6,
+        "order": 3,
         "type": "gallery",
         "path": "Images/Collections/Cidadelhe/sub/os_cidadaos",
+        "photos": []
+      },
+      {
+        "id": "as_aldeias_de_beira_alta",
+        "title": "As Aldeias de Beira Alta",
+        "subtitle": "Villages of the region.",
+        "description": "Every village in Beira Alta has its own mysteries, weathered church towers, sun-baked villagers, and little cafes.",
+        "cover": "",
+        "order": 4,
+        "type": "gallery",
+        "path": "Images/Collections/Cidadelhe/sub/as_aldeias_de_beira_alta",
         "photos": []
       },
       {
@@ -241,9 +219,31 @@ const collectionsData = [
         "subtitle": "Projects on the farm",
         "description": "Snapshots of projects developed with the Scave team in Cidadelhe",
         "cover": "",
-        "order": 7,
+        "order": 5,
         "type": "gallery",
         "path": "Images/Collections/Cidadelhe/sub/projetos_na_quinta",
+        "photos": []
+      },
+      {
+        "id": "amigos_do_portugal",
+        "title": "Amigos do Portugal",
+        "subtitle": "Stangers that became friends.",
+        "description": "Some serious characters.",
+        "cover": "",
+        "order": 6,
+        "type": "gallery",
+        "path": "Images/Collections/Cidadelhe/sub/amigos_do_portugal",
+        "photos": []
+      },
+      {
+        "id": "hotel_longroiva",
+        "title": "Hotel Longroiva",
+        "subtitle": "A Luxurious rural getaway https://www.hoteldelongroiva.com/en/",
+        "description": "Photos made for the Hotel Longroiva, a hidden gem near the Massueme Valley. Come visit and see if you notice any familiar photos hanging on the walls.",
+        "cover": "",
+        "order": 7,
+        "type": "gallery",
+        "path": "Images/Collections/Cidadelhe/sub/hotel_longroiva",
         "photos": []
       },
       {
@@ -1616,16 +1616,6 @@ const siteData = {
       }
     ]
   },
-  "amigos_do_portugal": {
-    "name": "Amigos do Portugal",
-    "description": "Some serious characters.",
-    "photos": []
-  },
-  "as_aldeias_de_beira_alta": {
-    "name": "As Aldeias de Beira Alta",
-    "description": "Every village in Beira Alta has its own mysteries, weathered church towers, sun-baked villagers, and little cafes.",
-    "photos": []
-  },
   "as_ruinas_no_meio": {
     "name": "As Ruínas no Meio",
     "description": "A collection of the stone ruins that are scattered through the country side.",
@@ -1740,19 +1730,29 @@ const siteData = {
       }
     ]
   },
-  "hotel_longroiva": {
-    "name": "Hotel Longroiva",
-    "description": "Photos made for the Hotel Longroiva, a hidden gem near the Massueme Valley. Come visit and see if you notice any familiar photos hanging on the walls.",
-    "photos": []
-  },
   "os_cidadaos": {
     "name": "Os Cidadãos",
     "description": "A collection of portraits of the people of Cidadelhe, old and new.",
     "photos": []
   },
+  "as_aldeias_de_beira_alta": {
+    "name": "As Aldeias de Beira Alta",
+    "description": "Every village in Beira Alta has its own mysteries, weathered church towers, sun-baked villagers, and little cafes.",
+    "photos": []
+  },
   "projetos_na_quinta": {
     "name": "Projetos na Quinta",
     "description": "Snapshots of projects developed with the Scave team in Cidadelhe",
+    "photos": []
+  },
+  "amigos_do_portugal": {
+    "name": "Amigos do Portugal",
+    "description": "Some serious characters.",
+    "photos": []
+  },
+  "hotel_longroiva": {
+    "name": "Hotel Longroiva",
+    "description": "Photos made for the Hotel Longroiva, a hidden gem near the Massueme Valley. Come visit and see if you notice any familiar photos hanging on the walls.",
     "photos": []
   },
   "ten_lives_festival": {
