@@ -2,28 +2,29 @@
 build.py — generates data.js from Images/Collections/ folder structure.
 
 Usage:
-  python3 build.py           — rebuild data.js
-  python3 build.py captions  — regenerate/update captions.json stubs
+  python3 build.py  — rebuild data.js
+
+Captions: set per-gallery in collections.json under "captions": {"filename.jpg": "My caption"}
+Photo order: set per-gallery in collections.json under "photo_order": ["file1.jpg", "file2.jpg"]
+Both fields are optional; defaults are cleaned filenames and alphabetical order.
 """
 
-import os, json, sys
+import os, json
 
 COLLECTIONS_ROOT = "Images/Collections"
-OUTPUT_PATH = "data.js"
-CAPTIONS_PATH = "captions.json"
+OUTPUT_PATH      = "data.js"
 IMAGE_EXTENSIONS = {'.jpeg', '.jpg', '.png', '.webp'}
 
-# Display names for leaf galleries that have no collections.json
 GALLERY_NAMES = {
     "AL": "Albania",       "AT": "Austria",        "BA": "Bosnia & Herzegovina",
-    "BE": "Belgium",       "BW": "Black & White",  "CH": "Switzerland",
-    "DE": "Germany",       "EE": "Estonia",         "ES": "Spain",
-    "FI": "Finland",       "FR": "France",          "Highlights": "Highlights",
-    "HR": "Croatia",       "IT": "Italy",           "LT": "Lithuania",
-    "LV": "Latvia",        "LX": "Luxembourg",      "ME": "Montenegro",
-    "NL": "Netherlands",   "PL": "Poland",          "PT": "Portugal",
-    "SE": "Sweden",        "SI": "Slovenia",        "TheJungle": "The Jungle",
-    "XX": "Somewhere",     "ZA": "South Africa",    "ZW": "Zimbabwe",
+    "BE": "Belgium",       "CH": "Switzerland",     "DE": "Germany",
+    "EE": "Estonia",       "ES": "Spain",           "FI": "Finland",
+    "FR": "France",        "HR": "Croatia",         "IT": "Italy",
+    "LT": "Lithuania",     "LV": "Latvia",          "LX": "Luxembourg",
+    "ME": "Montenegro",    "NL": "Netherlands",     "PL": "Poland",
+    "PT": "Portugal",      "SE": "Sweden",          "SI": "Slovenia",
+    "TheJungle": "The Jungle", "XX": "Somewhere",
+    "ZA": "South Africa",  "ZW": "Zimbabwe",
 }
 
 
@@ -39,14 +40,6 @@ def clean_caption(filename):
     name = name.replace('_', ' ').replace('-', ' ')
     name = ' '.join(w for w in name.split() if w.lower() != 'large')
     return name
-
-
-def load_captions(root):
-    path = os.path.join(root, CAPTIONS_PATH)
-    if not os.path.exists(path):
-        return {}
-    with open(path, 'r', encoding='utf-8') as f:
-        return json.load(f)
 
 
 def read_meta(folder_path):
@@ -80,90 +73,72 @@ def _make_node(folder_name, meta, coll_type, site_rel_path):
     }
 
 
-def scan_photos(photos_dir, site_rel_path, caption_key, captions, photo_order=None):
-    """Return [{src, caption}] for all images in photos_dir."""
-    manual   = captions.get(caption_key, {})
-    all_imgs = _list_images(photos_dir)
+def scan_photos(photos_dir, site_rel_path, meta):
+    """Return [{src, caption}] using photo_order and captions from meta."""
+    captions    = meta.get("captions", {})
+    photo_order = meta.get("photo_order")
+    all_imgs    = _list_images(photos_dir)
+
     if photo_order:
         ordered = [f for f in photo_order if f in all_imgs]
         ordered += [f for f in all_imgs if f not in ordered]
     else:
         ordered = all_imgs
+
     return [
         {
-            "src": site_rel_path + "/" + f,
-            "caption": manual.get(f, clean_caption(f))
+            "src":     site_rel_path + "/" + f,
+            "caption": captions.get(f, clean_caption(f))
         }
         for f in ordered
     ]
 
 
-def scan_leaf_gallery(folder_path, site_rel_path, captions):
-    """Scan a folder whose images sit directly inside (no Photos/ subdirectory)."""
+def scan_leaf_gallery(folder_path, site_rel_path):
+    """Scan a country-code folder whose images sit directly inside (no Photos/ subdir)."""
     folder_name = os.path.basename(folder_path)
-    meta = read_meta(folder_path)
-    node = _make_node(folder_name, meta, "gallery", site_rel_path)
-    node["photos"] = scan_photos(folder_path, site_rel_path, folder_name, captions, meta.get("photo_order"))
+    meta        = read_meta(folder_path)
+    node        = _make_node(folder_name, meta, "gallery", site_rel_path)
+    node["photos"] = scan_photos(folder_path, site_rel_path, meta)
     return node
 
 
-def scan_collection(folder_path, site_rel_path, captions):
+def scan_collection(folder_path, site_rel_path):
     """Recursively build a collection node from folder_path."""
     folder_name = os.path.basename(folder_path)
     meta        = read_meta(folder_path)
     coll_type   = meta.get("type", "gallery")
-
-    node = _make_node(folder_name, meta, coll_type, site_rel_path)
+    node        = _make_node(folder_name, meta, coll_type, site_rel_path)
 
     if coll_type == "parent":
         children = []
 
-        # Standard sub-collections in sub/
         sub_dir = os.path.join(folder_path, "sub")
         if os.path.isdir(sub_dir):
             for name in sorted(os.listdir(sub_dir)):
                 child_path = os.path.join(sub_dir, name)
                 if os.path.isdir(child_path):
-                    child = scan_collection(
-                        child_path,
-                        site_rel_path + "/sub/" + name,
-                        captions
-                    )
-                    children.append(child)
+                    children.append(scan_collection(child_path, site_rel_path + "/sub/" + name))
 
-        # Country-code-style galleries sitting as sub-directories inside Photos/
         photos_dir = os.path.join(folder_path, "Photos")
         if os.path.isdir(photos_dir):
             for name in sorted(os.listdir(photos_dir)):
                 child_path = os.path.join(photos_dir, name)
                 if os.path.isdir(child_path):
-                    child = scan_leaf_gallery(
-                        child_path,
-                        site_rel_path + "/Photos/" + name,
-                        captions
-                    )
-                    children.append(child)
+                    children.append(scan_leaf_gallery(child_path, site_rel_path + "/Photos/" + name))
 
         children.sort(key=lambda x: (x["order"], x["id"]))
         node["children"] = children
 
     elif coll_type == "gallery":
         photos_dir = os.path.join(folder_path, "Photos")
-        node["photos"] = scan_photos(
-            photos_dir,
-            site_rel_path + "/Photos",
-            folder_name,
-            captions,
-            meta.get("photo_order")
-        )
-
-    # coming-soon: no children or photos added
+        node["photos"] = scan_photos(photos_dir, site_rel_path + "/Photos", meta)
 
     return node
 
 
 def collect_galleries(node, index):
-    """Walk the nested tree and populate a flat id→gallery dict."""
+    """Walk the nested tree and populate a flat id→gallery dict for siteData."""
     if node["type"] == "gallery":
         index[node["id"]] = {
             "name":        node["title"],
@@ -182,15 +157,11 @@ def build_data_js():
         print(f"Error: {COLLECTIONS_ROOT} not found")
         return
 
-    captions = load_captions(root)
-
     collections = []
     for name in sorted(os.listdir(collections_path)):
         folder_path = os.path.join(collections_path, name)
-        if not os.path.isdir(folder_path):
-            continue
-        node = scan_collection(folder_path, COLLECTIONS_ROOT + "/" + name, captions)
-        collections.append(node)
+        if os.path.isdir(folder_path):
+            collections.append(scan_collection(folder_path, COLLECTIONS_ROOT + "/" + name))
     collections.sort(key=lambda x: (x["order"], x["id"]))
 
     gallery_index = {}
@@ -217,47 +188,5 @@ def build_data_js():
     print("─────────────────────────────────")
 
 
-def generate_captions_json():
-    """Write/update captions.json stubs for all gallery folders."""
-    root             = os.path.dirname(os.path.abspath(__file__))
-    collections_path = os.path.join(root, COLLECTIONS_ROOT)
-
-    existing = load_captions(root)
-    updated  = dict(existing)
-    added    = 0
-
-    # Build tree with no existing captions so auto-captions populate photo entries
-    collections = []
-    for name in sorted(os.listdir(collections_path)):
-        fp = os.path.join(collections_path, name)
-        if os.path.isdir(fp):
-            collections.append(scan_collection(fp, COLLECTIONS_ROOT + "/" + name, {}))
-
-    def stub_node(node):
-        nonlocal added
-        if node["type"] == "gallery":
-            bucket = updated.setdefault(node["id"], {})
-            for photo in node.get("photos", []):
-                filename = os.path.basename(photo["src"])
-                if filename not in bucket:
-                    bucket[filename] = photo["caption"]
-                    added += 1
-        for child in node.get("children", []):
-            stub_node(child)
-
-    for c in collections:
-        stub_node(c)
-
-    captions_path = os.path.join(root, CAPTIONS_PATH)
-    with open(captions_path, 'w', encoding='utf-8') as f:
-        json.dump(updated, f, indent=2, ensure_ascii=False)
-
-    total = sum(len(v) for v in updated.values())
-    print(f"captions.json updated — {total} total entries, {added} new stubs added")
-
-
 if __name__ == '__main__':
-    if len(sys.argv) > 1 and sys.argv[1] == 'captions':
-        generate_captions_json()
-    else:
-        build_data_js()
+    build_data_js()

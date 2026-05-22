@@ -490,31 +490,31 @@ const collectionsData = [
             "photos": [
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_1.jpeg",
-                "caption": "Lin Peninsula"
+                "caption": "1"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_10.jpeg",
-                "caption": "Kasamir"
+                "caption": "10"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_2.jpeg",
-                "caption": "Durres"
+                "caption": "2"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_3.jpeg",
-                "caption": "Tangled up"
+                "caption": "3"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_4.jpeg",
-                "caption": "Looking out"
+                "caption": "4"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_5.jpeg",
-                "caption": "Across Ohrid"
+                "caption": "5"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_6.jpeg",
-                "caption": "Melon Season"
+                "caption": "6"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_7 Large.jpeg",
@@ -522,23 +522,23 @@ const collectionsData = [
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_8.jpeg",
-                "caption": "Morning Commute"
+                "caption": "8"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_9.jpeg",
-                "caption": "Atop Berat"
+                "caption": "9"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_Coexist.jpeg",
-                "caption": "Layered Coexistence"
+                "caption": "Coexist"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_Fisherwoman.jpeg",
-                "caption": "Fisher Woman"
+                "caption": "Fisherwoman"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_LinIII.jpeg",
-                "caption": "Bygone Era"
+                "caption": "LinIII"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_Security.jpeg",
@@ -558,15 +558,15 @@ const collectionsData = [
             "photos": [
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AT/AT_AlleyWay.jpeg",
-                "caption": "Out Brack"
+                "caption": "AlleyWay"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AT/AT_Edifice.jpeg",
-                "caption": "In Front"
+                "caption": "Edifice"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AT/AT_MountainView.jpeg",
-                "caption": "Salzburg"
+                "caption": "MountainView"
               }
             ]
           },
@@ -1935,31 +1935,31 @@ const siteData = {
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_1.jpeg",
-        "caption": "Lin Peninsula"
+        "caption": "1"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_10.jpeg",
-        "caption": "Kasamir"
+        "caption": "10"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_2.jpeg",
-        "caption": "Durres"
+        "caption": "2"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_3.jpeg",
-        "caption": "Tangled up"
+        "caption": "3"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_4.jpeg",
-        "caption": "Looking out"
+        "caption": "4"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_5.jpeg",
-        "caption": "Across Ohrid"
+        "caption": "5"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_6.jpeg",
-        "caption": "Melon Season"
+        "caption": "6"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_7 Large.jpeg",
@@ -1967,23 +1967,23 @@ const siteData = {
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_8.jpeg",
-        "caption": "Morning Commute"
+        "caption": "8"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_9.jpeg",
-        "caption": "Atop Berat"
+        "caption": "9"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_Coexist.jpeg",
-        "caption": "Layered Coexistence"
+        "caption": "Coexist"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_Fisherwoman.jpeg",
-        "caption": "Fisher Woman"
+        "caption": "Fisherwoman"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_LinIII.jpeg",
-        "caption": "Bygone Era"
+        "caption": "LinIII"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_Security.jpeg",
@@ -1997,15 +1997,15 @@ const siteData = {
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AT/AT_AlleyWay.jpeg",
-        "caption": "Out Brack"
+        "caption": "AlleyWay"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AT/AT_Edifice.jpeg",
-        "caption": "In Front"
+        "caption": "Edifice"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AT/AT_MountainView.jpeg",
-        "caption": "Salzburg"
+        "caption": "MountainView"
       }
     ]
   },
