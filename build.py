@@ -9,7 +9,10 @@ Photo order: set per-gallery in collections.json under "photo_order": ["file1.jp
 Both fields are optional; defaults are cleaned filenames and alphabetical order.
 """
 
-import os, json
+import os, json, unicodedata
+
+def nfc(s):
+    return unicodedata.normalize('NFC', s)
 
 COLLECTIONS_ROOT = "Images/Collections"
 OUTPUT_PATH      = "data.js"
@@ -57,7 +60,7 @@ def read_meta(folder_path):
 def _list_images(directory):
     if not os.path.isdir(directory):
         return []
-    return sorted(f for f in os.listdir(directory) if os.path.splitext(f)[1].lower() in IMAGE_EXTENSIONS)
+    return sorted(nfc(f) for f in os.listdir(directory) if os.path.splitext(f)[1].lower() in IMAGE_EXTENSIONS)
 
 
 def _make_node(folder_name, meta, coll_type, site_rel_path):

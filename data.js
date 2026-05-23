@@ -366,120 +366,120 @@ const collectionsData = [
         "path": "Images/Collections/Cidadelhe/sub/os_cidadaos",
         "photos": [
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-01.jpg",
-            "caption": "Os Cidadãos 01"
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-01.jpg",
+            "caption": "Os Cidadãos 01"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-02.jpg",
-            "caption": "Os Cidadãos 02"
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-02.jpg",
+            "caption": "Os Cidadãos 02"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-05.jpg",
-            "caption": "Os Cidadãos 05"
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-05.jpg",
+            "caption": "Os Cidadãos 05"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-07.jpg",
-            "caption": "Os Cidadãos 07"
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-07.jpg",
+            "caption": "Os Cidadãos 07"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-08.jpg",
-            "caption": "Os Cidadãos 08"
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-08.jpg",
+            "caption": "Os Cidadãos 08"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-10.jpg",
-            "caption": "Os Cidadãos 10"
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-10.jpg",
+            "caption": "Os Cidadãos 10"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-11.jpg",
-            "caption": "Os Cidadãos 11"
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-11.jpg",
+            "caption": "Os Cidadãos 11"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-12.jpg",
-            "caption": "Os Cidadãos 12"
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-12.jpg",
+            "caption": "Os Cidadãos 12"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-13.jpg",
-            "caption": "Os Cidadãos 13"
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-13.jpg",
+            "caption": "Os Cidadãos 13"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-14.jpg",
-            "caption": "Os Cidadãos 14"
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-14.jpg",
+            "caption": "Os Cidadãos 14"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-15.jpg",
-            "caption": "Os Cidadãos 15"
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-15.jpg",
+            "caption": "Os Cidadãos 15"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-16.jpg",
-            "caption": "Os Cidadãos 16"
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-16.jpg",
+            "caption": "Os Cidadãos 16"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-22.jpg",
-            "caption": "Os Cidadãos 22"
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-22.jpg",
+            "caption": "Os Cidadãos 22"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-24.jpg",
-            "caption": "Os Cidadãos 24"
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-24.jpg",
+            "caption": "Os Cidadãos 24"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-25.jpg",
-            "caption": "Os Cidadãos 25"
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-25.jpg",
+            "caption": "Os Cidadãos 25"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-26.jpg",
-            "caption": "Os Cidadãos 26"
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-26.jpg",
+            "caption": "Os Cidadãos 26"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-31.jpg",
-            "caption": "Os Cidadãos 31"
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-31.jpg",
+            "caption": "Os Cidadãos 31"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-36.jpg",
-            "caption": "Os Cidadãos 36"
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-36.jpg",
+            "caption": "Os Cidadãos 36"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-40.jpg",
-            "caption": "Os Cidadãos 40"
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-40.jpg",
+            "caption": "Os Cidadãos 40"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-43.jpg",
-            "caption": "Os Cidadãos 43"
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-43.jpg",
+            "caption": "Os Cidadãos 43"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-44.jpg",
-            "caption": "Os Cidadãos 44"
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-44.jpg",
+            "caption": "Os Cidadãos 44"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-46.jpg",
-            "caption": "Os Cidadãos 46"
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-46.jpg",
+            "caption": "Os Cidadãos 46"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-47.jpg",
-            "caption": "Os Cidadãos 47"
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-47.jpg",
+            "caption": "Os Cidadãos 47"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-48.jpg",
-            "caption": "Os Cidadãos 48"
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-48.jpg",
+            "caption": "Os Cidadãos 48"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-49.jpg",
-            "caption": "Os Cidadãos 49"
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-49.jpg",
+            "caption": "Os Cidadãos 49"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-50.jpg",
-            "caption": "Os Cidadãos 50"
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-50.jpg",
+            "caption": "Os Cidadãos 50"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-51.jpg",
-            "caption": "Os Cidadãos 51"
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-51.jpg",
+            "caption": "Os Cidadãos 51"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-55.jpg",
-            "caption": "Os Cidadãos 55"
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-55.jpg",
+            "caption": "Os Cidadãos 55"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-57.jpg",
-            "caption": "Os Cidadãos 57"
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-57.jpg",
+            "caption": "Os Cidadãos 57"
           }
         ]
       },
@@ -2685,120 +2685,120 @@ const siteData = {
     "description": "A collection of portraits of the people of Cidadelhe, old and new.",
     "photos": [
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-01.jpg",
-        "caption": "Os Cidadãos 01"
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-01.jpg",
+        "caption": "Os Cidadãos 01"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-02.jpg",
-        "caption": "Os Cidadãos 02"
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-02.jpg",
+        "caption": "Os Cidadãos 02"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-05.jpg",
-        "caption": "Os Cidadãos 05"
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-05.jpg",
+        "caption": "Os Cidadãos 05"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-07.jpg",
-        "caption": "Os Cidadãos 07"
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-07.jpg",
+        "caption": "Os Cidadãos 07"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-08.jpg",
-        "caption": "Os Cidadãos 08"
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-08.jpg",
+        "caption": "Os Cidadãos 08"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-10.jpg",
-        "caption": "Os Cidadãos 10"
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-10.jpg",
+        "caption": "Os Cidadãos 10"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-11.jpg",
-        "caption": "Os Cidadãos 11"
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-11.jpg",
+        "caption": "Os Cidadãos 11"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-12.jpg",
-        "caption": "Os Cidadãos 12"
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-12.jpg",
+        "caption": "Os Cidadãos 12"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-13.jpg",
-        "caption": "Os Cidadãos 13"
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-13.jpg",
+        "caption": "Os Cidadãos 13"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-14.jpg",
-        "caption": "Os Cidadãos 14"
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-14.jpg",
+        "caption": "Os Cidadãos 14"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-15.jpg",
-        "caption": "Os Cidadãos 15"
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-15.jpg",
+        "caption": "Os Cidadãos 15"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-16.jpg",
-        "caption": "Os Cidadãos 16"
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-16.jpg",
+        "caption": "Os Cidadãos 16"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-22.jpg",
-        "caption": "Os Cidadãos 22"
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-22.jpg",
+        "caption": "Os Cidadãos 22"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-24.jpg",
-        "caption": "Os Cidadãos 24"
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-24.jpg",
+        "caption": "Os Cidadãos 24"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-25.jpg",
-        "caption": "Os Cidadãos 25"
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-25.jpg",
+        "caption": "Os Cidadãos 25"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-26.jpg",
-        "caption": "Os Cidadãos 26"
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-26.jpg",
+        "caption": "Os Cidadãos 26"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-31.jpg",
-        "caption": "Os Cidadãos 31"
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-31.jpg",
+        "caption": "Os Cidadãos 31"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-36.jpg",
-        "caption": "Os Cidadãos 36"
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-36.jpg",
+        "caption": "Os Cidadãos 36"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-40.jpg",
-        "caption": "Os Cidadãos 40"
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-40.jpg",
+        "caption": "Os Cidadãos 40"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-43.jpg",
-        "caption": "Os Cidadãos 43"
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-43.jpg",
+        "caption": "Os Cidadãos 43"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-44.jpg",
-        "caption": "Os Cidadãos 44"
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-44.jpg",
+        "caption": "Os Cidadãos 44"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-46.jpg",
-        "caption": "Os Cidadãos 46"
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-46.jpg",
+        "caption": "Os Cidadãos 46"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-47.jpg",
-        "caption": "Os Cidadãos 47"
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-47.jpg",
+        "caption": "Os Cidadãos 47"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-48.jpg",
-        "caption": "Os Cidadãos 48"
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-48.jpg",
+        "caption": "Os Cidadãos 48"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-49.jpg",
-        "caption": "Os Cidadãos 49"
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-49.jpg",
+        "caption": "Os Cidadãos 49"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-50.jpg",
-        "caption": "Os Cidadãos 50"
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-50.jpg",
+        "caption": "Os Cidadãos 50"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-51.jpg",
-        "caption": "Os Cidadãos 51"
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-51.jpg",
+        "caption": "Os Cidadãos 51"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-55.jpg",
-        "caption": "Os Cidadãos 55"
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-55.jpg",
+        "caption": "Os Cidadãos 55"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-57.jpg",
-        "caption": "Os Cidadãos 57"
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-57.jpg",
+        "caption": "Os Cidadãos 57"
       }
     ]
   },
