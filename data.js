@@ -22,10 +22,6 @@ const collectionsData = [
         "path": "Images/Collections/Cidadelhe/sub/a_natureza",
         "photos": [
           {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/ .jpg",
-            "caption": ""
-          },
-          {
             "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-001.jpg",
             "caption": "Cidadelhe Natureza 001"
           },
@@ -524,7 +520,240 @@ const collectionsData = [
         "order": 3,
         "type": "gallery",
         "path": "Images/Collections/Cidadelhe/sub/os_cidadaos",
-        "photos": []
+        "photos": [
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-01.jpg",
+            "caption": "Os Cidadãos 01"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-02.jpg",
+            "caption": "Os Cidadãos 02"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-03.jpg",
+            "caption": "Os Cidadãos 03"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-04.jpg",
+            "caption": "Os Cidadãos 04"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-05.jpg",
+            "caption": "Os Cidadãos 05"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-06.jpg",
+            "caption": "Os Cidadãos 06"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-07.jpg",
+            "caption": "Os Cidadãos 07"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-08.jpg",
+            "caption": "Os Cidadãos 08"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-09.jpg",
+            "caption": "Os Cidadãos 09"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-10.jpg",
+            "caption": "Os Cidadãos 10"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-11.jpg",
+            "caption": "Os Cidadãos 11"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-12.jpg",
+            "caption": "Os Cidadãos 12"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-13.jpg",
+            "caption": "Os Cidadãos 13"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-14.jpg",
+            "caption": "Os Cidadãos 14"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-15.jpg",
+            "caption": "Os Cidadãos 15"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-16.jpg",
+            "caption": "Os Cidadãos 16"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-17.jpg",
+            "caption": "Os Cidadãos 17"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-18.jpg",
+            "caption": "Os Cidadãos 18"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-19.jpg",
+            "caption": "Os Cidadãos 19"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-20.jpg",
+            "caption": "Os Cidadãos 20"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-21.jpg",
+            "caption": "Os Cidadãos 21"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-22.jpg",
+            "caption": "Os Cidadãos 22"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-23.jpg",
+            "caption": "Os Cidadãos 23"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-24.jpg",
+            "caption": "Os Cidadãos 24"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-25.jpg",
+            "caption": "Os Cidadãos 25"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-26.jpg",
+            "caption": "Os Cidadãos 26"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-27.jpg",
+            "caption": "Os Cidadãos 27"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-28.jpg",
+            "caption": "Os Cidadãos 28"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-29.jpg",
+            "caption": "Os Cidadãos 29"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-30.jpg",
+            "caption": "Os Cidadãos 30"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-31.jpg",
+            "caption": "Os Cidadãos 31"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-32.jpg",
+            "caption": "Os Cidadãos 32"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-33.jpg",
+            "caption": "Os Cidadãos 33"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-34.jpg",
+            "caption": "Os Cidadãos 34"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-35.jpg",
+            "caption": "Os Cidadãos 35"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-36.jpg",
+            "caption": "Os Cidadãos 36"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-37.jpg",
+            "caption": "Os Cidadãos 37"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-38.jpg",
+            "caption": "Os Cidadãos 38"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-39.jpg",
+            "caption": "Os Cidadãos 39"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-40.jpg",
+            "caption": "Os Cidadãos 40"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-41.jpg",
+            "caption": "Os Cidadãos 41"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-42.jpg",
+            "caption": "Os Cidadãos 42"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-43.jpg",
+            "caption": "Os Cidadãos 43"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-44.jpg",
+            "caption": "Os Cidadãos 44"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-45.jpg",
+            "caption": "Os Cidadãos 45"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-46.jpg",
+            "caption": "Os Cidadãos 46"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-47.jpg",
+            "caption": "Os Cidadãos 47"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-48.jpg",
+            "caption": "Os Cidadãos 48"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-49.jpg",
+            "caption": "Os Cidadãos 49"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-50.jpg",
+            "caption": "Os Cidadãos 50"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-51.jpg",
+            "caption": "Os Cidadãos 51"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-52.jpg",
+            "caption": "Os Cidadãos 52"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-53.jpg",
+            "caption": "Os Cidadãos 53"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-54.jpg",
+            "caption": "Os Cidadãos 54"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-55.jpg",
+            "caption": "Os Cidadãos 55"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-56.jpg",
+            "caption": "Os Cidadãos 56"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-57.jpg",
+            "caption": "Os Cidadãos 57"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-58.jpg",
+            "caption": "Os Cidadãos 58"
+          }
+        ]
       },
       {
         "id": "as_aldeias_de_beira_alta",
@@ -1860,14 +2089,14 @@ const collectionsData = [
         ]
       },
       {
-        "id": "Searching-for-King-Solomons-Mines",
+        "id": "The Bush",
         "title": "The Bush",
         "subtitle": "Searching for King Solomon's Mines",
         "description": "A privilege to see this all up close. All thanks to Dan Guttmann",
         "cover": "",
         "order": 2,
         "type": "parent",
-        "path": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines",
+        "path": "Images/Collections/Around-the-World/sub/The Bush",
         "children": [
           {
             "id": "ZA",
@@ -1877,458 +2106,458 @@ const collectionsData = [
             "cover": "",
             "order": 999,
             "type": "gallery",
-            "path": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA",
+            "path": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA",
             "photos": [
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/IMGM1100.JPG",
-                "caption": "IMGM1100"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/IMGM1100.JPG",
+                "caption": "ZA_Ubuntu"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-01.jpg",
-                "caption": "Zuid Africa 01"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-108.jpg",
+                "caption": "ZA_Big_V 01"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-04.jpg",
-                "caption": "Zuid Africa 04"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-111.jpg",
+                "caption": "ZA_Big_V 02"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-102.jpg",
-                "caption": "Zuid Africa 102"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-122.jpg",
+                "caption": "ZA_Big_V 03"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-107.jpg",
-                "caption": "Zuid Africa 107"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-102.jpg",
+                "caption": "ZA_Big_V 04"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-108.jpg",
-                "caption": "Zuid Africa 108"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-131.jpg",
+                "caption": "ZA_Big_V 06"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-109.jpg",
-                "caption": "Zuid Africa 109"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-127.jpg",
+                "caption": "ZA_Big_V 07"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-111.jpg",
-                "caption": "Zuid Africa 111"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-163.jpg",
+                "caption": "ZA_Big_V 08"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-122.jpg",
-                "caption": "Zuid Africa 122"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-81.jpg",
+                "caption": "ZA_Ekhohlo"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-123.jpg",
-                "caption": "Zuid Africa 123"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-82.jpg",
+                "caption": "ZA_Ekunene"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-124.jpg",
-                "caption": "Zuid Africa 124"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-142.jpg",
+                "caption": "ZA_Big_V 09"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-126.jpg",
-                "caption": "Zuid Africa 126"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-137.jpg",
+                "caption": "ZA_Big_V 010"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-127.jpg",
-                "caption": "Zuid Africa 127"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-225.jpg",
+                "caption": "ZA_Umhlaba"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-129.jpg",
-                "caption": "Zuid Africa 129"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-178.jpg",
+                "caption": "ZA_Big_V 011"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-130.jpg",
-                "caption": "Zuid Africa 130"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-180.jpg",
+                "caption": "ZA_Big_V 012"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-131.jpg",
-                "caption": "Zuid Africa 131"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-171.jpg",
+                "caption": "ZA_Big_V 013"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-132.jpg",
-                "caption": "Zuid Africa 132"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-172.jpg",
+                "caption": "ZA_Big_V 014"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-133.jpg",
-                "caption": "Zuid Africa 133"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-166.jpg",
+                "caption": "ZA_Big_V 015"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-134.jpg",
-                "caption": "Zuid Africa 134"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-169.jpg",
+                "caption": "ZA_Big_V_Lunch 016"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-137.jpg",
-                "caption": "Zuid Africa 137"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-64.jpg",
+                "caption": "ZA_Big_V 017"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-139.jpg",
-                "caption": "Zuid Africa 139"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-199.jpg",
+                "caption": "ZA_Big_V 018"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-142.jpg",
-                "caption": "Zuid Africa 142"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-203.jpg",
+                "caption": "ZA_Big_V 019"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-144.jpg",
-                "caption": "Zuid Africa 144"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-200.jpg",
+                "caption": "ZA_Big_V 020"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-147.jpg",
-                "caption": "Zuid Africa 147"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-298.jpg",
+                "caption": "ZA_Isibhakabhaka"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-150.jpg",
-                "caption": "Zuid Africa 150"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-274.jpg",
+                "caption": "ZA_Usapho"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-152.jpg",
-                "caption": "Zuid Africa 152"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-90.jpg",
+                "caption": "ZA_Family 01"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-159.jpg",
-                "caption": "Zuid Africa 159"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-95.jpg",
+                "caption": "ZA_Family 02"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-163.jpg",
-                "caption": "Zuid Africa 163"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-88.jpg",
+                "caption": "ZA_Family_03"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-164.jpg",
-                "caption": "Zuid Africa 164"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-139.jpg",
+                "caption": "ZA_Family 04"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-165.jpg",
-                "caption": "Zuid Africa 165"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-220.jpg",
+                "caption": "ZA_Family 05"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-166.jpg",
-                "caption": "Zuid Africa 166"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-186.jpg",
+                "caption": "ZA_Family 06"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-168.jpg",
-                "caption": "Zuid Africa 168"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-223.jpg",
+                "caption": "ZA_Family 07"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-169.jpg",
-                "caption": "Zuid Africa 169"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-212.jpg",
+                "caption": "ZA_Family_08"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-17.jpg",
-                "caption": "Zuid Africa 17"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-23.jpg",
+                "caption": "ZA_Family 09"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-171.jpg",
-                "caption": "Zuid Africa 171"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-246.jpg",
+                "caption": "ZA_Ukumangala"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-172.jpg",
-                "caption": "Zuid Africa 172"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-245.jpg",
+                "caption": "ZA_Ku tshaka"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-177.jpg",
-                "caption": "Zuid Africa 177"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-254.jpg",
+                "caption": "ZA_Impucuko"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-178.jpg",
-                "caption": "Zuid Africa 178"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-182.jpg",
+                "caption": "ZA_In_Hiding 01"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-180.jpg",
-                "caption": "Zuid Africa 180"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-133.jpg",
+                "caption": "ZA_In_Hiding 02"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-181.jpg",
-                "caption": "Zuid Africa 181"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-130.jpg",
+                "caption": "ZA_In_Hiding 03"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-182.jpg",
-                "caption": "Zuid Africa 182"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-132.jpg",
+                "caption": "ZA_In_Hiding 04"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-183.jpg",
-                "caption": "Zuid Africa 183"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-181.jpg",
+                "caption": "ZA_In_Hiding 05"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-184.jpg",
-                "caption": "Zuid Africa 184"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-144.jpg",
+                "caption": "ZA_In_Hiding 06"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-185.jpg",
-                "caption": "Zuid Africa 185"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-214.jpg",
+                "caption": "ZA_In_Hiding 07"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-186.jpg",
-                "caption": "Zuid Africa 186"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-236.jpg",
+                "caption": "ZA_In_Hiding 08"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-189.jpg",
-                "caption": "Zuid Africa 189"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-24.jpg",
+                "caption": "ZA_In_Hiding 09"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-192.jpg",
-                "caption": "Zuid Africa 192"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-263.jpg",
+                "caption": "ZA_Awe 06"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-197.jpg",
-                "caption": "Zuid Africa 197"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-285.jpg",
+                "caption": "ZA_Awe 07"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-198.jpg",
-                "caption": "Zuid Africa 198"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-219.jpg",
+                "caption": "ZA_Water_Buck"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-199.jpg",
-                "caption": "Zuid Africa 199"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-293.jpg",
+                "caption": "ZA_Kudu"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-200.jpg",
-                "caption": "Zuid Africa 200"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-211.jpg",
+                "caption": "ZA_Wildebeast_Oxpecker"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-203.jpg",
-                "caption": "Zuid Africa 203"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-184.jpg",
+                "caption": "ZA_Vervet_01"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-208.jpg",
-                "caption": "Zuid Africa 208"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-183.jpg",
+                "caption": "ZA_Vervet_02"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-210.jpg",
-                "caption": "Zuid Africa 210"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-77.jpg",
+                "caption": "ZA_Southern_Giraffe"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-211.jpg",
-                "caption": "Zuid Africa 211"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-189.jpg",
+                "caption": "ZA_Lilac-breasted_Roller"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-212.jpg",
-                "caption": "Zuid Africa 212"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-164.jpg",
+                "caption": "ZA_Cape_Glossy_Starling 01"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-213.jpg",
-                "caption": "Zuid Africa 213"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-208.jpg",
+                "caption": "ZA_Cape_Glossy_Starling 02"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-214.jpg",
-                "caption": "Zuid Africa 214"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-134.jpg",
+                "caption": "ZA_Brown_Snake_Eagle"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-218.jpg",
-                "caption": "Zuid Africa 218"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-42.jpg",
+                "caption": "ZA_White-backed_Vulture"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-219.jpg",
-                "caption": "Zuid Africa 219"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-226.jpg",
+                "caption": "ZA_Rock_Hyrax"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-220.jpg",
-                "caption": "Zuid Africa 220"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-159.jpg",
+                "caption": "ZA_Nile_Crocodile_Adult"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-221.jpg",
-                "caption": "Zuid Africa 221"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-229.jpg",
+                "caption": "ZA_Nile_Crocodile_Sub_Adult"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-222.jpg",
-                "caption": "Zuid Africa 222"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-240.jpg",
+                "caption": "ZA_Nile_Crocodile_Juvenile"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-223.jpg",
-                "caption": "Zuid Africa 223"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-63.jpg",
+                "caption": "ZA_Golden_Silk_Orb-Weaver 01"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-225.jpg",
-                "caption": "Zuid Africa 225"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-62.jpg",
+                "caption": "ZA_Golden_Silk_Orb-Weaver 02"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-226.jpg",
-                "caption": "Zuid Africa 226"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-213.jpg",
+                "caption": "ZA_Common_Hippopotamus"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-229.jpg",
-                "caption": "Zuid Africa 229"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-17.jpg",
+                "caption": "ZA_Plains_Zebra"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-23.jpg",
-                "caption": "Zuid Africa 23"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-04.jpg",
+                "caption": "ZA_Leopard"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-230.jpg",
-                "caption": "Zuid Africa 230"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-270.jpg",
+                "caption": "ZA_Ihlathi"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-236.jpg",
-                "caption": "Zuid Africa 236"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-318.jpg",
+                "caption": "ZA_Ukushona kwelanga"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-237.jpg",
-                "caption": "Zuid Africa 237"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-239.jpg",
-                "caption": "Zuid Africa 239"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-24.jpg",
-                "caption": "Zuid Africa 24"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-240.jpg",
-                "caption": "Zuid Africa 240"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-245.jpg",
-                "caption": "Zuid Africa 245"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-246.jpg",
-                "caption": "Zuid Africa 246"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-254.jpg",
-                "caption": "Zuid Africa 254"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-263.jpg",
-                "caption": "Zuid Africa 263"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-267.jpg",
-                "caption": "Zuid Africa 267"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-270.jpg",
-                "caption": "Zuid Africa 270"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-272.jpg",
-                "caption": "Zuid Africa 272"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-274.jpg",
-                "caption": "Zuid Africa 274"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-285.jpg",
-                "caption": "Zuid Africa 285"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-293.jpg",
-                "caption": "Zuid Africa 293"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-298.jpg",
-                "caption": "Zuid Africa 298"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-318.jpg",
-                "caption": "Zuid Africa 318"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-33.jpg",
-                "caption": "Zuid Africa 33"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-39.jpg",
-                "caption": "Zuid Africa 39"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-42.jpg",
-                "caption": "Zuid Africa 42"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-48.jpg",
-                "caption": "Zuid Africa 48"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-49.jpg",
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-49.jpg",
                 "caption": "Zuid Africa 49"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-54.jpg",
-                "caption": "Zuid Africa 54"
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-39.jpg",
+                "caption": "Zuid Africa 39"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-56.jpg",
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-01.jpg",
+                "caption": "Zuid Africa 01"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-107.jpg",
+                "caption": "Zuid Africa 107"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-109.jpg",
+                "caption": "Zuid Africa 109"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-123.jpg",
+                "caption": "Zuid Africa 123"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-124.jpg",
+                "caption": "Zuid Africa 124"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-126.jpg",
+                "caption": "Zuid Africa 126"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-129.jpg",
+                "caption": "Zuid Africa 129"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-237.jpg",
+                "caption": "Zuid Africa 237"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-48.jpg",
+                "caption": "Zuid Africa 48"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-222.jpg",
+                "caption": "Zuid Africa 222"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-165.jpg",
+                "caption": "Zuid Africa 165"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-168.jpg",
+                "caption": "Zuid Africa 168"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-197.jpg",
+                "caption": "Zuid Africa 197"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-147.jpg",
+                "caption": "Zuid Africa 147"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-152.jpg",
+                "caption": "Zuid Africa 152"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-267.jpg",
+                "caption": "Zuid Africa 267"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-272.jpg",
+                "caption": "Zuid Africa 272"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-56.jpg",
                 "caption": "Zuid Africa 56"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-60.jpg",
-                "caption": "Zuid Africa 60"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-61.jpg",
-                "caption": "Zuid Africa 61"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-62.jpg",
-                "caption": "Zuid Africa 62"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-63.jpg",
-                "caption": "Zuid Africa 63"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-64.jpg",
-                "caption": "Zuid Africa 64"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-68.jpg",
-                "caption": "Zuid Africa 68"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-74.jpg",
-                "caption": "Zuid Africa 74"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-76.jpg",
-                "caption": "Zuid Africa 76"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-77.jpg",
-                "caption": "Zuid Africa 77"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-81.jpg",
-                "caption": "Zuid Africa 81"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-82.jpg",
-                "caption": "Zuid Africa 82"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-83.jpg",
-                "caption": "Zuid Africa 83"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-84.jpg",
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-84.jpg",
                 "caption": "Zuid Africa 84"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-86.jpg",
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-83.jpg",
+                "caption": "Zuid Africa 83"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-54.jpg",
+                "caption": "Zuid Africa 54"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-218.jpg",
+                "caption": "Zuid Africa 218"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-33.jpg",
+                "caption": "Zuid Africa 33"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-221.jpg",
+                "caption": "Zuid Africa 221"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-150.jpg",
+                "caption": "Zuid Africa 150"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-198.jpg",
+                "caption": "Zuid Africa 198"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-61.jpg",
+                "caption": "Zuid Africa 61"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-177.jpg",
+                "caption": "Zuid Africa 177"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-192.jpg",
+                "caption": "Zuid Africa 192"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-230.jpg",
+                "caption": "Zuid Africa 230"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-210.jpg",
+                "caption": "ZA_Hitch_Hikers"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-185.jpg",
+                "caption": "Zuid Africa 185"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-239.jpg",
+                "caption": "Zuid Africa 239"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-60.jpg",
+                "caption": "Zuid Africa 60"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-68.jpg",
+                "caption": "Zuid Africa 68"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-74.jpg",
+                "caption": "Zuid Africa 74"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-76.jpg",
+                "caption": "Zuid Africa 76"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-86.jpg",
                 "caption": "Zuid Africa 86"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-88.jpg",
-                "caption": "Zuid Africa 88"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-90.jpg",
-                "caption": "Zuid Africa 90"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-92.jpg",
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-92.jpg",
                 "caption": "Zuid Africa 92"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-95.jpg",
-                "caption": "Zuid Africa 95"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-96.jpg",
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-96.jpg",
                 "caption": "Zuid Africa 96"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-98.jpg",
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-98.jpg",
                 "caption": "Zuid Africa 98"
               }
             ]
@@ -2341,34 +2570,34 @@ const collectionsData = [
             "cover": "",
             "order": 999,
             "type": "gallery",
-            "path": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZW",
+            "path": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZW",
             "photos": [
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZW/SolGutt - Zuid Africa-07.jpg",
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZW/SolGutt - Zuid Africa-07.jpg",
                 "caption": "Zuid Africa 07"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZW/SolGutt - Zuid Africa-09.jpg",
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZW/SolGutt - Zuid Africa-09.jpg",
                 "caption": "Zuid Africa 09"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZW/SolGutt - Zuid Africa-11.jpg",
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZW/SolGutt - Zuid Africa-11.jpg",
                 "caption": "Zuid Africa 11"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZW/SolGutt - Zuid Africa-14.jpg",
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZW/SolGutt - Zuid Africa-14.jpg",
                 "caption": "Zuid Africa 14"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZW/SolGutt - Zuid Africa-16.jpg",
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZW/SolGutt - Zuid Africa-16.jpg",
                 "caption": "Zuid Africa 16"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZW/SolGutt - Zuid Africa-25.jpg",
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZW/SolGutt - Zuid Africa-25.jpg",
                 "caption": "Zuid Africa 25"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZW/SolGutt - Zuid Africa-26.jpg",
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZW/SolGutt - Zuid Africa-26.jpg",
                 "caption": "Zuid Africa 26"
               }
             ]
@@ -2395,10 +2624,6 @@ const siteData = {
     "name": "A Natureza",
     "description": "A collection of encounters with natural beauty in and around Cidadelhe.",
     "photos": [
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/ .jpg",
-        "caption": ""
-      },
       {
         "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-001.jpg",
         "caption": "Cidadelhe Natureza 001"
@@ -2886,7 +3111,240 @@ const siteData = {
   "os_cidadaos": {
     "name": "Os Cidadãos",
     "description": "A collection of portraits of the people of Cidadelhe, old and new.",
-    "photos": []
+    "photos": [
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-01.jpg",
+        "caption": "Os Cidadãos 01"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-02.jpg",
+        "caption": "Os Cidadãos 02"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-03.jpg",
+        "caption": "Os Cidadãos 03"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-04.jpg",
+        "caption": "Os Cidadãos 04"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-05.jpg",
+        "caption": "Os Cidadãos 05"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-06.jpg",
+        "caption": "Os Cidadãos 06"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-07.jpg",
+        "caption": "Os Cidadãos 07"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-08.jpg",
+        "caption": "Os Cidadãos 08"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-09.jpg",
+        "caption": "Os Cidadãos 09"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-10.jpg",
+        "caption": "Os Cidadãos 10"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-11.jpg",
+        "caption": "Os Cidadãos 11"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-12.jpg",
+        "caption": "Os Cidadãos 12"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-13.jpg",
+        "caption": "Os Cidadãos 13"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-14.jpg",
+        "caption": "Os Cidadãos 14"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-15.jpg",
+        "caption": "Os Cidadãos 15"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-16.jpg",
+        "caption": "Os Cidadãos 16"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-17.jpg",
+        "caption": "Os Cidadãos 17"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-18.jpg",
+        "caption": "Os Cidadãos 18"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-19.jpg",
+        "caption": "Os Cidadãos 19"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-20.jpg",
+        "caption": "Os Cidadãos 20"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-21.jpg",
+        "caption": "Os Cidadãos 21"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-22.jpg",
+        "caption": "Os Cidadãos 22"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-23.jpg",
+        "caption": "Os Cidadãos 23"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-24.jpg",
+        "caption": "Os Cidadãos 24"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-25.jpg",
+        "caption": "Os Cidadãos 25"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-26.jpg",
+        "caption": "Os Cidadãos 26"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-27.jpg",
+        "caption": "Os Cidadãos 27"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-28.jpg",
+        "caption": "Os Cidadãos 28"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-29.jpg",
+        "caption": "Os Cidadãos 29"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-30.jpg",
+        "caption": "Os Cidadãos 30"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-31.jpg",
+        "caption": "Os Cidadãos 31"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-32.jpg",
+        "caption": "Os Cidadãos 32"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-33.jpg",
+        "caption": "Os Cidadãos 33"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-34.jpg",
+        "caption": "Os Cidadãos 34"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-35.jpg",
+        "caption": "Os Cidadãos 35"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-36.jpg",
+        "caption": "Os Cidadãos 36"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-37.jpg",
+        "caption": "Os Cidadãos 37"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-38.jpg",
+        "caption": "Os Cidadãos 38"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-39.jpg",
+        "caption": "Os Cidadãos 39"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-40.jpg",
+        "caption": "Os Cidadãos 40"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-41.jpg",
+        "caption": "Os Cidadãos 41"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-42.jpg",
+        "caption": "Os Cidadãos 42"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-43.jpg",
+        "caption": "Os Cidadãos 43"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-44.jpg",
+        "caption": "Os Cidadãos 44"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-45.jpg",
+        "caption": "Os Cidadãos 45"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-46.jpg",
+        "caption": "Os Cidadãos 46"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-47.jpg",
+        "caption": "Os Cidadãos 47"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-48.jpg",
+        "caption": "Os Cidadãos 48"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-49.jpg",
+        "caption": "Os Cidadãos 49"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-50.jpg",
+        "caption": "Os Cidadãos 50"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-51.jpg",
+        "caption": "Os Cidadãos 51"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-52.jpg",
+        "caption": "Os Cidadãos 52"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-53.jpg",
+        "caption": "Os Cidadãos 53"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-54.jpg",
+        "caption": "Os Cidadãos 54"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-55.jpg",
+        "caption": "Os Cidadãos 55"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-56.jpg",
+        "caption": "Os Cidadãos 56"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-57.jpg",
+        "caption": "Os Cidadãos 57"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-58.jpg",
+        "caption": "Os Cidadãos 58"
+      }
+    ]
   },
   "as_aldeias_de_beira_alta": {
     "name": "As Aldeias de Beira Alta",
@@ -4010,455 +4468,455 @@ const siteData = {
     "description": "",
     "photos": [
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/IMGM1100.JPG",
-        "caption": "IMGM1100"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/IMGM1100.JPG",
+        "caption": "ZA_Ubuntu"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-01.jpg",
-        "caption": "Zuid Africa 01"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-108.jpg",
+        "caption": "ZA_Big_V 01"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-04.jpg",
-        "caption": "Zuid Africa 04"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-111.jpg",
+        "caption": "ZA_Big_V 02"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-102.jpg",
-        "caption": "Zuid Africa 102"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-122.jpg",
+        "caption": "ZA_Big_V 03"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-107.jpg",
-        "caption": "Zuid Africa 107"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-102.jpg",
+        "caption": "ZA_Big_V 04"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-108.jpg",
-        "caption": "Zuid Africa 108"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-131.jpg",
+        "caption": "ZA_Big_V 06"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-109.jpg",
-        "caption": "Zuid Africa 109"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-127.jpg",
+        "caption": "ZA_Big_V 07"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-111.jpg",
-        "caption": "Zuid Africa 111"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-163.jpg",
+        "caption": "ZA_Big_V 08"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-122.jpg",
-        "caption": "Zuid Africa 122"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-81.jpg",
+        "caption": "ZA_Ekhohlo"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-123.jpg",
-        "caption": "Zuid Africa 123"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-82.jpg",
+        "caption": "ZA_Ekunene"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-124.jpg",
-        "caption": "Zuid Africa 124"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-142.jpg",
+        "caption": "ZA_Big_V 09"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-126.jpg",
-        "caption": "Zuid Africa 126"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-137.jpg",
+        "caption": "ZA_Big_V 010"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-127.jpg",
-        "caption": "Zuid Africa 127"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-225.jpg",
+        "caption": "ZA_Umhlaba"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-129.jpg",
-        "caption": "Zuid Africa 129"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-178.jpg",
+        "caption": "ZA_Big_V 011"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-130.jpg",
-        "caption": "Zuid Africa 130"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-180.jpg",
+        "caption": "ZA_Big_V 012"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-131.jpg",
-        "caption": "Zuid Africa 131"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-171.jpg",
+        "caption": "ZA_Big_V 013"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-132.jpg",
-        "caption": "Zuid Africa 132"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-172.jpg",
+        "caption": "ZA_Big_V 014"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-133.jpg",
-        "caption": "Zuid Africa 133"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-166.jpg",
+        "caption": "ZA_Big_V 015"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-134.jpg",
-        "caption": "Zuid Africa 134"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-169.jpg",
+        "caption": "ZA_Big_V_Lunch 016"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-137.jpg",
-        "caption": "Zuid Africa 137"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-64.jpg",
+        "caption": "ZA_Big_V 017"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-139.jpg",
-        "caption": "Zuid Africa 139"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-199.jpg",
+        "caption": "ZA_Big_V 018"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-142.jpg",
-        "caption": "Zuid Africa 142"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-203.jpg",
+        "caption": "ZA_Big_V 019"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-144.jpg",
-        "caption": "Zuid Africa 144"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-200.jpg",
+        "caption": "ZA_Big_V 020"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-147.jpg",
-        "caption": "Zuid Africa 147"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-298.jpg",
+        "caption": "ZA_Isibhakabhaka"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-150.jpg",
-        "caption": "Zuid Africa 150"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-274.jpg",
+        "caption": "ZA_Usapho"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-152.jpg",
-        "caption": "Zuid Africa 152"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-90.jpg",
+        "caption": "ZA_Family 01"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-159.jpg",
-        "caption": "Zuid Africa 159"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-95.jpg",
+        "caption": "ZA_Family 02"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-163.jpg",
-        "caption": "Zuid Africa 163"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-88.jpg",
+        "caption": "ZA_Family_03"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-164.jpg",
-        "caption": "Zuid Africa 164"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-139.jpg",
+        "caption": "ZA_Family 04"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-165.jpg",
-        "caption": "Zuid Africa 165"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-220.jpg",
+        "caption": "ZA_Family 05"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-166.jpg",
-        "caption": "Zuid Africa 166"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-186.jpg",
+        "caption": "ZA_Family 06"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-168.jpg",
-        "caption": "Zuid Africa 168"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-223.jpg",
+        "caption": "ZA_Family 07"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-169.jpg",
-        "caption": "Zuid Africa 169"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-212.jpg",
+        "caption": "ZA_Family_08"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-17.jpg",
-        "caption": "Zuid Africa 17"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-23.jpg",
+        "caption": "ZA_Family 09"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-171.jpg",
-        "caption": "Zuid Africa 171"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-246.jpg",
+        "caption": "ZA_Ukumangala"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-172.jpg",
-        "caption": "Zuid Africa 172"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-245.jpg",
+        "caption": "ZA_Ku tshaka"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-177.jpg",
-        "caption": "Zuid Africa 177"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-254.jpg",
+        "caption": "ZA_Impucuko"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-178.jpg",
-        "caption": "Zuid Africa 178"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-182.jpg",
+        "caption": "ZA_In_Hiding 01"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-180.jpg",
-        "caption": "Zuid Africa 180"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-133.jpg",
+        "caption": "ZA_In_Hiding 02"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-181.jpg",
-        "caption": "Zuid Africa 181"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-130.jpg",
+        "caption": "ZA_In_Hiding 03"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-182.jpg",
-        "caption": "Zuid Africa 182"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-132.jpg",
+        "caption": "ZA_In_Hiding 04"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-183.jpg",
-        "caption": "Zuid Africa 183"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-181.jpg",
+        "caption": "ZA_In_Hiding 05"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-184.jpg",
-        "caption": "Zuid Africa 184"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-144.jpg",
+        "caption": "ZA_In_Hiding 06"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-185.jpg",
-        "caption": "Zuid Africa 185"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-214.jpg",
+        "caption": "ZA_In_Hiding 07"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-186.jpg",
-        "caption": "Zuid Africa 186"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-236.jpg",
+        "caption": "ZA_In_Hiding 08"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-189.jpg",
-        "caption": "Zuid Africa 189"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-24.jpg",
+        "caption": "ZA_In_Hiding 09"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-192.jpg",
-        "caption": "Zuid Africa 192"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-263.jpg",
+        "caption": "ZA_Awe 06"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-197.jpg",
-        "caption": "Zuid Africa 197"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-285.jpg",
+        "caption": "ZA_Awe 07"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-198.jpg",
-        "caption": "Zuid Africa 198"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-219.jpg",
+        "caption": "ZA_Water_Buck"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-199.jpg",
-        "caption": "Zuid Africa 199"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-293.jpg",
+        "caption": "ZA_Kudu"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-200.jpg",
-        "caption": "Zuid Africa 200"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-211.jpg",
+        "caption": "ZA_Wildebeast_Oxpecker"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-203.jpg",
-        "caption": "Zuid Africa 203"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-184.jpg",
+        "caption": "ZA_Vervet_01"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-208.jpg",
-        "caption": "Zuid Africa 208"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-183.jpg",
+        "caption": "ZA_Vervet_02"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-210.jpg",
-        "caption": "Zuid Africa 210"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-77.jpg",
+        "caption": "ZA_Southern_Giraffe"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-211.jpg",
-        "caption": "Zuid Africa 211"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-189.jpg",
+        "caption": "ZA_Lilac-breasted_Roller"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-212.jpg",
-        "caption": "Zuid Africa 212"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-164.jpg",
+        "caption": "ZA_Cape_Glossy_Starling 01"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-213.jpg",
-        "caption": "Zuid Africa 213"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-208.jpg",
+        "caption": "ZA_Cape_Glossy_Starling 02"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-214.jpg",
-        "caption": "Zuid Africa 214"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-134.jpg",
+        "caption": "ZA_Brown_Snake_Eagle"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-218.jpg",
-        "caption": "Zuid Africa 218"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-42.jpg",
+        "caption": "ZA_White-backed_Vulture"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-219.jpg",
-        "caption": "Zuid Africa 219"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-226.jpg",
+        "caption": "ZA_Rock_Hyrax"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-220.jpg",
-        "caption": "Zuid Africa 220"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-159.jpg",
+        "caption": "ZA_Nile_Crocodile_Adult"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-221.jpg",
-        "caption": "Zuid Africa 221"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-229.jpg",
+        "caption": "ZA_Nile_Crocodile_Sub_Adult"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-222.jpg",
-        "caption": "Zuid Africa 222"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-240.jpg",
+        "caption": "ZA_Nile_Crocodile_Juvenile"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-223.jpg",
-        "caption": "Zuid Africa 223"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-63.jpg",
+        "caption": "ZA_Golden_Silk_Orb-Weaver 01"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-225.jpg",
-        "caption": "Zuid Africa 225"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-62.jpg",
+        "caption": "ZA_Golden_Silk_Orb-Weaver 02"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-226.jpg",
-        "caption": "Zuid Africa 226"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-213.jpg",
+        "caption": "ZA_Common_Hippopotamus"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-229.jpg",
-        "caption": "Zuid Africa 229"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-17.jpg",
+        "caption": "ZA_Plains_Zebra"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-23.jpg",
-        "caption": "Zuid Africa 23"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-04.jpg",
+        "caption": "ZA_Leopard"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-230.jpg",
-        "caption": "Zuid Africa 230"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-270.jpg",
+        "caption": "ZA_Ihlathi"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-236.jpg",
-        "caption": "Zuid Africa 236"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-318.jpg",
+        "caption": "ZA_Ukushona kwelanga"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-237.jpg",
-        "caption": "Zuid Africa 237"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-239.jpg",
-        "caption": "Zuid Africa 239"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-24.jpg",
-        "caption": "Zuid Africa 24"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-240.jpg",
-        "caption": "Zuid Africa 240"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-245.jpg",
-        "caption": "Zuid Africa 245"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-246.jpg",
-        "caption": "Zuid Africa 246"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-254.jpg",
-        "caption": "Zuid Africa 254"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-263.jpg",
-        "caption": "Zuid Africa 263"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-267.jpg",
-        "caption": "Zuid Africa 267"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-270.jpg",
-        "caption": "Zuid Africa 270"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-272.jpg",
-        "caption": "Zuid Africa 272"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-274.jpg",
-        "caption": "Zuid Africa 274"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-285.jpg",
-        "caption": "Zuid Africa 285"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-293.jpg",
-        "caption": "Zuid Africa 293"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-298.jpg",
-        "caption": "Zuid Africa 298"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-318.jpg",
-        "caption": "Zuid Africa 318"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-33.jpg",
-        "caption": "Zuid Africa 33"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-39.jpg",
-        "caption": "Zuid Africa 39"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-42.jpg",
-        "caption": "Zuid Africa 42"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-48.jpg",
-        "caption": "Zuid Africa 48"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-49.jpg",
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-49.jpg",
         "caption": "Zuid Africa 49"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-54.jpg",
-        "caption": "Zuid Africa 54"
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-39.jpg",
+        "caption": "Zuid Africa 39"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-56.jpg",
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-01.jpg",
+        "caption": "Zuid Africa 01"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-107.jpg",
+        "caption": "Zuid Africa 107"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-109.jpg",
+        "caption": "Zuid Africa 109"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-123.jpg",
+        "caption": "Zuid Africa 123"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-124.jpg",
+        "caption": "Zuid Africa 124"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-126.jpg",
+        "caption": "Zuid Africa 126"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-129.jpg",
+        "caption": "Zuid Africa 129"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-237.jpg",
+        "caption": "Zuid Africa 237"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-48.jpg",
+        "caption": "Zuid Africa 48"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-222.jpg",
+        "caption": "Zuid Africa 222"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-165.jpg",
+        "caption": "Zuid Africa 165"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-168.jpg",
+        "caption": "Zuid Africa 168"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-197.jpg",
+        "caption": "Zuid Africa 197"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-147.jpg",
+        "caption": "Zuid Africa 147"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-152.jpg",
+        "caption": "Zuid Africa 152"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-267.jpg",
+        "caption": "Zuid Africa 267"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-272.jpg",
+        "caption": "Zuid Africa 272"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-56.jpg",
         "caption": "Zuid Africa 56"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-60.jpg",
-        "caption": "Zuid Africa 60"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-61.jpg",
-        "caption": "Zuid Africa 61"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-62.jpg",
-        "caption": "Zuid Africa 62"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-63.jpg",
-        "caption": "Zuid Africa 63"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-64.jpg",
-        "caption": "Zuid Africa 64"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-68.jpg",
-        "caption": "Zuid Africa 68"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-74.jpg",
-        "caption": "Zuid Africa 74"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-76.jpg",
-        "caption": "Zuid Africa 76"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-77.jpg",
-        "caption": "Zuid Africa 77"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-81.jpg",
-        "caption": "Zuid Africa 81"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-82.jpg",
-        "caption": "Zuid Africa 82"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-83.jpg",
-        "caption": "Zuid Africa 83"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-84.jpg",
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-84.jpg",
         "caption": "Zuid Africa 84"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-86.jpg",
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-83.jpg",
+        "caption": "Zuid Africa 83"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-54.jpg",
+        "caption": "Zuid Africa 54"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-218.jpg",
+        "caption": "Zuid Africa 218"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-33.jpg",
+        "caption": "Zuid Africa 33"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-221.jpg",
+        "caption": "Zuid Africa 221"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-150.jpg",
+        "caption": "Zuid Africa 150"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-198.jpg",
+        "caption": "Zuid Africa 198"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-61.jpg",
+        "caption": "Zuid Africa 61"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-177.jpg",
+        "caption": "Zuid Africa 177"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-192.jpg",
+        "caption": "Zuid Africa 192"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-230.jpg",
+        "caption": "Zuid Africa 230"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-210.jpg",
+        "caption": "ZA_Hitch_Hikers"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-185.jpg",
+        "caption": "Zuid Africa 185"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-239.jpg",
+        "caption": "Zuid Africa 239"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-60.jpg",
+        "caption": "Zuid Africa 60"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-68.jpg",
+        "caption": "Zuid Africa 68"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-74.jpg",
+        "caption": "Zuid Africa 74"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-76.jpg",
+        "caption": "Zuid Africa 76"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-86.jpg",
         "caption": "Zuid Africa 86"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-88.jpg",
-        "caption": "Zuid Africa 88"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-90.jpg",
-        "caption": "Zuid Africa 90"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-92.jpg",
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-92.jpg",
         "caption": "Zuid Africa 92"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-95.jpg",
-        "caption": "Zuid Africa 95"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-96.jpg",
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-96.jpg",
         "caption": "Zuid Africa 96"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZA/SolGutt - Zuid Africa-98.jpg",
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-98.jpg",
         "caption": "Zuid Africa 98"
       }
     ]
@@ -4468,31 +4926,31 @@ const siteData = {
     "description": "",
     "photos": [
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZW/SolGutt - Zuid Africa-07.jpg",
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZW/SolGutt - Zuid Africa-07.jpg",
         "caption": "Zuid Africa 07"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZW/SolGutt - Zuid Africa-09.jpg",
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZW/SolGutt - Zuid Africa-09.jpg",
         "caption": "Zuid Africa 09"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZW/SolGutt - Zuid Africa-11.jpg",
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZW/SolGutt - Zuid Africa-11.jpg",
         "caption": "Zuid Africa 11"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZW/SolGutt - Zuid Africa-14.jpg",
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZW/SolGutt - Zuid Africa-14.jpg",
         "caption": "Zuid Africa 14"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZW/SolGutt - Zuid Africa-16.jpg",
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZW/SolGutt - Zuid Africa-16.jpg",
         "caption": "Zuid Africa 16"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZW/SolGutt - Zuid Africa-25.jpg",
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZW/SolGutt - Zuid Africa-25.jpg",
         "caption": "Zuid Africa 25"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/Searching-for-King-Solomons-Mines/Photos/ZW/SolGutt - Zuid Africa-26.jpg",
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZW/SolGutt - Zuid Africa-26.jpg",
         "caption": "Zuid Africa 26"
       }
     ]
