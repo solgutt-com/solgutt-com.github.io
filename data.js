@@ -30,20 +30,8 @@ const collectionsData = [
             "caption": "Cidadelhe Natureza 002 2"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-01.jpg",
-            "caption": "Cidadelhe Natureza 01"
-          },
-          {
             "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-03.jpg",
             "caption": "Cidadelhe Natureza 03"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-04.jpg",
-            "caption": "Cidadelhe Natureza 04"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-06.jpg",
-            "caption": "Cidadelhe Natureza 06"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-07.jpg",
@@ -54,48 +42,16 @@ const collectionsData = [
             "caption": "Cidadelhe Natureza 08"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-09.jpg",
-            "caption": "Cidadelhe Natureza 09"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-10.jpg",
-            "caption": "Cidadelhe Natureza 10"
-          },
-          {
             "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-11.jpg",
             "caption": "Cidadelhe Natureza 11"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-12.jpg",
-            "caption": "Cidadelhe Natureza 12"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-13.jpg",
-            "caption": "Cidadelhe Natureza 13"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-14.jpg",
             "caption": "Cidadelhe Natureza 14"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-15.jpg",
-            "caption": "Cidadelhe Natureza 15"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-16.jpg",
-            "caption": "Cidadelhe Natureza 16"
-          },
-          {
             "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-17.jpg",
             "caption": "Cidadelhe Natureza 17"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-18.jpg",
-            "caption": "Cidadelhe Natureza 18"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-19.jpg",
-            "caption": "Cidadelhe Natureza 19"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-20.jpg",
@@ -106,56 +62,12 @@ const collectionsData = [
             "caption": "Cidadelhe Natureza 21"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-22.jpg",
-            "caption": "Cidadelhe Natureza 22"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-23.jpg",
-            "caption": "Cidadelhe Natureza 23"
-          },
-          {
             "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-24.jpg",
             "caption": "Cidadelhe Natureza 24"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-25.jpg",
-            "caption": "Cidadelhe Natureza 25"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-26.jpg",
-            "caption": "Cidadelhe Natureza 26"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-27.jpg",
-            "caption": "Cidadelhe Natureza 27"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-28.JPG",
-            "caption": "Cidadelhe Natureza 28"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-30.jpg",
-            "caption": "Cidadelhe Natureza 30"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-31.jpg",
-            "caption": "Cidadelhe Natureza 31"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-32.jpg",
-            "caption": "Cidadelhe Natureza 32"
-          },
-          {
             "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-33.jpg",
             "caption": "Cidadelhe Natureza 33"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-34.jpg",
-            "caption": "Cidadelhe Natureza 34"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-35.jpg",
-            "caption": "Cidadelhe Natureza 35"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-36.jpg",
@@ -172,34 +84,6 @@ const collectionsData = [
           {
             "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-39.jpg",
             "caption": "Cidadelhe Natureza 39"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-40.jpg",
-            "caption": "Cidadelhe Natureza 40"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-41.jpg",
-            "caption": "Cidadelhe Natureza 41"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-42.jpg",
-            "caption": "Cidadelhe Natureza 42"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-43.jpg",
-            "caption": "Cidadelhe Natureza 43"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-44.jpg",
-            "caption": "Cidadelhe Natureza 44"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-45.jpg",
-            "caption": "Cidadelhe Natureza 45"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-46.jpg",
-            "caption": "Cidadelhe Natureza 46"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-47.jpg",
@@ -266,28 +150,8 @@ const collectionsData = [
             "caption": "Cidadelhe Natureza 61"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-62.jpg",
-            "caption": "Cidadelhe Natureza 62"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-63.jpg",
-            "caption": "Cidadelhe Natureza 63"
-          },
-          {
             "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-64.jpg",
             "caption": "Cidadelhe Natureza 64"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-65.jpg",
-            "caption": "Cidadelhe Natureza 65"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-66.jpg",
-            "caption": "Cidadelhe Natureza 66"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-67.jpg",
-            "caption": "Cidadelhe Natureza 67"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-68.jpg",
@@ -296,10 +160,6 @@ const collectionsData = [
           {
             "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-69.jpg",
             "caption": "Cidadelhe Natureza 69"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-70.jpg",
-            "caption": "Cidadelhe Natureza 70"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-71.jpg",
@@ -314,16 +174,8 @@ const collectionsData = [
             "caption": "Cidadelhe Natureza 73"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-74.jpg",
-            "caption": "Cidadelhe Natureza 74"
-          },
-          {
             "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-75.jpg",
             "caption": "Cidadelhe Natureza 75"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-76.jpg",
-            "caption": "Cidadelhe Natureza 76"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-77.jpg",
@@ -342,16 +194,8 @@ const collectionsData = [
             "caption": "Cidadelhe Natureza 80"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-81.jpg",
-            "caption": "Cidadelhe Natureza 81"
-          },
-          {
             "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-82.jpg",
             "caption": "Cidadelhe Natureza 82"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-83.jpg",
-            "caption": "Cidadelhe Natureza 83"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-84.jpg",
@@ -530,20 +374,8 @@ const collectionsData = [
             "caption": "Os Cidadãos 02"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-03.jpg",
-            "caption": "Os Cidadãos 03"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-04.jpg",
-            "caption": "Os Cidadãos 04"
-          },
-          {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-05.jpg",
             "caption": "Os Cidadãos 05"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-06.jpg",
-            "caption": "Os Cidadãos 06"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-07.jpg",
@@ -552,10 +384,6 @@ const collectionsData = [
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-08.jpg",
             "caption": "Os Cidadãos 08"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-09.jpg",
-            "caption": "Os Cidadãos 09"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-10.jpg",
@@ -586,32 +414,8 @@ const collectionsData = [
             "caption": "Os Cidadãos 16"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-17.jpg",
-            "caption": "Os Cidadãos 17"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-18.jpg",
-            "caption": "Os Cidadãos 18"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-19.jpg",
-            "caption": "Os Cidadãos 19"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-20.jpg",
-            "caption": "Os Cidadãos 20"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-21.jpg",
-            "caption": "Os Cidadãos 21"
-          },
-          {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-22.jpg",
             "caption": "Os Cidadãos 22"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-23.jpg",
-            "caption": "Os Cidadãos 23"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-24.jpg",
@@ -626,68 +430,16 @@ const collectionsData = [
             "caption": "Os Cidadãos 26"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-27.jpg",
-            "caption": "Os Cidadãos 27"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-28.jpg",
-            "caption": "Os Cidadãos 28"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-29.jpg",
-            "caption": "Os Cidadãos 29"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-30.jpg",
-            "caption": "Os Cidadãos 30"
-          },
-          {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-31.jpg",
             "caption": "Os Cidadãos 31"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-32.jpg",
-            "caption": "Os Cidadãos 32"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-33.jpg",
-            "caption": "Os Cidadãos 33"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-34.jpg",
-            "caption": "Os Cidadãos 34"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-35.jpg",
-            "caption": "Os Cidadãos 35"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-36.jpg",
             "caption": "Os Cidadãos 36"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-37.jpg",
-            "caption": "Os Cidadãos 37"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-38.jpg",
-            "caption": "Os Cidadãos 38"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-39.jpg",
-            "caption": "Os Cidadãos 39"
-          },
-          {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-40.jpg",
             "caption": "Os Cidadãos 40"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-41.jpg",
-            "caption": "Os Cidadãos 41"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-42.jpg",
-            "caption": "Os Cidadãos 42"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-43.jpg",
@@ -696,10 +448,6 @@ const collectionsData = [
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-44.jpg",
             "caption": "Os Cidadãos 44"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-45.jpg",
-            "caption": "Os Cidadãos 45"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-46.jpg",
@@ -726,32 +474,12 @@ const collectionsData = [
             "caption": "Os Cidadãos 51"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-52.jpg",
-            "caption": "Os Cidadãos 52"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-53.jpg",
-            "caption": "Os Cidadãos 53"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-54.jpg",
-            "caption": "Os Cidadãos 54"
-          },
-          {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-55.jpg",
             "caption": "Os Cidadãos 55"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-56.jpg",
-            "caption": "Os Cidadãos 56"
-          },
-          {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-57.jpg",
             "caption": "Os Cidadãos 57"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-58.jpg",
-            "caption": "Os Cidadãos 58"
           }
         ]
       },
@@ -2633,20 +2361,8 @@ const siteData = {
         "caption": "Cidadelhe Natureza 002 2"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-01.jpg",
-        "caption": "Cidadelhe Natureza 01"
-      },
-      {
         "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-03.jpg",
         "caption": "Cidadelhe Natureza 03"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-04.jpg",
-        "caption": "Cidadelhe Natureza 04"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-06.jpg",
-        "caption": "Cidadelhe Natureza 06"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-07.jpg",
@@ -2657,48 +2373,16 @@ const siteData = {
         "caption": "Cidadelhe Natureza 08"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-09.jpg",
-        "caption": "Cidadelhe Natureza 09"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-10.jpg",
-        "caption": "Cidadelhe Natureza 10"
-      },
-      {
         "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-11.jpg",
         "caption": "Cidadelhe Natureza 11"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-12.jpg",
-        "caption": "Cidadelhe Natureza 12"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-13.jpg",
-        "caption": "Cidadelhe Natureza 13"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-14.jpg",
         "caption": "Cidadelhe Natureza 14"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-15.jpg",
-        "caption": "Cidadelhe Natureza 15"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-16.jpg",
-        "caption": "Cidadelhe Natureza 16"
-      },
-      {
         "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-17.jpg",
         "caption": "Cidadelhe Natureza 17"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-18.jpg",
-        "caption": "Cidadelhe Natureza 18"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-19.jpg",
-        "caption": "Cidadelhe Natureza 19"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-20.jpg",
@@ -2709,56 +2393,12 @@ const siteData = {
         "caption": "Cidadelhe Natureza 21"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-22.jpg",
-        "caption": "Cidadelhe Natureza 22"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-23.jpg",
-        "caption": "Cidadelhe Natureza 23"
-      },
-      {
         "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-24.jpg",
         "caption": "Cidadelhe Natureza 24"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-25.jpg",
-        "caption": "Cidadelhe Natureza 25"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-26.jpg",
-        "caption": "Cidadelhe Natureza 26"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-27.jpg",
-        "caption": "Cidadelhe Natureza 27"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-28.JPG",
-        "caption": "Cidadelhe Natureza 28"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-30.jpg",
-        "caption": "Cidadelhe Natureza 30"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-31.jpg",
-        "caption": "Cidadelhe Natureza 31"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-32.jpg",
-        "caption": "Cidadelhe Natureza 32"
-      },
-      {
         "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-33.jpg",
         "caption": "Cidadelhe Natureza 33"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-34.jpg",
-        "caption": "Cidadelhe Natureza 34"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-35.jpg",
-        "caption": "Cidadelhe Natureza 35"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-36.jpg",
@@ -2775,34 +2415,6 @@ const siteData = {
       {
         "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-39.jpg",
         "caption": "Cidadelhe Natureza 39"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-40.jpg",
-        "caption": "Cidadelhe Natureza 40"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-41.jpg",
-        "caption": "Cidadelhe Natureza 41"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-42.jpg",
-        "caption": "Cidadelhe Natureza 42"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-43.jpg",
-        "caption": "Cidadelhe Natureza 43"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-44.jpg",
-        "caption": "Cidadelhe Natureza 44"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-45.jpg",
-        "caption": "Cidadelhe Natureza 45"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-46.jpg",
-        "caption": "Cidadelhe Natureza 46"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-47.jpg",
@@ -2869,28 +2481,8 @@ const siteData = {
         "caption": "Cidadelhe Natureza 61"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-62.jpg",
-        "caption": "Cidadelhe Natureza 62"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-63.jpg",
-        "caption": "Cidadelhe Natureza 63"
-      },
-      {
         "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-64.jpg",
         "caption": "Cidadelhe Natureza 64"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-65.jpg",
-        "caption": "Cidadelhe Natureza 65"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-66.jpg",
-        "caption": "Cidadelhe Natureza 66"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-67.jpg",
-        "caption": "Cidadelhe Natureza 67"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-68.jpg",
@@ -2899,10 +2491,6 @@ const siteData = {
       {
         "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-69.jpg",
         "caption": "Cidadelhe Natureza 69"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-70.jpg",
-        "caption": "Cidadelhe Natureza 70"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-71.jpg",
@@ -2917,16 +2505,8 @@ const siteData = {
         "caption": "Cidadelhe Natureza 73"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-74.jpg",
-        "caption": "Cidadelhe Natureza 74"
-      },
-      {
         "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-75.jpg",
         "caption": "Cidadelhe Natureza 75"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-76.jpg",
-        "caption": "Cidadelhe Natureza 76"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-77.jpg",
@@ -2945,16 +2525,8 @@ const siteData = {
         "caption": "Cidadelhe Natureza 80"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-81.jpg",
-        "caption": "Cidadelhe Natureza 81"
-      },
-      {
         "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-82.jpg",
         "caption": "Cidadelhe Natureza 82"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-83.jpg",
-        "caption": "Cidadelhe Natureza 83"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-84.jpg",
@@ -3121,20 +2693,8 @@ const siteData = {
         "caption": "Os Cidadãos 02"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-03.jpg",
-        "caption": "Os Cidadãos 03"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-04.jpg",
-        "caption": "Os Cidadãos 04"
-      },
-      {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-05.jpg",
         "caption": "Os Cidadãos 05"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-06.jpg",
-        "caption": "Os Cidadãos 06"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-07.jpg",
@@ -3143,10 +2703,6 @@ const siteData = {
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-08.jpg",
         "caption": "Os Cidadãos 08"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-09.jpg",
-        "caption": "Os Cidadãos 09"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-10.jpg",
@@ -3177,32 +2733,8 @@ const siteData = {
         "caption": "Os Cidadãos 16"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-17.jpg",
-        "caption": "Os Cidadãos 17"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-18.jpg",
-        "caption": "Os Cidadãos 18"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-19.jpg",
-        "caption": "Os Cidadãos 19"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-20.jpg",
-        "caption": "Os Cidadãos 20"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-21.jpg",
-        "caption": "Os Cidadãos 21"
-      },
-      {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-22.jpg",
         "caption": "Os Cidadãos 22"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-23.jpg",
-        "caption": "Os Cidadãos 23"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-24.jpg",
@@ -3217,68 +2749,16 @@ const siteData = {
         "caption": "Os Cidadãos 26"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-27.jpg",
-        "caption": "Os Cidadãos 27"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-28.jpg",
-        "caption": "Os Cidadãos 28"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-29.jpg",
-        "caption": "Os Cidadãos 29"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-30.jpg",
-        "caption": "Os Cidadãos 30"
-      },
-      {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-31.jpg",
         "caption": "Os Cidadãos 31"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-32.jpg",
-        "caption": "Os Cidadãos 32"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-33.jpg",
-        "caption": "Os Cidadãos 33"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-34.jpg",
-        "caption": "Os Cidadãos 34"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-35.jpg",
-        "caption": "Os Cidadãos 35"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-36.jpg",
         "caption": "Os Cidadãos 36"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-37.jpg",
-        "caption": "Os Cidadãos 37"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-38.jpg",
-        "caption": "Os Cidadãos 38"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-39.jpg",
-        "caption": "Os Cidadãos 39"
-      },
-      {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-40.jpg",
         "caption": "Os Cidadãos 40"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-41.jpg",
-        "caption": "Os Cidadãos 41"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-42.jpg",
-        "caption": "Os Cidadãos 42"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-43.jpg",
@@ -3287,10 +2767,6 @@ const siteData = {
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-44.jpg",
         "caption": "Os Cidadãos 44"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-45.jpg",
-        "caption": "Os Cidadãos 45"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-46.jpg",
@@ -3317,32 +2793,12 @@ const siteData = {
         "caption": "Os Cidadãos 51"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-52.jpg",
-        "caption": "Os Cidadãos 52"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-53.jpg",
-        "caption": "Os Cidadãos 53"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-54.jpg",
-        "caption": "Os Cidadãos 54"
-      },
-      {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-55.jpg",
         "caption": "Os Cidadãos 55"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-56.jpg",
-        "caption": "Os Cidadãos 56"
-      },
-      {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-57.jpg",
         "caption": "Os Cidadãos 57"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-58.jpg",
-        "caption": "Os Cidadãos 58"
       }
     ]
   },
