@@ -592,14 +592,14 @@ body.about-page {
   font-size: 11px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  opacity: 0.7;
+  opacity: 0.85;
 }
 
 .collection-subtitle {
   font-size: 10px;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  opacity: 0.3;
+  opacity: 0.5;
 }
 
 .collection-description {
@@ -691,7 +691,7 @@ body.sub-collection-page {
   border-bottom: 0.5px solid #1a1a1a;
   text-decoration: none;
   color: #f0f0f0;
-  opacity: 0.4;
+  opacity: 0.65;
   transition: opacity 0.2s ease;
 }
 
