@@ -216,22 +216,6 @@ const collectionsData = [
           {
             "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-88.jpg",
             "caption": "Cidadelhe Natureza 88"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Zuid Africa-320.jpg",
-            "caption": "Zuid Africa 320"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Zuid Africa-321.jpg",
-            "caption": "Zuid Africa 321"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Zuid Africa-323.jpg",
-            "caption": "Zuid Africa 323"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Zuid Africa-327.jpg",
-            "caption": "Zuid Africa 327"
           }
         ]
       },
@@ -352,6 +336,54 @@ const collectionsData = [
           {
             "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-z10.jpg",
             "caption": "As Ruinas 027"
+          }
+        ]
+      },
+      {
+        "id": "na_quinta_sem_camera",
+        "title": "Na Quinta, Sem Camera",
+        "subtitle": "Field work photos",
+        "description": "A collection of photos from field work and odd jobs. Sometimes the phone is all you need to capture the moment. Just don't zoom in too close",
+        "cover": "",
+        "order": 3,
+        "type": "gallery",
+        "path": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera",
+        "photos": [
+          {
+            "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/IMG_0021.jpg",
+            "caption": "0021"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-89.jpg",
+            "caption": "Cidadelhe Natureza 89"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-90.jpg",
+            "caption": "Cidadelhe Natureza 90"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-91.jpg",
+            "caption": "Cidadelhe Natureza 91"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-92.jpg",
+            "caption": "Cidadelhe Natureza 92"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Projetos na Quinta-01.jpg",
+            "caption": "Projetos na Quinta 01"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Projetos na Quinta-02.jpg",
+            "caption": "Projetos na Quinta 02"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Projetos na Quinta-03.jpg",
+            "caption": "Projetos na Quinta 03"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Projetos na Quinta-08.jpg",
+            "caption": "Projetos na Quinta 08"
           }
         ]
       },
@@ -484,15 +516,44 @@ const collectionsData = [
         ]
       },
       {
-        "id": "as_aldeias_de_beira_alta",
+        "id": "aldeias_quintas_vales",
         "title": "As Aldeias de Beira Alta",
         "subtitle": "Villages of the region.",
         "description": "Every village in Beira Alta has its own mysteries, weathered church towers, sun-baked villagers, and little cafes.",
         "cover": "",
         "order": 4,
         "type": "gallery",
-        "path": "Images/Collections/Cidadelhe/sub/as_aldeias_de_beira_alta",
-        "photos": []
+        "path": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales",
+        "photos": [
+          {
+            "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Cogula-04.jpg",
+            "caption": "Cogula 04"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Cogula-05.jpg",
+            "caption": "Cogula 05"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Cogula-1.jpg",
+            "caption": "Cogula 1"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Cogula-21.jpg",
+            "caption": "Cogula 21"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Cogula-3.jpg",
+            "caption": "Cogula 3"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Cogula-5.jpg",
+            "caption": "Cogula 5"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt© - Longroiva First Visit Highlights-09.jpg",
+            "caption": "SolGutt© Longroiva First Visit Highlights 09"
+          }
+        ]
       },
       {
         "id": "projetos_na_quinta",
@@ -503,7 +564,128 @@ const collectionsData = [
         "order": 5,
         "type": "gallery",
         "path": "Images/Collections/Cidadelhe/sub/projetos_na_quinta",
-        "photos": []
+        "photos": [
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-01.jpg",
+            "caption": "Projetos na Quinta Forno 01"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-02.jpg",
+            "caption": "Projetos na Quinta Forno 02"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-04.jpg",
+            "caption": "Projetos na Quinta Forno 04"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-05.jpg",
+            "caption": "Projetos na Quinta Forno 05"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-06.jpg",
+            "caption": "Projetos na Quinta Forno 06"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-07.jpg",
+            "caption": "Projetos na Quinta Forno 07"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-11.jpg",
+            "caption": "Projetos na Quinta Forno 11"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-16.jpg",
+            "caption": "Projetos na Quinta Forno 16"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-18.jpg",
+            "caption": "Projetos na Quinta Forno 18"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-20.jpg",
+            "caption": "Projetos na Quinta Forno 20"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-23.jpg",
+            "caption": "Projetos na Quinta Forno 23"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-34.jpg",
+            "caption": "Projetos na Quinta Forno 34"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-35.jpg",
+            "caption": "Projetos na Quinta Forno 35"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-36.jpg",
+            "caption": "Projetos na Quinta Forno 36"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-05.jpg",
+            "caption": "Projetos na Quinta 05"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-06.jpg",
+            "caption": "Projetos na Quinta 06"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-07.jpg",
+            "caption": "Projetos na Quinta 07"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-09.jpg",
+            "caption": "Projetos na Quinta 09"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-10.jpg",
+            "caption": "Projetos na Quinta 10"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-11.jpg",
+            "caption": "Projetos na Quinta 11"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-12.jpg",
+            "caption": "Projetos na Quinta 12"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-13.jpg",
+            "caption": "Projetos na Quinta 13"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-14.jpg",
+            "caption": "Projetos na Quinta 14"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-15.jpg",
+            "caption": "Projetos na Quinta 15"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-16.jpg",
+            "caption": "Projetos na Quinta 16"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-17.jpg",
+            "caption": "Projetos na Quinta 17"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-18.jpg",
+            "caption": "Projetos na Quinta 18"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-19.jpg",
+            "caption": "Projetos na Quinta 19"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-20.jpg",
+            "caption": "Projetos na Quinta 20"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-21.jpg",
+            "caption": "Projetos na Quinta 21"
+          }
+        ]
       },
       {
         "id": "amigos_do_portugal",
@@ -517,15 +699,88 @@ const collectionsData = [
         "photos": []
       },
       {
-        "id": "hotel_longroiva",
-        "title": "Hotel Longroiva",
-        "subtitle": "A Luxurious rural getaway https://www.hoteldelongroiva.com/en/",
-        "description": "Photos made for the Hotel Longroiva, a hidden gem near the Massueme Valley. Come visit and see if you notice any familiar photos hanging on the walls.",
+        "id": "projetos_professionais",
+        "title": "Projetos Profissionais",
+        "subtitle": "Professional Projects with amazing local businesses ",
+        "description": "Photos made for the Hotel Longroiva A Luxurious rural getaway https://www.hoteldelongroiva.com/en/ and O Refugio do Castelo (contact for rental details)",
         "cover": "",
         "order": 7,
         "type": "gallery",
-        "path": "Images/Collections/Cidadelhe/sub/hotel_longroiva",
-        "photos": []
+        "path": "Images/Collections/Cidadelhe/sub/projetos_professionais",
+        "photos": [
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/3SolGutt - O Refugio do Castelo-085.JPG",
+            "caption": "3SolGutt O Refugio do Castelo 085"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/6SolGutt - O Refugio do Castelo-038.JPG",
+            "caption": "6SolGutt O Refugio do Castelo 038"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/ASolGutt - O Refugio do Castelo-003.JPG",
+            "caption": "ASolGutt O Refugio do Castelo 003"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/ASolGutt - O Refugio do Castelo-030.JPG",
+            "caption": "ASolGutt O Refugio do Castelo 030"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/ASolGutt - O Refugio do Castelo-099.JPG",
+            "caption": "ASolGutt O Refugio do Castelo 099"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/BSolGutt - O Refugio do Castelo-065.JPG",
+            "caption": "BSolGutt O Refugio do Castelo 065"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt - O Refugio do Castelo-002.JPG",
+            "caption": "O Refugio do Castelo 002"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt - O Refugio do Castelo-029.JPG",
+            "caption": "O Refugio do Castelo 029"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Hotel Suite Floor 2-1.jpg",
+            "caption": "SolGutt© Hotel Suite Floor 2 1"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Hotel Suite Floor 2-16.jpg",
+            "caption": "SolGutt© Hotel Suite Floor 2 16"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Hotel exterior-11.jpg",
+            "caption": "SolGutt© Hotel exterior 11"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Hotel exterior-14.jpg",
+            "caption": "SolGutt© Hotel exterior 14"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Longroiva First Visit Highlights-01.jpg",
+            "caption": "SolGutt© Longroiva First Visit Highlights 01"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Longroiva First Visit Highlights-02.jpg",
+            "caption": "SolGutt© Longroiva First Visit Highlights 02"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Longroiva First Visit Highlights-03.jpg",
+            "caption": "SolGutt© Longroiva First Visit Highlights 03"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Longroiva First Visit Highlights-05.jpg",
+            "caption": "SolGutt© Longroiva First Visit Highlights 05"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Longroiva First Visit Highlights-11.jpg",
+            "caption": "SolGutt© Longroiva First Visit Highlights 11"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Porto Tonico-04.jpg",
+            "caption": "SolGutt© Porto Tonico 04"
+          }
+        ]
       },
       {
         "id": "ten_lives_festival",
@@ -536,7 +791,96 @@ const collectionsData = [
         "order": 8,
         "type": "gallery",
         "path": "Images/Collections/Cidadelhe/sub/ten_lives_festival",
-        "photos": []
+        "photos": [
+          {
+            "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1481.JPG",
+            "caption": "IMGM1481"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1487.JPG",
+            "caption": "IMGM1487"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1491.JPG",
+            "caption": "IMGM1491"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1498.JPG",
+            "caption": "IMGM1498"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1503.JPG",
+            "caption": "IMGM1503"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1578.JPG",
+            "caption": "IMGM1578"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1606 2.JPG",
+            "caption": "IMGM1606 2"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1609.JPG",
+            "caption": "IMGM1609"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1627.JPG",
+            "caption": "IMGM1627"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1629 Edited.jpg",
+            "caption": "IMGM1629 Edited"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1634.JPG",
+            "caption": "IMGM1634"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1655.JPG",
+            "caption": "IMGM1655"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1673.JPG",
+            "caption": "IMGM1673"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1707.JPG",
+            "caption": "IMGM1707"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1731.JPG",
+            "caption": "IMGM1731"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1745.JPG",
+            "caption": "IMGM1745"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1823.JPG",
+            "caption": "IMGM1823"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM2023.JPG",
+            "caption": "IMGM2023"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM2024.JPG",
+            "caption": "IMGM2024"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM2061.JPG",
+            "caption": "IMGM2061"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM2168.JPG",
+            "caption": "IMGM2168"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/Nathan_1.JPG",
+            "caption": "Nathan 1"
+          }
+        ]
       }
     ]
   },
@@ -1837,10 +2181,6 @@ const collectionsData = [
             "path": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA",
             "photos": [
               {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/IMGM1100.JPG",
-                "caption": "ZA_Ubuntu"
-              },
-              {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-108.jpg",
                 "caption": "ZA_Big_V 01"
               },
@@ -2117,176 +2457,8 @@ const collectionsData = [
                 "caption": "ZA_Ukushona kwelanga"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-49.jpg",
-                "caption": "Zuid Africa 49"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-39.jpg",
-                "caption": "Zuid Africa 39"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-01.jpg",
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-01.JPG",
                 "caption": "Zuid Africa 01"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-107.jpg",
-                "caption": "Zuid Africa 107"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-109.jpg",
-                "caption": "Zuid Africa 109"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-123.jpg",
-                "caption": "Zuid Africa 123"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-124.jpg",
-                "caption": "Zuid Africa 124"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-126.jpg",
-                "caption": "Zuid Africa 126"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-129.jpg",
-                "caption": "Zuid Africa 129"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-237.jpg",
-                "caption": "Zuid Africa 237"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-48.jpg",
-                "caption": "Zuid Africa 48"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-222.jpg",
-                "caption": "Zuid Africa 222"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-165.jpg",
-                "caption": "Zuid Africa 165"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-168.jpg",
-                "caption": "Zuid Africa 168"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-197.jpg",
-                "caption": "Zuid Africa 197"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-147.jpg",
-                "caption": "Zuid Africa 147"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-152.jpg",
-                "caption": "Zuid Africa 152"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-267.jpg",
-                "caption": "Zuid Africa 267"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-272.jpg",
-                "caption": "Zuid Africa 272"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-56.jpg",
-                "caption": "Zuid Africa 56"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-84.jpg",
-                "caption": "Zuid Africa 84"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-83.jpg",
-                "caption": "Zuid Africa 83"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-54.jpg",
-                "caption": "Zuid Africa 54"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-218.jpg",
-                "caption": "Zuid Africa 218"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-33.jpg",
-                "caption": "Zuid Africa 33"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-221.jpg",
-                "caption": "Zuid Africa 221"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-150.jpg",
-                "caption": "Zuid Africa 150"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-198.jpg",
-                "caption": "Zuid Africa 198"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-61.jpg",
-                "caption": "Zuid Africa 61"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-177.jpg",
-                "caption": "Zuid Africa 177"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-192.jpg",
-                "caption": "Zuid Africa 192"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-230.jpg",
-                "caption": "Zuid Africa 230"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-210.jpg",
-                "caption": "ZA_Hitch_Hikers"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-185.jpg",
-                "caption": "Zuid Africa 185"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-239.jpg",
-                "caption": "Zuid Africa 239"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-60.jpg",
-                "caption": "Zuid Africa 60"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-68.jpg",
-                "caption": "Zuid Africa 68"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-74.jpg",
-                "caption": "Zuid Africa 74"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-76.jpg",
-                "caption": "Zuid Africa 76"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-86.jpg",
-                "caption": "Zuid Africa 86"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-92.jpg",
-                "caption": "Zuid Africa 92"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-96.jpg",
-                "caption": "Zuid Africa 96"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-98.jpg",
-                "caption": "Zuid Africa 98"
               }
             ]
           },
@@ -2547,22 +2719,6 @@ const siteData = {
       {
         "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-88.jpg",
         "caption": "Cidadelhe Natureza 88"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Zuid Africa-320.jpg",
-        "caption": "Zuid Africa 320"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Zuid Africa-321.jpg",
-        "caption": "Zuid Africa 321"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Zuid Africa-323.jpg",
-        "caption": "Zuid Africa 323"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Zuid Africa-327.jpg",
-        "caption": "Zuid Africa 327"
       }
     ]
   },
@@ -2677,6 +2833,48 @@ const siteData = {
       {
         "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-z10.jpg",
         "caption": "As Ruinas 027"
+      }
+    ]
+  },
+  "na_quinta_sem_camera": {
+    "name": "Na Quinta, Sem Camera",
+    "description": "A collection of photos from field work and odd jobs. Sometimes the phone is all you need to capture the moment. Just don't zoom in too close",
+    "photos": [
+      {
+        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/IMG_0021.jpg",
+        "caption": "0021"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-89.jpg",
+        "caption": "Cidadelhe Natureza 89"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-90.jpg",
+        "caption": "Cidadelhe Natureza 90"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-91.jpg",
+        "caption": "Cidadelhe Natureza 91"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-92.jpg",
+        "caption": "Cidadelhe Natureza 92"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Projetos na Quinta-01.jpg",
+        "caption": "Projetos na Quinta 01"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Projetos na Quinta-02.jpg",
+        "caption": "Projetos na Quinta 02"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Projetos na Quinta-03.jpg",
+        "caption": "Projetos na Quinta 03"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Projetos na Quinta-08.jpg",
+        "caption": "Projetos na Quinta 08"
       }
     ]
   },
@@ -2802,30 +3000,342 @@ const siteData = {
       }
     ]
   },
-  "as_aldeias_de_beira_alta": {
+  "aldeias_quintas_vales": {
     "name": "As Aldeias de Beira Alta",
     "description": "Every village in Beira Alta has its own mysteries, weathered church towers, sun-baked villagers, and little cafes.",
-    "photos": []
+    "photos": [
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Cogula-04.jpg",
+        "caption": "Cogula 04"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Cogula-05.jpg",
+        "caption": "Cogula 05"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Cogula-1.jpg",
+        "caption": "Cogula 1"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Cogula-21.jpg",
+        "caption": "Cogula 21"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Cogula-3.jpg",
+        "caption": "Cogula 3"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Cogula-5.jpg",
+        "caption": "Cogula 5"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt© - Longroiva First Visit Highlights-09.jpg",
+        "caption": "SolGutt© Longroiva First Visit Highlights 09"
+      }
+    ]
   },
   "projetos_na_quinta": {
     "name": "Projetos na Quinta",
     "description": "Snapshots of projects developed with the Scave team in Cidadelhe",
-    "photos": []
+    "photos": [
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-01.jpg",
+        "caption": "Projetos na Quinta Forno 01"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-02.jpg",
+        "caption": "Projetos na Quinta Forno 02"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-04.jpg",
+        "caption": "Projetos na Quinta Forno 04"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-05.jpg",
+        "caption": "Projetos na Quinta Forno 05"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-06.jpg",
+        "caption": "Projetos na Quinta Forno 06"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-07.jpg",
+        "caption": "Projetos na Quinta Forno 07"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-11.jpg",
+        "caption": "Projetos na Quinta Forno 11"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-16.jpg",
+        "caption": "Projetos na Quinta Forno 16"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-18.jpg",
+        "caption": "Projetos na Quinta Forno 18"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-20.jpg",
+        "caption": "Projetos na Quinta Forno 20"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-23.jpg",
+        "caption": "Projetos na Quinta Forno 23"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-34.jpg",
+        "caption": "Projetos na Quinta Forno 34"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-35.jpg",
+        "caption": "Projetos na Quinta Forno 35"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-36.jpg",
+        "caption": "Projetos na Quinta Forno 36"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-05.jpg",
+        "caption": "Projetos na Quinta 05"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-06.jpg",
+        "caption": "Projetos na Quinta 06"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-07.jpg",
+        "caption": "Projetos na Quinta 07"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-09.jpg",
+        "caption": "Projetos na Quinta 09"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-10.jpg",
+        "caption": "Projetos na Quinta 10"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-11.jpg",
+        "caption": "Projetos na Quinta 11"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-12.jpg",
+        "caption": "Projetos na Quinta 12"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-13.jpg",
+        "caption": "Projetos na Quinta 13"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-14.jpg",
+        "caption": "Projetos na Quinta 14"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-15.jpg",
+        "caption": "Projetos na Quinta 15"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-16.jpg",
+        "caption": "Projetos na Quinta 16"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-17.jpg",
+        "caption": "Projetos na Quinta 17"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-18.jpg",
+        "caption": "Projetos na Quinta 18"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-19.jpg",
+        "caption": "Projetos na Quinta 19"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-20.jpg",
+        "caption": "Projetos na Quinta 20"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-21.jpg",
+        "caption": "Projetos na Quinta 21"
+      }
+    ]
   },
   "amigos_do_portugal": {
     "name": "Amigos do Portugal",
     "description": "Some serious characters.",
     "photos": []
   },
-  "hotel_longroiva": {
-    "name": "Hotel Longroiva",
-    "description": "Photos made for the Hotel Longroiva, a hidden gem near the Massueme Valley. Come visit and see if you notice any familiar photos hanging on the walls.",
-    "photos": []
+  "projetos_professionais": {
+    "name": "Projetos Profissionais",
+    "description": "Photos made for the Hotel Longroiva A Luxurious rural getaway https://www.hoteldelongroiva.com/en/ and O Refugio do Castelo (contact for rental details)",
+    "photos": [
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/3SolGutt - O Refugio do Castelo-085.JPG",
+        "caption": "3SolGutt O Refugio do Castelo 085"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/6SolGutt - O Refugio do Castelo-038.JPG",
+        "caption": "6SolGutt O Refugio do Castelo 038"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/ASolGutt - O Refugio do Castelo-003.JPG",
+        "caption": "ASolGutt O Refugio do Castelo 003"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/ASolGutt - O Refugio do Castelo-030.JPG",
+        "caption": "ASolGutt O Refugio do Castelo 030"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/ASolGutt - O Refugio do Castelo-099.JPG",
+        "caption": "ASolGutt O Refugio do Castelo 099"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/BSolGutt - O Refugio do Castelo-065.JPG",
+        "caption": "BSolGutt O Refugio do Castelo 065"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt - O Refugio do Castelo-002.JPG",
+        "caption": "O Refugio do Castelo 002"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt - O Refugio do Castelo-029.JPG",
+        "caption": "O Refugio do Castelo 029"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Hotel Suite Floor 2-1.jpg",
+        "caption": "SolGutt© Hotel Suite Floor 2 1"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Hotel Suite Floor 2-16.jpg",
+        "caption": "SolGutt© Hotel Suite Floor 2 16"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Hotel exterior-11.jpg",
+        "caption": "SolGutt© Hotel exterior 11"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Hotel exterior-14.jpg",
+        "caption": "SolGutt© Hotel exterior 14"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Longroiva First Visit Highlights-01.jpg",
+        "caption": "SolGutt© Longroiva First Visit Highlights 01"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Longroiva First Visit Highlights-02.jpg",
+        "caption": "SolGutt© Longroiva First Visit Highlights 02"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Longroiva First Visit Highlights-03.jpg",
+        "caption": "SolGutt© Longroiva First Visit Highlights 03"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Longroiva First Visit Highlights-05.jpg",
+        "caption": "SolGutt© Longroiva First Visit Highlights 05"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Longroiva First Visit Highlights-11.jpg",
+        "caption": "SolGutt© Longroiva First Visit Highlights 11"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Porto Tonico-04.jpg",
+        "caption": "SolGutt© Porto Tonico 04"
+      }
+    ]
   },
   "ten_lives_festival": {
     "name": "Ten Lives Festival",
     "description": "The pilot project of a committed and crazy group of people.",
-    "photos": []
+    "photos": [
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1481.JPG",
+        "caption": "IMGM1481"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1487.JPG",
+        "caption": "IMGM1487"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1491.JPG",
+        "caption": "IMGM1491"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1498.JPG",
+        "caption": "IMGM1498"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1503.JPG",
+        "caption": "IMGM1503"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1578.JPG",
+        "caption": "IMGM1578"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1606 2.JPG",
+        "caption": "IMGM1606 2"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1609.JPG",
+        "caption": "IMGM1609"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1627.JPG",
+        "caption": "IMGM1627"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1629 Edited.jpg",
+        "caption": "IMGM1629 Edited"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1634.JPG",
+        "caption": "IMGM1634"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1655.JPG",
+        "caption": "IMGM1655"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1673.JPG",
+        "caption": "IMGM1673"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1707.JPG",
+        "caption": "IMGM1707"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1731.JPG",
+        "caption": "IMGM1731"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1745.JPG",
+        "caption": "IMGM1745"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1823.JPG",
+        "caption": "IMGM1823"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM2023.JPG",
+        "caption": "IMGM2023"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM2024.JPG",
+        "caption": "IMGM2024"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM2061.JPG",
+        "caption": "IMGM2061"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM2168.JPG",
+        "caption": "IMGM2168"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/Nathan_1.JPG",
+        "caption": "Nathan 1"
+      }
+    ]
   },
   "Olympus": {
     "name": "Olympus",
@@ -3924,10 +4434,6 @@ const siteData = {
     "description": "",
     "photos": [
       {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/IMGM1100.JPG",
-        "caption": "ZA_Ubuntu"
-      },
-      {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-108.jpg",
         "caption": "ZA_Big_V 01"
       },
@@ -4204,176 +4710,8 @@ const siteData = {
         "caption": "ZA_Ukushona kwelanga"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-49.jpg",
-        "caption": "Zuid Africa 49"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-39.jpg",
-        "caption": "Zuid Africa 39"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-01.jpg",
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-01.JPG",
         "caption": "Zuid Africa 01"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-107.jpg",
-        "caption": "Zuid Africa 107"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-109.jpg",
-        "caption": "Zuid Africa 109"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-123.jpg",
-        "caption": "Zuid Africa 123"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-124.jpg",
-        "caption": "Zuid Africa 124"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-126.jpg",
-        "caption": "Zuid Africa 126"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-129.jpg",
-        "caption": "Zuid Africa 129"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-237.jpg",
-        "caption": "Zuid Africa 237"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-48.jpg",
-        "caption": "Zuid Africa 48"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-222.jpg",
-        "caption": "Zuid Africa 222"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-165.jpg",
-        "caption": "Zuid Africa 165"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-168.jpg",
-        "caption": "Zuid Africa 168"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-197.jpg",
-        "caption": "Zuid Africa 197"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-147.jpg",
-        "caption": "Zuid Africa 147"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-152.jpg",
-        "caption": "Zuid Africa 152"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-267.jpg",
-        "caption": "Zuid Africa 267"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-272.jpg",
-        "caption": "Zuid Africa 272"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-56.jpg",
-        "caption": "Zuid Africa 56"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-84.jpg",
-        "caption": "Zuid Africa 84"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-83.jpg",
-        "caption": "Zuid Africa 83"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-54.jpg",
-        "caption": "Zuid Africa 54"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-218.jpg",
-        "caption": "Zuid Africa 218"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-33.jpg",
-        "caption": "Zuid Africa 33"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-221.jpg",
-        "caption": "Zuid Africa 221"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-150.jpg",
-        "caption": "Zuid Africa 150"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-198.jpg",
-        "caption": "Zuid Africa 198"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-61.jpg",
-        "caption": "Zuid Africa 61"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-177.jpg",
-        "caption": "Zuid Africa 177"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-192.jpg",
-        "caption": "Zuid Africa 192"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-230.jpg",
-        "caption": "Zuid Africa 230"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-210.jpg",
-        "caption": "ZA_Hitch_Hikers"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-185.jpg",
-        "caption": "Zuid Africa 185"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-239.jpg",
-        "caption": "Zuid Africa 239"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-60.jpg",
-        "caption": "Zuid Africa 60"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-68.jpg",
-        "caption": "Zuid Africa 68"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-74.jpg",
-        "caption": "Zuid Africa 74"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-76.jpg",
-        "caption": "Zuid Africa 76"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-86.jpg",
-        "caption": "Zuid Africa 86"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-92.jpg",
-        "caption": "Zuid Africa 92"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-96.jpg",
-        "caption": "Zuid Africa 96"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-98.jpg",
-        "caption": "Zuid Africa 98"
       }
     ]
   },

@@ -124,7 +124,7 @@ main p {
   color: #f0f0f0;
   font-size: 48px;
   cursor: pointer;
-  opacity: 0.2;
+  opacity: 0.5;
   transition: opacity 0.2s ease;
   padding: 0 16px;
   line-height: 1;
@@ -164,6 +164,7 @@ main p {
   display: block;
   opacity: 1;
   transition: opacity 0.2s ease;
+  border: 10px solid #1f1f1f;
 }
 
 .slide-caption {
@@ -646,6 +647,26 @@ body.about-page {
 .browse-countries:hover { opacity: 1; }
 
 /* Mobile: single column */
+@media (max-width: 768px) {
+  body.gallery-page { overflow: hidden; }
+
+  .collection-description-header { font-size: 11px; padding: 0 24px; margin-bottom: 8px; }
+
+  .slideshow {
+    padding: 0 44px 16px;
+    align-items: flex-start;
+    padding-top: 8px;
+  }
+
+  .arrow.left  { left: 4px; }
+  .arrow.right { right: 4px; }
+
+  #slide-img {
+    max-height: calc(100vh - 140px);
+    max-width: 100%;
+  }
+}
+
 @media (max-width: 768px) {
   body.fotos-page { overflow-y: auto; height: auto; }
 
