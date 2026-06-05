@@ -566,6 +566,30 @@ const collectionsData = [
         "path": "Images/Collections/Cidadelhe/sub/projetos_na_quinta",
         "photos": [
           {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos Na Quinta-30.jpg",
+            "caption": "Projetos Na Quinta 30"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos Na Quinta-31.jpg",
+            "caption": "Projetos Na Quinta 31"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos Na Quinta-32.jpg",
+            "caption": "Projetos Na Quinta 32"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos Na Quinta-33.jpg",
+            "caption": "Projetos Na Quinta 33"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos Na Quinta-34.jpg",
+            "caption": "Projetos Na Quinta 34"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos Na Quinta-35.jpg",
+            "caption": "Projetos Na Quinta 35"
+          },
+          {
             "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-01.jpg",
             "caption": "Projetos na Quinta Forno 01"
           },
@@ -3038,6 +3062,30 @@ const siteData = {
     "name": "Projetos na Quinta",
     "description": "Snapshots of projects developed with the Scave team in Cidadelhe",
     "photos": [
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos Na Quinta-30.jpg",
+        "caption": "Projetos Na Quinta 30"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos Na Quinta-31.jpg",
+        "caption": "Projetos Na Quinta 31"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos Na Quinta-32.jpg",
+        "caption": "Projetos Na Quinta 32"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos Na Quinta-33.jpg",
+        "caption": "Projetos Na Quinta 33"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos Na Quinta-34.jpg",
+        "caption": "Projetos Na Quinta 34"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos Na Quinta-35.jpg",
+        "caption": "Projetos Na Quinta 35"
+      },
       {
         "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-01.jpg",
         "caption": "Projetos na Quinta Forno 01"
