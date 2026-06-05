@@ -1,1 +1,16 @@
-{}
+{
+  "photo_order": [
+    "FR_BayonneStairs.jpeg",
+    "FR_Church.jpeg",
+    "FR_Windingstairs.jpeg",
+    "FR_BayonneBook.jpeg",
+    "FR_WaveCrash.jpeg"
+  ],
+  "captions": {
+    "FR_BayonneStairs.jpeg": "FR 00",
+    "FR_Church.jpeg": "FR 01",
+    "FR_Windingstairs.jpeg": "FR 02",
+    "FR_BayonneBook.jpeg": "FR 03",
+    "FR_WaveCrash.jpeg": "FR 04"
+  }
+}

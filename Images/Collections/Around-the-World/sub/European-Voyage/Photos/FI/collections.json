@@ -1,1 +1,16 @@
-{}
+{
+  "photo_order": [
+    "FI_LakePeople.jpeg",
+    "FI_PerfectLake.jpeg",
+    "FI_Tampere.jpeg",
+    "FI_LeninStalin.jpeg",
+    "FI_ZArt.jpeg"
+  ],
+  "captions": {
+    "FI_LakePeople.jpeg": "FI Tampere 00",
+    "FI_PerfectLake.jpeg": "FI Tampere 01",
+    "FI_Tampere.jpeg": "FI Tampere 02",
+    "FI_LeninStalin.jpeg": "FI Tampere 03",
+    "FI_ZArt.jpeg": "FI Helsinki 04"
+  }
+}

@@ -1,1 +1,22 @@
-{}
+{
+  "photo_order": [
+    "ME_KotorII.jpg",
+    "ME_KotorI.jpeg",
+    "ME_Laundry.jpeg",
+    "ME_Gatekeeper.jpeg",
+    "ME_FlagDay.jpeg",
+    "ME_DogPose.jpeg",
+    "ME_MonkMan.jpeg",
+    "ME_Urbanplanner.jpeg"
+  ],
+  "captions": {
+    "ME_KotorII.jpg": "ME Kotor 00",
+    "ME_KotorI.jpeg": "ME Kotor 01",
+    "ME_Laundry.jpeg": "ME Kotor 02",
+    "ME_Gatekeeper.jpeg": "ME Kotor 03",
+    "ME_FlagDay.jpeg": "ME Cetinje 00",
+    "ME_DogPose.jpeg": "ME Cetinje 01",
+    "ME_MonkMan.jpeg": "ME Cetinje 02",
+    "ME_Urbanplanner.jpeg": "ME Cetinje 03"
+  }
+}

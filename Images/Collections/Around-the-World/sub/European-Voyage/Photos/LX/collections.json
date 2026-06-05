@@ -1,1 +1,10 @@
-{}
+{
+  "photo_order": [
+    "LX_Yash_Liz.jpeg",
+    "LX_Yash_Liz_2.jpeg"
+  ],
+  "captions": {
+    "LX_Yash_Liz.jpeg": "LX 00",
+    "LX_Yash_Liz_2.jpeg": "LX 01"
+  }
+}

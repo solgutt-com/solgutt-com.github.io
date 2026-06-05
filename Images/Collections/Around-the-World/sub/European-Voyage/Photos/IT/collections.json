@@ -1,1 +1,42 @@
-{}
+{
+  "photo_order": [
+    "IT_Pugliano.jpeg",
+    "IT_WiseMan.jpeg",
+    "IT_BariLocals.jpeg",
+    "IT_BariResearch.jpeg",
+    "IT_lasagna.jpeg",
+    "IT_ABuongiorno.jpeg",
+    "IT_Excitement.jpeg",
+    "IT_BelMare.jpeg",
+    "IT_GenoaI.jpeg",
+    "IT_GenoaII.jpeg",
+    "IT_GenoaIII.jpeg",
+    "IT_Tower.jpeg",
+    "IT_MilanoTrain.jpeg",
+    "IT_TheMachinist.jpeg",
+    "IT_MuseumGoers.jpeg",
+    "IT_CastleWall.jpeg",
+    "IT_WindowView.jpeg",
+    "IT_Torino.jpeg"
+  ],
+  "captions": {
+    "IT_Pugliano.jpeg": "IT Polignano",
+    "IT_WiseMan.jpeg": "IT Bari 00",
+    "IT_BariLocals.jpeg": "IT Bari 01",
+    "IT_BariResearch.jpeg": "IT Bari 02",
+    "IT_lasagna.jpeg": "IT Bari 03",
+    "IT_ABuongiorno.jpeg": "IT Venezia 00",
+    "IT_Excitement.jpeg": "IT Venezia 01",
+    "IT_BelMare.jpeg": "IT Genoa 00",
+    "IT_GenoaI.jpeg": "IT Genoa 01",
+    "IT_GenoaII.jpeg": "IT Genoa 02",
+    "IT_GenoaIII.jpeg": "IT Genoa 03",
+    "IT_Tower.jpeg": "IT Milano 00",
+    "IT_MilanoTrain.jpeg": "IT Milano 01",
+    "IT_TheMachinist.jpeg": "IT Milano 02",
+    "IT_MuseumGoers.jpeg": "IT Milano 03",
+    "IT_CastleWall.jpeg": "IT Luca 00",
+    "IT_WindowView.jpeg": "IT Luca 01",
+    "IT_Torino.jpeg": "IT Torino"
+  }
+}

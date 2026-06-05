@@ -1,1 +1,14 @@
-{}
+{
+  "photo_order": [
+    "DE_FatherSon.jpeg",
+    "DE_tvtower.jpeg",
+    "DE_Trier.jpeg",
+    "DE_BikePee.JPG"
+  ],
+  "captions": {
+    "DE_FatherSon.jpeg": "DE 00",
+    "DE_tvtower.jpeg": "DE 01",
+    "DE_Trier.jpeg": "DE 02",
+    "DE_BikePee.JPG": "DE 03"
+  }
+}

@@ -4,5 +4,23 @@
   "description": "Some serious characters.",
   "cover": "",
   "order": 6,
-  "type": "gallery"
+  "type": "gallery",
+  "photo_order": [
+    "SolGutt - Amigos do Portugal-07.jpg",
+    "SolGutt - Amigos do Portugal-06.jpg",
+    "SolGutt - Amigos do Portugal-02.jpg",
+    "SolGutt - Amigos do Portugal-03.jpg",
+    "SolGutt - Amigos do Portugal-04.jpg",
+    "SolGutt - Amigos do Portugal-05.jpg",
+    "SolGutt - Amigos do Portugal-01.jpg",
+    "SolGutt - Amigos do Portugal-08.jpg",
+    "SolGutt - Amigos do Portugal-12.jpg"
+  ],
+  "captions": {
+    "SolGutt - Amigos do Portugal-07.jpg": "Amigos do Portugal 00",
+    "SolGutt - Amigos do Portugal-06.jpg": "Amigos do Portugal 01",
+    "SolGutt - Amigos do Portugal-01.jpg": "Amigos do Portugal 06",
+    "SolGutt - Amigos do Portugal-08.jpg": "Amigos do Portugal 07",
+    "SolGutt - Amigos do Portugal-12.jpg": "Amigos do Portugal 08"
+  }
 }

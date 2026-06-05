@@ -4,5 +4,27 @@
   "description": "A collection of photos from field work and odd jobs. Sometimes the phone is all you need to capture the moment. Just don't zoom in too close",
   "cover": "",
   "order": 3,
-  "type": "gallery"
+  "type": "gallery",
+  "photo_order": [
+    "IMG_0021.jpg",
+    "SolGutt - Projetos na Quinta-02.jpg",
+    "SolGutt - Projetos na Quinta-03.jpg",
+    "SolGutt - Projetos na Quinta-08.jpg",
+    "SolGutt - Cidadelhe Natureza-89.jpg",
+    "SolGutt - Cidadelhe Natureza-90.jpg",
+    "SolGutt - Cidadelhe Natureza-91.jpg",
+    "SolGutt - Cidadelhe Natureza-92.jpg",
+    "SolGutt - Projetos na Quinta-01.jpg"
+  ],
+  "captions": {
+    "IMG_0021.jpg": "Cebolas 00",
+    "SolGutt - Projetos na Quinta-02.jpg": "Vinhos 01",
+    "SolGutt - Projetos na Quinta-03.jpg": "Vinhos 02",
+    "SolGutt - Projetos na Quinta-08.jpg": "Casas 03",
+    "SolGutt - Cidadelhe Natureza-89.jpg": "Cavalete 04",
+    "SolGutt - Cidadelhe Natureza-90.jpg": "Cavalete 05",
+    "SolGutt - Cidadelhe Natureza-91.jpg": "Cavalete 06",
+    "SolGutt - Cidadelhe Natureza-92.jpg": "Cavalete 07",
+    "SolGutt - Projetos na Quinta-01.jpg": "Vinhos 08"
+  }
 }

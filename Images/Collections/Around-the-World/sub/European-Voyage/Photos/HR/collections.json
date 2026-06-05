@@ -1,1 +1,14 @@
-{}
+{
+  "photo_order": [
+    "HR_Security.jpeg",
+    "HR_BreadLine.jpeg",
+    "HR_Mail.jpeg",
+    "HR_StreetCar.jpeg"
+  ],
+  "captions": {
+    "HR_Security.jpeg": "HR 00",
+    "HR_BreadLine.jpeg": "HR 01 Breadline",
+    "HR_Mail.jpeg": "HR 02",
+    "HR_StreetCar.jpeg": "HR 03"
+  }
+}

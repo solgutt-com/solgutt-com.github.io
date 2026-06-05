@@ -1,1 +1,10 @@
-{}
+{
+  "photo_order": [
+    "BE_Bike.jpeg",
+    "BE_Spa.jpeg"
+  ],
+  "captions": {
+    "BE_Bike.jpeg": "BE 00",
+    "BE_Spa.jpeg": "BE 01"
+  }
+}

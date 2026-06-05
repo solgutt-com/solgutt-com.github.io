@@ -351,39 +351,39 @@ const collectionsData = [
         "photos": [
           {
             "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/IMG_0021.jpg",
-            "caption": "0021"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-89.jpg",
-            "caption": "Cidadelhe Natureza 89"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-90.jpg",
-            "caption": "Cidadelhe Natureza 90"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-91.jpg",
-            "caption": "Cidadelhe Natureza 91"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-92.jpg",
-            "caption": "Cidadelhe Natureza 92"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Projetos na Quinta-01.jpg",
-            "caption": "Projetos na Quinta 01"
+            "caption": "Cebolas 00"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Projetos na Quinta-02.jpg",
-            "caption": "Projetos na Quinta 02"
+            "caption": "Vinhos 01"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Projetos na Quinta-03.jpg",
-            "caption": "Projetos na Quinta 03"
+            "caption": "Vinhos 02"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Projetos na Quinta-08.jpg",
-            "caption": "Projetos na Quinta 08"
+            "caption": "Casas 03"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-89.jpg",
+            "caption": "Cavalete 04"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-90.jpg",
+            "caption": "Cavalete 05"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-91.jpg",
+            "caption": "Cavalete 06"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-92.jpg",
+            "caption": "Cavalete 07"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Projetos na Quinta-01.jpg",
+            "caption": "Vinhos 08"
           }
         ]
       },
@@ -399,63 +399,63 @@ const collectionsData = [
         "photos": [
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-57.jpg",
-            "caption": "Os Cidadãos 57"
+            "caption": "Os Cidadãos 00"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-51.jpg",
-            "caption": "Os Cidadãos 51"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-49.jpg",
-            "caption": "Os Cidadãos 49"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-50.jpg",
-            "caption": "Os Cidadãos 50"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-05.jpg",
-            "caption": "Os Cidadãos 05"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-01.jpg",
             "caption": "Os Cidadãos 01"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-02.jpg",
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-49.jpg",
             "caption": "Os Cidadãos 02"
           },
           {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-50.jpg",
+            "caption": "Os Cidadãos 03"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-05.jpg",
+            "caption": "Os Cidadãos 04"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-01.jpg",
+            "caption": "Os Cidadãos 04"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-02.jpg",
+            "caption": "Os Cidadãos 05"
+          },
+          {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-43.jpg",
-            "caption": "Os Cidadãos 43"
+            "caption": "Os Cidadãos 06"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-44.jpg",
-            "caption": "Os Cidadãos 44"
+            "caption": "Os Cidadãos 07"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-47.jpg",
-            "caption": "Os Cidadãos 47"
+            "caption": "Os Cidadãos 08"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-46.jpg",
-            "caption": "Os Cidadãos 46"
+            "caption": "Os Cidadãos 09"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-15.jpg",
-            "caption": "Os Cidadãos 15"
+            "caption": "Os Cidadãos 010"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-40.jpg",
-            "caption": "Os Cidadãos 40"
+            "caption": "Os Cidadãos 011"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-12.jpg",
-            "caption": "Os Cidadãos 12"
+            "caption": "Os Cidadãos 012"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-13.jpg",
-            "caption": "Os Cidadãos 13"
+            "caption": "Os Cidadãos 013"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-14.jpg",
@@ -463,55 +463,55 @@ const collectionsData = [
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-16.jpg",
-            "caption": "Os Cidadãos 16"
+            "caption": "Os Cidadãos 015"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-22.jpg",
-            "caption": "Os Cidadãos 22"
+            "caption": "Os Cidadãos 016"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-24.jpg",
-            "caption": "Os Cidadãos 24"
+            "caption": "Os Cidadãos 017"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-31.jpg",
-            "caption": "Os Cidadãos 31"
+            "caption": "Os Cidadãos 018"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-26.jpg",
-            "caption": "Os Cidadãos 26"
+            "caption": "Os Cidadãos 019"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-25.jpg",
-            "caption": "Os Cidadãos 25"
+            "caption": "Os Cidadãos 020"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-11.jpg",
-            "caption": "Os Cidadãos 11"
+            "caption": "Os Cidadãos 021"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-07.jpg",
-            "caption": "Os Cidadãos 07"
+            "caption": "Os Cidadãos 022"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-08.jpg",
-            "caption": "Os Cidadãos 08"
+            "caption": "Os Cidadãos 023"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-10.jpg",
-            "caption": "Os Cidadãos 10"
+            "caption": "Os Cidadãos 024"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-48.jpg",
-            "caption": "Os Cidadãos 48"
+            "caption": "Os Cidadãos 025"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-55.jpg",
-            "caption": "Os Cidadãos 55"
+            "caption": "Os Cidadãos 026"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-36.jpg",
-            "caption": "Os Cidadãos 36"
+            "caption": "Os Cidadãos 027"
           }
         ]
       },
@@ -567,147 +567,147 @@ const collectionsData = [
         "photos": [
           {
             "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-11.jpg",
-            "caption": "Projetos na Quinta - Bio Architectura 00"
+            "caption": "Projetos na Quinta Forno 11"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-35.jpg",
-            "caption": "Projetos na Quinta - Bio Architectura 01"
+            "caption": "Projetos na Quinta Forno 35"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-36.jpg",
-            "caption": "Projetos na Quinta - Bio Architectura 02"
+            "caption": "Projetos na Quinta Forno 36"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-04.jpg",
-            "caption": "Projetos na Quinta - Bio Architectura 03"
+            "caption": "Projetos na Quinta Forno 04"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-06.jpg",
-            "caption": "Projetos na Quinta - Bio Architectura 04"
+            "caption": "Projetos na Quinta Forno 06"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-07.jpg",
-            "caption": "Projetos na Quinta - Bio Architectura 05"
+            "caption": "Projetos na Quinta Forno 07"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-05.jpg",
-            "caption": "Projetos na Quinta - Bio Architectura 06"
+            "caption": "Projetos na Quinta Forno 05"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-01.jpg",
-            "caption": "Projetos na Quinta - Bio Architectura 07"
+            "caption": "Projetos na Quinta Forno 01"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-02.jpg",
-            "caption": "Projetos na Quinta - Bio Architectura 08"
+            "caption": "Projetos na Quinta Forno 02"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-16.jpg",
-            "caption": "Projetos na Quinta - Bio Architectura 09"
+            "caption": "Projetos na Quinta Forno 16"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-34.jpg",
-            "caption": "Projetos na Quinta - Bio Architectura 010"
+            "caption": "Projetos na Quinta Forno 34"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-18.jpg",
-            "caption": "Projetos na Quinta - Bio Architectura 011"
+            "caption": "Projetos na Quinta Forno 18"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-20.jpg",
-            "caption": "Projetos na Quinta - Bio Architectura 012"
+            "caption": "Projetos na Quinta Forno 20"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-23.jpg",
-            "caption": "Projetos na Quinta - Bio Architectura 013"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-07.jpg",
-            "caption": "Projetos na Quinta - Biochar Experimentação 00"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos Na Quinta-31.jpg",
-            "caption": "Projetos na Quinta - Biochar Experimentação 01"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos Na Quinta-30.jpg",
-            "caption": "Projetos na Quinta - Biochar Experimentação 02"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos Na Quinta-33.jpg",
-            "caption": "Projetos na Quinta - Biochar Experimentação 04"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos Na Quinta-34.jpg",
-            "caption": "Projetos na Quinta - Biochar Experimentação 05"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-09.jpg",
-            "caption": "Projetos na Quinta - Biochar Experimentação 07"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-10.jpg",
-            "caption": "Projetos na Quinta - Biochar Experimentação 08"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-11.jpg",
-            "caption": "Projetos na Quinta - Biochar Experimentação 09"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-13.jpg",
-            "caption": "Projetos na Quinta - Biochar Experimentação 012"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-16.jpg",
-            "caption": "Projetos na Quinta - Biochar Experimentação 013"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-17.jpg",
-            "caption": "Projetos na Quinta - Biochar Experimentação 014"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-18.jpg",
-            "caption": "Projetos na Quinta - Biochar Experimentação 015"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-19.jpg",
-            "caption": "Projetos na Quinta - Biochar Experimentação 016"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-20.jpg",
-            "caption": "Projetos na Quinta - Biochar Experimentação 017"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-05.jpg",
-            "caption": "Projetos na Quinta - Biochar Experimentação 018"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-06.jpg",
-            "caption": "Projetos na Quinta - Biochar Experimentação 018"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-21.jpg",
-            "caption": "Projetos na Quinta - Biochar Experimentação 019"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/PT_ComradesNew.jpeg",
-            "caption": "ComradesNew"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/PT_HarvestI Large.jpeg",
-            "caption": "HarvestI"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/PT_HarvestII Large.jpeg",
-            "caption": "HarvestII"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/PT_HarvestIII.jpeg",
-            "caption": "HarvestIII"
+            "caption": "Projetos na Quinta Forno 23"
           },
           {
             "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/IMGM3448.JPG",
-            "caption": "IMGM3448"
+            "caption": "Projetos na Quinta - Bio Architectura 014"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-07.jpg",
+            "caption": "Projetos na Quinta 07"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos Na Quinta-31.jpg",
+            "caption": "Projetos Na Quinta 31"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos Na Quinta-30.jpg",
+            "caption": "Projetos Na Quinta 30"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos Na Quinta-33.jpg",
+            "caption": "Projetos Na Quinta 33"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos Na Quinta-34.jpg",
+            "caption": "Projetos Na Quinta 34"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-09.jpg",
+            "caption": "Projetos na Quinta 09"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-10.jpg",
+            "caption": "Projetos na Quinta 10"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-11.jpg",
+            "caption": "Projetos na Quinta 11"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-13.jpg",
+            "caption": "Projetos na Quinta 13"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-16.jpg",
+            "caption": "Projetos na Quinta 16"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-17.jpg",
+            "caption": "Projetos na Quinta 17"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-18.jpg",
+            "caption": "Projetos na Quinta 18"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-19.jpg",
+            "caption": "Projetos na Quinta 19"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-20.jpg",
+            "caption": "Projetos na Quinta 20"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-05.jpg",
+            "caption": "Projetos na Quinta 05"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-06.jpg",
+            "caption": "Projetos na Quinta 06"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-21.jpg",
+            "caption": "Projetos na Quinta 21"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/PT_HarvestI Large.jpeg",
+            "caption": "Projetos na Quinta - Colheita da Azeitona 00"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/PT_HarvestII Large.jpeg",
+            "caption": "Projetos na Quinta - Colheita da Azeitona 01"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/PT_HarvestIII.jpeg",
+            "caption": "Projetos na Quinta - Colheita da Azeitona 02"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/PT_ComradesNew.jpeg",
+            "caption": "Projetos na Quinta - Colheita da Azeitona 03"
           }
         ]
       },
@@ -722,7 +722,11 @@ const collectionsData = [
         "path": "Images/Collections/Cidadelhe/sub/amigos_do_portugal",
         "photos": [
           {
-            "src": "Images/Collections/Cidadelhe/sub/amigos_do_portugal/Photos/SolGutt - Amigos do Portugal-01.jpg",
+            "src": "Images/Collections/Cidadelhe/sub/amigos_do_portugal/Photos/SolGutt - Amigos do Portugal-07.jpg",
+            "caption": "Amigos do Portugal 00"
+          },
+          {
+            "src": "Images/Collections/Cidadelhe/sub/amigos_do_portugal/Photos/SolGutt - Amigos do Portugal-06.jpg",
             "caption": "Amigos do Portugal 01"
           },
           {
@@ -742,32 +746,16 @@ const collectionsData = [
             "caption": "Amigos do Portugal 05"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/amigos_do_portugal/Photos/SolGutt - Amigos do Portugal-06.jpg",
+            "src": "Images/Collections/Cidadelhe/sub/amigos_do_portugal/Photos/SolGutt - Amigos do Portugal-01.jpg",
             "caption": "Amigos do Portugal 06"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/amigos_do_portugal/Photos/SolGutt - Amigos do Portugal-07.jpg",
+            "src": "Images/Collections/Cidadelhe/sub/amigos_do_portugal/Photos/SolGutt - Amigos do Portugal-08.jpg",
             "caption": "Amigos do Portugal 07"
           },
           {
-            "src": "Images/Collections/Cidadelhe/sub/amigos_do_portugal/Photos/SolGutt - Amigos do Portugal-08.jpg",
-            "caption": "Amigos do Portugal 08"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/amigos_do_portugal/Photos/SolGutt - Amigos do Portugal-09.jpg",
-            "caption": "Amigos do Portugal 09"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/amigos_do_portugal/Photos/SolGutt - Amigos do Portugal-10.jpg",
-            "caption": "Amigos do Portugal 10"
-          },
-          {
-            "src": "Images/Collections/Cidadelhe/sub/amigos_do_portugal/Photos/SolGutt - Amigos do Portugal-11.jpg",
-            "caption": "Amigos do Portugal 11"
-          },
-          {
             "src": "Images/Collections/Cidadelhe/sub/amigos_do_portugal/Photos/SolGutt - Amigos do Portugal-12.jpg",
-            "caption": "Amigos do Portugal 12"
+            "caption": "Amigos do Portugal 08"
           }
         ]
       },
@@ -1176,59 +1164,59 @@ const collectionsData = [
             "photos": [
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_1.jpeg",
-                "caption": "1"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_10.jpeg",
-                "caption": "10"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_2.jpeg",
-                "caption": "2"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_3.jpeg",
-                "caption": "3"
+                "caption": "AL Lin 00"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_4.jpeg",
-                "caption": "4"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_5.jpeg",
-                "caption": "5"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_6.jpeg",
-                "caption": "6"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_7 Large.jpeg",
-                "caption": "7"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_8.jpeg",
-                "caption": "8"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_9.jpeg",
-                "caption": "9"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_Coexist.jpeg",
-                "caption": "Coexist"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_Fisherwoman.jpeg",
-                "caption": "Fisherwoman"
+                "caption": "AL Lin 01"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_LinIII.jpeg",
-                "caption": "LinIII"
+                "caption": "AL Lin 02"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_5.jpeg",
+                "caption": "AL Lin 03"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_Fisherwoman.jpeg",
+                "caption": "AL Lin 04"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_3.jpeg",
+                "caption": "AL Lin 05"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_6.jpeg",
+                "caption": "AL Lin 06"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_9.jpeg",
+                "caption": "AL Berat 00"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_Coexist.jpeg",
+                "caption": "AL Berat 01"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_7 Large.jpeg",
+                "caption": "AL Berat 02"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_10.jpeg",
+                "caption": "AL Tirana 00"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_8.jpeg",
+                "caption": "AL Tirana 01"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_Security.jpeg",
-                "caption": "Security"
+                "caption": "AL Tirana 02"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_2.jpeg",
+                "caption": "AL Durres 00"
               }
             ]
           },
@@ -1244,15 +1232,15 @@ const collectionsData = [
             "photos": [
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AT/AT_AlleyWay.jpeg",
-                "caption": "AlleyWay"
+                "caption": "AT 00"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AT/AT_Edifice.jpeg",
-                "caption": "Edifice"
+                "caption": "AT 01"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AT/AT_MountainView.jpeg",
-                "caption": "MountainView"
+                "caption": "AT 02"
               }
             ]
           },
@@ -1268,59 +1256,59 @@ const collectionsData = [
             "photos": [
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_1OldWoman.jpeg",
-                "caption": "1OldWoman"
+                "caption": "BA 00"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_1UphillBothways.jpeg",
-                "caption": "1UphillBothways"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_1WartornII.jpeg",
-                "caption": "1WartornII"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_1WhiteCastle.jpeg",
-                "caption": "1WhiteCastle"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_1WhiteCastleII.jpeg",
-                "caption": "1WhiteCastleII"
+                "caption": "BA 01"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_1WoodPile.jpeg",
-                "caption": "1WoodPile"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_1wartorn.jpeg",
-                "caption": "1wartorn"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_Heatwave.jpeg",
-                "caption": "Heatwave"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_PSideWalk.jpeg",
-                "caption": "PSideWalk"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_Perron.jpeg",
-                "caption": "Perron"
+                "caption": "BA 02"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_PigeonsII.jpeg",
-                "caption": "PigeonsII"
+                "caption": "BA 03"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_RoadtoCroatia.jpeg",
-                "caption": "RoadtoCroatia"
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_1WhiteCastleII.jpeg",
+                "caption": "BA 04"
               },
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_ZCableTV.jpeg",
-                "caption": "ZCableTV"
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_1WhiteCastle.jpeg",
+                "caption": "BA 05"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_1WartornII.jpeg",
+                "caption": "BA 06"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_1wartorn.jpeg",
+                "caption": "BA 07"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_ZFranzFerd.jpeg",
-                "caption": "ZFranzFerd"
+                "caption": "BA 08"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_PSideWalk.jpeg",
+                "caption": "BA 09"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_Perron.jpeg",
+                "caption": "BA 010"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_RoadtoCroatia.jpeg",
+                "caption": "BA 011"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_Heatwave.jpeg",
+                "caption": "BA 012"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_ZCableTV.jpeg",
+                "caption": "BA 013"
               }
             ]
           },
@@ -1336,11 +1324,11 @@ const collectionsData = [
             "photos": [
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BE/BE_Bike.jpeg",
-                "caption": "Bike"
+                "caption": "BE 00"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BE/BE_Spa.jpeg",
-                "caption": "Spa"
+                "caption": "BE 01"
               }
             ]
           },
@@ -1356,7 +1344,7 @@ const collectionsData = [
             "photos": [
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/CH/CH_Checkmate_improved.jpeg",
-                "caption": "Checkmate improved"
+                "caption": "CH PP on the PP"
               }
             ]
           },
@@ -1371,20 +1359,20 @@ const collectionsData = [
             "path": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/DE",
             "photos": [
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/DE/DE_BikePee.JPG",
-                "caption": "BikePee"
-              },
-              {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/DE/DE_FatherSon.jpeg",
-                "caption": "FatherSon"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/DE/DE_Trier.jpeg",
-                "caption": "Trier"
+                "caption": "DE 00"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/DE/DE_tvtower.jpeg",
-                "caption": "tvtower"
+                "caption": "DE 01"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/DE/DE_Trier.jpeg",
+                "caption": "DE 02"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/DE/DE_BikePee.JPG",
+                "caption": "DE 03"
               }
             ]
           },
@@ -1399,24 +1387,24 @@ const collectionsData = [
             "path": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/EE",
             "photos": [
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/EE/EE_Forest.jpg",
-                "caption": "Forest"
-              },
-              {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/EE/EE_Oldtown.jpeg",
-                "caption": "Oldtown"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/EE/EE_RainMuseum.jpeg",
-                "caption": "RainMuseum"
+                "caption": "EE 00"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/EE/EE_TallinnStation.jpeg",
-                "caption": "TallinnStation"
+                "caption": "EE 01"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/EE/EE_TartuRiver.jpeg",
-                "caption": "TartuRiver"
+                "caption": "EE 02"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/EE/EE_RainMuseum.jpeg",
+                "caption": "EE 03"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/EE/EE_Forest.jpg",
+                "caption": "EE 04"
               }
             ]
           },
@@ -1431,52 +1419,52 @@ const collectionsData = [
             "path": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES",
             "photos": [
               {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_Catalonia.jpeg",
+                "caption": "ES 00"
+              },
+              {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_AWeatherVein.jpeg",
-                "caption": "AWeatherVein"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_AbandonedIndustry.jpeg",
-                "caption": "AbandonedIndustry"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_AmigadeMujerra.jpeg",
-                "caption": "AmigadeMujerra"
+                "caption": "ES 01"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_BusyBees Edited.jpg",
-                "caption": "BusyBees Edited"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_Catalonia.jpeg",
-                "caption": "Catalonia"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_Montserrat.jpeg",
-                "caption": "Montserrat"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_MontserratII.jpeg",
-                "caption": "MontserratII"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_MontserratIII.jpeg",
-                "caption": "MontserratIII"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_OldMenSea.jpeg",
-                "caption": "OldMenSea"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_OldmanSurfer.jpeg",
-                "caption": "OldmanSurfer"
+                "caption": "ES 02"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_ParkSol.jpeg",
-                "caption": "ParkSol"
+                "caption": "ES 03"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_Montserrat.jpeg",
+                "caption": "ES 04"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_MontserratII.jpeg",
+                "caption": "ES 05"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_MontserratIII.jpeg",
+                "caption": "ES 06"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_AmigadeMujerra.jpeg",
+                "caption": "ES 07"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_OldMenSea.jpeg",
+                "caption": "ES 08"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_OldmanSurfer.jpeg",
+                "caption": "ES 09"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_AbandonedIndustry.jpeg",
+                "caption": "ES 010"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_SegoviaSelfie.jpeg",
-                "caption": "SegoviaSelfie"
+                "caption": "ES 011"
               }
             ]
           },
@@ -1492,23 +1480,23 @@ const collectionsData = [
             "photos": [
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/FI/FI_LakePeople.jpeg",
-                "caption": "LakePeople"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/FI/FI_LeninStalin.jpeg",
-                "caption": "LeninStalin"
+                "caption": "FI Tampere 00"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/FI/FI_PerfectLake.jpeg",
-                "caption": "PerfectLake"
+                "caption": "FI Tampere 01"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/FI/FI_Tampere.jpeg",
-                "caption": "Tampere"
+                "caption": "FI Tampere 02"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/FI/FI_LeninStalin.jpeg",
+                "caption": "FI Tampere 03"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/FI/FI_ZArt.jpeg",
-                "caption": "ZArt"
+                "caption": "FI Helsinki 04"
               }
             ]
           },
@@ -1523,24 +1511,24 @@ const collectionsData = [
             "path": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/FR",
             "photos": [
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/FR/FR_BayonneBook.jpeg",
-                "caption": "BayonneBook"
-              },
-              {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/FR/FR_BayonneStairs.jpeg",
-                "caption": "BayonneStairs"
+                "caption": "FR 00"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/FR/FR_Church.jpeg",
-                "caption": "Church"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/FR/FR_WaveCrash.jpeg",
-                "caption": "WaveCrash"
+                "caption": "FR 01"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/FR/FR_Windingstairs.jpeg",
-                "caption": "Windingstairs"
+                "caption": "FR 02"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/FR/FR_BayonneBook.jpeg",
+                "caption": "FR 03"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/FR/FR_WaveCrash.jpeg",
+                "caption": "FR 04"
               }
             ]
           },
@@ -1555,20 +1543,20 @@ const collectionsData = [
             "path": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/HR",
             "photos": [
               {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/HR/HR_Security.jpeg",
+                "caption": "HR 00"
+              },
+              {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/HR/HR_BreadLine.jpeg",
-                "caption": "BreadLine"
+                "caption": "HR 01 Breadline"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/HR/HR_Mail.jpeg",
-                "caption": "Mail"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/HR/HR_Security.jpeg",
-                "caption": "Security"
+                "caption": "HR 02"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/HR/HR_StreetCar.jpeg",
-                "caption": "StreetCar"
+                "caption": "HR 03"
               }
             ]
           },
@@ -1583,84 +1571,76 @@ const collectionsData = [
             "path": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT",
             "photos": [
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_ABuongiorno.jpeg",
-                "caption": "ABuongiorno"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_BariLocals.jpeg",
-                "caption": "BariLocals"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_BariResearch.jpeg",
-                "caption": "BariResearch"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_BelMare.jpeg",
-                "caption": "BelMare"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_CastleWall.jpeg",
-                "caption": "CastleWall"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_ChaiSewer.jpeg",
-                "caption": "ChaiSewer"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_Excitement.jpeg",
-                "caption": "Excitement"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_GenoaI.jpeg",
-                "caption": "GenoaI"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_GenoaII.jpeg",
-                "caption": "GenoaII"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_GenoaIII.jpeg",
-                "caption": "GenoaIII"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_MilanoTrain.jpeg",
-                "caption": "MilanoTrain"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_MuseumGoers.jpeg",
-                "caption": "MuseumGoers"
-              },
-              {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_Pugliano.jpeg",
-                "caption": "Pugliano"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_SunsetLight.jpeg",
-                "caption": "SunsetLight"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_TheMachinist.jpeg",
-                "caption": "TheMachinist"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_Torino.jpeg",
-                "caption": "Torino"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_Tower.jpeg",
-                "caption": "Tower"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_WindowView.jpeg",
-                "caption": "WindowView"
+                "caption": "IT Polignano"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_WiseMan.jpeg",
-                "caption": "WiseMan"
+                "caption": "IT Bari 00"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_BariLocals.jpeg",
+                "caption": "IT Bari 01"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_BariResearch.jpeg",
+                "caption": "IT Bari 02"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_lasagna.jpeg",
-                "caption": "lasagna"
+                "caption": "IT Bari 03"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_ABuongiorno.jpeg",
+                "caption": "IT Venezia 00"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_Excitement.jpeg",
+                "caption": "IT Venezia 01"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_BelMare.jpeg",
+                "caption": "IT Genoa 00"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_GenoaI.jpeg",
+                "caption": "IT Genoa 01"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_GenoaII.jpeg",
+                "caption": "IT Genoa 02"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_GenoaIII.jpeg",
+                "caption": "IT Genoa 03"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_Tower.jpeg",
+                "caption": "IT Milano 00"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_MilanoTrain.jpeg",
+                "caption": "IT Milano 01"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_TheMachinist.jpeg",
+                "caption": "IT Milano 02"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_MuseumGoers.jpeg",
+                "caption": "IT Milano 03"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_CastleWall.jpeg",
+                "caption": "IT Luca 00"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_WindowView.jpeg",
+                "caption": "IT Luca 01"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_Torino.jpeg",
+                "caption": "IT Torino"
               }
             ]
           },
@@ -1686,32 +1666,32 @@ const collectionsData = [
             "path": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV",
             "photos": [
               {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_LakePeopleII.jpeg",
+                "caption": "LV 00"
+              },
+              {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_ABusinessCall.jpeg",
-                "caption": "ABusinessCall"
+                "caption": "LV 01"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_AtSea.jpeg",
-                "caption": "AtSea"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_Flowers.jpeg",
-                "caption": "Flowers"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_LakePeopleII.jpeg",
-                "caption": "LakePeopleII"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_MarketNotes.jpeg",
-                "caption": "MarketNotes"
+                "caption": "LV 02"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_RadioSat.jpeg",
-                "caption": "RadioSat"
+                "caption": "LV 03"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_Flowers.jpeg",
+                "caption": "LV 04"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_MarketNotes.jpeg",
+                "caption": "LV 05"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_ShoesBeach.jpeg",
-                "caption": "ShoesBeach"
+                "caption": "LV 06"
               }
             ]
           },
@@ -1727,11 +1707,11 @@ const collectionsData = [
             "photos": [
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LX/LX_Yash_Liz.jpeg",
-                "caption": "Yash Liz"
+                "caption": "LX 00"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LX/LX_Yash_Liz_2.jpeg",
-                "caption": "Yash Liz 2"
+                "caption": "LX 01"
               }
             ]
           },
@@ -1746,36 +1726,36 @@ const collectionsData = [
             "path": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ME",
             "photos": [
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ME/ME_DogPose.jpeg",
-                "caption": "DogPose"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ME/ME_FlagDay.jpeg",
-                "caption": "FlagDay"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ME/ME_Gatekeeper.jpeg",
-                "caption": "Gatekeeper"
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ME/ME_KotorII.jpg",
+                "caption": "ME Kotor 00"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ME/ME_KotorI.jpeg",
-                "caption": "KotorI"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ME/ME_KotorII.jpg",
-                "caption": "KotorII"
+                "caption": "ME Kotor 01"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ME/ME_Laundry.jpeg",
-                "caption": "Laundry"
+                "caption": "ME Kotor 02"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ME/ME_Gatekeeper.jpeg",
+                "caption": "ME Kotor 03"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ME/ME_FlagDay.jpeg",
+                "caption": "ME Cetinje 00"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ME/ME_DogPose.jpeg",
+                "caption": "ME Cetinje 01"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ME/ME_MonkMan.jpeg",
-                "caption": "MonkMan"
+                "caption": "ME Cetinje 02"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ME/ME_Urbanplanner.jpeg",
-                "caption": "Urbanplanner"
+                "caption": "ME Cetinje 03"
               }
             ]
           },
@@ -1791,87 +1771,83 @@ const collectionsData = [
             "photos": [
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_ADom.jpeg",
-                "caption": "ADom"
+                "caption": "NL Utrecht 00"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_ADomMoon.jpeg",
-                "caption": "ADomMoon"
+                "caption": "NL Utrecht 01"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_BDomFog.jpeg",
-                "caption": "BDomFog"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Bike Large.jpeg",
-                "caption": "Bike"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_CTrainDog.jpeg",
-                "caption": "CTrainDog"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Canal Large.jpeg",
-                "caption": "Canal"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_CanalTrouble.jpeg",
-                "caption": "CanalTrouble"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_CanalView.jpeg",
-                "caption": "CanalView"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_DomPlane2.jpeg",
-                "caption": "DomPlane2"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_DuneSea.jpeg",
-                "caption": "DuneSea"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_DuneSeaII.jpeg",
-                "caption": "DuneSeaII"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_DuneSeaIII Large.jpeg",
-                "caption": "DuneSeaIII"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_FatherSon.jpeg",
-                "caption": "FatherSon"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Futbol.jpeg",
-                "caption": "Futbol"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_KingoftheCastle.jpeg",
-                "caption": "KingoftheCastle"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_KitchenLight.jpeg",
-                "caption": "KitchenLight"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Shroom Large.jpeg",
-                "caption": "Shroom"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Tivoli.jpeg",
-                "caption": "Tivoli"
+                "caption": "NL Utrecht 02"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_UtrechtMoon.jpeg",
-                "caption": "UtrechtMoon"
+                "caption": "NL Utrecht 03"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Tivoli.jpeg",
+                "caption": "NL Utrecht 04"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_WorkLightBalance.jpeg",
-                "caption": "WorkLightBalance"
+                "caption": "NL Utrecht 05"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Canal Large.jpeg",
+                "caption": "NL Utrecht 06"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_CanalTrouble.jpeg",
+                "caption": "NL Utrecht 07"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_CanalView.jpeg",
+                "caption": "NL Utrecht 08"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Futbol.jpeg",
+                "caption": "NL Utrecht 09"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_CTrainDog.jpeg",
+                "caption": "NL Fiets Reis 00"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Bike Large.jpeg",
+                "caption": "NL Fiets Reis 01"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_DuneSea.jpeg",
+                "caption": "NL Dunes 00"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_DuneSeaII.jpeg",
+                "caption": "NL Dunes 01"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_DuneSeaIII Large.jpeg",
+                "caption": "NL Dunes 02"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Shroom Large.jpeg",
+                "caption": "NL Veluwezoom 00"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_KitchenLight.jpeg",
+                "caption": "NL Dom Huis 00"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_spiderplant Large.jpeg",
-                "caption": "spiderplant"
+                "caption": "NL Dom Huis 01"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_FatherSon.jpeg",
+                "caption": "NL Dom Huis 02"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_KingoftheCastle.jpeg",
+                "caption": "NL Dom Huis 03"
               }
             ]
           },
@@ -1887,23 +1863,23 @@ const collectionsData = [
             "photos": [
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PL/PL_DayDream.jpeg",
-                "caption": "DayDream"
+                "caption": "PL DayDream"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PL/PL_King.jpeg",
-                "caption": "King"
+                "caption": "PL King"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PL/PL_PalaceKultur.jpg",
-                "caption": "PalaceKultur"
+                "caption": "PL Palace of Kultur"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PL/PL_Trinkets Large.jpeg",
-                "caption": "Trinkets"
+                "caption": "PL Complicated Trinkets"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PL/PL_Zapiekanki.jpeg",
-                "caption": "Zapiekanki"
+                "caption": "PL Zapiekanki"
               }
             ]
           },
@@ -2146,20 +2122,20 @@ const collectionsData = [
             "path": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/SI",
             "photos": [
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/SI/SI_AlmostinItaly.jpeg",
-                "caption": "AlmostinItaly"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/SI/SI_BledDog Large.jpeg",
-                "caption": "BledDog"
-              },
-              {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/SI/SI_BledView.jpeg",
-                "caption": "BledView"
+                "caption": "SI Bled"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/SI/SI_Childhood.jpeg",
-                "caption": "Childhood"
+                "caption": "SI Childhood"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/SI/SI_BledDog Large.jpeg",
+                "caption": "SI Husky"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/SI/SI_AlmostinItaly.jpeg",
+                "caption": "SI Novi Gorica / Gorizia"
               }
             ]
           },
@@ -2174,28 +2150,28 @@ const collectionsData = [
             "path": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle",
             "photos": [
               {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle/NL_Monstera.jpeg",
-                "caption": "Monstera"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle/NL_MonsteraIII.jpeg",
-                "caption": "MonsteraIII"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle/NL_MonsteraIV.jpeg",
-                "caption": "MonsteraIV"
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle/NL_Monstera_2.jpeg",
+                "caption": "Monstera 00"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle/NL_MonsteraV.jpeg",
-                "caption": "MonsteraV"
+                "caption": "Monstera 01"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle/NL_MonsteraIV.jpeg",
+                "caption": "Monstera 02"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle/NL_MonsteraIII.jpeg",
+                "caption": "Monstera 03"
+              },
+              {
+                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle/NL_Monstera.jpeg",
+                "caption": "Monstera 04"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle/NL_MonsteraVI.jpeg",
-                "caption": "MonsteraVI"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle/NL_Monstera_2.jpeg",
-                "caption": "Monstera 2"
+                "caption": "Monstera 05"
               }
             ]
           }
@@ -2222,284 +2198,284 @@ const collectionsData = [
             "path": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA",
             "photos": [
               {
+                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-01.JPG",
+                "caption": "ZA_Ubuntu"
+              },
+              {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-108.jpg",
-                "caption": "ZA_Big_V 01"
+                "caption": "Zuid Africa 108"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-111.jpg",
-                "caption": "ZA_Big_V 02"
+                "caption": "Zuid Africa 111"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-122.jpg",
-                "caption": "ZA_Big_V 03"
+                "caption": "Zuid Africa 122"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-102.jpg",
-                "caption": "ZA_Big_V 04"
+                "caption": "Zuid Africa 102"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-131.jpg",
-                "caption": "ZA_Big_V 06"
+                "caption": "Zuid Africa 131"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-127.jpg",
-                "caption": "ZA_Big_V 07"
+                "caption": "Zuid Africa 127"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-163.jpg",
-                "caption": "ZA_Big_V 08"
+                "caption": "Zuid Africa 163"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-81.jpg",
-                "caption": "ZA_Ekhohlo"
+                "caption": "Zuid Africa 81"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-82.jpg",
-                "caption": "ZA_Ekunene"
+                "caption": "Zuid Africa 82"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-142.jpg",
-                "caption": "ZA_Big_V 09"
+                "caption": "Zuid Africa 142"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-137.jpg",
-                "caption": "ZA_Big_V 010"
+                "caption": "Zuid Africa 137"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-225.jpg",
-                "caption": "ZA_Umhlaba"
+                "caption": "Zuid Africa 225"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-178.jpg",
-                "caption": "ZA_Big_V 011"
+                "caption": "Zuid Africa 178"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-180.jpg",
-                "caption": "ZA_Big_V 012"
+                "caption": "Zuid Africa 180"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-171.jpg",
-                "caption": "ZA_Big_V 013"
+                "caption": "Zuid Africa 171"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-172.jpg",
-                "caption": "ZA_Big_V 014"
+                "caption": "Zuid Africa 172"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-166.jpg",
-                "caption": "ZA_Big_V 015"
+                "caption": "Zuid Africa 166"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-169.jpg",
-                "caption": "ZA_Big_V_Lunch 016"
+                "caption": "Zuid Africa 169"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-64.jpg",
-                "caption": "ZA_Big_V 017"
+                "caption": "Zuid Africa 64"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-199.jpg",
-                "caption": "ZA_Big_V 018"
+                "caption": "Zuid Africa 199"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-203.jpg",
-                "caption": "ZA_Big_V 019"
+                "caption": "Zuid Africa 203"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-200.jpg",
-                "caption": "ZA_Big_V 020"
+                "caption": "Zuid Africa 200"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-298.jpg",
-                "caption": "ZA_Isibhakabhaka"
+                "caption": "Zuid Africa 298"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-274.jpg",
-                "caption": "ZA_Usapho"
+                "caption": "Zuid Africa 274"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-90.jpg",
-                "caption": "ZA_Family 01"
+                "caption": "Zuid Africa 90"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-95.jpg",
-                "caption": "ZA_Family 02"
+                "caption": "Zuid Africa 95"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-88.jpg",
-                "caption": "ZA_Family_03"
+                "caption": "Zuid Africa 88"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-139.jpg",
-                "caption": "ZA_Family 04"
+                "caption": "Zuid Africa 139"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-220.jpg",
-                "caption": "ZA_Family 05"
+                "caption": "Zuid Africa 220"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-186.jpg",
-                "caption": "ZA_Family 06"
+                "caption": "Zuid Africa 186"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-223.jpg",
-                "caption": "ZA_Family 07"
+                "caption": "Zuid Africa 223"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-212.jpg",
-                "caption": "ZA_Family_08"
+                "caption": "Zuid Africa 212"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-23.jpg",
-                "caption": "ZA_Family 09"
+                "caption": "Zuid Africa 23"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-246.jpg",
-                "caption": "ZA_Ukumangala"
+                "caption": "Zuid Africa 246"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-245.jpg",
-                "caption": "ZA_Ku tshaka"
+                "caption": "Zuid Africa 245"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-254.jpg",
-                "caption": "ZA_Impucuko"
+                "caption": "Zuid Africa 254"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-182.jpg",
-                "caption": "ZA_In_Hiding 01"
+                "caption": "Zuid Africa 182"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-133.jpg",
-                "caption": "ZA_In_Hiding 02"
+                "caption": "Zuid Africa 133"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-130.jpg",
-                "caption": "ZA_In_Hiding 03"
+                "caption": "Zuid Africa 130"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-132.jpg",
-                "caption": "ZA_In_Hiding 04"
+                "caption": "Zuid Africa 132"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-181.jpg",
-                "caption": "ZA_In_Hiding 05"
+                "caption": "Zuid Africa 181"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-144.jpg",
-                "caption": "ZA_In_Hiding 06"
+                "caption": "Zuid Africa 144"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-214.jpg",
-                "caption": "ZA_In_Hiding 07"
+                "caption": "Zuid Africa 214"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-236.jpg",
-                "caption": "ZA_In_Hiding 08"
+                "caption": "Zuid Africa 236"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-24.jpg",
-                "caption": "ZA_In_Hiding 09"
+                "caption": "Zuid Africa 24"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-263.jpg",
-                "caption": "ZA_Awe 06"
+                "caption": "ZA_Isifuba"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-285.jpg",
-                "caption": "ZA_Awe 07"
+                "caption": "ZA_Duvula ra wel"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-219.jpg",
-                "caption": "ZA_Water_Buck"
+                "caption": "Zuid Africa 219"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-293.jpg",
-                "caption": "ZA_Kudu"
+                "caption": "Zuid Africa 293"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-211.jpg",
-                "caption": "ZA_Wildebeast_Oxpecker"
+                "caption": "Zuid Africa 211"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-184.jpg",
-                "caption": "ZA_Vervet_01"
+                "caption": "Zuid Africa 184"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-183.jpg",
-                "caption": "ZA_Vervet_02"
+                "caption": "Zuid Africa 183"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-77.jpg",
-                "caption": "ZA_Southern_Giraffe"
+                "caption": "Zuid Africa 77"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-189.jpg",
-                "caption": "ZA_Lilac-breasted_Roller"
+                "caption": "Zuid Africa 189"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-164.jpg",
-                "caption": "ZA_Cape_Glossy_Starling 01"
+                "caption": "Zuid Africa 164"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-208.jpg",
-                "caption": "ZA_Cape_Glossy_Starling 02"
+                "caption": "Zuid Africa 208"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-134.jpg",
-                "caption": "ZA_Brown_Snake_Eagle"
+                "caption": "Zuid Africa 134"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-42.jpg",
-                "caption": "ZA_White-backed_Vulture"
+                "caption": "Zuid Africa 42"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-226.jpg",
-                "caption": "ZA_Rock_Hyrax"
+                "caption": "Zuid Africa 226"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-159.jpg",
-                "caption": "ZA_Nile_Crocodile_Adult"
+                "caption": "Zuid Africa 159"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-229.jpg",
-                "caption": "ZA_Nile_Crocodile_Sub_Adult"
+                "caption": "Zuid Africa 229"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-240.jpg",
-                "caption": "ZA_Nile_Crocodile_Juvenile"
+                "caption": "Zuid Africa 240"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-63.jpg",
-                "caption": "ZA_Golden_Silk_Orb-Weaver 01"
+                "caption": "Zuid Africa 63"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-62.jpg",
-                "caption": "ZA_Golden_Silk_Orb-Weaver 02"
+                "caption": "Zuid Africa 62"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-213.jpg",
-                "caption": "ZA_Common_Hippopotamus"
+                "caption": "Zuid Africa 213"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-17.jpg",
-                "caption": "ZA_Plains_Zebra"
+                "caption": "Zuid Africa 17"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-04.jpg",
-                "caption": "ZA_Leopard"
+                "caption": "Zuid Africa 04"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-270.jpg",
-                "caption": "ZA_Ihlathi"
+                "caption": "Zuid Africa 270"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-318.jpg",
-                "caption": "ZA_Ukushona kwelanga"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-01.JPG",
-                "caption": "Zuid Africa 01"
+                "caption": "Zuid Africa 318"
               }
             ]
           },
@@ -2515,31 +2491,27 @@ const collectionsData = [
             "photos": [
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZW/SolGutt - Zuid Africa-07.jpg",
-                "caption": "Zuid Africa 07"
-              },
-              {
-                "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZW/SolGutt - Zuid Africa-09.jpg",
-                "caption": "Zuid Africa 09"
+                "caption": "ZW 00"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZW/SolGutt - Zuid Africa-11.jpg",
-                "caption": "Zuid Africa 11"
+                "caption": "ZW 01"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZW/SolGutt - Zuid Africa-14.jpg",
-                "caption": "Zuid Africa 14"
+                "caption": "ZW 02"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZW/SolGutt - Zuid Africa-16.jpg",
-                "caption": "Zuid Africa 16"
+                "caption": "ZW 03"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZW/SolGutt - Zuid Africa-25.jpg",
-                "caption": "Zuid Africa 25"
+                "caption": "ZW 04"
               },
               {
                 "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZW/SolGutt - Zuid Africa-26.jpg",
-                "caption": "Zuid Africa 26"
+                "caption": "ZW 05"
               }
             ]
           }
@@ -2883,39 +2855,39 @@ const siteData = {
     "photos": [
       {
         "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/IMG_0021.jpg",
-        "caption": "0021"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-89.jpg",
-        "caption": "Cidadelhe Natureza 89"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-90.jpg",
-        "caption": "Cidadelhe Natureza 90"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-91.jpg",
-        "caption": "Cidadelhe Natureza 91"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-92.jpg",
-        "caption": "Cidadelhe Natureza 92"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Projetos na Quinta-01.jpg",
-        "caption": "Projetos na Quinta 01"
+        "caption": "Cebolas 00"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Projetos na Quinta-02.jpg",
-        "caption": "Projetos na Quinta 02"
+        "caption": "Vinhos 01"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Projetos na Quinta-03.jpg",
-        "caption": "Projetos na Quinta 03"
+        "caption": "Vinhos 02"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Projetos na Quinta-08.jpg",
-        "caption": "Projetos na Quinta 08"
+        "caption": "Casas 03"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-89.jpg",
+        "caption": "Cavalete 04"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-90.jpg",
+        "caption": "Cavalete 05"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-91.jpg",
+        "caption": "Cavalete 06"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-92.jpg",
+        "caption": "Cavalete 07"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Projetos na Quinta-01.jpg",
+        "caption": "Vinhos 08"
       }
     ]
   },
@@ -2925,63 +2897,63 @@ const siteData = {
     "photos": [
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-57.jpg",
-        "caption": "Os Cidadãos 57"
+        "caption": "Os Cidadãos 00"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-51.jpg",
-        "caption": "Os Cidadãos 51"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-49.jpg",
-        "caption": "Os Cidadãos 49"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-50.jpg",
-        "caption": "Os Cidadãos 50"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-05.jpg",
-        "caption": "Os Cidadãos 05"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-01.jpg",
         "caption": "Os Cidadãos 01"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-02.jpg",
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-49.jpg",
         "caption": "Os Cidadãos 02"
       },
       {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-50.jpg",
+        "caption": "Os Cidadãos 03"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-05.jpg",
+        "caption": "Os Cidadãos 04"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-01.jpg",
+        "caption": "Os Cidadãos 04"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-02.jpg",
+        "caption": "Os Cidadãos 05"
+      },
+      {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-43.jpg",
-        "caption": "Os Cidadãos 43"
+        "caption": "Os Cidadãos 06"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-44.jpg",
-        "caption": "Os Cidadãos 44"
+        "caption": "Os Cidadãos 07"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-47.jpg",
-        "caption": "Os Cidadãos 47"
+        "caption": "Os Cidadãos 08"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-46.jpg",
-        "caption": "Os Cidadãos 46"
+        "caption": "Os Cidadãos 09"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-15.jpg",
-        "caption": "Os Cidadãos 15"
+        "caption": "Os Cidadãos 010"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-40.jpg",
-        "caption": "Os Cidadãos 40"
+        "caption": "Os Cidadãos 011"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-12.jpg",
-        "caption": "Os Cidadãos 12"
+        "caption": "Os Cidadãos 012"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-13.jpg",
-        "caption": "Os Cidadãos 13"
+        "caption": "Os Cidadãos 013"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-14.jpg",
@@ -2989,55 +2961,55 @@ const siteData = {
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-16.jpg",
-        "caption": "Os Cidadãos 16"
+        "caption": "Os Cidadãos 015"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-22.jpg",
-        "caption": "Os Cidadãos 22"
+        "caption": "Os Cidadãos 016"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-24.jpg",
-        "caption": "Os Cidadãos 24"
+        "caption": "Os Cidadãos 017"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-31.jpg",
-        "caption": "Os Cidadãos 31"
+        "caption": "Os Cidadãos 018"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-26.jpg",
-        "caption": "Os Cidadãos 26"
+        "caption": "Os Cidadãos 019"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-25.jpg",
-        "caption": "Os Cidadãos 25"
+        "caption": "Os Cidadãos 020"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-11.jpg",
-        "caption": "Os Cidadãos 11"
+        "caption": "Os Cidadãos 021"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-07.jpg",
-        "caption": "Os Cidadãos 07"
+        "caption": "Os Cidadãos 022"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-08.jpg",
-        "caption": "Os Cidadãos 08"
+        "caption": "Os Cidadãos 023"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-10.jpg",
-        "caption": "Os Cidadãos 10"
+        "caption": "Os Cidadãos 024"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-48.jpg",
-        "caption": "Os Cidadãos 48"
+        "caption": "Os Cidadãos 025"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-55.jpg",
-        "caption": "Os Cidadãos 55"
+        "caption": "Os Cidadãos 026"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/os_cidadaos/Photos/SolGutt - Os Cidadãos-36.jpg",
-        "caption": "Os Cidadãos 36"
+        "caption": "Os Cidadãos 027"
       }
     ]
   },
@@ -3081,147 +3053,147 @@ const siteData = {
     "photos": [
       {
         "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-11.jpg",
-        "caption": "Projetos na Quinta - Bio Architectura 00"
+        "caption": "Projetos na Quinta Forno 11"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-35.jpg",
-        "caption": "Projetos na Quinta - Bio Architectura 01"
+        "caption": "Projetos na Quinta Forno 35"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-36.jpg",
-        "caption": "Projetos na Quinta - Bio Architectura 02"
+        "caption": "Projetos na Quinta Forno 36"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-04.jpg",
-        "caption": "Projetos na Quinta - Bio Architectura 03"
+        "caption": "Projetos na Quinta Forno 04"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-06.jpg",
-        "caption": "Projetos na Quinta - Bio Architectura 04"
+        "caption": "Projetos na Quinta Forno 06"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-07.jpg",
-        "caption": "Projetos na Quinta - Bio Architectura 05"
+        "caption": "Projetos na Quinta Forno 07"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-05.jpg",
-        "caption": "Projetos na Quinta - Bio Architectura 06"
+        "caption": "Projetos na Quinta Forno 05"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-01.jpg",
-        "caption": "Projetos na Quinta - Bio Architectura 07"
+        "caption": "Projetos na Quinta Forno 01"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-02.jpg",
-        "caption": "Projetos na Quinta - Bio Architectura 08"
+        "caption": "Projetos na Quinta Forno 02"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-16.jpg",
-        "caption": "Projetos na Quinta - Bio Architectura 09"
+        "caption": "Projetos na Quinta Forno 16"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-34.jpg",
-        "caption": "Projetos na Quinta - Bio Architectura 010"
+        "caption": "Projetos na Quinta Forno 34"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-18.jpg",
-        "caption": "Projetos na Quinta - Bio Architectura 011"
+        "caption": "Projetos na Quinta Forno 18"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-20.jpg",
-        "caption": "Projetos na Quinta - Bio Architectura 012"
+        "caption": "Projetos na Quinta Forno 20"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta - Forno-23.jpg",
-        "caption": "Projetos na Quinta - Bio Architectura 013"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-07.jpg",
-        "caption": "Projetos na Quinta - Biochar Experimentação 00"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos Na Quinta-31.jpg",
-        "caption": "Projetos na Quinta - Biochar Experimentação 01"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos Na Quinta-30.jpg",
-        "caption": "Projetos na Quinta - Biochar Experimentação 02"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos Na Quinta-33.jpg",
-        "caption": "Projetos na Quinta - Biochar Experimentação 04"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos Na Quinta-34.jpg",
-        "caption": "Projetos na Quinta - Biochar Experimentação 05"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-09.jpg",
-        "caption": "Projetos na Quinta - Biochar Experimentação 07"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-10.jpg",
-        "caption": "Projetos na Quinta - Biochar Experimentação 08"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-11.jpg",
-        "caption": "Projetos na Quinta - Biochar Experimentação 09"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-13.jpg",
-        "caption": "Projetos na Quinta - Biochar Experimentação 012"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-16.jpg",
-        "caption": "Projetos na Quinta - Biochar Experimentação 013"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-17.jpg",
-        "caption": "Projetos na Quinta - Biochar Experimentação 014"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-18.jpg",
-        "caption": "Projetos na Quinta - Biochar Experimentação 015"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-19.jpg",
-        "caption": "Projetos na Quinta - Biochar Experimentação 016"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-20.jpg",
-        "caption": "Projetos na Quinta - Biochar Experimentação 017"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-05.jpg",
-        "caption": "Projetos na Quinta - Biochar Experimentação 018"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-06.jpg",
-        "caption": "Projetos na Quinta - Biochar Experimentação 018"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-21.jpg",
-        "caption": "Projetos na Quinta - Biochar Experimentação 019"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/PT_ComradesNew.jpeg",
-        "caption": "ComradesNew"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/PT_HarvestI Large.jpeg",
-        "caption": "HarvestI"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/PT_HarvestII Large.jpeg",
-        "caption": "HarvestII"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/PT_HarvestIII.jpeg",
-        "caption": "HarvestIII"
+        "caption": "Projetos na Quinta Forno 23"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/IMGM3448.JPG",
-        "caption": "IMGM3448"
+        "caption": "Projetos na Quinta - Bio Architectura 014"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-07.jpg",
+        "caption": "Projetos na Quinta 07"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos Na Quinta-31.jpg",
+        "caption": "Projetos Na Quinta 31"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos Na Quinta-30.jpg",
+        "caption": "Projetos Na Quinta 30"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos Na Quinta-33.jpg",
+        "caption": "Projetos Na Quinta 33"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos Na Quinta-34.jpg",
+        "caption": "Projetos Na Quinta 34"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-09.jpg",
+        "caption": "Projetos na Quinta 09"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-10.jpg",
+        "caption": "Projetos na Quinta 10"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-11.jpg",
+        "caption": "Projetos na Quinta 11"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-13.jpg",
+        "caption": "Projetos na Quinta 13"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-16.jpg",
+        "caption": "Projetos na Quinta 16"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-17.jpg",
+        "caption": "Projetos na Quinta 17"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-18.jpg",
+        "caption": "Projetos na Quinta 18"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-19.jpg",
+        "caption": "Projetos na Quinta 19"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-20.jpg",
+        "caption": "Projetos na Quinta 20"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-05.jpg",
+        "caption": "Projetos na Quinta 05"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-06.jpg",
+        "caption": "Projetos na Quinta 06"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/SolGutt - Projetos na Quinta-21.jpg",
+        "caption": "Projetos na Quinta 21"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/PT_HarvestI Large.jpeg",
+        "caption": "Projetos na Quinta - Colheita da Azeitona 00"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/PT_HarvestII Large.jpeg",
+        "caption": "Projetos na Quinta - Colheita da Azeitona 01"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/PT_HarvestIII.jpeg",
+        "caption": "Projetos na Quinta - Colheita da Azeitona 02"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_na_quinta/Photos/PT_ComradesNew.jpeg",
+        "caption": "Projetos na Quinta - Colheita da Azeitona 03"
       }
     ]
   },
@@ -3230,7 +3202,11 @@ const siteData = {
     "description": "Some serious characters.",
     "photos": [
       {
-        "src": "Images/Collections/Cidadelhe/sub/amigos_do_portugal/Photos/SolGutt - Amigos do Portugal-01.jpg",
+        "src": "Images/Collections/Cidadelhe/sub/amigos_do_portugal/Photos/SolGutt - Amigos do Portugal-07.jpg",
+        "caption": "Amigos do Portugal 00"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/amigos_do_portugal/Photos/SolGutt - Amigos do Portugal-06.jpg",
         "caption": "Amigos do Portugal 01"
       },
       {
@@ -3250,32 +3226,16 @@ const siteData = {
         "caption": "Amigos do Portugal 05"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/amigos_do_portugal/Photos/SolGutt - Amigos do Portugal-06.jpg",
+        "src": "Images/Collections/Cidadelhe/sub/amigos_do_portugal/Photos/SolGutt - Amigos do Portugal-01.jpg",
         "caption": "Amigos do Portugal 06"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/amigos_do_portugal/Photos/SolGutt - Amigos do Portugal-07.jpg",
+        "src": "Images/Collections/Cidadelhe/sub/amigos_do_portugal/Photos/SolGutt - Amigos do Portugal-08.jpg",
         "caption": "Amigos do Portugal 07"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/amigos_do_portugal/Photos/SolGutt - Amigos do Portugal-08.jpg",
-        "caption": "Amigos do Portugal 08"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/amigos_do_portugal/Photos/SolGutt - Amigos do Portugal-09.jpg",
-        "caption": "Amigos do Portugal 09"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/amigos_do_portugal/Photos/SolGutt - Amigos do Portugal-10.jpg",
-        "caption": "Amigos do Portugal 10"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/amigos_do_portugal/Photos/SolGutt - Amigos do Portugal-11.jpg",
-        "caption": "Amigos do Portugal 11"
-      },
-      {
         "src": "Images/Collections/Cidadelhe/sub/amigos_do_portugal/Photos/SolGutt - Amigos do Portugal-12.jpg",
-        "caption": "Amigos do Portugal 12"
+        "caption": "Amigos do Portugal 08"
       }
     ]
   },
@@ -3614,59 +3574,59 @@ const siteData = {
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_1.jpeg",
-        "caption": "1"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_10.jpeg",
-        "caption": "10"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_2.jpeg",
-        "caption": "2"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_3.jpeg",
-        "caption": "3"
+        "caption": "AL Lin 00"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_4.jpeg",
-        "caption": "4"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_5.jpeg",
-        "caption": "5"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_6.jpeg",
-        "caption": "6"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_7 Large.jpeg",
-        "caption": "7"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_8.jpeg",
-        "caption": "8"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_9.jpeg",
-        "caption": "9"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_Coexist.jpeg",
-        "caption": "Coexist"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_Fisherwoman.jpeg",
-        "caption": "Fisherwoman"
+        "caption": "AL Lin 01"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_LinIII.jpeg",
-        "caption": "LinIII"
+        "caption": "AL Lin 02"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_5.jpeg",
+        "caption": "AL Lin 03"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_Fisherwoman.jpeg",
+        "caption": "AL Lin 04"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_3.jpeg",
+        "caption": "AL Lin 05"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_6.jpeg",
+        "caption": "AL Lin 06"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_9.jpeg",
+        "caption": "AL Berat 00"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_Coexist.jpeg",
+        "caption": "AL Berat 01"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_7 Large.jpeg",
+        "caption": "AL Berat 02"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_10.jpeg",
+        "caption": "AL Tirana 00"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_8.jpeg",
+        "caption": "AL Tirana 01"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_Security.jpeg",
-        "caption": "Security"
+        "caption": "AL Tirana 02"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_2.jpeg",
+        "caption": "AL Durres 00"
       }
     ]
   },
@@ -3676,15 +3636,15 @@ const siteData = {
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AT/AT_AlleyWay.jpeg",
-        "caption": "AlleyWay"
+        "caption": "AT 00"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AT/AT_Edifice.jpeg",
-        "caption": "Edifice"
+        "caption": "AT 01"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AT/AT_MountainView.jpeg",
-        "caption": "MountainView"
+        "caption": "AT 02"
       }
     ]
   },
@@ -3694,59 +3654,59 @@ const siteData = {
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_1OldWoman.jpeg",
-        "caption": "1OldWoman"
+        "caption": "BA 00"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_1UphillBothways.jpeg",
-        "caption": "1UphillBothways"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_1WartornII.jpeg",
-        "caption": "1WartornII"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_1WhiteCastle.jpeg",
-        "caption": "1WhiteCastle"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_1WhiteCastleII.jpeg",
-        "caption": "1WhiteCastleII"
+        "caption": "BA 01"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_1WoodPile.jpeg",
-        "caption": "1WoodPile"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_1wartorn.jpeg",
-        "caption": "1wartorn"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_Heatwave.jpeg",
-        "caption": "Heatwave"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_PSideWalk.jpeg",
-        "caption": "PSideWalk"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_Perron.jpeg",
-        "caption": "Perron"
+        "caption": "BA 02"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_PigeonsII.jpeg",
-        "caption": "PigeonsII"
+        "caption": "BA 03"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_RoadtoCroatia.jpeg",
-        "caption": "RoadtoCroatia"
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_1WhiteCastleII.jpeg",
+        "caption": "BA 04"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_ZCableTV.jpeg",
-        "caption": "ZCableTV"
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_1WhiteCastle.jpeg",
+        "caption": "BA 05"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_1WartornII.jpeg",
+        "caption": "BA 06"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_1wartorn.jpeg",
+        "caption": "BA 07"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_ZFranzFerd.jpeg",
-        "caption": "ZFranzFerd"
+        "caption": "BA 08"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_PSideWalk.jpeg",
+        "caption": "BA 09"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_Perron.jpeg",
+        "caption": "BA 010"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_RoadtoCroatia.jpeg",
+        "caption": "BA 011"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_Heatwave.jpeg",
+        "caption": "BA 012"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BA/BA_ZCableTV.jpeg",
+        "caption": "BA 013"
       }
     ]
   },
@@ -3756,11 +3716,11 @@ const siteData = {
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BE/BE_Bike.jpeg",
-        "caption": "Bike"
+        "caption": "BE 00"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/BE/BE_Spa.jpeg",
-        "caption": "Spa"
+        "caption": "BE 01"
       }
     ]
   },
@@ -3770,7 +3730,7 @@ const siteData = {
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/CH/CH_Checkmate_improved.jpeg",
-        "caption": "Checkmate improved"
+        "caption": "CH PP on the PP"
       }
     ]
   },
@@ -3779,20 +3739,20 @@ const siteData = {
     "description": "",
     "photos": [
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/DE/DE_BikePee.JPG",
-        "caption": "BikePee"
-      },
-      {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/DE/DE_FatherSon.jpeg",
-        "caption": "FatherSon"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/DE/DE_Trier.jpeg",
-        "caption": "Trier"
+        "caption": "DE 00"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/DE/DE_tvtower.jpeg",
-        "caption": "tvtower"
+        "caption": "DE 01"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/DE/DE_Trier.jpeg",
+        "caption": "DE 02"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/DE/DE_BikePee.JPG",
+        "caption": "DE 03"
       }
     ]
   },
@@ -3801,24 +3761,24 @@ const siteData = {
     "description": "",
     "photos": [
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/EE/EE_Forest.jpg",
-        "caption": "Forest"
-      },
-      {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/EE/EE_Oldtown.jpeg",
-        "caption": "Oldtown"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/EE/EE_RainMuseum.jpeg",
-        "caption": "RainMuseum"
+        "caption": "EE 00"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/EE/EE_TallinnStation.jpeg",
-        "caption": "TallinnStation"
+        "caption": "EE 01"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/EE/EE_TartuRiver.jpeg",
-        "caption": "TartuRiver"
+        "caption": "EE 02"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/EE/EE_RainMuseum.jpeg",
+        "caption": "EE 03"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/EE/EE_Forest.jpg",
+        "caption": "EE 04"
       }
     ]
   },
@@ -3827,52 +3787,52 @@ const siteData = {
     "description": "",
     "photos": [
       {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_Catalonia.jpeg",
+        "caption": "ES 00"
+      },
+      {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_AWeatherVein.jpeg",
-        "caption": "AWeatherVein"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_AbandonedIndustry.jpeg",
-        "caption": "AbandonedIndustry"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_AmigadeMujerra.jpeg",
-        "caption": "AmigadeMujerra"
+        "caption": "ES 01"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_BusyBees Edited.jpg",
-        "caption": "BusyBees Edited"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_Catalonia.jpeg",
-        "caption": "Catalonia"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_Montserrat.jpeg",
-        "caption": "Montserrat"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_MontserratII.jpeg",
-        "caption": "MontserratII"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_MontserratIII.jpeg",
-        "caption": "MontserratIII"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_OldMenSea.jpeg",
-        "caption": "OldMenSea"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_OldmanSurfer.jpeg",
-        "caption": "OldmanSurfer"
+        "caption": "ES 02"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_ParkSol.jpeg",
-        "caption": "ParkSol"
+        "caption": "ES 03"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_Montserrat.jpeg",
+        "caption": "ES 04"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_MontserratII.jpeg",
+        "caption": "ES 05"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_MontserratIII.jpeg",
+        "caption": "ES 06"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_AmigadeMujerra.jpeg",
+        "caption": "ES 07"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_OldMenSea.jpeg",
+        "caption": "ES 08"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_OldmanSurfer.jpeg",
+        "caption": "ES 09"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_AbandonedIndustry.jpeg",
+        "caption": "ES 010"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ES/ES_SegoviaSelfie.jpeg",
-        "caption": "SegoviaSelfie"
+        "caption": "ES 011"
       }
     ]
   },
@@ -3882,23 +3842,23 @@ const siteData = {
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/FI/FI_LakePeople.jpeg",
-        "caption": "LakePeople"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/FI/FI_LeninStalin.jpeg",
-        "caption": "LeninStalin"
+        "caption": "FI Tampere 00"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/FI/FI_PerfectLake.jpeg",
-        "caption": "PerfectLake"
+        "caption": "FI Tampere 01"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/FI/FI_Tampere.jpeg",
-        "caption": "Tampere"
+        "caption": "FI Tampere 02"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/FI/FI_LeninStalin.jpeg",
+        "caption": "FI Tampere 03"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/FI/FI_ZArt.jpeg",
-        "caption": "ZArt"
+        "caption": "FI Helsinki 04"
       }
     ]
   },
@@ -3907,24 +3867,24 @@ const siteData = {
     "description": "",
     "photos": [
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/FR/FR_BayonneBook.jpeg",
-        "caption": "BayonneBook"
-      },
-      {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/FR/FR_BayonneStairs.jpeg",
-        "caption": "BayonneStairs"
+        "caption": "FR 00"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/FR/FR_Church.jpeg",
-        "caption": "Church"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/FR/FR_WaveCrash.jpeg",
-        "caption": "WaveCrash"
+        "caption": "FR 01"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/FR/FR_Windingstairs.jpeg",
-        "caption": "Windingstairs"
+        "caption": "FR 02"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/FR/FR_BayonneBook.jpeg",
+        "caption": "FR 03"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/FR/FR_WaveCrash.jpeg",
+        "caption": "FR 04"
       }
     ]
   },
@@ -3933,20 +3893,20 @@ const siteData = {
     "description": "",
     "photos": [
       {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/HR/HR_Security.jpeg",
+        "caption": "HR 00"
+      },
+      {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/HR/HR_BreadLine.jpeg",
-        "caption": "BreadLine"
+        "caption": "HR 01 Breadline"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/HR/HR_Mail.jpeg",
-        "caption": "Mail"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/HR/HR_Security.jpeg",
-        "caption": "Security"
+        "caption": "HR 02"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/HR/HR_StreetCar.jpeg",
-        "caption": "StreetCar"
+        "caption": "HR 03"
       }
     ]
   },
@@ -3955,84 +3915,76 @@ const siteData = {
     "description": "",
     "photos": [
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_ABuongiorno.jpeg",
-        "caption": "ABuongiorno"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_BariLocals.jpeg",
-        "caption": "BariLocals"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_BariResearch.jpeg",
-        "caption": "BariResearch"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_BelMare.jpeg",
-        "caption": "BelMare"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_CastleWall.jpeg",
-        "caption": "CastleWall"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_ChaiSewer.jpeg",
-        "caption": "ChaiSewer"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_Excitement.jpeg",
-        "caption": "Excitement"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_GenoaI.jpeg",
-        "caption": "GenoaI"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_GenoaII.jpeg",
-        "caption": "GenoaII"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_GenoaIII.jpeg",
-        "caption": "GenoaIII"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_MilanoTrain.jpeg",
-        "caption": "MilanoTrain"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_MuseumGoers.jpeg",
-        "caption": "MuseumGoers"
-      },
-      {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_Pugliano.jpeg",
-        "caption": "Pugliano"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_SunsetLight.jpeg",
-        "caption": "SunsetLight"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_TheMachinist.jpeg",
-        "caption": "TheMachinist"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_Torino.jpeg",
-        "caption": "Torino"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_Tower.jpeg",
-        "caption": "Tower"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_WindowView.jpeg",
-        "caption": "WindowView"
+        "caption": "IT Polignano"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_WiseMan.jpeg",
-        "caption": "WiseMan"
+        "caption": "IT Bari 00"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_BariLocals.jpeg",
+        "caption": "IT Bari 01"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_BariResearch.jpeg",
+        "caption": "IT Bari 02"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_lasagna.jpeg",
-        "caption": "lasagna"
+        "caption": "IT Bari 03"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_ABuongiorno.jpeg",
+        "caption": "IT Venezia 00"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_Excitement.jpeg",
+        "caption": "IT Venezia 01"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_BelMare.jpeg",
+        "caption": "IT Genoa 00"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_GenoaI.jpeg",
+        "caption": "IT Genoa 01"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_GenoaII.jpeg",
+        "caption": "IT Genoa 02"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_GenoaIII.jpeg",
+        "caption": "IT Genoa 03"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_Tower.jpeg",
+        "caption": "IT Milano 00"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_MilanoTrain.jpeg",
+        "caption": "IT Milano 01"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_TheMachinist.jpeg",
+        "caption": "IT Milano 02"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_MuseumGoers.jpeg",
+        "caption": "IT Milano 03"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_CastleWall.jpeg",
+        "caption": "IT Luca 00"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_WindowView.jpeg",
+        "caption": "IT Luca 01"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_Torino.jpeg",
+        "caption": "IT Torino"
       }
     ]
   },
@@ -4046,32 +3998,32 @@ const siteData = {
     "description": "",
     "photos": [
       {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_LakePeopleII.jpeg",
+        "caption": "LV 00"
+      },
+      {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_ABusinessCall.jpeg",
-        "caption": "ABusinessCall"
+        "caption": "LV 01"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_AtSea.jpeg",
-        "caption": "AtSea"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_Flowers.jpeg",
-        "caption": "Flowers"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_LakePeopleII.jpeg",
-        "caption": "LakePeopleII"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_MarketNotes.jpeg",
-        "caption": "MarketNotes"
+        "caption": "LV 02"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_RadioSat.jpeg",
-        "caption": "RadioSat"
+        "caption": "LV 03"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_Flowers.jpeg",
+        "caption": "LV 04"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_MarketNotes.jpeg",
+        "caption": "LV 05"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LV/LV_ShoesBeach.jpeg",
-        "caption": "ShoesBeach"
+        "caption": "LV 06"
       }
     ]
   },
@@ -4081,11 +4033,11 @@ const siteData = {
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LX/LX_Yash_Liz.jpeg",
-        "caption": "Yash Liz"
+        "caption": "LX 00"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/LX/LX_Yash_Liz_2.jpeg",
-        "caption": "Yash Liz 2"
+        "caption": "LX 01"
       }
     ]
   },
@@ -4094,36 +4046,36 @@ const siteData = {
     "description": "",
     "photos": [
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ME/ME_DogPose.jpeg",
-        "caption": "DogPose"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ME/ME_FlagDay.jpeg",
-        "caption": "FlagDay"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ME/ME_Gatekeeper.jpeg",
-        "caption": "Gatekeeper"
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ME/ME_KotorII.jpg",
+        "caption": "ME Kotor 00"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ME/ME_KotorI.jpeg",
-        "caption": "KotorI"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ME/ME_KotorII.jpg",
-        "caption": "KotorII"
+        "caption": "ME Kotor 01"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ME/ME_Laundry.jpeg",
-        "caption": "Laundry"
+        "caption": "ME Kotor 02"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ME/ME_Gatekeeper.jpeg",
+        "caption": "ME Kotor 03"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ME/ME_FlagDay.jpeg",
+        "caption": "ME Cetinje 00"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ME/ME_DogPose.jpeg",
+        "caption": "ME Cetinje 01"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ME/ME_MonkMan.jpeg",
-        "caption": "MonkMan"
+        "caption": "ME Cetinje 02"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/ME/ME_Urbanplanner.jpeg",
-        "caption": "Urbanplanner"
+        "caption": "ME Cetinje 03"
       }
     ]
   },
@@ -4133,87 +4085,83 @@ const siteData = {
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_ADom.jpeg",
-        "caption": "ADom"
+        "caption": "NL Utrecht 00"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_ADomMoon.jpeg",
-        "caption": "ADomMoon"
+        "caption": "NL Utrecht 01"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_BDomFog.jpeg",
-        "caption": "BDomFog"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Bike Large.jpeg",
-        "caption": "Bike"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_CTrainDog.jpeg",
-        "caption": "CTrainDog"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Canal Large.jpeg",
-        "caption": "Canal"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_CanalTrouble.jpeg",
-        "caption": "CanalTrouble"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_CanalView.jpeg",
-        "caption": "CanalView"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_DomPlane2.jpeg",
-        "caption": "DomPlane2"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_DuneSea.jpeg",
-        "caption": "DuneSea"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_DuneSeaII.jpeg",
-        "caption": "DuneSeaII"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_DuneSeaIII Large.jpeg",
-        "caption": "DuneSeaIII"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_FatherSon.jpeg",
-        "caption": "FatherSon"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Futbol.jpeg",
-        "caption": "Futbol"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_KingoftheCastle.jpeg",
-        "caption": "KingoftheCastle"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_KitchenLight.jpeg",
-        "caption": "KitchenLight"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Shroom Large.jpeg",
-        "caption": "Shroom"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Tivoli.jpeg",
-        "caption": "Tivoli"
+        "caption": "NL Utrecht 02"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_UtrechtMoon.jpeg",
-        "caption": "UtrechtMoon"
+        "caption": "NL Utrecht 03"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Tivoli.jpeg",
+        "caption": "NL Utrecht 04"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_WorkLightBalance.jpeg",
-        "caption": "WorkLightBalance"
+        "caption": "NL Utrecht 05"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Canal Large.jpeg",
+        "caption": "NL Utrecht 06"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_CanalTrouble.jpeg",
+        "caption": "NL Utrecht 07"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_CanalView.jpeg",
+        "caption": "NL Utrecht 08"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Futbol.jpeg",
+        "caption": "NL Utrecht 09"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_CTrainDog.jpeg",
+        "caption": "NL Fiets Reis 00"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Bike Large.jpeg",
+        "caption": "NL Fiets Reis 01"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_DuneSea.jpeg",
+        "caption": "NL Dunes 00"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_DuneSeaII.jpeg",
+        "caption": "NL Dunes 01"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_DuneSeaIII Large.jpeg",
+        "caption": "NL Dunes 02"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_Shroom Large.jpeg",
+        "caption": "NL Veluwezoom 00"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_KitchenLight.jpeg",
+        "caption": "NL Dom Huis 00"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_spiderplant Large.jpeg",
-        "caption": "spiderplant"
+        "caption": "NL Dom Huis 01"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_FatherSon.jpeg",
+        "caption": "NL Dom Huis 02"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/NL/NL_KingoftheCastle.jpeg",
+        "caption": "NL Dom Huis 03"
       }
     ]
   },
@@ -4223,23 +4171,23 @@ const siteData = {
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PL/PL_DayDream.jpeg",
-        "caption": "DayDream"
+        "caption": "PL DayDream"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PL/PL_King.jpeg",
-        "caption": "King"
+        "caption": "PL King"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PL/PL_PalaceKultur.jpg",
-        "caption": "PalaceKultur"
+        "caption": "PL Palace of Kultur"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PL/PL_Trinkets Large.jpeg",
-        "caption": "Trinkets"
+        "caption": "PL Complicated Trinkets"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/PL/PL_Zapiekanki.jpeg",
-        "caption": "Zapiekanki"
+        "caption": "PL Zapiekanki"
       }
     ]
   },
@@ -4464,20 +4412,20 @@ const siteData = {
     "description": "",
     "photos": [
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/SI/SI_AlmostinItaly.jpeg",
-        "caption": "AlmostinItaly"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/SI/SI_BledDog Large.jpeg",
-        "caption": "BledDog"
-      },
-      {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/SI/SI_BledView.jpeg",
-        "caption": "BledView"
+        "caption": "SI Bled"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/SI/SI_Childhood.jpeg",
-        "caption": "Childhood"
+        "caption": "SI Childhood"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/SI/SI_BledDog Large.jpeg",
+        "caption": "SI Husky"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/SI/SI_AlmostinItaly.jpeg",
+        "caption": "SI Novi Gorica / Gorizia"
       }
     ]
   },
@@ -4486,28 +4434,28 @@ const siteData = {
     "description": "",
     "photos": [
       {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle/NL_Monstera.jpeg",
-        "caption": "Monstera"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle/NL_MonsteraIII.jpeg",
-        "caption": "MonsteraIII"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle/NL_MonsteraIV.jpeg",
-        "caption": "MonsteraIV"
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle/NL_Monstera_2.jpeg",
+        "caption": "Monstera 00"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle/NL_MonsteraV.jpeg",
-        "caption": "MonsteraV"
+        "caption": "Monstera 01"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle/NL_MonsteraIV.jpeg",
+        "caption": "Monstera 02"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle/NL_MonsteraIII.jpeg",
+        "caption": "Monstera 03"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle/NL_Monstera.jpeg",
+        "caption": "Monstera 04"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle/NL_MonsteraVI.jpeg",
-        "caption": "MonsteraVI"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/TheJungle/NL_Monstera_2.jpeg",
-        "caption": "Monstera 2"
+        "caption": "Monstera 05"
       }
     ]
   },
@@ -4516,284 +4464,284 @@ const siteData = {
     "description": "",
     "photos": [
       {
+        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-01.JPG",
+        "caption": "ZA_Ubuntu"
+      },
+      {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-108.jpg",
-        "caption": "ZA_Big_V 01"
+        "caption": "Zuid Africa 108"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-111.jpg",
-        "caption": "ZA_Big_V 02"
+        "caption": "Zuid Africa 111"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-122.jpg",
-        "caption": "ZA_Big_V 03"
+        "caption": "Zuid Africa 122"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-102.jpg",
-        "caption": "ZA_Big_V 04"
+        "caption": "Zuid Africa 102"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-131.jpg",
-        "caption": "ZA_Big_V 06"
+        "caption": "Zuid Africa 131"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-127.jpg",
-        "caption": "ZA_Big_V 07"
+        "caption": "Zuid Africa 127"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-163.jpg",
-        "caption": "ZA_Big_V 08"
+        "caption": "Zuid Africa 163"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-81.jpg",
-        "caption": "ZA_Ekhohlo"
+        "caption": "Zuid Africa 81"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-82.jpg",
-        "caption": "ZA_Ekunene"
+        "caption": "Zuid Africa 82"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-142.jpg",
-        "caption": "ZA_Big_V 09"
+        "caption": "Zuid Africa 142"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-137.jpg",
-        "caption": "ZA_Big_V 010"
+        "caption": "Zuid Africa 137"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-225.jpg",
-        "caption": "ZA_Umhlaba"
+        "caption": "Zuid Africa 225"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-178.jpg",
-        "caption": "ZA_Big_V 011"
+        "caption": "Zuid Africa 178"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-180.jpg",
-        "caption": "ZA_Big_V 012"
+        "caption": "Zuid Africa 180"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-171.jpg",
-        "caption": "ZA_Big_V 013"
+        "caption": "Zuid Africa 171"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-172.jpg",
-        "caption": "ZA_Big_V 014"
+        "caption": "Zuid Africa 172"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-166.jpg",
-        "caption": "ZA_Big_V 015"
+        "caption": "Zuid Africa 166"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-169.jpg",
-        "caption": "ZA_Big_V_Lunch 016"
+        "caption": "Zuid Africa 169"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-64.jpg",
-        "caption": "ZA_Big_V 017"
+        "caption": "Zuid Africa 64"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-199.jpg",
-        "caption": "ZA_Big_V 018"
+        "caption": "Zuid Africa 199"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-203.jpg",
-        "caption": "ZA_Big_V 019"
+        "caption": "Zuid Africa 203"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-200.jpg",
-        "caption": "ZA_Big_V 020"
+        "caption": "Zuid Africa 200"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-298.jpg",
-        "caption": "ZA_Isibhakabhaka"
+        "caption": "Zuid Africa 298"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-274.jpg",
-        "caption": "ZA_Usapho"
+        "caption": "Zuid Africa 274"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-90.jpg",
-        "caption": "ZA_Family 01"
+        "caption": "Zuid Africa 90"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-95.jpg",
-        "caption": "ZA_Family 02"
+        "caption": "Zuid Africa 95"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-88.jpg",
-        "caption": "ZA_Family_03"
+        "caption": "Zuid Africa 88"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-139.jpg",
-        "caption": "ZA_Family 04"
+        "caption": "Zuid Africa 139"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-220.jpg",
-        "caption": "ZA_Family 05"
+        "caption": "Zuid Africa 220"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-186.jpg",
-        "caption": "ZA_Family 06"
+        "caption": "Zuid Africa 186"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-223.jpg",
-        "caption": "ZA_Family 07"
+        "caption": "Zuid Africa 223"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-212.jpg",
-        "caption": "ZA_Family_08"
+        "caption": "Zuid Africa 212"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-23.jpg",
-        "caption": "ZA_Family 09"
+        "caption": "Zuid Africa 23"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-246.jpg",
-        "caption": "ZA_Ukumangala"
+        "caption": "Zuid Africa 246"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-245.jpg",
-        "caption": "ZA_Ku tshaka"
+        "caption": "Zuid Africa 245"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-254.jpg",
-        "caption": "ZA_Impucuko"
+        "caption": "Zuid Africa 254"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-182.jpg",
-        "caption": "ZA_In_Hiding 01"
+        "caption": "Zuid Africa 182"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-133.jpg",
-        "caption": "ZA_In_Hiding 02"
+        "caption": "Zuid Africa 133"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-130.jpg",
-        "caption": "ZA_In_Hiding 03"
+        "caption": "Zuid Africa 130"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-132.jpg",
-        "caption": "ZA_In_Hiding 04"
+        "caption": "Zuid Africa 132"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-181.jpg",
-        "caption": "ZA_In_Hiding 05"
+        "caption": "Zuid Africa 181"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-144.jpg",
-        "caption": "ZA_In_Hiding 06"
+        "caption": "Zuid Africa 144"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-214.jpg",
-        "caption": "ZA_In_Hiding 07"
+        "caption": "Zuid Africa 214"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-236.jpg",
-        "caption": "ZA_In_Hiding 08"
+        "caption": "Zuid Africa 236"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-24.jpg",
-        "caption": "ZA_In_Hiding 09"
+        "caption": "Zuid Africa 24"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-263.jpg",
-        "caption": "ZA_Awe 06"
+        "caption": "ZA_Isifuba"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-285.jpg",
-        "caption": "ZA_Awe 07"
+        "caption": "ZA_Duvula ra wel"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-219.jpg",
-        "caption": "ZA_Water_Buck"
+        "caption": "Zuid Africa 219"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-293.jpg",
-        "caption": "ZA_Kudu"
+        "caption": "Zuid Africa 293"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-211.jpg",
-        "caption": "ZA_Wildebeast_Oxpecker"
+        "caption": "Zuid Africa 211"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-184.jpg",
-        "caption": "ZA_Vervet_01"
+        "caption": "Zuid Africa 184"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-183.jpg",
-        "caption": "ZA_Vervet_02"
+        "caption": "Zuid Africa 183"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-77.jpg",
-        "caption": "ZA_Southern_Giraffe"
+        "caption": "Zuid Africa 77"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-189.jpg",
-        "caption": "ZA_Lilac-breasted_Roller"
+        "caption": "Zuid Africa 189"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-164.jpg",
-        "caption": "ZA_Cape_Glossy_Starling 01"
+        "caption": "Zuid Africa 164"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-208.jpg",
-        "caption": "ZA_Cape_Glossy_Starling 02"
+        "caption": "Zuid Africa 208"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-134.jpg",
-        "caption": "ZA_Brown_Snake_Eagle"
+        "caption": "Zuid Africa 134"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-42.jpg",
-        "caption": "ZA_White-backed_Vulture"
+        "caption": "Zuid Africa 42"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-226.jpg",
-        "caption": "ZA_Rock_Hyrax"
+        "caption": "Zuid Africa 226"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-159.jpg",
-        "caption": "ZA_Nile_Crocodile_Adult"
+        "caption": "Zuid Africa 159"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-229.jpg",
-        "caption": "ZA_Nile_Crocodile_Sub_Adult"
+        "caption": "Zuid Africa 229"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-240.jpg",
-        "caption": "ZA_Nile_Crocodile_Juvenile"
+        "caption": "Zuid Africa 240"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-63.jpg",
-        "caption": "ZA_Golden_Silk_Orb-Weaver 01"
+        "caption": "Zuid Africa 63"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-62.jpg",
-        "caption": "ZA_Golden_Silk_Orb-Weaver 02"
+        "caption": "Zuid Africa 62"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-213.jpg",
-        "caption": "ZA_Common_Hippopotamus"
+        "caption": "Zuid Africa 213"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-17.jpg",
-        "caption": "ZA_Plains_Zebra"
+        "caption": "Zuid Africa 17"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-04.jpg",
-        "caption": "ZA_Leopard"
+        "caption": "Zuid Africa 04"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-270.jpg",
-        "caption": "ZA_Ihlathi"
+        "caption": "Zuid Africa 270"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-318.jpg",
-        "caption": "ZA_Ukushona kwelanga"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZA/SolGutt - Zuid Africa-01.JPG",
-        "caption": "Zuid Africa 01"
+        "caption": "Zuid Africa 318"
       }
     ]
   },
@@ -4803,31 +4751,27 @@ const siteData = {
     "photos": [
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZW/SolGutt - Zuid Africa-07.jpg",
-        "caption": "Zuid Africa 07"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZW/SolGutt - Zuid Africa-09.jpg",
-        "caption": "Zuid Africa 09"
+        "caption": "ZW 00"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZW/SolGutt - Zuid Africa-11.jpg",
-        "caption": "Zuid Africa 11"
+        "caption": "ZW 01"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZW/SolGutt - Zuid Africa-14.jpg",
-        "caption": "Zuid Africa 14"
+        "caption": "ZW 02"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZW/SolGutt - Zuid Africa-16.jpg",
-        "caption": "Zuid Africa 16"
+        "caption": "ZW 03"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZW/SolGutt - Zuid Africa-25.jpg",
-        "caption": "Zuid Africa 25"
+        "caption": "ZW 04"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The Bush/Photos/ZW/SolGutt - Zuid Africa-26.jpg",
-        "caption": "Zuid Africa 26"
+        "caption": "ZW 05"
       }
     ]
   }

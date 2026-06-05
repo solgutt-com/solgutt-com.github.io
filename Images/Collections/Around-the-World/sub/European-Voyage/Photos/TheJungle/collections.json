@@ -1,1 +1,18 @@
-{}
+{
+  "photo_order": [
+    "NL_Monstera_2.jpeg",
+    "NL_MonsteraV.jpeg",
+    "NL_MonsteraIV.jpeg",
+    "NL_MonsteraIII.jpeg",
+    "NL_Monstera.jpeg",
+    "NL_MonsteraVI.jpeg"
+  ],
+  "captions": {
+    "NL_Monstera_2.jpeg": "Monstera 00",
+    "NL_MonsteraV.jpeg": "Monstera 01",
+    "NL_MonsteraIV.jpeg": "Monstera 02",
+    "NL_MonsteraIII.jpeg": "Monstera 03",
+    "NL_Monstera.jpeg": "Monstera 04",
+    "NL_MonsteraVI.jpeg": "Monstera 05"
+  }
+}

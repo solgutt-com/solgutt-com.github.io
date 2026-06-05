@@ -1,1 +1,14 @@
-{}
+{
+  "photo_order": [
+    "SI_BledView.jpeg",
+    "SI_Childhood.jpeg",
+    "SI_BledDog Large.jpeg",
+    "SI_AlmostinItaly.jpeg"
+  ],
+  "captions": {
+    "SI_BledView.jpeg": "SI Bled",
+    "SI_Childhood.jpeg": "SI Childhood",
+    "SI_BledDog Large.jpeg": "SI Husky",
+    "SI_AlmostinItaly.jpeg": "SI Novi Gorica / Gorizia"
+  }
+}

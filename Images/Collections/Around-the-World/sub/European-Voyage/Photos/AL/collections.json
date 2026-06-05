@@ -1,1 +1,34 @@
-{}
+{
+  "photo_order": [
+    "AL_1.jpeg",
+    "AL_4.jpeg",
+    "AL_LinIII.jpeg",
+    "AL_5.jpeg",
+    "AL_Fisherwoman.jpeg",
+    "AL_3.jpeg",
+    "AL_6.jpeg",
+    "AL_9.jpeg",
+    "AL_Coexist.jpeg",
+    "AL_7 Large.jpeg",
+    "AL_10.jpeg",
+    "AL_8.jpeg",
+    "AL_Security.jpeg",
+    "AL_2.jpeg"
+  ],
+  "captions": {
+    "AL_1.jpeg": "AL Lin 00",
+    "AL_4.jpeg": "AL Lin 01",
+    "AL_LinIII.jpeg": "AL Lin 02",
+    "AL_5.jpeg": "AL Lin 03",
+    "AL_Fisherwoman.jpeg": "AL Lin 04",
+    "AL_3.jpeg": "AL Lin 05",
+    "AL_6.jpeg": "AL Lin 06",
+    "AL_9.jpeg": "AL Berat 00",
+    "AL_Coexist.jpeg": "AL Berat 01",
+    "AL_7 Large.jpeg": "AL Berat 02",
+    "AL_10.jpeg": "AL Tirana 00",
+    "AL_8.jpeg": "AL Tirana 01",
+    "AL_Security.jpeg": "AL Tirana 02",
+    "AL_2.jpeg": "AL Durres 00"
+  }
+}

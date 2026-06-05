@@ -1,1 +1,30 @@
-{}
+{
+  "photo_order": [
+    "ES_Catalonia.jpeg",
+    "ES_AWeatherVein.jpeg",
+    "ES_BusyBees Edited.jpg",
+    "ES_ParkSol.jpeg",
+    "ES_Montserrat.jpeg",
+    "ES_MontserratII.jpeg",
+    "ES_MontserratIII.jpeg",
+    "ES_AmigadeMujerra.jpeg",
+    "ES_OldMenSea.jpeg",
+    "ES_OldmanSurfer.jpeg",
+    "ES_AbandonedIndustry.jpeg",
+    "ES_SegoviaSelfie.jpeg"
+  ],
+  "captions": {
+    "ES_Catalonia.jpeg": "ES 00",
+    "ES_AWeatherVein.jpeg": "ES 01",
+    "ES_BusyBees Edited.jpg": "ES 02",
+    "ES_ParkSol.jpeg": "ES 03",
+    "ES_Montserrat.jpeg": "ES 04",
+    "ES_MontserratII.jpeg": "ES 05",
+    "ES_MontserratIII.jpeg": "ES 06",
+    "ES_AmigadeMujerra.jpeg": "ES 07",
+    "ES_OldMenSea.jpeg": "ES 08",
+    "ES_OldmanSurfer.jpeg": "ES 09",
+    "ES_AbandonedIndustry.jpeg": "ES 010",
+    "ES_SegoviaSelfie.jpeg": "ES 011"
+  }
+}

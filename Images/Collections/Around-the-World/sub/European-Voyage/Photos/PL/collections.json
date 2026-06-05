@@ -1,1 +1,16 @@
-{}
+{
+  "photo_order": [
+    "PL_DayDream.jpeg",
+    "PL_King.jpeg",
+    "PL_PalaceKultur.jpg",
+    "PL_Trinkets Large.jpeg",
+    "PL_Zapiekanki.jpeg"
+  ],
+  "captions": {
+    "PL_DayDream.jpeg": "PL DayDream",
+    "PL_King.jpeg": "PL King",
+    "PL_PalaceKultur.jpg": "PL Palace of Kultur",
+    "PL_Trinkets Large.jpeg": "PL Complicated Trinkets",
+    "PL_Zapiekanki.jpeg": "PL Zapiekanki"
+  }
+}

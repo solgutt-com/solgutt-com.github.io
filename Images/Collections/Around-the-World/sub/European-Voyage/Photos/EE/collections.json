@@ -1,1 +1,16 @@
-{}
+{
+  "photo_order": [
+    "EE_Oldtown.jpeg",
+    "EE_TallinnStation.jpeg",
+    "EE_TartuRiver.jpeg",
+    "EE_RainMuseum.jpeg",
+    "EE_Forest.jpg"
+  ],
+  "captions": {
+    "EE_Oldtown.jpeg": "EE 00",
+    "EE_TallinnStation.jpeg": "EE 01",
+    "EE_TartuRiver.jpeg": "EE 02",
+    "EE_RainMuseum.jpeg": "EE 03",
+    "EE_Forest.jpg": "EE 04"
+  }
+}

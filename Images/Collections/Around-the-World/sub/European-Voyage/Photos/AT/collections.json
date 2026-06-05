@@ -1,1 +1,12 @@
-{}
+{
+  "photo_order": [
+    "AT_AlleyWay.jpeg",
+    "AT_Edifice.jpeg",
+    "AT_MountainView.jpeg"
+  ],
+  "captions": {
+    "AT_AlleyWay.jpeg": "AT 00",
+    "AT_Edifice.jpeg": "AT 01",
+    "AT_MountainView.jpeg": "AT 02"
+  }
+}

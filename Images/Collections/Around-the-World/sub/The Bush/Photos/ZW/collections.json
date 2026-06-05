@@ -1,1 +1,18 @@
-{}
+{
+  "photo_order": [
+    "SolGutt - Zuid Africa-07.jpg",
+    "SolGutt - Zuid Africa-11.jpg",
+    "SolGutt - Zuid Africa-14.jpg",
+    "SolGutt - Zuid Africa-16.jpg",
+    "SolGutt - Zuid Africa-25.jpg",
+    "SolGutt - Zuid Africa-26.jpg"
+  ],
+  "captions": {
+    "SolGutt - Zuid Africa-07.jpg": "ZW 00",
+    "SolGutt - Zuid Africa-11.jpg": "ZW 01",
+    "SolGutt - Zuid Africa-14.jpg": "ZW 02",
+    "SolGutt - Zuid Africa-16.jpg": "ZW 03",
+    "SolGutt - Zuid Africa-25.jpg": "ZW 04",
+    "SolGutt - Zuid Africa-26.jpg": "ZW 05"
+  }
+}

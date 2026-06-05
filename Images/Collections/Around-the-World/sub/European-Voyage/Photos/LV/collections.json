@@ -1,1 +1,20 @@
-{}
+{
+  "photo_order": [
+    "LV_LakePeopleII.jpeg",
+    "LV_ABusinessCall.jpeg",
+    "LV_AtSea.jpeg",
+    "LV_RadioSat.jpeg",
+    "LV_Flowers.jpeg",
+    "LV_MarketNotes.jpeg",
+    "LV_ShoesBeach.jpeg"
+  ],
+  "captions": {
+    "LV_LakePeopleII.jpeg": "LV 00",
+    "LV_ABusinessCall.jpeg": "LV 01",
+    "LV_AtSea.jpeg": "LV 02",
+    "LV_RadioSat.jpeg": "LV 03",
+    "LV_Flowers.jpeg": "LV 04",
+    "LV_MarketNotes.jpeg": "LV 05",
+    "LV_ShoesBeach.jpeg": "LV 06"
+  }
+}
