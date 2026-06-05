@@ -1,1 +1,42 @@
-{}
+{
+  "photo_order": [
+    "SE_1RedHouse.jpeg",
+    "SE_2CowsIII.jpeg",
+    "SE_3CowsII.jpeg",
+    "SE_4Cows.jpeg",
+    "SE_5Caterpillars.jpeg",
+    "SE_Berry.jpeg",
+    "SE_ShroomII.jpeg",
+    "SE_Shrrom.jpeg",
+    "SE_ShroomIII.jpeg",
+    "SE_ShroomIV.jpeg",
+    "SE_ShroomV.jpeg",
+    "SE_IslandsI.jpeg",
+    "SE_SeaDog.jpeg",
+    "SE_StockholmApart.jpeg",
+    "SE_StockholmBike.jpeg",
+    "SE_StockholmBoat.jpeg",
+    "SE_StockholmTower.jpeg",
+    "SE_GothDeliver.jpeg"
+  ],
+  "captions": {
+    "SE_1RedHouse.jpeg": "Sweden 00",
+    "SE_2CowsIII.jpeg": "Sweden 01",
+    "SE_3CowsII.jpeg": "Sweden 02",
+    "SE_4Cows.jpeg": "Sweden 03",
+    "SE_5Caterpillars.jpeg": "Sweden 04",
+    "SE_Berry.jpeg": "Sweden 05",
+    "SE_ShroomII.jpeg": "Sweden 06",
+    "SE_Shrrom.jpeg": "Sweden 07",
+    "SE_ShroomIII.jpeg": "Sweden 08",
+    "SE_ShroomIV.jpeg": "Sweden 09",
+    "SE_ShroomV.jpeg": "Sweden 010",
+    "SE_IslandsI.jpeg": "Sweden 011",
+    "SE_SeaDog.jpeg": "Sweden 012",
+    "SE_StockholmApart.jpeg": "Sweden 013",
+    "SE_StockholmBike.jpeg": "Sweden 014",
+    "SE_StockholmBoat.jpeg": "Sweden 015",
+    "SE_StockholmTower.jpeg": "Sweden 016",
+    "SE_GothDeliver.jpeg": "Sweden 017"
+  }
+}

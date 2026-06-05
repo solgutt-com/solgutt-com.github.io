@@ -4,5 +4,41 @@
   "description": "Photos made for the Hotel Longroiva A Luxurious rural getaway https://www.hoteldelongroiva.com/en/ and O Refugio do Castelo (contact for rental details)",
   "cover": "",
   "order": 7,
-  "type": "gallery"
+  "type": "gallery",
+  "photo_order": [
+    "BSolGutt - O Refugio do Castelo-065.JPG",
+    "ASolGutt - O Refugio do Castelo-099.JPG",
+    "ASolGutt - O Refugio do Castelo-030.JPG",
+    "SolGutt - O Refugio do Castelo-029.JPG",
+    "SolGutt - O Refugio do Castelo-002.JPG",
+    "ASolGutt - O Refugio do Castelo-003.JPG",
+    "SolGutt© - Hotel Suite Floor 2-1.jpg",
+    "SolGutt© - Hotel Suite Floor 2-16.jpg",
+    "SolGutt© - Longroiva First Visit Highlights-02.jpg",
+    "SolGutt© - Longroiva First Visit Highlights-05.jpg",
+    "SolGutt© - Longroiva First Visit Highlights-01.jpg",
+    "SolGutt© - Longroiva First Visit Highlights-11.jpg",
+    "SolGutt© - Porto Tonico-04.jpg",
+    "SolGutt© - Longroiva First Visit Highlights-03.jpg",
+    "SolGutt© - Hotel exterior-14.jpg",
+    "SolGutt© - Hotel exterior-11.jpg"
+  ],
+  "captions": {
+    "BSolGutt - O Refugio do Castelo-065.JPG": "O Refugio do Castelo 00",
+    "ASolGutt - O Refugio do Castelo-099.JPG": "O Refugio do Castelo 01",
+    "ASolGutt - O Refugio do Castelo-030.JPG": "O Refugio do Castelo 02",
+    "SolGutt - O Refugio do Castelo-029.JPG": "O Refugio do Castelo 03",
+    "SolGutt - O Refugio do Castelo-002.JPG": "O Refugio do Castelo 04",
+    "ASolGutt - O Refugio do Castelo-003.JPG": "O Refugio do Castelo 05",
+    "SolGutt© - Hotel Suite Floor 2-1.jpg": "Hotel de Longroiva 00",
+    "SolGutt© - Hotel Suite Floor 2-16.jpg": "Hotel de Longroiva 02",
+    "SolGutt© - Longroiva First Visit Highlights-02.jpg": "Hotel de Longroiva 03",
+    "SolGutt© - Longroiva First Visit Highlights-05.jpg": "Hotel de Longroiva 04",
+    "SolGutt© - Longroiva First Visit Highlights-01.jpg": "Hotel de Longroiva 05",
+    "SolGutt© - Longroiva First Visit Highlights-11.jpg": "Hotel de Longroiva 06",
+    "SolGutt© - Porto Tonico-04.jpg": "Hotel de Longroiva 07",
+    "SolGutt© - Longroiva First Visit Highlights-03.jpg": "Hotel de Longroiva 08",
+    "SolGutt© - Hotel exterior-14.jpg": "Hotel de Longroiva 09",
+    "SolGutt© - Hotel exterior-11.jpg": "Hotel de Longroiva 010"
+  }
 }
