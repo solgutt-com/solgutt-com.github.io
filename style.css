@@ -100,8 +100,26 @@ h1 {
 
 main p {
   font-size: 18px;
-  opacity: 0.5;
+  opacity: 0.75;
   font-weight: 300;
+  margin-bottom: 6px;
+}
+
+main p.tagline {
+  font-size: clamp(20px, 3vw, 28px);
+  opacity: 0.9;
+  margin-bottom: 28px;
+}
+
+main p.contact-line {
+  font-size: 16px;
+  opacity: 0.6;
+  margin-bottom: 4px;
+}
+
+main p.contact-line a {
+  color: inherit;
+  text-decoration: underline;
 }
 
 /* ─── Slideshow (photos + film shared) ─── */
