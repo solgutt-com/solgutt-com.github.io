@@ -82,7 +82,7 @@
 
     <script src="data.js"></script>
     <script>
-      collectionsData.forEach(col => {
+      collections.filter(c => c.parent === null).forEach(col => {
         const el = document.getElementById('q-' + col.id);
         if (!el) return;
         const sub  = el.querySelector('.collection-subtitle');

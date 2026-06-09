@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solomon Guttmann</title>
-    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="style.css">
   </head>
 
   <body class="gallery-page">
 
     <header class="gallery-header">
-      <a href="../photography.html" class="site-name back-link">← Fotos</a>
+      <a href="photography.html" class="site-name back-link">← Fotos</a>
       <nav class="gallery-nav">
         <span id="country-title" class="country-title"></span>
         <span class="divider">|</span>
@@ -24,30 +24,30 @@
     <div class="slideshow">
       <button class="arrow left" onclick="changePhoto(-1)">&#8249;</button>
       <div class="slide-container">
-        <img id="slide-img" src="" alt="">
+        <img id="slide-img" src="" alt="" loading="lazy">
         <span id="slide-caption" class="slide-caption"></span>
       </div>
       <button class="arrow right" onclick="changePhoto(1)">&#8250;</button>
     </div>
 
-    <script src="../data.js"></script>
+    <script src="data.js"></script>
     <script>
       const params = new URLSearchParams(window.location.search);
       const code = params.get('code') || 'AL';
-      const country = siteData[code];
+      const country = collections.find(c => c.id === code);
 
       if (!country) {
-        window.location.href = '../photography.html';
+        window.location.href = 'photography.html';
       }
 
-      document.title = country.name + ' — Solomon Guttmann';
-      document.getElementById('country-title').textContent = country.name;
+      document.title = country.title + ' — Solomon Guttmann';
+      document.getElementById('country-title').textContent = country.title;
       if (country.description) {
         document.getElementById('collection-description').textContent = country.description;
       }
 
       const photos = country.photos.map(p => ({
-        src: `../${p.src}`,
+        src: p.src,
         caption: p.caption
       }));
 

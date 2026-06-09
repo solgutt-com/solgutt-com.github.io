@@ -27,28 +27,28 @@
         <div class="region-menu-icon">&#9776;</div>
         <div class="region-menu-list">
           <div class="region-menu-section">Europe</div>
-          <a href="countries/gallery.html?code=AL">Albania</a>
-          <a href="countries/gallery.html?code=AT">Austria</a>
-          <a href="countries/gallery.html?code=BA">Bosnia & Herzegovina</a>
-          <a href="countries/gallery.html?code=CH">Switzerland</a>
-          <a href="countries/gallery.html?code=DE">Germany</a>
-          <a href="countries/gallery.html?code=EE">Estonia</a>
-          <a href="countries/gallery.html?code=ES">Spain</a>
-          <a href="countries/gallery.html?code=FI">Finland</a>
-          <a href="countries/gallery.html?code=FR">France</a>
-          <a href="countries/gallery.html?code=HR">Croatia</a>
-          <a href="countries/gallery.html?code=IT">Italy</a>
-          <a href="countries/gallery.html?code=LT">Lithuania</a>
-          <a href="countries/gallery.html?code=LV">Latvia</a>
-          <a href="countries/gallery.html?code=ME">Montenegro</a>
-          <a href="countries/gallery.html?code=NL">Netherlands</a>
-          <a href="countries/gallery.html?code=PL">Poland</a>
-          <a href="countries/gallery.html?code=PT">Portugal</a>
-          <a href="countries/gallery.html?code=SE">Sweden</a>
-          <a href="countries/gallery.html?code=SI">Slovenia</a>
+          <a href="gallery.html?code=AL">Albania</a>
+          <a href="gallery.html?code=AT">Austria</a>
+          <a href="gallery.html?code=BA">Bosnia & Herzegovina</a>
+          <a href="gallery.html?code=CH">Switzerland</a>
+          <a href="gallery.html?code=DE">Germany</a>
+          <a href="gallery.html?code=EE">Estonia</a>
+          <a href="gallery.html?code=ES">Spain</a>
+          <a href="gallery.html?code=FI">Finland</a>
+          <a href="gallery.html?code=FR">France</a>
+          <a href="gallery.html?code=HR">Croatia</a>
+          <a href="gallery.html?code=IT">Italy</a>
+          <a href="gallery.html?code=LT">Lithuania</a>
+          <a href="gallery.html?code=LV">Latvia</a>
+          <a href="gallery.html?code=ME">Montenegro</a>
+          <a href="gallery.html?code=NL">Netherlands</a>
+          <a href="gallery.html?code=PL">Poland</a>
+          <a href="gallery.html?code=PT">Portugal</a>
+          <a href="gallery.html?code=SE">Sweden</a>
+          <a href="gallery.html?code=SI">Slovenia</a>
           <div class="region-menu-section">Africa</div>
-          <a href="countries/gallery.html?code=ZA">South Africa</a>
-          <a href="countries/gallery.html?code=ZW">Zimbabwe</a>
+          <a href="gallery.html?code=ZA">South Africa</a>
+          <a href="gallery.html?code=ZW">Zimbabwe</a>
         </div>
       </div>
 
@@ -107,7 +107,7 @@
       }
 
       function navigate(code) {
-        window.location.href = 'countries/gallery.html?code=' + code;
+        window.location.href = 'gallery.html?code=' + code;
       }
 
 const q = quotes[Math.floor(Math.random() * quotes.length)];
@@ -137,7 +137,7 @@ document.getElementById('map-quote-author').textContent = '\u2014 ' + q.author;
           .attr('fill', 'url(#px)')
           .attr('stroke', '#6a6a62')
           .attr('stroke-width', 0.6)
-          .on('mouseenter', function(e, d) { showTooltip(siteData[COUNTRY_IDS[+d.id]].name); })
+          .on('mouseenter', function(e, d) { const n = collections.find(c => c.id === COUNTRY_IDS[+d.id]); if (n) showTooltip(n.title); })
           .on('mouseleave', hideTooltip)
           .on('click', function(e, d) { navigate(COUNTRY_IDS[+d.id]); });
 

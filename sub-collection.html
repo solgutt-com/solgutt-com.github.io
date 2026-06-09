@@ -27,18 +27,7 @@
       const id         = params.get('id');
       const parentId   = params.get('parent');
 
-      function findCollection(nodes, targetId) {
-        for (const node of nodes) {
-          if (node.id === targetId) return node;
-          if (node.children) {
-            const found = findCollection(node.children, targetId);
-            if (found) return found;
-          }
-        }
-        return null;
-      }
-
-      const collection = findCollection(collectionsData, id);
+      const collection = collections.find(c => c.id === id);
 
       if (!collection || collection.type !== 'parent') {
         window.location.href = 'photography.html';
@@ -48,7 +37,7 @@
       document.getElementById('collection-title').textContent = collection.title;
 
       if (parentId) {
-        const parent = findCollection(collectionsData, parentId);
+        const parent = collections.find(c => c.id === parentId);
         const backLink = document.getElementById('back-link');
         backLink.href = 'sub-collection.html?id=' + parentId;
         backLink.textContent = '← ' + (parent ? parent.title : 'Back');
@@ -56,7 +45,10 @@
 
       const list = document.getElementById('subcollection-list');
 
-      collection.children.forEach(child => {
+      collections
+        .filter(c => c.parent === id)
+        .sort((a, b) => (a.order || 999) - (b.order || 999))
+        .forEach(child => {
         const isComingSoon = child.type === 'coming-soon';
 
         const el = isComingSoon
@@ -66,7 +58,7 @@
         if (!isComingSoon) {
           el.href = child.type === 'parent'
             ? 'sub-collection.html?id=' + child.id + '&parent=' + id
-            : 'countries/gallery.html?code=' + child.id;
+            : 'gallery.html?code=' + child.id;
         }
 
         el.className = 'subcollection-item' + (isComingSoon ? ' subcollection-coming-soon' : '');
