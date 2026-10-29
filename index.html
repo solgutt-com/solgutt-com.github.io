@@ -36,7 +36,7 @@
       </div>
 
       <figure class="haystack" id="haystack">
-        <svg id="haystack-svg" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMax meet" role="group" aria-label="A needle standing upright in a haystack"></svg>
+        <svg id="haystack-svg" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMax meet" role="group" aria-label="A haystack drawn in straw, with one needle hidden inside"></svg>
         <figcaption>Find the needle to see my work</figcaption>
       </figure>
     </main>
@@ -45,10 +45,11 @@
       const NS = 'http://www.w3.org/2000/svg';
       const W = 1200, BASE = 412;
       const svg = document.getElementById('haystack-svg');
+      const fig = document.getElementById('haystack');
+      const STRAW = ['#E2CB86', '#C8AE66', '#B4954A', '#9A7B36', '#8A6B2C'];
       const calm = matchMedia('(prefers-reduced-motion: reduce)').matches;
 
       const rand = (a, b) => a + Math.random() * (b - a);
-      const pick = list => list[Math.floor(Math.random() * list.length)];
 
       function el(tag, attrs) {
         const e = document.createElementNS(NS, tag);
@@ -56,11 +57,12 @@
         return e;
       }
 
-      // Height of the mound at x: a low, soft dome with a few lumps.
+      // Height of the mound at x: a soft dome with a few lumps. The peak stays low
+      // enough that the longest straws never poke above the drawing.
       function mound(x) {
         const t = (x - W / 2) / 560;
         if (Math.abs(t) >= 1) return 0;
-        return 250 * Math.pow(1 - t * t, 0.65) + 12 * Math.sin(x / 47) + 8 * Math.sin(x / 19);
+        return 330 * Math.pow(1 - t * t, 0.65) + 14 * Math.sin(x / 47) + 9 * Math.sin(x / 19);
       }
 
       function line(x, y, len, angle, attrs) {
@@ -72,85 +74,77 @@
         });
       }
 
-      // ─── Shared paints: hay shading, the blurred far layer, the needle's olive-silver ───
+      // ─── Shared paints: hay shading and the needle's olive-silver ───
 
       const defs = el('defs', {});
       defs.innerHTML = `
         <linearGradient id="hay-shade" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stop-color="#C3A55C"/><stop offset="1" stop-color="#94763A"/>
         </linearGradient>
-        <filter id="far-blur" x="-5%" y="-5%" width="110%" height="110%">
-          <feGaussianBlur stdDeviation="1.2"/>
-        </filter>
         <linearGradient id="olive-silver" x1="0" y1="0" x2="1" y2="0">
           <stop offset="0" stop-color="#3B4030"/>
           <stop offset="0.3" stop-color="#8F947D"/>
           <stop offset="0.5" stop-color="#E4E6DA"/>
           <stop offset="0.7" stop-color="#9DA28B"/>
           <stop offset="1" stop-color="#363B2C"/>
-        </linearGradient>
-        <radialGradient id="halo">
-          <stop offset="0" stop-color="#F2E8C4" stop-opacity="0.95"/>
-          <stop offset="1" stop-color="#F2E8C4" stop-opacity="0"/>
-        </radialGradient>
-        <radialGradient id="entry-shadow">
-          <stop offset="0" stop-color="#23281C" stop-opacity="0.32"/>
-          <stop offset="1" stop-color="#23281C" stop-opacity="0"/>
-        </radialGradient>`;
+        </linearGradient>`;
       svg.append(defs);
 
-      // ─── The needle's place ───
+      // ─── Build the stack ───
 
-      const NX = 600;                       // where it stands
-      const TILT = -7;                      // degrees off upright
-      const LEN = 200;                      // eye end to point
-      const HALF_W = 3.6;                   // half the shaft's width at the head
-      const SINK = 46;                      // how much of it is buried
-      const EYE_Y = 17;                     // eye centre, measured down from the head
-      const EYE_RX = 1.5, EYE_RY = 7;       // eye opening: narrow and long, along the shaft
-      const ENTRY_Y = BASE - mound(NX);     // where it meets the hay
-
-      // A light halo behind the needle gives the page some depth.
-      // Kept inside the drawing so it never washes over the name above.
-      svg.append(el('ellipse', { cx: NX, cy: ENTRY_Y - 50, rx: 300, ry: ENTRY_Y - 60, fill: 'url(#halo)' }));
-
-      // ─── The stack: still, faded, in two depths ───
-
+      // Everything in the stack lives in one group so it can rock from its base.
+      const stack = el('g', {});
       let d = `M60,${BASE}`;
       for (let x = 60; x <= 1140; x += 10) d += ` L${x},${(BASE - Math.max(0, mound(x) * 0.88)).toFixed(1)}`;
       d += ` L1140,${BASE} Z`;
-      svg.append(el('path', { d, fill: 'url(#hay-shade)', opacity: 0.16, class: 'hay-layer' }));
+      stack.append(el('path', { d, fill: 'url(#hay-shade)', class: 'hay-layer' }));
+      svg.append(stack);
 
-      function fillStraws(group, tries, colours, width) {
-        for (let i = 0; i < tries; i++) {
-          const x = rand(40, W - 40);
-          const top = mound(x);
-          // Taller parts of the mound hold more straw.
-          if (top < 6 || Math.random() > top / 270) continue;
-          const y = BASE - top * Math.random();
-          const tilt = Math.random() < 0.8 ? rand(-0.9, 0.9) : rand(-1.5, 1.5);
-          group.append(line(x, y, rand(30, 90), tilt, {
-            class: 'straw', stroke: pick(colours), 'stroke-width': rand(width[0], width[1]).toFixed(2)
-          }));
-        }
-        return group;
+      const straws = [];
+      const behind = el('g', { class: 'hay-layer' });
+      const front = el('g', { class: 'hay-layer' });
+
+      for (let i = 0; i < 5200; i++) {
+        const x = rand(40, W - 40);
+        const top = mound(x);
+        // Taller parts of the mound hold more straw.
+        if (top < 6 || Math.random() > top / 380) continue;
+        const y = BASE - top * Math.random();
+        const tilt = Math.random() < 0.8 ? rand(-0.9, 0.9) : rand(-1.5, 1.5);
+        const e = line(x, y, rand(30, 96), tilt, {
+          class: 'straw',
+          stroke: STRAW[Math.floor(Math.random() * STRAW.length)],
+          'stroke-width': rand(1.2, 2.8).toFixed(2)
+        });
+        (Math.random() < 0.88 ? behind : front).append(e);
+        straws.push({ el: e, x, y, dx: 0, dy: 0, dr: 0, vx: 0, vy: 0, vr: 0 });
       }
 
-      const far = fillStraws(el('g', { class: 'hay-layer', filter: 'url(#far-blur)', opacity: 0.3 }),
-                             3200, ['#D9C27E', '#C8AE66', '#B4954A'], [1.4, 3]);
-      const near = fillStraws(el('g', { class: 'hay-layer', opacity: 0.5 }),
-                              1600, ['#C8AE66', '#B4954A', '#9A7B36', '#8A6B2C'], [1, 2.2]);
-      svg.append(far, near);
-      svg.append(el('ellipse', { cx: NX, cy: ENTRY_Y + 3, rx: 34, ry: 7, fill: 'url(#entry-shadow)', class: 'hay-layer' }));
+      // On narrow screens, fill the space and crop the sides instead of shrinking.
+      const narrow = matchMedia('(max-width: 860px)');
+      const fit = () => svg.setAttribute('preserveAspectRatio', narrow.matches ? 'xMidYMax slice' : 'xMidYMax meet');
+      narrow.addEventListener('change', fit);
+      fit();
 
-      // ─── The needle: a sharp olive-silver blade with an open eye ───
+      // ─── The needle: a sharp olive-silver blade, hidden somewhere new on every visit ───
+
+      const LEN = 120;                      // eye end to point
+      const HALF_W = 2.6;                   // half the shaft's width at the head
+      const EYE_Y = 11;                     // eye centre, measured down from the head
+      const EYE_RX = 1.1, EYE_RY = 5;       // eye opening: narrow and long, along the shaft
+
+      // Somewhere mid-stack and near enough the centre to survive the narrow-screen crop,
+      // lying at any angle within about 35 degrees of flat.
+      const nx = rand(470, 730);
+      const ny = BASE - mound(nx) * rand(0.3, 0.6);
+      const lie = rand(-35, 35) + (Math.random() < 0.5 ? 0 : 180);
 
       function drawNeedle() {
         const g = el('g', {});
         g.append(el('path', {
           d: `M${-HALF_W} ${HALF_W} A${HALF_W} ${HALF_W} 0 0 1 ${HALF_W} ${HALF_W}`
            + ` L${HALF_W * 0.78} ${LEN * 0.8} L0 ${LEN} L${-HALF_W * 0.78} ${LEN * 0.8} Z`,
-          fill: 'url(#olive-silver)', stroke: '#2E3226', 'stroke-width': 0.5
+          fill: 'url(#olive-silver)', stroke: '#2E3226', 'stroke-width': 0.4
         }));
         const eye = el('ellipse', { cx: 0, cy: EYE_Y, rx: EYE_RX, ry: EYE_RY });
         eye.style.fill = 'var(--straw)';
@@ -158,30 +152,129 @@
         return g;
       }
 
-      const link = el('a', { href: 'photography.html', class: 'needle-link', 'aria-label': 'See my work' });
-      const pose = el('g', { transform: `translate(${NX} ${ENTRY_Y}) rotate(${TILT}) translate(0 ${SINK - LEN})` });
-      const sword = el('g', { class: 'sword' });
-      sword.append(drawNeedle(), el('rect', { class: 'needle-hit', x: -16, y: -10, width: 32, height: LEN - SINK + 10 }));
-      pose.append(sword);
-      link.append(pose);
-      svg.append(link);
+      // Drawn upright, then laid into the hay: centred on its spot, turned to lie flat-ish.
+      const placement = `translate(${nx.toFixed(1)} ${ny.toFixed(1)}) rotate(${(lie - 90).toFixed(1)}) translate(0 ${-LEN / 2})`;
+      const sword = el('g', { class: 'sword', transform: placement });
+      sword.append(drawNeedle());
 
-      // A few straws in front of the buried part, so it reads as pushed into the hay.
-      const embed = el('g', { class: 'hay-layer', opacity: 0.6 });
-      for (let i = 0; i < 70; i++) {
-        const x = NX + rand(-1, 1) * rand(0, 60);
-        const y = ENTRY_Y + rand(-3, 52);
-        embed.append(line(x, y, rand(24, 70), rand(-0.7, 0.7), {
-          class: 'straw', stroke: pick(['#C8AE66', '#B4954A', '#9A7B36']), 'stroke-width': rand(1, 2).toFixed(2)
-        }));
+      // The clickable area always sits on top; the needle itself sits under the front straws.
+      const link = el('a', { href: 'photography.html', class: 'needle-link', 'aria-label': 'The needle: see my work' });
+      link.append(el('rect', { class: 'needle-hit', x: -14, y: -8, width: 28, height: LEN + 16, transform: placement }));
+
+      // Finding it fades the hay under one veil and lifts the needle above it.
+      // The veil starts at the top edge of the drawing, so it never covers the text above.
+      const veil = el('rect', { class: 'hay-veil', x: -100, y: 0, width: W + 200, height: 420 });
+      stack.append(behind, sword, front, veil, link);
+
+      function reveal(on) {
+        fig.classList.toggle('found', on);
+        stack.insertBefore(sword, on ? link : front);
       }
-      svg.append(embed);
 
-      // On narrow screens, fill the space and crop the sides instead of shrinking.
-      const narrow = matchMedia('(max-width: 860px)');
-      const fit = () => svg.setAttribute('preserveAspectRatio', narrow.matches ? 'xMidYMax slice' : 'xMidYMax meet');
-      narrow.addEventListener('change', fit);
-      fit();
+      link.addEventListener('mouseenter', () => reveal(true));
+      link.addEventListener('mouseleave', () => reveal(false));
+      link.addEventListener('focus', () => reveal(true));
+      link.addEventListener('blur', () => reveal(false));
+
+      // ─── Spring physics: every straw wants to return to where it was drawn ───
+
+      const K = 260;    // stiffness
+      const DAMP = 9;   // low damping keeps it bouncy
+      const live = new Set();
+      // The whole stack leaning from its base: a slow, loose spring so it wobbles like jelly.
+      const sway = { a: 0, v: 0, live: false, K: 40, DAMP: 2.2 };
+      let raf = 0, last = 0;
+
+      function run() {
+        if (!raf) { last = performance.now(); raf = requestAnimationFrame(tick); }
+      }
+
+      function wake(s) { live.add(s); run(); }
+
+      function nudge(v) {
+        sway.v = Math.max(-30, Math.min(30, sway.v + v));
+        sway.live = true;
+        run();
+      }
+
+      function tick(now) {
+        const dt = Math.min(0.033, (now - last) / 1000);
+        last = now;
+
+        if (sway.live) {
+          sway.v += (-sway.K * sway.a - sway.DAMP * sway.v) * dt;
+          sway.a += sway.v * dt;
+          if (Math.abs(sway.a) < 0.02 && Math.abs(sway.v) < 0.2) {
+            sway.a = sway.v = 0;
+            sway.live = false;
+            stack.removeAttribute('transform');
+          } else {
+            stack.setAttribute('transform', `translate(0 ${BASE}) skewX(${sway.a.toFixed(3)}) translate(0 ${-BASE})`);
+          }
+        }
+
+        for (const s of live) {
+          s.vx += (-K * s.dx - DAMP * s.vx) * dt;
+          s.vy += (-K * s.dy - DAMP * s.vy) * dt;
+          s.vr += (-K * s.dr - DAMP * s.vr) * dt;
+          s.dx += s.vx * dt;
+          s.dy += s.vy * dt;
+          s.dr += s.vr * dt;
+
+          const still = Math.abs(s.dx) + Math.abs(s.dy) + Math.abs(s.dr) < 0.3
+                     && Math.abs(s.vx) + Math.abs(s.vy) + Math.abs(s.vr) < 3;
+          if (still) {
+            s.dx = s.dy = s.dr = s.vx = s.vy = s.vr = 0;
+            s.el.removeAttribute('transform');
+            live.delete(s);
+          } else {
+            s.el.setAttribute('transform',
+              `translate(${s.dx.toFixed(2)} ${s.dy.toFixed(2)}) rotate(${s.dr.toFixed(2)} ${s.x.toFixed(1)} ${s.y.toFixed(1)})`);
+          }
+        }
+
+        raf = (live.size || sway.live) ? requestAnimationFrame(tick) : 0;
+      }
+
+      function toSvg(clientX, clientY) {
+        const pt = svg.createSVGPoint();
+        pt.x = clientX;
+        pt.y = clientY;
+        return pt.matrixTransform(svg.getScreenCTM().inverse());
+      }
+
+      // Brushing through the hay pushes straws along with the pointer.
+      function push(x, y, mx, my, speed) {
+        const R = 70;
+        for (const s of straws) {
+          const ox = s.x - x, oy = s.y - y;
+          if (Math.abs(ox) > R || Math.abs(oy) > R) continue;
+          const dist = Math.hypot(ox, oy) || 1;
+          if (dist > R) continue;
+          const f = (1 - dist / R) * speed;
+          s.vx += (mx / speed) * f * 7 + (ox / dist) * f * 3;
+          s.vy += (my / speed) * f * 7 + (oy / dist) * f * 3;
+          s.vr += (mx * oy - my * ox > 0 ? 1 : -1) * f * 9;
+          wake(s);
+        }
+        // Brushing sideways also rocks the whole stack a little.
+        nudge(-mx * 0.03);
+      }
+
+      if (!calm) {
+        let px = null, py = null;
+        svg.addEventListener('pointerleave', () => { px = py = null; });
+        svg.addEventListener('pointermove', e => {
+          const p = toSvg(e.clientX, e.clientY);
+          if (px !== null) {
+            const mx = p.x - px, my = p.y - py;
+            const speed = Math.min(40, Math.hypot(mx, my));
+            if (speed > 0.5) push(p.x, p.y, mx, my, speed);
+          }
+          px = p.x;
+          py = p.y;
+        });
+      }
 
       // ─── Clicking the needle flies through its eye into the photographs ───
 
@@ -199,7 +292,7 @@
         pt.y = EYE_Y;
         const eye = pt.matrixTransform(ctm);
         const k = Math.hypot(ctm.a, ctm.b);                      // screen pixels per needle unit
-        const tilt = Math.atan2(ctm.b, ctm.a) * 180 / Math.PI;   // the needle's lean on screen
+        const tilt = Math.atan2(ctm.b, ctm.a) * 180 / Math.PI;   // the needle's turn on screen
 
         // A copy of the needle drawn over the page, which the camera zooms into.
         const overlay = el('svg', { class: 'eye-zoom', 'aria-hidden': 'true' });
@@ -218,7 +311,7 @@
         function frame(now) {
           const t = Math.min(1, (now - t0) / T);
           const s = Math.pow(sMax, t * t);              // speeds up all the way in, never slows at the end
-          const a = tilt * Math.max(0, 1 - t * 2);      // stands fully upright by halfway
+          const a = tilt * Math.max(0, 1 - t * 2);      // turns upright by halfway
           zoomed.setAttribute('transform',
             `translate(${eye.x.toFixed(1)} ${eye.y.toFixed(1)}) rotate(${a.toFixed(2)}) scale(${(k * s).toFixed(3)}) translate(0 ${-EYE_Y})`);
           if (t < 1) return requestAnimationFrame(frame);
@@ -241,6 +334,7 @@
         if (!e.persisted) return;
         document.querySelectorAll('.eye-zoom, .eye-cover').forEach(o => o.remove());
         sword.style.visibility = '';
+        reveal(false);
       });
     </script>
 

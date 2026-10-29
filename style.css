@@ -213,22 +213,25 @@ body.home {
   color: var(--schist);
 }
 
-/* The stack is a still backdrop; only the needle answers the pointer. */
 .straw { stroke-linecap: round; }
 .hay-layer { pointer-events: none; }
 
+/* Finding the needle fades the hay with one veil laid over the stack,
+   rather than fading thousands of straws one by one. */
+.hay-veil {
+  fill: var(--straw);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.25s ease;
+}
+
+.haystack.found .hay-veil { opacity: 0.72; }
+
+/* No browser focus box around the needle; when found it casts a soft shadow instead. */
 .needle-link { outline: none; -webkit-tap-highlight-color: transparent; cursor: pointer; }
 .needle-hit { fill: transparent; }
-
-/* Hovering draws the needle a little way out of the stack, like a sword from a stone. */
-.sword { transition: transform 0.45s cubic-bezier(.2, .7, .3, 1); }
-.needle-link:hover .sword,
-.needle-link:focus-visible .sword { transform: translateY(-9px); }
-.needle-link:focus-visible .sword { filter: drop-shadow(0 0 4px rgba(47, 84, 112, 0.55)); }
-
-@media (prefers-reduced-motion: reduce) {
-  .sword { transition: none; }
-}
+.sword { pointer-events: none; }
+.haystack.found .sword { filter: drop-shadow(0 2px 2px rgba(35, 40, 28, 0.35)); }
 
 /* The zoom through the eye is drawn over the whole page. */
 .eye-zoom {
