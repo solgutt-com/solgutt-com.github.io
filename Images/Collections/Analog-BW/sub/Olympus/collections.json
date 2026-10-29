@@ -3,6 +3,32 @@
   "subtitle": "Behind the scenes.",
   "description": "A camera I found in my house.",
   "cover": "",
-  "order": 1,
-  "type": "gallery"
+  "order": 2,
+  "type": "gallery",
+  "photo_order": [
+    "Olympus_1.jpg",
+    "Olympus_2.jpg",
+    "Olympus_3.jpg",
+    "Olympus_4.jpg",
+    "Olympus_5.jpg",
+    "Olympus_6.jpg",
+    "Olympus_7.jpg",
+    "Olympus_8.jpg",
+    "Olympus_9.jpg",
+    "Olympus_10.jpg",
+    "Olympus_11.jpg"
+  ],
+  "captions": {
+    "Olympus_1.jpg": "Olympus 01",
+    "Olympus_2.jpg": "Olympus 02",
+    "Olympus_3.jpg": "Olympus 03",
+    "Olympus_4.jpg": "Olympus 04",
+    "Olympus_5.jpg": "Olympus 05",
+    "Olympus_6.jpg": "Olympus 06",
+    "Olympus_7.jpg": "Olympus 07",
+    "Olympus_8.jpg": "Olympus 08",
+    "Olympus_9.jpg": "Olympus 09",
+    "Olympus_10.jpg": "Olympus 10",
+    "Olympus_11.jpg": "Olympus 11"
+  }
 }

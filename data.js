@@ -1728,19 +1728,13 @@ const collections = [
     "order": 2,
     "type": "parent",
     "path": "Images/Collections/Analog-BW",
+    "preview": [
+      "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_1.jpeg",
+      "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_7SalomonGuttman-0928-24-Large.jpeg",
+      "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_2.jpg",
+      "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_NL_M&W_BW.jpg"
+    ],
     "parent": null
-  },
-  {
-    "id": "Olympus",
-    "title": "Olympus",
-    "subtitle": "Behind the scenes.",
-    "description": "A camera I found in my house.",
-    "cover": "",
-    "order": 1,
-    "type": "gallery",
-    "path": "Images/Collections/Analog-BW/sub/Olympus",
-    "photos": [],
-    "parent": "Analog-BW"
   },
   {
     "id": "EOS500",
@@ -1748,7 +1742,7 @@ const collections = [
     "subtitle": "Photos mostly on purpose.",
     "description": "First analog expeirence. Sponsored by Davide Orbitello and his kindness.",
     "cover": "",
-    "order": 2,
+    "order": 1,
     "type": "gallery",
     "path": "Images/Collections/Analog-BW/sub/EOS500",
     "photos": [
@@ -1815,6 +1809,63 @@ const collections = [
       {
         "src": "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_8PT_1AncientTree_BW.jpg",
         "caption": "Not_EOS_500_16"
+      }
+    ],
+    "parent": "Analog-BW"
+  },
+  {
+    "id": "Olympus",
+    "title": "Olympus",
+    "subtitle": "Behind the scenes.",
+    "description": "A camera I found in my house.",
+    "cover": "",
+    "order": 2,
+    "type": "gallery",
+    "path": "Images/Collections/Analog-BW/sub/Olympus",
+    "photos": [
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_1.jpg",
+        "caption": "Olympus 01"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_2.jpg",
+        "caption": "Olympus 02"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_3.jpg",
+        "caption": "Olympus 03"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_4.jpg",
+        "caption": "Olympus 04"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_5.jpg",
+        "caption": "Olympus 05"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_6.jpg",
+        "caption": "Olympus 06"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_7.jpg",
+        "caption": "Olympus 07"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_8.jpg",
+        "caption": "Olympus 08"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_9.jpg",
+        "caption": "Olympus 09"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_10.jpg",
+        "caption": "Olympus 10"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_11.jpg",
+        "caption": "Olympus 11"
       }
     ],
     "parent": "Analog-BW"

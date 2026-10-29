@@ -4,5 +4,11 @@
   "description": "A collection of analog black and white and color photographs.",
   "cover": "",
   "order": 2,
-  "type": "parent"
+  "type": "parent",
+  "preview": [
+    "sub/EOS500/Photos/BW_1.jpeg",
+    "sub/EOS500/Photos/BW_7SalomonGuttman-0928-24-Large.jpeg",
+    "sub/Olympus/Photos/Olympus_2.jpg",
+    "sub/plastic_reusable_disposable/Photos/BW_NL_M&W_BW.jpg"
+  ]
 }
