@@ -21,7 +21,11 @@
     "Olympus_strip_2.jpg",
     "Olympus_strip_3.jpg",
     "Olympus_strip_4.jpg",
-    "Olympus_details.jpg"
+    "Olympus_details.jpg",
+    "Olympus_details_1.jpg",
+    "Olympus_details_2.jpg",
+    "Olympus_details_3.jpg",
+    "Olympus_details_4.jpg"
   ],
   "captions": {
     "Olympus_1.jpg": "Olympus 01",
@@ -39,6 +43,10 @@
     "Olympus_strip_2.jpg": "Olympus strip 2",
     "Olympus_strip_3.jpg": "Olympus strip 3",
     "Olympus_strip_4.jpg": "Olympus strip 4",
-    "Olympus_details.jpg": "Olympus details"
+    "Olympus_details.jpg": "Olympus details",
+    "Olympus_details_1.jpg": "Olympus details 1",
+    "Olympus_details_2.jpg": "Olympus details 2",
+    "Olympus_details_3.jpg": "Olympus details 3",
+    "Olympus_details_4.jpg": "Olympus details 4"
   }
 }
