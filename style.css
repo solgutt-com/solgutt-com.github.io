@@ -10,6 +10,7 @@
   --ink:         #23281C;
   --schist:      #5A5843;
   --steel:       #2F5470;
+  --olive:       #6B7550;   /* the needle */
   --rule:        rgba(35, 40, 28, 0.22);
 
   --dark:        #1D2117;
@@ -281,6 +282,18 @@ body.home {
 .page-head .lede { max-width: 46ch; }
 
 /* ─── Fotos: collection list ─── */
+
+/* A thin rounded olive frame around the window, in the needle's colour,
+   as if still looking out through its eye. */
+body.framed::after {
+  content: '';
+  position: fixed;
+  inset: 10px;
+  border: 2px solid var(--olive);
+  border-radius: 22px;
+  pointer-events: none;
+  z-index: 5;
+}
 .collections { list-style: none; }
 
 .collection-row {
@@ -732,6 +745,7 @@ body.darkroom {
 }
 
 @media (max-width: 560px) {
+  body.framed::after { inset: 6px; border-radius: 16px; }
   .masthead { flex-wrap: wrap; row-gap: 12px; }
   .nav { margin-left: 0; }
   .viewer-bar { grid-template-columns: 1fr auto; }

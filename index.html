@@ -74,19 +74,18 @@
         });
       }
 
-      // ─── Shared paints: hay shading and the needle's olive-silver ───
+      // ─── Shared paints: hay shading and the needle's matte olive ───
 
       const defs = el('defs', {});
       defs.innerHTML = `
         <linearGradient id="hay-shade" x1="0" y1="0" x2="0" y2="1">
           <stop offset="0" stop-color="#C3A55C"/><stop offset="1" stop-color="#94763A"/>
         </linearGradient>
-        <linearGradient id="olive-silver" x1="0" y1="0" x2="1" y2="0">
-          <stop offset="0" stop-color="#3B4030"/>
-          <stop offset="0.3" stop-color="#8F947D"/>
-          <stop offset="0.5" stop-color="#E4E6DA"/>
-          <stop offset="0.7" stop-color="#9DA28B"/>
-          <stop offset="1" stop-color="#363B2C"/>
+        <linearGradient id="olive" x1="0" y1="0" x2="1" y2="0">
+          <stop offset="0" stop-color="#4A5233"/>
+          <stop offset="0.45" stop-color="#6B7550"/>
+          <stop offset="0.55" stop-color="#7A845D"/>
+          <stop offset="1" stop-color="#4A5233"/>
         </linearGradient>`;
       svg.append(defs);
 
@@ -126,7 +125,7 @@
       narrow.addEventListener('change', fit);
       fit();
 
-      // ─── The needle: a sharp olive-silver blade, hidden somewhere new on every visit ───
+      // ─── The needle: a sharp olive blade, hidden somewhere new on every visit ───
 
       const LEN = 120;                      // eye end to point
       const HALF_W = 2.6;                   // half the shaft's width at the head
@@ -144,7 +143,7 @@
         g.append(el('path', {
           d: `M${-HALF_W} ${HALF_W} A${HALF_W} ${HALF_W} 0 0 1 ${HALF_W} ${HALF_W}`
            + ` L${HALF_W * 0.78} ${LEN * 0.8} L0 ${LEN} L${-HALF_W * 0.78} ${LEN * 0.8} Z`,
-          fill: 'url(#olive-silver)', stroke: '#2E3226', 'stroke-width': 0.4
+          fill: 'url(#olive)', stroke: '#3C432A', 'stroke-width': 0.4
         }));
         const eye = el('ellipse', { cx: 0, cy: EYE_Y, rx: EYE_RX, ry: EYE_RY });
         eye.style.fill = 'var(--straw)';
@@ -301,17 +300,22 @@
         document.body.append(overlay);
         sword.style.visibility = 'hidden';
 
+        // The needle levels out to lie flat, turning whichever way is shorter.
+        const level = tilt > 0 ? 90 : -90;
+
         // Zoom until the straw-coloured eye covers every corner of the screen,
-        // which is the colour the photographs page opens on.
+        // which is the colour the photographs page opens on. Lying flat, the eye's
+        // long side runs across the screen and its short side up and down.
         const dx = Math.max(eye.x, innerWidth - eye.x), dy = Math.max(eye.y, innerHeight - eye.y);
-        const sMax = 1.06 * Math.hypot(dx / (EYE_RX * k), dy / (EYE_RY * k));
+        const sMax = 1.06 * Math.hypot(dx / (EYE_RY * k), dy / (EYE_RX * k));
         const T = 1000;
         const t0 = performance.now();
 
         function frame(now) {
           const t = Math.min(1, (now - t0) / T);
           const s = Math.pow(sMax, t * t);              // speeds up all the way in, never slows at the end
-          const a = tilt * Math.max(0, 1 - t * 2);      // turns upright by halfway
+          const turn = Math.min(1, t * 2);
+          const a = tilt + (level - tilt) * turn * (2 - turn);   // lies flat by halfway, easing in
           zoomed.setAttribute('transform',
             `translate(${eye.x.toFixed(1)} ${eye.y.toFixed(1)}) rotate(${a.toFixed(2)}) scale(${(k * s).toFixed(3)}) translate(0 ${-EYE_Y})`);
           if (t < 1) return requestAnimationFrame(frame);
