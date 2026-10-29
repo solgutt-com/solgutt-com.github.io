@@ -15,6 +15,19 @@
 ### Adding photos now
 - Run `python3 build.py`, then `python3 make_thumbs.py` (only makes thumbnails for new or changed photos)
 
+### Later the same day
+- Homepage settled on a dense stack whose straws bounce away from the cursor, with a matte olive needle hidden at a new spot and angle on every visit; clicking it levels the needle sideways and zooms through its eye into Fotos
+- Two typefaces used consistently: Archivo at one condensed width (800 / 500) and Spectral regular / italic
+- Fewer words: no gallery or photo counts, no description line under collection titles
+- Olive replaces the blue accent; Fotos has a thin rounded olive frame around the window
+
+### Editor for ordering
+- `python3 edit.py` opens a local editor in the browser (only on this computer, never on the live site)
+- Drag collections and galleries into order, drag photos within a gallery, edit captions, star a cover
+- Save writes the right `collections.json` files, rebuilds `data.js` and makes missing thumbnails; then `git push` to publish
+- Replaces the copy-and-paste `reorder.html`
+- `build.py` gained `collect_trees()` so the editor can read the same structure the build uses (output unchanged)
+
 ---
 
 ## 2026-05-17

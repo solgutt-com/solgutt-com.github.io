@@ -62,6 +62,7 @@ def run():
     total = sum(os.path.getsize(thumb_path(s)) for s in srcs if os.path.exists(thumb_path(s)))
     print(f"{results.count('made')} made, {results.count('skip')} up to date, "
           f"{total / 1e6:.1f} MB of thumbnails in {OUT_ROOT}/")
+    return results.count('made')
 
 
 if __name__ == "__main__":

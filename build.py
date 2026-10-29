@@ -150,13 +150,13 @@ def flatten(node, parent_id=None):
     return result
 
 
-def build_data_js():
+def collect_trees():
+    """Scan every top-level collection into a nested tree, in display order. None if the folder is missing."""
     root             = os.path.dirname(os.path.abspath(__file__))
     collections_path = os.path.join(root, COLLECTIONS_ROOT)
 
     if not os.path.isdir(collections_path):
-        print(f"Error: {COLLECTIONS_ROOT} not found")
-        return
+        return None
 
     trees = []
     for name in sorted(os.listdir(collections_path)):
@@ -164,6 +164,16 @@ def build_data_js():
         if os.path.isdir(folder_path):
             trees.append(scan_collection(folder_path, COLLECTIONS_ROOT + "/" + name))
     trees.sort(key=lambda x: (x["order"], x["id"]))
+    return trees
+
+
+def build_data_js():
+    root  = os.path.dirname(os.path.abspath(__file__))
+    trees = collect_trees()
+
+    if trees is None:
+        print(f"Error: {COLLECTIONS_ROOT} not found")
+        return
 
     all_nodes = []
     for tree in trees:
