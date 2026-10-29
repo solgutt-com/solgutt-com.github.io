@@ -66,12 +66,18 @@ def read_meta(folder):
             raise ValueError(f"{os.path.relpath(path, ROOT)} has a formatting error ({e}). Fix it before saving.")
 
 
-def write_meta(folder, changes):
+def write_meta(folder, changes, remove=()):
     meta = read_meta(folder)
     meta.update(changes)
+    for key in remove:
+        meta.pop(key, None)
     with open(os.path.join(folder, "collections.json"), "w", encoding="utf-8") as f:
         json.dump(meta, f, indent=2, ensure_ascii=False)
         f.write("\n")
+
+
+def all_photos(node):
+    return node.get("photos", []) + [p for c in node.get("children", []) for p in all_photos(c)]
 
 
 def save(request):
@@ -102,6 +108,19 @@ def save(request):
         if cover is not None and (cover == "" or cover in files):
             changes["cover"] = cover
         write_meta(folder, changes)
+
+    if "preview" in request:
+        if node["path"] == build.COLLECTIONS_ROOT:
+            raise ValueError("Choose Fotos photos inside a collection, not on the Fotos page itself.")
+        chosen = request["preview"][:4]
+        inside = {p["src"] for p in all_photos(node)}
+        if any(src not in inside for src in chosen):
+            raise ValueError("Some chosen photos are no longer in this collection. Reload the editor.")
+        prefix = node["path"] + "/"
+        if chosen:
+            write_meta(folder_for(node["path"]), {"preview": [src[len(prefix):] for src in chosen]})
+        else:
+            write_meta(folder_for(node["path"]), {}, remove=("preview",))
 
     build.build_data_js()
     return make_thumbs.run()
@@ -244,6 +263,19 @@ EDITOR = r"""<!DOCTYPE html>
                 font-family: var(--serif); font-style: italic; font-size: 14px; color: var(--ink); cursor: text; }
   .card input.changed { background: #EEE3BC; }
   .card.is-cover { border-color: var(--olive); }
+
+  section + section { margin-top: 40px; }
+  h3 { font-family: var(--sans); font-weight: 800; font-size: 22px; margin-bottom: 4px; }
+  .slots { display: grid; grid-template-columns: repeat(4, minmax(0, 170px)); gap: 14px; }
+  .slots .card.auto { opacity: 0.55; cursor: default; }
+  .slots .empty { aspect-ratio: 4 / 3; border: 2px dashed var(--rule); border-radius: 6px; }
+  .slot-actions { display: flex; gap: 16px; align-items: baseline; margin-top: 12px; font-family: var(--sans); }
+  .slot-actions button { color: var(--olive-ink); font-weight: 500; text-decoration: underline; }
+  .pool h4 { font-family: var(--sans); font-weight: 800; font-size: 15px; margin: 18px 0 6px; }
+  .pool .picks { display: grid; gap: 6px; grid-template-columns: repeat(auto-fill, minmax(92px, 1fr)); }
+  .pool button { border-radius: 4px; overflow: hidden; border: 3px solid transparent; }
+  .pool button[aria-pressed="true"] { border-color: var(--olive-ink); }
+  .pool img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; }
 </style>
 </head>
 <body>
@@ -334,6 +366,85 @@ EDITOR = r"""<!DOCTYPE html>
     else renderGallery(current);
   }
 
+  // The four photos a top-level collection shows on the Fotos page, worked out the
+  // same way the site does when nothing is chosen.
+  function autoPicks(node) {
+    const all = [];
+    const collect = n => { (n.photos || []).forEach(p => all.push(p)); (n.children || []).forEach(collect); };
+    collect(node);
+    const picks = [];
+    const add = p => { if (p && picks.length < 4 && !picks.includes(p)) picks.push(p); };
+    if (node.cover) add(firstPhoto(node));
+    (node.children || []).forEach(c => add(firstPhoto(c)));
+    const step = Math.max(1, Math.floor(all.length / 4));
+    for (let i = 0; i < all.length && picks.length < 4; i += step) add(all[i]);
+    return picks.map(p => p.src);
+  }
+
+  function fotosPicker(node) {
+    let chosen = (node.preview || []).slice();
+    const slots = h('div', { class: 'slots' });
+    const note = h('span', { class: 'hint' });
+    const reset = h('button', { type: 'button' }, 'Reset to automatic');
+    const pool = h('div', { class: 'pool' });
+    const poolButtons = [];
+
+    // Read the order back from the slots, in case they were dragged.
+    const syncFromSlots = () => {
+      if (chosen.length) chosen = [...slots.querySelectorAll('.card')].map(c => c.dataset.src);
+    };
+
+    function draw() {
+      const auto = !chosen.length;
+      const shown = auto ? autoPicks(node) : chosen;
+      const cards = shown.map(src => {
+        const remove = h('button', { type: 'button', title: 'Remove' }, '×');
+        const card = h('div', { class: 'card' + (auto ? ' auto' : ''), 'data-src': src, draggable: auto ? null : 'true' },
+          h('span', { class: 'num' }), auto ? null : h('div', { class: 'tools' }, remove), thumb(src));
+        remove.addEventListener('click', () => { syncFromSlots(); chosen = chosen.filter(s => s !== src); setDirty(true); draw(); });
+        return card;
+      });
+      const blanks = auto ? [] : Array.from({ length: 4 - chosen.length }, () => h('div', { class: 'empty' }));
+      slots.replaceChildren(...cards, ...blanks);
+      if (!auto) makeSortable(slots); else renumber(slots);
+      note.textContent = auto ? 'Automatic: the covers of the first galleries. Click photos below to choose your own.'
+                              : chosen.length + ' of 4 chosen. Drag to reorder.';
+      reset.hidden = auto;
+      poolButtons.forEach(b => b.setAttribute('aria-pressed', String(chosen.includes(b.dataset.src))));
+    }
+
+    reset.addEventListener('click', () => { chosen = []; setDirty(true); draw(); });
+
+    const group = n => {
+      if (n.photos && n.photos.length) {
+        const buttons = n.photos.map(p => {
+          const b = h('button', { type: 'button', 'data-src': p.src, title: p.caption || fileOf(p.src) }, thumb(p.src));
+          b.addEventListener('click', () => {
+            syncFromSlots();
+            if (chosen.includes(p.src)) chosen = chosen.filter(s => s !== p.src);
+            else if (chosen.length >= 4) { setStatus('Four are already chosen. Remove one first.', true); return; }
+            else chosen.push(p.src);
+            setDirty(true);
+            draw();
+          });
+          poolButtons.push(b);
+          return b;
+        });
+        pool.append(h('h4', {}, n.title), h('div', { class: 'picks' }, buttons));
+      }
+      (n.children || []).forEach(group);
+    };
+    group(node);
+    draw();
+
+    const section = h('section', {},
+      h('h3', {}, 'Shown on the Fotos page'),
+      h('p', { class: 'hint' }, 'The four photos next to ' + node.title + ' on the Fotos page.'),
+      slots, h('div', { class: 'slot-actions' }, note, reset));
+    section.readChoice = () => { syncFromSlots(); return chosen; };
+    return { section, pool };
+  }
+
   function renderParent(node) {
     const grid = h('div', { class: 'grid' });
     node.children.forEach(child => {
@@ -345,10 +456,20 @@ EDITOR = r"""<!DOCTYPE html>
       card.addEventListener('dblclick', () => open(child.path));
       grid.append(card);
     });
+    const isFotos = node.path === data.path;
+    const topLevel = data.children.includes(node);
+    const picker = topLevel && firstPhoto(node) ? fotosPicker(node) : null;
     panel.replaceChildren(
-      h('h2', {}, node.path === data.path ? 'Fotos page' : node.title),
-      h('p', { class: 'hint' }, 'Drag to set the order these appear in on the site. Double-click one to open it.'),
-      grid);
+      h('h2', {}, isFotos ? 'Fotos page' : node.title),
+      picker ? picker.section : null,
+      h('section', {},
+        picker ? h('h3', {}, 'Gallery order') : null,
+        h('p', { class: 'hint' }, isFotos
+          ? 'Drag to set the order of the collections on the Fotos page. Double-click one to open it and choose the photos it shows there.'
+          : 'Drag to set the order these appear in on the site. Double-click one to open it.'),
+        grid),
+      picker ? h('section', {}, h('h3', {}, 'All photos in ' + node.title), h('p', { class: 'hint' }, 'Click a photo to show it on the Fotos page; click again to take it off.'), picker.pool) : null);
+    panel.picker = picker;
     makeSortable(grid);
   }
 
@@ -402,7 +523,7 @@ EDITOR = r"""<!DOCTYPE html>
       card.addEventListener('drop', e => {
         e.preventDefault();
         card.classList.remove('over');
-        if (!dragging || card === dragging) return;
+        if (!dragging || card === dragging || dragging.parentNode !== grid) return;
         const cards = [...grid.children];
         grid.insertBefore(dragging, cards.indexOf(dragging) < cards.indexOf(card) ? card.nextSibling : card);
         renumber(grid);
@@ -418,6 +539,7 @@ EDITOR = r"""<!DOCTYPE html>
     const body = { path: current.path };
     if (current.type === 'parent') {
       body.children = [...grid.children].map(c => c.dataset.path);
+      if (panel.picker) body.preview = panel.picker.section.readChoice();
     } else {
       const cards = [...grid.children];
       body.photos = cards.map(c => c.dataset.file);

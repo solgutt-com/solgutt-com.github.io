@@ -64,7 +64,7 @@ def _list_images(directory):
 
 
 def _make_node(folder_name, meta, coll_type, site_rel_path):
-    return {
+    node = {
         "id":          folder_name,
         "title":       meta.get("title") or GALLERY_NAMES.get(folder_name, folder_name),
         "subtitle":    meta.get("subtitle", ""),
@@ -74,6 +74,10 @@ def _make_node(folder_name, meta, coll_type, site_rel_path):
         "type":        coll_type,
         "path":        site_rel_path,
     }
+    # Photos chosen to show on the Fotos page, stored relative to this folder.
+    if meta.get("preview"):
+        node["preview"] = [site_rel_path + "/" + p for p in meta["preview"]]
+    return node
 
 
 def scan_photos(photos_dir, site_rel_path, meta):

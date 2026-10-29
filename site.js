@@ -52,13 +52,14 @@ function coverPhoto(id) {
   return null;
 }
 
-// Up to `n` representative photos: the collection's own cover first, then the cover of
-// each sub-collection in order, then spread evenly across everything else.
+// Up to `n` representative photos: any chosen in the editor first, then the collection's
+// own cover, then the cover of each sub-collection in order, then spread evenly across the rest.
 function previewPhotos(id, n) {
   const c = byId(id);
   const all = photosUnder(id);
   const picks = [];
   const add = p => { if (p && picks.length < n && !picks.includes(p)) picks.push(p); };
+  (c.preview || []).forEach(src => add(all.find(p => p.src === src)));
   if (c.cover) add(coverPhoto(id));
   childrenOf(id).forEach(k => add(coverPhoto(k.id)));
   const step = Math.max(1, Math.floor(all.length / n));
