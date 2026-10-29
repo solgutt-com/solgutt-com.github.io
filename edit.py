@@ -7,10 +7,11 @@ Usage:
 Drag collections and galleries into the order they appear on the site, drag photos
 within a gallery, edit captions and pick each gallery's cover. Saving writes the
 right collections.json files, rebuilds data.js and makes any missing thumbnails.
-It runs only on this computer; publish as usual with `git push`. Ctrl+C stops it.
+It runs only on this computer. Publish sends the saved changes to solgutt.com
+(it commits them and runs `git push`). Ctrl+C stops it.
 """
 
-import os, json, threading, webbrowser
+import os, json, subprocess, threading, webbrowser
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
@@ -22,6 +23,9 @@ PORT        = 8124
 ORIGINS     = {f"http://127.0.0.1:{PORT}", f"http://localhost:{PORT}"}
 COLLECTIONS = os.path.realpath(os.path.join(ROOT, build.COLLECTIONS_ROOT))
 save_lock   = threading.Lock()
+
+# What Publish commits: the photos, their collections.json files, data.js and thumbnails.
+PUBLISH_PATHS = ["Images", "data.js", "thumbs"]
 
 
 def tree():
@@ -103,6 +107,36 @@ def save(request):
     return make_thumbs.run()
 
 
+def git(*args):
+    """Run git in the site folder; never stop to ask for a password, fail with a readable message instead."""
+    result = subprocess.run(["git", *args], cwd=ROOT, capture_output=True, text=True, timeout=300,
+                            env={**os.environ, "GIT_TERMINAL_PROMPT": "0"})
+    if result.returncode != 0:
+        detail = (result.stderr or result.stdout).strip().splitlines()
+        last = detail[-1] if detail else f"git {args[0]} failed"
+        if "could not read" in last or "Authentication failed" in last or "403" in last:
+            raise ValueError("GitHub didn't accept the saved login. Push once from the Terminal app to sign in again.")
+        raise ValueError(last)
+    return result.stdout.strip()
+
+
+def publish():
+    branch = git("rev-parse", "--abbrev-ref", "HEAD")
+    if branch != "main":
+        raise ValueError(f"solgutt.com publishes from main, but this folder is on '{branch}'. Switch to main first.")
+    git("add", "-A", "--", *PUBLISH_PATHS)
+    changed = git("diff", "--cached", "--name-only", "--", *PUBLISH_PATHS).splitlines()
+    if changed:
+        git("commit", "-m", "Update collections from the editor", "--", *PUBLISH_PATHS)
+    git("fetch", "-q", "origin", "main")
+    if git("rev-list", "--count", "HEAD..origin/main") != "0":
+        raise ValueError("GitHub has changes this computer doesn't. Pull them first (git pull), then publish.")
+    if git("rev-list", "--count", "origin/main..HEAD") == "0":
+        return {"published": False, "files": 0}
+    git("push", "origin", "main")
+    return {"published": True, "files": len(changed)}
+
+
 class Handler(SimpleHTTPRequestHandler):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, directory=ROOT, **kwargs)
@@ -134,15 +168,18 @@ class Handler(SimpleHTTPRequestHandler):
             super().do_GET()
 
     def do_POST(self):
-        # Only the editor page itself may save, never another website open in the browser.
-        if self.path != "/__save" or self.headers.get("Origin") not in ORIGINS:
+        # Only the editor page itself may save or publish, never another website open in the browser.
+        if self.path not in ("/__save", "/__publish") or self.headers.get("Origin") not in ORIGINS:
             return self.send_json(403, {"ok": False, "error": "Not allowed."})
         try:
-            request = json.loads(self.rfile.read(int(self.headers.get("Content-Length", 0))))
+            request = json.loads(self.rfile.read(int(self.headers.get("Content-Length", 0))) or b"{}")
             with save_lock:
-                made = save(request)
-            self.send_json(200, {"ok": True, "thumbsMade": made, "tree": tree()})
-        except (ValueError, OSError, json.JSONDecodeError) as e:
+                if self.path == "/__save":
+                    made = save(request)
+                    self.send_json(200, {"ok": True, "thumbsMade": made, "tree": tree()})
+                else:
+                    self.send_json(200, {"ok": True, **publish()})
+        except (ValueError, OSError, json.JSONDecodeError, subprocess.TimeoutExpired) as e:
             self.send_json(400, {"ok": False, "error": str(e)})
 
 
@@ -173,6 +210,8 @@ EDITOR = r"""<!DOCTYPE html>
   header a { color: var(--olive-ink); font-weight: 500; }
   #save { font-weight: 800; background: var(--olive-ink); color: var(--straw); padding: 8px 20px; border-radius: 6px; }
   #save:disabled { background: var(--straw-deep); color: var(--schist); cursor: default; }
+  #publish { font-weight: 800; border: 2px solid var(--olive-ink); color: var(--olive-ink); padding: 6px 18px; border-radius: 6px; }
+  #publish:disabled { opacity: 0.5; cursor: default; }
 
   .layout { display: grid; grid-template-columns: 260px 1fr; min-height: 0; }
   nav { overflow-y: auto; padding: 16px 12px 40px; border-right: 1px solid var(--rule); font-family: var(--sans); font-weight: 500; }
@@ -213,6 +252,7 @@ EDITOR = r"""<!DOCTYPE html>
   <p id="status">Loading…</p>
   <a href="/index.html" target="_blank">Preview the site</a>
   <button id="save" disabled>Save</button>
+  <button id="publish">Publish</button>
 </header>
 <div class="layout">
   <nav id="tree" aria-label="Collections"></nav>
@@ -343,7 +383,7 @@ EDITOR = r"""<!DOCTYPE html>
     });
     panel.replaceChildren(
       h('h2', {}, node.title),
-      h('p', { class: 'hint' }, 'Drag to reorder, or use ⇤ ⇥ to send a photo to the start or end. ★ makes it the cover shown on the Fotos and collection pages.'),
+      h('p', { class: 'hint' }, 'Drag to reorder, or use ⇤ ⇥ to send a photo to the start or end. ★ makes it this gallery\'s cover: it stands for the gallery on its collection page, and on the Fotos page when the gallery is one of its collection\'s first four.'),
       grid);
     makeSortable(grid);
   }
@@ -394,7 +434,7 @@ EDITOR = r"""<!DOCTYPE html>
       if (!out.ok) throw new Error(out.error);
       data = out.tree;
       open(current.path, true);
-      setStatus('Saved. The site is rebuilt' + (out.thumbsMade ? ' and ' + out.thumbsMade + ' new thumbnails were made' : '') + '. Preview it, then git push to publish.');
+      setStatus('Saved. The site is rebuilt' + (out.thumbsMade ? ' and ' + out.thumbsMade + ' new thumbnails were made' : '') + '. Preview it, then Publish.');
     } catch (err) {
       setStatus('Not saved: ' + err.message, true);
       saveBtn.disabled = false;
@@ -402,6 +442,26 @@ EDITOR = r"""<!DOCTYPE html>
   }
 
   saveBtn.addEventListener('click', save);
+
+  // ─── Publishing: commit the saved changes and push them to solgutt.com ───
+
+  const publishBtn = document.getElementById('publish');
+  publishBtn.addEventListener('click', async () => {
+    if (dirty) { setStatus('Save your changes first, then publish.', true); return; }
+    if (!confirm('Publish your saved changes to solgutt.com?')) return;
+    publishBtn.disabled = true;
+    setStatus('Publishing to solgutt.com…');
+    try {
+      const res = await fetch('/__publish', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{}' });
+      const out = await res.json();
+      if (!out.ok) throw new Error(out.error);
+      setStatus(out.published ? 'Published. solgutt.com updates in a minute or two.' : 'Nothing new to publish: solgutt.com is already up to date.');
+    } catch (err) {
+      setStatus('Not published: ' + err.message, true);
+    } finally {
+      publishBtn.disabled = false;
+    }
+  });
   document.addEventListener('keydown', e => { if ((e.metaKey || e.ctrlKey) && e.key === 's') { e.preventDefault(); if (dirty) save(); } });
   addEventListener('beforeunload', e => { if (dirty) e.preventDefault(); });
 

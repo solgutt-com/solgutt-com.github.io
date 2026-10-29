@@ -36,15 +36,31 @@ function thumbImg(p, attrs) {
   return img;
 }
 
-// Up to `n` representative photos: the cover first, then one from each child,
-// then spread evenly across everything else.
+// The photo that stands for a collection: its starred cover, otherwise the cover
+// of its first sub-collection that has one, otherwise its first photo.
+function coverPhoto(id) {
+  const c = byId(id);
+  if (c.cover) {
+    const starred = photosUnder(id).find(p => p.src.endsWith('/' + c.cover));
+    if (starred) return starred;
+  }
+  if (c.photos) return c.photos[0] || null;
+  for (const k of childrenOf(id)) {
+    const p = coverPhoto(k.id);
+    if (p) return p;
+  }
+  return null;
+}
+
+// Up to `n` representative photos: the collection's own cover first, then the cover of
+// each sub-collection in order, then spread evenly across everything else.
 function previewPhotos(id, n) {
   const c = byId(id);
   const all = photosUnder(id);
   const picks = [];
   const add = p => { if (p && picks.length < n && !picks.includes(p)) picks.push(p); };
-  if (c.cover) add(all.find(p => p.src.endsWith('/' + c.cover)));
-  childrenOf(id).forEach(k => add(photosUnder(k.id)[0]));
+  if (c.cover) add(coverPhoto(id));
+  childrenOf(id).forEach(k => add(coverPhoto(k.id)));
   const step = Math.max(1, Math.floor(all.length / n));
   for (let i = 0; i < all.length && picks.length < n; i += step) add(all[i]);
   return picks;
