@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..100,500..800&family=Spectral:ital,wght@0,400;1,400&display=swap');
 
-/* Haystack: straw page, olive-black ink, one steel needle.
+/* Haystack: straw page, olive-black ink, one olive needle.
    Galleries invert into a dark "darkroom" so photographs sit on a quiet ground. */
 :root {
   --straw:       #E3D19B;
@@ -9,7 +9,7 @@
   --hay-2:       #9A7B36;
   --ink:         #23281C;
   --schist:      #5A5843;
-  --steel:       #2F5470;
+  --olive-ink:   #535C3A;   /* accent for links and hover: the needle's olive, deep enough to read */
   --olive:       #6B7550;   /* the needle */
   --rule:        rgba(35, 40, 28, 0.22);
 
@@ -59,7 +59,7 @@ img { display: block; max-width: 100%; }
 a { color: inherit; }
 
 :focus-visible {
-  outline: 2px solid var(--steel);
+  outline: 2px solid var(--olive-ink);
   outline-offset: 3px;
 }
 
@@ -104,7 +104,7 @@ button {
   border-bottom: 2px solid transparent;
 }
 
-.nav a:hover { color: var(--steel); }
+.nav a:hover { color: var(--olive-ink); }
 .nav a[aria-current="page"] { border-bottom-color: currentColor; }
 
 /* ─── Shared headings ─── */
@@ -135,12 +135,12 @@ button {
 }
 
 .trail a { text-decoration: none; }
-.trail a:hover { color: var(--steel); text-decoration: underline; }
+.trail a:hover { color: var(--olive-ink); text-decoration: underline; }
 .trail-sep { opacity: 0.5; }
 .trail [aria-current] { color: var(--ink); }
 
 .text-link {
-  color: var(--steel);
+  color: var(--olive-ink);
   text-decoration: underline;
   text-decoration-thickness: 1px;
   text-underline-offset: 3px;
@@ -284,13 +284,15 @@ body.home {
 /* ─── Fotos: collection list ─── */
 
 /* A thin rounded olive frame around the window, in the needle's colour,
-   as if still looking out through its eye. */
+   as if still looking out through its eye. The straw-coloured margin outside it
+   hides the page as it scrolls past, so text never runs across the border. */
 body.framed::after {
   content: '';
   position: fixed;
   inset: 10px;
   border: 2px solid var(--olive);
   border-radius: 22px;
+  box-shadow: 0 0 0 100vmax var(--straw);
   pointer-events: none;
   z-index: 5;
 }
@@ -317,7 +319,7 @@ body.framed::after {
   margin-bottom: 10px;
 }
 
-a.collection-link:hover .collection-title { color: var(--steel); }
+a.collection-link:hover .collection-title { color: var(--olive-ink); }
 
 
 .thumbs {
@@ -384,7 +386,7 @@ a.collection-link:hover .thumbs img { filter: contrast(1.06) saturate(1.08); }
   line-height: 1.15;
 }
 
-a.card-link:hover .card-title { color: var(--steel); }
+a.card-link:hover .card-title { color: var(--olive-ink); }
 
 .card-subtitle { font-style: italic; color: var(--schist); line-height: 1.4; }
 
@@ -562,7 +564,7 @@ body.darkroom {
 
 .film-list button:hover { color: var(--ink); }
 
-.film-list button[aria-current="true"] { color: var(--steel); }
+.film-list button[aria-current="true"] { color: var(--olive-ink); }
 
 .film-list button[aria-current="true"]::before {
   content: '';
@@ -599,7 +601,7 @@ body.darkroom {
 }
 
 .contact dd a { text-decoration: none; border-bottom: 1px solid var(--rule); }
-.contact dd a:hover { color: var(--steel); border-bottom-color: currentColor; }
+.contact dd a:hover { color: var(--olive-ink); border-bottom-color: currentColor; }
 
 .cv { max-width: 68ch; }
 
@@ -691,7 +693,7 @@ body.darkroom {
 .country-list ul { list-style: none; display: grid; gap: 2px; }
 .country-list a { text-decoration: none; }
 .country-list a:hover,
-.country-list a.is-hover { color: var(--steel); text-decoration: underline; }
+.country-list a.is-hover { color: var(--olive-ink); text-decoration: underline; }
 
 .map-wrap { position: relative; }
 #map-svg { display: block; width: 100%; height: auto; }
@@ -707,7 +709,7 @@ body.darkroom {
 
 .map-region:hover,
 .map-region.is-hover,
-.map-region:focus-visible { fill: var(--steel); outline: none; }
+.map-region:focus-visible { fill: var(--olive-ink); outline: none; }
 
 #map-tooltip {
   position: absolute;
