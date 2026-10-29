@@ -2,10 +2,11 @@
   "title": "As Ruínas no Meio",
   "subtitle": "Ruins in between the villages.",
   "description": "A collection of the stone ruins that are scattered through the country side.",
-  "cover": "",
+  "cover": "SolGutt - As Ruinas-ab.jpg",
   "order": 2,
   "type": "gallery",
   "photo_order": [
+    "SolGutt - As Ruinas-ab.jpg",
     "SolGutt - As Ruinas-001.JPG",
     "SolGutt - As Ruinas-002.jpg",
     "SolGutt - As Ruinas-0002.JPG",
@@ -30,7 +31,6 @@
     "SolGutt - As Ruinas-29.jpg",
     "SolGutt - As Ruinas-28.jpg",
     "SolGutt - As Ruinas-30.jpg",
-    "SolGutt - As Ruinas-ab.jpg",
     "SolGutt - As Ruinas-0003.JPG",
     "SolGutt - As Ruinas-z10.jpg"
   ],

@@ -17,7 +17,7 @@ const collections = [
     "title": "A Natureza",
     "subtitle": "The haystack deserves as much attention as the needle.",
     "description": "A collection of encounters with natural beauty in and around Cidadelhe.",
-    "cover": "",
+    "cover": "SolGutt - Cidadelhe Natureza-75.jpg",
     "order": 1,
     "type": "gallery",
     "path": "Images/Collections/Cidadelhe/sub/a_natureza",
@@ -222,11 +222,15 @@ const collections = [
     "title": "As Ruínas no Meio",
     "subtitle": "Ruins in between the villages.",
     "description": "A collection of the stone ruins that are scattered through the country side.",
-    "cover": "",
+    "cover": "SolGutt - As Ruinas-ab.jpg",
     "order": 2,
     "type": "gallery",
     "path": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio",
     "photos": [
+      {
+        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-ab.jpg",
+        "caption": "As Ruinas 025"
+      },
       {
         "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-001.JPG",
         "caption": "As Ruinas 01"
@@ -324,65 +328,12 @@ const collections = [
         "caption": "As Ruinas 024"
       },
       {
-        "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-ab.jpg",
-        "caption": "As Ruinas 025"
-      },
-      {
         "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-0003.JPG",
         "caption": "As Ruinas 026"
       },
       {
         "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-z10.jpg",
         "caption": "As Ruinas 027"
-      }
-    ],
-    "parent": "Cidadelhe"
-  },
-  {
-    "id": "na_quinta_sem_camera",
-    "title": "Na Quinta, Sem Camera",
-    "subtitle": "Field work photos",
-    "description": "A collection of photos from field work and odd jobs. Sometimes the phone is all you need to capture the moment. Just don't zoom in too close",
-    "cover": "",
-    "order": 3,
-    "type": "gallery",
-    "path": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera",
-    "photos": [
-      {
-        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/IMG_0021.jpg",
-        "caption": "Cebolas 00"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Projetos na Quinta-02.jpg",
-        "caption": "Vinhos 01"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Projetos na Quinta-03.jpg",
-        "caption": "Vinhos 02"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Projetos na Quinta-08.jpg",
-        "caption": "Casas 03"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-89.jpg",
-        "caption": "Cavalete 04"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-90.jpg",
-        "caption": "Cavalete 05"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-91.jpg",
-        "caption": "Cavalete 06"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-92.jpg",
-        "caption": "Cavalete 07"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Projetos na Quinta-01.jpg",
-        "caption": "Vinhos 08"
       }
     ],
     "parent": "Cidadelhe"
@@ -529,221 +480,12 @@ const collections = [
     "parent": "Cidadelhe"
   },
   {
-    "id": "aldeias_quintas_vales",
-    "title": "As Aldeias de Beira Alta",
-    "subtitle": "Villages of the region.",
-    "description": "Every village in Beira Alta has its own mysteries, weathered church towers, sun-baked villagers, and little cafes.",
-    "cover": "",
-    "order": 4,
-    "type": "gallery",
-    "path": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales",
-    "photos": [
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Bareira-02.jpg",
-        "caption": "Barreira 00"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Bareira-07.jpg",
-        "caption": "Barreira 01"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Bareira-05.jpg",
-        "caption": "Barreira 02"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Bareira-03.jpg",
-        "caption": "Barreira 03"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Bareira-04.jpg",
-        "caption": "Barreira 04"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Bareira-11.jpg",
-        "caption": "Barreira 05"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Bareira-01.jpg",
-        "caption": "Barreira 06"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Figueira-4.jpg",
-        "caption": "Castelo Rodrigo 00"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Figueira-1.jpg",
-        "caption": "Castelo Rodrigo 02"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Figueira-3.jpg",
-        "caption": "Castelo Rodrigo 01"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Figueira-6.jpg",
-        "caption": "Castelo Rodrigo 03"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Figueira-7.jpg",
-        "caption": "Castelo Rodrigo 04"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Figeuira 01.jpg",
-        "caption": "Figeuira de Castelo Rodrigo 00"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Figeuira 03.jpg",
-        "caption": "Figeuira de Castelo Rodrigo 01"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Figeuira 02.jpg",
-        "caption": "Figeuira de Castelo Rodrigo 02"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Figeuira 0.jpg",
-        "caption": "Figeuira de Castelo Rodrigo 03"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Gateira-16.jpg",
-        "caption": "Gateira 00"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Gateira-14.jpg",
-        "caption": "Gateira 01"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Gateira-15.jpg",
-        "caption": "Gateira 02"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Gateira-13.jpg",
-        "caption": "Gateira 03"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Gateira-10.jpg",
-        "caption": "Gateira 04"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Gateira-11.jpg",
-        "caption": "Gateira 05"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Gateira-12.jpg",
-        "caption": "Gateira 06"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Gateira-09.jpg",
-        "caption": "Gateira 07"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Gateira-04.jpg",
-        "caption": "Gateira 08"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Gateira-06.jpg",
-        "caption": "Gateira 09"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Gateira-01.jpg",
-        "caption": "Gateira 010"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Gateira-02.jpg",
-        "caption": "Gateira 011"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Juizo-15.jpg",
-        "caption": "Juizo 00"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Juizo-12.jpg",
-        "caption": "Juizo 01"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Juizo-14.jpg",
-        "caption": "Juizo 02"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Juizo-10.jpg",
-        "caption": "Juizo 03"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Juizo-09.jpg",
-        "caption": "Juizo 04"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Juizo-08.JPG",
-        "caption": "Juizo 05"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Juizo-06.jpg",
-        "caption": "Aldeas Juizo 06"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Juizo-04.jpg",
-        "caption": "Aldeas Juizo 04"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Juizo-01.jpg",
-        "caption": "Aldeas Juizo 01"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Juizo-02.jpg",
-        "caption": "Aldeas Juizo 02"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Cogula-5.jpg",
-        "caption": "Cogula 00"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Cogula-21.jpg",
-        "caption": "Cogula 02"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Cogula-3.jpg",
-        "caption": "Cogula 03"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Cogula-04.jpg",
-        "caption": "Cogula 04"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Cogula-05.jpg",
-        "caption": "Cogula 05"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt© - Longroiva First Visit Highlights-09.jpg",
-        "caption": "Longroiva 00"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Vale do Olmo-247.jpg",
-        "caption": "Perto Barca de Alva 00"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Vale do Olmo-015.jpg",
-        "caption": "Perto Barca de Alva 01"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Vale do Olmo-246.jpg",
-        "caption": "Perto Barca de Alva 02"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Vale do Olmo-242.jpg",
-        "caption": "Perto Barca de Alva 03"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Vale do Olmo-009.jpg",
-        "caption": "Perto Barca de Alva 04"
-      }
-    ],
-    "parent": "Cidadelhe"
-  },
-  {
     "id": "projetos_na_quinta",
     "title": "Projetos na Quinta",
     "subtitle": "Projects on the farm",
     "description": "Snapshots of projects developed with the Scave team in Cidadelhe",
     "cover": "",
-    "order": 5,
+    "order": 4,
     "type": "gallery",
     "path": "Images/Collections/Cidadelhe/sub/projetos_na_quinta",
     "photos": [
@@ -1036,7 +778,7 @@ const collections = [
     "subtitle": "Stangers that became friends.",
     "description": "Some serious characters.",
     "cover": "",
-    "order": 6,
+    "order": 5,
     "type": "gallery",
     "path": "Images/Collections/Cidadelhe/sub/amigos_do_portugal",
     "photos": [
@@ -1104,186 +846,12 @@ const collections = [
     "parent": "Cidadelhe"
   },
   {
-    "id": "projetos_professionais",
-    "title": "Projetos Profissionais",
-    "subtitle": "Professional Projects with amazing local businesses ",
-    "description": "Photos made for the Hotel Longroiva A Luxurious rural getaway https://www.hoteldelongroiva.com/en/ and O Refugio do Castelo (contact for rental details)",
-    "cover": "",
-    "order": 7,
-    "type": "gallery",
-    "path": "Images/Collections/Cidadelhe/sub/projetos_professionais",
-    "photos": [
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/BSolGutt - O Refugio do Castelo-065.JPG",
-        "caption": "O Refugio do Castelo 00"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/ASolGutt - O Refugio do Castelo-099.JPG",
-        "caption": "O Refugio do Castelo 01"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/ASolGutt - O Refugio do Castelo-030.JPG",
-        "caption": "O Refugio do Castelo 02"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt - O Refugio do Castelo-029.JPG",
-        "caption": "O Refugio do Castelo 03"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt - O Refugio do Castelo-002.JPG",
-        "caption": "O Refugio do Castelo 04"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/ASolGutt - O Refugio do Castelo-003.JPG",
-        "caption": "O Refugio do Castelo 05"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Hotel Suite Floor 2-1.jpg",
-        "caption": "Hotel de Longroiva 00"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Hotel Suite Floor 2-16.jpg",
-        "caption": "Hotel de Longroiva 02"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Longroiva First Visit Highlights-02.jpg",
-        "caption": "Hotel de Longroiva 03"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Longroiva First Visit Highlights-05.jpg",
-        "caption": "Hotel de Longroiva 04"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Longroiva First Visit Highlights-01.jpg",
-        "caption": "Hotel de Longroiva 05"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Longroiva First Visit Highlights-11.jpg",
-        "caption": "Hotel de Longroiva 06"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Porto Tonico-04.jpg",
-        "caption": "Hotel de Longroiva 07"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Longroiva First Visit Highlights-03.jpg",
-        "caption": "Hotel de Longroiva 08"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Hotel exterior-14.jpg",
-        "caption": "Hotel de Longroiva 09"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Hotel exterior-11.jpg",
-        "caption": "Hotel de Longroiva 010"
-      }
-    ],
-    "parent": "Cidadelhe"
-  },
-  {
-    "id": "ten_lives_festival",
-    "title": "Ten Lives Festival",
-    "subtitle": "A Regenerative Movement",
-    "description": "The pilot project of a committed and crazy group of people.",
-    "cover": "",
-    "order": 8,
-    "type": "gallery",
-    "path": "Images/Collections/Cidadelhe/sub/ten_lives_festival",
-    "photos": [
-      {
-        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1481.JPG",
-        "caption": "Ten Lives 00"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1578.JPG",
-        "caption": "Ten Lives 01"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1503.JPG",
-        "caption": "Ten Lives 02"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1629 Edited.jpg",
-        "caption": "Ten Lives 03"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1487.JPG",
-        "caption": "Ten Lives 04"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1491.JPG",
-        "caption": "Ten Lives 05"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1498.JPG",
-        "caption": "Ten Lives 06"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1606 2.JPG",
-        "caption": "Ten Lives 07"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1634.JPG",
-        "caption": "Ten Lives 08"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/Nathan_1.JPG",
-        "caption": "Ten Lives 09"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1609.JPG",
-        "caption": "Ten Lives 010"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1745.JPG",
-        "caption": "Ten Lives 011"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1627.JPG",
-        "caption": "Ten Lives 012"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1655.JPG",
-        "caption": "Ten Lives 013"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1673.JPG",
-        "caption": "Ten Lives 014"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1707.JPG",
-        "caption": "Ten Lives 015"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1823.JPG",
-        "caption": "Ten Lives 016"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1731.JPG",
-        "caption": "Ten Lives 017"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM2061.JPG",
-        "caption": "Ten Lives 018"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM2024.JPG",
-        "caption": "Ten Lives 019"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM2168.JPG",
-        "caption": "Ten Lives 020"
-      }
-    ],
-    "parent": "Cidadelhe"
-  },
-  {
     "id": "vale_do_olmo",
     "title": "Vale do Olmo",
     "subtitle": "A place to see the smile of plants",
     "description": "Helping friends manage their land and learning many new things along the way",
     "cover": "",
-    "order": 8,
+    "order": 6,
     "type": "gallery",
     "path": "Images/Collections/Cidadelhe/sub/vale_do_olmo",
     "photos": [
@@ -1547,6 +1115,292 @@ const collections = [
     "parent": "Cidadelhe"
   },
   {
+    "id": "aldeias_quintas_vales",
+    "title": "As Aldeias de Beira Alta",
+    "subtitle": "Villages of the region.",
+    "description": "Every village in Beira Alta has its own mysteries, weathered church towers, sun-baked villagers, and little cafes.",
+    "cover": "",
+    "order": 7,
+    "type": "gallery",
+    "path": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales",
+    "photos": [
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Bareira-02.jpg",
+        "caption": "Barreira 00"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Bareira-07.jpg",
+        "caption": "Barreira 01"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Bareira-05.jpg",
+        "caption": "Barreira 02"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Bareira-03.jpg",
+        "caption": "Barreira 03"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Bareira-04.jpg",
+        "caption": "Barreira 04"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Bareira-11.jpg",
+        "caption": "Barreira 05"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Bareira-01.jpg",
+        "caption": "Barreira 06"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Figueira-4.jpg",
+        "caption": "Castelo Rodrigo 00"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Figueira-1.jpg",
+        "caption": "Castelo Rodrigo 02"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Figueira-3.jpg",
+        "caption": "Castelo Rodrigo 01"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Figueira-6.jpg",
+        "caption": "Castelo Rodrigo 03"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Figueira-7.jpg",
+        "caption": "Castelo Rodrigo 04"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Figeuira 01.jpg",
+        "caption": "Figeuira de Castelo Rodrigo 00"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Figeuira 03.jpg",
+        "caption": "Figeuira de Castelo Rodrigo 01"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Figeuira 02.jpg",
+        "caption": "Figeuira de Castelo Rodrigo 02"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Figeuira 0.jpg",
+        "caption": "Figeuira de Castelo Rodrigo 03"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Gateira-16.jpg",
+        "caption": "Gateira 00"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Gateira-14.jpg",
+        "caption": "Gateira 01"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Gateira-15.jpg",
+        "caption": "Gateira 02"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Gateira-13.jpg",
+        "caption": "Gateira 03"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Gateira-10.jpg",
+        "caption": "Gateira 04"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Gateira-11.jpg",
+        "caption": "Gateira 05"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Gateira-12.jpg",
+        "caption": "Gateira 06"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Gateira-09.jpg",
+        "caption": "Gateira 07"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Gateira-04.jpg",
+        "caption": "Gateira 08"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Gateira-06.jpg",
+        "caption": "Gateira 09"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Gateira-01.jpg",
+        "caption": "Gateira 010"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Gateira-02.jpg",
+        "caption": "Gateira 011"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Juizo-15.jpg",
+        "caption": "Juizo 00"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Juizo-12.jpg",
+        "caption": "Juizo 01"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Juizo-14.jpg",
+        "caption": "Juizo 02"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Juizo-10.jpg",
+        "caption": "Juizo 03"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Juizo-09.jpg",
+        "caption": "Juizo 04"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Juizo-08.JPG",
+        "caption": "Juizo 05"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Juizo-06.jpg",
+        "caption": "Aldeas Juizo 06"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Juizo-04.jpg",
+        "caption": "Aldeas Juizo 04"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Juizo-01.jpg",
+        "caption": "Aldeas Juizo 01"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Aldeas - Juizo-02.jpg",
+        "caption": "Aldeas Juizo 02"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Cogula-5.jpg",
+        "caption": "Cogula 00"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Cogula-21.jpg",
+        "caption": "Cogula 02"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Cogula-3.jpg",
+        "caption": "Cogula 03"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Cogula-04.jpg",
+        "caption": "Cogula 04"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Cogula-05.jpg",
+        "caption": "Cogula 05"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt© - Longroiva First Visit Highlights-09.jpg",
+        "caption": "Longroiva 00"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Vale do Olmo-247.jpg",
+        "caption": "Perto Barca de Alva 00"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Vale do Olmo-015.jpg",
+        "caption": "Perto Barca de Alva 01"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Vale do Olmo-246.jpg",
+        "caption": "Perto Barca de Alva 02"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Vale do Olmo-242.jpg",
+        "caption": "Perto Barca de Alva 03"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/aldeias_quintas_vales/Photos/SolGutt - Vale do Olmo-009.jpg",
+        "caption": "Perto Barca de Alva 04"
+      }
+    ],
+    "parent": "Cidadelhe"
+  },
+  {
+    "id": "projetos_professionais",
+    "title": "Projetos Profissionais",
+    "subtitle": "Professional Projects with amazing local businesses ",
+    "description": "Photos made for the Hotel Longroiva A Luxurious rural getaway https://www.hoteldelongroiva.com/en/ and O Refugio do Castelo (contact for rental details)",
+    "cover": "",
+    "order": 8,
+    "type": "gallery",
+    "path": "Images/Collections/Cidadelhe/sub/projetos_professionais",
+    "photos": [
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/BSolGutt - O Refugio do Castelo-065.JPG",
+        "caption": "O Refugio do Castelo 00"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/ASolGutt - O Refugio do Castelo-099.JPG",
+        "caption": "O Refugio do Castelo 01"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/ASolGutt - O Refugio do Castelo-030.JPG",
+        "caption": "O Refugio do Castelo 02"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt - O Refugio do Castelo-029.JPG",
+        "caption": "O Refugio do Castelo 03"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt - O Refugio do Castelo-002.JPG",
+        "caption": "O Refugio do Castelo 04"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/ASolGutt - O Refugio do Castelo-003.JPG",
+        "caption": "O Refugio do Castelo 05"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Hotel Suite Floor 2-1.jpg",
+        "caption": "Hotel de Longroiva 00"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Hotel Suite Floor 2-16.jpg",
+        "caption": "Hotel de Longroiva 02"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Longroiva First Visit Highlights-02.jpg",
+        "caption": "Hotel de Longroiva 03"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Longroiva First Visit Highlights-05.jpg",
+        "caption": "Hotel de Longroiva 04"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Longroiva First Visit Highlights-01.jpg",
+        "caption": "Hotel de Longroiva 05"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Longroiva First Visit Highlights-11.jpg",
+        "caption": "Hotel de Longroiva 06"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Porto Tonico-04.jpg",
+        "caption": "Hotel de Longroiva 07"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Longroiva First Visit Highlights-03.jpg",
+        "caption": "Hotel de Longroiva 08"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Hotel exterior-14.jpg",
+        "caption": "Hotel de Longroiva 09"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/projetos_professionais/Photos/SolGutt© - Hotel exterior-11.jpg",
+        "caption": "Hotel de Longroiva 010"
+      }
+    ],
+    "parent": "Cidadelhe"
+  },
+  {
     "id": "broca_viva",
     "title": "Broca Viva",
     "subtitle": "Broca lives",
@@ -1715,6 +1569,152 @@ const collections = [
       {
         "src": "Images/Collections/Cidadelhe/sub/broca_viva/Photos/SolGutt - Broca Vida!-74.JPG",
         "caption": "Broca Viva! 039"
+      }
+    ],
+    "parent": "Cidadelhe"
+  },
+  {
+    "id": "ten_lives_festival",
+    "title": "Ten Lives Festival",
+    "subtitle": "A Regenerative Movement",
+    "description": "The pilot project of a committed and crazy group of people.",
+    "cover": "",
+    "order": 10,
+    "type": "gallery",
+    "path": "Images/Collections/Cidadelhe/sub/ten_lives_festival",
+    "photos": [
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1481.JPG",
+        "caption": "Ten Lives 00"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1578.JPG",
+        "caption": "Ten Lives 01"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1503.JPG",
+        "caption": "Ten Lives 02"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1629 Edited.jpg",
+        "caption": "Ten Lives 03"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1487.JPG",
+        "caption": "Ten Lives 04"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1491.JPG",
+        "caption": "Ten Lives 05"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1498.JPG",
+        "caption": "Ten Lives 06"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1606 2.JPG",
+        "caption": "Ten Lives 07"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1634.JPG",
+        "caption": "Ten Lives 08"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/Nathan_1.JPG",
+        "caption": "Ten Lives 09"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1609.JPG",
+        "caption": "Ten Lives 010"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1745.JPG",
+        "caption": "Ten Lives 011"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1627.JPG",
+        "caption": "Ten Lives 012"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1655.JPG",
+        "caption": "Ten Lives 013"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1673.JPG",
+        "caption": "Ten Lives 014"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1707.JPG",
+        "caption": "Ten Lives 015"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1823.JPG",
+        "caption": "Ten Lives 016"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM1731.JPG",
+        "caption": "Ten Lives 017"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM2061.JPG",
+        "caption": "Ten Lives 018"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM2024.JPG",
+        "caption": "Ten Lives 019"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/ten_lives_festival/Photos/IMGM2168.JPG",
+        "caption": "Ten Lives 020"
+      }
+    ],
+    "parent": "Cidadelhe"
+  },
+  {
+    "id": "na_quinta_sem_camera",
+    "title": "Na Quinta, Sem Camera",
+    "subtitle": "Field work photos",
+    "description": "A collection of photos from field work and odd jobs. Sometimes the phone is all you need to capture the moment. Just don't zoom in too close",
+    "cover": "",
+    "order": 11,
+    "type": "gallery",
+    "path": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera",
+    "photos": [
+      {
+        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/IMG_0021.jpg",
+        "caption": "Cebolas 00"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Projetos na Quinta-02.jpg",
+        "caption": "Vinhos 01"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Projetos na Quinta-03.jpg",
+        "caption": "Vinhos 02"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Projetos na Quinta-08.jpg",
+        "caption": "Casas 03"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-89.jpg",
+        "caption": "Cavalete 04"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-90.jpg",
+        "caption": "Cavalete 05"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-91.jpg",
+        "caption": "Cavalete 06"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Cidadelhe Natureza-92.jpg",
+        "caption": "Cavalete 07"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/na_quinta_sem_camera/Photos/SolGutt - Projetos na Quinta-01.jpg",
+        "caption": "Vinhos 08"
       }
     ],
     "parent": "Cidadelhe"
@@ -3302,8 +3302,12 @@ const collections = [
     "path": "Images/Collections/Around-the-World/sub/The-Bush/Photos/ZW",
     "photos": [
       {
-        "src": "Images/Collections/Around-the-World/sub/The-Bush/Photos/ZW/SolGutt - Zuid Africa-07.jpg",
-        "caption": "ZW 00"
+        "src": "Images/Collections/Around-the-World/sub/The-Bush/Photos/ZW/SolGutt - Zuid Africa-26.jpg",
+        "caption": "ZW 05"
+      },
+      {
+        "src": "Images/Collections/Around-the-World/sub/The-Bush/Photos/ZW/SolGutt - Zuid Africa-25.jpg",
+        "caption": "ZW 04"
       },
       {
         "src": "Images/Collections/Around-the-World/sub/The-Bush/Photos/ZW/SolGutt - Zuid Africa-11.jpg",
@@ -3318,12 +3322,8 @@ const collections = [
         "caption": "ZW 03"
       },
       {
-        "src": "Images/Collections/Around-the-World/sub/The-Bush/Photos/ZW/SolGutt - Zuid Africa-25.jpg",
-        "caption": "ZW 04"
-      },
-      {
-        "src": "Images/Collections/Around-the-World/sub/The-Bush/Photos/ZW/SolGutt - Zuid Africa-26.jpg",
-        "caption": "ZW 05"
+        "src": "Images/Collections/Around-the-World/sub/The-Bush/Photos/ZW/SolGutt - Zuid Africa-07.jpg",
+        "caption": "ZW 00"
       }
     ],
     "parent": "The-Bush"
