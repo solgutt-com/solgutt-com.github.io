@@ -1866,6 +1866,26 @@ const collections = [
       {
         "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_11.jpg",
         "caption": "Olympus 11"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_strip_1.jpg",
+        "caption": "Olympus strip 1"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_strip_2.jpg",
+        "caption": "Olympus strip 2"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_strip_3.jpg",
+        "caption": "Olympus strip 3"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_strip_4.jpg",
+        "caption": "Olympus strip 4"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_details.jpg",
+        "caption": "Olympus details"
       }
     ],
     "parent": "Analog-BW"
