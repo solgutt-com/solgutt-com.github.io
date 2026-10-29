@@ -24,7 +24,6 @@
         <nav class="trail" id="trail" aria-label="Breadcrumb"></nav>
         <h1 class="display" id="title"></h1>
         <p class="lede" id="subtitle"></p>
-        <p class="muted" id="description"></p>
       </div>
 
       <ul class="cards" id="cards"></ul>
@@ -43,7 +42,6 @@
         renderTrail(document.getElementById('trail'), id);
         document.getElementById('title').textContent = collection.title;
         document.getElementById('subtitle').textContent = collection.subtitle;
-        document.getElementById('description').textContent = collection.description;
 
         const cards = document.getElementById('cards');
         childrenOf(id).forEach(child => {
@@ -54,8 +52,7 @@
               ? thumbImg(cover, { class: 'card-img' })
               : h('div', { class: 'card-img' }),
             h('h2', { class: 'card-title' }, child.title),
-            child.subtitle ? h('p', { class: 'card-subtitle' }, child.subtitle) : null,
-            h('p', { class: 'meta' }, countLabel(child))
+            child.subtitle ? h('p', { class: 'card-subtitle' }, child.subtitle) : null
           ];
           cards.append(h('li', {},
             pending

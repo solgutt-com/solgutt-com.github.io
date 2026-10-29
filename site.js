@@ -50,16 +50,6 @@ function previewPhotos(id, n) {
   return picks;
 }
 
-function countLabel(c) {
-  if (c.type === 'parent') {
-    const k = childrenOf(c.id).filter(x => x.type !== 'coming-soon').length;
-    return k + (k === 1 ? ' gallery' : ' galleries');
-  }
-  const n = (c.photos || []).length;
-  if (n === 0) return 'No photographs yet';
-  return n + (n === 1 ? ' photograph' : ' photographs');
-}
-
 function hrefFor(c) {
   return c.type === 'parent'
     ? 'sub-collection.html?id=' + encodeURIComponent(c.id)

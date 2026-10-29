@@ -8,12 +8,20 @@
     <link rel="stylesheet" href="style.css">
     <script>
       // Arriving through the needle's eye: fade the page in from the straw-coloured screen.
-      try {
-        if (sessionStorage.getItem('via-needle')) {
-          sessionStorage.removeItem('via-needle');
-          document.documentElement.classList.add('via-needle');
-        }
-      } catch (e) { /* storage blocked: no fade */ }
+      // The homepage may have loaded this page in advance, so check when it is actually shown.
+      function arrive() {
+        try {
+          if (sessionStorage.getItem('via-needle')) {
+            sessionStorage.removeItem('via-needle');
+            document.documentElement.classList.add('via-needle');
+          }
+        } catch (e) { /* storage blocked: no fade */ }
+      }
+      if (document.prerendering) {
+        document.addEventListener('prerenderingchange', arrive, { once: true });
+      } else {
+        arrive();
+      }
     </script>
   </head>
 
@@ -54,9 +62,7 @@
           const body = [
             h('div', { class: 'collection-text' },
               h('h2', { class: 'collection-title' }, c.title),
-              c.subtitle && c.subtitle !== '...' ? h('p', { class: 'lede' }, c.subtitle) : null,
-              h('p', { class: 'collection-desc' }, c.description),
-              pending ? null : h('p', { class: 'meta' }, countLabel(c) + ', ' + photosUnder(c.id).length + ' photographs')
+              c.subtitle && c.subtitle !== '...' ? h('p', { class: 'lede' }, c.subtitle) : null
             ),
             h('div', { class: 'thumbs', 'aria-hidden': 'true' }, thumbs)
           ];

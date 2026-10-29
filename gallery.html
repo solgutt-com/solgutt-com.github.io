@@ -32,7 +32,6 @@
 
     <div class="viewer-bar">
       <p class="viewer-caption" id="caption" aria-live="polite"></p>
-      <p class="viewer-count" id="count"></p>
       <div class="viewer-steps">
         <button type="button" onclick="step(-1)">Previous</button>
         <button type="button" onclick="step(1)">Next</button>
@@ -78,7 +77,6 @@
         };
         next.src = photoSrc(p);
         document.getElementById('caption').textContent = p.caption || '';
-        document.getElementById('count').textContent = (current + 1) + ' of ' + photos.length;
         thumbs.forEach((t, k) => t.setAttribute('aria-current', k === current ? 'true' : 'false'));
         thumbs[current].scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'smooth' });
         history.replaceState(null, '', '#' + (current + 1));
