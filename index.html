@@ -8,24 +8,420 @@
     <link rel="stylesheet" href="style.css">
   </head>
 
-  <body>
+  <body class="home">
 
-    <header>
-  <nav>
-    <a href="photography.html">Fotos</a>
-    <span class="divider">|</span>
-    <a href="film.html">Film</a>
-    <span class="divider">|</span>
-    <a href="about.html">About</a>
-  </nav>
-</header>
+    <header class="masthead">
+      <nav class="nav" aria-label="Main">
+        <a href="photography.html">Fotos</a>
+        <a href="film.html">Film</a>
+        <a href="about.html">About</a>
+      </nav>
+    </header>
 
-    <main>
-      <h1>Solomon Guttmann</h1>
-      <p class="tagline">Looking for a needle in a haystack</p>
-      <p class="contact-line">Professional photography services.</p>
-      <p class="contact-line"><a href="about.html">Contact for inquiries, collaborations, and commissions.</a></p>
+    <main class="home-main">
+      <div class="home-intro">
+        <h1 class="home-name">Solomon<br>Guttmann</h1>
+        <div class="home-copy">
+          <p class="home-tagline">Looking for a needle in a haystack.</p>
+          <p>Professional Photographer. Journalist. Researcher.</p>
+          <p><a class="text-link" href="about.html">Contact for inquiries, collaborations, and commissions.</a></p>
+        </div>
+      </div>
+
+      <figure class="haystack" id="haystack">
+        <svg id="haystack-svg" viewBox="0 0 1200 420" preserveAspectRatio="xMidYMax meet" role="group" aria-label="A haystack drawn in straw, with one needle hidden inside"></svg>
+        <figcaption id="haystack-hint">Find the needle to see my work</figcaption>
+      </figure>
     </main>
+
+    <script>
+      const NS = 'http://www.w3.org/2000/svg';
+      const W = 1200, BASE = 412;
+      const svg = document.getElementById('haystack-svg');
+      const fig = document.getElementById('haystack');
+      const hint = document.getElementById('haystack-hint');
+      const HINT = hint.textContent;
+      const STRAW = ['#E2CB86', '#C8AE66', '#B4954A', '#9A7B36', '#8A6B2C'];
+      const calm = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      // The needle drops in on the first home-page visit of each browser session.
+      const firstVisit = (() => {
+        try {
+          if (sessionStorage.getItem('needle-dropped')) return false;
+          sessionStorage.setItem('needle-dropped', '1');
+        } catch (e) { /* storage blocked: treat every visit as the first */ }
+        return true;
+      })();
+
+      const rand = (a, b) => a + Math.random() * (b - a);
+
+      function el(tag, attrs) {
+        const e = document.createElementNS(NS, tag);
+        for (const k in attrs) e.setAttribute(k, attrs[k]);
+        return e;
+      }
+
+      // Height of the mound at x: a soft dome with a few lumps.
+      function mound(x) {
+        const t = (x - W / 2) / 560;
+        if (Math.abs(t) >= 1) return 0;
+        // Peak stays low enough that the longest straws never poke above the drawing.
+        return 330 * Math.pow(1 - t * t, 0.65) + 14 * Math.sin(x / 47) + 9 * Math.sin(x / 19);
+      }
+
+      function line(x, y, len, angle, attrs) {
+        const dx = Math.cos(angle) * len / 2, dy = Math.sin(angle) * len / 2;
+        return el('line', {
+          x1: (x - dx).toFixed(1), y1: (y - dy).toFixed(1),
+          x2: (x + dx).toFixed(1), y2: (y + dy).toFixed(1),
+          ...attrs
+        });
+      }
+
+      // ─── Build the stack ───
+
+      // A shaded body under the straw so the page barely shows through.
+      const defs = el('defs', {});
+      const grad = el('linearGradient', { id: 'hay-shade', x1: 0, y1: 0, x2: 0, y2: 1 });
+      grad.append(el('stop', { offset: '0', 'stop-color': '#C3A55C' }), el('stop', { offset: '1', 'stop-color': '#94763A' }));
+      defs.append(grad);
+      let d = `M60,${BASE}`;
+      for (let x = 60; x <= 1140; x += 10) d += ` L${x},${(BASE - Math.max(0, mound(x) * 0.88)).toFixed(1)}`;
+      d += ` L1140,${BASE} Z`;
+      // Everything in the stack lives in one group so it can sway from its base.
+      const stack = el('g', {});
+      stack.append(el('path', { d, class: 'hay-base', fill: 'url(#hay-shade)' }));
+      svg.append(defs, stack);
+
+      const straws = [];
+      const behind = el('g', {});
+      const front = el('g', {});
+
+      // Horizontal layers, bottom first, so the opening drop moves ten groups
+      // instead of thousands of single straws.
+      const BANDS = 10;
+      const bands = Array.from({ length: BANDS }, () => {
+        const gs = [el('g', {}), el('g', {})];
+        behind.append(gs[0]);
+        front.append(gs[1]);
+        return { gs, dy: 0, vy: 0, wait: 0 };
+      });
+
+      for (let i = 0; i < 5200; i++) {
+        const x = rand(40, W - 40);
+        const top = mound(x);
+        // Taller parts of the mound hold more straw.
+        if (top < 6 || Math.random() > top / 380) continue;
+        const y = BASE - top * Math.random();
+        const tilt = Math.random() < 0.8 ? rand(-0.9, 0.9) : rand(-1.5, 1.5);
+        const e = line(x, y, rand(30, 96), tilt, {
+          class: 'straw',
+          stroke: STRAW[Math.floor(Math.random() * STRAW.length)],
+          'stroke-width': rand(1.2, 2.8).toFixed(2)
+        });
+        const band = bands[Math.min(BANDS - 1, Math.floor((BASE - y) / BASE * BANDS))];
+        band.gs[Math.random() < 0.88 ? 0 : 1].append(e);
+        straws.push({ el: e, x, y, dx: 0, dy: 0, dr: 0, vx: 0, vy: 0, vr: 0 });
+      }
+
+      // On narrow screens, fill the space and crop the sides instead of shrinking.
+      const narrow = matchMedia('(max-width: 860px)');
+      const fit = () => svg.setAttribute('preserveAspectRatio', narrow.matches ? 'xMidYMax slice' : 'xMidYMax meet');
+      narrow.addEventListener('change', fit);
+      fit();
+
+      // The needle sits mid-stack, partly covered by the front straws,
+      // and near enough the centre to survive the narrow-screen crop.
+      const nx = rand(440, 760);
+      const ny = BASE - mound(nx) * rand(0.3, 0.6);
+      const na = rand(-0.6, 0.6);
+      const NEEDLE_LEN = 120;   // shaft length
+      const NEEDLE_W = 3.4;     // shaft thickness
+      const EYE_AT = 0.42;      // eye distance from the middle, as a share of the length
+      const EYE_RX = 6;         // eye opening, half-length
+      const EYE_RY = 1.7;       // eye opening, half-height
+
+      function drawNeedle(cx, cy, angle, scale) {
+        const g = el('g', { class: 'needle' });
+        g.append(line(cx, cy, NEEDLE_LEN * scale, angle, { 'stroke-width': NEEDLE_W * scale }));
+        const off = EYE_AT * NEEDLE_LEN * scale;
+        const ex = cx - Math.cos(angle) * off, ey = cy - Math.sin(angle) * off;
+        g.append(el('ellipse', {
+          cx: ex, cy: ey, rx: EYE_RX * scale, ry: EYE_RY * scale, 'stroke-width': 1.1 * scale,
+          transform: `rotate(${angle * 180 / Math.PI} ${ex} ${ey})`
+        }));
+        return g;
+      }
+
+      const needle = drawNeedle(nx, ny, na, 1);
+      const link = el('a', { href: 'photography.html', class: 'needle-link', 'aria-label': 'The needle: see my work' });
+      link.append(line(nx, ny, NEEDLE_LEN + 14, na, { class: 'needle-hit' }));
+      // Starts at the top edge of the drawing, so it can never cover the text above.
+      const veil = el('rect', { class: 'hay-veil', x: -100, y: 0, width: W + 200, height: 420 });
+      stack.append(behind, needle, front, veil, link);
+
+      // Found: fade the hay under the veil and lift the needle above it.
+      function reveal(on) {
+        fig.classList.toggle('found', on);
+        hint.textContent = on ? 'Found it. See my work.' : HINT;
+        stack.insertBefore(needle, on ? link : front);
+      }
+
+      link.addEventListener('mouseenter', () => reveal(true));
+      link.addEventListener('mouseleave', () => reveal(false));
+      link.addEventListener('focus', () => reveal(true));
+      link.addEventListener('blur', () => reveal(false));
+
+      // ─── Clicking the needle flies through its eye into the photographs ───
+
+      link.addEventListener('click', e => {
+        // Leave new-tab clicks and reduced-motion visitors to the plain link.
+        if (calm || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+        e.preventDefault();
+        throughTheEye();
+      });
+
+      function throughTheEye() {
+        const eye = needle.querySelector('ellipse').getBoundingClientRect();
+        const ex = eye.left + eye.width / 2, ey = eye.top + eye.height / 2;
+        const k = stack.getScreenCTM().a;
+
+        // A copy of the needle drawn over the page, which the camera zooms into.
+        const overlay = el('svg', { class: 'needle-drop', 'aria-hidden': 'true' });
+        const zoomed = drawNeedle(0, 0, 0, k);
+        zoomed.querySelector('line').setAttribute('stroke-width', 4.4 * k);
+        overlay.append(zoomed);
+        document.body.append(overlay);
+        needle.setAttribute('opacity', 0);
+
+        // Zoom until the straw-coloured eye opening covers every corner of the screen,
+        // which is the same colour the photographs page opens on.
+        const off = EYE_AT * NEEDLE_LEN * k;
+        const dx = Math.max(ex, innerWidth - ex), dy = Math.max(ey, innerHeight - ey);
+        const sMax = 1.2 * Math.hypot(dx / (EYE_RX * k), dy / (EYE_RY * k));
+        const T = 1150;
+        const t0 = performance.now();
+
+        function frame(now) {
+          const t = Math.min(1, (now - t0) / T);
+          const ease = t * t * (3 - 2 * t);
+          const s = Math.pow(sMax, ease);                     // even, accelerating zoom
+          const a = na * Math.max(0, 1 - t * 1.8);             // levels out early on
+          zoomed.setAttribute('transform',
+            `translate(${ex.toFixed(1)} ${ey.toFixed(1)}) rotate(${(a * 180 / Math.PI).toFixed(2)}) scale(${s.toFixed(3)}) translate(${off.toFixed(2)} 0)`);
+          if (t < 1) return requestAnimationFrame(frame);
+          try { sessionStorage.setItem('via-needle', '1'); } catch (err) { /* fade-in is optional */ }
+          location.href = link.getAttribute('href');
+        }
+
+        requestAnimationFrame(frame);
+      }
+
+      // Coming back with the browser's Back button restores this page as it was left:
+      // clear the zoom so the needle is back in the hay.
+      addEventListener('pageshow', e => {
+        if (!e.persisted) return;
+        document.querySelectorAll('.needle-drop').forEach(o => o.remove());
+        needle.removeAttribute('opacity');
+        reveal(false);
+      });
+
+      // ─── Spring physics: every straw wants to return to where it was drawn ───
+
+      const K = 260;    // stiffness
+      const DAMP = 9;   // low damping keeps it bouncy
+      const live = new Set();
+      const liveBands = new Set();
+      // The whole stack leaning from its base: a slow, loose spring so it wobbles like jelly.
+      const sway = { a: 0, v: 0, live: false, K: 40, DAMP: 2.2 };
+      let raf = 0, last = 0;
+
+      function run() {
+        if (!raf) { last = performance.now(); raf = requestAnimationFrame(tick); }
+      }
+
+      function wake(s) { live.add(s); run(); }
+
+      function nudge(v) {
+        sway.v = Math.max(-30, Math.min(30, sway.v + v));
+        sway.live = true;
+        run();
+      }
+
+      function tick(now) {
+        const dt = Math.min(0.033, (now - last) / 1000);
+        last = now;
+
+        if (sway.live) {
+          sway.v += (-sway.K * sway.a - sway.DAMP * sway.v) * dt;
+          sway.a += sway.v * dt;
+          if (Math.abs(sway.a) < 0.02 && Math.abs(sway.v) < 0.2) {
+            sway.a = sway.v = 0;
+            sway.live = false;
+            stack.removeAttribute('transform');
+          } else {
+            stack.setAttribute('transform', `translate(0 ${BASE}) skewX(${sway.a.toFixed(3)}) translate(0 ${-BASE})`);
+          }
+        }
+
+        for (const b of liveBands) {
+          if (b.wait > 0) {
+            b.wait -= dt;
+            if (b.wait > 0) continue;
+          }
+          b.gs.forEach(g => g.removeAttribute('opacity'));
+          b.vy += (-K * b.dy - DAMP * b.vy) * dt;
+          b.dy += b.vy * dt;
+          if (Math.abs(b.dy) < 0.05 && Math.abs(b.vy) < 0.5) {
+            b.gs.forEach(g => g.removeAttribute('transform'));
+            liveBands.delete(b);
+          } else {
+            b.gs.forEach(g => g.setAttribute('transform', `translate(0 ${b.dy.toFixed(2)})`));
+          }
+        }
+
+        for (const s of live) {
+          s.vx += (-K * s.dx - DAMP * s.vx) * dt;
+          s.vy += (-K * s.dy - DAMP * s.vy) * dt;
+          s.vr += (-K * s.dr - DAMP * s.vr) * dt;
+          s.dx += s.vx * dt;
+          s.dy += s.vy * dt;
+          s.dr += s.vr * dt;
+
+          const still = Math.abs(s.dx) + Math.abs(s.dy) + Math.abs(s.dr) < 0.3
+                     && Math.abs(s.vx) + Math.abs(s.vy) + Math.abs(s.vr) < 3;
+          if (still) {
+            s.dx = s.dy = s.dr = s.vx = s.vy = s.vr = 0;
+            s.el.removeAttribute('transform');
+            live.delete(s);
+          } else {
+            s.el.setAttribute('transform',
+              `translate(${s.dx.toFixed(2)} ${s.dy.toFixed(2)}) rotate(${s.dr.toFixed(2)} ${s.x.toFixed(1)} ${s.y.toFixed(1)})`);
+          }
+        }
+
+        raf = (live.size || liveBands.size || sway.live) ? requestAnimationFrame(tick) : 0;
+      }
+
+      function toSvg(clientX, clientY) {
+        const pt = svg.createSVGPoint();
+        pt.x = clientX;
+        pt.y = clientY;
+        return pt.matrixTransform(svg.getScreenCTM().inverse());
+      }
+
+      // Brushing through the hay pushes straws along with the pointer.
+      function push(x, y, mx, my, speed) {
+        const R = 70;
+        for (const s of straws) {
+          const ox = s.x - x, oy = s.y - y;
+          if (Math.abs(ox) > R || Math.abs(oy) > R) continue;
+          const dist = Math.hypot(ox, oy) || 1;
+          if (dist > R) continue;
+          const f = (1 - dist / R) * speed;
+          s.vx += (mx / speed) * f * 7 + (ox / dist) * f * 3;
+          s.vy += (my / speed) * f * 7 + (oy / dist) * f * 3;
+          s.vr += (mx * oy - my * ox > 0 ? 1 : -1) * f * 9;
+          wake(s);
+        }
+        // Brushing sideways also rocks the whole stack a little.
+        nudge(-mx * 0.03);
+      }
+
+      // A burst outward and upward, used when the needle lands.
+      function impact(x, y, power) {
+        const R = 130;
+        for (const s of straws) {
+          const ox = s.x - x, oy = s.y - y;
+          const dist = Math.hypot(ox, oy) || 1;
+          if (dist > R) continue;
+          const f = (1 - dist / R) * power;
+          s.vx += (ox / dist) * f;
+          s.vy += (oy / dist - 0.9) * f;
+          s.vr += rand(-1, 1) * f * 0.7;
+          wake(s);
+        }
+      }
+
+      // Every few seconds a breeze leans the stack over and lets it wobble back.
+      function scheduleGust() {
+        setTimeout(() => {
+          if (!document.hidden) nudge((Math.random() < 0.5 ? -1 : 1) * rand(14, 26));
+          scheduleGust();
+        }, rand(5000, 9000));
+      }
+
+      // ─── The needle falling in from the top of the screen ───
+
+      function dropNeedle() {
+        const ctm = stack.getScreenCTM();
+        const pt = svg.createSVGPoint();
+        pt.x = nx;
+        pt.y = ny;
+        const end = pt.matrixTransform(ctm);
+        const scale = ctm.a;
+
+        const overlay = el('svg', { class: 'needle-drop', 'aria-hidden': 'true' });
+        const falling = drawNeedle(0, 0, 0, scale);
+        overlay.append(falling);
+        document.body.append(overlay);
+
+        const startX = end.x + rand(-80, 80);
+        const startY = -NEEDLE_LEN * scale;
+        const T = 1100;
+        const t0 = performance.now();
+
+        function frame(now) {
+          const t = Math.min(1, (now - t0) / T);
+          const x = startX + (end.x - startX) * t;
+          const y = startY + (end.y - startY) * t * t;          // gravity
+          const turn = Math.max(0, (t - 0.55) / 0.45);          // tips over near the end
+          const angle = Math.PI / 2 + (na - Math.PI / 2) * (1 - (1 - turn) * (1 - turn))
+                      + Math.sin(t * 9) * 0.08 * (1 - t);       // slight wobble on the way down
+          falling.setAttribute('transform', `translate(${x.toFixed(1)} ${y.toFixed(1)}) rotate(${(angle * 180 / Math.PI).toFixed(1)})`);
+          if (t < 1) return requestAnimationFrame(frame);
+          overlay.remove();
+          needle.removeAttribute('opacity');
+          impact(nx, ny, 520);
+        }
+
+        requestAnimationFrame(frame);
+      }
+
+      // ─── Start ───
+
+      if (!calm) {
+        svg.addEventListener('pointermove', (() => {
+          let px = null, py = null;
+          svg.addEventListener('pointerleave', () => { px = py = null; });
+          return e => {
+            const p = toSvg(e.clientX, e.clientY);
+            if (px !== null) {
+              const mx = p.x - px, my = p.y - py;
+              const speed = Math.min(40, Math.hypot(mx, my));
+              if (speed > 0.5) push(p.x, p.y, mx, my, speed);
+            }
+            px = p.x;
+            py = p.y;
+          };
+        })());
+
+        if (firstVisit) {
+          // The hay drops into place, bottom layers first, then the needle falls in.
+          bands.forEach((b, i) => {
+            b.dy = -rand(140, 200);
+            b.wait = i * 0.085;
+            b.gs.forEach(g => g.setAttribute('opacity', 0));
+            liveBands.add(b);
+          });
+          needle.setAttribute('opacity', 0);
+          run();
+          setTimeout(dropNeedle, 1250);
+        }
+
+        scheduleGust();
+      }
+    </script>
 
   </body>
 

@@ -2,6 +2,21 @@
 
 ---
 
+## 2026-10-29
+
+### "Haystack" redesign goes live
+- New look across every page: straw background, olive-black ink, one steel-blue accent; Archivo (condensed headings) + Spectral (captions, descriptions, CV)
+- Homepage: a drawn haystack with one hidden needle. The hay drops in and the needle falls into it on the first visit of each browser session; straws bounce away from the cursor and a breeze sways the stack. Clicking the needle zooms through its eye into Fotos
+- Fotos and collection pages show real photo thumbnails instead of icons; galleries have a dark viewer, "4 of 48" counter, Previous / Next and a filmstrip; each photo has its own link (`#4`)
+- About: CV typeset as a proper page instead of the typing animation
+- Map: lists only countries with photos (adds Belgium and Luxembourg)
+- New shared files: `site.js` (data helpers used by every page), `make_thumbs.py` + `thumbs/` (small previews for grids and filmstrips)
+
+### Adding photos now
+- Run `python3 build.py`, then `python3 make_thumbs.py` (only makes thumbnails for new or changed photos)
+
+---
+
 ## 2026-05-17
 
 ### Folder structure cleanup

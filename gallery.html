@@ -8,80 +8,97 @@
     <link rel="stylesheet" href="style.css">
   </head>
 
-  <body class="gallery-page">
+  <body class="darkroom">
 
-    <header class="gallery-header">
-      <a href="photography.html" class="site-name back-link">← Fotos</a>
-      <nav class="gallery-nav">
-        <span id="country-title" class="country-title"></span>
-        <span class="divider">|</span>
-        <span id="photo-counter" class="series-link">1 / 0</span>
+    <header class="masthead">
+      <a href="index.html" class="wordmark">Solomon Guttmann</a>
+      <nav class="nav" aria-label="Main">
+        <a href="photography.html" aria-current="page">Fotos</a>
+        <a href="film.html">Film</a>
+        <a href="about.html">About</a>
       </nav>
     </header>
 
-    <p id="collection-description" class="collection-description-header"></p>
-
-    <div class="slideshow">
-      <button class="arrow left" onclick="changePhoto(-1)">&#8249;</button>
-      <div class="slide-container">
-        <img id="slide-img" src="" alt="" loading="lazy">
-        <span id="slide-caption" class="slide-caption"></span>
-      </div>
-      <button class="arrow right" onclick="changePhoto(1)">&#8250;</button>
+    <div class="viewer-head">
+      <nav class="trail" id="trail" aria-label="Breadcrumb"></nav>
+      <p class="muted" id="description"></p>
     </div>
 
+    <main class="viewer" id="viewer">
+      <button class="viewer-half prev" tabindex="-1" aria-hidden="true" onclick="step(-1)"></button>
+      <img id="photo" alt="">
+      <button class="viewer-half next" tabindex="-1" aria-hidden="true" onclick="step(1)"></button>
+    </main>
+
+    <div class="viewer-bar">
+      <p class="viewer-caption" id="caption" aria-live="polite"></p>
+      <p class="viewer-count" id="count"></p>
+      <div class="viewer-steps">
+        <button type="button" onclick="step(-1)">Previous</button>
+        <button type="button" onclick="step(1)">Next</button>
+      </div>
+    </div>
+
+    <ol class="strip" id="strip" aria-label="All photographs in this gallery"></ol>
+
     <script src="data.js"></script>
+    <script src="site.js"></script>
     <script>
-      const params = new URLSearchParams(window.location.search);
-      const code = params.get('code') || 'AL';
-      const country = collections.find(c => c.id === code);
+      const code = new URLSearchParams(location.search).get('code');
+      const gallery = byId(code);
+      if (!gallery || !gallery.photos) location.replace('photography.html');
 
-      if (!country) {
-        window.location.href = 'photography.html';
-      }
-
-      document.title = country.title + ' — Solomon Guttmann';
-      document.getElementById('country-title').textContent = country.title;
-      if (country.description) {
-        document.getElementById('collection-description').textContent = country.description;
-      }
-
-      const photos = country.photos.map(p => ({
-        src: p.src,
-        caption: p.caption
-      }));
-
+      const photos = gallery.photos;
+      const img = document.getElementById('photo');
+      const strip = document.getElementById('strip');
       let current = 0;
-      const counter = document.getElementById('photo-counter');
 
-      function updateCounter() {
-        counter.textContent = (current + 1) + ' / ' + photos.length;
-      }
+      document.title = gallery.title + ' — Solomon Guttmann';
+      renderTrail(document.getElementById('trail'), code);
+      document.getElementById('description').textContent = gallery.description || '';
 
-      function changePhoto(direction) {
-        current = (current + direction + photos.length) % photos.length;
-        const img = document.getElementById('slide-img');
-        const caption = document.getElementById('slide-caption');
-        img.style.opacity = 0;
-        caption.style.opacity = 0;
-        setTimeout(() => {
-          img.src = photos[current].src;
-          caption.textContent = photos[current].caption;
-          img.style.opacity = 1;
-          caption.style.opacity = 1;
-          updateCounter();
-        }, 200);
-      }
-
-      document.addEventListener('keydown', e => {
-        if (e.key === 'ArrowRight') changePhoto(1);
-        if (e.key === 'ArrowLeft') changePhoto(-1);
+      const thumbs = photos.map((p, i) => {
+        const b = h('button', { type: 'button', 'aria-label': (i + 1) + ': ' + (p.caption || 'Photograph') },
+          thumbImg(p));
+        b.addEventListener('click', () => show(i));
+        strip.append(h('li', {}, b));
+        return b;
       });
 
-      if (photos.length > 0) {
-        document.getElementById('slide-img').src = photos[0].src;
-        document.getElementById('slide-caption').textContent = photos[0].caption;
-        updateCounter();
+      function show(i) {
+        current = (i + photos.length) % photos.length;
+        const p = photos[current];
+        img.classList.add('is-loading');
+        const next = new Image();
+        next.onload = next.onerror = () => {
+          if (photos[current] !== p) return;
+          img.src = next.src;
+          img.alt = p.caption || '';
+          img.classList.remove('is-loading');
+        };
+        next.src = photoSrc(p);
+        document.getElementById('caption').textContent = p.caption || '';
+        document.getElementById('count').textContent = (current + 1) + ' of ' + photos.length;
+        thumbs.forEach((t, k) => t.setAttribute('aria-current', k === current ? 'true' : 'false'));
+        thumbs[current].scrollIntoView({ block: 'nearest', inline: 'center', behavior: 'smooth' });
+        history.replaceState(null, '', '#' + (current + 1));
+        // Warm the cache for the next photograph.
+        if (photos.length > 1) new Image().src = photoSrc(photos[(current + 1) % photos.length]);
+      }
+
+      function step(d) { if (photos.length) show(current + d); }
+
+      document.addEventListener('keydown', e => {
+        if (e.key === 'ArrowRight') step(1);
+        if (e.key === 'ArrowLeft') step(-1);
+      });
+
+      if (photos.length) {
+        show((parseInt(location.hash.slice(1), 10) || 1) - 1);
+      } else {
+        document.getElementById('viewer').replaceChildren(
+          h('p', { class: 'viewer-empty' }, 'No photographs here yet.'));
+        document.querySelector('.viewer-bar').hidden = true;
       }
     </script>
 

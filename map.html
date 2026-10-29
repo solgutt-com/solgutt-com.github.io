@@ -8,176 +8,143 @@
     <link rel="stylesheet" href="style.css">
   </head>
 
-  <body class="fotos-page">
+  <body>
 
-    <header class="gallery-header">
-      <a href="index.html" class="site-name">Solomon Guttmann</a>
-      <nav class="gallery-nav">
-        <a href="photography.html" class="series-link active">Fotos</a>
-        <span class="divider">|</span>
-        <a href="film.html" class="series-link">Film</a>
-        <span class="divider">|</span>
-        <a href="about.html" class="series-link">About</a>
+    <header class="masthead">
+      <a href="index.html" class="wordmark">Solomon Guttmann</a>
+      <nav class="nav" aria-label="Main">
+        <a href="photography.html" aria-current="page">Fotos</a>
+        <a href="film.html">Film</a>
+        <a href="about.html">About</a>
       </nav>
     </header>
 
-    <div class="fotos-layout">
-
-      <div class="region-menu">
-        <div class="region-menu-icon">&#9776;</div>
-        <div class="region-menu-list">
-          <div class="region-menu-section">Europe</div>
-          <a href="gallery.html?code=AL">Albania</a>
-          <a href="gallery.html?code=AT">Austria</a>
-          <a href="gallery.html?code=BA">Bosnia & Herzegovina</a>
-          <a href="gallery.html?code=CH">Switzerland</a>
-          <a href="gallery.html?code=DE">Germany</a>
-          <a href="gallery.html?code=EE">Estonia</a>
-          <a href="gallery.html?code=ES">Spain</a>
-          <a href="gallery.html?code=FI">Finland</a>
-          <a href="gallery.html?code=FR">France</a>
-          <a href="gallery.html?code=HR">Croatia</a>
-          <a href="gallery.html?code=IT">Italy</a>
-          <a href="gallery.html?code=LT">Lithuania</a>
-          <a href="gallery.html?code=LV">Latvia</a>
-          <a href="gallery.html?code=ME">Montenegro</a>
-          <a href="gallery.html?code=NL">Netherlands</a>
-          <a href="gallery.html?code=PL">Poland</a>
-          <a href="gallery.html?code=PT">Portugal</a>
-          <a href="gallery.html?code=SE">Sweden</a>
-          <a href="gallery.html?code=SI">Slovenia</a>
-          <div class="region-menu-section">Africa</div>
-          <a href="gallery.html?code=ZA">South Africa</a>
-          <a href="gallery.html?code=ZW">Zimbabwe</a>
+    <main class="page">
+      <div class="page-head">
+        <div>
+          <nav class="trail" aria-label="Breadcrumb"><a href="photography.html">Fotos</a></nav>
+          <h1 class="display">By country</h1>
         </div>
+        <figure class="map-quote">
+          <blockquote class="lede" id="map-quote"></blockquote>
+          <figcaption id="map-quote-author"></figcaption>
+        </figure>
       </div>
 
-      <div class="map-outer">
-        <p class="map-instructions">Do you need instructions?</p>
-        <p class="map-quote" id="map-quote"></p>
-        <p class="map-quote-author" id="map-quote-author"></p>
-        <div class="map-box">
-          <div class="map-container">
-            <svg id="map-svg" viewBox="0 0 960 500" width="100%">
-              <defs>
-                <pattern id="px" width="4" height="4" patternUnits="userSpaceOnUse">
-                  <rect width="3" height="3" fill="#5a3e2b"/>
-                  <rect x="3" y="0" width="1" height="4" fill="#4a3222"/>
-                  <rect x="0" y="3" width="4" height="1" fill="#4a3222"/>
-                </pattern>
-              </defs>
-              <g id="map-world"></g>
-              <g id="map-regions"></g>
-              <g id="map-specials"></g>
-            </svg>
-            <div id="map-tooltip"></div>
-          </div>
+      <div class="map-page">
+        <div class="country-list" id="country-list"></div>
+
+        <div class="map-wrap">
+          <svg id="map-svg" viewBox="0 0 960 500" role="group" aria-label="World map; countries with photographs are hatched">
+            <defs>
+              <pattern id="hatch" width="4" height="4" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+                <rect width="4" height="4" fill="#D5C083"/>
+                <line x1="0" y1="0" x2="0" y2="4" stroke="#8A6B2C" stroke-width="1.6"/>
+              </pattern>
+            </defs>
+            <g id="map-world"></g>
+            <g id="map-regions"></g>
+            <g id="map-specials"></g>
+          </svg>
+          <p id="map-tooltip" aria-live="polite"></p>
         </div>
       </div>
+    </main>
 
-    </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
     <script src="quotes.js"></script>
     <script src="data.js"></script>
+    <script src="site.js"></script>
     <script>
-
+      // ISO numeric → gallery id
       const COUNTRY_IDS = {
-        8:   'AL', 40:  'AT', 70:  'BA', 191: 'HR',
-        233: 'EE', 246: 'FI', 250: 'FR', 276: 'DE',
-        380: 'IT', 440: 'LT', 499: 'ME', 528: 'NL',
-        616: 'PL', 620: 'PT', 705: 'SI', 710: 'ZA',
-        716: 'ZW', 724: 'ES', 752: 'SE', 756: 'CH',
-        428: 'LV'
+        8:   'AL', 40:  'AT', 56:  'BE', 70:  'BA', 191: 'HR',
+        233: 'EE', 246: 'FI', 250: 'FR', 276: 'DE', 380: 'IT',
+        428: 'LV', 440: 'LT', 442: 'LX', 499: 'ME', 528: 'NL',
+        616: 'PL', 620: 'PT', 705: 'SI', 710: 'ZA', 716: 'ZW',
+        724: 'ES', 752: 'SE', 756: 'CH'
       };
 
+      const hasPhotos = id => (byId(id)?.photos || []).length > 0;
+      const tooltip = document.getElementById('map-tooltip');
+      const listLinks = {};
+
+      const q = quotes[Math.floor(Math.random() * quotes.length)];
+      document.getElementById('map-quote').textContent = '“' + q.text + '”';
+      document.getElementById('map-quote-author').textContent = q.author;
+
+      // Country list, grouped by the trip it belongs to.
+      const listEl = document.getElementById('country-list');
+      ['European-Voyage', 'The-Bush'].forEach(pid => {
+        const parent = byId(pid);
+        if (!parent) return;
+        const items = childrenOf(pid)
+          .filter(c => hasPhotos(c.id))
+          .sort((a, b) => a.title.localeCompare(b.title))
+          .map(c => {
+            const a = h('a', { href: hrefFor(c) }, c.title);
+            listLinks[c.id] = a;
+            return h('li', {}, a);
+          });
+        listEl.append(h('section', {}, h('h2', {}, parent.title), h('ul', {}, items)));
+      });
+
+      function hover(id, on) {
+        const c = byId(id);
+        tooltip.textContent = on && c ? c.title : '';
+        listLinks[id]?.classList.toggle('is-hover', on);
+        d3.selectAll('.map-region').filter(d => d && COUNTRY_IDS[+d.id] === id).classed('is-hover', on);
+      }
+
+      Object.entries(listLinks).forEach(([id, a]) => {
+        a.addEventListener('mouseenter', () => hover(id, true));
+        a.addEventListener('mouseleave', () => hover(id, false));
+      });
 
       const proj = d3.geoNaturalEarth1().scale(153).translate([480, 250]);
       const path = d3.geoPath().projection(proj);
-      const tooltip = document.getElementById('map-tooltip');
+      const go = id => { location.href = 'gallery.html?code=' + encodeURIComponent(id); };
 
-      function showTooltip(name) {
-        tooltip.textContent = name;
-        tooltip.style.opacity = 1;
-      }
-
-      function hideTooltip() {
-        tooltip.style.opacity = 0;
-      }
-
-      function navigate(code) {
-        window.location.href = 'gallery.html?code=' + code;
-      }
-
-const q = quotes[Math.floor(Math.random() * quotes.length)];
-document.getElementById('map-quote').textContent = '\u201C' + q.text + '\u201D';
-document.getElementById('map-quote-author').textContent = '\u2014 ' + q.author;
-
-      d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json').then(function(world) {
+      d3.json('https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-50m.json').then(world => {
         const features = topojson.feature(world, world.objects.countries).features;
 
-        // Ghost world outline
-        d3.select('#map-world')
-          .selectAll('path')
-          .data(features)
-          .join('path')
-          .attr('d', path)
-          .attr('fill', 'none')
-          .attr('stroke', '#2a2a28')
-          .attr('stroke-width', 0.4);
+        d3.select('#map-world').selectAll('path')
+          .data(features).join('path')
+          .attr('class', 'map-land')
+          .attr('d', path);
 
-        // Active countries
-        d3.select('#map-regions')
-          .selectAll('path')
-          .data(features.filter(function(d) { return COUNTRY_IDS[+d.id]; }))
+        d3.select('#map-regions').selectAll('path')
+          .data(features.filter(d => hasPhotos(COUNTRY_IDS[+d.id])))
           .join('path')
           .attr('class', 'map-region')
           .attr('d', path)
-          .attr('fill', 'url(#px)')
-          .attr('stroke', '#6a6a62')
-          .attr('stroke-width', 0.6)
-          .on('mouseenter', function(e, d) { const n = collections.find(c => c.id === COUNTRY_IDS[+d.id]); if (n) showTooltip(n.title); })
-          .on('mouseleave', hideTooltip)
-          .on('click', function(e, d) { navigate(COUNTRY_IDS[+d.id]); });
+          .attr('tabindex', 0)
+          .attr('role', 'link')
+          .attr('aria-label', d => byId(COUNTRY_IDS[+d.id]).title)
+          .on('mouseenter focus', (e, d) => hover(COUNTRY_IDS[+d.id], true))
+          .on('mouseleave blur', (e, d) => hover(COUNTRY_IDS[+d.id], false))
+          .on('click', (e, d) => go(COUNTRY_IDS[+d.id]))
+          .on('keydown', (e, d) => { if (e.key === 'Enter') go(COUNTRY_IDS[+d.id]); });
 
-        const sg = d3.select('#map-specials');
-
-
-
-
-        // Monstera leaf — The Jungle (Amazon region)
-        const junglePos = proj([-60, -5]);
-        const jg = sg.append('g')
-          .attr('class', 'map-region')
-          .attr('transform', 'translate(' + junglePos[0] + ',' + junglePos[1] + ')')
-          .on('mouseenter', function() { showTooltip('The Jungle'); })
-          .on('mouseleave', hideTooltip)
-          .on('click', function() { navigate('TheJungle'); });
-
-        // Simple monstera leaf shape — two lobed leaf with midrib
-        jg.append('path')
-          .attr('d', [
-            'M0,0',
-            'C-2,-6 -8,-10 -6,-16',
-            'C-4,-20 0,-22 0,-22',
-            'C0,-22 4,-20 6,-16',
-            'C8,-10 2,-6 0,0Z',
-            'M-6,-16',
-            'C-10,-14 -12,-10 -10,-6',
-            'C-8,-2 -4,0 0,0',
-            'M6,-16',
-            'C10,-14 12,-10 10,-6',
-            'C8,-2 4,0 0,0',
-            'M0,-22 L0,0'
-          ].join(' '))
-          .attr('fill', 'url(#px)')
-          .attr('stroke', '#6a6a62')
-          .attr('stroke-width', 0.6)
-          .attr('fill-rule', 'evenodd');
-
+        // Monstera leaf for The Jungle, over the Amazon.
+        if (hasPhotos('TheJungle')) {
+          const [jx, jy] = proj([-60, -5]);
+          d3.select('#map-specials').append('path')
+            .attr('class', 'map-region')
+            .attr('transform', `translate(${jx},${jy}) scale(1.4)`)
+            .attr('d', 'M0,0 C-2,-6 -8,-10 -6,-16 C-4,-20 0,-22 0,-22 C0,-22 4,-20 6,-16 C8,-10 2,-6 0,0Z M-6,-16 C-10,-14 -12,-10 -10,-6 C-8,-2 -4,0 0,0 M6,-16 C10,-14 12,-10 10,-6 C8,-2 4,0 0,0')
+            .attr('fill-rule', 'evenodd')
+            .attr('tabindex', 0)
+            .attr('role', 'link')
+            .attr('aria-label', 'The Jungle')
+            .datum({ id: 'jungle' })
+            .on('mouseenter focus', () => hover('TheJungle', true))
+            .on('mouseleave blur', () => hover('TheJungle', false))
+            .on('click', () => go('TheJungle'))
+            .on('keydown', e => { if (e.key === 'Enter') go('TheJungle'); });
+        }
       });
-
     </script>
 
   </body>
