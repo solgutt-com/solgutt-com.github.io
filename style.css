@@ -302,10 +302,10 @@ body.framed::after {
   border-bottom: 1px solid var(--rule);
 }
 
+/* Title and subtitle on top, then four square photos spread evenly across the full row. */
 .collection-link {
   display: grid;
-  grid-template-columns: minmax(240px, 5fr) 7fr;
-  gap: 24px 48px;
+  gap: 20px;
   padding: 40px 0;
   text-decoration: none;
 }
@@ -325,13 +325,12 @@ a.collection-link:hover .collection-title { color: var(--olive-ink); }
 .thumbs {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 8px;
-  align-self: start;
+  gap: clamp(10px, 2vw, 28px);
 }
 
 .thumbs img {
   width: 100%;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1;
   object-fit: cover;
   background: var(--straw-deep);
   transition: filter 0.3s ease;
@@ -342,7 +341,7 @@ a.collection-link:hover .thumbs img { filter: contrast(1.06) saturate(1.08); }
 .collection-row.is-pending .collection-text { opacity: 0.55; }
 
 .empty-frame {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1;
   border: 1px dashed var(--rule);
 }
 
@@ -728,8 +727,7 @@ body.darkroom {
   .haystack { flex-direction: column; align-items: stretch; justify-content: flex-end; overflow: hidden; }
   .haystack svg { flex: 1; min-height: 240px; max-height: none; }
 
-  .collection-link { grid-template-columns: 1fr; padding: 32px 0; }
-  .thumbs { grid-template-columns: repeat(4, 1fr); gap: 4px; }
+  .collection-link { padding: 32px 0; }
 
   .film,
   .about,
@@ -747,6 +745,7 @@ body.darkroom {
 }
 
 @media (max-width: 560px) {
+  .thumbs { grid-template-columns: repeat(2, 1fr); gap: 8px; }
   body.framed::after { inset: 6px; border-radius: 16px; }
   .masthead { flex-wrap: wrap; row-gap: 12px; }
   .nav { margin-left: 0; }
