@@ -3,5 +3,11 @@
   "subtitle": "In more than 80 days",
   "description": "Carefully selected travel photos for your viewing pleasure.",
   "order": 3,
-  "type": "parent"
+  "type": "parent",
+  "preview": [
+    "sub/European-Voyage/Photos/AL/AL_1.jpeg",
+    "sub/The-Bush/Photos/ZA/SolGutt - Zuid Africa-01.JPG",
+    "sub/European-Voyage/Photos/IT/IT_WiseMan.jpeg",
+    "sub/European-Voyage/Photos/SI/SI_AlmostinItaly.jpeg"
+  ]
 }

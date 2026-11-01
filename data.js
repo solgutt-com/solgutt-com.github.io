@@ -13,217 +13,12 @@ const collections = [
     "parent": null
   },
   {
-    "id": "a_natureza",
-    "title": "A Natureza",
-    "subtitle": "The haystack deserves as much attention as the needle.",
-    "description": "A collection of encounters with natural beauty in and around Cidadelhe.",
-    "cover": "SolGutt - Cidadelhe Natureza-75.jpg",
-    "order": 1,
-    "type": "gallery",
-    "path": "Images/Collections/Cidadelhe/sub/a_natureza",
-    "photos": [
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-001.jpg",
-        "caption": "Cidadelhe Oliveira"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-002 2.jpeg",
-        "caption": "Longroiva Oliveira"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-03.jpg",
-        "caption": "Cidadelhe Longicórnio Sourado"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-17.jpg",
-        "caption": "Cidadelhe O Vinho 01"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-20.jpg",
-        "caption": "Cidadelhe O Vinho 02"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-21.jpg",
-        "caption": "Cidadelhe O Vinho 03"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-71.jpg",
-        "caption": "Cidadelhe Formigas"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-50.jpg",
-        "caption": "Cidadelhe Carvalho e Joaninha"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-48.jpg",
-        "caption": "Cidadelhe Sobreiro 01"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-47.jpg",
-        "caption": "Cidadelhe Sobreiro 02"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-07.jpg",
-        "caption": "Cidadelhe Cobre 01"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-82.jpg",
-        "caption": "Cidadelhe Cobre 02"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-14.jpg",
-        "caption": "Castelo Rodrigo Gatos"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-88.jpg",
-        "caption": "Cidadelhe Camomila"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-73.jpg",
-        "caption": "Cidadelhe Flores Silvestres"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-24.jpg",
-        "caption": "Cidadelhe Malva / Gerânio-bravo"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-77.jpg",
-        "caption": "Cidadelhe Cardo-roxo"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-79.jpg",
-        "caption": "Cidadelhe Borragem 01"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-80.jpg",
-        "caption": "Cidadelhe Borragem 02"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-33.jpg",
-        "caption": "Beira Alta Paisagem"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-36.jpg",
-        "caption": "Cidadelhe Picanço-Barreteiro e Pinheiro"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-60.jpg",
-        "caption": "Cidadelhe Pardal-Espanhol"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-59.JPG",
-        "caption": "Cidadelhe A Cenoura Mortal 01"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-58.jpg",
-        "caption": "Cidadelhe A Cenoura Mortal 02"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-84.jpg",
-        "caption": "Cidadelhe Wolf Spider 01"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-85.jpg",
-        "caption": "Cidadelhe Wolf Spider 02"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-86.jpg",
-        "caption": "Cidadelhe Wolf Spider 03"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-37.jpg",
-        "caption": "Cidadelhe Erva de trigo 01"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-38.jpg",
-        "caption": "Cidadelhe Erva de trigo 02"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-57.jpg",
-        "caption": "Cidadelhe Erva de trigo 03"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-78.jpg",
-        "caption": "Cidadelhe Aranha-de-jardim-listrada"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-75.jpg",
-        "caption": "Cidadelhe Papoila 01"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-64.jpg",
-        "caption": "Cidadelhe Papoila 02"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-39.jpg",
-        "caption": "Cidadelhe Papoila 03"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-11.jpg",
-        "caption": "Cidadelhe Papoila 04"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-49.jpg",
-        "caption": "Cidadelhe A Vida Nas Rochas 01"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-51 2.jpg",
-        "caption": "Cidadelhe A Vida Nas Rochas 02"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-51.jpg",
-        "caption": "Cidadelhe A Vida Nas Rochas 03"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-52.jpg",
-        "caption": "Cidadelhe A Vida Nas Rochas 04"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-55.jpg",
-        "caption": "Cidadelhe A Vida Nas Rochas 05"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-54.jpg",
-        "caption": "Cidadelhe A Vida Nas Rochas 06"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-56.jpg",
-        "caption": "Cidadelhe A Vida Nas Rochas 07"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/IMGM3950.JPG",
-        "caption": "Cidadelhe Aves 00"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-61.jpg",
-        "caption": "Cidadelhe Aves 01"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-87.jpg",
-        "caption": "Cidadelhe Aves 02"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-68.jpg",
-        "caption": "Cidadelhe Insetos 68"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/IMGM3947.JPG",
-        "caption": "Cidadelhe Suculentas 00"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/IMGM3949.JPG",
-        "caption": "Cidadelhe Suculentas 01"
-      }
-    ],
-    "parent": "Cidadelhe"
-  },
-  {
     "id": "as_ruinas_no_meio",
     "title": "As Ruínas no Meio",
     "subtitle": "Ruins in between the villages.",
     "description": "A collection of the stone ruins that are scattered through the country side.",
     "cover": "SolGutt - As Ruinas-ab.jpg",
-    "order": 2,
+    "order": 1,
     "type": "gallery",
     "path": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio",
     "photos": [
@@ -334,6 +129,275 @@ const collections = [
       {
         "src": "Images/Collections/Cidadelhe/sub/as_ruinas_no_meio/Photos/SolGutt - As Ruinas-z10.jpg",
         "caption": "As Ruinas 027"
+      }
+    ],
+    "parent": "Cidadelhe"
+  },
+  {
+    "id": "vale_do_olmo",
+    "title": "Vale do Olmo",
+    "subtitle": "A place to see the smile of plants",
+    "description": "Helping friends manage their land and learning many new things along the way",
+    "cover": "",
+    "order": 2,
+    "type": "gallery",
+    "path": "Images/Collections/Cidadelhe/sub/vale_do_olmo",
+    "photos": [
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-018.jpg",
+        "caption": "Vale do Olmo 00"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-008.jpg",
+        "caption": "Vale do Olmo 01"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-019.jpg",
+        "caption": "Vale do Olmo 02"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-240.jpg",
+        "caption": "Vale do Olmo 03"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-075.jpg",
+        "caption": "Vale do Olmo 04"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-085.jpg",
+        "caption": "Vale do Olmo 05"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-086.jpg",
+        "caption": "Vale do Olmo 06"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-092.jpg",
+        "caption": "Vale do Olmo 08"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-097.jpg",
+        "caption": "Vale do Olmo 09"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-096.jpg",
+        "caption": "Vale do Olmo 010"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-101.jpg",
+        "caption": "Vale do Olmo 011"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-124.jpg",
+        "caption": "Vale do Olmo 012"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-135.jpg",
+        "caption": "Vale do Olmo 013"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-139.jpg",
+        "caption": "Vale do Olmo 014"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-114.jpg",
+        "caption": "Vale do Olmo 015"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-118.jpg",
+        "caption": "Vale do Olmo 016"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-119.jpg",
+        "caption": "Vale do Olmo 017"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-151.jpg",
+        "caption": "Vale do Olmo 018"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-150.jpg",
+        "caption": "Vale do Olmo 019"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-155.jpg",
+        "caption": "Vale do Olmo 020"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-158.jpg",
+        "caption": "Vale do Olmo 021"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-047.jpg",
+        "caption": "Vale do Olmo 022"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-039.jpg",
+        "caption": "Vale do Olmo 023"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-040.jpg",
+        "caption": "Vale do Olmo 024"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-045.jpg",
+        "caption": "Vale do Olmo 025"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-021.jpg",
+        "caption": "Vale do Olmo 028"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-083.jpg",
+        "caption": "Vale do Olmo 029"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-215.jpg",
+        "caption": "Vale do Olmo 215"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-002.jpg",
+        "caption": "Vale do Olmo 030"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-076.jpg",
+        "caption": "Vale do Olmo 031"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-130.jpg",
+        "caption": "Vale do Olmo 130"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-028.jpg",
+        "caption": "Vale do Olmo 026"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-034.jpg",
+        "caption": "Vale do Olmo 027"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-103.jpg",
+        "caption": "Vale do Olmo 103"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-104.jpg",
+        "caption": "Vale do Olmo 104"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-099.jpg",
+        "caption": "Vale do Olmo 099"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-112.jpg",
+        "caption": "Vale do Olmo 112"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-111.jpg",
+        "caption": "Vale do Olmo 111"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-084.jpg",
+        "caption": "Vale do Olmo 084"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - crack 1 Vale do Olmo-077.jpg",
+        "caption": "crack 1 Vale do Olmo 077"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - crack 2 Vale do Olmo-079.jpg",
+        "caption": "crack 2 Vale do Olmo 079"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - crack 3 Vale do Olmo-078.jpg",
+        "caption": "crack 3 Vale do Olmo 078"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-074.jpg",
+        "caption": "Vale do Olmo 074"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-065.jpg",
+        "caption": "Vale do Olmo 065"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-061.jpg",
+        "caption": "Vale do Olmo 061"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-064.jpg",
+        "caption": "Vale do Olmo 064"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-060.jpg",
+        "caption": "Vale do Olmo 060"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-205.jpg",
+        "caption": "Vale do Olmo 205"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-233.jpg",
+        "caption": "Vale do Olmo 233"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-175.jpg",
+        "caption": "Vale do Olmo 175"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-170.jpg",
+        "caption": "Vale do Olmo 170"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-169.jpg",
+        "caption": "Vale do Olmo 169"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-137.jpg",
+        "caption": "Vale do Olmo 137"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-172.jpg",
+        "caption": "Vale do Olmo 172"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-185.jpg",
+        "caption": "Vale do Olmo 185"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-206.jpg",
+        "caption": "Vale do Olmo 206"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-201.jpg",
+        "caption": "Vale do Olmo 201"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-200.jpg",
+        "caption": "Vale do Olmo 200"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-191.jpg",
+        "caption": "Vale do Olmo 191"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-193.jpg",
+        "caption": "Vale do Olmo 193"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-195.jpg",
+        "caption": "Vale do Olmo 195"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-199.jpg",
+        "caption": "Vale do Olmo 199"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-231.jpg",
+        "caption": "Vale do Olmo 231"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-228.jpg",
+        "caption": "Vale do Olmo 228"
       }
     ],
     "parent": "Cidadelhe"
@@ -773,12 +837,217 @@ const collections = [
     "parent": "Cidadelhe"
   },
   {
+    "id": "a_natureza",
+    "title": "A Natureza",
+    "subtitle": "The haystack deserves as much attention as the needle.",
+    "description": "A collection of encounters with natural beauty in and around Cidadelhe.",
+    "cover": "SolGutt - Cidadelhe Natureza-75.jpg",
+    "order": 5,
+    "type": "gallery",
+    "path": "Images/Collections/Cidadelhe/sub/a_natureza",
+    "photos": [
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-001.jpg",
+        "caption": "Cidadelhe Oliveira"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-002 2.jpeg",
+        "caption": "Longroiva Oliveira"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-03.jpg",
+        "caption": "Cidadelhe Longicórnio Sourado"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-17.jpg",
+        "caption": "Cidadelhe O Vinho 01"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-20.jpg",
+        "caption": "Cidadelhe O Vinho 02"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-21.jpg",
+        "caption": "Cidadelhe O Vinho 03"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-71.jpg",
+        "caption": "Cidadelhe Formigas"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-50.jpg",
+        "caption": "Cidadelhe Carvalho e Joaninha"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-48.jpg",
+        "caption": "Cidadelhe Sobreiro 01"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-47.jpg",
+        "caption": "Cidadelhe Sobreiro 02"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-07.jpg",
+        "caption": "Cidadelhe Cobre 01"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-82.jpg",
+        "caption": "Cidadelhe Cobre 02"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-14.jpg",
+        "caption": "Castelo Rodrigo Gatos"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-88.jpg",
+        "caption": "Cidadelhe Camomila"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-73.jpg",
+        "caption": "Cidadelhe Flores Silvestres"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-24.jpg",
+        "caption": "Cidadelhe Malva / Gerânio-bravo"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-77.jpg",
+        "caption": "Cidadelhe Cardo-roxo"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-79.jpg",
+        "caption": "Cidadelhe Borragem 01"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-80.jpg",
+        "caption": "Cidadelhe Borragem 02"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-33.jpg",
+        "caption": "Beira Alta Paisagem"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-36.jpg",
+        "caption": "Cidadelhe Picanço-Barreteiro e Pinheiro"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-60.jpg",
+        "caption": "Cidadelhe Pardal-Espanhol"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-59.JPG",
+        "caption": "Cidadelhe A Cenoura Mortal 01"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-58.jpg",
+        "caption": "Cidadelhe A Cenoura Mortal 02"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-84.jpg",
+        "caption": "Cidadelhe Wolf Spider 01"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-85.jpg",
+        "caption": "Cidadelhe Wolf Spider 02"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-86.jpg",
+        "caption": "Cidadelhe Wolf Spider 03"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-37.jpg",
+        "caption": "Cidadelhe Erva de trigo 01"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-38.jpg",
+        "caption": "Cidadelhe Erva de trigo 02"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-57.jpg",
+        "caption": "Cidadelhe Erva de trigo 03"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-78.jpg",
+        "caption": "Cidadelhe Aranha-de-jardim-listrada"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-75.jpg",
+        "caption": "Cidadelhe Papoila 01"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-64.jpg",
+        "caption": "Cidadelhe Papoila 02"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-39.jpg",
+        "caption": "Cidadelhe Papoila 03"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-11.jpg",
+        "caption": "Cidadelhe Papoila 04"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-49.jpg",
+        "caption": "Cidadelhe A Vida Nas Rochas 01"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-51 2.jpg",
+        "caption": "Cidadelhe A Vida Nas Rochas 02"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-51.jpg",
+        "caption": "Cidadelhe A Vida Nas Rochas 03"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-52.jpg",
+        "caption": "Cidadelhe A Vida Nas Rochas 04"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-55.jpg",
+        "caption": "Cidadelhe A Vida Nas Rochas 05"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-54.jpg",
+        "caption": "Cidadelhe A Vida Nas Rochas 06"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-56.jpg",
+        "caption": "Cidadelhe A Vida Nas Rochas 07"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/IMGM3950.JPG",
+        "caption": "Cidadelhe Aves 00"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-61.jpg",
+        "caption": "Cidadelhe Aves 01"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-87.jpg",
+        "caption": "Cidadelhe Aves 02"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/SolGutt - Cidadelhe Natureza-68.jpg",
+        "caption": "Cidadelhe Insetos 68"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/IMGM3947.JPG",
+        "caption": "Cidadelhe Suculentas 00"
+      },
+      {
+        "src": "Images/Collections/Cidadelhe/sub/a_natureza/Photos/IMGM3949.JPG",
+        "caption": "Cidadelhe Suculentas 01"
+      }
+    ],
+    "parent": "Cidadelhe"
+  },
+  {
     "id": "amigos_do_portugal",
     "title": "Amigos do Portugal",
     "subtitle": "Stangers that became friends.",
     "description": "Some serious characters.",
     "cover": "",
-    "order": 5,
+    "order": 6,
     "type": "gallery",
     "path": "Images/Collections/Cidadelhe/sub/amigos_do_portugal",
     "photos": [
@@ -841,275 +1110,6 @@ const collections = [
       {
         "src": "Images/Collections/Cidadelhe/sub/amigos_do_portugal/Photos/SolGutt - Amigos do Portugal-15.jpg",
         "caption": "Amigos do Portugal 013"
-      }
-    ],
-    "parent": "Cidadelhe"
-  },
-  {
-    "id": "vale_do_olmo",
-    "title": "Vale do Olmo",
-    "subtitle": "A place to see the smile of plants",
-    "description": "Helping friends manage their land and learning many new things along the way",
-    "cover": "",
-    "order": 6,
-    "type": "gallery",
-    "path": "Images/Collections/Cidadelhe/sub/vale_do_olmo",
-    "photos": [
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-018.jpg",
-        "caption": "Vale do Olmo 00"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-008.jpg",
-        "caption": "Vale do Olmo 01"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-019.jpg",
-        "caption": "Vale do Olmo 02"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-240.jpg",
-        "caption": "Vale do Olmo 03"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-075.jpg",
-        "caption": "Vale do Olmo 04"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-085.jpg",
-        "caption": "Vale do Olmo 05"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-086.jpg",
-        "caption": "Vale do Olmo 06"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-092.jpg",
-        "caption": "Vale do Olmo 08"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-097.jpg",
-        "caption": "Vale do Olmo 09"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-096.jpg",
-        "caption": "Vale do Olmo 010"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-101.jpg",
-        "caption": "Vale do Olmo 011"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-124.jpg",
-        "caption": "Vale do Olmo 012"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-135.jpg",
-        "caption": "Vale do Olmo 013"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-139.jpg",
-        "caption": "Vale do Olmo 014"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-114.jpg",
-        "caption": "Vale do Olmo 015"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-118.jpg",
-        "caption": "Vale do Olmo 016"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-119.jpg",
-        "caption": "Vale do Olmo 017"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-151.jpg",
-        "caption": "Vale do Olmo 018"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-150.jpg",
-        "caption": "Vale do Olmo 019"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-155.jpg",
-        "caption": "Vale do Olmo 020"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-158.jpg",
-        "caption": "Vale do Olmo 021"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-047.jpg",
-        "caption": "Vale do Olmo 022"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-039.jpg",
-        "caption": "Vale do Olmo 023"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-040.jpg",
-        "caption": "Vale do Olmo 024"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-045.jpg",
-        "caption": "Vale do Olmo 025"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-021.jpg",
-        "caption": "Vale do Olmo 028"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-083.jpg",
-        "caption": "Vale do Olmo 029"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-215.jpg",
-        "caption": "Vale do Olmo 215"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-002.jpg",
-        "caption": "Vale do Olmo 030"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-076.jpg",
-        "caption": "Vale do Olmo 031"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-130.jpg",
-        "caption": "Vale do Olmo 130"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-028.jpg",
-        "caption": "Vale do Olmo 026"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-034.jpg",
-        "caption": "Vale do Olmo 027"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-103.jpg",
-        "caption": "Vale do Olmo 103"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-104.jpg",
-        "caption": "Vale do Olmo 104"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-099.jpg",
-        "caption": "Vale do Olmo 099"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-112.jpg",
-        "caption": "Vale do Olmo 112"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-111.jpg",
-        "caption": "Vale do Olmo 111"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-084.jpg",
-        "caption": "Vale do Olmo 084"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - crack 1 Vale do Olmo-077.jpg",
-        "caption": "crack 1 Vale do Olmo 077"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - crack 2 Vale do Olmo-079.jpg",
-        "caption": "crack 2 Vale do Olmo 079"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - crack 3 Vale do Olmo-078.jpg",
-        "caption": "crack 3 Vale do Olmo 078"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-074.jpg",
-        "caption": "Vale do Olmo 074"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-065.jpg",
-        "caption": "Vale do Olmo 065"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-061.jpg",
-        "caption": "Vale do Olmo 061"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-064.jpg",
-        "caption": "Vale do Olmo 064"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-060.jpg",
-        "caption": "Vale do Olmo 060"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-205.jpg",
-        "caption": "Vale do Olmo 205"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-233.jpg",
-        "caption": "Vale do Olmo 233"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-175.jpg",
-        "caption": "Vale do Olmo 175"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-170.jpg",
-        "caption": "Vale do Olmo 170"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-169.jpg",
-        "caption": "Vale do Olmo 169"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-137.jpg",
-        "caption": "Vale do Olmo 137"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-172.jpg",
-        "caption": "Vale do Olmo 172"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-185.jpg",
-        "caption": "Vale do Olmo 185"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-206.jpg",
-        "caption": "Vale do Olmo 206"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-201.jpg",
-        "caption": "Vale do Olmo 201"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-200.jpg",
-        "caption": "Vale do Olmo 200"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-191.jpg",
-        "caption": "Vale do Olmo 191"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-193.jpg",
-        "caption": "Vale do Olmo 193"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-195.jpg",
-        "caption": "Vale do Olmo 195"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-199.jpg",
-        "caption": "Vale do Olmo 199"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-231.jpg",
-        "caption": "Vale do Olmo 231"
-      },
-      {
-        "src": "Images/Collections/Cidadelhe/sub/vale_do_olmo/Photos/SolGutt - Vale do Olmo-228.jpg",
-        "caption": "Vale do Olmo 228"
       }
     ],
     "parent": "Cidadelhe"
@@ -2160,6 +2160,12 @@ const collections = [
     "order": 3,
     "type": "parent",
     "path": "Images/Collections/Around-the-World",
+    "preview": [
+      "Images/Collections/Around-the-World/sub/European-Voyage/Photos/AL/AL_1.jpeg",
+      "Images/Collections/Around-the-World/sub/The-Bush/Photos/ZA/SolGutt - Zuid Africa-01.JPG",
+      "Images/Collections/Around-the-World/sub/European-Voyage/Photos/IT/IT_WiseMan.jpeg",
+      "Images/Collections/Around-the-World/sub/European-Voyage/Photos/SI/SI_AlmostinItaly.jpeg"
+    ],
     "parent": null
   },
   {
@@ -3157,7 +3163,7 @@ const collections = [
     "title": "Slovenia",
     "subtitle": "",
     "description": "",
-    "cover": "",
+    "cover": "SI_AlmostinItaly.jpeg",
     "order": 999,
     "type": "gallery",
     "path": "Images/Collections/Around-the-World/sub/European-Voyage/Photos/SI",
