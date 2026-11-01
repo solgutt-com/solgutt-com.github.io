@@ -5,7 +5,7 @@ Usage:
   python3 ~/Desktop/solgutt.github.io/edit.py      (opens the editor in your browser)
 
 Drag collections and galleries into the order they appear on the site, drag photos
-within a gallery, edit captions and pick each gallery's cover. Saving writes the
+within a gallery, edit captions, rotate photos and pick each gallery's cover. Saving writes the
 right collections.json files, rebuilds data.js and makes any missing thumbnails.
 It runs only on this computer. Publish sends the saved changes to solgutt.com
 (it commits them and runs `git push`). Ctrl+C stops it.
@@ -80,6 +80,53 @@ def all_photos(node):
     return node.get("photos", []) + [p for c in node.get("children", []) for p in all_photos(c)]
 
 
+# EXIF orientation values that only turn the photo, and how far clockwise each one turns it.
+QUARTER_TURNS = {1: 0, 6: 90, 3: 180, 8: 270}
+
+
+def exif_orientation(path):
+    """A JPEG's EXIF orientation as (value, byte offset of the value, byte order), or (1, None, None)."""
+    with open(path, "rb") as f:
+        data = f.read()
+    if data[:2] != b"\xff\xd8":
+        return 1, None, None
+    i = 2
+    while i + 4 <= len(data) and data[i] == 0xFF and data[i + 1] != 0xDA:
+        length = int.from_bytes(data[i + 2:i + 4], "big")
+        if data[i + 1] == 0xE1 and data[i + 4:i + 10] == b"Exif\0\0":
+            tiff = i + 10
+            order = "little" if data[tiff:tiff + 2] == b"II" else "big"
+            ifd = tiff + int.from_bytes(data[tiff + 4:tiff + 8], order)
+            for n in range(int.from_bytes(data[ifd:ifd + 2], order)):
+                entry = ifd + 2 + 12 * n
+                if int.from_bytes(data[entry:entry + 2], order) == 0x0112:
+                    return int.from_bytes(data[entry + 8:entry + 10], order), entry + 8, order
+        i += 2 + length
+    return 1, None, None
+
+
+def rotate_photo(path, degrees):
+    """Turn a photo clockwise in place. Its camera's orientation tag is folded into the pixels and
+    reset, so browsers and thumbnails all show the same thing; make_thumbs then remakes the
+    thumbnail because the photo is newer."""
+    orientation, _, _ = exif_orientation(path)
+    if orientation not in QUARTER_TURNS:
+        raise ValueError(f"{os.path.basename(path)} is mirrored by its camera settings. Rotate it in Preview instead.")
+    total = (QUARTER_TURNS[orientation] + degrees) % 360
+    if total:
+        jpeg = path.lower().endswith((".jpg", ".jpeg"))
+        result = subprocess.run(["sips", "-r", str(total), *(["-s", "formatOptions", "92"] if jpeg else []), path],
+                                capture_output=True, text=True, timeout=120)
+        if result.returncode != 0:
+            raise ValueError(f"Could not rotate {os.path.basename(path)}.")
+    # sips keeps the EXIF block, so the old tag would turn the photo a second time in browsers.
+    _, at, order = exif_orientation(path)
+    if at is not None:
+        with open(path, "r+b") as f:
+            f.seek(at)
+            f.write((1).to_bytes(2, order))
+
+
 def save(request):
     node = find(tree(), request.get("path"))
     if not node:
@@ -97,6 +144,12 @@ def save(request):
         if sorted(request["photos"]) != sorted(files):
             raise ValueError("Photos were added or removed since the editor loaded. Reload it and try again.")
         folder   = folder_for(node["path"])
+        sources  = {os.path.basename(p["src"]): p["src"] for p in node.get("photos", [])}
+        rotate   = request.get("rotate", {})
+        if any(name not in sources or turn not in (90, 180, 270) for name, turn in rotate.items()):
+            raise ValueError("A rotation didn't match a photo in this gallery. Reload the editor.")
+        for name, turn in rotate.items():
+            rotate_photo(os.path.join(ROOT, sources[name]), turn)
         captions = dict(read_meta(folder).get("captions", {}))
         for name, caption in request.get("captions", {}).items():
             if name in files:
@@ -250,12 +303,14 @@ EDITOR = r"""<!DOCTYPE html>
           border: 2px solid transparent; user-select: none; }
   .card.dragging { opacity: 0.35; }
   .card.over { border-color: var(--olive-ink); }
-  .card img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; pointer-events: none; background: var(--rule); }
+  .card img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; pointer-events: none; background: var(--rule);
+              transition: transform 0.2s; }
   .card .blank { aspect-ratio: 4 / 3; border-bottom: 1px dashed var(--rule); }
   .card .label { padding: 6px 8px 8px; font-family: var(--sans); font-weight: 800; font-size: 15px; line-height: 1.2; }
   .card .num { position: absolute; top: 6px; left: 6px; background: rgba(35, 40, 28, 0.75); color: var(--straw);
                font-family: var(--sans); font-weight: 500; font-size: 12px; padding: 1px 6px; border-radius: 3px; pointer-events: none; }
-  .card .tools { position: absolute; top: 4px; right: 4px; display: flex; gap: 2px; }
+  .card .tools { position: absolute; top: 4px; right: 4px; display: flex; gap: 2px; z-index: 1; }
+  .card .num { z-index: 1; }
   .card .tools button { background: rgba(227, 209, 155, 0.92); border-radius: 3px; width: 26px; height: 24px; font-size: 14px; line-height: 1; }
   .card .tools button:hover { background: var(--straw); }
   .card .star[aria-pressed="true"] { color: var(--olive-ink); }
@@ -307,11 +362,13 @@ EDITOR = r"""<!DOCTYPE html>
 
   const enc = path => path.split('/').map(encodeURIComponent).join('/');
   const fileOf = src => src.split('/').pop();
+  const rotatedAt = {};  // src → when it was rotated, so the browser fetches the new file
 
   // Small preview made by make_thumbs.py, falling back to the photo itself.
   function thumb(src) {
-    const img = h('img', { src: '/thumbs/' + enc(src.replace(/\.[^.]+$/, '.jpg')), alt: '', loading: 'lazy' });
-    img.addEventListener('error', () => { img.src = '/' + enc(src); }, { once: true });
+    const v = rotatedAt[src] ? '?v=' + rotatedAt[src] : '';
+    const img = h('img', { src: '/thumbs/' + enc(src.replace(/\.[^.]+$/, '.jpg')) + v, alt: '', loading: 'lazy' });
+    img.addEventListener('error', () => { img.src = '/' + enc(src) + v; }, { once: true });
     return img;
   }
 
@@ -484,9 +541,22 @@ EDITOR = r"""<!DOCTYPE html>
       const star = h('button', { type: 'button', class: 'star', title: 'Use as cover', 'aria-pressed': String(node.cover === name) }, '★');
       const toStart = h('button', { type: 'button', title: 'Move to the start' }, '⇤');
       const toEnd = h('button', { type: 'button', title: 'Move to the end' }, '⇥');
+      const left = h('button', { type: 'button', title: 'Rotate left' }, '↺');
+      const right = h('button', { type: 'button', title: 'Rotate right' }, '↻');
       const caption = h('input', { type: 'text', value: p.caption, placeholder: 'Caption', 'aria-label': 'Caption for ' + name });
-      const card = h('div', { class: 'card' + (node.cover === name ? ' is-cover' : ''), draggable: 'true', 'data-file': name, 'data-caption': p.caption },
-        h('span', { class: 'num' }), h('div', { class: 'tools' }, toStart, toEnd, star), thumb(p.src), caption);
+      const img = thumb(p.src);
+      const card = h('div', { class: 'card' + (node.cover === name ? ' is-cover' : ''), draggable: 'true', 'data-file': name, 'data-caption': p.caption, 'data-turn': '0' },
+        h('span', { class: 'num' }), h('div', { class: 'tools' }, left, right, toStart, toEnd, star), img, caption);
+
+      // Shows the turn straight away; the photo itself is rotated when you save.
+      const turn = by => {
+        const deg = (Number(card.dataset.turn) + by + 360) % 360;
+        card.dataset.turn = deg;
+        img.style.transform = deg ? `rotate(${deg}deg)` + (deg % 180 ? ' scale(0.75)' : '') : '';
+        setDirty(true);
+      };
+      left.addEventListener('click', () => turn(-90));
+      right.addEventListener('click', () => turn(90));
 
       caption.addEventListener('mousedown', e => e.stopPropagation());
       caption.addEventListener('input', () => { caption.classList.toggle('changed', caption.value !== p.caption); setDirty(true); });
@@ -504,7 +574,7 @@ EDITOR = r"""<!DOCTYPE html>
     });
     panel.replaceChildren(
       h('h2', {}, node.title),
-      h('p', { class: 'hint' }, 'Drag to reorder, or use ⇤ ⇥ to send a photo to the start or end. ★ makes it this gallery\'s cover: it stands for the gallery on its collection page, and on the Fotos page when the gallery is one of its collection\'s first four.'),
+      h('p', { class: 'hint' }, 'Drag to reorder, or use ⇤ ⇥ to send a photo to the start or end. ↺ ↻ rotate a photo; the file itself is turned when you save. ★ makes it this gallery\'s cover: it stands for the gallery on its collection page, and on the Fotos page when the gallery is one of its collection\'s first four.'),
       grid);
     makeSortable(grid);
   }
@@ -547,6 +617,8 @@ EDITOR = r"""<!DOCTYPE html>
       cards.forEach(c => { const v = c.querySelector('input').value; if (v !== c.dataset.caption) body.captions[c.dataset.file] = v; });
       const cover = cards.find(c => c.querySelector('.star').getAttribute('aria-pressed') === 'true');
       body.cover = cover ? cover.dataset.file : '';
+      body.rotate = {};
+      cards.forEach(c => { if (c.dataset.turn !== '0') body.rotate[c.dataset.file] = Number(c.dataset.turn); });
     }
     saveBtn.disabled = true;
     setStatus('Saving and rebuilding the site…');
@@ -554,6 +626,7 @@ EDITOR = r"""<!DOCTYPE html>
       const res = await fetch('/__save', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
       const out = await res.json();
       if (!out.ok) throw new Error(out.error);
+      (current.photos || []).forEach(p => { if (body.rotate && body.rotate[fileOf(p.src)]) rotatedAt[p.src] = Date.now(); });
       data = out.tree;
       open(current.path, true);
       setStatus('Saved. The site is rebuilt' + (out.thumbsMade ? ' and ' + out.thumbsMade + ' new thumbnails were made' : '') + '. Preview it, then Publish.');

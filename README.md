@@ -9,7 +9,7 @@ python3 ~/Desktop/solgutt.github.io/edit.py
 ```
 
 The editor opens in your browser. Pick something on the left, drag it into order
-(⇤ ⇥ send a photo to the start or end, ★ makes it the gallery's cover, captions
+(⇤ ⇥ send a photo to the start or end, ↺ ↻ rotate it, ★ makes it the gallery's cover, captions
 are editable under each photo) and press Save or Cmd+S. Opening Cidadelhe, Analog
 B&W or Around the World also lets you choose the four photos it shows on the Fotos
 page: click photos to fill the slots, drag to reorder, or reset to automatic. Saving rebuilds the site,
