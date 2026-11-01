@@ -3,9 +3,11 @@
   "subtitle": "Behind the scenes.",
   "description": "A camera I found in my house.",
   "cover": "",
-  "order": 2,
+  "order": 3,
   "type": "gallery",
   "photo_order": [
+    "Olympus_details.jpg",
+    "Olympus_details_4.jpg",
     "Olympus_1.jpg",
     "Olympus_2.jpg",
     "Olympus_3.jpg",
@@ -21,11 +23,9 @@
     "Olympus_strip_2.jpg",
     "Olympus_strip_3.jpg",
     "Olympus_strip_4.jpg",
-    "Olympus_details.jpg",
     "Olympus_details_1.jpg",
     "Olympus_details_2.jpg",
-    "Olympus_details_3.jpg",
-    "Olympus_details_4.jpg"
+    "Olympus_details_3.jpg"
   ],
   "captions": {
     "Olympus_1.jpg": "Olympus 01",

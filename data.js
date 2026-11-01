@@ -1728,12 +1728,6 @@ const collections = [
     "order": 2,
     "type": "parent",
     "path": "Images/Collections/Analog-BW",
-    "preview": [
-      "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_1.jpeg",
-      "Images/Collections/Analog-BW/sub/EOS500/Photos/BW_7SalomonGuttman-0928-24-Large.jpeg",
-      "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_2.jpg",
-      "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_NL_M&W_BW.jpg"
-    ],
     "parent": null
   },
   {
@@ -1814,105 +1808,12 @@ const collections = [
     "parent": "Analog-BW"
   },
   {
-    "id": "Olympus",
-    "title": "Olympus",
-    "subtitle": "Behind the scenes.",
-    "description": "A camera I found in my house.",
-    "cover": "",
-    "order": 2,
-    "type": "gallery",
-    "path": "Images/Collections/Analog-BW/sub/Olympus",
-    "photos": [
-      {
-        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_1.jpg",
-        "caption": "Olympus 01"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_2.jpg",
-        "caption": "Olympus 02"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_3.jpg",
-        "caption": "Olympus 03"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_4.jpg",
-        "caption": "Olympus 04"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_5.jpg",
-        "caption": "Olympus 05"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_6.jpg",
-        "caption": "Olympus 06"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_7.jpg",
-        "caption": "Olympus 07"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_8.jpg",
-        "caption": "Olympus 08"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_9.jpg",
-        "caption": "Olympus 09"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_10.jpg",
-        "caption": "Olympus 10"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_11.jpg",
-        "caption": "Olympus 11"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_strip_1.jpg",
-        "caption": "Olympus strip 1"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_strip_2.jpg",
-        "caption": "Olympus strip 2"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_strip_3.jpg",
-        "caption": "Olympus strip 3"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_strip_4.jpg",
-        "caption": "Olympus strip 4"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_details.jpg",
-        "caption": "Olympus details"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_details_1.jpg",
-        "caption": "Olympus details 1"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_details_2.jpg",
-        "caption": "Olympus details 2"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_details_3.jpg",
-        "caption": "Olympus details 3"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_details_4.jpg",
-        "caption": "Olympus details 4"
-      }
-    ],
-    "parent": "Analog-BW"
-  },
-  {
     "id": "plastic_reusable_disposable",
     "title": "Plastic Point n Shoot",
     "subtitle": "Simple pleasures",
     "description": "Photos that mostly came out pretty alright.",
     "cover": "",
-    "order": 3,
+    "order": 2,
     "type": "gallery",
     "path": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable",
     "photos": [
@@ -2003,6 +1904,249 @@ const collections = [
       {
         "src": "Images/Collections/Analog-BW/sub/plastic_reusable_disposable/Photos/BW_Wedding.jpeg",
         "caption": "Zurich 01"
+      }
+    ],
+    "parent": "Analog-BW"
+  },
+  {
+    "id": "Olympus",
+    "title": "Olympus",
+    "subtitle": "Behind the scenes.",
+    "description": "A camera I found in my house.",
+    "cover": "",
+    "order": 3,
+    "type": "gallery",
+    "path": "Images/Collections/Analog-BW/sub/Olympus",
+    "photos": [
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_details.jpg",
+        "caption": "Olympus details"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_details_4.jpg",
+        "caption": "Olympus details 4"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_1.jpg",
+        "caption": "Olympus 01"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_2.jpg",
+        "caption": "Olympus 02"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_3.jpg",
+        "caption": "Olympus 03"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_4.jpg",
+        "caption": "Olympus 04"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_5.jpg",
+        "caption": "Olympus 05"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_6.jpg",
+        "caption": "Olympus 06"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_7.jpg",
+        "caption": "Olympus 07"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_8.jpg",
+        "caption": "Olympus 08"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_9.jpg",
+        "caption": "Olympus 09"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_10.jpg",
+        "caption": "Olympus 10"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_11.jpg",
+        "caption": "Olympus 11"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_strip_1.jpg",
+        "caption": "Olympus strip 1"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_strip_2.jpg",
+        "caption": "Olympus strip 2"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_strip_3.jpg",
+        "caption": "Olympus strip 3"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_strip_4.jpg",
+        "caption": "Olympus strip 4"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_details_1.jpg",
+        "caption": "Olympus details 1"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_details_2.jpg",
+        "caption": "Olympus details 2"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_details_3.jpg",
+        "caption": "Olympus details 3"
+      }
+    ],
+    "parent": "Analog-BW"
+  },
+  {
+    "id": "cidadelhe_on_film_fuji_film_disposable",
+    "title": "Cidadelhe on Film, Fuji Film Disposable",
+    "subtitle": "April-June 2025",
+    "description": "",
+    "cover": "",
+    "order": 4,
+    "type": "gallery",
+    "path": "Images/Collections/Analog-BW/sub/cidadelhe_on_film_fuji_film_disposable",
+    "photos": [
+      {
+        "src": "Images/Collections/Analog-BW/sub/cidadelhe_on_film_fuji_film_disposable/Photos/SalomonGuttman-0929-01 - edited.jpg",
+        "caption": "SalomonGuttman 0929 01 edited"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/cidadelhe_on_film_fuji_film_disposable/Photos/SalomonGuttman-0929-02 - edited.jpg",
+        "caption": "SalomonGuttman 0929 02 edited"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/cidadelhe_on_film_fuji_film_disposable/Photos/SalomonGuttman-0929-13 - edited.jpg",
+        "caption": "SalomonGuttman 0929 13 edited"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/cidadelhe_on_film_fuji_film_disposable/Photos/SalomonGuttman-0929-12 - edited.jpg",
+        "caption": "SalomonGuttman 0929 12 edited"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/cidadelhe_on_film_fuji_film_disposable/Photos/SalomonGuttman-0929-11 - edited.jpg",
+        "caption": "SalomonGuttman 0929 11 edited"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/cidadelhe_on_film_fuji_film_disposable/Photos/SalomonGuttman-0929-19 - edited.jpg",
+        "caption": "SalomonGuttman 0929 19 edited"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/cidadelhe_on_film_fuji_film_disposable/Photos/SalomonGuttman-0929-20 - edited.jpg",
+        "caption": "SalomonGuttman 0929 20 edited"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/cidadelhe_on_film_fuji_film_disposable/Photos/SalomonGuttman-0929-14 - edited.jpg",
+        "caption": "SalomonGuttman 0929 14 edited"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/cidadelhe_on_film_fuji_film_disposable/Photos/SalomonGuttman-0929-16 - edited.jpg",
+        "caption": "SalomonGuttman 0929 16 edited"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/cidadelhe_on_film_fuji_film_disposable/Photos/SalomonGuttman-0929-17 - edited.jpg",
+        "caption": "SalomonGuttman 0929 17 edited"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/cidadelhe_on_film_fuji_film_disposable/Photos/SalomonGuttman-0929-04 - edited.jpg",
+        "caption": "SalomonGuttman 0929 04 edited"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/cidadelhe_on_film_fuji_film_disposable/Photos/SalomonGuttman-0929-05 - edited.jpg",
+        "caption": "SalomonGuttman 0929 05 edited"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/cidadelhe_on_film_fuji_film_disposable/Photos/SalomonGuttman-0929-07 - edited.jpg",
+        "caption": "SalomonGuttman 0929 07 edited"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/cidadelhe_on_film_fuji_film_disposable/Photos/SalomonGuttman-0929-06 - edited.jpg",
+        "caption": "SalomonGuttman 0929 06 edited"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/cidadelhe_on_film_fuji_film_disposable/Photos/SalomonGuttman-0929-03 - edited.jpg",
+        "caption": "SalomonGuttman 0929 03 edited"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/cidadelhe_on_film_fuji_film_disposable/Photos/SalomonGuttman-0929-09 - edited.jpg",
+        "caption": "SalomonGuttman 0929 09 edited"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/cidadelhe_on_film_fuji_film_disposable/Photos/SalomonGuttman-0929-18 - edited.jpg",
+        "caption": "SalomonGuttman 0929 18 edited"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/cidadelhe_on_film_fuji_film_disposable/Photos/SalomonGuttman-0929-08 - edited.jpg",
+        "caption": "SalomonGuttman 0929 08 edited"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/cidadelhe_on_film_fuji_film_disposable/Photos/SalomonGuttman-0929-21 - edited.jpg",
+        "caption": "SalomonGuttman 0929 21 edited"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/cidadelhe_on_film_fuji_film_disposable/Photos/SalomonGuttman-0929-15 - edited.jpg",
+        "caption": "SalomonGuttman 0929 15 edited"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/cidadelhe_on_film_fuji_film_disposable/Photos/SalomonGuttman-0929-12 - edited cropped.jpg",
+        "caption": "SalomonGuttman 0929 12 edited cropped"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/cidadelhe_on_film_fuji_film_disposable/Photos/SalomonGuttman-0929-22 - edited.jpg",
+        "caption": "SalomonGuttman 0929 22 edited"
+      }
+    ],
+    "parent": "Analog-BW"
+  },
+  {
+    "id": "my_cousin_s_wedding_october_2026",
+    "title": "My Cousin's Wedding, October 2026",
+    "subtitle": "Agfa LeBox Color",
+    "description": "",
+    "cover": "",
+    "order": 5,
+    "type": "gallery",
+    "path": "Images/Collections/Analog-BW/sub/my_cousin_s_wedding_october_2026",
+    "photos": [
+      {
+        "src": "Images/Collections/Analog-BW/sub/my_cousin_s_wedding_october_2026/Photos/000024390017 - edited.jpg",
+        "caption": "000024390017 edited"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/my_cousin_s_wedding_october_2026/Photos/000024390022 - edited.jpg",
+        "caption": "000024390022 edited"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/my_cousin_s_wedding_october_2026/Photos/000024390023 - edited.jpg",
+        "caption": "000024390023 edited"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/my_cousin_s_wedding_october_2026/Photos/000024390025 - edited.jpg",
+        "caption": "000024390025 edited"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/my_cousin_s_wedding_october_2026/Photos/000024390021 - edited.jpg",
+        "caption": "000024390021 edited"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/my_cousin_s_wedding_october_2026/Photos/000024390016 - edited.jpg",
+        "caption": "000024390016 edited"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/my_cousin_s_wedding_october_2026/Photos/000024390015 - edited.jpg",
+        "caption": "000024390015 edited"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/my_cousin_s_wedding_october_2026/Photos/000024390024 - edited.jpg",
+        "caption": "000024390024 edited"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/my_cousin_s_wedding_october_2026/Photos/000024390026 - edited.jpg",
+        "caption": "000024390026 edited"
       }
     ],
     "parent": "Analog-BW"
