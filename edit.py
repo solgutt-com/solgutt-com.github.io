@@ -26,7 +26,7 @@ COLLECTIONS = os.path.realpath(os.path.join(ROOT, build.COLLECTIONS_ROOT))
 save_lock   = threading.Lock()
 
 # What Publish commits: the photos, their collections.json files, data.js and thumbnails.
-PUBLISH_PATHS = ["Images", "data.js", "thumbs"]
+PUBLISH_PATHS = ["Images", "data.js", "thumbs", "thumbs-large"]
 
 # Adding photos: what the site can show, what gets converted on the way in (iPhone photos),
 # and how big a photo may be before it is scaled down to keep the site fast.

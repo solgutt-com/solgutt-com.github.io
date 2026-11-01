@@ -24,15 +24,18 @@ function photoSrc(p) {
   return ROOT + p.src.split('/').map(encodeURIComponent).join('/');
 }
 
-// Small preview made by make_thumbs.py; mirrors the photo's path under thumbs/.
-function thumbSrc(p) {
-  return 'thumbs/' + p.src.replace(/\.[^.]+$/, '.jpg').split('/').map(encodeURIComponent).join('/');
+// Preview made by make_thumbs.py; mirrors the photo's path under thumbs/, or under
+// thumbs-large/ for the sharper copies of photos shown large (Fotos squares, collection cards).
+function thumbSrc(p, large) {
+  return (large ? 'thumbs-large/' : 'thumbs/') + p.src.replace(/\.[^.]+$/, '.jpg').split('/').map(encodeURIComponent).join('/');
 }
 
-// <img> that shows the thumbnail, falling back to the full photo if it hasn't been made yet.
-function thumbImg(p, attrs) {
-  const img = h('img', { src: thumbSrc(p), alt: '', loading: 'lazy', decoding: 'async', ...attrs });
-  img.addEventListener('error', () => { img.src = photoSrc(p); }, { once: true });
+// <img> that shows the preview, stepping back to the small thumbnail and then the photo
+// itself if one hasn't been made yet.
+function thumbImg(p, attrs, large) {
+  const img = h('img', { src: thumbSrc(p, large), alt: '', loading: 'lazy', decoding: 'async', ...attrs });
+  const fallbacks = [...(large ? [thumbSrc(p)] : []), photoSrc(p)];
+  img.addEventListener('error', () => { if (fallbacks.length) img.src = fallbacks.shift(); });
   return img;
 }
 

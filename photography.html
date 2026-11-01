@@ -58,7 +58,7 @@
           const pending = c.type === 'coming-soon' || photosUnder(c.id).length === 0;
           const thumbs = pending
             ? [h('div', { class: 'empty-frame' })]
-            : previewPhotos(c.id, 4).map(p => thumbImg(p));
+            : previewPhotos(c.id, 4).map(p => thumbImg(p, {}, true));
 
           const body = [
             h('div', { class: 'collection-text' },

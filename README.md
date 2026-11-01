@@ -44,5 +44,5 @@ minute or two to update solgutt.com.
 Without the editor:
 
 ```bash
-cd ~/Desktop/solgutt.github.io && git add -A Images data.js thumbs && git commit -m "Update photos" && git push origin main
+cd ~/Desktop/solgutt.github.io && git add -A Images data.js thumbs thumbs-large && git commit -m "Update photos" && git push origin main
 ```

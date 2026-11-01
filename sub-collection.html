@@ -49,7 +49,7 @@
           const pending = child.type === 'coming-soon' || photosUnder(child.id).length === 0;
           const body = [
             cover
-              ? thumbImg(cover, { class: 'card-img' })
+              ? thumbImg(cover, { class: 'card-img' }, true)
               : h('div', { class: 'card-img' }),
             h('h2', { class: 'card-title' }, child.title),
             child.subtitle ? h('p', { class: 'card-subtitle' }, child.subtitle) : null

@@ -28,6 +28,11 @@
 - Replaces the copy-and-paste `reorder.html`
 - `build.py` gained `collect_trees()` so the editor can read the same structure the build uses (output unchanged)
 
+### Sharper previews, smaller site (2026-11-01)
+- 207 photos longer than 2400 px scaled to 2400 px (quality 85): 820 MB -> 234 MB; the published site went from about 1.3 GB to about 720 MB, under GitHub Pages' 1 GB limit. The full-size versions remain in git history
+- `make_thumbs.py` also makes sharp 640 px copies in `thumbs-large/` of the photos shown large (the Fotos squares and collection cards), picked the same way `site.js` picks them, and removes ones no longer used
+- Fotos squares and collection cards use the sharp copies, falling back to the small thumbnail, then the photo
+
 ---
 
 ## 2026-05-17
