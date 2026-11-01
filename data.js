@@ -1919,32 +1919,20 @@ const collections = [
     "path": "Images/Collections/Analog-BW/sub/Olympus",
     "photos": [
       {
-        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_details.jpg",
-        "caption": "Olympus details"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_details_4.jpg",
-        "caption": "Olympus details 4"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_1.jpg",
-        "caption": "Olympus 01"
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_3.jpg",
+        "caption": "Olympus 03"
       },
       {
         "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_2.jpg",
         "caption": "Olympus 02"
       },
       {
-        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_3.jpg",
-        "caption": "Olympus 03"
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_10.jpg",
+        "caption": "Olympus 10"
       },
       {
-        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_4.jpg",
-        "caption": "Olympus 04"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_5.jpg",
-        "caption": "Olympus 05"
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_11.jpg",
+        "caption": "Olympus 11"
       },
       {
         "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_6.jpg",
@@ -1955,20 +1943,24 @@ const collections = [
         "caption": "Olympus 07"
       },
       {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_1.jpg",
+        "caption": "Olympus 01"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_4.jpg",
+        "caption": "Olympus 04"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_5.jpg",
+        "caption": "Olympus 05"
+      },
+      {
         "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_8.jpg",
         "caption": "Olympus 08"
       },
       {
         "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_9.jpg",
         "caption": "Olympus 09"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_10.jpg",
-        "caption": "Olympus 10"
-      },
-      {
-        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_11.jpg",
-        "caption": "Olympus 11"
       },
       {
         "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_strip_1.jpg",
@@ -1987,6 +1979,10 @@ const collections = [
         "caption": "Olympus strip 4"
       },
       {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_details.jpg",
+        "caption": "Olympus details"
+      },
+      {
         "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_details_1.jpg",
         "caption": "Olympus details 1"
       },
@@ -1997,6 +1993,10 @@ const collections = [
       {
         "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_details_3.jpg",
         "caption": "Olympus details 3"
+      },
+      {
+        "src": "Images/Collections/Analog-BW/sub/Olympus/Photos/Olympus_details_4.jpg",
+        "caption": "Olympus details 4"
       }
     ],
     "parent": "Analog-BW"
