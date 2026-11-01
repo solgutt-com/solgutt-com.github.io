@@ -18,9 +18,14 @@ Ctrl+C in the terminal stops it.
 
 ## Adding photos
 
-1. Drop the photos into the gallery's `Photos/` folder.
-2. `python3 build.py` then `python3 make_thumbs.py`
-3. Optionally put them in order with the editor.
+Open a gallery in the editor and press **Add photos**, or drag photos onto it from
+Finder. JPG, PNG, WebP and iPhone HEIC all work (HEIC becomes JPEG); anything longer
+than 2400 px is scaled down to keep the site fast, and a photo with the same name as
+one already there gets "(2)" added instead of replacing it. New photos land at the end,
+outlined: drag them into place, Save, then Publish. The filename is the starting caption.
+
+Without the editor: drop the photos into the gallery's `Photos/` folder, then run
+`python3 build.py` and `python3 make_thumbs.py`.
 
 ## Publishing
 

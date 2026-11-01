@@ -5,14 +5,15 @@ Usage:
   python3 ~/Desktop/solgutt.github.io/edit.py      (opens the editor in your browser)
 
 Drag collections and galleries into the order they appear on the site, drag photos
-within a gallery, edit captions, rotate photos and pick each gallery's cover. Saving writes the
+within a gallery, add new photos, edit captions, rotate photos and pick each gallery's cover. Saving writes the
 right collections.json files, rebuilds data.js and makes any missing thumbnails.
 It runs only on this computer. Publish sends the saved changes to solgutt.com
 (it commits them and runs `git push`). Ctrl+C stops it.
 """
 
-import os, json, subprocess, threading, webbrowser
+import os, json, shutil, subprocess, tempfile, threading, unicodedata, webbrowser
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
+from urllib.parse import urlsplit, parse_qs
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 os.chdir(ROOT)
@@ -26,6 +27,13 @@ save_lock   = threading.Lock()
 
 # What Publish commits: the photos, their collections.json files, data.js and thumbnails.
 PUBLISH_PATHS = ["Images", "data.js", "thumbs"]
+
+# Adding photos: what the site can show, what gets converted on the way in (iPhone photos),
+# and how big a photo may be before it is scaled down to keep the site fast.
+PHOTO_TYPES   = {".jpg", ".jpeg", ".png", ".webp"}
+CONVERT_TYPES = {".heic", ".heif"}
+MAX_UPLOAD    = 80 * 1024 * 1024
+MAX_EDGE      = 2400
 
 
 def tree():
@@ -127,6 +135,83 @@ def rotate_photo(path, degrees):
             f.write((1).to_bytes(2, order))
 
 
+def sips(*args):
+    result = subprocess.run(["sips", *args], capture_output=True, text=True, timeout=120)
+    if result.returncode != 0:
+        raise ValueError("macOS couldn't read that file as a photo.")
+    return result.stdout
+
+
+def pixel_size(path):
+    values = [line.split(":")[1].strip() for line in sips("-g", "pixelWidth", "-g", "pixelHeight", path).splitlines()
+              if "pixel" in line]
+    if len(values) != 2 or not all(v.isdigit() for v in values):
+        raise ValueError("macOS couldn't read it as a photo.")
+    return [int(v) for v in values]
+
+
+def photos_folder(node):
+    """Where a gallery keeps its photos: country galleries hold them directly, the rest in Photos/."""
+    folder = folder_for(node["path"])
+    if "/Photos/" in node["path"]:
+        return folder
+    photos = os.path.join(folder, "Photos")
+    os.makedirs(photos, exist_ok=True)
+    return photos
+
+
+def add_photo(path, name, body):
+    """Put one new photo into a gallery: converted to JPEG if it's HEIC, scaled down if it's very
+    large, and renamed with (2), (3)… rather than replacing a photo with the same name."""
+    node = find(tree(), path)
+    if not node or node.get("type") != "gallery":
+        raise ValueError("Photos can only be added to a gallery.")
+    name = unicodedata.normalize("NFC", os.path.basename(name.replace("\\", "/"))).strip()
+    stem, ext = os.path.splitext(name)
+    ext = ext.lower()
+    if not stem or stem.startswith("."):
+        raise ValueError(f"{name or 'That file'} needs a proper name.")
+    if ext not in PHOTO_TYPES | CONVERT_TYPES:
+        raise ValueError(f"{name} isn't a photo the site can show. Use JPG, PNG, WebP or HEIC.")
+    if not body:
+        raise ValueError(f"{name} is empty.")
+
+    folder = photos_folder(node)
+    out_ext = ".jpg" if ext in CONVERT_TYPES else ext
+    taken = {f.lower() for f in os.listdir(folder)}
+    final, n = stem + out_ext, 2
+    while final.lower() in taken:
+        final, n = f"{stem} ({n}){out_ext}", n + 1
+    dest = os.path.join(folder, final)
+
+    # Work on a copy outside the site, so a half-finished file never shows up in a gallery.
+    work = tempfile.mkdtemp(prefix="solgutt-upload-")
+    try:
+        incoming = os.path.join(work, "incoming" + ext)
+        with open(incoming, "wb") as f:
+            f.write(body)
+        width, height = pixel_size(incoming)
+        args = []
+        if max(width, height) > MAX_EDGE:
+            args += ["-Z", str(MAX_EDGE)]
+        if ext in CONVERT_TYPES:
+            args += ["-s", "format", "jpeg"]
+        if args:
+            if out_ext in (".jpg", ".jpeg"):
+                args += ["-s", "formatOptions", "85"]
+            sips(*args, incoming, "--out", os.path.join(work, "ready" + out_ext))
+            incoming = os.path.join(work, "ready" + out_ext)
+        shutil.move(incoming, dest)
+    finally:
+        shutil.rmtree(work, ignore_errors=True)
+    return final
+
+
+def rebuild():
+    build.build_data_js()
+    return make_thumbs.run()
+
+
 def save(request):
     node = find(tree(), request.get("path"))
     if not node:
@@ -175,8 +260,7 @@ def save(request):
         else:
             write_meta(folder_for(node["path"]), {}, remove=("preview",))
 
-    build.build_data_js()
-    return make_thumbs.run()
+    return rebuild()
 
 
 def git(*args):
@@ -240,14 +324,28 @@ class Handler(SimpleHTTPRequestHandler):
             super().do_GET()
 
     def do_POST(self):
-        # Only the editor page itself may save or publish, never another website open in the browser.
-        if self.path not in ("/__save", "/__publish") or self.headers.get("Origin") not in ORIGINS:
+        # Only the editor page itself may change anything, never another website open in the browser.
+        url = urlsplit(self.path)
+        if url.path not in ("/__save", "/__publish", "/__upload", "/__rebuild") or self.headers.get("Origin") not in ORIGINS:
             return self.send_json(403, {"ok": False, "error": "Not allowed."})
         try:
-            request = json.loads(self.rfile.read(int(self.headers.get("Content-Length", 0))) or b"{}")
+            length = int(self.headers.get("Content-Length", 0))
+            if url.path == "/__upload":
+                if length > MAX_UPLOAD:
+                    self.rfile.read(length)
+                    raise ValueError("That photo is over 80 MB. Export a smaller copy first.")
+                query = parse_qs(url.query)
+                body = self.rfile.read(length)
+                with save_lock:
+                    name = add_photo(query.get("path", [""])[0], query.get("name", [""])[0], body)
+                return self.send_json(200, {"ok": True, "name": name})
+            request = json.loads(self.rfile.read(length) or b"{}")
             with save_lock:
-                if self.path == "/__save":
+                if url.path == "/__save":
                     made = save(request)
+                    self.send_json(200, {"ok": True, "thumbsMade": made, "tree": tree()})
+                elif url.path == "/__rebuild":
+                    made = rebuild()
                     self.send_json(200, {"ok": True, "thumbsMade": made, "tree": tree()})
                 else:
                     self.send_json(200, {"ok": True, **publish()})
@@ -331,6 +429,13 @@ EDITOR = r"""<!DOCTYPE html>
   .pool button { border-radius: 4px; overflow: hidden; border: 3px solid transparent; }
   .pool button[aria-pressed="true"] { border-color: var(--olive-ink); }
   .pool img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; }
+
+  .gallery-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; }
+  .add-photos { font-family: var(--sans); font-weight: 800; border: 2px solid var(--olive-ink); color: var(--olive-ink);
+                padding: 6px 18px; border-radius: 6px; white-space: nowrap; }
+  .add-photos:hover { background: var(--straw-deep); }
+  .card.is-new { border-color: var(--olive-ink); box-shadow: 0 0 0 2px var(--olive-ink); }
+  main.dropping { outline: 3px dashed var(--olive-ink); outline-offset: -12px; background: #E8D9A8; }
 </style>
 </head>
 <body>
@@ -415,6 +520,7 @@ EDITOR = r"""<!DOCTYPE html>
 
   function open(path, force) {
     if (!force && dirty && !confirm('You have unsaved changes. Discard them?')) return;
+    if (current && current.path !== path) justAdded = new Set();
     current = find(data, path);
     setDirty(false);
     setStatus(current.type === 'parent' ? 'Drag to change the order.' : 'Drag photos to reorder, edit captions, or star the cover.');
@@ -530,10 +636,76 @@ EDITOR = r"""<!DOCTYPE html>
     makeSortable(grid);
   }
 
+  // ─── Adding photos: the button, or dropping files from Finder onto a gallery ───
+
+  const picker = h('input', { type: 'file', multiple: true, accept: 'image/jpeg,image/png,image/webp,.heic,.heif', hidden: true });
+  document.body.append(picker);
+  picker.addEventListener('change', () => { addPhotos([...picker.files]); picker.value = ''; });
+  let justAdded = new Set();  // photos added this time, outlined until you leave the gallery
+
+  function addButton() {
+    const b = h('button', { type: 'button', class: 'add-photos' }, 'Add photos');
+    b.addEventListener('click', () => {
+      if (dirty) { setStatus('Save your changes first, then add photos.', true); return; }
+      picker.click();
+    });
+    return b;
+  }
+
+  async function addPhotos(files) {
+    if (!files.length || !current || current.type !== 'gallery') return;
+    if (dirty) { setStatus('Save your changes first, then add photos.', true); return; }
+    const gallery = current.path, added = [], failed = [];
+    for (const [i, file] of files.entries()) {
+      setStatus('Adding photo ' + (i + 1) + ' of ' + files.length + '…');
+      try {
+        const res = await fetch('/__upload?path=' + encodeURIComponent(gallery) + '&name=' + encodeURIComponent(file.name),
+                                { method: 'POST', headers: { 'Content-Type': 'application/octet-stream' }, body: file });
+        const out = await res.json();
+        if (!out.ok) throw new Error(out.error);
+        added.push(gallery + (gallery.includes('/Photos/') ? '/' : '/Photos/') + out.name);
+      } catch (err) {
+        failed.push(file.name + ' (' + err.message + ')');
+      }
+    }
+    if (added.length) {
+      setStatus('Making thumbnails and rebuilding the site…');
+      try {
+        const res = await fetch('/__rebuild', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{}' });
+        const out = await res.json();
+        if (!out.ok) throw new Error(out.error);
+        data = out.tree;
+      } catch (err) {
+        setStatus('The photos were added, but the site could not be rebuilt: ' + err.message, true);
+        return;
+      }
+      justAdded = new Set(added);
+      open(gallery, true);
+    }
+    const done = added.length ? 'Added ' + added.length + (added.length === 1 ? ' photo' : ' photos')
+      + '. New photos are outlined at the end: drag them into place, Save, then Publish.' : '';
+    setStatus([done, failed.length ? 'Not added: ' + failed.join('; ') : ''].filter(Boolean).join(' '), failed.length > 0);
+  }
+
+  const isFileDrag = e => [...(e.dataTransfer?.types || [])].includes('Files');
+  panel.addEventListener('dragover', e => {
+    if (!isFileDrag(e) || !current || current.type !== 'gallery') return;
+    e.preventDefault();
+    panel.classList.add('dropping');
+  });
+  panel.addEventListener('dragleave', e => { if (!panel.contains(e.relatedTarget)) panel.classList.remove('dropping'); });
+  panel.addEventListener('drop', e => {
+    panel.classList.remove('dropping');
+    if (!isFileDrag(e) || !current || current.type !== 'gallery') return;
+    e.preventDefault();
+    addPhotos([...e.dataTransfer.files]);
+  });
+
   function renderGallery(node) {
     const grid = h('div', { class: 'grid' });
+    const head = h('div', { class: 'gallery-head' }, h('h2', {}, node.title), addButton());
     if (!node.photos || !node.photos.length) {
-      panel.replaceChildren(h('h2', {}, node.title), h('p', { class: 'hint' }, 'This gallery has no photos yet.'));
+      panel.replaceChildren(head, h('p', { class: 'hint' }, 'This gallery has no photos yet. Use Add photos, or drag photos here from Finder.'));
       return;
     }
     node.photos.forEach(p => {
@@ -545,7 +717,7 @@ EDITOR = r"""<!DOCTYPE html>
       const right = h('button', { type: 'button', title: 'Rotate right' }, '↻');
       const caption = h('input', { type: 'text', value: p.caption, placeholder: 'Caption', 'aria-label': 'Caption for ' + name });
       const img = thumb(p.src);
-      const card = h('div', { class: 'card' + (node.cover === name ? ' is-cover' : ''), draggable: 'true', 'data-file': name, 'data-caption': p.caption, 'data-turn': '0' },
+      const card = h('div', { class: 'card' + (node.cover === name ? ' is-cover' : '') + (justAdded.has(p.src) ? ' is-new' : ''), draggable: 'true', 'data-file': name, 'data-caption': p.caption, 'data-turn': '0' },
         h('span', { class: 'num' }), h('div', { class: 'tools' }, left, right, toStart, toEnd, star), img, caption);
 
       // Shows the turn straight away; the photo itself is rotated when you save.
@@ -573,8 +745,8 @@ EDITOR = r"""<!DOCTYPE html>
       grid.append(card);
     });
     panel.replaceChildren(
-      h('h2', {}, node.title),
-      h('p', { class: 'hint' }, 'Drag to reorder, or use ⇤ ⇥ to send a photo to the start or end. ↺ ↻ rotate a photo; the file itself is turned when you save. ★ makes it this gallery\'s cover: it stands for the gallery on its collection page, and on the Fotos page when the gallery is one of its collection\'s first four.'),
+      head,
+      h('p', { class: 'hint' }, 'Drag to reorder, or use ⇤ ⇥ to send a photo to the start or end. ↺ ↻ rotate a photo; the file itself is turned when you save. ★ makes it this gallery\'s cover: it stands for the gallery on its collection page, and on the Fotos page when the gallery is one of its collection\'s first four. To add photos, use the button or drag them here from Finder.'),
       grid);
     makeSortable(grid);
   }
