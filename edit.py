@@ -5,13 +5,13 @@ Usage:
   python3 ~/Desktop/solgutt.github.io/edit.py      (opens the editor in your browser)
 
 Drag collections and galleries into the order they appear on the site, drag photos
-within a gallery, add new photos, edit captions, rotate photos and pick each gallery's cover. Saving writes the
+within a gallery, add new photos, galleries and collections, edit captions, rotate photos and pick each gallery's cover. Saving writes the
 right collections.json files, rebuilds data.js and makes any missing thumbnails.
 It runs only on this computer. Publish sends the saved changes to solgutt.com
 (it commits them and runs `git push`). Ctrl+C stops it.
 """
 
-import os, json, shutil, subprocess, tempfile, threading, unicodedata, webbrowser
+import os, re, json, shutil, subprocess, tempfile, threading, unicodedata, webbrowser
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from urllib.parse import urlsplit, parse_qs
 
@@ -212,6 +212,51 @@ def rebuild():
     return make_thumbs.run()
 
 
+def folder_name(title, gallery):
+    """A safe folder name in the site's style: a_natureza for galleries, European-Voyage for collections."""
+    plain = unicodedata.normalize("NFKD", title).encode("ascii", "ignore").decode()
+    words = re.findall(r"[A-Za-z0-9]+", plain)
+    if not words:
+        raise ValueError("Give it a title with at least one letter or number.")
+    return "_".join(w.lower() for w in words) if gallery else "-".join(words)
+
+
+def create(request):
+    """Make a new, empty gallery or collection inside a collection (or a collection on the Fotos page)."""
+    parent = find(tree(), request.get("parent"))
+    if not parent or parent.get("type") != "parent":
+        raise ValueError("New galleries and collections go inside a collection or on the Fotos page.")
+    kind = request.get("kind")
+    if kind not in ("gallery", "collection"):
+        raise ValueError("Choose a gallery or a collection.")
+    on_fotos = parent["path"] == build.COLLECTIONS_ROOT
+    if on_fotos and kind == "gallery":
+        raise ValueError("The Fotos page holds collections. Open a collection to add a gallery to it.")
+    title = " ".join((request.get("title") or "").split())
+    subtitle = " ".join((request.get("subtitle") or "").split())
+    if not title:
+        raise ValueError("Give it a title.")
+    if len(title) > 80 or len(subtitle) > 160:
+        raise ValueError("Keep the title under 80 characters and the subtitle under 160.")
+    siblings = parent.get("children", [])
+    if any(c["title"].lower() == title.lower() for c in siblings):
+        raise ValueError(f"{'The Fotos page' if on_fotos else parent['title']} already has “{title}”.")
+
+    where = folder_for(parent["path"]) if on_fotos else os.path.join(folder_for(parent["path"]), "sub")
+    os.makedirs(where, exist_ok=True)
+    base = folder_name(title, kind == "gallery")
+    taken = {f.lower() for f in os.listdir(where)}
+    name, n = base, 2
+    while name.lower() in taken:
+        name, n = f"{base}{'_' if kind == 'gallery' else '-'}{n}", n + 1
+    folder = os.path.join(where, name)
+    os.makedirs(folder)
+    write_meta(folder, {"title": title, "subtitle": subtitle, "description": "", "cover": "",
+                        "order": len(siblings) + 1, "type": "gallery" if kind == "gallery" else "parent"})
+    build.build_data_js()
+    return os.path.relpath(folder, ROOT).replace(os.sep, "/")
+
+
 def save(request):
     node = find(tree(), request.get("path"))
     if not node:
@@ -326,7 +371,7 @@ class Handler(SimpleHTTPRequestHandler):
     def do_POST(self):
         # Only the editor page itself may change anything, never another website open in the browser.
         url = urlsplit(self.path)
-        if url.path not in ("/__save", "/__publish", "/__upload", "/__rebuild") or self.headers.get("Origin") not in ORIGINS:
+        if url.path not in ("/__save", "/__publish", "/__upload", "/__rebuild", "/__create") or self.headers.get("Origin") not in ORIGINS:
             return self.send_json(403, {"ok": False, "error": "Not allowed."})
         try:
             length = int(self.headers.get("Content-Length", 0))
@@ -347,6 +392,9 @@ class Handler(SimpleHTTPRequestHandler):
                 elif url.path == "/__rebuild":
                     made = rebuild()
                     self.send_json(200, {"ok": True, "thumbsMade": made, "tree": tree()})
+                elif url.path == "/__create":
+                    path = create(request)
+                    self.send_json(200, {"ok": True, "path": path, "tree": tree()})
                 else:
                     self.send_json(200, {"ok": True, **publish()})
         except (ValueError, OSError, json.JSONDecodeError, subprocess.TimeoutExpired) as e:
@@ -436,6 +484,20 @@ EDITOR = r"""<!DOCTYPE html>
   .add-photos:hover { background: var(--straw-deep); }
   .card.is-new { border-color: var(--olive-ink); box-shadow: 0 0 0 2px var(--olive-ink); }
   main.dropping { outline: 3px dashed var(--olive-ink); outline-offset: -12px; background: #E8D9A8; }
+  .head-actions { display: flex; gap: 10px; }
+
+  dialog { margin: auto; border: 0; border-radius: 10px; padding: 24px 28px; width: min(440px, 92vw);
+           background: var(--straw); color: var(--ink); box-shadow: 0 20px 60px rgba(35, 40, 28, 0.35); }
+  dialog::backdrop { background: rgba(35, 40, 28, 0.35); }
+  dialog h3 { margin-bottom: 4px; }
+  dialog label { display: block; font-family: var(--sans); font-weight: 500; font-size: 14px; margin-top: 16px; }
+  dialog input { display: block; width: 100%; margin-top: 4px; padding: 8px 10px; border: 1px solid var(--rule); border-radius: 5px;
+                 background: #EEE3BC; font-family: var(--serif); font-size: 16px; color: var(--ink); }
+  dialog .error { color: #8A2E1C; font-size: 14px; margin-top: 10px; min-height: 1.2em; }
+  dialog .actions { display: flex; justify-content: flex-end; gap: 10px; margin-top: 18px; font-family: var(--sans); }
+  dialog .actions button { padding: 7px 18px; border-radius: 6px; font-weight: 800; }
+  dialog .actions .primary { background: var(--olive-ink); color: var(--straw); }
+  dialog .actions .primary:disabled { opacity: 0.6; cursor: default; }
 </style>
 </head>
 <body>
@@ -446,6 +508,16 @@ EDITOR = r"""<!DOCTYPE html>
   <button id="save" disabled>Save</button>
   <button id="publish">Publish</button>
 </header>
+<dialog id="create">
+  <form method="dialog">
+    <h3 id="create-title">New gallery</h3>
+    <p class="hint" id="create-where"></p>
+    <label>Title <input name="title" required maxlength="80" autocomplete="off"></label>
+    <label>Subtitle (optional) <input name="subtitle" maxlength="160" autocomplete="off"></label>
+    <p class="error" id="create-error"></p>
+    <div class="actions"><button type="button" value="cancel" id="create-cancel">Cancel</button><button class="primary" id="create-go">Create</button></div>
+  </form>
+</dialog>
 <div class="layout">
   <nav id="tree" aria-label="Collections"></nav>
   <main id="panel"></main>
@@ -608,6 +680,51 @@ EDITOR = r"""<!DOCTYPE html>
     return { section, pool };
   }
 
+  // ─── New galleries and collections ───
+
+  const dialog = document.getElementById('create');
+  const form = dialog.querySelector('form');
+  let creating = null;  // { parent, kind }
+
+  function newButton(node, kind) {
+    const b = h('button', { type: 'button', class: 'add-photos' }, kind === 'gallery' ? 'New gallery' : 'New collection');
+    b.addEventListener('click', () => {
+      if (dirty) { setStatus('Save your changes first.', true); return; }
+      creating = { parent: node, kind };
+      document.getElementById('create-title').textContent = b.textContent;
+      document.getElementById('create-where').textContent = node.path === data.path
+        ? 'A new section on the Fotos page. Add galleries to it next.'
+        : 'Inside ' + node.title + '. ' + (kind === 'gallery' ? 'Add photos to it next.' : 'Add galleries to it next.');
+      document.getElementById('create-error').textContent = '';
+      form.reset();
+      dialog.showModal();
+      form.elements.title.focus();
+    });
+    return b;
+  }
+
+  document.getElementById('create-cancel').addEventListener('click', () => dialog.close());
+  form.addEventListener('submit', async e => {
+    e.preventDefault();
+    const go = document.getElementById('create-go');
+    go.disabled = true;
+    try {
+      const res = await fetch('/__create', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ parent: creating.parent.path, kind: creating.kind, title: form.elements.title.value, subtitle: form.elements.subtitle.value }) });
+      const out = await res.json();
+      if (!out.ok) throw new Error(out.error);
+      dialog.close();
+      data = out.tree;
+      open(out.path, true);
+      setStatus('Created “' + form.elements.title.value.trim() + '”. ' + (creating.kind === 'gallery'
+        ? 'Add photos to it, then Publish.' : 'Add galleries to it with New gallery, then Publish.'));
+    } catch (err) {
+      document.getElementById('create-error').textContent = err.message;
+    } finally {
+      go.disabled = false;
+    }
+  });
+
   function renderParent(node) {
     const grid = h('div', { class: 'grid' });
     node.children.forEach(child => {
@@ -622,8 +739,13 @@ EDITOR = r"""<!DOCTYPE html>
     const isFotos = node.path === data.path;
     const topLevel = data.children.includes(node);
     const picker = topLevel && firstPhoto(node) ? fotosPicker(node) : null;
+    // Collections that already hold sub-collections (like Around the World) can take another one.
+    const holdsCollections = (node.children || []).some(c => c.type === 'parent');
+    const actions = h('div', { class: 'head-actions' },
+      isFotos ? null : newButton(node, 'gallery'),
+      isFotos || holdsCollections ? newButton(node, 'collection') : null);
     panel.replaceChildren(
-      h('h2', {}, isFotos ? 'Fotos page' : node.title),
+      h('div', { class: 'gallery-head' }, h('h2', {}, isFotos ? 'Fotos page' : node.title), actions),
       picker ? picker.section : null,
       h('section', {},
         picker ? h('h3', {}, 'Gallery order') : null,

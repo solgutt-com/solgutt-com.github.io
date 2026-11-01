@@ -54,7 +54,8 @@
         .filter(c => c.parent === null)
         .sort((a, b) => (a.order || 999) - (b.order || 999))
         .forEach(c => {
-          const pending = c.type === 'coming-soon';
+          // Coming soon, or a new collection with no photos yet: shown faded, not linked.
+          const pending = c.type === 'coming-soon' || photosUnder(c.id).length === 0;
           const thumbs = pending
             ? [h('div', { class: 'empty-frame' })]
             : previewPhotos(c.id, 4).map(p => thumbImg(p));

@@ -27,6 +27,14 @@ outlined: drag them into place, Save, then Publish. The filename is the starting
 Without the editor: drop the photos into the gallery's `Photos/` folder, then run
 `python3 build.py` and `python3 make_thumbs.py`.
 
+## New galleries and collections
+
+In the editor, open a collection and press **New gallery**, or press **New collection**
+on the Fotos page (collections that hold sub-collections, like Around the World, have
+it too). Give it a title and an optional subtitle; the editor makes the folder and its
+settings and opens it, ready for Add photos. A collection with no photos yet shows
+faded on the Fotos page and becomes clickable once it has photos.
+
 ## Publishing
 
 Press **Publish** in the editor: it commits your saved changes (photos, their
