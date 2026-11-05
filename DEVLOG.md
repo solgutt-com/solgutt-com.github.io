@@ -16,6 +16,15 @@
 - Then: no caption under the hero photo, which is now feathered into the page with a soft window glow; seams blur and fade into the colour around them with light film grain; booking through Cal.com (paste the booking link in edit mode; the request form stays as the fallback); a shop plan for prints and photo-cover journals in the playbook
 - Last: two typefaces only (Archivo extra-condensed for headings and the logo, Literata for reading, including the italic second lines); the logo is now one typeface, stacked PUT IT ON / PAPER with both lines the same width, in the header and footer
 
+### Instagram uploader
+- New folder `instagram-uploader/`: its own public GitHub repo (`solgutt-com/instagram-uploader`), listed in `.gitignore` so it never ends up on the site
+- Drop photos into `instagram-uploader/queue/`. Within seconds each photo gets a `.txt` caption with the same name: the date and time it was taken, the place (from GPS, or the location typed in Lightroom), and the camera with its settings. Type extra words into the `.txt` and they're posted exactly as written
+- Each photo is replaced by an Instagram-ready copy: sRGB, upright, 1440 px wide, fitted to 4:5–1.91:1 with white side bars (no cropping), and all metadata stripped so GPS never reaches GitHub. The untouched original is kept locally in `originals/`
+- A background watcher on the Mac does this and syncs the folder with GitHub. It runs through a small helper app, "Instagram Uploader", because macOS only lets it read the Desktop after you click Allow once. Install with `bash instagram-uploader/scripts/install-watcher.sh`
+- GitHub Actions posts one photo at 09:00 and one at 19:00 (Israel time) through Instagram's official API, even with the Mac off. Photos go in alphabetical filename order and move to `posted/` afterwards, with links in `posted/log.csv`. Change the times or number per day in `config.json`
+- Connected to **@sol_gutt_foto** with a never-expiring system-user token from Meta Business Settings: secrets `IG_ACCESS_TOKEN` + `IG_USER_ID`. It refuses to post to any other account. The route that worked is written down in `instagram-uploader/SETUP.md`
+- 16 B&W photos queued. The first post is set for 19:00 today
+
 ---
 
 ## 2026-10-29
