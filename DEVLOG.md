@@ -2,6 +2,22 @@
 
 ---
 
+## 2026-11-05
+
+### Put It On Paper
+- New page at `put-it-on-paper/` (solgutt.com/put-it-on-paper/) for the handwriting practice, linked from every page's menu
+- Its own look, drawn from the film: the page gets lighter as you scroll, from darkroom red through a real light leak to sunlit grass; Archivo set extra-condensed against expanded, Literata for reading
+- Hero: strips of ten film frames scroll like a feed and settle on the open window from `PioPcover.jpeg` (cropped 3:2, blue scanner line removed)
+- Two practices (Catch a fragment; Scroll, then recall with a built-in timer), the Instagram brain essay as its own view (`#instagram-brain`), and a request form that turns a request into a message to send
+- Edit page: opened through the editor, every word on the page can be edited in place; Save writes `put-it-on-paper/index.html`
+- Editor: **Edit Put It On Paper** link, a `/__pop_save` route, and Publish now includes `put-it-on-paper/`
+- Brand, plan, logo files, sources and original photos in `Put it on Paper/` (not published)
+- Later: the hero shows the whole window (full-width 3:2 crop) in a larger frame; staggered "seams" of neighbouring colours break the gradient between sections; Edit page gained **Arrange** (move, resize, text size, padding, corners, alignment, kept separately for wide screens and phones); the editor refuses a save from a copy of the page opened before its latest rebuild
+- Then: no caption under the hero photo, which is now feathered into the page with a soft window glow; seams blur and fade into the colour around them with light film grain; booking through Cal.com (paste the booking link in edit mode; the request form stays as the fallback); a shop plan for prints and photo-cover journals in the playbook
+- Last: two typefaces only (Archivo extra-condensed for headings and the logo, Literata for reading, including the italic second lines); the logo is now one typeface, stacked PUT IT ON / PAPER with both lines the same width, in the header and footer
+
+---
+
 ## 2026-10-29
 
 ### "Haystack" redesign goes live

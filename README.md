@@ -46,3 +46,10 @@ Without the editor:
 ```bash
 cd ~/Desktop/solgutt.github.io && git add -A Images data.js thumbs thumbs-large && git commit -m "Update photos" && git push origin main
 ```
+
+## Put It On Paper
+
+The page at solgutt.com/put-it-on-paper/ lives in `put-it-on-paper/`. To change its words, press
+**Edit Put It On Paper** in the editor, then **Edit page**, type, **Save**, and **Publish** as usual.
+Its brand, plan, sources and original photos are in the `Put it on Paper` folder (not published);
+see the README there.

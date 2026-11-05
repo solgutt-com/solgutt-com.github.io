@@ -25,8 +25,11 @@ ORIGINS     = {f"http://127.0.0.1:{PORT}", f"http://localhost:{PORT}"}
 COLLECTIONS = os.path.realpath(os.path.join(ROOT, build.COLLECTIONS_ROOT))
 save_lock   = threading.Lock()
 
-# What Publish commits: the photos, their collections.json files, data.js and thumbnails.
-PUBLISH_PATHS = ["Images", "data.js", "thumbs", "thumbs-large"]
+# What Publish commits: the photos, their collections.json files, data.js and thumbnails,
+# and the Put It On Paper page (edited in place with its own Edit page button).
+PUBLISH_PATHS = ["Images", "data.js", "thumbs", "thumbs-large", "put-it-on-paper"]
+POP_PAGE      = os.path.join(ROOT, "put-it-on-paper", "index.html")
+MAX_POP_PAGE  = 8 * 1024 * 1024
 
 # Adding photos: what the site can show, what gets converted on the way in (iPhone photos),
 # and how big a photo may be before it is scaled down to keep the site fast.
@@ -321,6 +324,26 @@ def git(*args):
     return result.stdout.strip()
 
 
+def save_pop_page(request):
+    """Write the Put It On Paper page the page rebuilt itself from its edited words."""
+    html = request.get("html", "")
+    if not isinstance(html, str) or not html.startswith("<!doctype html>") or 'id="pop-content"' not in html:
+        raise ValueError("That isn't the Put It On Paper page, so it wasn't saved.")
+    if len(html.encode("utf-8")) > MAX_POP_PAGE:
+        raise ValueError("The page is too large to save. Shorten some text and try again.")
+    # A copy of the page opened before its design was last rebuilt would save the old design back over the new one.
+    stamp = re.compile(r'<meta name="pop-build" content="([^"]*)">')
+    if os.path.exists(POP_PAGE):
+        with open(POP_PAGE, encoding="utf-8") as f:
+            on_disk = stamp.search(f.read())
+        if on_disk and on_disk.group(1) != request.get("build"):
+            raise ValueError("The page was updated since you opened it, so nothing was saved. Reload it and make your changes again.")
+    fd, tmp = tempfile.mkstemp(dir=os.path.dirname(POP_PAGE), suffix=".html")
+    with os.fdopen(fd, "w", encoding="utf-8") as f:
+        f.write(html)
+    os.replace(tmp, POP_PAGE)
+
+
 def publish():
     branch = git("rev-parse", "--abbrev-ref", "HEAD")
     if branch != "main":
@@ -371,7 +394,7 @@ class Handler(SimpleHTTPRequestHandler):
     def do_POST(self):
         # Only the editor page itself may change anything, never another website open in the browser.
         url = urlsplit(self.path)
-        if url.path not in ("/__save", "/__publish", "/__upload", "/__rebuild", "/__create") or self.headers.get("Origin") not in ORIGINS:
+        if url.path not in ("/__save", "/__publish", "/__upload", "/__rebuild", "/__create", "/__pop_save") or self.headers.get("Origin") not in ORIGINS:
             return self.send_json(403, {"ok": False, "error": "Not allowed."})
         try:
             length = int(self.headers.get("Content-Length", 0))
@@ -395,6 +418,9 @@ class Handler(SimpleHTTPRequestHandler):
                 elif url.path == "/__create":
                     path = create(request)
                     self.send_json(200, {"ok": True, "path": path, "tree": tree()})
+                elif url.path == "/__pop_save":
+                    save_pop_page(request)
+                    self.send_json(200, {"ok": True})
                 else:
                     self.send_json(200, {"ok": True, **publish()})
         except (ValueError, OSError, json.JSONDecodeError, subprocess.TimeoutExpired) as e:
@@ -505,6 +531,7 @@ EDITOR = r"""<!DOCTYPE html>
   <h1>Editor</h1>
   <p id="status">Loading…</p>
   <a href="/index.html" target="_blank">Preview the site</a>
+  <a href="/put-it-on-paper/" target="_blank">Edit Put It On Paper</a>
   <button id="save" disabled>Save</button>
   <button id="publish">Publish</button>
 </header>

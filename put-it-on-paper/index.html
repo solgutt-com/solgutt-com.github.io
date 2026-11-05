@@ -1,0 +1,1571 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;padding:0}img{max-width:100%}[hidden]{display:none!important}</style></head><body>
+<title>Put It On Paper</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="pop-build" content="2026-11-05T12:52:12">
+<link rel="icon" href="img/mark.svg" type="image/svg+xml">
+<meta name="description" content="Put It On Paper is a handwriting practice for digesting what you take in: catching the fragments, slowing down and finding your next step.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Literata:ital,opsz,wght@0,7..72,300..700;1,7..72,300..600&display=swap">
+<style id="pop-style">/* Concept: light breaking through. You scroll from a warm darkroom, through an ember light leak, into sun,
+   and step out onto sunlit grass, where the request form waits. Every band begins on the colour the last one ended on,
+   so the page only ever gets lighter. Compressed heavy type = what we take in; wide light type = room to think.
+   One deliberate look (no theme switch): every band sets its own background and text colour. */
+:root {
+  --night: #1B0F07;      /* film shadow, warm black-brown */
+  --oxblood: #47140A;    /* the red frame on the roll */
+  --blood: #5E1B0B;
+  --rust: #6E2410;       /* where the red starts to warm */
+  --ember: #CC4E11;      /* light leak, hottest */
+  --saffron: #E8A33A;    /* window light */
+  --sun: #EED853;        /* light leak, brightest */
+  --pollen: #E2E38F;     /* sun on the lawn */
+  --spring: #F2F0BE;     /* the lightest point of the page */
+  --meadow: #A9AE4C;     /* the grass in full sun */
+  --canopy: #2C3210;     /* leaf shadow: text and actions once we're outside */
+  --linen: #F1E4C8;      /* sky through cloud: text on dark */
+  --linen-dim: rgba(241, 228, 200, .74);
+
+  --display: "Archivo", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --read: "Literata", "Iowan Old Style", Georgia, serif;
+  --gutter-l: max(16px, env(safe-area-inset-left, 0px));
+  --gutter-r: max(16px, env(safe-area-inset-right, 0px));
+  color-scheme: dark;
+
+  /* Film frames, one roll */
+  --ph-window: url("img/window.jpg");
+}
+.ph-window  { background-image: var(--ph-window); }
+.ph-clouds  { background-image: url("img/clouds.jpg"); }
+.ph-canal   { background-image: url("img/canal.jpg"); }
+.ph-grass   { background-image: url("img/grass.jpg"); }
+.ph-forest  { background-image: url("img/forest.jpg"); }
+.ph-park    { background-image: url("img/park.jpg"); }
+.ph-bike    { background-image: url("img/bike.jpg"); }
+.ph-blinds  { background-image: url("img/blinds.jpg"); }
+.ph-sill    { background-image: url("img/sill.jpg"); }
+.ph-maroon  { background-image: url("img/maroon.jpg"); }
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; background: linear-gradient(to bottom, var(--night) 50%, var(--meadow) 50%); }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body { background: var(--night); color: var(--linen); font: 400 1.125rem/1.65 var(--read); -webkit-font-smoothing: antialiased; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: 1px; }
+:focus-visible { outline: 2px solid var(--sun); outline-offset: 3px; }
+.on-light :focus-visible { outline-color: var(--night); }
+
+.wrap { max-width: 74rem; margin: 0 auto; padding-left: var(--gutter-l); padding-right: var(--gutter-r); }
+.band { padding-block: clamp(4rem, 9vw, 7.5rem); }
+
+/* Type system */
+.squeeze { font-family: var(--display); font-stretch: 62%; font-weight: 800; letter-spacing: -.005em; line-height: .88; text-wrap: balance; }
+/* Two typefaces only: Archivo extra-condensed for headings and the logo, Literata for everything you read */
+.open { font-family: var(--read); font-style: italic; font-weight: 400; letter-spacing: 0; line-height: 1.25; text-wrap: balance; }
+.ui { font-family: var(--display); font-stretch: 100%; }
+.dim { color: var(--linen-dim); }
+
+/* Buttons are plain sheets of light */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  font: 600 1rem/1 var(--display); font-stretch: 100%; padding: 1rem 1.5rem; border-radius: 2px; border: 0; cursor: pointer;
+  background: var(--sun); color: var(--night); text-decoration: none;
+  box-shadow: 0 0 0 rgba(238, 216, 83, 0); transition: box-shadow .25s ease;
+}
+.btn:hover { box-shadow: 0 0 28px rgba(238, 216, 83, .45); }
+.btn.dark { background: var(--night); color: var(--sun); }
+.btn.dark:hover { box-shadow: 0 0 24px rgba(27, 15, 7, .35); }
+.btn[disabled] { opacity: .55; cursor: default; }
+.textlink { font: 500 1rem/1.4 var(--display); font-stretch: 100%; }
+.linkbtn { background: none; border: 0; padding: 0; font: 500 .9375rem/1.4 var(--display); color: inherit; text-decoration: underline; text-underline-offset: .2em; cursor: pointer; }
+
+/* Header */
+.top { display: flex; align-items: center; justify-content: space-between; gap: 1rem 2rem; flex-wrap: wrap; padding-block: 1.5rem; }
+.wm { color: var(--linen); display: block; width: 5.75rem; }
+.wm svg, .wm-stack svg, .mark svg { display: block; width: 100%; height: auto; }
+.top nav { display: flex; gap: 1.5rem; flex-wrap: wrap; font: 500 .9375rem/1 var(--display); font-stretch: 100%; }
+.top nav a { text-decoration: none; color: var(--linen-dim); }
+.top nav a:hover { color: var(--sun); }
+
+/* Hero */
+.hero { padding-block: clamp(2rem, 5vw, 4rem) clamp(3rem, 6vw, 5rem); display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.3fr); gap: clamp(2rem, 4.5vw, 4rem); align-items: center; }
+.hero h1 { margin: 0; display: grid; gap: .9rem; }
+.hero h1 .squeeze { font-size: clamp(3.5rem, 8vw, 7.25rem); }
+.hero h1 .open { font-size: clamp(1.5rem, 3.4vw, 2.75rem); color: var(--saffron); }
+.hero .lead { margin: 2rem 0 0; max-width: 33rem; color: var(--linen-dim); font-size: clamp(1.0625rem, 1.5vw, 1.1875rem); text-wrap: pretty; }
+.hero .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 1rem 1.75rem; margin-top: 2.25rem; }
+
+/* The fragment frame: twelve strips scroll like a feed, then settle into one still image */
+.frame-wrap { position: relative; display: grid; min-width: 0; isolation: isolate; }
+/* Warm light spilling from the window into the room around it */
+.frame-wrap::before {
+  content: ""; position: absolute; inset: -18% -14%; z-index: -1; pointer-events: none;
+  background: radial-gradient(ellipse 55% 50% at 58% 45%, rgba(232, 163, 58, .20), rgba(204, 78, 17, .10) 45%, rgba(27, 15, 7, 0) 72%);
+  filter: blur(8px);
+}
+.frame {
+  position: relative; aspect-ratio: 3 / 2; max-width: 100%; overflow: hidden; background: transparent;
+  display: grid; grid-template-columns: repeat(var(--n), minmax(0, 1fr)); cursor: pointer; border: 0; padding: 0;
+  /* Feathered on every side, so the photo has no hard edge against the page */
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent), linear-gradient(to bottom, transparent, #000 13%, #000 85%, transparent);
+  -webkit-mask-composite: source-in;
+  mask-image: linear-gradient(to right, transparent, #000 12%, #000 88%, transparent), linear-gradient(to bottom, transparent, #000 13%, #000 85%, transparent);
+  mask-composite: intersect;
+}
+.strip { position: relative; overflow: hidden; height: 100%; }
+.reel { position: absolute; inset: 0 0 auto 0; height: calc(var(--len) * 100%); display: grid; grid-template-rows: repeat(var(--len), minmax(0, 1fr)); transform: translateY(calc((1 - 1 / var(--len)) * -100%)); }
+.cell { background-size: calc(var(--n) * 100%) 100%; background-position: calc(var(--i) / (var(--n) - 1) * 100%) 0; background-repeat: no-repeat; }
+@media (prefers-reduced-motion: no-preference) {
+  .frame.play .reel { animation: feed var(--dur) cubic-bezier(.22, .61, .2, 1) var(--delay) both; }
+  @keyframes feed { from { transform: translateY(0); } to { transform: translateY(calc((1 - 1 / var(--len)) * -100%)); } }
+}
+
+/* Overfed */
+.overfed { background: linear-gradient(to bottom, var(--night), var(--oxblood)); }
+.overfed .statement { font-size: clamp(2.5rem, 6.2vw, 5.25rem); margin: 0; max-width: 15ch; }
+.overfed .statement-body { max-width: 36rem; margin: 1.75rem 0 0; color: var(--linen-dim); }
+.beats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.5rem; margin-top: clamp(3rem, 7vw, 5rem); }
+.beat { min-width: 0; display: grid; gap: .75rem; align-content: start; }
+.beat h3 { font-size: clamp(1.25rem, 1.9vw, 1.5rem); margin: 0; color: var(--saffron); }
+.beat p { margin: 0; color: var(--linen-dim); font-size: 1.0625rem; }
+
+/* Practices: handouts printed on sheets that give off light */
+.practices { background: linear-gradient(to bottom, var(--oxblood), var(--blood) 45%, var(--rust)); }
+.practices .head { display: grid; gap: 1rem; max-width: 40rem; margin-bottom: clamp(2.5rem, 6vw, 4rem); }
+.practices h2 { font-size: clamp(2.5rem, 6vw, 4.75rem); margin: 0; }
+.practices .head p { margin: 0; color: var(--linen-dim); }
+.sheets { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1.5rem, 4vw, 3rem); align-items: start; }
+.sheet {
+  background: var(--linen); color: var(--night); padding: clamp(1.5rem, 3.5vw, 2.5rem); min-width: 0;
+  box-shadow: 0 0 0 1px rgba(232, 163, 58, .35), 0 0 70px -10px rgba(232, 163, 58, .38);
+  display: grid; gap: 1.1rem; align-content: start;
+}
+.sheet h3 { font-size: clamp(2rem, 3.6vw, 2.75rem); margin: 0; }
+.sheet .when { font: 500 .9375rem/1.4 var(--display); font-stretch: 100%; color: #7A2C0E; margin: 0; }
+.sheet p { margin: 0; }
+.sheet ul { margin: 0; padding-left: 1.15rem; display: grid; gap: .45rem; }
+.sheet li::marker { color: var(--ember); }
+
+.timer { border-top: 1px solid rgba(27, 15, 7, .18); padding-top: 1.25rem; display: grid; gap: 1rem; }
+.presets { display: flex; flex-wrap: wrap; gap: .5rem; }
+.preset input { position: absolute; opacity: 0; pointer-events: none; }
+.preset span { display: inline-block; padding: .5rem .9rem; border: 1px solid rgba(27, 15, 7, .35); border-radius: 2px; font: 500 .9375rem/1 var(--display); font-stretch: 100%; cursor: pointer; }
+.preset input:checked + span { background: var(--night); color: var(--sun); border-color: var(--night); }
+.preset input:focus-visible + span { outline: 2px solid var(--night); outline-offset: 2px; }
+.clock { font: 800 clamp(3.25rem, 8vw, 4.75rem)/1 var(--display); font-stretch: 62%; font-variant-numeric: tabular-nums; letter-spacing: -.01em; }
+.timer-row { display: flex; flex-wrap: wrap; gap: .75rem 1.25rem; align-items: center; }
+.timer-status { font: 400 .9375rem/1.45 var(--display); font-stretch: 100%; margin: 0; min-height: 1.4em; }
+.recall { background: var(--night); color: var(--linen); padding: 1.25rem 1.35rem; display: grid; gap: .7rem; }
+.recall strong { font: 800 1.375rem/1.1 var(--display); font-stretch: 62%; color: var(--sun); }
+.recall ol { margin: 0; padding-left: 1.2rem; display: grid; gap: .4rem; }
+
+/* The flare between darkroom and daylight is a real light leak from the roll */
+.flare {
+  height: clamp(8rem, 18vw, 14rem);
+  background:
+    linear-gradient(to bottom, var(--rust) 0%, rgba(110, 36, 16, 0) 28%, rgba(232, 163, 58, 0) 66%, var(--saffron) 100%),
+    url("img/leak.jpg") center / 100% 100% no-repeat, var(--ember);
+}
+
+/* Sessions (saffron) */
+.on-light { color: var(--night); }
+.sessions { background: linear-gradient(to bottom, var(--saffron), var(--sun)); }
+
+/* Stepping outside: the sunlit lawn from the same roll */
+.lawn {
+  height: clamp(9rem, 20vw, 16rem);
+  background:
+    linear-gradient(to bottom, var(--sun) 0%, rgba(238, 216, 83, 0) 34%, rgba(226, 227, 143, 0) 62%, var(--pollen) 100%),
+    url("img/lawn.jpg") center 70% / cover no-repeat, var(--meadow);
+}
+.on-leaf { color: var(--canopy); }
+.on-leaf :focus-visible { outline-color: var(--canopy); }
+.btn.leaf { background: var(--canopy); color: var(--spring); }
+.btn.leaf:hover { box-shadow: 0 0 26px rgba(44, 50, 16, .35); }
+.sessions-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: clamp(2rem, 6vw, 5rem); align-items: end; }
+.sessions h2 { font-size: clamp(2.75rem, 7vw, 5.5rem); margin: 0; }
+.formats { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; border-top: 1.5px solid var(--night); }
+.formats li { display: grid; grid-template-columns: minmax(0, 13rem) minmax(0, 1fr); gap: 1rem; padding-block: 1rem; border-bottom: 1px solid rgba(27, 15, 7, .25); }
+.formats strong { font: 600 1.1875rem/1.3 var(--read); }
+.formats span { font-size: 1rem; }
+.sessions .note { margin: 1.25rem 0 0; font-size: 1rem; max-width: 34rem; }
+
+/* Request (sun) */
+.request { background: linear-gradient(to bottom, var(--pollen), var(--spring)); }
+.request-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: clamp(2rem, 6vw, 5rem); }
+.request h2 { font-size: clamp(2.75rem, 7vw, 5.5rem); margin: 0 0 1.25rem; }
+.request-intro p { margin: 0; max-width: 24rem; }
+form { display: grid; gap: 1.5rem; min-width: 0; }
+.field { display: grid; gap: .35rem; }
+.field > label, fieldset legend { font: 500 .9375rem/1.4 var(--display); font-stretch: 100%; }
+fieldset { border: 0; margin: 0; padding: 0; display: grid; gap: .6rem; min-width: 0; }
+input[type="text"] {
+  width: 100%; font: 400 1.25rem/1.6 var(--read); color: var(--canopy); background: transparent;
+  border: 0; border-bottom: 1.5px solid var(--canopy); border-radius: 0; padding: .2rem 0 .3rem;
+}
+input[type="text"]:focus { outline: none; box-shadow: 0 1.5px 0 var(--canopy); }
+input::placeholder { color: rgba(44, 50, 16, .5); }
+.chips { display: flex; flex-wrap: wrap; gap: .5rem; }
+.chip input { position: absolute; opacity: 0; pointer-events: none; }
+.chip span { display: inline-block; padding: .55rem .95rem; border: 1px solid rgba(44, 50, 16, .4); border-radius: 2px; font: 500 .9375rem/1 var(--display); font-stretch: 100%; cursor: pointer; }
+.chip input:checked + span { background: var(--canopy); color: var(--spring); border-color: var(--canopy); }
+.chip input:focus-visible + span { outline: 2px solid var(--canopy); outline-offset: 2px; }
+.error { font: 600 .9375rem/1.4 var(--display); font-stretch: 100%; color: #8A1E07; margin: 0; }
+.mine { font: 400 .9375rem/1.4 var(--display); font-stretch: 100%; margin: 0 0 1rem; }
+.result { background: var(--canopy); color: var(--spring); padding: 1.5rem; display: grid; gap: .9rem; }
+.result h3 { font-size: 2rem; margin: 0; color: var(--pollen); }
+.result p { margin: 0; color: var(--linen-dim); font-size: 1rem; }
+.result textarea { width: 100%; min-height: 9rem; font: 400 1rem/1.6 var(--read); color: var(--linen); background: rgba(241, 228, 200, .06); border: 1px solid rgba(241, 228, 200, .2); padding: .75rem; resize: vertical; }
+.result .linkbtn { color: var(--linen); }
+.result .r-about { color: var(--spring); }
+.result .r-about a { color: var(--pollen); }
+.brave { display: block; background: var(--canopy); -webkit-mask: url("img/brave.png") no-repeat left center / contain; mask: url("img/brave.png") no-repeat left center / contain; aspect-ratio: 345 / 109; width: 11rem; margin-top: 2.5rem; }
+
+.foot { background: linear-gradient(to bottom, var(--spring), var(--pollen) 25%, var(--meadow) 85%); padding-block: 4rem 5rem; }
+.foot .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 1.5rem 3rem; }
+.wm-stack { color: var(--canopy); width: 9rem; }
+.foot-copy { display: grid; gap: .5rem; }
+.foot p { margin: 0; font: 400 .9375rem/1.5 var(--display); font-stretch: 100%; max-width: 26rem; }
+
+/* Owner inbox */
+.inbox { background: var(--sun); color: var(--night); }
+.inbox .wrap { padding-block: 2rem; }
+.inbox h2 { font-size: 2.5rem; margin: 0; }
+.inbox .small { font: 400 .9375rem/1.4 var(--display); font-stretch: 100%; margin: .25rem 0 0; }
+.req-list { list-style: none; margin: 1.25rem 0 0; padding: 0; }
+.req { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .35rem 1.5rem; padding-block: 1rem; border-top: 1px solid rgba(27, 15, 7, .25); }
+.req .who { font: 600 1.1875rem/1.3 var(--read); }
+.req .contact { user-select: all; font-family: var(--display); font-stretch: 100%; }
+.req .detail { grid-column: 1 / -1; font-size: 1rem; display: grid; gap: .2rem; }
+.pill { font: 600 .8125rem/1 var(--display); font-stretch: 100%; padding: .35rem .6rem; border-radius: 2px; border: 1px solid var(--night); white-space: nowrap; }
+.pill.new { background: var(--night); color: var(--sun); }
+.req-actions { display: flex; gap: .75rem; align-items: center; justify-content: flex-end; }
+
+/* Essay view */
+.essay { padding-block: clamp(2rem, 6vw, 4.5rem) 5rem; }
+.essay-head { max-width: 46rem; display: grid; gap: 1.25rem; margin-bottom: 3rem; }
+.essay h1 { font-size: clamp(4rem, 12vw, 9rem); margin: 0; }
+.essay .dek { font-size: clamp(1.375rem, 2.6vw, 1.875rem); color: var(--saffron); margin: 0; max-width: 34rem; }
+.essay .by { font: 400 .9375rem/1.4 var(--display); font-stretch: 100%; color: var(--linen-dim); margin: 0; }
+.essay-body { max-width: 38rem; font-size: 1.1875rem; line-height: 1.75; }
+.essay-body p { margin: 0 0 1.25em; }
+.essay-body h2 { font-size: clamp(1.875rem, 4vw, 2.75rem); margin: 2.2em 0 .7em; color: var(--linen); }
+.essay-body .practice-name { font-weight: 700; font-style: italic; color: var(--sun); }
+.essay-body blockquote { margin: 2rem 0; padding: 0; font: italic 400 clamp(1.5rem, 3vw, 2.125rem)/1.3 var(--read); color: var(--saffron); }
+.essay .brave { background: var(--saffron); margin-top: 1.5rem; }
+.essay-end { max-width: 38rem; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(241, 228, 200, .2); display: flex; flex-wrap: wrap; gap: 1rem 1.75rem; align-items: center; }
+
+@media (max-width: 900px) {
+  .hero, .sessions-grid, .request-grid { grid-template-columns: minmax(0, 1fr); }
+  .hero .frame-wrap { order: -1; }
+  .beats { grid-template-columns: minmax(0, 1fr); gap: 2rem; }
+  .sheets { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 560px) {
+  .formats li { grid-template-columns: minmax(0, 1fr); gap: .25rem; }
+  .top nav a:not(.go) { display: none; }
+  .req { grid-template-columns: minmax(0, 1fr); }
+  .req-actions { justify-content: flex-start; }
+}
+
+/* Edit mode: only people who can edit this page ever see these controls */
+.editbar {
+  position: fixed; z-index: 50; left: 0; right: 0; bottom: 0;
+  padding: .75rem max(16px, env(safe-area-inset-right, 0px)) calc(.75rem + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px));
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: .6rem 1rem;
+  pointer-events: none;
+}
+.editbar > * { pointer-events: auto; }
+.editbar .msg { font: 500 .9375rem/1.4 var(--display); font-stretch: 100%; color: var(--linen); background: var(--night); padding: .7rem 1rem; border-radius: 2px; margin-right: auto; box-shadow: 0 6px 24px rgba(0, 0, 0, .35); }
+.editbar .btn { box-shadow: 0 6px 24px rgba(0, 0, 0, .35); }
+.editbar .btn.ghost { background: var(--night); color: var(--linen); }
+.editing [data-k] { outline: 1px dashed currentColor; outline-offset: 4px; border-radius: 1px; cursor: text; min-width: 2ch; }
+.editing [data-k]:focus { outline: 2px solid var(--sun); outline-offset: 4px; }
+.editing .on-leaf [data-k]:focus, .editing .on-light [data-k]:focus, .editing .sheet [data-k]:focus { outline-color: var(--ember); }
+.editing [data-k]:empty::before { content: attr(data-ph); opacity: .45; }
+.edit-tools { display: none; gap: 1rem; flex-wrap: wrap; margin: -.4rem 0 1.4rem; }
+.editing .edit-tools { display: flex; }
+.edit-tools button { background: none; border: 0; padding: 0; cursor: pointer; font: 500 .875rem/1.3 var(--display); font-stretch: 100%; color: var(--saffron); text-decoration: underline; text-underline-offset: .2em; }
+.sheet .edit-tools button { color: #7A2C0E; }
+.editing .frame { pointer-events: none; }
+
+/* Seams: the gradient breaks into staggered columns of neighbouring colours */
+.seam { position: relative; height: clamp(8rem, 16vw, 14rem); overflow: hidden; }
+.seam-cols {
+  position: absolute; inset: -12% -4%; display: flex;
+  filter: blur(clamp(10px, 1.5vw, 22px)) saturate(1.05);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 30%, #000 70%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, #000 30%, #000 70%, transparent);
+}
+.seam i { display: block; flex-basis: 0; min-width: 0; }
+/* A little film grain over the leak, so it reads as light on film rather than a gradient */
+.seam::after {
+  content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .14; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 30%, #000 70%, transparent);
+  mask-image: linear-gradient(to bottom, transparent, #000 30%, #000 70%, transparent);
+}
+#home[hidden] ~ .seam { display: none; }
+
+/* Arrange mode: select a box, drag it, pull its edges */
+.arranging [data-k] { outline: none !important; cursor: default; }
+.arranging [data-box] { cursor: pointer; }
+.arranging .arr-hover { outline: 1px dashed var(--sun); outline-offset: 2px; }
+.arranging .on-light .arr-hover, .arranging .on-leaf .arr-hover, .arranging .sheet .arr-hover { outline-color: var(--ember); }
+.arranging .edit-tools { display: none; }
+.arr-frame { position: fixed; z-index: 60; box-sizing: border-box; border: 2px solid var(--sun); box-shadow: 0 0 0 1px var(--night), inset 0 0 0 1px var(--night); cursor: move; touch-action: none; }
+.arr-name { position: absolute; left: -2px; bottom: 100%; margin-bottom: 4px; background: var(--sun); color: var(--night); font: 600 .75rem/1 var(--display); font-stretch: 100%; padding: .3rem .45rem; white-space: nowrap; pointer-events: none; }
+.arr-handle { position: absolute; width: 14px; height: 14px; background: var(--sun); border: 2px solid var(--night); box-sizing: border-box; }
+.arr-handle.e { right: -8px; top: 50%; margin-top: -7px; cursor: ew-resize; }
+.arr-handle.s { bottom: -8px; left: 50%; margin-left: -7px; cursor: ns-resize; }
+.arr-handle.se { right: -8px; bottom: -8px; cursor: nwse-resize; }
+.arr-panel {
+  position: fixed; z-index: 55; left: max(16px, env(safe-area-inset-left, 0px)); bottom: calc(4.75rem + env(safe-area-inset-bottom, 0px));
+  width: min(23rem, calc(100vw - 32px)); max-height: calc(100vh - 7rem); overflow: auto; box-sizing: border-box;
+  background: var(--night); color: var(--linen); padding: 1rem 1.1rem; display: grid; gap: .8rem;
+  font: 400 .875rem/1.4 var(--display); font-stretch: 100%; box-shadow: 0 10px 40px rgba(0, 0, 0, .45);
+}
+.arr-head { display: grid; gap: .15rem; }
+.arr-head strong { font-weight: 700; font-size: 1rem; color: var(--sun); }
+.arr-head span, .arr-hint { color: var(--linen-dim); margin: 0; }
+.arr-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .55rem .75rem; }
+.arr-fields label { display: grid; gap: .25rem; color: var(--linen-dim); font-size: .8125rem; }
+.arr-fields input, .arr-fields select { width: 100%; box-sizing: border-box; background: rgba(241, 228, 200, .08); color: var(--linen); border: 1px solid rgba(241, 228, 200, .25); border-radius: 2px; padding: .4rem .5rem; font: 500 .9375rem/1.2 var(--display); font-stretch: 100%; }
+.arr-fields input:focus, .arr-fields select:focus { outline: 2px solid var(--sun); outline-offset: 1px; }
+.arr-actions { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; }
+.arr-actions button { background: none; border: 0; padding: 0; cursor: pointer; color: var(--sun); font: 500 .875rem/1.3 var(--display); font-stretch: 100%; text-decoration: underline; text-underline-offset: .2em; }
+.modes { display: inline-flex; background: var(--night); padding: 3px; border-radius: 2px; box-shadow: 0 6px 24px rgba(0, 0, 0, .35); }
+.modes button { background: none; border: 0; color: var(--linen); padding: .65rem .95rem; font: 600 .9375rem/1 var(--display); font-stretch: 100%; cursor: pointer; border-radius: 2px; }
+.modes button[aria-pressed="true"] { background: var(--sun); color: var(--night); }
+
+/* Line breaks typed with Shift+Enter show as written */
+[data-k] { white-space: pre-line; }
+
+/* The glow around the photo may reach past the screen edge; never let it widen the page */
+main { overflow-x: clip; }
+
+/* Booking: the Cal.com calendar sits in the sunlit request section; its link is set in edit mode */
+.edit-only { display: none; }
+.editing .edit-only { display: grid; gap: .35rem; margin: 0 0 1.25rem; padding: .9rem 1rem; background: rgba(44, 50, 16, .08); font: 500 .9375rem/1.4 var(--display); font-stretch: 100%; }
+.cal-setting small { font: 400 .8125rem/1.4 var(--display); font-stretch: 100%; opacity: .75; }
+.cal-embed { min-height: 36rem; width: 100%; overflow: auto; }
+.cal-loading { margin: 0; padding: 1rem 0; font: 400 .9375rem/1.5 var(--display); font-stretch: 100%; }
+.note-toggle { margin-top: 1.25rem; }
+#note-wrap:not([hidden]) { margin-top: 1.5rem; }
+.booking[hidden] + #note-wrap { margin-top: 0; }
+</style>
+<style id="pop-layout">@media (min-width: 901px){
+  [data-box="hero.frame"]{translate:60px -32px!important;width:min(788px, calc(100vw - 32px))!important;max-width:none!important;min-height:536px!important}
+  [data-box="hero.line1"]{width:min(548px, calc(100vw - 32px))!important;max-width:none!important}
+  [data-box="hero.line2"]{width:min(544px, calc(100vw - 32px))!important;max-width:none!important}
+  [data-box="top.logo"]{min-height:24px!important}
+}</style>
+<div class="inbox" id="inbox" hidden>
+  <div class="wrap">
+    <h2 class="squeeze">Session requests</h2>
+    <p class="small" id="inbox-note">Only you can see this list. Clients see the page below.</p>
+    <ul class="req-list" id="req-list"></ul>
+  </div>
+</div>
+
+<header class="wrap top" id="top">
+  <a class="wm" href="#top" aria-label="Put It On Paper, home" data-box="top.logo" data-box-label="Logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -70.60 338.40 187.56" role="img" aria-label="Put It On Paper"><path d="M0.0 0.0V-68.8H23.9Q30.6 -68.8 34.6 -66.0Q38.6 -63.2 40.3 -58.2Q42.0 -53.2 42.0 -46.5Q42.0 -39.5 40.1 -34.25Q38.2 -29.0 34.2 -26.0Q30.200000000000003 -23.0 23.9 -23.0H15.3V0.0ZM15.3 -35.7H20.7Q24.0 -35.7 25.3 -38.550000000000004Q26.6 -41.400000000000006 26.6 -45.900000000000006Q26.6 -49.300000000000004 26.05 -51.550000000000004Q25.5 -53.800000000000004 24.15 -54.900000000000006Q22.8 -56.0 20.4 -56.0H15.3ZM67.80000000000001 1.2000000000000002Q61.400000000000006 1.2000000000000002 56.7 -0.95Q52.00000000000001 -3.1 49.50000000000001 -8.3Q47.00000000000001 -13.5 47.00000000000001 -22.5V-68.8H62.30000000000001V-21.5Q62.30000000000001 -16.8 63.400000000000006 -14.350000000000001Q64.5 -11.9 67.7 -11.9Q71.0 -11.9 72.2 -14.350000000000001Q73.4 -16.8 73.4 -21.5V-68.8H88.70000000000002V-22.5Q88.70000000000002 -13.5 86.20000000000002 -8.3Q83.70000000000002 -3.1 79.05000000000001 -0.95Q74.4 1.2000000000000002 67.80000000000001 1.2000000000000002ZM108.30000000000001 0.0V-55.5H94.20000000000002V-68.8H137.4V-55.5H123.50000000000001V0.0ZM155.3 0.0V-68.8H170.60000000000002V0.0ZM190.70000000000002 0.0V-55.5H176.60000000000002V-68.8H219.8V-55.5H205.90000000000003V0.0ZM260.40000000000003 1.2000000000000002Q252.40000000000003 1.2000000000000002 247.05 -2.45Q241.70000000000002 -6.1000000000000005 239.0 -13.950000000000001Q236.3 -21.8 236.3 -34.4Q236.3 -46.900000000000006 239.0 -54.75Q241.70000000000002 -62.6 247.05 -66.3Q252.40000000000003 -70.0 260.40000000000003 -70.0Q268.6 -70.0 273.95000000000005 -66.3Q279.3 -62.6 281.95000000000005 -54.75Q284.6 -46.900000000000006 284.6 -34.4Q284.6 -21.8 281.95000000000005 -13.950000000000001Q279.3 -6.1000000000000005 273.95000000000005 -2.45Q268.6 1.2000000000000002 260.40000000000003 1.2000000000000002ZM260.40000000000003 -11.9Q263.0 -11.9 264.6 -13.0Q266.20000000000005 -14.100000000000001 267.20000000000005 -16.25Q268.20000000000005 -18.400000000000002 268.6 -21.5Q269.0 -24.6 269.0 -28.700000000000003V-40.1Q269.0 -44.2 268.6 -47.300000000000004Q268.20000000000005 -50.400000000000006 267.20000000000005 -52.5Q266.20000000000005 -54.6 264.6 -55.7Q263.0 -56.800000000000004 260.40000000000003 -56.800000000000004Q257.90000000000003 -56.800000000000004 256.25 -55.7Q254.60000000000002 -54.6 253.65000000000003 -52.5Q252.70000000000002 -50.400000000000006 252.25 -47.300000000000004Q251.8 -44.2 251.8 -40.1V-28.700000000000003Q251.8 -24.6 252.25 -21.5Q252.70000000000002 -18.400000000000002 253.65000000000003 -16.25Q254.60000000000002 -14.100000000000001 256.25 -13.0Q257.90000000000003 -11.9 260.40000000000003 -11.9ZM292.40000000000003 0.0V-68.8H307.0L317.2 -41.0Q317.5 -40.1 317.9 -38.95Q318.3 -37.800000000000004 318.70000000000005 -36.5Q319.1 -35.2 319.40000000000003 -33.9H319.90000000000003Q319.8 -35.800000000000004 319.8 -37.650000000000006Q319.8 -39.5 319.8 -41.0V-68.8H334.40000000000003V0.0H319.8L309.6 -28.0Q309.1 -29.6 308.5 -31.650000000000002Q307.90000000000003 -33.7 307.40000000000003 -35.9H306.90000000000003Q306.90000000000003 -34.1 306.90000000000003 -32.0Q306.90000000000003 -29.900000000000002 306.90000000000003 -28.0V0.0Z" fill="currentColor"/><path d="M0.0 114.96052211249463V16.17683812795191H34.315843709746666Q43.93576642335766 16.17683812795191 49.67900386431945 20.19710433662516Q55.42224130528123 24.217370545298408 57.86311721768999 31.39641734650064Q60.303993130098746 38.575464147702874 60.303993130098746 48.195386861313864Q60.303993130098746 58.24605238299699 57.5759553456419 65.78405152425934Q54.84791756118505 73.32205066552169 49.104680120223264 77.62947874624302Q43.36144267926148 81.93690682696436 34.315843709746666 81.93690682696436H21.96788321167883V114.96052211249463ZM21.96788321167883 63.70212795191069H29.721253756977244Q34.45942464577071 63.70212795191069 36.32597681408329 59.61007127522542Q38.19252898239587 55.51801459854015 38.19252898239587 49.05687247745814Q38.19252898239587 44.175120652640615 37.40283383426363 40.94454959209961Q36.613138686131386 37.71397853155861 34.67479604980678 36.13458823529412Q32.736453413482174 34.555197939029625 29.290510948905112 34.555197939029625H21.96788321167883ZM57.28879347359381 114.96052211249463 78.39519106912837 16.17683812795191H108.26002576212966L129.51000429368827 114.96052211249463H106.39347359381708L103.09111206526406 96.72574323744095H82.98978102189781L79.68741949334478 114.96052211249463ZM85.71781880635466 78.34738342636325H100.36307428080721L95.91206526406182 52.072072133963076Q95.76848432803777 50.92342464577072 95.48132245598968 49.05687247745814Q95.1941605839416 47.19032030914556 94.90699871189351 44.821234864748824Q94.61983683984542 42.452149420352086 94.2608844997853 40.15485444396737Q93.90193215972519 37.85755946758266 93.61477028767712 35.84742636324603H92.46612279948475Q92.17896092743666 38.288302275654786 91.82000858737655 41.303501932159726Q91.46105624731644 44.318701588664666 91.03031343924431 47.190320309145555Q90.59957063117217 50.061939029626444 90.31240875912408 52.072072133963076ZM136.1147273507943 114.96052211249463V16.17683812795191H170.43057106054098Q180.050493774152 16.17683812795191 185.79373121511378 20.19710433662516Q191.53696865607554 24.217370545298408 193.9778445684843 31.39641734650064Q196.41872048089306 38.575464147702874 196.41872048089306 48.195386861313864Q196.41872048089306 58.24605238299699 193.69068269643623 65.78405152425934Q190.96264491197937 73.32205066552169 185.21940747101758 77.62947874624302Q179.4761700300558 81.93690682696436 170.43057106054098 81.93690682696436H158.08261056247315V114.96052211249463ZM158.08261056247315 63.70212795191069H165.83598110777157Q170.57415199656504 63.70212795191069 172.44070416487762 59.61007127522542Q174.3072563331902 55.51801459854015 174.3072563331902 49.05687247745814Q174.3072563331902 44.175120652640615 173.51756118505796 40.94454959209961Q172.72786603692572 37.71397853155861 170.78952340060113 36.13458823529412Q168.8511807642765 34.555197939029625 165.40523829969942 34.555197939029625H158.08261056247315ZM204.31567196221553 114.96052211249463V16.17683812795191H259.1635895234006V35.1295216831258H226.28355517389437V55.374433662516104H254.13825676255902V74.32711721768999H226.28355517389437V96.00783855732074H259.73791326749677V114.96052211249463ZM269.7885787891799 114.96052211249463V16.17683812795191H303.09935594675824Q314.0115070845856 16.17683812795191 320.1136968656075 20.12531386861314Q326.21588664662943 24.07378960927437 328.65676255903816 30.750303134392446Q331.09763847144694 37.42681665951052 331.09763847144694 45.61093001288107Q331.09763847144694 54.225786174323744 329.01571489909827 61.26125203950193Q326.93379132674966 68.29671790468012 321.62129669386 72.60414598540146L334.4 114.96052211249463H311.7142121082009L302.0942893945899 79.92677372262773H291.75646200085873V114.96052211249463ZM291.75646200085873 62.1227376556462H300.0841562902533Q305.2530699871189 62.1227376556462 307.1914126234435 58.03068097896093Q309.1297552597681 53.938624302275656 309.1297552597681 47.76464405324174Q309.1297552597681 43.60079690854444 308.26826964362385 40.657387720051524Q307.4067840274796 37.71397853155861 305.468441391155 36.13458823529412Q303.53009875483036 34.555197939029625 299.7969944182052 34.555197939029625H291.75646200085873Z" fill="currentColor"/></svg></a>
+  <nav aria-label="Sections">
+    <a href="#instagram-brain">Instagram brain</a>
+    <a href="#practices">Practices</a>
+    <a class="go" href="#request">Request a session</a>
+  </nav>
+</header>
+
+<main id="home">
+  <section class="wrap hero" aria-labelledby="h1">
+    <div data-box="hero.text" data-box-label="Headline and intro">
+      <h1 id="h1" data-box="hero.h1" data-box-label="Headline">
+        <span class="squeeze" data-k="hero.line1" data-ph="First line" data-box="hero.line1" data-box-label="First line">A Practice for Clear Thinking.</span>
+        <span class="open" data-k="hero.line2" data-ph="Second line" data-box="hero.line2" data-box-label="Second line">Tap into the mental and physical benefits of writing.</span>
+      </h1>
+      <p class="lead" data-k="hero.lead" data-ph="Introduction" data-box="hero.lead" data-box-label="Introduction"></p>
+      <div class="actions" data-box="hero.actions" data-box-label="Buttons">
+        <a class="btn" href="#request">Request a session</a>
+        <a class="textlink" href="#instagram-brain">Read the essay on Instagram brain</a>
+      </div>
+    </div>
+    <div class="frame-wrap" data-box="hero.frame" data-box-label="Film frame">
+      <button class="frame" id="frame" type="button" aria-label="Strips of ten film frames scroll like a feed, then settle into one image: a window open onto a sunset. Press to scroll them again."></button>
+    </div>
+  </section>
+
+  <div class="seam" aria-hidden="true" style="background:var(--night)"><div class="seam-cols"><i style="flex-grow:4;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 19.9%,var(--rust) 38.6%,var(--rust) 63.5%,var(--night) 82.2%,var(--night) 100%)"></i><i style="flex-grow:3;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 20.1%,var(--rust) 32.5%,var(--rust) 49.0%,var(--night) 61.3%,var(--night) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 17.5%,#3B1A0B 34.7%,#3B1A0B 57.6%,var(--night) 74.7%,var(--night) 100%)"></i><i style="flex-grow:1;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 24.1%,var(--oxblood) 43.7%,var(--oxblood) 69.8%,var(--night) 89.4%,var(--night) 100%)"></i><i style="flex-grow:3;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 12.3%,#2A1309 28.4%,#2A1309 50.0%,var(--night) 66.1%,var(--night) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 7.8%,var(--rust) 26.4%,var(--rust) 51.1%,var(--night) 69.7%,var(--night) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 29.3%,#3B1A0B 50.4%,#3B1A0B 78.5%,var(--night) 98.0%,var(--night) 100%)"></i><i style="flex-grow:3;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 22.7%,var(--oxblood) 37.1%,var(--oxblood) 56.3%,var(--night) 70.8%,var(--night) 100%)"></i><i style="flex-grow:3;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 33.3%,var(--oxblood) 48.3%,var(--oxblood) 68.2%,var(--night) 83.2%,var(--night) 100%)"></i><i style="flex-grow:4;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 14.4%,var(--rust) 32.5%,var(--rust) 56.5%,var(--night) 74.6%,var(--night) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 8.3%,#3B1A0B 29.9%,#3B1A0B 58.7%,var(--night) 80.3%,var(--night) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 4.8%,#3B1A0B 17.1%,#3B1A0B 33.5%,var(--night) 45.8%,var(--night) 100%)"></i><i style="flex-grow:3;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 19.8%,var(--rust) 34.4%,var(--rust) 54.0%,var(--night) 68.6%,var(--night) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 6.7%,var(--oxblood) 25.8%,var(--oxblood) 51.3%,var(--night) 70.4%,var(--night) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 23.0%,#2A1309 46.3%,#2A1309 77.2%,var(--night) 98.0%,var(--night) 100%)"></i></div></div>
+
+  <section class="band overfed" aria-labelledby="overfed-h">
+    <div class="wrap">
+      <h2 class="squeeze statement" id="overfed-h" data-box="overfed.statement" data-box-label="Statement"><span data-k="overfed.statement" data-ph="Statement">Information metabolism.</span></h2>
+      <p class="statement-body" data-k="overfed.body" data-ph="Paragraph" data-box="overfed.body" data-box-label="Paragraph">I love learning. I want to know so much about so many things. We have a limit to how much we can take in at one time though. I see it just like our diets, of which there are many. A unifying factor in health and nutrition is that if you eat too much of anything, you&#39;ll feel too full, and eventually get fat.
+
+Three meals a day, and maybe some snacks. Well, for some of us the snacks add up to eight hours of short form videos about an abundance of topics. We take in far more than we can digest, and it shows up as restlessness, fog, indecision, regurgitation of information, and trouble focusing on what you care about.</p>
+      <div class="beats" data-box="overfed.beats" data-box-label="Three ideas">
+        <div class="beat" data-box="overfed.beat.0" data-box-label="Idea 1"><h3 class="open" data-k="overfed.beats.0.title" data-ph="Title" data-box="overfed.beats.0.title" data-box-label="Title">There&#39;s no shortcut</h3><p data-k="overfed.beats.0.text" data-ph="Text" data-box="overfed.beats.0.text" data-box-label="Text">Faster answers and more automation won&#39;t fix it. You&#39;re one person with one brain, and like any AI, you only have so much room to hold things in.</p></div>
+        <div class="beat" data-box="overfed.beat.1" data-box-label="Idea 2"><h3 class="open" data-k="overfed.beats.1.title" data-ph="Title" data-box="overfed.beats.1.title" data-box-label="Title">Switching has a cost</h3><p data-k="overfed.beats.1.text" data-ph="Text" data-box="overfed.beats.1.text" data-box-label="Text">Jumping topics every few seconds wears down memory, especially when nothing you take in ever comes back out as an idea of your own.</p></div>
+        <div class="beat" data-box="overfed.beat.2" data-box-label="Idea 3"><h3 class="open" data-k="overfed.beats.2.title" data-ph="Title" data-box="overfed.beats.2.title" data-box-label="Title">An invisible muscle</h3><p data-k="overfed.beats.2.text" data-ph="Text" data-box="overfed.beats.2.text" data-box-label="Text">We train what we can see: bigger arms, bigger meals, more entertainment. This trains what nobody sees: attention, recall, and holding one thought long enough to use it.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="seam" aria-hidden="true" style="background:var(--oxblood)"><div class="seam-cols"><i style="flex-grow:2;background:linear-gradient(to bottom,var(--oxblood) 0%,var(--oxblood) 6.0%,var(--rust) 25.0%,var(--rust) 50.3%,var(--oxblood) 69.3%,var(--oxblood) 100%)"></i><i style="flex-grow:4;background:linear-gradient(to bottom,var(--oxblood) 0%,var(--oxblood) 10.4%,#7E2B10 28.0%,#7E2B10 51.4%,var(--oxblood) 68.9%,var(--oxblood) 100%)"></i><i style="flex-grow:1;background:linear-gradient(to bottom,var(--oxblood) 0%,var(--oxblood) 4.3%,var(--blood) 24.2%,var(--blood) 50.7%,var(--oxblood) 70.6%,var(--oxblood) 100%)"></i><i style="flex-grow:3;background:linear-gradient(to bottom,var(--oxblood) 0%,var(--oxblood) 33.6%,var(--rust) 55.0%,var(--rust) 83.7%,var(--oxblood) 98.0%,var(--oxblood) 100%)"></i><i style="flex-grow:4;background:linear-gradient(to bottom,var(--oxblood) 0%,var(--oxblood) 5.7%,#5A1709 22.5%,#5A1709 44.9%,var(--oxblood) 61.8%,var(--oxblood) 100%)"></i><i style="flex-grow:1;background:linear-gradient(to bottom,var(--oxblood) 0%,var(--oxblood) 10.4%,var(--blood) 31.9%,var(--blood) 60.7%,var(--oxblood) 82.2%,var(--oxblood) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--oxblood) 0%,var(--oxblood) 27.5%,#5A1709 40.8%,#5A1709 58.5%,var(--oxblood) 71.8%,var(--oxblood) 100%)"></i><i style="flex-grow:4;background:linear-gradient(to bottom,var(--oxblood) 0%,var(--oxblood) 19.3%,#7E2B10 42.0%,#7E2B10 72.3%,var(--oxblood) 95.1%,var(--oxblood) 100%)"></i><i style="flex-grow:3;background:linear-gradient(to bottom,var(--oxblood) 0%,var(--oxblood) 31.4%,#7E2B10 50.5%,#7E2B10 76.1%,var(--oxblood) 95.2%,var(--oxblood) 100%)"></i><i style="flex-grow:4;background:linear-gradient(to bottom,var(--oxblood) 0%,var(--oxblood) 10.5%,#5A1709 25.6%,#5A1709 45.8%,var(--oxblood) 61.0%,var(--oxblood) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--oxblood) 0%,var(--oxblood) 32.6%,#5A1709 53.7%,#5A1709 81.8%,var(--oxblood) 98.0%,var(--oxblood) 100%)"></i><i style="flex-grow:4;background:linear-gradient(to bottom,var(--oxblood) 0%,var(--oxblood) 31.2%,var(--rust) 45.1%,var(--rust) 63.5%,var(--oxblood) 77.4%,var(--oxblood) 100%)"></i></div></div>
+
+  <section class="band practices" id="practices" aria-labelledby="practices-h">
+    <div class="wrap">
+      <div class="head" data-box="practices.head" data-box-label="Practices heading">
+        <h2 class="squeeze" id="practices-h" data-box="practices.title" data-box-label="Title"><span data-k="practices.title" data-ph="Title">Two practices to start with.</span></h2>
+        <p data-k="practices.intro" data-ph="Introduction" data-box="practices.intro" data-box-label="Introduction">You need a pen, some paper and a few minutes. The screen&#39;s only job is to hand you over to the page.</p>
+      </div>
+      <div class="sheets" data-box="practices.sheets" data-box-label="Practice sheets">
+        <article class="sheet" aria-labelledby="p1-h" data-box="practices.sheet1" data-box-label="Catch a fragment sheet">
+          <p class="when" data-k="practices.p1.when" data-ph="When" data-box="practices.p1.when" data-box-label="When">Any time a clip comes back to you</p>
+          <h3 class="squeeze" id="p1-h" data-box="practices.p1.title" data-box-label="Practice name"><span data-k="practices.p1.title" data-ph="Practice name">Catch a fragment</span></h3>
+          <p data-k="practices.p1.intro" data-ph="Introduction" data-box="practices.p1.intro" data-box-label="Introduction">When something you watched pops back into your head, stop and write it down before it drifts off again.</p>
+          <ul id="list-p1" data-box="practices.p1.items" data-box-label="Questions">
+<li data-k="practices.p1.items.0" data-ph="Line 1" data-box="practices.p1.items.0" data-box-label="Line 1">What is it: a face, a phrase, a sound, a joke?</li>
+<li data-k="practices.p1.items.1" data-ph="Line 2" data-box="practices.p1.items.1" data-box-label="Line 2">Who was in it, and where did it come from?</li>
+<li data-k="practices.p1.items.2" data-ph="Line 3" data-box="practices.p1.items.2" data-box-label="Line 3">What was it about, and what does it say?</li>
+<li data-k="practices.p1.items.3" data-ph="Line 4" data-box="practices.p1.items.3" data-box-label="Line 4">Why might it be showing up right now?</li>
+</ul>
+<div class="edit-tools"><button type="button" data-addline="practices.p1.items">Add a line</button></div>
+          <p data-k="practices.p1.outro" data-ph="Closing line" data-box="practices.p1.outro" data-box-label="Closing line">Keep the pages together. Over a week, the fragments start to show you a pattern.</p>
+        </article>
+        <article class="sheet" aria-labelledby="p2-h" data-box="practices.sheet2" data-box-label="Scroll, then recall sheet">
+          <p class="when" data-k="practices.p2.when" data-ph="When" data-box="practices.p2.when" data-box-label="When">Once a day, on purpose</p>
+          <h3 class="squeeze" id="p2-h" data-box="practices.p2.title" data-box-label="Practice name"><span data-k="practices.p2.title" data-ph="Practice name">Scroll, then recall</span></h3>
+          <p data-k="practices.p2.intro" data-ph="Introduction" data-box="practices.p2.intro" data-box-label="Introduction">Pick a time limit and scroll as you normally would. When the timer rings, put the phone face down and write down everything you can remember.</p>
+          <div class="timer" aria-live="polite" data-box="practices.timer" data-box-label="Timer">
+            <div class="presets" id="presets" role="radiogroup" aria-label="Scroll time"></div>
+            <div class="clock" id="clock" role="timer">10:00</div>
+            <div class="timer-row">
+              <button class="btn dark" id="t-start" type="button">Start scrolling</button>
+              <button class="linkbtn" id="t-reset" type="button" hidden>Reset</button>
+            </div>
+            <p class="timer-status" id="t-status">Start the timer here, then open your feed. Come back when it rings.</p>
+            <div class="recall" id="recall" hidden>
+              <strong data-k="practices.p2.recallTitle" data-ph="Recall heading" data-box="practices.p2.recallTitle" data-box-label="Recall heading">Phone face down. Now write, by hand:</strong>
+              <ol id="list-recall" data-box="practices.p2.recall" data-box-label="Recall prompts">
+<li data-k="practices.p2.recall.0" data-ph="Line 1" data-box="practices.p2.recall.0" data-box-label="Line 1">Everything you saw, in order, as far as you can remember.</li>
+<li data-k="practices.p2.recall.1" data-ph="Line 2" data-box="practices.p2.recall.1" data-box-label="Line 2">One video in detail: who was in it, what it looked like, what was said.</li>
+<li data-k="practices.p2.recall.2" data-ph="Line 3" data-box="practices.p2.recall.2" data-box-label="Line 3">Which one is still with you, and why it stuck.</li>
+<li data-k="practices.p2.recall.3" data-ph="Line 4" data-box="practices.p2.recall.3" data-box-label="Line 4">How you feel now compared with before you started.</li>
+</ol>
+<div class="edit-tools"><button type="button" data-addline="practices.p2.recall">Add a line</button></div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="flare" role="img" aria-label="A light leak from the same roll of film, deep red turning to yellow"></div>
+
+  <section class="band sessions on-light" aria-labelledby="sessions-h">
+    <div class="wrap sessions-grid">
+      <h2 class="squeeze" id="sessions-h" data-box="sessions.title" data-box-label="Sessions heading"><span data-k="sessions.title" data-ph="Title">Practise it with someone.</span></h2>
+      <div data-box="sessions.list" data-box-label="Formats">
+        <ul class="formats">
+          <li data-box="sessions.format.0" data-box-label="Format 1"><strong data-k="sessions.formats.0.name" data-ph="Name" data-box="sessions.formats.0.name" data-box-label="Name">One-on-one</strong><span data-k="sessions.formats.0.text" data-ph="Description" data-box="sessions.formats.0.text" data-box-label="Description">An hour with phones away, guided writing, and one next step to take home.</span></li>
+          <li data-box="sessions.format.1" data-box-label="Format 2"><strong data-k="sessions.formats.1.name" data-ph="Name" data-box="sessions.formats.1.name" data-box-label="Name">Workshops</strong><span data-k="sessions.formats.1.text" data-ph="Description" data-box="sessions.formats.1.text" data-box-label="Description">Two hours, four to eight people, one theme, everyone writing at once.</span></li>
+          <li data-box="sessions.format.2" data-box-label="Format 3"><strong data-k="sessions.formats.2.name" data-ph="Name" data-box="sessions.formats.2.name" data-box-label="Name">Retreats</strong><span data-k="sessions.formats.2.text" data-ph="Description" data-box="sessions.formats.2.text" data-box-label="Description">A day or a weekend away from screens. The first is being planned now.</span></li>
+        </ul>
+        <p class="note" data-k="sessions.note" data-ph="Note" data-box="sessions.note" data-box-label="Note">In person or by video. Founding rates for the first clients.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="seam light" aria-hidden="true" style="background:var(--sun)"><div class="seam-cols"><i style="flex-grow:1;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 33.9%,#F4C95A 45.6%,#F4C95A 61.2%,var(--sun) 73.0%,var(--sun) 100%)"></i><i style="flex-grow:3;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 21.6%,#D8D879 35.2%,#D8D879 53.2%,var(--sun) 66.7%,var(--sun) 100%)"></i><i style="flex-grow:1;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 18.9%,#D8D879 37.5%,#D8D879 62.3%,var(--sun) 80.9%,var(--sun) 100%)"></i><i style="flex-grow:4;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 26.3%,#D8D879 48.9%,#D8D879 78.9%,var(--sun) 98.0%,var(--sun) 100%)"></i><i style="flex-grow:1;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 10.8%,#D8D879 29.4%,#D8D879 54.2%,var(--sun) 72.8%,var(--sun) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 18.2%,#F4C95A 31.5%,#F4C95A 49.2%,var(--sun) 62.5%,var(--sun) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 26.6%,#F4C95A 41.8%,#F4C95A 62.0%,var(--sun) 77.1%,var(--sun) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 21.4%,var(--pollen) 44.4%,var(--pollen) 75.2%,var(--sun) 98.0%,var(--sun) 100%)"></i><i style="flex-grow:4;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 19.7%,#D8D879 32.7%,#D8D879 49.9%,var(--sun) 62.9%,var(--sun) 100%)"></i><i style="flex-grow:3;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 7.8%,#F4C95A 21.9%,#F4C95A 40.7%,var(--sun) 54.7%,var(--sun) 100%)"></i><i style="flex-grow:1;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 13.5%,var(--saffron) 35.1%,var(--saffron) 64.0%,var(--sun) 85.7%,var(--sun) 100%)"></i><i style="flex-grow:4;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 24.1%,#F4C95A 35.7%,#F4C95A 51.3%,var(--sun) 63.0%,var(--sun) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 31.1%,var(--pollen) 43.1%,var(--pollen) 59.1%,var(--sun) 71.1%,var(--sun) 100%)"></i><i style="flex-grow:4;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 30.7%,var(--pollen) 48.2%,var(--pollen) 71.6%,var(--sun) 89.1%,var(--sun) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 26.3%,var(--pollen) 43.6%,var(--pollen) 66.7%,var(--sun) 84.0%,var(--sun) 100%)"></i></div></div>
+
+  <div class="lawn" role="img" aria-label="Sunlit grass from the same roll of film"></div>
+
+  <section class="band request on-leaf" id="request" aria-labelledby="request-h">
+    <div class="wrap request-grid">
+      <div class="request-intro" data-box="request.intro.box" data-box-label="Request heading">
+        <h2 class="squeeze" id="request-h" data-box="request.title" data-box-label="Title"><span data-k="request.title" data-ph="Title">Find your next step.</span></h2>
+        <p data-k="request.intro" data-ph="Introduction" data-box="request.intro" data-box-label="Introduction">Tell me how to reach you, and I&#39;ll reply within two days to find a time.</p>
+        <span class="brave" role="img" aria-label="Be brave." data-box="request.brave" data-box-label="Be brave."></span>
+      </div>
+      <div data-box="request.form" data-box-label="Booking and request form">
+        <p class="edit-only cal-setting">Cal.com booking link: <span data-k="booking.calLink" data-ph="yourname/session"></span><small>For example solgutt/session. Leave it empty to show only the request form.</small></p>
+        <div class="booking" id="booking" data-cal="" hidden>
+          <div class="cal-embed" id="cal-embed"><p class="cal-loading" id="cal-loading">Loading the calendar…</p></div>
+          <button class="linkbtn note-toggle" id="note-toggle" type="button"><span data-k="booking.noteLink" data-ph="Link to the request form">Prefer to write first? Send a note instead.</span></button>
+        </div>
+        <div id="note-wrap">
+        <p class="mine" id="mine" hidden></p>
+        <form id="form" novalidate>
+          <div class="field">
+            <label for="f-name">Your name</label>
+            <input type="text" id="f-name" autocomplete="name" maxlength="80" required>
+          </div>
+          <div class="field">
+            <label for="f-contact">Email or phone</label>
+            <input type="text" id="f-contact" autocomplete="email" maxlength="120" required>
+          </div>
+          <fieldset>
+            <legend>I'm interested in</legend>
+            <div class="chips" id="f-format"></div>
+          </fieldset>
+          <div class="field">
+            <label for="f-note">What keeps coming back to you? (optional)</label>
+            <input type="text" id="f-note" maxlength="400" placeholder="My phone, my focus, a decision I keep putting off">
+          </div>
+          <p class="error" id="f-error" role="alert" hidden></p>
+          <div><button class="btn leaf" id="f-send" type="submit">Send request</button></div>
+        </form>
+        <div class="result" id="result" hidden aria-live="polite">
+          <h3 class="squeeze" id="r-title">Request sent</h3>
+          <p id="r-body"></p>
+          <p class="r-about" id="r-about" hidden>Contact details are on <a href="https://solgutt.com/about.html">Solomon's About page</a>.</p>
+          <label class="sr" for="r-msg">Your request as a message</label>
+          <textarea id="r-msg" readonly></textarea>
+          <div class="timer-row">
+            <button class="btn" id="r-copy" type="button">Copy message</button>
+            <button class="linkbtn" id="r-edit" type="button">Edit my request</button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<article class="wrap essay" id="instagram-brain" hidden aria-labelledby="essay-h">
+  <div class="essay-head" data-box="essay.head" data-box-label="Essay heading">
+    <a class="textlink dim" href="#top">Back to Put It On Paper</a>
+    <h1 class="squeeze" id="essay-h" data-box="essay.title" data-box-label="Essay title"><span data-k="essay.title" data-ph="Title">Instagram brain.</span></h1>
+    <p class="open dek" data-k="essay.dek" data-ph="Subtitle" data-box="essay.dek" data-box-label="Subtitle">Why the clips you forgot keep coming back, and what to do with them.</p>
+    <p class="by" data-k="essay.byline" data-ph="Byline" data-box="essay.byline" data-box-label="Byline">By Solomon. A first draft, November 2026.</p>
+  </div>
+  <div class="essay-body" id="essay-body" data-box="essay.body" data-box-label="Essay text">
+<p data-k="essay.blocks.0.text" data-ph="Paragraph" data-box="essay.blocks.0.text" data-box-label="Paragraph">Lately I&#39;ve noticed something strange. I&#39;ll be washing dishes, or halfway through a sentence, and a face appears in my head. Someone I don&#39;t know, mid-laugh, from a video I watched days ago and haven&#39;t thought about since. Then a phrase. Then a dance move, a kitchen, a punchline without its joke.</p>
+<div class="edit-tools"><button type="button" data-add="p" data-at="0">Add a paragraph below</button><button type="button" data-add="h2" data-at="0">Add a heading below</button><button type="button" data-add="quote" data-at="0">Add a pull quote below</button></div>
+<p data-k="essay.blocks.1.text" data-ph="Paragraph" data-box="essay.blocks.1.text" data-box-label="Paragraph">I&#39;ve started calling this Instagram brain. Short videos leave fragments behind: faces, actions, phrases, intentions. They get stamped in like slides on a carousel, and they come back on their own schedule, out of context, whenever they like.</p>
+<div class="edit-tools"><button type="button" data-add="p" data-at="1">Add a paragraph below</button><button type="button" data-add="h2" data-at="1">Add a heading below</button><button type="button" data-add="quote" data-at="1">Add a pull quote below</button></div>
+<h2 class="squeeze" data-k="essay.blocks.2.text" data-ph="Heading" data-box="essay.blocks.2.text" data-box-label="Heading">Three meals and a lot of snacks</h2>
+<div class="edit-tools"><button type="button" data-add="p" data-at="2">Add a paragraph below</button><button type="button" data-add="h2" data-at="2">Add a heading below</button><button type="button" data-add="quote" data-at="2">Add a pull quote below</button></div>
+<p data-k="essay.blocks.3.text" data-ph="Paragraph" data-box="essay.blocks.3.text" data-box-label="Paragraph">Think about how we eat information. Most of us have our three square meals: the news in the morning, work all day, something to watch at night. Then we snack. A few minutes in a queue, a few more in bed, a few more that turn into an hour. For some people the snacks add up to eight hours a day.</p>
+<div class="edit-tools"><button type="button" data-add="p" data-at="3">Add a paragraph below</button><button type="button" data-add="h2" data-at="3">Add a heading below</button><button type="button" data-add="quote" data-at="3">Add a pull quote below</button></div>
+<p data-k="essay.blocks.4.text" data-ph="Paragraph" data-box="essay.blocks.4.text" data-box-label="Paragraph">Nobody would eat like that and expect to feel good. With information we do exactly that, then wonder why we feel overloaded and foggy and can&#39;t settle on one thing. The input never stops long enough for anything to be digested.</p>
+<div class="edit-tools"><button type="button" data-add="p" data-at="4">Add a paragraph below</button><button type="button" data-add="h2" data-at="4">Add a heading below</button><button type="button" data-add="quote" data-at="4">Add a pull quote below</button></div>
+<h2 class="squeeze" data-k="essay.blocks.5.text" data-ph="Heading" data-box="essay.blocks.5.text" data-box-label="Heading">Fragments with no form</h2>
+<div class="edit-tools"><button type="button" data-add="p" data-at="5">Add a paragraph below</button><button type="button" data-add="h2" data-at="5">Add a heading below</button><button type="button" data-add="quote" data-at="5">Add a pull quote below</button></div>
+<p data-k="essay.blocks.6.text" data-ph="Paragraph" data-box="essay.blocks.6.text" data-box-label="Paragraph">Here&#39;s what interests me about the fragments. Something in each of those videos clearly clicked, or it wouldn&#39;t still be in there. A joke landed. Something scared me. Something felt relevant to my own life. But I never went back to it on purpose. It just resurfaces when I didn&#39;t ask for it, as humour, horror, insight or noise.</p>
+<div class="edit-tools"><button type="button" data-add="p" data-at="6">Add a paragraph below</button><button type="button" data-add="h2" data-at="6">Add a heading below</button><button type="button" data-add="quote" data-at="6">Add a pull quote below</button></div>
+<p data-k="essay.blocks.7.text" data-ph="Paragraph" data-box="essay.blocks.7.text" data-box-label="Paragraph">That&#39;s the problem. The fragments have no form. They arrive without context and leave without depth, and depth is what we need to be good at anything: our work, our relationships, our own ideas.</p>
+<div class="edit-tools"><button type="button" data-add="p" data-at="7">Add a paragraph below</button><button type="button" data-add="h2" data-at="7">Add a heading below</button><button type="button" data-add="quote" data-at="7">Add a pull quote below</button></div>
+<p data-k="essay.blocks.8.text" data-ph="Paragraph" data-box="essay.blocks.8.text" data-box-label="Paragraph">I don&#39;t think watching this stuff is bad. It&#39;s fun, and some of it is brilliant. But when it never stops, it becomes background noise, and background noise makes focusing hard.</p>
+<div class="edit-tools"><button type="button" data-add="p" data-at="8">Add a paragraph below</button><button type="button" data-add="h2" data-at="8">Add a heading below</button><button type="button" data-add="quote" data-at="8">Add a pull quote below</button></div>
+<blockquote data-k="essay.blocks.9.text" data-ph="Pull quote" data-box="essay.blocks.9.text" data-box-label="Pull quote">You&#39;re one human with one brain, and you only have so much room.</blockquote>
+<div class="edit-tools"><button type="button" data-add="p" data-at="9">Add a paragraph below</button><button type="button" data-add="h2" data-at="9">Add a heading below</button><button type="button" data-add="quote" data-at="9">Add a pull quote below</button></div>
+<h2 class="squeeze" data-k="essay.blocks.10.text" data-ph="Heading" data-box="essay.blocks.10.text" data-box-label="Heading">One brain, one context window</h2>
+<div class="edit-tools"><button type="button" data-add="p" data-at="10">Add a paragraph below</button><button type="button" data-add="h2" data-at="10">Add a heading below</button><button type="button" data-add="quote" data-at="10">Add a pull quote below</button></div>
+<p data-k="essay.blocks.11.text" data-ph="Paragraph" data-box="essay.blocks.11.text" data-box-label="Paragraph">I&#39;m writing this in the age of AI, and the comparison keeps coming up. I dictated the notes for this essay to an AI, which is amazing and a little unsettling. Even the AI has limits. Give it a second idea while it&#39;s still working on the first, and it struggles to switch and combine them. It only has so much context to work with.</p>
+<div class="edit-tools"><button type="button" data-add="p" data-at="11">Add a paragraph below</button><button type="button" data-add="h2" data-at="11">Add a heading below</button><button type="button" data-add="quote" data-at="11">Add a pull quote below</button></div>
+<p data-k="essay.blocks.12.text" data-ph="Paragraph" data-box="essay.blocks.12.text" data-box-label="Paragraph">So do we. Switching topics every fifteen seconds has a cost, especially when nothing you take in ever comes back out as something you made yourself. You end up with an information gut: full, but not fed.</p>
+<div class="edit-tools"><button type="button" data-add="p" data-at="12">Add a paragraph below</button><button type="button" data-add="h2" data-at="12">Add a heading below</button><button type="button" data-add="quote" data-at="12">Add a pull quote below</button></div>
+<p data-k="essay.blocks.13.text" data-ph="Paragraph" data-box="essay.blocks.13.text" data-box-label="Paragraph">There&#39;s no shortcut here. More automation and faster answers won&#39;t fix it. What fixes it is slower and less glamorous.</p>
+<div class="edit-tools"><button type="button" data-add="p" data-at="13">Add a paragraph below</button><button type="button" data-add="h2" data-at="13">Add a heading below</button><button type="button" data-add="quote" data-at="13">Add a pull quote below</button></div>
+<h2 class="squeeze" data-k="essay.blocks.14.text" data-ph="Heading" data-box="essay.blocks.14.text" data-box-label="Heading">Training the invisible muscle</h2>
+<div class="edit-tools"><button type="button" data-add="p" data-at="14">Add a paragraph below</button><button type="button" data-add="h2" data-at="14">Add a heading below</button><button type="button" data-add="quote" data-at="14">Add a pull quote below</button></div>
+<p data-k="essay.blocks.15.text" data-ph="Paragraph" data-box="essay.blocks.15.text" data-box-label="Paragraph">We like results we can see. Big arms, a big steak, dessert, a show that makes us laugh right now. We overdo the things that pay off immediately, while the small, invisible things that shape how we think go untrained.</p>
+<div class="edit-tools"><button type="button" data-add="p" data-at="15">Add a paragraph below</button><button type="button" data-add="h2" data-at="15">Add a heading below</button><button type="button" data-add="quote" data-at="15">Add a pull quote below</button></div>
+<p data-k="essay.blocks.16.text" data-ph="Paragraph" data-box="essay.blocks.16.text" data-box-label="Paragraph">Writing by hand trains one of those invisible muscles. It&#39;s slow enough that you have to choose each word. It makes you recall instead of just receive. And it turns a fragment into a sentence, which is the first step to turning it into a thought.</p>
+<div class="edit-tools"><button type="button" data-add="p" data-at="16">Add a paragraph below</button><button type="button" data-add="h2" data-at="16">Add a heading below</button><button type="button" data-add="quote" data-at="16">Add a pull quote below</button></div>
+<h2 class="squeeze" data-k="essay.blocks.17.text" data-ph="Heading" data-box="essay.blocks.17.text" data-box-label="Heading">Two practices to try</h2>
+<div class="edit-tools"><button type="button" data-add="p" data-at="17">Add a paragraph below</button><button type="button" data-add="h2" data-at="17">Add a heading below</button><button type="button" data-add="quote" data-at="17">Add a pull quote below</button></div>
+<p data-box="essay.blocks.18" data-box-label="Paragraph"><span class="practice-name" data-k="essay.blocks.18.lead" data-ph="Lead-in">Catch a fragment.</span> <span data-k="essay.blocks.18.text" data-ph="Paragraph">Next time a clip pops back into your head, stop and write it down. What is it? Who was in it? Where did it come from, and what was it about? Then ask why it&#39;s showing up now, and let it tell you what it&#39;s signalling.</span></p>
+<div class="edit-tools"><button type="button" data-add="p" data-at="18">Add a paragraph below</button><button type="button" data-add="h2" data-at="18">Add a heading below</button><button type="button" data-add="quote" data-at="18">Add a pull quote below</button></div>
+<p data-box="essay.blocks.19" data-box-label="Paragraph"><span class="practice-name" data-k="essay.blocks.19.lead" data-ph="Lead-in">Scroll, then recall.</span> <span data-k="essay.blocks.19.text" data-ph="Paragraph">Set a timer and scroll on purpose. When it rings, put your phone face down and write down everything you remember. Not just the headlines, but what it looked like, who was in it and how it was made. It&#39;s surprising how little stays, and what does.</span></p>
+<div class="edit-tools"><button type="button" data-add="p" data-at="19">Add a paragraph below</button><button type="button" data-add="h2" data-at="19">Add a heading below</button><button type="button" data-add="quote" data-at="19">Add a pull quote below</button></div>
+<p data-k="essay.blocks.20.text" data-ph="Paragraph" data-box="essay.blocks.20.text" data-box-label="Paragraph">I believe this kind of conscious attention to what goes into us changes how well we function. That&#39;s why I&#39;m starting Put It On Paper now, for myself as much as for anyone.</p>
+<div class="edit-tools"><button type="button" data-add="p" data-at="20">Add a paragraph below</button><button type="button" data-add="h2" data-at="20">Add a heading below</button><button type="button" data-add="quote" data-at="20">Add a pull quote below</button></div>
+  </div>
+  <span class="brave essay-brave" role="img" aria-label="Be brave." data-box="essay.brave" data-box-label="Be brave."></span>
+  <div class="essay-end" data-box="essay.end" data-box-label="Essay buttons">
+    <a class="btn" href="#request">Request a session</a>
+    <a class="textlink" href="#practices">Try the two practices</a>
+  </div>
+</article>
+
+<div class="seam light" aria-hidden="true" style="background:var(--spring)"><div class="seam-cols"><i style="flex-grow:1;background:linear-gradient(to bottom,var(--spring) 0%,var(--spring) 28.6%,#E9E6A4 40.8%,#E9E6A4 56.9%,var(--spring) 69.1%,var(--spring) 100%)"></i><i style="flex-grow:3;background:linear-gradient(to bottom,var(--spring) 0%,var(--spring) 20.0%,#E9E6A4 32.3%,#E9E6A4 48.7%,var(--spring) 60.9%,var(--spring) 100%)"></i><i style="flex-grow:3;background:linear-gradient(to bottom,var(--spring) 0%,var(--spring) 32.6%,#E9E6A4 51.8%,#E9E6A4 77.3%,var(--spring) 96.5%,var(--spring) 100%)"></i><i style="flex-grow:1;background:linear-gradient(to bottom,var(--spring) 0%,var(--spring) 28.9%,var(--sun) 52.1%,var(--sun) 83.0%,var(--spring) 98.0%,var(--spring) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--spring) 0%,var(--spring) 28.9%,var(--sun) 41.4%,var(--sun) 58.0%,var(--spring) 70.5%,var(--spring) 100%)"></i><i style="flex-grow:1;background:linear-gradient(to bottom,var(--spring) 0%,var(--spring) 32.4%,#E9E6A4 53.4%,#E9E6A4 81.3%,var(--spring) 98.0%,var(--spring) 100%)"></i><i style="flex-grow:1;background:linear-gradient(to bottom,var(--spring) 0%,var(--spring) 24.4%,var(--pollen) 41.0%,var(--pollen) 63.1%,var(--spring) 79.7%,var(--spring) 100%)"></i><i style="flex-grow:4;background:linear-gradient(to bottom,var(--spring) 0%,var(--spring) 23.2%,var(--pollen) 36.7%,var(--pollen) 54.7%,var(--spring) 68.2%,var(--spring) 100%)"></i><i style="flex-grow:1;background:linear-gradient(to bottom,var(--spring) 0%,var(--spring) 12.9%,#E9E6A4 33.9%,#E9E6A4 62.0%,var(--spring) 83.0%,var(--spring) 100%)"></i><i style="flex-grow:1;background:linear-gradient(to bottom,var(--spring) 0%,var(--spring) 32.6%,#D7DB86 55.2%,#D7DB86 85.5%,var(--spring) 98.0%,var(--spring) 100%)"></i><i style="flex-grow:1;background:linear-gradient(to bottom,var(--spring) 0%,var(--spring) 10.6%,#E9E6A4 25.1%,#E9E6A4 44.3%,var(--spring) 58.8%,var(--spring) 100%)"></i><i style="flex-grow:4;background:linear-gradient(to bottom,var(--spring) 0%,var(--spring) 28.4%,#E9E6A4 46.4%,#E9E6A4 70.4%,var(--spring) 88.3%,var(--spring) 100%)"></i></div></div>
+
+<footer class="foot on-leaf" id="foot">
+  <div class="wrap">
+    <span class="wm-stack" role="img" aria-label="Put It On Paper" data-box="foot.logo" data-box-label="Footer logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -70.60 338.40 187.56" role="img" aria-label="Put It On Paper"><path d="M0.0 0.0V-68.8H23.9Q30.6 -68.8 34.6 -66.0Q38.6 -63.2 40.3 -58.2Q42.0 -53.2 42.0 -46.5Q42.0 -39.5 40.1 -34.25Q38.2 -29.0 34.2 -26.0Q30.200000000000003 -23.0 23.9 -23.0H15.3V0.0ZM15.3 -35.7H20.7Q24.0 -35.7 25.3 -38.550000000000004Q26.6 -41.400000000000006 26.6 -45.900000000000006Q26.6 -49.300000000000004 26.05 -51.550000000000004Q25.5 -53.800000000000004 24.15 -54.900000000000006Q22.8 -56.0 20.4 -56.0H15.3ZM67.80000000000001 1.2000000000000002Q61.400000000000006 1.2000000000000002 56.7 -0.95Q52.00000000000001 -3.1 49.50000000000001 -8.3Q47.00000000000001 -13.5 47.00000000000001 -22.5V-68.8H62.30000000000001V-21.5Q62.30000000000001 -16.8 63.400000000000006 -14.350000000000001Q64.5 -11.9 67.7 -11.9Q71.0 -11.9 72.2 -14.350000000000001Q73.4 -16.8 73.4 -21.5V-68.8H88.70000000000002V-22.5Q88.70000000000002 -13.5 86.20000000000002 -8.3Q83.70000000000002 -3.1 79.05000000000001 -0.95Q74.4 1.2000000000000002 67.80000000000001 1.2000000000000002ZM108.30000000000001 0.0V-55.5H94.20000000000002V-68.8H137.4V-55.5H123.50000000000001V0.0ZM155.3 0.0V-68.8H170.60000000000002V0.0ZM190.70000000000002 0.0V-55.5H176.60000000000002V-68.8H219.8V-55.5H205.90000000000003V0.0ZM260.40000000000003 1.2000000000000002Q252.40000000000003 1.2000000000000002 247.05 -2.45Q241.70000000000002 -6.1000000000000005 239.0 -13.950000000000001Q236.3 -21.8 236.3 -34.4Q236.3 -46.900000000000006 239.0 -54.75Q241.70000000000002 -62.6 247.05 -66.3Q252.40000000000003 -70.0 260.40000000000003 -70.0Q268.6 -70.0 273.95000000000005 -66.3Q279.3 -62.6 281.95000000000005 -54.75Q284.6 -46.900000000000006 284.6 -34.4Q284.6 -21.8 281.95000000000005 -13.950000000000001Q279.3 -6.1000000000000005 273.95000000000005 -2.45Q268.6 1.2000000000000002 260.40000000000003 1.2000000000000002ZM260.40000000000003 -11.9Q263.0 -11.9 264.6 -13.0Q266.20000000000005 -14.100000000000001 267.20000000000005 -16.25Q268.20000000000005 -18.400000000000002 268.6 -21.5Q269.0 -24.6 269.0 -28.700000000000003V-40.1Q269.0 -44.2 268.6 -47.300000000000004Q268.20000000000005 -50.400000000000006 267.20000000000005 -52.5Q266.20000000000005 -54.6 264.6 -55.7Q263.0 -56.800000000000004 260.40000000000003 -56.800000000000004Q257.90000000000003 -56.800000000000004 256.25 -55.7Q254.60000000000002 -54.6 253.65000000000003 -52.5Q252.70000000000002 -50.400000000000006 252.25 -47.300000000000004Q251.8 -44.2 251.8 -40.1V-28.700000000000003Q251.8 -24.6 252.25 -21.5Q252.70000000000002 -18.400000000000002 253.65000000000003 -16.25Q254.60000000000002 -14.100000000000001 256.25 -13.0Q257.90000000000003 -11.9 260.40000000000003 -11.9ZM292.40000000000003 0.0V-68.8H307.0L317.2 -41.0Q317.5 -40.1 317.9 -38.95Q318.3 -37.800000000000004 318.70000000000005 -36.5Q319.1 -35.2 319.40000000000003 -33.9H319.90000000000003Q319.8 -35.800000000000004 319.8 -37.650000000000006Q319.8 -39.5 319.8 -41.0V-68.8H334.40000000000003V0.0H319.8L309.6 -28.0Q309.1 -29.6 308.5 -31.650000000000002Q307.90000000000003 -33.7 307.40000000000003 -35.9H306.90000000000003Q306.90000000000003 -34.1 306.90000000000003 -32.0Q306.90000000000003 -29.900000000000002 306.90000000000003 -28.0V0.0Z" fill="currentColor"/><path d="M0.0 114.96052211249463V16.17683812795191H34.315843709746666Q43.93576642335766 16.17683812795191 49.67900386431945 20.19710433662516Q55.42224130528123 24.217370545298408 57.86311721768999 31.39641734650064Q60.303993130098746 38.575464147702874 60.303993130098746 48.195386861313864Q60.303993130098746 58.24605238299699 57.5759553456419 65.78405152425934Q54.84791756118505 73.32205066552169 49.104680120223264 77.62947874624302Q43.36144267926148 81.93690682696436 34.315843709746666 81.93690682696436H21.96788321167883V114.96052211249463ZM21.96788321167883 63.70212795191069H29.721253756977244Q34.45942464577071 63.70212795191069 36.32597681408329 59.61007127522542Q38.19252898239587 55.51801459854015 38.19252898239587 49.05687247745814Q38.19252898239587 44.175120652640615 37.40283383426363 40.94454959209961Q36.613138686131386 37.71397853155861 34.67479604980678 36.13458823529412Q32.736453413482174 34.555197939029625 29.290510948905112 34.555197939029625H21.96788321167883ZM57.28879347359381 114.96052211249463 78.39519106912837 16.17683812795191H108.26002576212966L129.51000429368827 114.96052211249463H106.39347359381708L103.09111206526406 96.72574323744095H82.98978102189781L79.68741949334478 114.96052211249463ZM85.71781880635466 78.34738342636325H100.36307428080721L95.91206526406182 52.072072133963076Q95.76848432803777 50.92342464577072 95.48132245598968 49.05687247745814Q95.1941605839416 47.19032030914556 94.90699871189351 44.821234864748824Q94.61983683984542 42.452149420352086 94.2608844997853 40.15485444396737Q93.90193215972519 37.85755946758266 93.61477028767712 35.84742636324603H92.46612279948475Q92.17896092743666 38.288302275654786 91.82000858737655 41.303501932159726Q91.46105624731644 44.318701588664666 91.03031343924431 47.190320309145555Q90.59957063117217 50.061939029626444 90.31240875912408 52.072072133963076ZM136.1147273507943 114.96052211249463V16.17683812795191H170.43057106054098Q180.050493774152 16.17683812795191 185.79373121511378 20.19710433662516Q191.53696865607554 24.217370545298408 193.9778445684843 31.39641734650064Q196.41872048089306 38.575464147702874 196.41872048089306 48.195386861313864Q196.41872048089306 58.24605238299699 193.69068269643623 65.78405152425934Q190.96264491197937 73.32205066552169 185.21940747101758 77.62947874624302Q179.4761700300558 81.93690682696436 170.43057106054098 81.93690682696436H158.08261056247315V114.96052211249463ZM158.08261056247315 63.70212795191069H165.83598110777157Q170.57415199656504 63.70212795191069 172.44070416487762 59.61007127522542Q174.3072563331902 55.51801459854015 174.3072563331902 49.05687247745814Q174.3072563331902 44.175120652640615 173.51756118505796 40.94454959209961Q172.72786603692572 37.71397853155861 170.78952340060113 36.13458823529412Q168.8511807642765 34.555197939029625 165.40523829969942 34.555197939029625H158.08261056247315ZM204.31567196221553 114.96052211249463V16.17683812795191H259.1635895234006V35.1295216831258H226.28355517389437V55.374433662516104H254.13825676255902V74.32711721768999H226.28355517389437V96.00783855732074H259.73791326749677V114.96052211249463ZM269.7885787891799 114.96052211249463V16.17683812795191H303.09935594675824Q314.0115070845856 16.17683812795191 320.1136968656075 20.12531386861314Q326.21588664662943 24.07378960927437 328.65676255903816 30.750303134392446Q331.09763847144694 37.42681665951052 331.09763847144694 45.61093001288107Q331.09763847144694 54.225786174323744 329.01571489909827 61.26125203950193Q326.93379132674966 68.29671790468012 321.62129669386 72.60414598540146L334.4 114.96052211249463H311.7142121082009L302.0942893945899 79.92677372262773H291.75646200085873V114.96052211249463ZM291.75646200085873 62.1227376556462H300.0841562902533Q305.2530699871189 62.1227376556462 307.1914126234435 58.03068097896093Q309.1297552597681 53.938624302275656 309.1297552597681 47.76464405324174Q309.1297552597681 43.60079690854444 308.26826964362385 40.657387720051524Q307.4067840274796 37.71397853155861 305.468441391155 36.13458823529412Q303.53009875483036 34.555197939029625 299.7969944182052 34.555197939029625H291.75646200085873Z" fill="currentColor"/></svg></span>
+    <div class="foot-copy" data-box="foot.copy" data-box-label="Footer text">
+      <p data-k="footer.text" data-ph="Footer line" data-box="footer.text" data-box-label="Footer line">A handwriting practice for digesting what you take in. Coaching, not therapy or medical care.</p>
+      <p><a href="https://solgutt.com/">More from Solomon Guttmann at solgutt.com</a></p>
+    </div>
+  </div>
+</footer>
+
+<div class="arr-frame" id="arr-frame" hidden aria-hidden="true">
+  <span class="arr-name" id="arr-name"></span>
+  <span class="arr-handle e" data-h="e"></span>
+  <span class="arr-handle s" data-h="s"></span>
+  <span class="arr-handle se" data-h="se"></span>
+</div>
+
+<div class="arr-panel" id="arr-panel" hidden>
+  <div class="arr-head"><strong id="arr-title">Nothing selected</strong><span id="arr-scope"></span></div>
+  <p class="arr-hint" id="arr-hint">Click any box on the page to select it. Drag it to move it; drag its edges to resize it.</p>
+  <div class="arr-fields" id="arr-fields" hidden>
+    <label>Width<input type="number" id="arr-w" step="4" min="40"></label>
+    <label>Height<input type="number" id="arr-h" step="4" min="0"></label>
+    <label>Across<input type="number" id="arr-x" step="4"></label>
+    <label>Down<input type="number" id="arr-y" step="4"></label>
+    <label>Text size<input type="number" id="arr-fs" step="1" min="8"></label>
+    <label>Padding<input type="number" id="arr-pad" step="2" min="0"></label>
+    <label>Corners<input type="number" id="arr-r" step="2" min="0"></label>
+    <label>Align<select id="arr-align"><option value="">As designed</option><option value="left">Left</option><option value="center">Centre</option><option value="right">Right</option></select></label>
+  </div>
+  <div class="arr-actions" id="arr-actions" hidden>
+    <button type="button" id="arr-parent">Select the box around it</button>
+    <button type="button" id="arr-reset">Reset this box</button>
+  </div>
+</div>
+
+<div class="editbar" id="editbar" hidden>
+  <div class="modes" id="e-modes" role="group" aria-label="What to edit" hidden>
+    <button type="button" id="e-mode-text" aria-pressed="true">Words</button>
+    <button type="button" id="e-mode-arrange" aria-pressed="false">Arrange</button>
+  </div>
+  <span class="msg" id="e-msg" hidden>Editing. Click any outlined text to change it. Nothing changes for visitors until you save.</span>
+  <button class="btn ghost" id="e-cancel" type="button" hidden>Discard changes</button>
+  <button class="btn" id="e-save" type="button" hidden>Save and publish</button>
+  <button class="btn" id="e-start" type="button">Edit page</button>
+</div>
+<script type="application/json" id="pop-content">{"hero":{"line1":"A Practice for Clear Thinking.","line2":"Tap into the mental and physical benefits of writing.","lead":"","cta":"Request a session","essayLink":"Read the essay on Instagram brain"},"overfed":{"statement":"Information metabolism.","body":"I love learning. I want to know so much about so many things. We have a limit to how much we can take in at one time though. I see it just like our diets, of which there are many. A unifying factor in health and nutrition is that if you eat too much of anything, you'll feel too full, and eventually get fat.\n\nThree meals a day, and maybe some snacks. Well, for some of us the snacks add up to eight hours of short form videos about an abundance of topics. We take in far more than we can digest, and it shows up as restlessness, fog, indecision, regurgitation of information, and trouble focusing on what you care about.","beats":[{"title":"There's no shortcut","text":"Faster answers and more automation won't fix it. You're one person with one brain, and like any AI, you only have so much room to hold things in."},{"title":"Switching has a cost","text":"Jumping topics every few seconds wears down memory, especially when nothing you take in ever comes back out as an idea of your own."},{"title":"An invisible muscle","text":"We train what we can see: bigger arms, bigger meals, more entertainment. This trains what nobody sees: attention, recall, and holding one thought long enough to use it."}]},"practices":{"title":"Two practices to start with.","intro":"You need a pen, some paper and a few minutes. The screen's only job is to hand you over to the page.","p1":{"when":"Any time a clip comes back to you","title":"Catch a fragment","intro":"When something you watched pops back into your head, stop and write it down before it drifts off again.","items":["What is it: a face, a phrase, a sound, a joke?","Who was in it, and where did it come from?","What was it about, and what does it say?","Why might it be showing up right now?"],"outro":"Keep the pages together. Over a week, the fragments start to show you a pattern."},"p2":{"when":"Once a day, on purpose","title":"Scroll, then recall","intro":"Pick a time limit and scroll as you normally would. When the timer rings, put the phone face down and write down everything you can remember.","recallTitle":"Phone face down. Now write, by hand:","recall":["Everything you saw, in order, as far as you can remember.","One video in detail: who was in it, what it looked like, what was said.","Which one is still with you, and why it stuck.","How you feel now compared with before you started."]}},"sessions":{"title":"Practise it with someone.","formats":[{"name":"One-on-one","text":"An hour with phones away, guided writing, and one next step to take home."},{"name":"Workshops","text":"Two hours, four to eight people, one theme, everyone writing at once."},{"name":"Retreats","text":"A day or a weekend away from screens. The first is being planned now."}],"note":"In person or by video. Founding rates for the first clients."},"request":{"title":"Find your next step.","intro":"Tell me how to reach you, and I'll reply within two days to find a time."},"essay":{"title":"Instagram brain.","dek":"Why the clips you forgot keep coming back, and what to do with them.","byline":"By Solomon. A first draft, November 2026.","blocks":[{"t":"p","text":"Lately I've noticed something strange. I'll be washing dishes, or halfway through a sentence, and a face appears in my head. Someone I don't know, mid-laugh, from a video I watched days ago and haven't thought about since. Then a phrase. Then a dance move, a kitchen, a punchline without its joke."},{"t":"p","text":"I've started calling this Instagram brain. Short videos leave fragments behind: faces, actions, phrases, intentions. They get stamped in like slides on a carousel, and they come back on their own schedule, out of context, whenever they like."},{"t":"h2","text":"Three meals and a lot of snacks"},{"t":"p","text":"Think about how we eat information. Most of us have our three square meals: the news in the morning, work all day, something to watch at night. Then we snack. A few minutes in a queue, a few more in bed, a few more that turn into an hour. For some people the snacks add up to eight hours a day."},{"t":"p","text":"Nobody would eat like that and expect to feel good. With information we do exactly that, then wonder why we feel overloaded and foggy and can't settle on one thing. The input never stops long enough for anything to be digested."},{"t":"h2","text":"Fragments with no form"},{"t":"p","text":"Here's what interests me about the fragments. Something in each of those videos clearly clicked, or it wouldn't still be in there. A joke landed. Something scared me. Something felt relevant to my own life. But I never went back to it on purpose. It just resurfaces when I didn't ask for it, as humour, horror, insight or noise."},{"t":"p","text":"That's the problem. The fragments have no form. They arrive without context and leave without depth, and depth is what we need to be good at anything: our work, our relationships, our own ideas."},{"t":"p","text":"I don't think watching this stuff is bad. It's fun, and some of it is brilliant. But when it never stops, it becomes background noise, and background noise makes focusing hard."},{"t":"quote","text":"You're one human with one brain, and you only have so much room."},{"t":"h2","text":"One brain, one context window"},{"t":"p","text":"I'm writing this in the age of AI, and the comparison keeps coming up. I dictated the notes for this essay to an AI, which is amazing and a little unsettling. Even the AI has limits. Give it a second idea while it's still working on the first, and it struggles to switch and combine them. It only has so much context to work with."},{"t":"p","text":"So do we. Switching topics every fifteen seconds has a cost, especially when nothing you take in ever comes back out as something you made yourself. You end up with an information gut: full, but not fed."},{"t":"p","text":"There's no shortcut here. More automation and faster answers won't fix it. What fixes it is slower and less glamorous."},{"t":"h2","text":"Training the invisible muscle"},{"t":"p","text":"We like results we can see. Big arms, a big steak, dessert, a show that makes us laugh right now. We overdo the things that pay off immediately, while the small, invisible things that shape how we think go untrained."},{"t":"p","text":"Writing by hand trains one of those invisible muscles. It's slow enough that you have to choose each word. It makes you recall instead of just receive. And it turns a fragment into a sentence, which is the first step to turning it into a thought."},{"t":"h2","text":"Two practices to try"},{"t":"p","lead":"Catch a fragment.","text":"Next time a clip pops back into your head, stop and write it down. What is it? Who was in it? Where did it come from, and what was it about? Then ask why it's showing up now, and let it tell you what it's signalling."},{"t":"p","lead":"Scroll, then recall.","text":"Set a timer and scroll on purpose. When it rings, put your phone face down and write down everything you remember. Not just the headlines, but what it looked like, who was in it and how it was made. It's surprising how little stays, and what does."},{"t":"p","text":"I believe this kind of conscious attention to what goes into us changes how well we function. That's why I'm starting Put It On Paper now, for myself as much as for anyone."}]},"footer":{"text":"A handwriting practice for digesting what you take in. Coaching, not therapy or medical care."},"booking":{"calLink":"","noteLink":"Prefer to write first? Send a note instead."},"layout":{"wide":{"hero.line1":{"w":548},"hero.line2":{"w":544},"top.logo":{"h":24},"hero.frame":{"x":60,"y":-32,"w":788,"h":536},"request.form":{"x":0,"y":0}},"narrow":{}}}</script>
+<script id="pop-render">/* The page's canonical source: every word and every arranged box lives in the content block, and this renders it.
+   The build runs buildBody() once to make the published file; the edit mode runs it again on Save. */
+var POP = (function () {
+  var BUILD = "2026-11-05T12:52:12";
+  var SKELETON = '<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>';
+  /* On solgutt.com the page is its own document with the site's language; on claude.ai the viewer's wrapper is matched exactly. */
+  var SITE_SKELETON = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;padding:0}img{max-width:100%}[hidden]{display:none!important}</style></head><body>';
+  var HEAD = '<title>Put It On Paper</title>\n' +
+    '<meta name="claude:viewport-fit-sides" content="cover">\n' +
+    '<meta name="pop-build" content="' + BUILD + '">\n' +
+    '<link rel="icon" href="img/mark.svg" type="image/svg+xml">\n' +
+    '<meta name="description" content="Put It On Paper is a handwriting practice for digesting what you take in: catching the fragments, slowing down and finding your next step.">\n' +
+    '<link rel="preconnect" href="https://fonts.googleapis.com">\n' +
+    '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>\n' +
+    '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&family=Literata:ital,opsz,wght@0,7..72,300..700;1,7..72,300..600&display=swap">\n';
+  var WM_INLINE = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -70.60 592.30 72.60" role="img" aria-label="Put It On Paper"><path d="M0.0 0.0V-68.8H23.9Q30.6 -68.8 34.6 -66.0Q38.6 -63.2 40.3 -58.2Q42.0 -53.2 42.0 -46.5Q42.0 -39.5 40.1 -34.25Q38.2 -29.0 34.2 -26.0Q30.200000000000003 -23.0 23.9 -23.0H15.3V0.0ZM15.3 -35.7H20.7Q24.0 -35.7 25.3 -38.550000000000004Q26.6 -41.400000000000006 26.6 -45.900000000000006Q26.6 -49.300000000000004 26.05 -51.550000000000004Q25.5 -53.800000000000004 24.15 -54.900000000000006Q22.8 -56.0 20.4 -56.0H15.3ZM67.80000000000001 1.2000000000000002Q61.400000000000006 1.2000000000000002 56.7 -0.95Q52.00000000000001 -3.1 49.50000000000001 -8.3Q47.00000000000001 -13.5 47.00000000000001 -22.5V-68.8H62.30000000000001V-21.5Q62.30000000000001 -16.8 63.400000000000006 -14.350000000000001Q64.5 -11.9 67.7 -11.9Q71.0 -11.9 72.2 -14.350000000000001Q73.4 -16.8 73.4 -21.5V-68.8H88.70000000000002V-22.5Q88.70000000000002 -13.5 86.20000000000002 -8.3Q83.70000000000002 -3.1 79.05000000000001 -0.95Q74.4 1.2000000000000002 67.80000000000001 1.2000000000000002ZM108.30000000000001 0.0V-55.5H94.20000000000002V-68.8H137.4V-55.5H123.50000000000001V0.0ZM155.3 0.0V-68.8H170.60000000000002V0.0ZM190.70000000000002 0.0V-55.5H176.60000000000002V-68.8H219.8V-55.5H205.90000000000003V0.0ZM260.40000000000003 1.2000000000000002Q252.40000000000003 1.2000000000000002 247.05 -2.45Q241.70000000000002 -6.1000000000000005 239.0 -13.950000000000001Q236.3 -21.8 236.3 -34.4Q236.3 -46.900000000000006 239.0 -54.75Q241.70000000000002 -62.6 247.05 -66.3Q252.40000000000003 -70.0 260.40000000000003 -70.0Q268.6 -70.0 273.95000000000005 -66.3Q279.3 -62.6 281.95000000000005 -54.75Q284.6 -46.900000000000006 284.6 -34.4Q284.6 -21.8 281.95000000000005 -13.950000000000001Q279.3 -6.1000000000000005 273.95000000000005 -2.45Q268.6 1.2000000000000002 260.40000000000003 1.2000000000000002ZM260.40000000000003 -11.9Q263.0 -11.9 264.6 -13.0Q266.20000000000005 -14.100000000000001 267.20000000000005 -16.25Q268.20000000000005 -18.400000000000002 268.6 -21.5Q269.0 -24.6 269.0 -28.700000000000003V-40.1Q269.0 -44.2 268.6 -47.300000000000004Q268.20000000000005 -50.400000000000006 267.20000000000005 -52.5Q266.20000000000005 -54.6 264.6 -55.7Q263.0 -56.800000000000004 260.40000000000003 -56.800000000000004Q257.90000000000003 -56.800000000000004 256.25 -55.7Q254.60000000000002 -54.6 253.65000000000003 -52.5Q252.70000000000002 -50.400000000000006 252.25 -47.300000000000004Q251.8 -44.2 251.8 -40.1V-28.700000000000003Q251.8 -24.6 252.25 -21.5Q252.70000000000002 -18.400000000000002 253.65000000000003 -16.25Q254.60000000000002 -14.100000000000001 256.25 -13.0Q257.90000000000003 -11.9 260.40000000000003 -11.9ZM292.40000000000003 0.0V-68.8H307.0L317.2 -41.0Q317.5 -40.1 317.9 -38.95Q318.3 -37.800000000000004 318.70000000000005 -36.5Q319.1 -35.2 319.40000000000003 -33.9H319.90000000000003Q319.8 -35.800000000000004 319.8 -37.650000000000006Q319.8 -39.5 319.8 -41.0V-68.8H334.40000000000003V0.0H319.8L309.6 -28.0Q309.1 -29.6 308.5 -31.650000000000002Q307.90000000000003 -33.7 307.40000000000003 -35.9H306.90000000000003Q306.90000000000003 -34.1 306.90000000000003 -32.0Q306.90000000000003 -29.900000000000002 306.90000000000003 -28.0V0.0ZM355.40000000000003 0.0V-68.8H379.3Q386.0 -68.8 390.0 -66.0Q394.0 -63.2 395.70000000000005 -58.2Q397.40000000000003 -53.2 397.40000000000003 -46.5Q397.40000000000003 -39.5 395.5 -34.25Q393.6 -29.0 389.6 -26.0Q385.6 -23.0 379.3 -23.0H370.7V0.0ZM370.7 -35.7H376.1Q379.40000000000003 -35.7 380.70000000000005 -38.550000000000004Q382.0 -41.400000000000006 382.0 -45.900000000000006Q382.0 -49.300000000000004 381.45000000000005 -51.550000000000004Q380.90000000000003 -53.800000000000004 379.55 -54.900000000000006Q378.2 -56.0 375.8 -56.0H370.7ZM395.3 0.0 410.0 -68.8H430.8L445.6 0.0H429.5L427.2 -12.700000000000001H413.2L410.90000000000003 0.0ZM415.1 -25.5H425.3L422.2 -43.800000000000004Q422.1 -44.6 421.9 -45.900000000000006Q421.7 -47.2 421.5 -48.85Q421.3 -50.5 421.05 -52.1Q420.8 -53.7 420.6 -55.1H419.8Q419.6 -53.400000000000006 419.35 -51.300000000000004Q419.1 -49.2 418.8 -47.2Q418.5 -45.2 418.3 -43.800000000000004ZM450.20000000000005 0.0V-68.8H474.1Q480.8 -68.8 484.8 -66.0Q488.8 -63.2 490.5 -58.2Q492.20000000000005 -53.2 492.20000000000005 -46.5Q492.20000000000005 -39.5 490.30000000000007 -34.25Q488.40000000000003 -29.0 484.40000000000003 -26.0Q480.40000000000003 -23.0 474.1 -23.0H465.5V0.0ZM465.5 -35.7H470.90000000000003Q474.20000000000005 -35.7 475.5 -38.550000000000004Q476.8 -41.400000000000006 476.8 -45.900000000000006Q476.8 -49.300000000000004 476.25 -51.550000000000004Q475.70000000000005 -53.800000000000004 474.35 -54.900000000000006Q473.0 -56.0 470.6 -56.0H465.5ZM497.70000000000005 0.0V-68.8H535.9V-55.6H513.0V-41.5H532.4V-28.3H513.0V-13.200000000000001H536.3000000000001V0.0ZM543.3000000000001 0.0V-68.8H566.5Q574.1 -68.8 578.35 -66.05Q582.6 -63.300000000000004 584.3 -58.650000000000006Q586.0 -54.0 586.0 -48.300000000000004Q586.0 -42.300000000000004 584.55 -37.400000000000006Q583.1 -32.5 579.4000000000001 -29.5L588.3000000000001 0.0H572.5L565.8000000000001 -24.400000000000002H558.6V0.0ZM558.6 -36.800000000000004H564.4000000000001Q568.0 -36.800000000000004 569.35 -39.650000000000006Q570.7 -42.5 570.7 -46.800000000000004Q570.7 -49.7 570.1 -51.75Q569.5 -53.800000000000004 568.1500000000001 -54.900000000000006Q566.8000000000001 -56.0 564.2 -56.0H558.6Z" fill="currentColor"/></svg>`;
+  var WM_STACKED = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -70.60 338.40 187.56" role="img" aria-label="Put It On Paper"><path d="M0.0 0.0V-68.8H23.9Q30.6 -68.8 34.6 -66.0Q38.6 -63.2 40.3 -58.2Q42.0 -53.2 42.0 -46.5Q42.0 -39.5 40.1 -34.25Q38.2 -29.0 34.2 -26.0Q30.200000000000003 -23.0 23.9 -23.0H15.3V0.0ZM15.3 -35.7H20.7Q24.0 -35.7 25.3 -38.550000000000004Q26.6 -41.400000000000006 26.6 -45.900000000000006Q26.6 -49.300000000000004 26.05 -51.550000000000004Q25.5 -53.800000000000004 24.15 -54.900000000000006Q22.8 -56.0 20.4 -56.0H15.3ZM67.80000000000001 1.2000000000000002Q61.400000000000006 1.2000000000000002 56.7 -0.95Q52.00000000000001 -3.1 49.50000000000001 -8.3Q47.00000000000001 -13.5 47.00000000000001 -22.5V-68.8H62.30000000000001V-21.5Q62.30000000000001 -16.8 63.400000000000006 -14.350000000000001Q64.5 -11.9 67.7 -11.9Q71.0 -11.9 72.2 -14.350000000000001Q73.4 -16.8 73.4 -21.5V-68.8H88.70000000000002V-22.5Q88.70000000000002 -13.5 86.20000000000002 -8.3Q83.70000000000002 -3.1 79.05000000000001 -0.95Q74.4 1.2000000000000002 67.80000000000001 1.2000000000000002ZM108.30000000000001 0.0V-55.5H94.20000000000002V-68.8H137.4V-55.5H123.50000000000001V0.0ZM155.3 0.0V-68.8H170.60000000000002V0.0ZM190.70000000000002 0.0V-55.5H176.60000000000002V-68.8H219.8V-55.5H205.90000000000003V0.0ZM260.40000000000003 1.2000000000000002Q252.40000000000003 1.2000000000000002 247.05 -2.45Q241.70000000000002 -6.1000000000000005 239.0 -13.950000000000001Q236.3 -21.8 236.3 -34.4Q236.3 -46.900000000000006 239.0 -54.75Q241.70000000000002 -62.6 247.05 -66.3Q252.40000000000003 -70.0 260.40000000000003 -70.0Q268.6 -70.0 273.95000000000005 -66.3Q279.3 -62.6 281.95000000000005 -54.75Q284.6 -46.900000000000006 284.6 -34.4Q284.6 -21.8 281.95000000000005 -13.950000000000001Q279.3 -6.1000000000000005 273.95000000000005 -2.45Q268.6 1.2000000000000002 260.40000000000003 1.2000000000000002ZM260.40000000000003 -11.9Q263.0 -11.9 264.6 -13.0Q266.20000000000005 -14.100000000000001 267.20000000000005 -16.25Q268.20000000000005 -18.400000000000002 268.6 -21.5Q269.0 -24.6 269.0 -28.700000000000003V-40.1Q269.0 -44.2 268.6 -47.300000000000004Q268.20000000000005 -50.400000000000006 267.20000000000005 -52.5Q266.20000000000005 -54.6 264.6 -55.7Q263.0 -56.800000000000004 260.40000000000003 -56.800000000000004Q257.90000000000003 -56.800000000000004 256.25 -55.7Q254.60000000000002 -54.6 253.65000000000003 -52.5Q252.70000000000002 -50.400000000000006 252.25 -47.300000000000004Q251.8 -44.2 251.8 -40.1V-28.700000000000003Q251.8 -24.6 252.25 -21.5Q252.70000000000002 -18.400000000000002 253.65000000000003 -16.25Q254.60000000000002 -14.100000000000001 256.25 -13.0Q257.90000000000003 -11.9 260.40000000000003 -11.9ZM292.40000000000003 0.0V-68.8H307.0L317.2 -41.0Q317.5 -40.1 317.9 -38.95Q318.3 -37.800000000000004 318.70000000000005 -36.5Q319.1 -35.2 319.40000000000003 -33.9H319.90000000000003Q319.8 -35.800000000000004 319.8 -37.650000000000006Q319.8 -39.5 319.8 -41.0V-68.8H334.40000000000003V0.0H319.8L309.6 -28.0Q309.1 -29.6 308.5 -31.650000000000002Q307.90000000000003 -33.7 307.40000000000003 -35.9H306.90000000000003Q306.90000000000003 -34.1 306.90000000000003 -32.0Q306.90000000000003 -29.900000000000002 306.90000000000003 -28.0V0.0Z" fill="currentColor"/><path d="M0.0 114.96052211249463V16.17683812795191H34.315843709746666Q43.93576642335766 16.17683812795191 49.67900386431945 20.19710433662516Q55.42224130528123 24.217370545298408 57.86311721768999 31.39641734650064Q60.303993130098746 38.575464147702874 60.303993130098746 48.195386861313864Q60.303993130098746 58.24605238299699 57.5759553456419 65.78405152425934Q54.84791756118505 73.32205066552169 49.104680120223264 77.62947874624302Q43.36144267926148 81.93690682696436 34.315843709746666 81.93690682696436H21.96788321167883V114.96052211249463ZM21.96788321167883 63.70212795191069H29.721253756977244Q34.45942464577071 63.70212795191069 36.32597681408329 59.61007127522542Q38.19252898239587 55.51801459854015 38.19252898239587 49.05687247745814Q38.19252898239587 44.175120652640615 37.40283383426363 40.94454959209961Q36.613138686131386 37.71397853155861 34.67479604980678 36.13458823529412Q32.736453413482174 34.555197939029625 29.290510948905112 34.555197939029625H21.96788321167883ZM57.28879347359381 114.96052211249463 78.39519106912837 16.17683812795191H108.26002576212966L129.51000429368827 114.96052211249463H106.39347359381708L103.09111206526406 96.72574323744095H82.98978102189781L79.68741949334478 114.96052211249463ZM85.71781880635466 78.34738342636325H100.36307428080721L95.91206526406182 52.072072133963076Q95.76848432803777 50.92342464577072 95.48132245598968 49.05687247745814Q95.1941605839416 47.19032030914556 94.90699871189351 44.821234864748824Q94.61983683984542 42.452149420352086 94.2608844997853 40.15485444396737Q93.90193215972519 37.85755946758266 93.61477028767712 35.84742636324603H92.46612279948475Q92.17896092743666 38.288302275654786 91.82000858737655 41.303501932159726Q91.46105624731644 44.318701588664666 91.03031343924431 47.190320309145555Q90.59957063117217 50.061939029626444 90.31240875912408 52.072072133963076ZM136.1147273507943 114.96052211249463V16.17683812795191H170.43057106054098Q180.050493774152 16.17683812795191 185.79373121511378 20.19710433662516Q191.53696865607554 24.217370545298408 193.9778445684843 31.39641734650064Q196.41872048089306 38.575464147702874 196.41872048089306 48.195386861313864Q196.41872048089306 58.24605238299699 193.69068269643623 65.78405152425934Q190.96264491197937 73.32205066552169 185.21940747101758 77.62947874624302Q179.4761700300558 81.93690682696436 170.43057106054098 81.93690682696436H158.08261056247315V114.96052211249463ZM158.08261056247315 63.70212795191069H165.83598110777157Q170.57415199656504 63.70212795191069 172.44070416487762 59.61007127522542Q174.3072563331902 55.51801459854015 174.3072563331902 49.05687247745814Q174.3072563331902 44.175120652640615 173.51756118505796 40.94454959209961Q172.72786603692572 37.71397853155861 170.78952340060113 36.13458823529412Q168.8511807642765 34.555197939029625 165.40523829969942 34.555197939029625H158.08261056247315ZM204.31567196221553 114.96052211249463V16.17683812795191H259.1635895234006V35.1295216831258H226.28355517389437V55.374433662516104H254.13825676255902V74.32711721768999H226.28355517389437V96.00783855732074H259.73791326749677V114.96052211249463ZM269.7885787891799 114.96052211249463V16.17683812795191H303.09935594675824Q314.0115070845856 16.17683812795191 320.1136968656075 20.12531386861314Q326.21588664662943 24.07378960927437 328.65676255903816 30.750303134392446Q331.09763847144694 37.42681665951052 331.09763847144694 45.61093001288107Q331.09763847144694 54.225786174323744 329.01571489909827 61.26125203950193Q326.93379132674966 68.29671790468012 321.62129669386 72.60414598540146L334.4 114.96052211249463H311.7142121082009L302.0942893945899 79.92677372262773H291.75646200085873V114.96052211249463ZM291.75646200085873 62.1227376556462H300.0841562902533Q305.2530699871189 62.1227376556462 307.1914126234435 58.03068097896093Q309.1297552597681 53.938624302275656 309.1297552597681 47.76464405324174Q309.1297552597681 43.60079690854444 308.26826964362385 40.657387720051524Q307.4067840274796 37.71397853155861 305.468441391155 36.13458823529412Q303.53009875483036 34.555197939029625 299.7969944182052 34.555197939029625H291.75646200085873Z" fill="currentColor"/></svg>`;
+
+  function esc(s) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (c) {
+      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
+    });
+  }
+  /* A box the arrange mode can move and resize; its name is what the panel shows. */
+  function box(key, label) { return ' data-box="' + key + '" data-box-label="' + esc(label) + '"'; }
+  /* One editable piece of text: its element carries the path into the content block,
+     and block-level text is also a box (inline spans are arranged through the element around them). */
+  function k(tag, path, text, cls, ph, asBox) {
+    var b = asBox === undefined ? !/^(span|strong|em)$/.test(tag) : asBox;
+    return "<" + tag + (cls ? ' class="' + cls + '"' : "") + ' data-k="' + path + '" data-ph="' + esc(ph || "Type here") + '"' +
+      (b ? box(path, ph || "Text") : "") + ">" + esc(text) + "</" + tag + ">";
+  }
+  function list(tag, id, path, items, cls, label) {
+    var lis = (items || []).map(function (x, i) { return k("li", path + "." + i, x, "", "Line " + (i + 1)); }).join("\n");
+    return "<" + tag + ' id="' + id + '"' + (cls ? ' class="' + cls + '"' : "") + box(path, label || "List") + ">\n" + lis + "\n</" + tag + ">\n" +
+      '<div class="edit-tools"><button type="button" data-addline="' + path + '">Add a line</button></div>';
+  }
+  function blocks(bs) {
+    return (bs || []).map(function (b, i) {
+      var p = "essay.blocks." + i, html;
+      if (b.t === "h2") html = k("h2", p + ".text", b.text, "squeeze", "Heading");
+      else if (b.t === "quote") html = k("blockquote", p + ".text", b.text, "", "Pull quote");
+      else if (b.lead != null) html = "<p" + box(p, "Paragraph") + ">" + k("span", p + ".lead", b.lead, "practice-name", "Lead-in") + " " + k("span", p + ".text", b.text, "", "Paragraph") + "</p>";
+      else html = k("p", p + ".text", b.text, "", "Paragraph");
+      return html + '\n<div class="edit-tools"><button type="button" data-add="p" data-at="' + i + '">Add a paragraph below</button><button type="button" data-add="h2" data-at="' + i + '">Add a heading below</button><button type="button" data-add="quote" data-at="' + i + '">Add a pull quote below</button></div>';
+    }).join("\n");
+  }
+
+  /* Seams: the gradient breaks into staggered columns of neighbouring colours, like the light leaks on the roll.
+     A seeded random keeps every build, and every save, identical. */
+  function rng(seed) {
+    return function () {
+      seed |= 0; seed = seed + 0x6D2B79F5 | 0;
+      var t = Math.imul(seed ^ seed >>> 15, 1 | seed);
+      t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t;
+      return ((t ^ t >>> 14) >>> 0) / 4294967296;
+    };
+  }
+  function seam(seed, from, to, tints, cls) {
+    var r = rng(seed), cols = [], n = 12 + Math.floor(r() * 6);
+    for (var i = 0; i < n; i++) {
+      var start = 4 + r() * 30, len = 38 + r() * 40, end = Math.min(98, start + len), mid = tints[Math.floor(r() * tints.length)];
+      var g = "linear-gradient(to bottom," + from + " 0%," + from + " " + start.toFixed(1) + "%," + mid + " " + (start + len * .3).toFixed(1) + "%," + mid + " " + (start + len * .7).toFixed(1) + "%," + to + " " + end.toFixed(1) + "%," + to + " 100%)";
+      cols.push('<i style="flex-grow:' + (1 + Math.floor(r() * 4)) + ";background:" + g + '"></i>');
+    }
+    return '<div class="seam' + (cls ? " " + cls : "") + '" aria-hidden="true" style="background:' + from + '"><div class="seam-cols">' + cols.join("") + "</div></div>";
+  }
+
+  /* Arranged boxes become one stylesheet: wide screens and phones are kept separately, so arranging one never breaks the other. */
+  var SAFE = /^[A-Za-z0-9._-]+$/;
+  function num(v) { return typeof v === "number" && isFinite(v) ? Math.round(v * 10) / 10 : null; }
+  function layoutCSS(L) {
+    var out = [];
+    [["wide", "(min-width: 901px)"], ["narrow", "(max-width: 900px)"]].forEach(function (bp) {
+      var m = (L && L[bp[0]]) || {}, rules = [];
+      Object.keys(m).sort().forEach(function (key) {
+        if (!SAFE.test(key)) return;
+        var v = m[key] || {}, d = [];
+        var x = num(v.x) || 0, y = num(v.y) || 0;
+        if (x || y) d.push("translate:" + x + "px " + y + "px");
+        if (num(v.w) != null) d.push("width:min(" + num(v.w) + "px, calc(100vw - 32px))", "max-width:none");
+        if (num(v.h) != null) d.push("min-height:" + num(v.h) + "px");
+        if (num(v.fs) != null) d.push("font-size:" + num(v.fs) + "px");
+        if (num(v.pad) != null) d.push("padding:" + num(v.pad) + "px");
+        if (num(v.r) != null) d.push("border-radius:" + num(v.r) + "px");
+        if (v.align === "left" || v.align === "center" || v.align === "right") d.push("text-align:" + v.align);
+        if (d.length) rules.push('  [data-box="' + key + '"]{' + d.map(function (x2) { return x2 + "!important"; }).join(";") + "}");
+      });
+      if (rules.length) out.push("@media " + bp[1] + "{\n" + rules.join("\n") + "\n}");
+    });
+    return out.join("\n");
+  }
+
+  /* Sections added after the page was first written get their starting words here, so older pages keep working. */
+  function withDefaults(c) {
+    c.booking = Object.assign({ calLink: "", noteLink: "Prefer to write first? Send a note instead." }, c.booking || {});
+    return c;
+  }
+
+  function renderMarkup(c) {
+    withDefaults(c);
+    var h = c.hero, o = c.overfed, pr = c.practices, s = c.sessions, r = c.request, e = c.essay, bk = c.booking;
+    return `<div class="inbox" id="inbox" hidden>
+  <div class="wrap">
+    <h2 class="squeeze">Session requests</h2>
+    <p class="small" id="inbox-note">Only you can see this list. Clients see the page below.</p>
+    <ul class="req-list" id="req-list"></ul>
+  </div>
+</div>
+
+<header class="wrap top" id="top">
+  <a class="wm" href="#top" aria-label="Put It On Paper, home"${box("top.logo", "Logo")}>${WM_STACKED}</a>
+  <nav aria-label="Sections">
+    <a href="#instagram-brain">Instagram brain</a>
+    <a href="#practices">Practices</a>
+    <a class="go" href="#request">Request a session</a>
+  </nav>
+</header>
+
+<main id="home">
+  <section class="wrap hero" aria-labelledby="h1">
+    <div${box("hero.text", "Headline and intro")}>
+      <h1 id="h1"${box("hero.h1", "Headline")}>
+        ${k("span", "hero.line1", h.line1, "squeeze", "First line", true)}
+        ${k("span", "hero.line2", h.line2, "open", "Second line", true)}
+      </h1>
+      ${k("p", "hero.lead", h.lead, "lead", "Introduction")}
+      <div class="actions"${box("hero.actions", "Buttons")}>
+        <a class="btn" href="#request">${esc(h.cta)}</a>
+        <a class="textlink" href="#instagram-brain">${esc(h.essayLink)}</a>
+      </div>
+    </div>
+    <div class="frame-wrap"${box("hero.frame", "Film frame")}>
+      <button class="frame" id="frame" type="button" aria-label="Strips of ten film frames scroll like a feed, then settle into one image: a window open onto a sunset. Press to scroll them again."></button>
+    </div>
+  </section>
+
+  ${seam(11, "var(--night)", "var(--night)", ["var(--oxblood)", "#2A1309", "var(--rust)", "#3B1A0B"])}
+
+  <section class="band overfed" aria-labelledby="overfed-h">
+    <div class="wrap">
+      <h2 class="squeeze statement" id="overfed-h"${box("overfed.statement", "Statement")}><span data-k="overfed.statement" data-ph="Statement">${esc(o.statement)}</span></h2>
+      ${k("p", "overfed.body", o.body, "statement-body", "Paragraph")}
+      <div class="beats"${box("overfed.beats", "Three ideas")}>
+${o.beats.map(function (b, i) { return '        <div class="beat"' + box("overfed.beat." + i, "Idea " + (i + 1)) + ">" + k("h3", "overfed.beats." + i + ".title", b.title, "open", "Title") + k("p", "overfed.beats." + i + ".text", b.text, "", "Text") + "</div>"; }).join("\n")}
+      </div>
+    </div>
+  </section>
+
+  ${seam(23, "var(--oxblood)", "var(--oxblood)", ["var(--blood)", "var(--rust)", "#5A1709", "#7E2B10"])}
+
+  <section class="band practices" id="practices" aria-labelledby="practices-h">
+    <div class="wrap">
+      <div class="head"${box("practices.head", "Practices heading")}>
+        <h2 class="squeeze" id="practices-h"${box("practices.title", "Title")}><span data-k="practices.title" data-ph="Title">${esc(pr.title)}</span></h2>
+        ${k("p", "practices.intro", pr.intro, "", "Introduction")}
+      </div>
+      <div class="sheets"${box("practices.sheets", "Practice sheets")}>
+        <article class="sheet" aria-labelledby="p1-h"${box("practices.sheet1", "Catch a fragment sheet")}>
+          ${k("p", "practices.p1.when", pr.p1.when, "when", "When")}
+          <h3 class="squeeze" id="p1-h"${box("practices.p1.title", "Practice name")}><span data-k="practices.p1.title" data-ph="Practice name">${esc(pr.p1.title)}</span></h3>
+          ${k("p", "practices.p1.intro", pr.p1.intro, "", "Introduction")}
+          ${list("ul", "list-p1", "practices.p1.items", pr.p1.items, "", "Questions")}
+          ${k("p", "practices.p1.outro", pr.p1.outro, "", "Closing line")}
+        </article>
+        <article class="sheet" aria-labelledby="p2-h"${box("practices.sheet2", "Scroll, then recall sheet")}>
+          ${k("p", "practices.p2.when", pr.p2.when, "when", "When")}
+          <h3 class="squeeze" id="p2-h"${box("practices.p2.title", "Practice name")}><span data-k="practices.p2.title" data-ph="Practice name">${esc(pr.p2.title)}</span></h3>
+          ${k("p", "practices.p2.intro", pr.p2.intro, "", "Introduction")}
+          <div class="timer" aria-live="polite"${box("practices.timer", "Timer")}>
+            <div class="presets" id="presets" role="radiogroup" aria-label="Scroll time"></div>
+            <div class="clock" id="clock" role="timer">10:00</div>
+            <div class="timer-row">
+              <button class="btn dark" id="t-start" type="button">Start scrolling</button>
+              <button class="linkbtn" id="t-reset" type="button" hidden>Reset</button>
+            </div>
+            <p class="timer-status" id="t-status">Start the timer here, then open your feed. Come back when it rings.</p>
+            <div class="recall" id="recall" hidden>
+              ${k("strong", "practices.p2.recallTitle", pr.p2.recallTitle, "", "Recall heading", true)}
+              ${list("ol", "list-recall", "practices.p2.recall", pr.p2.recall, "", "Recall prompts")}
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <div class="flare" role="img" aria-label="A light leak from the same roll of film, deep red turning to yellow"></div>
+
+  <section class="band sessions on-light" aria-labelledby="sessions-h">
+    <div class="wrap sessions-grid">
+      <h2 class="squeeze" id="sessions-h"${box("sessions.title", "Sessions heading")}><span data-k="sessions.title" data-ph="Title">${esc(s.title)}</span></h2>
+      <div${box("sessions.list", "Formats")}>
+        <ul class="formats">
+${s.formats.map(function (f, i) { return "          <li" + box("sessions.format." + i, "Format " + (i + 1)) + ">" + k("strong", "sessions.formats." + i + ".name", f.name, "", "Name", true) + k("span", "sessions.formats." + i + ".text", f.text, "", "Description", true) + "</li>"; }).join("\n")}
+        </ul>
+        ${k("p", "sessions.note", s.note, "note", "Note")}
+      </div>
+    </div>
+  </section>
+
+  ${seam(37, "var(--sun)", "var(--sun)", ["var(--saffron)", "var(--pollen)", "#F4C95A", "#D8D879"], "light")}
+
+  <div class="lawn" role="img" aria-label="Sunlit grass from the same roll of film"></div>
+
+  <section class="band request on-leaf" id="request" aria-labelledby="request-h">
+    <div class="wrap request-grid">
+      <div class="request-intro"${box("request.intro.box", "Request heading")}>
+        <h2 class="squeeze" id="request-h"${box("request.title", "Title")}><span data-k="request.title" data-ph="Title">${esc(r.title)}</span></h2>
+        ${k("p", "request.intro", r.intro, "", "Introduction")}
+        <span class="brave" role="img" aria-label="Be brave."${box("request.brave", "Be brave.")}></span>
+      </div>
+      <div${box("request.form", "Booking and request form")}>
+        <p class="edit-only cal-setting">Cal.com booking link: ${k("span", "booking.calLink", bk.calLink, "", "yourname/session")}<small>For example solgutt/session. Leave it empty to show only the request form.</small></p>
+        <div class="booking" id="booking" data-cal="${esc(bk.calLink)}"${bk.calLink ? "" : " hidden"}>
+          <div class="cal-embed" id="cal-embed"><p class="cal-loading" id="cal-loading">Loading the calendar…</p></div>
+          <button class="linkbtn note-toggle" id="note-toggle" type="button">${k("span", "booking.noteLink", bk.noteLink, "", "Link to the request form")}</button>
+        </div>
+        <div id="note-wrap"${bk.calLink ? " hidden" : ""}>
+        <p class="mine" id="mine" hidden></p>
+        <form id="form" novalidate>
+          <div class="field">
+            <label for="f-name">Your name</label>
+            <input type="text" id="f-name" autocomplete="name" maxlength="80" required>
+          </div>
+          <div class="field">
+            <label for="f-contact">Email or phone</label>
+            <input type="text" id="f-contact" autocomplete="email" maxlength="120" required>
+          </div>
+          <fieldset>
+            <legend>I'm interested in</legend>
+            <div class="chips" id="f-format"></div>
+          </fieldset>
+          <div class="field">
+            <label for="f-note">What keeps coming back to you? (optional)</label>
+            <input type="text" id="f-note" maxlength="400" placeholder="My phone, my focus, a decision I keep putting off">
+          </div>
+          <p class="error" id="f-error" role="alert" hidden></p>
+          <div><button class="btn leaf" id="f-send" type="submit">Send request</button></div>
+        </form>
+        <div class="result" id="result" hidden aria-live="polite">
+          <h3 class="squeeze" id="r-title">Request sent</h3>
+          <p id="r-body"></p>
+          <p class="r-about" id="r-about" hidden>Contact details are on <a href="https://solgutt.com/about.html">Solomon's About page</a>.</p>
+          <label class="sr" for="r-msg">Your request as a message</label>
+          <textarea id="r-msg" readonly></textarea>
+          <div class="timer-row">
+            <button class="btn" id="r-copy" type="button">Copy message</button>
+            <button class="linkbtn" id="r-edit" type="button">Edit my request</button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<article class="wrap essay" id="instagram-brain" hidden aria-labelledby="essay-h">
+  <div class="essay-head"${box("essay.head", "Essay heading")}>
+    <a class="textlink dim" href="#top">Back to Put It On Paper</a>
+    <h1 class="squeeze" id="essay-h"${box("essay.title", "Essay title")}><span data-k="essay.title" data-ph="Title">${esc(e.title)}</span></h1>
+    ${k("p", "essay.dek", e.dek, "open dek", "Subtitle")}
+    ${k("p", "essay.byline", e.byline, "by", "Byline")}
+  </div>
+  <div class="essay-body" id="essay-body"${box("essay.body", "Essay text")}>
+${blocks(e.blocks)}
+  </div>
+  <span class="brave essay-brave" role="img" aria-label="Be brave."${box("essay.brave", "Be brave.")}></span>
+  <div class="essay-end"${box("essay.end", "Essay buttons")}>
+    <a class="btn" href="#request">${esc(h.cta)}</a>
+    <a class="textlink" href="#practices">Try the two practices</a>
+  </div>
+</article>
+
+${seam(53, "var(--spring)", "var(--spring)", ["var(--pollen)", "#D7DB86", "var(--sun)", "#E9E6A4"], "light")}
+
+<footer class="foot on-leaf" id="foot">
+  <div class="wrap">
+    <span class="wm-stack" role="img" aria-label="Put It On Paper"${box("foot.logo", "Footer logo")}>${WM_STACKED}</span>
+    <div class="foot-copy"${box("foot.copy", "Footer text")}>
+      ${k("p", "footer.text", c.footer.text, "", "Footer line")}
+      <p><a href="https://solgutt.com/">More from Solomon Guttmann at solgutt.com</a></p>
+    </div>
+  </div>
+</footer>
+
+<div class="arr-frame" id="arr-frame" hidden aria-hidden="true">
+  <span class="arr-name" id="arr-name"></span>
+  <span class="arr-handle e" data-h="e"></span>
+  <span class="arr-handle s" data-h="s"></span>
+  <span class="arr-handle se" data-h="se"></span>
+</div>
+
+<div class="arr-panel" id="arr-panel" hidden>
+  <div class="arr-head"><strong id="arr-title">Nothing selected</strong><span id="arr-scope"></span></div>
+  <p class="arr-hint" id="arr-hint">Click any box on the page to select it. Drag it to move it; drag its edges to resize it.</p>
+  <div class="arr-fields" id="arr-fields" hidden>
+    <label>Width<input type="number" id="arr-w" step="4" min="40"></label>
+    <label>Height<input type="number" id="arr-h" step="4" min="0"></label>
+    <label>Across<input type="number" id="arr-x" step="4"></label>
+    <label>Down<input type="number" id="arr-y" step="4"></label>
+    <label>Text size<input type="number" id="arr-fs" step="1" min="8"></label>
+    <label>Padding<input type="number" id="arr-pad" step="2" min="0"></label>
+    <label>Corners<input type="number" id="arr-r" step="2" min="0"></label>
+    <label>Align<select id="arr-align"><option value="">As designed</option><option value="left">Left</option><option value="center">Centre</option><option value="right">Right</option></select></label>
+  </div>
+  <div class="arr-actions" id="arr-actions" hidden>
+    <button type="button" id="arr-parent">Select the box around it</button>
+    <button type="button" id="arr-reset">Reset this box</button>
+  </div>
+</div>
+
+<div class="editbar" id="editbar" hidden>
+  <div class="modes" id="e-modes" role="group" aria-label="What to edit" hidden>
+    <button type="button" id="e-mode-text" aria-pressed="true">Words</button>
+    <button type="button" id="e-mode-arrange" aria-pressed="false">Arrange</button>
+  </div>
+  <span class="msg" id="e-msg" hidden>Editing. Click any outlined text to change it. Nothing changes for visitors until you save.</span>
+  <button class="btn ghost" id="e-cancel" type="button" hidden>Discard changes</button>
+  <button class="btn" id="e-save" type="button" hidden>Save and publish</button>
+  <button class="btn" id="e-start" type="button">Edit page</button>
+</div>`;
+  }
+
+  var CLOSE = "</" + "script>";
+  function buildBody(c, style, renderSrc, appSrc) {
+    return HEAD +
+      '<style id="pop-style">' + style + '</style>\n' +
+      '<style id="pop-layout">' + layoutCSS(c.layout) + '</style>\n' +
+      renderMarkup(c) + "\n" +
+      '<script type="application/json" id="pop-content">' + JSON.stringify(c).replace(/</g, "\\u003c") + CLOSE + "\n" +
+      '<script id="pop-render">' + renderSrc + CLOSE + "\n" +
+      '<script id="pop-app">' + appSrc + CLOSE + "\n";
+  }
+  function buildDocument(c, style, renderSrc, appSrc, forSite) {
+    return (forSite ? SITE_SKELETON : SKELETON) + "\n" + buildBody(c, style, renderSrc, appSrc) + "</body></html>";
+  }
+  return { BUILD: BUILD, withDefaults: withDefaults, esc: esc, list: list, blocks: blocks, layoutCSS: layoutCSS, renderMarkup: renderMarkup, buildBody: buildBody, buildDocument: buildDocument };
+})();
+</script>
+<script id="pop-app">(() => {
+  const $ = (id) => document.getElementById(id);
+  const store = {
+    get(k) { try { return JSON.parse(localStorage.getItem(k)); } catch { return null; } },
+    set(k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch {} },
+  };
+  const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  const CONTENT = POP.withDefaults(JSON.parse($("pop-content").textContent));
+  /* Opened through the site's local editor (python3 edit.py): Save writes the page file, Publish in the editor puts it live. */
+  const ON_EDITOR = location.port === "8124" && /^(127\.0\.0\.1|localhost)$/.test(location.hostname);
+
+  /* ---------- Views: the landing page and the essay ---------- */
+  const home = $("home"), essay = $("instagram-brain");
+  function route() {
+    const h = location.hash.slice(1);
+    const showEssay = h === "instagram-brain";
+    essay.hidden = !showEssay; home.hidden = showEssay;
+    if (showEssay) window.scrollTo(0, 0);
+    else if (h && $(h)) $(h).scrollIntoView({ behavior: reduced ? "auto" : "smooth" });
+  }
+  addEventListener("hashchange", route);
+  route();
+
+  /* ---------- The fragment frame ---------- */
+  const FRAMES = ["clouds", "canal", "grass", "forest", "park", "bike", "blinds", "sill", "maroon"];
+  const N = 12, frame = $("frame");
+  frame.style.setProperty("--n", N);
+  function buildFrame() {
+    frame.innerHTML = "";
+    for (let i = 0; i < N; i++) {
+      const pool = FRAMES.slice().sort(() => Math.random() - .5).slice(0, 4 + (i % 3));
+      const seq = [...pool, "window"];
+      const strip = document.createElement("span");
+      strip.className = "strip";
+      strip.style.setProperty("--i", i);
+      strip.style.setProperty("--len", seq.length);
+      strip.style.setProperty("--dur", (1.5 + Math.random() * 1.1).toFixed(2) + "s");
+      strip.style.setProperty("--delay", (i * 0.07).toFixed(2) + "s");
+      const reel = document.createElement("span");
+      reel.className = "reel";
+      seq.forEach((ph) => { const c = document.createElement("span"); c.className = "cell ph-" + ph; reel.append(c); });
+      strip.append(reel);
+      frame.append(strip);
+    }
+  }
+  function play() {
+    buildFrame();
+    frame.classList.remove("play"); void frame.offsetWidth; frame.classList.add("play");
+  }
+  play();
+  frame.addEventListener("click", play);
+
+  /* ---------- Scroll, then recall ---------- */
+  const PRESETS = [5, 10, 15, 20];
+  let minutes = store.get("pop.mins") || 10, endAt = 0, tick = null, audio = null;
+  const presets = $("presets"), clock = $("clock"), start = $("t-start"), reset = $("t-reset"), status = $("t-status"), recall = $("recall");
+  const fmt = (s) => `${Math.floor(s / 60)}:${String(Math.max(0, s) % 60).padStart(2, "0")}`;
+  PRESETS.forEach((m) => {
+    const l = document.createElement("label"); l.className = "preset";
+    l.innerHTML = `<input type="radio" name="mins" id="m-${m}" value="${m}"${m === minutes ? " checked" : ""}><span>${m} min</span>`;
+    l.querySelector("input").addEventListener("change", () => { minutes = m; store.set("pop.mins", m); if (!endAt) clock.textContent = fmt(m * 60); });
+    presets.append(l);
+  });
+  clock.textContent = fmt(minutes * 60);
+  function chime() {
+    try {
+      [440, 659.25, 880].forEach((hz, i) => {
+        const o = audio.createOscillator(), g = audio.createGain(), t = audio.currentTime + i * .3;
+        o.frequency.value = hz; o.type = "sine";
+        g.gain.setValueAtTime(0, t); g.gain.linearRampToValueAtTime(.22, t + .02); g.gain.exponentialRampToValueAtTime(.001, t + 1.8);
+        o.connect(g).connect(audio.destination); o.start(t); o.stop(t + 1.9);
+      });
+    } catch {}
+  }
+  function update() {
+    const left = Math.round((endAt - Date.now()) / 1000);
+    if (left <= 0) { finish(); return; }
+    clock.textContent = fmt(left);
+  }
+  function finish() {
+    clearInterval(tick); tick = null; endAt = 0;
+    clock.textContent = "0:00"; chime();
+    start.textContent = "Scroll again"; status.textContent = "Time's up.";
+    recall.hidden = false;
+  }
+  start.addEventListener("click", () => {
+    try { audio = audio || new (window.AudioContext || window.webkitAudioContext)(); audio.resume(); } catch {}
+    recall.hidden = true;
+    endAt = Date.now() + minutes * 60 * 1000;
+    clearInterval(tick); tick = setInterval(update, 500); update();
+    start.textContent = "Restart"; reset.hidden = false;
+    status.textContent = "Go and scroll. The page will chime and show your recall prompts when time is up.";
+  });
+  reset.addEventListener("click", () => {
+    clearInterval(tick); tick = null; endAt = 0; clock.textContent = fmt(minutes * 60);
+    start.textContent = "Start scrolling"; reset.hidden = true; recall.hidden = true;
+    status.textContent = "Start the timer here, then open your feed. Come back when it rings.";
+  });
+  document.addEventListener("visibilitychange", () => { if (!document.hidden && endAt) update(); });
+
+  /* ---------- Request form ---------- */
+  const FORMATS = [
+    { id: "one", label: "One-on-one" },
+    { id: "group", label: "A workshop" },
+    { id: "retreat", label: "Retreats" },
+    { id: "unsure", label: "Not sure yet" },
+  ];
+  FORMATS.forEach((f, i) => {
+    const chip = document.createElement("label"); chip.className = "chip";
+    chip.innerHTML = `<input type="radio" name="format" id="ff-${f.id}" value="${f.id}"${i === 0 ? " checked" : ""}><span></span>`;
+    chip.querySelector("span").textContent = f.label;
+    $("f-format").append(chip);
+  });
+  const form = $("form"), err = $("f-error"), sendBtn = $("f-send");
+  const draft = store.get("pop.draft") || {};
+  ["name", "contact", "note"].forEach((k) => { if (draft[k]) $("f-" + k).value = draft[k]; });
+  if (draft.format && $("ff-" + draft.format)) $("ff-" + draft.format).checked = true;
+  let draftT;
+  form.addEventListener("input", () => { clearTimeout(draftT); draftT = setTimeout(() => store.set("pop.draft", readForm()), 400); });
+  function readForm() {
+    return {
+      name: $("f-name").value.trim(),
+      contact: $("f-contact").value.trim(),
+      format: (form.querySelector('input[name="format"]:checked') || {}).value || "unsure",
+      note: $("f-note").value.trim(),
+    };
+  }
+  const formatLabel = (id) => (FORMATS.find((f) => f.id === id) || FORMATS[3]).label;
+  function compose(d) {
+    const lines = [`Hi Solomon, I'd like to try Put It On Paper.`, ``, `Name: ${d.name}`, `Reach me at: ${d.contact}`, `Interested in: ${formatLabel(d.format)}`];
+    if (d.note) lines.push(`What keeps coming back: ${d.note}`);
+    return lines.join("\n");
+  }
+  let db = null, user = null, uid = null, writable = true;
+  function showResult(saved, d) {
+    $("r-title").textContent = saved ? "Request sent." : "Your request is ready to send.";
+    $("r-body").textContent = saved
+      ? "Solomon will see it and reply within two days. You can also copy it and send it by text or email."
+      : "This page couldn't save it for you. Copy the message below and send it to Solomon by text or email.";
+    $("r-msg").value = compose(d);
+    $("r-about").hidden = saved;
+    $("r-copy").textContent = "Copy message";
+    form.hidden = true; $("result").hidden = false;
+  }
+  form.addEventListener("submit", async (e) => {
+    e.preventDefault();
+    const d = readForm();
+    const missing = [!d.name && "your name", !d.contact && "a way to reach you"].filter(Boolean);
+    if (missing.length) { err.textContent = `Add ${missing.join(" and ")} so I can get back to you.`; err.hidden = false; $(!d.name ? "f-name" : "f-contact").focus(); return; }
+    err.hidden = true;
+    let saved = false;
+    if (db && uid && writable) {
+      sendBtn.disabled = true; sendBtn.textContent = "Sending";
+      const body = { ...d, sentAt: new Date().toISOString(), status: "new" };
+      const ref = db.collection("requests").doc(uid);
+      try { await ref.set(body); saved = true; }
+      catch (e1) {
+        if (e1 && e1.code === "unavailable") {
+          await new Promise((r) => setTimeout(r, 600 + Math.random() * 600));
+          try { await ref.set(body); saved = true; } catch {}
+        } else { writable = false; }
+      }
+      sendBtn.disabled = false; sendBtn.textContent = "Send request";
+    }
+    showResult(saved, d);
+  });
+  $("r-copy").addEventListener("click", async () => {
+    const ta = $("r-msg");
+    try { await navigator.clipboard.writeText(ta.value); $("r-copy").textContent = "Copied"; }
+    catch { ta.focus(); ta.select(); $("r-copy").textContent = "Selected. Press copy"; }
+  });
+  $("r-edit").addEventListener("click", () => { $("result").hidden = true; form.hidden = false; $("f-name").focus(); });
+
+  /* ---------- Booking (Cal.com), loaded when the section comes near ---------- */
+  const booking = $("booking"), noteWrap = $("note-wrap");
+  const calLink = (booking.dataset.cal || "").trim();
+  function showNote(on) { noteWrap.hidden = !on; }
+  $("note-toggle").addEventListener("click", (e) => {
+    if (document.documentElement.classList.contains("editing")) return;
+    showNote(noteWrap.hidden);
+    if (!noteWrap.hidden) $("f-name").focus();
+  });
+  let calReady = false;
+  function calFailed() {
+    if (calReady) return;
+    $("cal-embed").hidden = true;
+    $("note-toggle").hidden = true;
+    showNote(true);
+  }
+  function loadCal() {
+    // The snippet Cal.com gives for an inline embed, in the page's colours.
+    (function (C, A, L) { const p = function (a, ar) { a.q.push(ar); }; const d = C.document; C.Cal = C.Cal || function () { const cal = C.Cal; const ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; const s = d.createElement("script"); s.src = A; s.onerror = calFailed; d.head.appendChild(s); cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
+    window.Cal("init", "pop", { origin: "https://cal.com" });
+    window.Cal.ns.pop("inline", { elementOrSelector: "#cal-embed", calLink, layout: "month_view" });
+    window.Cal.ns.pop("ui", { theme: "light", hideEventTypeDetails: false, layout: "month_view", cssVarsPerTheme: { light: { "cal-brand": "#2C3210", "cal-bg": "#F2F0BE" } } });
+    // Ready: drop the loading line. A link Cal.com doesn't know (or no answer at all) falls back to the request form.
+    window.Cal.ns.pop("on", { action: "linkReady", callback: () => { calReady = true; const l = $("cal-loading"); if (l) l.remove(); } });
+    window.Cal.ns.pop("on", { action: "linkFailed", callback: () => { calReady = false; calFailed(); } });
+    setTimeout(() => { if (!calReady) calFailed(); }, 15000);
+  }
+  if (calLink && /^[A-Za-z0-9._\/-]+$/.test(calLink)) {
+    if (window.claude) { booking.hidden = true; showNote(true); }   // the claude.ai preview can't load outside scripts
+    else if ("IntersectionObserver" in window) {
+      const io = new IntersectionObserver((es) => { if (es.some((x) => x.isIntersecting)) { io.disconnect(); loadCal(); } }, { rootMargin: "600px 0px" });
+      io.observe(booking);
+    } else loadCal();
+  }
+
+  /* ---------- Saved requests (db) ---------- */
+  const esc = POP.esc;
+  const when = (iso) => { try { return new Date(iso).toLocaleDateString(undefined, { month: "short", day: "numeric", year: "numeric" }); } catch { return ""; } };
+  function startInbox() {
+    $("inbox").hidden = false;
+    const list = $("req-list"), note = $("inbox-note");
+    list.innerHTML = `<li class="small" style="padding-block:1rem">Loading requests…</li>`;
+    let loaded = false;
+    const slow = setTimeout(() => { if (!loaded) note.textContent = "Requests can't be reached right now. This list will fill in when the connection comes back."; }, 10000);
+    db.collection("requests").orderBy("sentAt", "desc").onSnapshot((snap) => {
+      if (!snap.metadata.fromCache) { loaded = true; clearTimeout(slow); note.textContent = "Only you can see this list. Clients see the page below."; }
+      if (snap.empty) { list.innerHTML = `<li class="small" style="padding-block:1rem">No requests yet. When someone sends the form, it shows up here.</li>`; return; }
+      list.innerHTML = snap.docs.map((doc) => {
+        const d = doc.data() || {}; const replied = d.status === "replied";
+        return `<li class="req" data-id="${esc(doc.id)}">
+          <div><div class="who">${esc(d.name || "No name given")}</div><div class="contact">${esc(d.contact)}</div></div>
+          <div class="req-actions"><span class="pill ${replied ? "" : "new"}">${replied ? "Replied" : "New"}</span>
+            <button class="linkbtn" type="button" data-act="${replied ? "new" : "replied"}">${replied ? "Mark as new" : "Mark as replied"}</button></div>
+          <div class="detail"><div>${esc(formatLabel(d.format))}. Sent ${esc(when(d.sentAt))}.</div>${d.note ? `<div>${esc(d.note)}</div>` : ""}</div></li>`;
+      }).join("");
+    }, () => { clearTimeout(slow); note.textContent = "Requests couldn't be loaded on this visit. Reload the page to try again."; list.innerHTML = ""; });
+    list.addEventListener("click", async (e) => {
+      const b = e.target.closest("button[data-act]"); if (!b) return;
+      const id = b.closest(".req").dataset.id; b.disabled = true;
+      try { await db.collection("requests").doc(id).update({ status: b.dataset.act }); }
+      catch { b.disabled = false; b.textContent = "Couldn't update. Try again"; }
+    });
+  }
+
+  /* ---------- Edit mode: change the words and arrange the boxes in place, then save the page again ---------- */
+  let editDraft = null, artifactApi = null, mode = "text";
+  const bar = $("editbar"), eStart = $("e-start"), eSave = $("e-save"), eCancel = $("e-cancel"), eMsg = $("e-msg");
+  const eModes = $("e-modes"), mText = $("e-mode-text"), mArrange = $("e-mode-arrange");
+  const SAVE_LABEL = ON_EDITOR ? "Save" : "Save and publish";
+  const MSG_TEXT = ON_EDITOR
+    ? "Editing words. Click any outlined text to change it. Save writes the page; Publish in the editor puts it live."
+    : "Editing words. Click any outlined text to change it. Nothing changes for visitors until you save.";
+  const MSG_ARRANGE = "Arranging. Click a box to select it, drag to move it, pull its edges to resize it.";
+  const clone = (o) => JSON.parse(JSON.stringify(o));
+  const clean = (s) => String(s).replace(/ /g, " ").replace(/[ \t]+\n/g, "\n").trim();
+  function getPath(obj, path) { return path.split(".").reduce((o, p) => (o == null ? o : o[p]), obj); }
+  function setPath(obj, path, val) {
+    const ps = path.split("."), last = ps.pop();
+    const parent = ps.reduce((o, p) => o[p], obj);
+    parent[last] = val;
+  }
+  function makeEditable(root) {
+    root.querySelectorAll("[data-k]").forEach((el) => {
+      try { el.contentEditable = "plaintext-only"; } catch { el.contentEditable = "true"; }
+      if (el.contentEditable !== "plaintext-only") el.contentEditable = "true";
+      el.spellcheck = true;
+    });
+  }
+  function lockText(root) { root.querySelectorAll("[data-k]").forEach((el) => el.removeAttribute("contenteditable")); }
+  function rerenderList(path) {
+    const ul = document.querySelector(`[data-addline="${path}"]`).parentElement.previousElementSibling;
+    const tmp = document.createElement("div");
+    tmp.innerHTML = POP.list(ul.tagName.toLowerCase(), ul.id, path, getPath(editDraft, path), ul.className, ul.dataset.boxLabel);
+    ul.replaceWith(tmp.firstElementChild);
+    if (mode === "text") makeEditable($(ul.id));
+    return $(ul.id);
+  }
+  function rerenderBlocks() {
+    const body = $("essay-body");
+    body.innerHTML = POP.blocks(editDraft.essay.blocks);
+    if (mode === "text") makeEditable(body);
+  }
+  function focusEnd(el) {
+    if (!el) return;
+    el.focus();
+    try { const r = document.createRange(); r.selectNodeContents(el); r.collapse(false); const s = getSelection(); s.removeAllRanges(); s.addRange(r); } catch {}
+  }
+  /* Moving essay paragraphs keeps any arranging attached to the paragraph it was made for. */
+  function shiftBlockLayout(at, by) {
+    ["wide", "narrow"].forEach((bp) => {
+      const m = editDraft.layout[bp], next = {};
+      Object.keys(m).forEach((key) => {
+        const hit = key.match(/^essay\.blocks\.(\d+)(\..*)?$/);
+        if (!hit || +hit[1] < at) { next[key] = m[key]; return; }
+        if (by < 0 && +hit[1] === at) return;
+        next[`essay.blocks.${+hit[1] + by}${hit[2] || ""}`] = m[key];
+      });
+      editDraft.layout[bp] = next;
+    });
+  }
+
+  function setMode(next) {
+    mode = next;
+    mText.setAttribute("aria-pressed", String(mode === "text"));
+    mArrange.setAttribute("aria-pressed", String(mode === "arrange"));
+    document.documentElement.classList.toggle("arranging", mode === "arrange");
+    if (mode === "text") { makeEditable(document); select(null); $("arr-panel").hidden = true; eMsg.textContent = MSG_TEXT; }
+    else { lockText(document); $("arr-panel").hidden = false; eMsg.textContent = MSG_ARRANGE; select(null); }
+  }
+  function enterEdit() {
+    editDraft = clone(CONTENT);
+    editDraft.layout = editDraft.layout || {};
+    editDraft.layout.wide = editDraft.layout.wide || {};
+    editDraft.layout.narrow = editDraft.layout.narrow || {};
+    document.documentElement.classList.add("editing");
+    recall.dataset.wasHidden = recall.hidden ? "1" : "";
+    recall.hidden = false;
+    eStart.hidden = true; eSave.hidden = false; eCancel.hidden = false; eMsg.hidden = false; eModes.hidden = false;
+    eSave.disabled = false; eSave.textContent = SAVE_LABEL;
+    setMode("text");
+  }
+  function leaveEdit() {
+    select(null);
+    $("arr-panel").hidden = true;
+    document.documentElement.classList.remove("arranging");
+    document.querySelectorAll("[data-k]").forEach((el) => { el.removeAttribute("contenteditable"); el.textContent = getPath(CONTENT, el.dataset.k) ?? ""; });
+    editDraft = clone(CONTENT);
+    ["practices.p1.items", "practices.p2.recall"].forEach(rerenderList);
+    rerenderBlocks();
+    lockText(document);
+    $("pop-layout").textContent = POP.layoutCSS(CONTENT.layout);
+    editDraft = null; mode = "text";
+    recall.hidden = recall.dataset.wasHidden === "1";
+    document.documentElement.classList.remove("editing");
+    eStart.hidden = false; eSave.hidden = true; eCancel.hidden = true; eMsg.hidden = true; eModes.hidden = true;
+  }
+
+  /* ----- Words ----- */
+  document.addEventListener("input", (e) => {
+    const el = e.target.closest && e.target.closest("[data-k]");
+    if (!editDraft || mode !== "text" || !el) return;
+    setPath(editDraft, el.dataset.k, el.textContent.replace(/ /g, " "));
+  });
+  document.addEventListener("keydown", (e) => {
+    const el = e.target.closest && e.target.closest("[data-k]");
+    if (!editDraft || mode !== "text" || !el || e.key !== "Enter" || e.shiftKey) return;
+    e.preventDefault();
+    const m = el.dataset.k.match(/^essay\.blocks\.(\d+)\.text$/);
+    if (m) {
+      const i = +m[1];
+      let before = el.textContent, after = "";
+      try {
+        const r = getSelection().getRangeAt(0), pre = document.createRange();
+        pre.selectNodeContents(el); pre.setEnd(r.startContainer, r.startOffset);
+        const at = pre.toString().length;
+        before = el.textContent.slice(0, at); after = el.textContent.slice(at);
+      } catch {}
+      editDraft.essay.blocks[i].text = before.trimEnd();
+      editDraft.essay.blocks.splice(i + 1, 0, { t: "p", text: after.trimStart() });
+      shiftBlockLayout(i + 1, 1);
+      rerenderBlocks();
+      const next = document.querySelector(`[data-k="essay.blocks.${i + 1}.text"]`);
+      if (next) { next.focus(); try { const r2 = document.createRange(); r2.setStart(next, 0); r2.collapse(true); const s = getSelection(); s.removeAllRanges(); s.addRange(r2); } catch {} }
+      return;
+    }
+    const lm = el.dataset.k.match(/^(.*)\.(\d+)$/);
+    if (lm && Array.isArray(getPath(editDraft, lm[1]))) {
+      getPath(editDraft, lm[1]).splice(+lm[2] + 1, 0, "");
+      const ul = rerenderList(lm[1]);
+      focusEnd(ul.children[+lm[2] + 1]);
+    }
+  });
+  document.addEventListener("click", (e) => {
+    if (!editDraft || mode !== "text") return;
+    const add = e.target.closest("button[data-add]");
+    if (add) {
+      const i = +add.dataset.at;
+      editDraft.essay.blocks.splice(i + 1, 0, { t: add.dataset.add, text: "" });
+      shiftBlockLayout(i + 1, 1);
+      rerenderBlocks();
+      focusEnd(document.querySelector(`[data-k="essay.blocks.${i + 1}.text"]`));
+      return;
+    }
+    const line = e.target.closest("button[data-addline]");
+    if (line) {
+      const arr = getPath(editDraft, line.dataset.addline); arr.push("");
+      const ul = rerenderList(line.dataset.addline);
+      focusEnd(ul.lastElementChild);
+    }
+  });
+
+  /* ----- Arrange ----- */
+  const frameEl = $("arr-frame"), nameEl = $("arr-name");
+  const F = { w: $("arr-w"), h: $("arr-h"), x: $("arr-x"), y: $("arr-y"), fs: $("arr-fs"), pad: $("arr-pad"), r: $("arr-r"), align: $("arr-align") };
+  const wideMQ = matchMedia("(min-width: 901px)");
+  const bp = () => (wideMQ.matches ? "wide" : "narrow");
+  let sel = null, raf = 0;
+  const boxOf = (key) => editDraft.layout[bp()][key] || {};
+  function applyLayout() { $("pop-layout").textContent = POP.layoutCSS(editDraft.layout); }
+  function patchBox(key, patch) {
+    const cur = { ...boxOf(key), ...patch };
+    Object.keys(cur).forEach((p) => { if (cur[p] === null || cur[p] === undefined || cur[p] === "" || Number.isNaN(cur[p])) delete cur[p]; });
+    if (Object.keys(cur).length) editDraft.layout[bp()][key] = cur; else delete editDraft.layout[bp()][key];
+    applyLayout();
+  }
+  function track() {
+    if (!sel || !sel.isConnected) { frameEl.hidden = true; raf = 0; return; }
+    const r = sel.getBoundingClientRect();
+    if (r.width === 0 && r.height === 0) frameEl.hidden = true;
+    else {
+      frameEl.hidden = false;
+      Object.assign(frameEl.style, { left: r.left + "px", top: r.top + "px", width: r.width + "px", height: r.height + "px" });
+    }
+    raf = requestAnimationFrame(track);
+  }
+  function fillPanel() {
+    const has = !!sel;
+    $("arr-fields").hidden = !has; $("arr-actions").hidden = !has; $("arr-hint").hidden = has;
+    $("arr-scope").textContent = (bp() === "wide" ? "Changes apply to wide screens. " : "Changes apply to phones and narrow windows. ") + "Resize the window to arrange the other.";
+    if (!has) { $("arr-title").textContent = "Nothing selected"; return; }
+    const v = boxOf(sel.dataset.box), cs = getComputedStyle(sel), r = sel.getBoundingClientRect();
+    $("arr-title").textContent = sel.dataset.boxLabel || "Box";
+    F.w.value = Math.round(v.w ?? r.width);
+    F.h.value = v.h ?? "";
+    F.h.placeholder = Math.round(r.height);
+    F.x.value = v.x ?? 0; F.y.value = v.y ?? 0;
+    F.fs.value = Math.round(v.fs ?? parseFloat(cs.fontSize));
+    // Text size only means something on a box that is itself one piece of text.
+    const textual = sel.matches("[data-k]") || (sel.children.length === 1 && sel.firstElementChild.matches("[data-k]"));
+    F.fs.closest("label").hidden = !textual;
+    F.pad.value = v.pad ?? ""; F.pad.placeholder = Math.round(parseFloat(cs.paddingTop)) || 0;
+    F.r.value = v.r ?? ""; F.r.placeholder = Math.round(parseFloat(cs.borderTopLeftRadius)) || 0;
+    F.align.value = v.align || "";
+    $("arr-parent").hidden = !(sel.parentElement && sel.parentElement.closest("[data-box]"));
+  }
+  function select(el) {
+    sel = el;
+    nameEl.textContent = el ? el.dataset.boxLabel || "Box" : "";
+    if (el && !raf) raf = requestAnimationFrame(track);
+    if (!el) frameEl.hidden = true;
+    fillPanel();
+  }
+  wideMQ.addEventListener("change", () => { if (editDraft && mode === "arrange") fillPanel(); });
+  /* In arrange mode a click selects instead of following links or pressing buttons. */
+  document.addEventListener("click", (e) => {
+    if (!editDraft || mode !== "arrange") return;
+    if (e.target.closest(".editbar, .arr-panel, .arr-frame, .top nav")) return;
+    const el = e.target.closest("[data-box]");
+    e.preventDefault(); e.stopPropagation();
+    select(el || null);
+  }, true);
+  document.addEventListener("submit", (e) => { if (editDraft && mode === "arrange") e.preventDefault(); }, true);
+  Object.entries(F).forEach(([prop, input]) => input.addEventListener("input", () => {
+    if (!sel) return;
+    const val = prop === "align" ? input.value : (input.value === "" ? null : Number(input.value));
+    patchBox(sel.dataset.box, { [prop]: val });
+  }));
+  $("arr-parent").addEventListener("click", () => { if (sel) select(sel.parentElement.closest("[data-box]")); });
+  $("arr-reset").addEventListener("click", () => {
+    if (!sel) return;
+    delete editDraft.layout[bp()][sel.dataset.box];
+    applyLayout(); fillPanel();
+  });
+  /* Dragging the frame moves the box; dragging a handle resizes it. Hold Alt for single pixels. */
+  let drag = null;
+  frameEl.addEventListener("pointerdown", (e) => {
+    if (!sel) return;
+    e.preventDefault();
+    const r = sel.getBoundingClientRect(), v = boxOf(sel.dataset.box);
+    drag = { kind: e.target.dataset.h || "move", sx: e.clientX, sy: e.clientY, x: v.x || 0, y: v.y || 0, w: r.width, h: r.height };
+    try { frameEl.setPointerCapture(e.pointerId); } catch {}
+  });
+  frameEl.addEventListener("pointermove", (e) => {
+    if (!drag || !sel) return;
+    const step = e.altKey ? 1 : 4, snap = (n) => Math.round(n / step) * step;
+    const dx = e.clientX - drag.sx, dy = e.clientY - drag.sy, p = {};
+    if (drag.kind === "move") { p.x = snap(drag.x + dx); p.y = snap(drag.y + dy); }
+    if (drag.kind === "e" || drag.kind === "se") p.w = Math.max(40, snap(drag.w + dx));
+    if (drag.kind === "s" || drag.kind === "se") p.h = Math.max(16, snap(drag.h + dy));
+    patchBox(sel.dataset.box, p);
+    fillPanel();
+  });
+  const endDrag = () => { drag = null; };
+  frameEl.addEventListener("pointerup", endDrag);
+  frameEl.addEventListener("pointercancel", endDrag);
+  document.addEventListener("keydown", (e) => {
+    if (!editDraft || mode !== "arrange" || !sel || e.target.closest(".arr-panel")) return;
+    const d = { ArrowLeft: [-1, 0], ArrowRight: [1, 0], ArrowUp: [0, -1], ArrowDown: [0, 1] }[e.key];
+    if (e.key === "Escape") { select(null); return; }
+    if (!d) return;
+    e.preventDefault();
+    const n = e.shiftKey ? 10 : 1, v = boxOf(sel.dataset.box);
+    patchBox(sel.dataset.box, { x: (v.x || 0) + d[0] * n, y: (v.y || 0) + d[1] * n });
+    fillPanel();
+  });
+  let hovered = null;
+  document.addEventListener("pointerover", (e) => {
+    const el = editDraft && mode === "arrange" && !e.target.closest(".editbar, .arr-panel, .arr-frame") ? e.target.closest("[data-box]") : null;
+    if (el === hovered) return;
+    if (hovered) hovered.classList.remove("arr-hover");
+    hovered = el;
+    if (hovered) hovered.classList.add("arr-hover");
+  });
+  mText.addEventListener("click", () => setMode("text"));
+  mArrange.addEventListener("click", () => setMode("arrange"));
+
+  /* ----- Saving ----- */
+  function tidy(c) {
+    const walk = (o) => {
+      for (const key of Object.keys(o)) {
+        if (key === "layout") continue;
+        if (typeof o[key] === "string") o[key] = clean(o[key]);
+        else if (o[key] && typeof o[key] === "object") walk(o[key]);
+      }
+    };
+    walk(c);
+    c.booking.calLink = c.booking.calLink.replace(/^https?:\/\/(app\.)?cal\.com\//i, "").replace(/[^A-Za-z0-9._\/-]/g, "").replace(/^\/+|\/+$/g, "");
+    c.practices.p1.items = c.practices.p1.items.filter(Boolean);
+    c.practices.p2.recall = c.practices.p2.recall.filter(Boolean);
+    // Empty essay paragraphs are dropped, and their arranging goes with them.
+    const kept = [];
+    c.essay.blocks.forEach((b, i) => { if (b.text || b.lead) kept.push(i); });
+    ["wide", "narrow"].forEach((bpName) => {
+      const m = (c.layout && c.layout[bpName]) || {}, next = {};
+      Object.keys(m).forEach((key) => {
+        const hit = key.match(/^essay\.blocks\.(\d+)(\..*)?$/);
+        if (!hit) { next[key] = m[key]; return; }
+        const at = kept.indexOf(+hit[1]);
+        if (at >= 0) next[`essay.blocks.${at}${hit[2] || ""}`] = m[key];
+      });
+      if (c.layout) c.layout[bpName] = next;
+    });
+    c.essay.blocks = kept.map((i) => c.essay.blocks[i]);
+    if (c.layout && !Object.keys(c.layout.wide).length && !Object.keys(c.layout.narrow).length) delete c.layout;
+    return c;
+  }
+  eStart.addEventListener("click", enterEdit);
+  eCancel.addEventListener("click", leaveEdit);
+  eSave.addEventListener("click", async () => {
+    const next = tidy(clone(editDraft));
+    const html = POP.buildDocument(next, $("pop-style").textContent, $("pop-render").textContent, $("pop-app").textContent, ON_EDITOR);
+    eSave.disabled = true;
+    if (ON_EDITOR) {
+      eSave.textContent = "Saving";
+      try {
+        const res = await fetch("/__pop_save", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ html, build: POP.BUILD }) });
+        const out = await res.json().catch(() => ({}));
+        if (!res.ok || !out.ok) throw new Error(out.error || "The editor didn't accept the page.");
+        eMsg.textContent = "Saved. Press Publish in the editor to put it on solgutt.com.";
+        setTimeout(() => location.reload(), 900);
+      } catch (err) {
+        eSave.disabled = false; eSave.textContent = SAVE_LABEL;
+        eMsg.textContent = (err && err.message ? err.message : "The changes couldn't be saved.") + (/reload/i.test(err && err.message) ? "" : " Is edit.py still running?");
+      }
+      return;
+    }
+    eSave.textContent = "Publishing";
+    eMsg.textContent = "Publishing your changes. The page will reload with them in a moment.";
+    try {
+      await artifactApi.publish(html);
+    } catch (err) {
+      const code = err && err.code;
+      eSave.disabled = false; eSave.textContent = SAVE_LABEL;
+      if (code === "conflict") eMsg.textContent = "A newer version was published while you were editing. The page is reloading to it, so copy anything you want to keep first.";
+      else if (code === "not_writer" || code === "not_granted" || code === "not_declared" || code === "consent_required") { eMsg.textContent = "This view can't publish changes. Open the page from your own account to edit it."; eSave.hidden = true; }
+      else if (code === "rate_limited") eMsg.textContent = "Too many saves in a row. Wait a minute, then press Save again.";
+      else if (code === "too_large") eMsg.textContent = "The page is too large to save. Shorten some text and try again.";
+      else eMsg.textContent = "The changes couldn't be published. Your edits are still here; press Save to try again.";
+    }
+  });
+
+  async function connect() {
+    if (ON_EDITOR) { bar.hidden = false; return; }
+    if (!window.claude || typeof window.claude.use !== "function") return;
+    let ar = null;
+    try { [db, user, ar] = await Promise.all([window.claude.use("db"), window.claude.use("user"), window.claude.use("artifact")]); } catch { return; }
+    const owner = user ? await user.isOwner().catch(() => false) : false;
+    const canEdit = user ? await user.canEdit().catch(() => false) : false;
+    if (ar && (owner || canEdit)) { artifactApi = ar; bar.hidden = false; }
+    if (!db || !user) { db = null; return; }
+    uid = await user.id().catch(() => null);
+    const canWrite = await user.can("data.write").catch(() => null);
+    if (canWrite === false && !owner) writable = false;
+    if (owner) startInbox();
+    if (uid) {
+      try {
+        const mine = await db.collection("requests").doc(uid).get();
+        if (mine.exists) { $("mine").textContent = `You sent a request on ${when(mine.data().sentAt)}. Sending again updates it.`; $("mine").hidden = false; }
+      } catch {}
+    }
+  }
+  connect();
+})();
+</script>
+</body></html>
