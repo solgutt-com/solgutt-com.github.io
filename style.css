@@ -154,7 +154,9 @@ body.home { min-height: 100vh; min-height: 100svh; display: grid; grid-template-
 
 .home-hero {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  /* The words take only the width they need; the reel sits centred in the rest,
+     so the space either side of it is the same. */
+  grid-template-columns: max-content minmax(0, 1fr);
   align-items: center;
   gap: clamp(28px, 5vw, 72px);
   padding: clamp(24px, 6vh, 72px) var(--gutter) clamp(48px, 9vh, 104px);
@@ -197,7 +199,7 @@ body.home { min-height: 100vh; min-height: 100svh; display: grid; grid-template-
 .button:hover { box-shadow: 0 0 28px color-mix(in srgb, var(--sun) 45%, transparent); }
 
 /* The reel: one photograph in strips that slide into line, in a thin white frame */
-.reel-wrap { min-width: 0; justify-self: end; width: min(100%, 640px); }
+.reel-wrap { min-width: 0; justify-self: center; width: min(100%, 640px); }
 .reel {
   position: relative;
   display: grid;

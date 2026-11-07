@@ -19,6 +19,7 @@
 
 ### Thin white frames
 - The homepage reel and the gallery viewer's photo get a thin white border (`--frame`), drawn outside the photo so nothing shifts; the reel starts on the small preview and swaps in the full-size photo as soon as it arrives
+- Homepage: the reel sits centred in the space beside the words, so the gap between your name and the photo matches the gap to the right edge
 
 ---
 
