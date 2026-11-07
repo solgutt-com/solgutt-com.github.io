@@ -17,6 +17,9 @@
 - Put It On Paper's hero is words only now: the film strips and the window photo are gone (the strips live on as the photography homepage's reel)
 - Put It On Paper matches the photography pages' light leaks: smooth vertical glows in Tide colours down both screen edges, the blocky seams replaced by plain OKLab fades, and the aqua leak band redrawn as a smooth glow instead of the stretched scan
 
+### Thin white frames
+- The homepage reel and the gallery viewer's photo get a thin white border (`--frame`), drawn outside the photo so nothing shifts; the reel starts on the small preview and swaps in the full-size photo as soon as it arrives
+
 ---
 
 ## 2026-11-05

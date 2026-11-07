@@ -73,8 +73,9 @@
         link.href = hrefFor(target);
         link.setAttribute('aria-label', `A photograph from ${target.title} slides into place, strip by strip. Open ${target.title}.`);
         reel.style.setProperty('--n', N);
-        // The full-size photo, so it is sharp once it settles; every strip shares the one download.
-        const src = photoSrc(photo);
+        // Start on the small preview so the reel appears at once, then swap in the full-size photo
+        // so it is sharp once it settles. Every strip shares the one download.
+        const full = photoSrc(photo), src = thumbSrc(photo, true);
         for (let i = 0; i < N; i++) {
           const len = 4 + (i % 3);
           const strip = h('span', { class: 'reel-strip' });
@@ -86,11 +87,17 @@
           strip.append(h('span', { class: 'reel-track' }, cells));
           reel.append(strip);
         }
-        // Start once the photograph has arrived, so the strips never slide over an empty frame.
+        // Start once the preview has arrived, so the strips never slide over an empty frame.
         const go = () => { reel.classList.add('ready'); reel.classList.remove('play'); void reel.offsetWidth; reel.classList.add('play'); };
-        const probe = new Image();
-        probe.onload = probe.onerror = go;
-        probe.src = src;
+        const imgs = [...reel.querySelectorAll('img')];
+        const sharpen = () => imgs.forEach(i => { i.src = full; });
+        const preview = new Image();
+        preview.onload = go;
+        preview.onerror = () => { imgs.forEach(i => { i.src = full; }); go(); };   // no preview made yet: use the photo itself
+        preview.src = src;
+        const sharp = new Image();
+        sharp.onload = sharpen;
+        sharp.src = full;
       }
     </script>
 

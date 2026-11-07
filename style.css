@@ -11,6 +11,7 @@
   --sun:     #EED853;   /* the leak at its brightest */
   --pollen:  #E2E38F;
   --linen:   #F1E4C8;   /* sky through cloud: text */
+  --frame:   #FFFFFF;   /* the thin border around photo carousels */
 
   --ground:  var(--night);
   --raised:  #2A170C;                                           /* placeholders behind photos still loading */
@@ -195,7 +196,7 @@ body.home { min-height: 100vh; min-height: 100svh; display: grid; grid-template-
 }
 .button:hover { box-shadow: 0 0 28px color-mix(in srgb, var(--sun) 45%, transparent); }
 
-/* The reel: one photograph in strips that slide into line, framed in a thin strip of linen */
+/* The reel: one photograph in strips that slide into line, in a thin white frame */
 .reel-wrap { min-width: 0; justify-self: end; width: min(100%, 640px); }
 .reel {
   position: relative;
@@ -204,7 +205,7 @@ body.home { min-height: 100vh; min-height: 100svh; display: grid; grid-template-
   aspect-ratio: 3 / 2;
   overflow: hidden;
   background: var(--raised);
-  box-shadow: 0 0 0 2px var(--linen), 0 24px 60px -30px #000;
+  box-shadow: 0 0 0 1.5px var(--frame), 0 24px 60px -30px #000;
   opacity: 0;
   transition: opacity .4s ease;
 }
@@ -453,6 +454,7 @@ body.darkroom {
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
+  box-shadow: 0 0 0 1.5px var(--frame);   /* drawn outside the photo, so its size never changes */
   transition: opacity 0.18s ease;
 }
 
