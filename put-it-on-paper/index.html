@@ -1,7 +1,7 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;padding:0}img{max-width:100%}[hidden]{display:none!important}</style></head><body>
 <title>Put It On Paper</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="pop-build" content="2026-11-05T12:52:12">
+<meta name="pop-build" content="2026-11-07T18:25:32">
 <link rel="icon" href="img/mark.svg" type="image/svg+xml">
 <meta name="description" content="Put It On Paper is a handwriting practice for digesting what you take in: catching the fragments, slowing down and finding your next step.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,19 +12,28 @@
    so the page only ever gets lighter. Compressed heavy type = what we take in; wide light type = room to think.
    One deliberate look (no theme switch): every band sets its own background and text colour. */
 :root {
-  --night: #1B0F07;      /* film shadow, warm black-brown */
-  --oxblood: #47140A;    /* the red frame on the roll */
-  --blood: #5E1B0B;
-  --rust: #6E2410;       /* where the red starts to warm */
-  --ember: #CC4E11;      /* light leak, hottest */
-  --saffron: #E8A33A;    /* window light */
-  --sun: #EED853;        /* light leak, brightest */
-  --pollen: #E2E38F;     /* sun on the lawn */
-  --spring: #F2F0BE;     /* the lightest point of the page */
-  --meadow: #A9AE4C;     /* the grass in full sun */
-  --canopy: #2C3210;     /* leaf shadow: text and actions once we're outside */
-  --linen: #F1E4C8;      /* sky through cloud: text on dark */
-  --linen-dim: rgba(241, 228, 200, .74);
+  /* Tide: a calm journey from deep water to the shore. Only the top of the page is dark, and it's blue, not black;
+     the practices, sessions and booking sit in sea foam, sea glass, yellow and sand. */
+  --night: #0F2C47;      /* deep sea: the hero, and dark ink on light grounds */
+  --oxblood: #17496E;    /* ocean */
+  --blood: #1F5F86;
+  --rust: #23708F;
+  --ember: #1E9EA6;      /* aqua: the light leak itself, never behind text */
+  --saffron: #7AD3C1;    /* sea glass: accents on dark, and where the sessions band begins */
+  --sun: #EFD963;        /* yellow */
+  --foam: #E3F2EC;       /* sea foam: behind the practices */
+  --foam2: #D2ECE3;
+  --pollen: #FFD8B6;     /* apricot */
+  --spring: #FCEFD8;     /* sand, the lightest point */
+  --meadow: #D8C29A;     /* dune: where the page ends */
+  --canopy: #123150;     /* deep blue ink for text and buttons in the light */
+  --linen: #F2EEE4;      /* shell: text on dark */
+  --paper: #FFFCF6;      /* the practice sheets */
+  --linen-dim: color-mix(in srgb, var(--linen) 76%, transparent);
+  --ink-dim: color-mix(in srgb, var(--canopy) 72%, transparent);
+  --when: #0B5A73;       /* small labels on the practice sheets */
+  --err: #A3261A;
+  --ph-leak: url("img/leak-tide.jpg");
 
   --display: "Archivo", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
   --read: "Literata", "Iowan Old Style", Georgia, serif;
@@ -48,7 +57,7 @@
 
 * { box-sizing: border-box; }
 [hidden] { display: none !important; }
-html { scroll-behavior: smooth; background: linear-gradient(to bottom, var(--night) 50%, var(--meadow) 50%); }
+html { scroll-behavior: smooth; background: linear-gradient(in oklab to bottom, var(--night) 50%, var(--meadow) 50%); }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
 body { background: var(--night); color: var(--linen); font: 400 1.125rem/1.65 var(--read); -webkit-font-smoothing: antialiased; }
 .sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
@@ -71,11 +80,11 @@ a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: 1px
   display: inline-flex; align-items: center; justify-content: center;
   font: 600 1rem/1 var(--display); font-stretch: 100%; padding: 1rem 1.5rem; border-radius: 2px; border: 0; cursor: pointer;
   background: var(--sun); color: var(--night); text-decoration: none;
-  box-shadow: 0 0 0 rgba(238, 216, 83, 0); transition: box-shadow .25s ease;
+  box-shadow: 0 0 0 color-mix(in srgb, var(--sun) 0%, transparent); transition: box-shadow .25s ease;
 }
-.btn:hover { box-shadow: 0 0 28px rgba(238, 216, 83, .45); }
+.btn:hover { box-shadow: 0 0 28px color-mix(in srgb, var(--sun) 45%, transparent); }
 .btn.dark { background: var(--night); color: var(--sun); }
-.btn.dark:hover { box-shadow: 0 0 24px rgba(27, 15, 7, .35); }
+.btn.dark:hover { box-shadow: 0 0 24px color-mix(in srgb, var(--night) 35%, transparent); }
 .btn[disabled] { opacity: .55; cursor: default; }
 .textlink { font: 500 1rem/1.4 var(--display); font-stretch: 100%; }
 .linkbtn { background: none; border: 0; padding: 0; font: 500 .9375rem/1.4 var(--display); color: inherit; text-decoration: underline; text-underline-offset: .2em; cursor: pointer; }
@@ -89,7 +98,8 @@ a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: 1px
 .top nav a:hover { color: var(--sun); }
 
 /* Hero */
-.hero { padding-block: clamp(2rem, 5vw, 4rem) clamp(3rem, 6vw, 5rem); display: grid; grid-template-columns: minmax(0, .85fr) minmax(0, 1.3fr); gap: clamp(2rem, 4.5vw, 4rem); align-items: center; }
+/* The hero is words only: no photo */
+.hero { padding-block: clamp(2.5rem, 7vw, 6rem) clamp(3.5rem, 8vw, 6.5rem); display: grid; grid-template-columns: minmax(0, 1fr); }
 .hero h1 { margin: 0; display: grid; gap: .9rem; }
 .hero h1 .squeeze { font-size: clamp(3.5rem, 8vw, 7.25rem); }
 .hero h1 .open { font-size: clamp(1.5rem, 3.4vw, 2.75rem); color: var(--saffron); }
@@ -101,7 +111,7 @@ a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: 1px
 /* Warm light spilling from the window into the room around it */
 .frame-wrap::before {
   content: ""; position: absolute; inset: -18% -14%; z-index: -1; pointer-events: none;
-  background: radial-gradient(ellipse 55% 50% at 58% 45%, rgba(232, 163, 58, .20), rgba(204, 78, 17, .10) 45%, rgba(27, 15, 7, 0) 72%);
+  background: radial-gradient(ellipse 55% 50% at 58% 45%, color-mix(in srgb, var(--saffron) 20%, transparent), color-mix(in srgb, var(--ember) 10%, transparent) 45%, color-mix(in srgb, var(--night) 0%, transparent) 72%);
   filter: blur(8px);
 }
 .frame {
@@ -122,7 +132,7 @@ a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: 1px
 }
 
 /* Overfed */
-.overfed { background: linear-gradient(to bottom, var(--night), var(--oxblood)); }
+.overfed { background: linear-gradient(in oklab to bottom, var(--night), var(--oxblood)); }
 .overfed .statement { font-size: clamp(2.5rem, 6.2vw, 5.25rem); margin: 0; max-width: 15ch; }
 .overfed .statement-body { max-width: 36rem; margin: 1.75rem 0 0; color: var(--linen-dim); }
 .beats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 2.5rem; margin-top: clamp(3rem, 7vw, 5rem); }
@@ -131,26 +141,26 @@ a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: 1px
 .beat p { margin: 0; color: var(--linen-dim); font-size: 1.0625rem; }
 
 /* Practices: handouts printed on sheets that give off light */
-.practices { background: linear-gradient(to bottom, var(--oxblood), var(--blood) 45%, var(--rust)); }
+.practices { background: linear-gradient(in oklab to bottom, var(--foam), var(--foam2)); color: var(--canopy); }
 .practices .head { display: grid; gap: 1rem; max-width: 40rem; margin-bottom: clamp(2.5rem, 6vw, 4rem); }
 .practices h2 { font-size: clamp(2.5rem, 6vw, 4.75rem); margin: 0; }
-.practices .head p { margin: 0; color: var(--linen-dim); }
+.practices .head p { margin: 0; color: var(--ink-dim); }
 .sheets { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(1.5rem, 4vw, 3rem); align-items: start; }
 .sheet {
-  background: var(--linen); color: var(--night); padding: clamp(1.5rem, 3.5vw, 2.5rem); min-width: 0;
-  box-shadow: 0 0 0 1px rgba(232, 163, 58, .35), 0 0 70px -10px rgba(232, 163, 58, .38);
+  background: var(--paper); color: var(--canopy); padding: clamp(1.5rem, 3.5vw, 2.5rem); min-width: 0; border-radius: 3px;
+  box-shadow: 0 1px 0 color-mix(in srgb, var(--canopy) 8%, transparent), 0 24px 60px -28px color-mix(in srgb, var(--oxblood) 45%, transparent);
   display: grid; gap: 1.1rem; align-content: start;
 }
 .sheet h3 { font-size: clamp(2rem, 3.6vw, 2.75rem); margin: 0; }
-.sheet .when { font: 500 .9375rem/1.4 var(--display); font-stretch: 100%; color: #7A2C0E; margin: 0; }
+.sheet .when { font: 500 .9375rem/1.4 var(--display); font-stretch: 100%; color: var(--when); margin: 0; }
 .sheet p { margin: 0; }
 .sheet ul { margin: 0; padding-left: 1.15rem; display: grid; gap: .45rem; }
 .sheet li::marker { color: var(--ember); }
 
-.timer { border-top: 1px solid rgba(27, 15, 7, .18); padding-top: 1.25rem; display: grid; gap: 1rem; }
+.timer { border-top: 1px solid color-mix(in srgb, var(--night) 18%, transparent); padding-top: 1.25rem; display: grid; gap: 1rem; }
 .presets { display: flex; flex-wrap: wrap; gap: .5rem; }
 .preset input { position: absolute; opacity: 0; pointer-events: none; }
-.preset span { display: inline-block; padding: .5rem .9rem; border: 1px solid rgba(27, 15, 7, .35); border-radius: 2px; font: 500 .9375rem/1 var(--display); font-stretch: 100%; cursor: pointer; }
+.preset span { display: inline-block; padding: .5rem .9rem; border: 1px solid color-mix(in srgb, var(--night) 35%, transparent); border-radius: 2px; font: 500 .9375rem/1 var(--display); font-stretch: 100%; cursor: pointer; }
 .preset input:checked + span { background: var(--night); color: var(--sun); border-color: var(--night); }
 .preset input:focus-visible + span { outline: 2px solid var(--night); outline-offset: 2px; }
 .clock { font: 800 clamp(3.25rem, 8vw, 4.75rem)/1 var(--display); font-stretch: 62%; font-variant-numeric: tabular-nums; letter-spacing: -.01em; }
@@ -162,37 +172,38 @@ a { color: inherit; text-underline-offset: .22em; text-decoration-thickness: 1px
 
 /* The flare between darkroom and daylight is a real light leak from the roll */
 .flare {
-  height: clamp(8rem, 18vw, 14rem);
+  /* The light breaking through: a smooth aqua glow from the ocean into sea foam */
+  height: clamp(8rem, 16vw, 13rem);
   background:
-    linear-gradient(to bottom, var(--rust) 0%, rgba(110, 36, 16, 0) 28%, rgba(232, 163, 58, 0) 66%, var(--saffron) 100%),
-    url("img/leak.jpg") center / 100% 100% no-repeat, var(--ember);
+    radial-gradient(ellipse 60% 70% at 70% 45%, color-mix(in oklab, var(--saffron) 55%, transparent), transparent 70%),
+    linear-gradient(in oklab to bottom, var(--oxblood) 0%, color-mix(in oklab, var(--ember) 75%, var(--oxblood)) 38%, color-mix(in oklab, var(--saffron) 70%, var(--foam)) 72%, var(--foam) 100%);
 }
 
 /* Sessions (saffron) */
 .on-light { color: var(--night); }
-.sessions { background: linear-gradient(to bottom, var(--saffron), var(--sun)); }
+.sessions { background: linear-gradient(in oklab to bottom, var(--saffron), var(--sun)); }
 
 /* Stepping outside: the sunlit lawn from the same roll */
 .lawn {
   height: clamp(9rem, 20vw, 16rem);
   background:
-    linear-gradient(to bottom, var(--sun) 0%, rgba(238, 216, 83, 0) 34%, rgba(226, 227, 143, 0) 62%, var(--pollen) 100%),
+    linear-gradient(in oklab to bottom, var(--sun) 0%, color-mix(in srgb, var(--sun) 0%, transparent) 34%, color-mix(in srgb, var(--pollen) 0%, transparent) 62%, var(--pollen) 100%),
     url("img/lawn.jpg") center 70% / cover no-repeat, var(--meadow);
 }
 .on-leaf { color: var(--canopy); }
 .on-leaf :focus-visible { outline-color: var(--canopy); }
 .btn.leaf { background: var(--canopy); color: var(--spring); }
-.btn.leaf:hover { box-shadow: 0 0 26px rgba(44, 50, 16, .35); }
+.btn.leaf:hover { box-shadow: 0 0 26px color-mix(in srgb, var(--canopy) 35%, transparent); }
 .sessions-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: clamp(2rem, 6vw, 5rem); align-items: end; }
 .sessions h2 { font-size: clamp(2.75rem, 7vw, 5.5rem); margin: 0; }
 .formats { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; border-top: 1.5px solid var(--night); }
-.formats li { display: grid; grid-template-columns: minmax(0, 13rem) minmax(0, 1fr); gap: 1rem; padding-block: 1rem; border-bottom: 1px solid rgba(27, 15, 7, .25); }
+.formats li { display: grid; grid-template-columns: minmax(0, 13rem) minmax(0, 1fr); gap: 1rem; padding-block: 1rem; border-bottom: 1px solid color-mix(in srgb, var(--night) 25%, transparent); }
 .formats strong { font: 600 1.1875rem/1.3 var(--read); }
 .formats span { font-size: 1rem; }
 .sessions .note { margin: 1.25rem 0 0; font-size: 1rem; max-width: 34rem; }
 
 /* Request (sun) */
-.request { background: linear-gradient(to bottom, var(--pollen), var(--spring)); }
+.request { background: linear-gradient(in oklab to bottom, var(--pollen), var(--spring)); }
 .request-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr); gap: clamp(2rem, 6vw, 5rem); }
 .request h2 { font-size: clamp(2.75rem, 7vw, 5.5rem); margin: 0 0 1.25rem; }
 .request-intro p { margin: 0; max-width: 24rem; }
@@ -205,24 +216,24 @@ input[type="text"] {
   border: 0; border-bottom: 1.5px solid var(--canopy); border-radius: 0; padding: .2rem 0 .3rem;
 }
 input[type="text"]:focus { outline: none; box-shadow: 0 1.5px 0 var(--canopy); }
-input::placeholder { color: rgba(44, 50, 16, .5); }
+input::placeholder { color: color-mix(in srgb, var(--canopy) 50%, transparent); }
 .chips { display: flex; flex-wrap: wrap; gap: .5rem; }
 .chip input { position: absolute; opacity: 0; pointer-events: none; }
-.chip span { display: inline-block; padding: .55rem .95rem; border: 1px solid rgba(44, 50, 16, .4); border-radius: 2px; font: 500 .9375rem/1 var(--display); font-stretch: 100%; cursor: pointer; }
+.chip span { display: inline-block; padding: .55rem .95rem; border: 1px solid color-mix(in srgb, var(--canopy) 40%, transparent); border-radius: 2px; font: 500 .9375rem/1 var(--display); font-stretch: 100%; cursor: pointer; }
 .chip input:checked + span { background: var(--canopy); color: var(--spring); border-color: var(--canopy); }
 .chip input:focus-visible + span { outline: 2px solid var(--canopy); outline-offset: 2px; }
-.error { font: 600 .9375rem/1.4 var(--display); font-stretch: 100%; color: #8A1E07; margin: 0; }
+.error { font: 600 .9375rem/1.4 var(--display); font-stretch: 100%; color: var(--err); margin: 0; }
 .mine { font: 400 .9375rem/1.4 var(--display); font-stretch: 100%; margin: 0 0 1rem; }
 .result { background: var(--canopy); color: var(--spring); padding: 1.5rem; display: grid; gap: .9rem; }
 .result h3 { font-size: 2rem; margin: 0; color: var(--pollen); }
 .result p { margin: 0; color: var(--linen-dim); font-size: 1rem; }
-.result textarea { width: 100%; min-height: 9rem; font: 400 1rem/1.6 var(--read); color: var(--linen); background: rgba(241, 228, 200, .06); border: 1px solid rgba(241, 228, 200, .2); padding: .75rem; resize: vertical; }
+.result textarea { width: 100%; min-height: 9rem; font: 400 1rem/1.6 var(--read); color: var(--linen); background: color-mix(in srgb, var(--linen) 6%, transparent); border: 1px solid color-mix(in srgb, var(--linen) 20%, transparent); padding: .75rem; resize: vertical; }
 .result .linkbtn { color: var(--linen); }
 .result .r-about { color: var(--spring); }
 .result .r-about a { color: var(--pollen); }
 .brave { display: block; background: var(--canopy); -webkit-mask: url("img/brave.png") no-repeat left center / contain; mask: url("img/brave.png") no-repeat left center / contain; aspect-ratio: 345 / 109; width: 11rem; margin-top: 2.5rem; }
 
-.foot { background: linear-gradient(to bottom, var(--spring), var(--pollen) 25%, var(--meadow) 85%); padding-block: 4rem 5rem; }
+.foot { background: linear-gradient(in oklab to bottom, var(--spring), var(--pollen) 25%, var(--meadow) 85%); padding-block: 4rem 5rem; }
 .foot .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: end; gap: 1.5rem 3rem; }
 .wm-stack { color: var(--canopy); width: 9rem; }
 .foot-copy { display: grid; gap: .5rem; }
@@ -234,7 +245,7 @@ input::placeholder { color: rgba(44, 50, 16, .5); }
 .inbox h2 { font-size: 2.5rem; margin: 0; }
 .inbox .small { font: 400 .9375rem/1.4 var(--display); font-stretch: 100%; margin: .25rem 0 0; }
 .req-list { list-style: none; margin: 1.25rem 0 0; padding: 0; }
-.req { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .35rem 1.5rem; padding-block: 1rem; border-top: 1px solid rgba(27, 15, 7, .25); }
+.req { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .35rem 1.5rem; padding-block: 1rem; border-top: 1px solid color-mix(in srgb, var(--night) 25%, transparent); }
 .req .who { font: 600 1.1875rem/1.3 var(--read); }
 .req .contact { user-select: all; font-family: var(--display); font-stretch: 100%; }
 .req .detail { grid-column: 1 / -1; font-size: 1rem; display: grid; gap: .2rem; }
@@ -254,7 +265,7 @@ input::placeholder { color: rgba(44, 50, 16, .5); }
 .essay-body .practice-name { font-weight: 700; font-style: italic; color: var(--sun); }
 .essay-body blockquote { margin: 2rem 0; padding: 0; font: italic 400 clamp(1.5rem, 3vw, 2.125rem)/1.3 var(--read); color: var(--saffron); }
 .essay .brave { background: var(--saffron); margin-top: 1.5rem; }
-.essay-end { max-width: 38rem; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid rgba(241, 228, 200, .2); display: flex; flex-wrap: wrap; gap: 1rem 1.75rem; align-items: center; }
+.essay-end { max-width: 38rem; margin-top: 3rem; padding-top: 2rem; border-top: 1px solid color-mix(in srgb, var(--linen) 20%, transparent); display: flex; flex-wrap: wrap; gap: 1rem 1.75rem; align-items: center; }
 
 @media (max-width: 900px) {
   .hero, .sessions-grid, .request-grid { grid-template-columns: minmax(0, 1fr); }
@@ -287,25 +298,11 @@ input::placeholder { color: rgba(44, 50, 16, .5); }
 .edit-tools { display: none; gap: 1rem; flex-wrap: wrap; margin: -.4rem 0 1.4rem; }
 .editing .edit-tools { display: flex; }
 .edit-tools button { background: none; border: 0; padding: 0; cursor: pointer; font: 500 .875rem/1.3 var(--display); font-stretch: 100%; color: var(--saffron); text-decoration: underline; text-underline-offset: .2em; }
-.sheet .edit-tools button { color: #7A2C0E; }
+.sheet .edit-tools button { color: var(--when); }
 .editing .frame { pointer-events: none; }
 
 /* Seams: the gradient breaks into staggered columns of neighbouring colours */
-.seam { position: relative; height: clamp(8rem, 16vw, 14rem); overflow: hidden; }
-.seam-cols {
-  position: absolute; inset: -12% -4%; display: flex;
-  filter: blur(clamp(10px, 1.5vw, 22px)) saturate(1.05);
-  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 30%, #000 70%, transparent);
-  mask-image: linear-gradient(to bottom, transparent, #000 30%, #000 70%, transparent);
-}
-.seam i { display: block; flex-basis: 0; min-width: 0; }
-/* A little film grain over the leak, so it reads as light on film rather than a gradient */
-.seam::after {
-  content: ""; position: absolute; inset: 0; pointer-events: none; opacity: .14; mix-blend-mode: overlay;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  -webkit-mask-image: linear-gradient(to bottom, transparent, #000 30%, #000 70%, transparent);
-  mask-image: linear-gradient(to bottom, transparent, #000 30%, #000 70%, transparent);
-}
+.seam { height: clamp(4rem, 9vw, 7rem); }
 #home[hidden] ~ .seam { display: none; }
 
 /* Arrange mode: select a box, drag it, pull its edges */
@@ -331,7 +328,7 @@ input::placeholder { color: rgba(44, 50, 16, .5); }
 .arr-head span, .arr-hint { color: var(--linen-dim); margin: 0; }
 .arr-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .55rem .75rem; }
 .arr-fields label { display: grid; gap: .25rem; color: var(--linen-dim); font-size: .8125rem; }
-.arr-fields input, .arr-fields select { width: 100%; box-sizing: border-box; background: rgba(241, 228, 200, .08); color: var(--linen); border: 1px solid rgba(241, 228, 200, .25); border-radius: 2px; padding: .4rem .5rem; font: 500 .9375rem/1.2 var(--display); font-stretch: 100%; }
+.arr-fields input, .arr-fields select { width: 100%; box-sizing: border-box; background: color-mix(in srgb, var(--linen) 8%, transparent); color: var(--linen); border: 1px solid color-mix(in srgb, var(--linen) 25%, transparent); border-radius: 2px; padding: .4rem .5rem; font: 500 .9375rem/1.2 var(--display); font-stretch: 100%; }
 .arr-fields input:focus, .arr-fields select:focus { outline: 2px solid var(--sun); outline-offset: 1px; }
 .arr-actions { display: flex; flex-wrap: wrap; gap: .5rem 1.25rem; }
 .arr-actions button { background: none; border: 0; padding: 0; cursor: pointer; color: var(--sun); font: 500 .875rem/1.3 var(--display); font-stretch: 100%; text-decoration: underline; text-underline-offset: .2em; }
@@ -347,13 +344,51 @@ main { overflow-x: clip; }
 
 /* Booking: the Cal.com calendar sits in the sunlit request section; its link is set in edit mode */
 .edit-only { display: none; }
-.editing .edit-only { display: grid; gap: .35rem; margin: 0 0 1.25rem; padding: .9rem 1rem; background: rgba(44, 50, 16, .08); font: 500 .9375rem/1.4 var(--display); font-stretch: 100%; }
+.editing .edit-only { display: grid; gap: .35rem; margin: 0 0 1.25rem; padding: .9rem 1rem; background: color-mix(in srgb, var(--canopy) 8%, transparent); font: 500 .9375rem/1.4 var(--display); font-stretch: 100%; }
 .cal-setting small { font: 400 .8125rem/1.4 var(--display); font-stretch: 100%; opacity: .75; }
 .cal-embed { min-height: 36rem; width: 100%; overflow: auto; }
 .cal-loading { margin: 0; padding: 1rem 0; font: 400 .9375rem/1.5 var(--display); font-stretch: 100%; }
 .note-toggle { margin-top: 1.25rem; }
 #note-wrap:not([hidden]) { margin-top: 1.5rem; }
 .booking[hidden] + #note-wrap { margin-top: 0; }
+
+
+/* The hero photo, still: the window on its own, feathered into the page */
+.frame.still { display: block; background: var(--ph-window) center / cover no-repeat; cursor: default; }
+
+/* Light leaks: soft glows down both edges of the screen, in Tide colours, like leaks on the edge of a frame */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  top: -10vh;
+  bottom: -10vh;
+  width: clamp(44px, 7vw, 128px);
+  z-index: 4;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  filter: blur(clamp(10px, 1.4vw, 22px));
+  opacity: .85;
+}
+body::before {
+  left: 0;
+  background:
+    radial-gradient(ellipse 120% 13% at 0% 18%, color-mix(in oklab, var(--saffron) 75%, transparent), color-mix(in oklab, var(--ember) 50%, transparent) 45%, transparent 75%),
+    radial-gradient(ellipse 95% 22% at 0% 50%, color-mix(in oklab, var(--ember) 55%, transparent), color-mix(in oklab, var(--rust) 35%, transparent) 50%, transparent 78%),
+    radial-gradient(ellipse 140% 10% at 0% 82%, color-mix(in oklab, var(--sun) 55%, transparent), color-mix(in oklab, var(--saffron) 40%, transparent) 50%, transparent 80%),
+    linear-gradient(in oklab to right, color-mix(in oklab, var(--ember) 28%, transparent), transparent);
+}
+body::after {
+  right: 0;
+  background:
+    radial-gradient(ellipse 130% 18% at 100% 30%, color-mix(in oklab, var(--saffron) 65%, transparent), color-mix(in oklab, var(--ember) 40%, transparent) 48%, transparent 78%),
+    radial-gradient(ellipse 110% 12% at 100% 64%, color-mix(in oklab, var(--sun) 55%, transparent), color-mix(in oklab, var(--ember) 35%, transparent) 45%, transparent 76%),
+    radial-gradient(ellipse 90% 20% at 100% 92%, color-mix(in oklab, var(--saffron) 45%, transparent), transparent 75%),
+    linear-gradient(in oklab to left, color-mix(in oklab, var(--rust) 30%, transparent), transparent);
+}
+@media (max-width: 560px) {
+  body::before, body::after { width: 22px; opacity: .65; }
+}
 </style>
 <style id="pop-layout">@media (min-width: 901px){
   [data-box="hero.frame"]{translate:60px -32px!important;width:min(788px, calc(100vw - 32px))!important;max-width:none!important;min-height:536px!important}
@@ -371,11 +406,13 @@ main { overflow-x: clip; }
 
 <header class="wrap top" id="top">
   <a class="wm" href="#top" aria-label="Put It On Paper, home" data-box="top.logo" data-box-label="Logo"><svg xmlns="http://www.w3.org/2000/svg" viewBox="-2 -70.60 338.40 187.56" role="img" aria-label="Put It On Paper"><path d="M0.0 0.0V-68.8H23.9Q30.6 -68.8 34.6 -66.0Q38.6 -63.2 40.3 -58.2Q42.0 -53.2 42.0 -46.5Q42.0 -39.5 40.1 -34.25Q38.2 -29.0 34.2 -26.0Q30.200000000000003 -23.0 23.9 -23.0H15.3V0.0ZM15.3 -35.7H20.7Q24.0 -35.7 25.3 -38.550000000000004Q26.6 -41.400000000000006 26.6 -45.900000000000006Q26.6 -49.300000000000004 26.05 -51.550000000000004Q25.5 -53.800000000000004 24.15 -54.900000000000006Q22.8 -56.0 20.4 -56.0H15.3ZM67.80000000000001 1.2000000000000002Q61.400000000000006 1.2000000000000002 56.7 -0.95Q52.00000000000001 -3.1 49.50000000000001 -8.3Q47.00000000000001 -13.5 47.00000000000001 -22.5V-68.8H62.30000000000001V-21.5Q62.30000000000001 -16.8 63.400000000000006 -14.350000000000001Q64.5 -11.9 67.7 -11.9Q71.0 -11.9 72.2 -14.350000000000001Q73.4 -16.8 73.4 -21.5V-68.8H88.70000000000002V-22.5Q88.70000000000002 -13.5 86.20000000000002 -8.3Q83.70000000000002 -3.1 79.05000000000001 -0.95Q74.4 1.2000000000000002 67.80000000000001 1.2000000000000002ZM108.30000000000001 0.0V-55.5H94.20000000000002V-68.8H137.4V-55.5H123.50000000000001V0.0ZM155.3 0.0V-68.8H170.60000000000002V0.0ZM190.70000000000002 0.0V-55.5H176.60000000000002V-68.8H219.8V-55.5H205.90000000000003V0.0ZM260.40000000000003 1.2000000000000002Q252.40000000000003 1.2000000000000002 247.05 -2.45Q241.70000000000002 -6.1000000000000005 239.0 -13.950000000000001Q236.3 -21.8 236.3 -34.4Q236.3 -46.900000000000006 239.0 -54.75Q241.70000000000002 -62.6 247.05 -66.3Q252.40000000000003 -70.0 260.40000000000003 -70.0Q268.6 -70.0 273.95000000000005 -66.3Q279.3 -62.6 281.95000000000005 -54.75Q284.6 -46.900000000000006 284.6 -34.4Q284.6 -21.8 281.95000000000005 -13.950000000000001Q279.3 -6.1000000000000005 273.95000000000005 -2.45Q268.6 1.2000000000000002 260.40000000000003 1.2000000000000002ZM260.40000000000003 -11.9Q263.0 -11.9 264.6 -13.0Q266.20000000000005 -14.100000000000001 267.20000000000005 -16.25Q268.20000000000005 -18.400000000000002 268.6 -21.5Q269.0 -24.6 269.0 -28.700000000000003V-40.1Q269.0 -44.2 268.6 -47.300000000000004Q268.20000000000005 -50.400000000000006 267.20000000000005 -52.5Q266.20000000000005 -54.6 264.6 -55.7Q263.0 -56.800000000000004 260.40000000000003 -56.800000000000004Q257.90000000000003 -56.800000000000004 256.25 -55.7Q254.60000000000002 -54.6 253.65000000000003 -52.5Q252.70000000000002 -50.400000000000006 252.25 -47.300000000000004Q251.8 -44.2 251.8 -40.1V-28.700000000000003Q251.8 -24.6 252.25 -21.5Q252.70000000000002 -18.400000000000002 253.65000000000003 -16.25Q254.60000000000002 -14.100000000000001 256.25 -13.0Q257.90000000000003 -11.9 260.40000000000003 -11.9ZM292.40000000000003 0.0V-68.8H307.0L317.2 -41.0Q317.5 -40.1 317.9 -38.95Q318.3 -37.800000000000004 318.70000000000005 -36.5Q319.1 -35.2 319.40000000000003 -33.9H319.90000000000003Q319.8 -35.800000000000004 319.8 -37.650000000000006Q319.8 -39.5 319.8 -41.0V-68.8H334.40000000000003V0.0H319.8L309.6 -28.0Q309.1 -29.6 308.5 -31.650000000000002Q307.90000000000003 -33.7 307.40000000000003 -35.9H306.90000000000003Q306.90000000000003 -34.1 306.90000000000003 -32.0Q306.90000000000003 -29.900000000000002 306.90000000000003 -28.0V0.0Z" fill="currentColor"/><path d="M0.0 114.96052211249463V16.17683812795191H34.315843709746666Q43.93576642335766 16.17683812795191 49.67900386431945 20.19710433662516Q55.42224130528123 24.217370545298408 57.86311721768999 31.39641734650064Q60.303993130098746 38.575464147702874 60.303993130098746 48.195386861313864Q60.303993130098746 58.24605238299699 57.5759553456419 65.78405152425934Q54.84791756118505 73.32205066552169 49.104680120223264 77.62947874624302Q43.36144267926148 81.93690682696436 34.315843709746666 81.93690682696436H21.96788321167883V114.96052211249463ZM21.96788321167883 63.70212795191069H29.721253756977244Q34.45942464577071 63.70212795191069 36.32597681408329 59.61007127522542Q38.19252898239587 55.51801459854015 38.19252898239587 49.05687247745814Q38.19252898239587 44.175120652640615 37.40283383426363 40.94454959209961Q36.613138686131386 37.71397853155861 34.67479604980678 36.13458823529412Q32.736453413482174 34.555197939029625 29.290510948905112 34.555197939029625H21.96788321167883ZM57.28879347359381 114.96052211249463 78.39519106912837 16.17683812795191H108.26002576212966L129.51000429368827 114.96052211249463H106.39347359381708L103.09111206526406 96.72574323744095H82.98978102189781L79.68741949334478 114.96052211249463ZM85.71781880635466 78.34738342636325H100.36307428080721L95.91206526406182 52.072072133963076Q95.76848432803777 50.92342464577072 95.48132245598968 49.05687247745814Q95.1941605839416 47.19032030914556 94.90699871189351 44.821234864748824Q94.61983683984542 42.452149420352086 94.2608844997853 40.15485444396737Q93.90193215972519 37.85755946758266 93.61477028767712 35.84742636324603H92.46612279948475Q92.17896092743666 38.288302275654786 91.82000858737655 41.303501932159726Q91.46105624731644 44.318701588664666 91.03031343924431 47.190320309145555Q90.59957063117217 50.061939029626444 90.31240875912408 52.072072133963076ZM136.1147273507943 114.96052211249463V16.17683812795191H170.43057106054098Q180.050493774152 16.17683812795191 185.79373121511378 20.19710433662516Q191.53696865607554 24.217370545298408 193.9778445684843 31.39641734650064Q196.41872048089306 38.575464147702874 196.41872048089306 48.195386861313864Q196.41872048089306 58.24605238299699 193.69068269643623 65.78405152425934Q190.96264491197937 73.32205066552169 185.21940747101758 77.62947874624302Q179.4761700300558 81.93690682696436 170.43057106054098 81.93690682696436H158.08261056247315V114.96052211249463ZM158.08261056247315 63.70212795191069H165.83598110777157Q170.57415199656504 63.70212795191069 172.44070416487762 59.61007127522542Q174.3072563331902 55.51801459854015 174.3072563331902 49.05687247745814Q174.3072563331902 44.175120652640615 173.51756118505796 40.94454959209961Q172.72786603692572 37.71397853155861 170.78952340060113 36.13458823529412Q168.8511807642765 34.555197939029625 165.40523829969942 34.555197939029625H158.08261056247315ZM204.31567196221553 114.96052211249463V16.17683812795191H259.1635895234006V35.1295216831258H226.28355517389437V55.374433662516104H254.13825676255902V74.32711721768999H226.28355517389437V96.00783855732074H259.73791326749677V114.96052211249463ZM269.7885787891799 114.96052211249463V16.17683812795191H303.09935594675824Q314.0115070845856 16.17683812795191 320.1136968656075 20.12531386861314Q326.21588664662943 24.07378960927437 328.65676255903816 30.750303134392446Q331.09763847144694 37.42681665951052 331.09763847144694 45.61093001288107Q331.09763847144694 54.225786174323744 329.01571489909827 61.26125203950193Q326.93379132674966 68.29671790468012 321.62129669386 72.60414598540146L334.4 114.96052211249463H311.7142121082009L302.0942893945899 79.92677372262773H291.75646200085873V114.96052211249463ZM291.75646200085873 62.1227376556462H300.0841562902533Q305.2530699871189 62.1227376556462 307.1914126234435 58.03068097896093Q309.1297552597681 53.938624302275656 309.1297552597681 47.76464405324174Q309.1297552597681 43.60079690854444 308.26826964362385 40.657387720051524Q307.4067840274796 37.71397853155861 305.468441391155 36.13458823529412Q303.53009875483036 34.555197939029625 299.7969944182052 34.555197939029625H291.75646200085873Z" fill="currentColor"/></svg></a>
-  <nav aria-label="Sections">
-    <a href="#instagram-brain">Instagram brain</a>
-    <a href="#practices">Practices</a>
-    <a class="go" href="#request">Request a session</a>
-  </nav>
+  <div class="top-right">
+    <nav aria-label="Sections">
+      <a href="#instagram-brain">Instagram brain</a>
+      <a href="#practices">Practices</a>
+      <a class="go" href="#request">Request a session</a>
+    </nav>
+  </div>
 </header>
 
 <main id="home">
@@ -391,12 +428,9 @@ main { overflow-x: clip; }
         <a class="textlink" href="#instagram-brain">Read the essay on Instagram brain</a>
       </div>
     </div>
-    <div class="frame-wrap" data-box="hero.frame" data-box-label="Film frame">
-      <button class="frame" id="frame" type="button" aria-label="Strips of ten film frames scroll like a feed, then settle into one image: a window open onto a sunset. Press to scroll them again."></button>
-    </div>
   </section>
 
-  <div class="seam" aria-hidden="true" style="background:var(--night)"><div class="seam-cols"><i style="flex-grow:4;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 19.9%,var(--rust) 38.6%,var(--rust) 63.5%,var(--night) 82.2%,var(--night) 100%)"></i><i style="flex-grow:3;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 20.1%,var(--rust) 32.5%,var(--rust) 49.0%,var(--night) 61.3%,var(--night) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 17.5%,#3B1A0B 34.7%,#3B1A0B 57.6%,var(--night) 74.7%,var(--night) 100%)"></i><i style="flex-grow:1;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 24.1%,var(--oxblood) 43.7%,var(--oxblood) 69.8%,var(--night) 89.4%,var(--night) 100%)"></i><i style="flex-grow:3;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 12.3%,#2A1309 28.4%,#2A1309 50.0%,var(--night) 66.1%,var(--night) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 7.8%,var(--rust) 26.4%,var(--rust) 51.1%,var(--night) 69.7%,var(--night) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 29.3%,#3B1A0B 50.4%,#3B1A0B 78.5%,var(--night) 98.0%,var(--night) 100%)"></i><i style="flex-grow:3;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 22.7%,var(--oxblood) 37.1%,var(--oxblood) 56.3%,var(--night) 70.8%,var(--night) 100%)"></i><i style="flex-grow:3;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 33.3%,var(--oxblood) 48.3%,var(--oxblood) 68.2%,var(--night) 83.2%,var(--night) 100%)"></i><i style="flex-grow:4;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 14.4%,var(--rust) 32.5%,var(--rust) 56.5%,var(--night) 74.6%,var(--night) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 8.3%,#3B1A0B 29.9%,#3B1A0B 58.7%,var(--night) 80.3%,var(--night) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 4.8%,#3B1A0B 17.1%,#3B1A0B 33.5%,var(--night) 45.8%,var(--night) 100%)"></i><i style="flex-grow:3;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 19.8%,var(--rust) 34.4%,var(--rust) 54.0%,var(--night) 68.6%,var(--night) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 6.7%,var(--oxblood) 25.8%,var(--oxblood) 51.3%,var(--night) 70.4%,var(--night) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--night) 0%,var(--night) 23.0%,#2A1309 46.3%,#2A1309 77.2%,var(--night) 98.0%,var(--night) 100%)"></i></div></div>
+  
 
   <section class="band overfed" aria-labelledby="overfed-h">
     <div class="wrap">
@@ -412,7 +446,7 @@ Three meals a day, and maybe some snacks. Well, for some of us the snacks add up
     </div>
   </section>
 
-  <div class="seam" aria-hidden="true" style="background:var(--oxblood)"><div class="seam-cols"><i style="flex-grow:2;background:linear-gradient(to bottom,var(--oxblood) 0%,var(--oxblood) 6.0%,var(--rust) 25.0%,var(--rust) 50.3%,var(--oxblood) 69.3%,var(--oxblood) 100%)"></i><i style="flex-grow:4;background:linear-gradient(to bottom,var(--oxblood) 0%,var(--oxblood) 10.4%,#7E2B10 28.0%,#7E2B10 51.4%,var(--oxblood) 68.9%,var(--oxblood) 100%)"></i><i style="flex-grow:1;background:linear-gradient(to bottom,var(--oxblood) 0%,var(--oxblood) 4.3%,var(--blood) 24.2%,var(--blood) 50.7%,var(--oxblood) 70.6%,var(--oxblood) 100%)"></i><i style="flex-grow:3;background:linear-gradient(to bottom,var(--oxblood) 0%,var(--oxblood) 33.6%,var(--rust) 55.0%,var(--rust) 83.7%,var(--oxblood) 98.0%,var(--oxblood) 100%)"></i><i style="flex-grow:4;background:linear-gradient(to bottom,var(--oxblood) 0%,var(--oxblood) 5.7%,#5A1709 22.5%,#5A1709 44.9%,var(--oxblood) 61.8%,var(--oxblood) 100%)"></i><i style="flex-grow:1;background:linear-gradient(to bottom,var(--oxblood) 0%,var(--oxblood) 10.4%,var(--blood) 31.9%,var(--blood) 60.7%,var(--oxblood) 82.2%,var(--oxblood) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--oxblood) 0%,var(--oxblood) 27.5%,#5A1709 40.8%,#5A1709 58.5%,var(--oxblood) 71.8%,var(--oxblood) 100%)"></i><i style="flex-grow:4;background:linear-gradient(to bottom,var(--oxblood) 0%,var(--oxblood) 19.3%,#7E2B10 42.0%,#7E2B10 72.3%,var(--oxblood) 95.1%,var(--oxblood) 100%)"></i><i style="flex-grow:3;background:linear-gradient(to bottom,var(--oxblood) 0%,var(--oxblood) 31.4%,#7E2B10 50.5%,#7E2B10 76.1%,var(--oxblood) 95.2%,var(--oxblood) 100%)"></i><i style="flex-grow:4;background:linear-gradient(to bottom,var(--oxblood) 0%,var(--oxblood) 10.5%,#5A1709 25.6%,#5A1709 45.8%,var(--oxblood) 61.0%,var(--oxblood) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--oxblood) 0%,var(--oxblood) 32.6%,#5A1709 53.7%,#5A1709 81.8%,var(--oxblood) 98.0%,var(--oxblood) 100%)"></i><i style="flex-grow:4;background:linear-gradient(to bottom,var(--oxblood) 0%,var(--oxblood) 31.2%,var(--rust) 45.1%,var(--rust) 63.5%,var(--oxblood) 77.4%,var(--oxblood) 100%)"></i></div></div>
+  <div class="flare" role="img" aria-label="A light leak from the same roll of film, deep blue turning to aqua and yellow"></div>
 
   <section class="band practices" id="practices" aria-labelledby="practices-h">
     <div class="wrap">
@@ -462,7 +496,7 @@ Three meals a day, and maybe some snacks. Well, for some of us the snacks add up
     </div>
   </section>
 
-  <div class="flare" role="img" aria-label="A light leak from the same roll of film, deep red turning to yellow"></div>
+  <div class="seam light" aria-hidden="true" style="background:linear-gradient(in oklab to bottom,var(--foam2),var(--saffron))"></div>
 
   <section class="band sessions on-light" aria-labelledby="sessions-h">
     <div class="wrap sessions-grid">
@@ -478,7 +512,7 @@ Three meals a day, and maybe some snacks. Well, for some of us the snacks add up
     </div>
   </section>
 
-  <div class="seam light" aria-hidden="true" style="background:var(--sun)"><div class="seam-cols"><i style="flex-grow:1;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 33.9%,#F4C95A 45.6%,#F4C95A 61.2%,var(--sun) 73.0%,var(--sun) 100%)"></i><i style="flex-grow:3;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 21.6%,#D8D879 35.2%,#D8D879 53.2%,var(--sun) 66.7%,var(--sun) 100%)"></i><i style="flex-grow:1;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 18.9%,#D8D879 37.5%,#D8D879 62.3%,var(--sun) 80.9%,var(--sun) 100%)"></i><i style="flex-grow:4;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 26.3%,#D8D879 48.9%,#D8D879 78.9%,var(--sun) 98.0%,var(--sun) 100%)"></i><i style="flex-grow:1;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 10.8%,#D8D879 29.4%,#D8D879 54.2%,var(--sun) 72.8%,var(--sun) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 18.2%,#F4C95A 31.5%,#F4C95A 49.2%,var(--sun) 62.5%,var(--sun) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 26.6%,#F4C95A 41.8%,#F4C95A 62.0%,var(--sun) 77.1%,var(--sun) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 21.4%,var(--pollen) 44.4%,var(--pollen) 75.2%,var(--sun) 98.0%,var(--sun) 100%)"></i><i style="flex-grow:4;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 19.7%,#D8D879 32.7%,#D8D879 49.9%,var(--sun) 62.9%,var(--sun) 100%)"></i><i style="flex-grow:3;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 7.8%,#F4C95A 21.9%,#F4C95A 40.7%,var(--sun) 54.7%,var(--sun) 100%)"></i><i style="flex-grow:1;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 13.5%,var(--saffron) 35.1%,var(--saffron) 64.0%,var(--sun) 85.7%,var(--sun) 100%)"></i><i style="flex-grow:4;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 24.1%,#F4C95A 35.7%,#F4C95A 51.3%,var(--sun) 63.0%,var(--sun) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 31.1%,var(--pollen) 43.1%,var(--pollen) 59.1%,var(--sun) 71.1%,var(--sun) 100%)"></i><i style="flex-grow:4;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 30.7%,var(--pollen) 48.2%,var(--pollen) 71.6%,var(--sun) 89.1%,var(--sun) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--sun) 0%,var(--sun) 26.3%,var(--pollen) 43.6%,var(--pollen) 66.7%,var(--sun) 84.0%,var(--sun) 100%)"></i></div></div>
+  
 
   <div class="lawn" role="img" aria-label="Sunlit grass from the same roll of film"></div>
 
@@ -592,7 +626,7 @@ Three meals a day, and maybe some snacks. Well, for some of us the snacks add up
   </div>
 </article>
 
-<div class="seam light" aria-hidden="true" style="background:var(--spring)"><div class="seam-cols"><i style="flex-grow:1;background:linear-gradient(to bottom,var(--spring) 0%,var(--spring) 28.6%,#E9E6A4 40.8%,#E9E6A4 56.9%,var(--spring) 69.1%,var(--spring) 100%)"></i><i style="flex-grow:3;background:linear-gradient(to bottom,var(--spring) 0%,var(--spring) 20.0%,#E9E6A4 32.3%,#E9E6A4 48.7%,var(--spring) 60.9%,var(--spring) 100%)"></i><i style="flex-grow:3;background:linear-gradient(to bottom,var(--spring) 0%,var(--spring) 32.6%,#E9E6A4 51.8%,#E9E6A4 77.3%,var(--spring) 96.5%,var(--spring) 100%)"></i><i style="flex-grow:1;background:linear-gradient(to bottom,var(--spring) 0%,var(--spring) 28.9%,var(--sun) 52.1%,var(--sun) 83.0%,var(--spring) 98.0%,var(--spring) 100%)"></i><i style="flex-grow:2;background:linear-gradient(to bottom,var(--spring) 0%,var(--spring) 28.9%,var(--sun) 41.4%,var(--sun) 58.0%,var(--spring) 70.5%,var(--spring) 100%)"></i><i style="flex-grow:1;background:linear-gradient(to bottom,var(--spring) 0%,var(--spring) 32.4%,#E9E6A4 53.4%,#E9E6A4 81.3%,var(--spring) 98.0%,var(--spring) 100%)"></i><i style="flex-grow:1;background:linear-gradient(to bottom,var(--spring) 0%,var(--spring) 24.4%,var(--pollen) 41.0%,var(--pollen) 63.1%,var(--spring) 79.7%,var(--spring) 100%)"></i><i style="flex-grow:4;background:linear-gradient(to bottom,var(--spring) 0%,var(--spring) 23.2%,var(--pollen) 36.7%,var(--pollen) 54.7%,var(--spring) 68.2%,var(--spring) 100%)"></i><i style="flex-grow:1;background:linear-gradient(to bottom,var(--spring) 0%,var(--spring) 12.9%,#E9E6A4 33.9%,#E9E6A4 62.0%,var(--spring) 83.0%,var(--spring) 100%)"></i><i style="flex-grow:1;background:linear-gradient(to bottom,var(--spring) 0%,var(--spring) 32.6%,#D7DB86 55.2%,#D7DB86 85.5%,var(--spring) 98.0%,var(--spring) 100%)"></i><i style="flex-grow:1;background:linear-gradient(to bottom,var(--spring) 0%,var(--spring) 10.6%,#E9E6A4 25.1%,#E9E6A4 44.3%,var(--spring) 58.8%,var(--spring) 100%)"></i><i style="flex-grow:4;background:linear-gradient(to bottom,var(--spring) 0%,var(--spring) 28.4%,#E9E6A4 46.4%,#E9E6A4 70.4%,var(--spring) 88.3%,var(--spring) 100%)"></i></div></div>
+
 
 <footer class="foot on-leaf" id="foot">
   <div class="wrap">
@@ -640,11 +674,11 @@ Three meals a day, and maybe some snacks. Well, for some of us the snacks add up
   <button class="btn" id="e-save" type="button" hidden>Save and publish</button>
   <button class="btn" id="e-start" type="button">Edit page</button>
 </div>
-<script type="application/json" id="pop-content">{"hero":{"line1":"A Practice for Clear Thinking.","line2":"Tap into the mental and physical benefits of writing.","lead":"","cta":"Request a session","essayLink":"Read the essay on Instagram brain"},"overfed":{"statement":"Information metabolism.","body":"I love learning. I want to know so much about so many things. We have a limit to how much we can take in at one time though. I see it just like our diets, of which there are many. A unifying factor in health and nutrition is that if you eat too much of anything, you'll feel too full, and eventually get fat.\n\nThree meals a day, and maybe some snacks. Well, for some of us the snacks add up to eight hours of short form videos about an abundance of topics. We take in far more than we can digest, and it shows up as restlessness, fog, indecision, regurgitation of information, and trouble focusing on what you care about.","beats":[{"title":"There's no shortcut","text":"Faster answers and more automation won't fix it. You're one person with one brain, and like any AI, you only have so much room to hold things in."},{"title":"Switching has a cost","text":"Jumping topics every few seconds wears down memory, especially when nothing you take in ever comes back out as an idea of your own."},{"title":"An invisible muscle","text":"We train what we can see: bigger arms, bigger meals, more entertainment. This trains what nobody sees: attention, recall, and holding one thought long enough to use it."}]},"practices":{"title":"Two practices to start with.","intro":"You need a pen, some paper and a few minutes. The screen's only job is to hand you over to the page.","p1":{"when":"Any time a clip comes back to you","title":"Catch a fragment","intro":"When something you watched pops back into your head, stop and write it down before it drifts off again.","items":["What is it: a face, a phrase, a sound, a joke?","Who was in it, and where did it come from?","What was it about, and what does it say?","Why might it be showing up right now?"],"outro":"Keep the pages together. Over a week, the fragments start to show you a pattern."},"p2":{"when":"Once a day, on purpose","title":"Scroll, then recall","intro":"Pick a time limit and scroll as you normally would. When the timer rings, put the phone face down and write down everything you can remember.","recallTitle":"Phone face down. Now write, by hand:","recall":["Everything you saw, in order, as far as you can remember.","One video in detail: who was in it, what it looked like, what was said.","Which one is still with you, and why it stuck.","How you feel now compared with before you started."]}},"sessions":{"title":"Practise it with someone.","formats":[{"name":"One-on-one","text":"An hour with phones away, guided writing, and one next step to take home."},{"name":"Workshops","text":"Two hours, four to eight people, one theme, everyone writing at once."},{"name":"Retreats","text":"A day or a weekend away from screens. The first is being planned now."}],"note":"In person or by video. Founding rates for the first clients."},"request":{"title":"Find your next step.","intro":"Tell me how to reach you, and I'll reply within two days to find a time."},"essay":{"title":"Instagram brain.","dek":"Why the clips you forgot keep coming back, and what to do with them.","byline":"By Solomon. A first draft, November 2026.","blocks":[{"t":"p","text":"Lately I've noticed something strange. I'll be washing dishes, or halfway through a sentence, and a face appears in my head. Someone I don't know, mid-laugh, from a video I watched days ago and haven't thought about since. Then a phrase. Then a dance move, a kitchen, a punchline without its joke."},{"t":"p","text":"I've started calling this Instagram brain. Short videos leave fragments behind: faces, actions, phrases, intentions. They get stamped in like slides on a carousel, and they come back on their own schedule, out of context, whenever they like."},{"t":"h2","text":"Three meals and a lot of snacks"},{"t":"p","text":"Think about how we eat information. Most of us have our three square meals: the news in the morning, work all day, something to watch at night. Then we snack. A few minutes in a queue, a few more in bed, a few more that turn into an hour. For some people the snacks add up to eight hours a day."},{"t":"p","text":"Nobody would eat like that and expect to feel good. With information we do exactly that, then wonder why we feel overloaded and foggy and can't settle on one thing. The input never stops long enough for anything to be digested."},{"t":"h2","text":"Fragments with no form"},{"t":"p","text":"Here's what interests me about the fragments. Something in each of those videos clearly clicked, or it wouldn't still be in there. A joke landed. Something scared me. Something felt relevant to my own life. But I never went back to it on purpose. It just resurfaces when I didn't ask for it, as humour, horror, insight or noise."},{"t":"p","text":"That's the problem. The fragments have no form. They arrive without context and leave without depth, and depth is what we need to be good at anything: our work, our relationships, our own ideas."},{"t":"p","text":"I don't think watching this stuff is bad. It's fun, and some of it is brilliant. But when it never stops, it becomes background noise, and background noise makes focusing hard."},{"t":"quote","text":"You're one human with one brain, and you only have so much room."},{"t":"h2","text":"One brain, one context window"},{"t":"p","text":"I'm writing this in the age of AI, and the comparison keeps coming up. I dictated the notes for this essay to an AI, which is amazing and a little unsettling. Even the AI has limits. Give it a second idea while it's still working on the first, and it struggles to switch and combine them. It only has so much context to work with."},{"t":"p","text":"So do we. Switching topics every fifteen seconds has a cost, especially when nothing you take in ever comes back out as something you made yourself. You end up with an information gut: full, but not fed."},{"t":"p","text":"There's no shortcut here. More automation and faster answers won't fix it. What fixes it is slower and less glamorous."},{"t":"h2","text":"Training the invisible muscle"},{"t":"p","text":"We like results we can see. Big arms, a big steak, dessert, a show that makes us laugh right now. We overdo the things that pay off immediately, while the small, invisible things that shape how we think go untrained."},{"t":"p","text":"Writing by hand trains one of those invisible muscles. It's slow enough that you have to choose each word. It makes you recall instead of just receive. And it turns a fragment into a sentence, which is the first step to turning it into a thought."},{"t":"h2","text":"Two practices to try"},{"t":"p","lead":"Catch a fragment.","text":"Next time a clip pops back into your head, stop and write it down. What is it? Who was in it? Where did it come from, and what was it about? Then ask why it's showing up now, and let it tell you what it's signalling."},{"t":"p","lead":"Scroll, then recall.","text":"Set a timer and scroll on purpose. When it rings, put your phone face down and write down everything you remember. Not just the headlines, but what it looked like, who was in it and how it was made. It's surprising how little stays, and what does."},{"t":"p","text":"I believe this kind of conscious attention to what goes into us changes how well we function. That's why I'm starting Put It On Paper now, for myself as much as for anyone."}]},"footer":{"text":"A handwriting practice for digesting what you take in. Coaching, not therapy or medical care."},"booking":{"calLink":"","noteLink":"Prefer to write first? Send a note instead."},"layout":{"wide":{"hero.line1":{"w":548},"hero.line2":{"w":544},"top.logo":{"h":24},"hero.frame":{"x":60,"y":-32,"w":788,"h":536},"request.form":{"x":0,"y":0}},"narrow":{}}}</script>
+<script type="application/json" id="pop-content">{"hero":{"line1":"A Practice for Clear Thinking.","line2":"Tap into the mental and physical benefits of writing.","lead":"","cta":"Request a session","essayLink":"Read the essay on Instagram brain"},"overfed":{"statement":"Information metabolism.","body":"I love learning. I want to know so much about so many things. We have a limit to how much we can take in at one time though. I see it just like our diets, of which there are many. A unifying factor in health and nutrition is that if you eat too much of anything, you'll feel too full, and eventually get fat.\n\nThree meals a day, and maybe some snacks. Well, for some of us the snacks add up to eight hours of short form videos about an abundance of topics. We take in far more than we can digest, and it shows up as restlessness, fog, indecision, regurgitation of information, and trouble focusing on what you care about.","beats":[{"title":"There's no shortcut","text":"Faster answers and more automation won't fix it. You're one person with one brain, and like any AI, you only have so much room to hold things in."},{"title":"Switching has a cost","text":"Jumping topics every few seconds wears down memory, especially when nothing you take in ever comes back out as an idea of your own."},{"title":"An invisible muscle","text":"We train what we can see: bigger arms, bigger meals, more entertainment. This trains what nobody sees: attention, recall, and holding one thought long enough to use it."}]},"practices":{"title":"Two practices to start with.","intro":"You need a pen, some paper and a few minutes. The screen's only job is to hand you over to the page.","p1":{"when":"Any time a clip comes back to you","title":"Catch a fragment","intro":"When something you watched pops back into your head, stop and write it down before it drifts off again.","items":["What is it: a face, a phrase, a sound, a joke?","Who was in it, and where did it come from?","What was it about, and what does it say?","Why might it be showing up right now?"],"outro":"Keep the pages together. Over a week, the fragments start to show you a pattern."},"p2":{"when":"Once a day, on purpose","title":"Scroll, then recall","intro":"Pick a time limit and scroll as you normally would. When the timer rings, put the phone face down and write down everything you can remember.","recallTitle":"Phone face down. Now write, by hand:","recall":["Everything you saw, in order, as far as you can remember.","One video in detail: who was in it, what it looked like, what was said.","Which one is still with you, and why it stuck.","How you feel now compared with before you started."]}},"sessions":{"title":"Practise it with someone.","formats":[{"name":"One-on-one","text":"An hour with phones away, guided writing, and one next step to take home."},{"name":"Workshops","text":"Two hours, four to eight people, one theme, everyone writing at once."},{"name":"Retreats","text":"A day or a weekend away from screens. The first is being planned now."}],"note":"In person or by video. Founding rates for the first clients."},"request":{"title":"Find your next step.","intro":"Tell me how to reach you, and I'll reply within two days to find a time."},"essay":{"title":"Instagram brain.","dek":"Why the clips you forgot keep coming back, and what to do with them.","byline":"By Solomon. A first draft, November 2026.","blocks":[{"t":"p","text":"Lately I've noticed something strange. I'll be washing dishes, or halfway through a sentence, and a face appears in my head. Someone I don't know, mid-laugh, from a video I watched days ago and haven't thought about since. Then a phrase. Then a dance move, a kitchen, a punchline without its joke."},{"t":"p","text":"I've started calling this Instagram brain. Short videos leave fragments behind: faces, actions, phrases, intentions. They get stamped in like slides on a carousel, and they come back on their own schedule, out of context, whenever they like."},{"t":"h2","text":"Three meals and a lot of snacks"},{"t":"p","text":"Think about how we eat information. Most of us have our three square meals: the news in the morning, work all day, something to watch at night. Then we snack. A few minutes in a queue, a few more in bed, a few more that turn into an hour. For some people the snacks add up to eight hours a day."},{"t":"p","text":"Nobody would eat like that and expect to feel good. With information we do exactly that, then wonder why we feel overloaded and foggy and can't settle on one thing. The input never stops long enough for anything to be digested."},{"t":"h2","text":"Fragments with no form"},{"t":"p","text":"Here's what interests me about the fragments. Something in each of those videos clearly clicked, or it wouldn't still be in there. A joke landed. Something scared me. Something felt relevant to my own life. But I never went back to it on purpose. It just resurfaces when I didn't ask for it, as humour, horror, insight or noise."},{"t":"p","text":"That's the problem. The fragments have no form. They arrive without context and leave without depth, and depth is what we need to be good at anything: our work, our relationships, our own ideas."},{"t":"p","text":"I don't think watching this stuff is bad. It's fun, and some of it is brilliant. But when it never stops, it becomes background noise, and background noise makes focusing hard."},{"t":"quote","text":"You're one human with one brain, and you only have so much room."},{"t":"h2","text":"One brain, one context window"},{"t":"p","text":"I'm writing this in the age of AI, and the comparison keeps coming up. I dictated the notes for this essay to an AI, which is amazing and a little unsettling. Even the AI has limits. Give it a second idea while it's still working on the first, and it struggles to switch and combine them. It only has so much context to work with."},{"t":"p","text":"So do we. Switching topics every fifteen seconds has a cost, especially when nothing you take in ever comes back out as something you made yourself. You end up with an information gut: full, but not fed."},{"t":"p","text":"There's no shortcut here. More automation and faster answers won't fix it. What fixes it is slower and less glamorous."},{"t":"h2","text":"Training the invisible muscle"},{"t":"p","text":"We like results we can see. Big arms, a big steak, dessert, a show that makes us laugh right now. We overdo the things that pay off immediately, while the small, invisible things that shape how we think go untrained."},{"t":"p","text":"Writing by hand trains one of those invisible muscles. It's slow enough that you have to choose each word. It makes you recall instead of just receive. And it turns a fragment into a sentence, which is the first step to turning it into a thought."},{"t":"h2","text":"Two practices to try"},{"t":"p","lead":"Catch a fragment.","text":"Next time a clip pops back into your head, stop and write it down. What is it? Who was in it? Where did it come from, and what was it about? Then ask why it's showing up now, and let it tell you what it's signalling."},{"t":"p","lead":"Scroll, then recall.","text":"Set a timer and scroll on purpose. When it rings, put your phone face down and write down everything you remember. Not just the headlines, but what it looked like, who was in it and how it was made. It's surprising how little stays, and what does."},{"t":"p","text":"I believe this kind of conscious attention to what goes into us changes how well we function. That's why I'm starting Put It On Paper now, for myself as much as for anyone."}]},"footer":{"text":"A handwriting practice for digesting what you take in. Coaching, not therapy or medical care."},"booking":{"calLink":"","noteLink":"Prefer to write first? Send a note instead."},"layout":{"wide":{"hero.line1":{"w":548},"hero.line2":{"w":544},"top.logo":{"h":24},"hero.frame":{"x":60,"y":-32,"w":788,"h":536},"request.form":{"x":0,"y":0}},"narrow":{}},"scheme":"film"}</script>
 <script id="pop-render">/* The page's canonical source: every word and every arranged box lives in the content block, and this renders it.
    The build runs buildBody() once to make the published file; the edit mode runs it again on Save. */
 var POP = (function () {
-  var BUILD = "2026-11-05T12:52:12";
+  var BUILD = "2026-11-07T18:25:32";
   var SKELETON = '<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>';
   /* On solgutt.com the page is its own document with the site's language; on claude.ai the viewer's wrapper is matched exactly. */
   var SITE_SKELETON = '<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;padding:0}img{max-width:100%}[hidden]{display:none!important}</style></head><body>';
@@ -699,14 +733,11 @@ var POP = (function () {
       return ((t ^ t >>> 14) >>> 0) / 4294967296;
     };
   }
+  /* Where the page changes colour it fades smoothly (interpolated in OKLab, so no banding);
+     where it doesn't, nothing is drawn. The light leaks live down the screen edges instead. */
   function seam(seed, from, to, tints, cls) {
-    var r = rng(seed), cols = [], n = 12 + Math.floor(r() * 6);
-    for (var i = 0; i < n; i++) {
-      var start = 4 + r() * 30, len = 38 + r() * 40, end = Math.min(98, start + len), mid = tints[Math.floor(r() * tints.length)];
-      var g = "linear-gradient(to bottom," + from + " 0%," + from + " " + start.toFixed(1) + "%," + mid + " " + (start + len * .3).toFixed(1) + "%," + mid + " " + (start + len * .7).toFixed(1) + "%," + to + " " + end.toFixed(1) + "%," + to + " 100%)";
-      cols.push('<i style="flex-grow:' + (1 + Math.floor(r() * 4)) + ";background:" + g + '"></i>');
-    }
-    return '<div class="seam' + (cls ? " " + cls : "") + '" aria-hidden="true" style="background:' + from + '"><div class="seam-cols">' + cols.join("") + "</div></div>";
+    if (from === to) return "";
+    return '<div class="seam' + (cls ? " " + cls : "") + '" aria-hidden="true" style="background:linear-gradient(in oklab to bottom,' + from + ',' + to + ')"></div>';
   }
 
   /* Arranged boxes become one stylesheet: wide screens and phones are kept separately, so arranging one never breaks the other. */
@@ -753,11 +784,13 @@ var POP = (function () {
 
 <header class="wrap top" id="top">
   <a class="wm" href="#top" aria-label="Put It On Paper, home"${box("top.logo", "Logo")}>${WM_STACKED}</a>
-  <nav aria-label="Sections">
-    <a href="#instagram-brain">Instagram brain</a>
-    <a href="#practices">Practices</a>
-    <a class="go" href="#request">Request a session</a>
-  </nav>
+  <div class="top-right">
+    <nav aria-label="Sections">
+      <a href="#instagram-brain">Instagram brain</a>
+      <a href="#practices">Practices</a>
+      <a class="go" href="#request">Request a session</a>
+    </nav>
+  </div>
 </header>
 
 <main id="home">
@@ -773,12 +806,9 @@ var POP = (function () {
         <a class="textlink" href="#instagram-brain">${esc(h.essayLink)}</a>
       </div>
     </div>
-    <div class="frame-wrap"${box("hero.frame", "Film frame")}>
-      <button class="frame" id="frame" type="button" aria-label="Strips of ten film frames scroll like a feed, then settle into one image: a window open onto a sunset. Press to scroll them again."></button>
-    </div>
   </section>
 
-  ${seam(11, "var(--night)", "var(--night)", ["var(--oxblood)", "#2A1309", "var(--rust)", "#3B1A0B"])}
+  ${seam(11, "var(--night)", "var(--night)", ["var(--oxblood)", "color-mix(in srgb, var(--oxblood) 55%, var(--night))", "var(--rust)", "color-mix(in srgb, var(--rust) 45%, var(--night))"])}
 
   <section class="band overfed" aria-labelledby="overfed-h">
     <div class="wrap">
@@ -790,7 +820,7 @@ ${o.beats.map(function (b, i) { return '        <div class="beat"' + box("overfe
     </div>
   </section>
 
-  ${seam(23, "var(--oxblood)", "var(--oxblood)", ["var(--blood)", "var(--rust)", "#5A1709", "#7E2B10"])}
+  <div class="flare" role="img" aria-label="A light leak from the same roll of film, deep blue turning to aqua and yellow"></div>
 
   <section class="band practices" id="practices" aria-labelledby="practices-h">
     <div class="wrap">
@@ -828,7 +858,7 @@ ${o.beats.map(function (b, i) { return '        <div class="beat"' + box("overfe
     </div>
   </section>
 
-  <div class="flare" role="img" aria-label="A light leak from the same roll of film, deep red turning to yellow"></div>
+  ${seam(23, "var(--foam2)", "var(--saffron)", ["var(--saffron)", "color-mix(in srgb, var(--saffron) 50%, var(--foam2))", "var(--ember)", "color-mix(in srgb, var(--sun) 40%, var(--foam2))"], "light")}
 
   <section class="band sessions on-light" aria-labelledby="sessions-h">
     <div class="wrap sessions-grid">
@@ -842,7 +872,7 @@ ${s.formats.map(function (f, i) { return "          <li" + box("sessions.format.
     </div>
   </section>
 
-  ${seam(37, "var(--sun)", "var(--sun)", ["var(--saffron)", "var(--pollen)", "#F4C95A", "#D8D879"], "light")}
+  ${seam(37, "var(--sun)", "var(--sun)", ["var(--saffron)", "var(--pollen)", "color-mix(in srgb, var(--saffron) 45%, var(--sun))", "color-mix(in srgb, var(--sun) 65%, var(--meadow))"], "light")}
 
   <div class="lawn" role="img" aria-label="Sunlit grass from the same roll of film"></div>
 
@@ -915,7 +945,7 @@ ${blocks(e.blocks)}
   </div>
 </article>
 
-${seam(53, "var(--spring)", "var(--spring)", ["var(--pollen)", "#D7DB86", "var(--sun)", "#E9E6A4"], "light")}
+${seam(53, "var(--spring)", "var(--spring)", ["var(--pollen)", "color-mix(in srgb, var(--pollen) 75%, var(--meadow))", "var(--sun)", "color-mix(in srgb, var(--spring) 60%, var(--sun))"], "light")}
 
 <footer class="foot on-leaf" id="foot">
   <div class="wrap">
@@ -1003,35 +1033,6 @@ ${seam(53, "var(--spring)", "var(--spring)", ["var(--pollen)", "#D7DB86", "var(-
   }
   addEventListener("hashchange", route);
   route();
-
-  /* ---------- The fragment frame ---------- */
-  const FRAMES = ["clouds", "canal", "grass", "forest", "park", "bike", "blinds", "sill", "maroon"];
-  const N = 12, frame = $("frame");
-  frame.style.setProperty("--n", N);
-  function buildFrame() {
-    frame.innerHTML = "";
-    for (let i = 0; i < N; i++) {
-      const pool = FRAMES.slice().sort(() => Math.random() - .5).slice(0, 4 + (i % 3));
-      const seq = [...pool, "window"];
-      const strip = document.createElement("span");
-      strip.className = "strip";
-      strip.style.setProperty("--i", i);
-      strip.style.setProperty("--len", seq.length);
-      strip.style.setProperty("--dur", (1.5 + Math.random() * 1.1).toFixed(2) + "s");
-      strip.style.setProperty("--delay", (i * 0.07).toFixed(2) + "s");
-      const reel = document.createElement("span");
-      reel.className = "reel";
-      seq.forEach((ph) => { const c = document.createElement("span"); c.className = "cell ph-" + ph; reel.append(c); });
-      strip.append(reel);
-      frame.append(strip);
-    }
-  }
-  function play() {
-    buildFrame();
-    frame.classList.remove("play"); void frame.offsetWidth; frame.classList.add("play");
-  }
-  play();
-  frame.addEventListener("click", play);
 
   /* ---------- Scroll, then recall ---------- */
   const PRESETS = [5, 10, 15, 20];
@@ -1175,7 +1176,8 @@ ${seam(53, "var(--spring)", "var(--spring)", ["var(--pollen)", "#D7DB86", "var(-
     (function (C, A, L) { const p = function (a, ar) { a.q.push(ar); }; const d = C.document; C.Cal = C.Cal || function () { const cal = C.Cal; const ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; const s = d.createElement("script"); s.src = A; s.onerror = calFailed; d.head.appendChild(s); cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if (typeof namespace === "string") { cal.ns[namespace] = cal.ns[namespace] || api; p(cal.ns[namespace], ar); p(cal, ["initNamespace", namespace]); } else p(cal, ar); return; } p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
     window.Cal("init", "pop", { origin: "https://cal.com" });
     window.Cal.ns.pop("inline", { elementOrSelector: "#cal-embed", calLink, layout: "month_view" });
-    window.Cal.ns.pop("ui", { theme: "light", hideEventTypeDetails: false, layout: "month_view", cssVarsPerTheme: { light: { "cal-brand": "#2C3210", "cal-bg": "#F2F0BE" } } });
+    const v = (n) => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+    window.Cal.ns.pop("ui", { theme: "light", hideEventTypeDetails: false, layout: "month_view", cssVarsPerTheme: { light: { "cal-brand": v("--canopy"), "cal-bg": v("--spring") } } });
     // Ready: drop the loading line. A link Cal.com doesn't know (or no answer at all) falls back to the request form.
     window.Cal.ns.pop("on", { action: "linkReady", callback: () => { calReady = true; const l = $("cal-loading"); if (l) l.remove(); } });
     window.Cal.ns.pop("on", { action: "linkFailed", callback: () => { calReady = false; calFailed(); } });

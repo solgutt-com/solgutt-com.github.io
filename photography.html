@@ -6,26 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fotos — Solomon Guttmann</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-      // Arriving through the needle's eye: fade the page in from the straw-coloured screen.
-      // The homepage may have loaded this page in advance, so check when it is actually shown.
-      function arrive() {
-        try {
-          if (sessionStorage.getItem('via-needle')) {
-            sessionStorage.removeItem('via-needle');
-            document.documentElement.classList.add('via-needle');
-          }
-        } catch (e) { /* storage blocked: no fade */ }
-      }
-      if (document.prerendering) {
-        document.addEventListener('prerenderingchange', arrive, { once: true });
-      } else {
-        arrive();
-      }
-    </script>
   </head>
 
-  <body class="framed">
+  <body>
 
     <header class="masthead">
       <a href="index.html" class="wordmark">Solomon Guttmann</a>
@@ -45,6 +28,19 @@
 
       <ul class="collections" id="collections"></ul>
     </main>
+
+    <footer class="site-foot">
+      <div class="foot-leak" aria-hidden="true"></div>
+      <div class="foot-body">
+        <a class="foot-name" href="index.html">Solomon Guttmann</a>
+        <nav class="foot-nav" aria-label="Footer">
+          <a href="photography.html">Fotos</a>
+          <a href="film.html">Film</a>
+          <a href="about.html">About</a>
+          <a href="put-it-on-paper/">Put It On Paper</a>
+        </nav>
+      </div>
+    </footer>
 
     <script src="data.js"></script>
     <script src="site.js"></script>

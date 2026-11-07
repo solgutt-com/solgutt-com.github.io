@@ -2,6 +2,23 @@
 
 ---
 
+## 2026-11-07
+
+### Film palette for the photography pages
+- Every photography page now uses the film palette sampled from the rolls: a darkroom of warm black deepening to oxblood, linen text, saffron accents, and soft staggered light-leak seams under each heading and between collections
+- Each page ends in a saffron-to-sun footer with the menu; the gallery viewer stays a pure darkroom
+- Homepage: the haystack and needle are replaced by a film-strip reel. Twelve strips of photos from the collections scroll like a feed and settle on one gallery's cover (a different one each visit); clicking it opens that gallery
+- Literata replaces Spectral, so the photography pages and Put It On Paper share the same two typefaces; the olive needle's-eye frame around Fotos is gone
+- Later: the homepage reel shows a single gallery cover at full size, cut into strips that slide into line, smaller and framed in a thin linen line; the blocky horizontal seams and stretched leak photo are replaced by smooth vertical light leaks down both edges of the screen (not in the gallery viewer) and a smooth fade into the footer
+
+### Put It On Paper: Tide only
+- Tide is now the page's only palette, made lighter and calmer: deep sea blue instead of near-black at the top, the aqua light leak opening straight onto sea-foam practices, then sea glass, yellow, apricot and sand. The colour switch is gone
+- Logo files and the favicon mark recoloured in Tide
+- Put It On Paper's hero is words only now: the film strips and the window photo are gone (the strips live on as the photography homepage's reel)
+- Put It On Paper matches the photography pages' light leaks: smooth vertical glows in Tide colours down both screen edges, the blocky seams replaced by plain OKLab fades, and the aqua leak band redrawn as a smooth glow instead of the stretched scan
+
+---
+
 ## 2026-11-05
 
 ### Put It On Paper
@@ -15,6 +32,7 @@
 - Later: the hero shows the whole window (full-width 3:2 crop) in a larger frame; staggered "seams" of neighbouring colours break the gradient between sections; Edit page gained **Arrange** (move, resize, text size, padding, corners, alignment, kept separately for wide screens and phones); the editor refuses a save from a copy of the page opened before its latest rebuild
 - Then: no caption under the hero photo, which is now feathered into the page with a soft window glow; seams blur and fade into the colour around them with light film grain; booking through Cal.com (paste the booking link in edit mode; the request form stays as the fallback); a shop plan for prints and photo-cover journals in the playbook
 - Last: two typefaces only (Archivo extra-condensed for headings and the logo, Literata for reading, including the italic second lines); the logo is now one typeface, stacked PUT IT ON / PAPER with both lines the same width, in the header and footer
+- Tide: a second palette in blues (deep blue, aqua, green, yellow, orange, sand), each colour the film colour's OKLCH lightness and chroma at a new hue, with a Tide version of the light-leak photo; a two-swatch switch in the header lets visitors choose (remembered per browser), and the scheme saved in edit mode is the default; every colour on the page now comes from the palette
 
 ### Instagram uploader
 - New folder `instagram-uploader/`: its own public GitHub repo (`solgutt-com/instagram-uploader`), listed in `.gitignore` so it never ends up on the site

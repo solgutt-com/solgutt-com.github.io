@@ -47,6 +47,14 @@ Without the editor:
 cd ~/Desktop/solgutt.github.io && git add -A Images data.js thumbs thumbs-large && git commit -m "Update photos" && git push origin main
 ```
 
+## Design
+
+The photography pages use the film palette (darkroom reds to saffron and sun) defined at the top of
+`style.css`, with Archivo for headings and Literata for reading. Soft light leaks glow down both
+edges of every page except the gallery viewer, and each page fades into a sun-coloured footer. The
+homepage reel shows one gallery's cover, chosen at random from `data.js`, so it updates by itself
+when you add photos or change a cover.
+
 ## Put It On Paper
 
 The page at solgutt.com/put-it-on-paper/ lives in `put-it-on-paper/`. To change its words, press
